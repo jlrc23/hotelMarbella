@@ -1,0 +1,1280 @@
+@charset "utf-8";
+
+/*
+* Title                   : Booking System PRO (WordPress Plugin)
+* Version                 : 2.0
+* File                    : backend-style.css
+* File Version            : 1.7
+* Created / Last Modified : 27 Decembers 2013
+* Author                  : Dot on Paper
+* Copyright               : © 2012 Dot on Paper
+* Website                 : http://www.dotonpaper.net
+* Description             : Booking System PRO Admin Stylesheet.
+*/
+
+.DOPBSP-admin{
+    margin-bottom: 15px;
+    margin-top: 15px;
+    min-width: 1060px;
+}
+
+#dopsbsp-custom-post-meta .DOPBSP-admin{
+    margin-right: 0px;
+    min-width: 100%;
+}
+
+.DOPBSP-clear{
+    clear: both;
+}
+
+.DOPBSP-admin h2{
+    height: 0px !important;
+    line-height: 0px !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    width: 0px !important;
+}
+
+.DOPBSP-admin .main-header{
+    background: #ffffff;
+    border: 1px solid #e3e3e3;
+    border-bottom: none;
+}
+
+.DOPBSP-admin .main-header h3{
+    float: left;
+    font: normal 23px/29px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif !important;
+    min-width: 200px;
+    margin: 0 !important;
+    padding: 15px 20px 15px 10px !important;
+}
+
+#DOPBSP-admin-message,
+#DOPBSP-admin-reservations-message{
+    color: #909090;
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:12px;
+    height: 30px;
+    line-height: 30px;
+    margin: 20px 0 0 0;
+    min-width: 200px;
+    opacity: 0;
+    filter: Alpha(Opacity=0);
+}
+
+#DOPBSP-admin-message2{
+    color: #909090;
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:12px;
+    height: 30px;
+    line-height: 30px;
+    margin: 20px 0 0 0;
+    min-width: 200px;
+}
+
+#DOPBSP-admin-message.loader,
+#DOPBSP-admin-reservations-message.loader{
+    background: url("../images/loader.gif") left center no-repeat;
+    padding: 0 0 0 25px;
+}
+
+#DOPBSP-admin-translation{
+    float: right;
+    margin: 17px 10px 0 0;
+}
+
+.DOPBSP-help{
+    display: block;
+    float: right;
+    line-height: 29px;
+    padding: 15px 20px 15px 0;
+    text-decoration: none;
+}
+
+.DOPBSP-admin .main{
+    background: #ffffff;
+    border: 1px solid #e3e3e3;
+    border-top: none;
+    display: none;
+}
+
+/* Columns */
+.DOPBSP-admin .column{
+    float: left;
+    margin: 0 0 10px 0;
+    width: 220px;
+}
+
+.DOPBSP-admin .no-data{
+    font-style: italic;
+    margin: 16px 0 0 10px;
+}
+
+.DOPBSP-admin .column-separator{
+    background: #e3e3e3;
+    float: left;
+    width: 1px;
+}
+
+.DOPBSP-admin .column-header{
+    border-bottom: 1px solid #e3e3e3;
+    border-top: 1px solid #e3e3e3;
+    height: 44px;
+    width: 100%;
+}
+
+.DOPBSP-admin .column-content-container{
+    width: 100%;
+}
+
+.DOPBSP-admin .column-content-container ul{
+    margin: 0;
+}
+
+.DOPBSP-admin .button{
+    margin: 12px 0 0 10px;
+}
+
+.DOPBSP-admin #DOPBSP-Calendar{
+    margin: 10px 0 0 10px;
+    width: 600px;    
+}
+
+/* Form */
+.DOPBSP-admin .column-input{
+    background: #ffffff;
+    border: 1px solid #e3e3e3;
+    color:#333333;
+    font-size: 12px;
+    margin: 10px 10px 0 10px;
+    padding: 5px;
+    resize: none;
+    width: 100%;
+}
+
+.DOPBSP-admin .column-select{
+    background: #ffffff;
+    border-left: 3px solid #111111;
+    color:#333333;
+    font-size: 12px !important;
+    height: auto !important;
+    margin: 10px 10px 0 10px;
+    padding: 5px;
+}
+
+.DOPBSP-admin .column-select.users{
+    border-left: 3px solid #e3e3e3;
+    display: none;
+}
+
+.DOPBSP-admin .column-select input[type=checkbox]{
+    margin: 2px 10px 0 10px;
+}
+
+.DOPBSP-admin .select-big {
+    width:202px;
+    float:left;
+}
+.DOPBSP-admin .table-one{
+    border-color:#e3e3e3;
+}
+.DOPBSP-admin .textarea-one{
+    width:370px;
+    float:left;
+    height:30px;
+}
+.DOPBSP-admin .label{
+    color: #888888;
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    margin: 20px 0 0 10px;
+}
+
+.DOPBSP-admin .submit-style{
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: #999999;
+    cursor: pointer;
+    font-size: 12px;
+    margin: 10px 0 0 10px;
+    padding: 4px 10px;
+}
+
+.DOPBSP-admin .submit-style:hover{
+    background: #000000;
+    border: 1px solid #000000;
+    color: #ffffff;
+}
+
+.DOPBSP-admin .submit-style:disabled{
+    background: #cccccc;
+    border: 1px solid #cccccc;
+    color: #ffffff;
+}
+
+.DOPBSP-admin h3.settings{
+    background: none !important;
+    border-bottom: 1px solid #888888 !important;
+    color: #000000 !important;
+    display: block !important;
+    font: bold 14px/14px sans-serif !important;
+    margin: 30px 10px 5px 10px !important;
+    padding: 0 0 10px 0 !important;
+}
+
+.DOPBSP-admin h3.settings:first-child{
+    margin: 10px 10px 5px 10px !important;
+}
+
+.DOPBSP-admin .go-top,
+.DOPBSP-admin .go-top-separator,
+.DOPBSP-admin .show-hide{
+    color: #bbbbbb;
+    float: right;
+    font-size: 11px;
+    margin: 32px 10px 0 0;    
+    text-decoration: none;
+}
+
+.DOPBSP-admin .show-hide.first{
+    margin-top: 0px;
+}
+
+.DOPBSP-admin .go-top:hover,
+.DOPBSP-admin .show-hide:hover{
+    color: #000000;    
+}
+
+.DOPBSP-admin .setting-box{
+    margin: 0 0 0 10px;
+    padding: 5px 0 0 0;
+}
+
+.DOPBSP-admin .setting-box label{
+    color: #888888;
+    display: block;
+    float: left;
+    font-size: 12px;
+    line-height: 12px;
+    margin: 4px 0 0 0;
+    width: 150px;
+}
+
+.DOPBSP-admin .setting-box .pre{
+    color: #888888;
+    display: block;
+    float: left;
+    font-size: 12px;
+    line-height: 12px;
+    margin: 4px 0 0 0;
+    width: 10px;
+}
+
+.DOPBSP-admin .setting-box .suf{
+    color: #888888;
+    display: block;
+    float: left;
+    font-size: 12px;
+    line-height: 12px;
+    padding: 4px 0 0 0;
+    width: 30px;
+}
+
+.DOPBSP-admin .setting-box .days{
+    display: block;
+    float: left;
+    padding: 4px 0 0 0;
+    width: 120px;
+}
+
+.DOPBSP-admin .setting-box .days label{
+    float: left;
+    margin: 0 0 0 4px;
+    padding: 0;
+    width: auto;
+}
+
+.DOPBSP-admin .setting-box input{
+    display: block;
+    float: left;
+    font-size: 12px;
+    margin: 0;
+    width: 120px;
+}
+
+.DOPBSP-admin .setting-box input[type=checkbox]{
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
+.DOPBSP-admin .setting-box input.small{
+    width: 60px;
+}
+
+.DOPBSP-admin .setting-box select{
+    display: block;
+    float: left;
+    font-size: 12px;
+    margin: 0;
+    width: 120px;
+}
+
+.DOPBSP-admin .setting-box select.enabled{
+    background: #bbce3d;
+}
+
+.DOPBSP-admin .setting-box select.disabled{
+    background: #f67f7f;
+}
+
+.DOPBSP-admin .setting-box textarea{
+    display: block;
+    float: left;
+    font-size: 12px;
+    margin: 0;
+    width: 120px;
+}
+
+/* Begin Switch */
+
+.DOPBSP-admin .setting-box .switch{
+    float: left;
+    height: 24px;
+    position: relative;
+    width: 120px;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select: none;
+}
+
+.DOPBSP-admin .setting-box .switch-checkbox{
+    display: none !important;
+}
+
+.DOPBSP-admin .setting-box .switch-label{
+    border: 1px solid #dfdfdf;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    height: 18px;
+    margin: 2px 0 0 0 !important;
+    overflow: hidden;
+    width: 120px !important;
+}
+
+.DOPBSP-admin .setting-box .switch-inner{
+    margin-left: -100%;
+    width: 200%;
+    -webkit-transition: margin 0.3s ease-in 0s;
+    -moz-transition: margin 0.3s ease-in 0s;
+    -o-transition: margin 0.3s ease-in 0s;
+    transition: margin 0.3s ease-in 0s;
+}
+
+.DOPBSP-admin .setting-box .switch-inner:before,
+.DOPBSP-admin .setting-box .switch-inner:after{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #333333;
+    float: left;
+    font: normal 12px/18px sans-serif;
+    height: 18px;
+    padding: 0;
+    width: 50%;
+}
+
+.DOPBSP-admin .setting-box .switch-inner:before{
+    background-color:#bbce3d;
+    color: #444444;
+    padding-left: 5px;
+}
+
+.DOPBSP-admin .setting-box .switch-inner:after{
+    background-color: #f67f7f;
+    color: #666666;
+    padding-right: 5px;
+    text-align: right;
+}
+
+.DOPBSP-admin .setting-box .switch-switch{
+    background: #e0e0e0; /* Old browsers */
+    background: -moz-linear-gradient(top,  #e0e0e0 0%, #ffffff 50%, #e0e0e0 51%, #fcfcfc 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e0e0e0), color-stop(50%,#ffffff), color-stop(51%,#e0e0e0), color-stop(100%,#fcfcfc)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #e0e0e0 0%,#ffffff 50%,#e0e0e0 51%,#fcfcfc 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #e0e0e0 0%,#ffffff 50%,#e0e0e0 51%,#fcfcfc 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #e0e0e0 0%,#ffffff 50%,#e0e0e0 51%,#fcfcfc 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #e0e0e0 0%,#ffffff 50%,#e0e0e0 51%,#fcfcfc 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e0e0', endColorstr='#fcfcfc',GradientType=0 ); /* IE6-9 */
+    border: 1px solid #cccccc;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    bottom: 0;
+    -webkit-box-shadow:  0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+    box-shadow:  0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+    height: 22px;
+    margin: 0;
+    padding: 0 !important;
+    position: absolute;
+    right: 96px;
+    top: 0;
+    width: 22px;
+    -webkit-transition: all 0.3s ease-in 0s;
+    -moz-transition: all 0.3s ease-in 0s;
+    -o-transition: all 0.3s ease-in 0s;
+    transition: all 0.3s ease-in 0s; 
+}
+
+.DOPBSP-admin .setting-box .switch-checkbox:checked+.switch-label .switch-inner{
+    margin-left: 0;
+}
+
+.DOPBSP-admin .setting-box .switch-checkbox:checked+.switch-label .switch-switch{
+    right: -2px; 
+}
+
+/* End Switch */
+
+.DOPBSP-admin .setting-box a.help{
+    background: url("../images/sprite.png") -100px 0;
+    display: block;
+    float: left;
+    height: 15px;
+    margin: 5px 0 0 10px;
+    width: 15px;
+}
+
+.DOPBSP-admin .setting-box a.help:hover{
+    background: url("../images/sprite.png") -115px 0;
+}
+
+.DOPBSP-admin .setting-box a.help-small{
+    background: url("../images/sprite.png") -100px 0;
+    display: block;
+    float: left;
+    height: 15px;
+    margin: 5px 0 0 70px;
+    width: 15px;
+}
+
+.DOPBSP-admin .setting-box a.help-small:hover{
+    background: url("../images/sprite.png") -115px 0;
+}
+
+.DOPBSP-admin .setting-box a.help-image{
+    background: url("../images/sprite.png") -100px 0;
+    display: block;
+    float: left;
+    height: 15px;
+    margin: 5px 0 0 40px;
+    width: 15px;
+}
+
+.DOPBSP-admin .setting-box a.help-image:hover{
+    background: url("../images/sprite.png") -115px 0;
+}
+
+/******************************************************************************* Begin Buttons 
+
+/* Add Button */
+.DOPBSP-admin .add-button{
+    float: left;
+    padding: 10px 0 0 10px;
+}
+
+.DOPBSP-admin .add-button a{
+    background: url("../images/sprite.png") 0 0;
+    display: block;
+    height: 24px;
+    text-decoration: none;
+    width: 24px;
+}
+
+.DOPBSP-admin .add-button a:hover{
+    background: url("../images/sprite.png") -25px 0;
+}
+
+.DOPBSP-admin .add-button a.selected{
+    background: url("../images/sprite.png") -25px 0;
+}
+
+/* Edit Button */
+.DOPBSP-admin .edit-button{
+    float: left;
+    padding: 10px 0 0 10px;
+}
+
+.DOPBSP-admin .edit-button a{
+    background: url("../images/sprite.png") -50px 0;
+    display: block;
+    height: 24px;
+    text-decoration: none;
+    width: 24px;
+}
+
+.DOPBSP-admin .edit-button a:hover{
+    background: url("../images/sprite.png") -75px 0;
+}
+
+/* Users Permissions Button */
+.DOPBSP-admin .users-permissions-button{
+    float: left;
+    padding: 10px 0 0 10px;
+}
+
+.DOPBSP-admin .users-permissions-button a{
+    background: url("../images/sprite.png") 0 -25px;
+    display: block;
+    height: 24px;
+    text-decoration: none;
+    width: 24px;
+}
+
+.DOPBSP-admin .users-permissions-button a:hover{
+    background: url("../images/sprite.png") -25px -25px;
+}
+
+/* Reservations Button */
+.DOPBSP-admin .reservations-button{
+    float: left;
+    padding: 10px 0 0 10px;
+}
+
+.DOPBSP-admin .reservations-button a{
+    background: url("../images/sprite.png") -130px 0;
+    display: block;
+    height: 24px;
+    text-decoration: none;
+    width: 30px;
+}
+
+.DOPBSP-admin .reservations-button a:hover{
+    background: url("../images/sprite.png") -160px 0;
+}
+
+.DOPBSP-admin .reservations-button a span{
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9px;
+    line-height: 15px;
+    margin: 0 0 0 15px;
+    position: absolute;
+    text-align: center;
+    width: 15px;
+}
+
+.DOPBSP-admin .reservations-button a.new{
+    background: url("../images/sprite.png") -190px 0;
+}
+
+.DOPBSP-admin .reservations-button a.new:hover{
+    background: url("../images/sprite.png") -220px 0;
+}
+
+/******************************************************************************* End Buttons */
+
+/* Items */
+.DOPBSP-admin .item{
+    background: #ededed;
+    color: #606060;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:12px;
+    height: 18px;
+    margin: 10px 10px 0 10px;
+    padding: 5px 10px 2px 10px;
+    width: 178px;
+}
+
+.DOPBSP-admin .item:hover{
+    color: #000000;
+}
+
+.DOPBSP-admin .item-selected{
+    background: #000000;
+    color: #ffffff;
+    cursor: default;
+}
+
+.DOPBSP-admin .item-selected:hover{
+    border-color: #000000;
+    color: #ffffff;
+}
+
+.DOPBSP-admin .item .id{
+    font-weight:bold;
+}
+
+.DOPBSP-admin .item-image{
+    border: 2px #cccccc solid;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    height: 91px;
+    margin: 10px 10px 0 10px;
+    text-align: center;
+    width: 91px;
+}
+
+.DOPBSP-admin .item-image span{
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.DOPBSP-admin .item-image:hover{
+    border: 2px #000000 solid;
+}
+
+.DOPBSP-admin .item-image-selected{
+    border: 2px #000000 solid;
+}
+
+.DOPBSP-admin .item-image-selected:hover{
+    border: 2px #000000 solid;
+}
+
+.DOPBSP-admin .item-image-disabled{
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+}
+
+.DOPBSP-admin a.header-help{
+    background: url("../images/sprite.png") -100px 0;
+    display: block;
+    float: right;
+    height: 15px;
+    margin: 14px 10px 0 0;
+    width: 15px;
+}
+
+.DOPBSP-admin a.header-help:hover{
+    background: url("../images/sprite.png") -115px 0;
+}
+
+/******************************************************************************* Settings Form */
+
+.DOPBSP-form{
+    border-top: 1px solid #e3e3e3;
+    padding: 5px 0 15px 0;
+}
+
+.DOPBSP-form input[type=text]{
+    margin: 0 0 0 10px;
+    width: 500px;
+}
+
+/******************************************************************************* Reservations */
+
+.DOPBSP-admin .reservations-header{
+    border-top: 1px solid #e3e3e3;
+}
+
+/* Filters */
+
+.DOPBSP-admin .reservation-filter{
+    border-bottom: 1px solid #f0f0f0;
+    padding: 5px 0;
+}
+
+.DOPBSP-admin .reservation-filter:hover{
+    background: #f9f9f9;
+}
+
+.DOPBSP-admin .reservation-filter .title{
+    float: left;
+    font: bold 13px/25px Helvetica, Arial, sans-serif;
+    text-indent: 10px;
+    width: 13%;
+}
+
+.DOPBSP-admin .reservation-filter .filters{
+    float: left;
+    width: 87%;
+}
+
+.DOPBSP-admin .reservation-filter label{
+    color: #888888;
+    font-size: 12px;
+    line-height: 12px;
+    margin: 4px 0 0 0;
+}
+
+.DOPBSP-admin .reservation-filter label.checkbox{
+    display: inline-block;
+    margin: 7px 20px 0 0;
+}
+
+#DOPBSP-reservations-pending-label{
+    color: #000000 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your PENDING color. */
+}
+
+#DOPBSP-reservations-approved-label{
+    color: #9cbc72 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your APPROVED color. */
+}
+
+#DOPBSP-reservations-rejected-label{
+    color: #fdaa29 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your REJECTED color. */
+}
+
+#DOPBSP-reservations-canceled-label{
+    color: #cccccc !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your CANCELED color. */
+}
+
+#DOPBSP-reservations-expired-label{
+    color: #cccccc !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your EXPIRED color. */
+}
+
+.DOPBSP-admin .reservation-filter input[type=text]{
+    font-size: 12px;
+    margin: 0 20px 0 0;
+    width: 120px;
+}
+
+.DOPBSP-admin .reservation-filter input[type=button]{
+    margin: 0 5px 0 0;
+}
+
+.DOPBSP-admin .reservation-filter input[type=checkbox]{
+    display: inline-block;
+    margin: 4px 0 0 0;
+    padding: 0;
+    width: auto;
+}
+
+.DOPBSP-admin .reservation-filter select{
+    font-size: 12px;
+    margin: 0 20px 0 0;
+    width: 120px;
+}
+
+.DOPBSP-admin .reservation-filter select.big{
+    width: 240px;
+}
+
+.DOPBSP-admin .reservation-filter select.small{
+    width: 85px;
+}
+
+.DOPBSP-admin .reservation-filter a.help{
+    background: url("../images/sprite.png") -100px 0;
+    display: block;
+    float: right;
+    height: 15px;
+    margin: -20px 10px auto auto;
+    width: 15px;
+}
+
+.DOPBSP-admin .reservation-filter a.help.type2{
+    margin: -15px 10px auto auto;
+}
+
+.DOPBSP-admin .reservation-filter a.help:hover{
+    background: url("../images/sprite.png") -115px 0;
+}
+
+/* Reservations Calendar */
+
+.DOPBSP-admin .reservations-calendar{
+    border-bottom: 1px solid #e3e3e3;
+    border-top: 1px solid #e3e3e3;
+}
+
+#DOPBSP-Calendar-reservations{
+    margin: 10px;
+}
+
+/* Reservations List */
+
+.DOPBSP-admin .reservations-list{
+}
+
+.DOPBSP-admin .reservations-list li{
+    margin: 10px 0 0 0;
+    padding: 0 10px 0 10px;
+}
+
+.DOPBSP-admin .reservations-list li .reservation-container{
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAI0lEQVQIW2P8DwQMQPDx40cGRhAHxODn52dg/PDhw38QAwQApekRy7CH9agAAAAASUVORK5CYII=');
+    border: 1px solid #f0f0f0;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    padding: 9px 10px;
+}
+
+.DOPBSP-admin .reservations-list li .reservation-container .reservation-header{
+}
+
+.DOPBSP-admin .reservations-list li .reservation-container .reservation-header .flag{
+    float: left;
+    height: 24px;
+    margin: 0 20px 0 10px;
+    width: 20px;
+}
+
+.DOPBSP-admin .reservations-list li .reservation-container .reservation-header .flag.pending{
+    background: url("../images/sprite.png") -135px -25px;
+}
+
+.DOPBSP-admin .reservations-list li .reservation-container .reservation-header .flag.approved{
+    background: url("../images/sprite.png") -155px -25px;
+}
+
+.DOPBSP-admin .reservations-list li .reservation-container .reservation-header .flag.rejected{
+    background: url("../images/sprite.png") -175px -25px;
+}
+
+.DOPBSP-admin .reservations-list li .reservation-container .reservation-header .flag.canceled,
+.DOPBSP-admin .reservations-list li .reservation-container .reservation-header .flag.expired{
+    background: url("../images/sprite.png") -195px -25px;
+}
+
+.DOPBSP-admin .reservations-list li .reservation-container .reservation-header .info-container{
+    float: left;
+    font: normal 13px/24px Helvetica, Arial, sans-serif;
+    height: 24px;
+}
+
+.DOPBSP-admin .reservations-list li .reservation-container .reservation-header .info-container .pending{
+    color: #000000;
+}
+
+.DOPBSP-admin .reservations-list li .reservation-container .reservation-header .info-container .approved{
+    color: #9cbc72;
+}
+
+.DOPBSP-admin .reservations-list li .reservation-container .reservation-header .info-container .rejected{
+    color: #fdaa29;
+}
+
+.DOPBSP-admin .reservations-list li .reservation-container .reservation-header .info-container .canceled,
+.DOPBSP-admin .reservations-list li .reservation-container .reservation-header .info-container .expired{
+    color: #cccccc;
+}
+
+.DOPBSP-admin .reservations-list li .reservation-container .reservation-header .buttons-container{
+    float: right;
+}
+
+.DOPBSP-admin .reservations-list li .reservation-container .reservation-header .buttons-container .button-approve,
+.DOPBSP-admin .reservations-list li .reservation-container .reservation-header .buttons-container .button-reject,
+.DOPBSP-admin .reservations-list li .reservation-container .reservation-header .buttons-container .button-cancel,
+.DOPBSP-admin .reservations-list li .reservation-container .reservation-header .buttons-container .button-delete,
+.DOPBSP-admin .reservations-list li .reservation-container .reservation-header .buttons-container .button-jump{
+    color: #ffffff;
+    display: block;
+    float: left;
+    font: normal 12px/2em Arial, Helvetica, sans-serif;
+    margin: 0 0 0 6px;
+    text-align: center;
+    text-decoration: none;
+    width: 78px;
+}
+
+.DOPBSP-admin .reservations-list li .reservation-container .reservation-header .buttons-container .button-approve{
+    background: #9cbc72 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your APPROVED color. */
+}
+
+.DOPBSP-admin .reservations-list li .reservation-container .reservation-header .buttons-container .button-reject{
+    background: #fdaa29 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your REJECTED color. */
+}
+
+.DOPBSP-admin .reservations-list li .reservation-container .reservation-header .buttons-container .button-cancel{
+    background: #cccccc !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your CANCELED color. */
+}
+
+.DOPBSP-admin .reservations-list li .reservation-container .reservation-header .buttons-container .button-delete{
+    background: #fd4c29 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DELETE color. */
+}
+
+.DOPBSP-admin .reservations-list li .reservation-container .reservation-header .buttons-container .button-jump{
+    background: #606060 !important;
+}
+
+.DOPBSP-admin .reservations-list li .reservation-container .reservation-header .buttons-container .button-approve:hover,
+.DOPBSP-admin .reservations-list li .reservation-container .reservation-header .buttons-container .button-reject:hover,
+.DOPBSP-admin .reservations-list li .reservation-container .reservation-header .buttons-container .button-cancel:hover,
+.DOPBSP-admin .reservations-list li .reservation-container .reservation-header .buttons-container .button-delete:hover,
+.DOPBSP-admin .reservations-list li .reservation-container .reservation-header .buttons-container .button-jump:hover{
+    background: #000000 !important;
+}
+
+.DOPBSP-admin .reservations-list li .reservation-container .reservation-content{
+    border-top: 1px solid #f0f0f0;
+    margin: 10px 0 0 0;
+    padding: 10px 0 0 0;    
+}
+
+.DOPBSP-admin .reservations-list li .reservation-container .reservation-content .data-column{
+    float: left;
+    margin: 0 0 0 50px;
+}
+
+.DOPBSP-admin .reservations-list li .reservation-container .reservation-content .data-column .reservation-field label{
+    color: #000000;
+    float: left;
+    font: bold 12px/15px Helvetica, Arial, sans-serif;
+    padding: 0 10px 0 0;
+    width: 100px;
+}
+
+.DOPBSP-admin .reservations-list li .reservation-container .reservation-content .data-column .reservation-field .value{
+    float: left;
+    font: normal 12px/15px Helvetica, Arial, sans-serif;
+    width: 179px;
+}
+
+.DOPBSP-admin .reservations-list li .reservation-container .reservation-content .data-column .reservation-field .value .cut{
+    text-decoration: underline;
+}
+
+/******************************************************************************* Booking Forms */
+
+.DOPBSP-admin .booking-form-wrapper{
+    margin: 10px 10px 0 10px;
+}
+
+.DOPBSP-admin .booking-form-fields-wrapper,
+.DOPBSP-admin .booking-form-fields-delete-wrapper{
+    float: left;
+    width: 69%;
+}
+
+.DOPBSP-admin .booking-form-fields-container{
+    border-left: 3px solid #e3e3e3;
+    margin: 0 0 10px 0;
+    min-height: 42px;
+}
+
+.DOPBSP-admin .booking-form-fields-container ul{
+    min-height: 42px;
+}
+
+.DOPBSP-admin .booking-form-fields-delete-container{
+    background: url('../images/delete-form-field-icon.png') no-repeat center center;
+    height: 40px;
+    border: 1px dashed #cccccc;
+    margin: 0 10px 0 13px;
+}
+
+.DOPBSP-admin .booking-form-fields-delete-container ul{
+    height: 40px;
+}
+
+.DOPBSP-admin .booking-form-fields-type-wrapper{
+    border: 1px dashed #cccccc;
+    float: right;
+    padding: 10px 0 5px 0;
+    width: 30%;
+}
+
+.DOPBSP-admin .booking-form-item{
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAI0lEQVQIW2P8DwQMQPDx40cGRhAHxODn52dg/PDhw38QAwQApekRy7CH9agAAAAASUVORK5CYII=');
+    border: 1px solid #e0e0e0;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+    -webkit-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.07);
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.07);
+    cursor: move;
+    margin: 0 10px 5px 10px;
+    padding: 10px;
+}
+
+.DOPBSP-admin .booking-form-item .booking-form-field-name-wrapper{
+    width: 100%;
+    margin: 0px;
+}
+
+.DOPBSP-admin .booking-form-item .booking-form-field-name-wrapper .booking-form-field-name{
+    color: #606060;
+    float:left;
+    font: bold 12px/18px Arial, Helvetica, sans-serif;
+}
+
+.DOPBSP-admin .booking-form-item .booking-form-field-name-wrapper .booking-form-field-demo-checkbox{
+    float:left;
+    margin: 2px 10px 0 0;
+}
+
+.DOPBSP-admin .booking-form-item .booking-form-field-name-wrapper .booking-form-field-demo-text,
+.DOPBSP-admin .booking-form-item .booking-form-field-name-wrapper .booking-form-field-demo-textarea,
+.DOPBSP-admin .booking-form-item .booking-form-field-name-wrapper .booking-form-field-demo-select{
+    margin: 0;
+}
+
+.DOPBSP-admin .booking-form-item .booking-form-field-name-wrapper .booking-form-field-demo-textarea{
+    height: 60px;
+    resize: none;
+    width: 240px;
+}
+
+.DOPBSP-admin .booking-form-item .booking-form-field-name-wrapper .booking-form-field-demo-select{
+    width: 170px;
+}
+
+.DOPBSP-admin .booking-form-item .booking-form-field-name-wrapper .booking-form-field-name span{
+    color: #909090;
+    font-size: 11px;
+}
+
+.DOPBSP-admin .booking-form-item .booking-form-field-name-wrapper .booking-form-field-show-settings-button{
+    float: right;
+    font-size: 11px;
+    margin: 0;
+    text-decoration: none;
+}
+
+#DOPBSP-form-fields .booking-form-item{
+    background: none;
+    border: 1px solid transparent;
+    -webkit-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0);
+}
+
+#DOPBSP-form-fields .booking-form-item .booking-form-field-show-settings-button{
+    display: none;
+}
+
+#DOPBSP-form-fields .booking-form-item:hover,
+#DOPBSP-form-fields .booking-form-item.selected{
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAI0lEQVQIW2P8DwQMQPDx40cGRhAHxODn52dg/PDhw38QAwQApekRy7CH9agAAAAASUVORK5CYII=');
+    border: 1px solid #e0e0e0;
+    -webkit-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.07);
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.07);
+}
+
+#DOPBSP-form-fields .booking-form-item:hover .booking-form-field-show-settings-button,
+#DOPBSP-form-fields .booking-form-item.selected .booking-form-field-show-settings-button{
+    display: block;
+}
+
+.DOPBSP-admin .booking-form-item .booking-form-field-name-wrapper .booking-form-field-loader{
+    background: url('../images/save-form-loader.gif') no-repeat center center;
+    display: block;
+    float: right;
+    height: 18px;
+    width: 18px
+}
+
+.DOPBSP-admin .booking-form-item .booking-form-field-settings-wrapper{
+    border-top: 1px solid #e0e0e0;
+    margin: 10px 0 0 0;
+    padding: 10px 0 0 0;
+    display:none;
+}
+
+.DOPBSP-admin .booking-form-item .booking-form-field-settings-wrapper .settings-box{
+    margin: 0 0 5px 0;
+}
+
+.DOPBSP-admin .booking-form-item .booking-form-field-settings-wrapper .settings-box:last-child{
+    margin: 0;
+}
+
+.DOPBSP-admin .booking-form-item .booking-form-field-settings-wrapper .settings-box label{
+    color: #000000;
+    border-right: 1px dotted #999999;
+    float: left;
+    font: bold 12px/18px Arial, Helvetica, sans-serif;
+    margin: 3px 20px 10px 0;
+    width: 130px;
+}
+
+.DOPBSP-admin .booking-form-item .booking-form-field-settings-wrapper .settings-box input[type=text],
+.DOPBSP-admin .booking-form-item .booking-form-field-settings-wrapper .settings-box select,
+.DOPBSP-admin .booking-form-item .booking-form-field-settings-wrapper .settings-box .booking-form-field-select-options{
+    float: left;
+    margin: 0;
+}
+
+.DOPBSP-admin .booking-form-item .booking-form-field-settings-wrapper .settings-box input[type=checkbox]{
+    float: left;
+    margin: 6px 0 0 0;
+}
+
+.DOPBSP-admin .booking-form-item .booking-form-field-settings-wrapper .settings-box .option-box{
+    margin: 0 0 5px 0;
+}
+
+.DOPBSP-admin .booking-form-item .booking-form-field-settings-wrapper .settings-box .booking-form-field-select-options .add{
+    background: url("../images/sprite.png") -75px -25px;
+    display: block;
+    float: left;
+    height: 15px;
+    margin: 5px 0 0 0;
+    width: 15px;
+}
+
+.DOPBSP-admin .booking-form-item .booking-form-field-settings-wrapper .settings-box .booking-form-field-select-options .add:hover{
+    background: url("../images/sprite.png") -90px -25px;
+}
+
+.DOPBSP-admin .booking-form-item .booking-form-field-settings-wrapper .settings-box .booking-form-field-select-options .option-box .remove{
+    background: url("../images/sprite.png") -105px -25px;
+    display: block;
+    float: left;
+    height: 15px;
+    margin: 5px 0 0 5px;
+    width: 15px;
+}
+
+.DOPBSP-admin .booking-form-item .booking-form-field-settings-wrapper .settings-box .booking-form-field-select-options .option-box .remove:hover{
+    background: url("../images/sprite.png") -120px -25px;
+}
+
+.DOPBSP-admin .booking-form-item .booking-form-field-settings-wrapper .settings-box .help{
+    background: url("../images/sprite.png") -100px 0;
+    display: block;
+    float: left;
+    height: 15px;
+    margin: 5px 0 0 10px;
+    width: 15px;
+}
+
+.DOPBSP-admin .booking-form-item .booking-form-field-settings-wrapper .settings-box .loader{
+    background: url('../images/save-form-loader.gif') no-repeat center center;
+    display: none;
+    float: left;
+    height: 15px;
+    margin: 5px 0 0 10px;
+    width: 15px;
+}
+
+.DOPBSP-admin .booking-form-item .booking-form-field-settings-wrapper .settings-box .help:hover{
+    background: url("../images/sprite.png") -115px 0;
+}
+
+/******************************************************************************* Translation */
+
+.DOPBSP-admin .translation-header{
+    border-bottom: 1px solid #e3e3e3;
+    border-top: 1px solid #e3e3e3;
+    padding: 10px;
+}
+
+.DOPBSP-admin .translation-header label{
+    color: #888888;
+    font-size: 12px;
+    line-height: 12px;
+    margin: 4px 0 0 0;
+}
+
+.DOPBSP-admin .translation-header input{
+    font-size: 12px;
+    margin: 0 20px 0 0;
+    width: 120px;
+}
+
+.DOPBSP-admin .translation-header select{
+    font-size: 12px;
+    margin: 0 20px 0 0;
+    width: 120px;
+}
+
+.DOPBSP-admin .translation-header input[type="button"]{
+    float: right;
+}
+
+.DOPBSP-admin .translation-header .header-help{
+    margin: 4px 0 0 0;
+}
+
+.DOPBSP-admin .translation-content{
+    padding: 10px;
+}
+
+.DOPBSP-admin .translation-content table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.DOPBSP-admin .translation-content table tr:hover{
+    background: #f9f9f9;
+}
+
+.DOPBSP-admin .translation-content table td{
+    border: 1px solid #f0f0f0;
+    padding: 5px 10px;
+    vertical-align: middle;
+    width: 50%;
+}
+
+.DOPBSP-admin .translation-content table td textarea{
+    border: 1px solid #f0f0f0;
+    margin: 0;
+    padding: 4px 10px;
+    resize: vertical;
+    width: 95%;
+}
+
+.DOPBSP-admin .translation-hint{
+    color: #8c8c8c;
+    font-size: 11px;
+}
+
+.DOPBSP-admin .translation-loader{
+    background: url('../images/save-translation-loader.gif') no-repeat center center;
+    display: none;
+    float: right;
+    height: 18px;
+    margin: 2px 0 0 0;
+    width: 18px
+}
+
+/******************************************************************************* Help Tooltip */
+
+.DOPBSP-admin a.header-help span,
+.DOPBSP-admin .setting-box a.help span,
+.DOPBSP-admin .setting-box a.help-small span,
+.DOPBSP-admin .setting-box a.help-image span,
+.DOPBSP-admin .reservation-filter .help span,
+.DOPBSP-admin .booking-form-item .booking-form-field-settings-wrapper .settings-box .help span{
+    background: #fbfbfb;
+    border: 1px solid #c0c0c0;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0px 0px 4px #b0b0b0;
+    -moz-box-shadow: 0px 0px 4px #b0b0b0;
+    box-shadow: 0px 0px 4px #b0b0b0;
+    color: #606060;
+    display: none;
+    font-size: 12px;
+    line-height: 1.5em;
+    max-width: 200px;
+    padding: 10px;
+    position: absolute;
+    margin: 15px 0 0 10px;
+    z-index: 1000000;
+}
+
+.DOPBSP-admin a.header-help.last span,
+.DOPBSP-admin .reservation-filter .help span{
+    margin: 15px 0 0 -215px;
+    width: 200px;
+}
+
+.DOPBSP-admin a.header-help:hover span,
+.DOPBSP-admin .setting-box a.help:hover span,
+.DOPBSP-admin .setting-box a.help-small:hover span,
+.DOPBSP-admin .setting-box a.help-image:hover span,
+.DOPBSP-admin .reservation-filter .help:hover span,
+.DOPBSP-admin .booking-form-item .booking-form-field-settings-wrapper .settings-box .help:hover span{
+    display: block;
+}
