@@ -1,17 +1,17 @@
 /* Custom Styles */
 body { font-family:'Arial'; }
-body { font-size:14px; }
-h1, h2, h3, h4, h5, h6, #slogan, .single-post-categories { font-family:'Kite One'; }
-#top-elements { height:75px; }
-#logo h1 a, #logo .site-name a { background:transparent url( http://hotel-marbella.com.mx/wp-content/uploads/2014/03/logoHotelMarbella2-e1394760017165.png ) no-repeat 0 100%; width:150px; height:104px; }       
+body { font-size:12px; }
+h1, h2, h3, h4, h5, h6, #slogan, .single-post-categories { font-family:'Arial'; }
+#top-elements { height:110px; }
+#logo h1 a, #logo .site-name a { background:transparent url( ../style1/images/logo.png ) no-repeat 0 100%; width:175px; height:108px; }       
 #slogan { 
-    top:45px;
-    left:155px;
+    top:100px;
+    left:0px;
 }
-#slogan { font-size:26px; }
-.js_on .cufon-on #slogan { font-size:28px; }
+#slogan { font-size:12px; }
+.js_on .cufon-on #slogan { font-size:14px; }
 #navigation-menu { font-family:'Arial'; }
-#navigation-menu { font-size:16px; }
+#navigation-menu { font-size:14px; }
 h1 {font-size:1.883em !important; }
 h2 {font-size:1.667em !important; }
 h3 {font-size:1.5em !important; }
@@ -56,25 +56,9 @@ h3.bottom-col-title {font-size:1.35em !important; }
 #c2-slider .slide-desc p, #c2-slider .slide-desc ul { font-size:1.2em; line-height:1.7; }
 #c3-slider .sliding-text { color:#FFFFFF; font-size:1.2em; line-height:1.7; }
 
-    #feedback a.feedback { position: fixed; }
 
     
 
-    @media screen and (max-width: 719px) {
-        #logo h1 a, #logo .site-name a { background:transparent url( http://hotel-marbella.com.mx/wp-content/uploads/2014/03/logoHotelMarbella.png ) no-repeat 0 100%; height:100px; }
-        #wrapper-1, #top-wrapper, #gs-header, #piecemaker-header, #c1-header, #c2-header, #c3-header, #rev-slider-header, #page-content-title, #home-page-content, #page-content, .no_title_section #page-content, #before-content, #bottom-bg, #footer-bg { background-image:none; }
-    }
-    @media screen and (max-width: 959px) {
-        #c2-slider .slide-desc p, #c2-slider .slide-desc ul  { font-size:1.1em; line-height:1.6; }
-        ul#c2-slider li ul li { font-size:0.8em; }
-    }
-    @media screen and (max-width: 480px) {
-        #c2-slider .slide-desc h2 { font-size:1.4em !important; line-height:1.5; }
-    }
-    @media screen and (min-width: 720px) and (max-width: 959px) {
-        #c2-slider .slide-desc h2 { font-size:1.7em !important; line-height:1.6; }
-        #wrapper-1, #top-wrapper, #gs-header, #piecemaker-header, #c1-header, #c2-header, #c3-header, #rev-slider-header, #page-content-title, #home-page-content, #page-content, .no_title_section #page-content, #before-content, #bottom-bg, #footer-bg { background-image:none; }
-    }
  
 @media screen and (min-width: 720px) {
     .u-design-fixed-menu-on.fixed-menu #top-wrapper { background-color:#FBFBFB; }
