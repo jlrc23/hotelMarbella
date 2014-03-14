@@ -726,3 +726,8 @@ function vc_disable_frontend($disable = true) {
 function vc_enabled_frontend() {
     return visual_composer()->inlineEditor()->inlineEnabled();
 }
+function vc_value_from_safe($value, $encode = false) {
+    $value = preg_match('/^#E\-8_/', $value) ? rawurldecode(base64_decode(preg_replace('/^#E\-8_/', '', $value))) : $value;
+    if($encode) $value = htmlentities( $value, ENT_COMPAT, 'UTF-8' );
+    return $value;
+}

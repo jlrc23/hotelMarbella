@@ -46,7 +46,6 @@ class WPBakeryVisualComposerSetup extends WPBakeryVisualComposerAbstract {
         echo '<style type="text/css" media="all">tr#wpbakery-visual-composer + tr.plugin-update-tr a.thickbox + em { display: none; }</style>';
         if(empty($username) || empty($api_key) || empty($purchase_code)) {
             echo ' <a href="'.$this->url.'">'.__('Download new version from CodeCanyon.', 'js_composer').'</a>';
-
         } else {
             echo '<a href="'.wp_nonce_url( admin_url('options-general.php?page=wpb_vc_settings&vc_action=upgrade')).'">'.__('Update Visual Composer now.', 'js_composer').'</a>';
         }
@@ -128,6 +127,7 @@ class WPBakeryVisualComposerSetup extends WPBakeryVisualComposerAbstract {
         $classes[] = 'wpb-js-composer js-comp-ver-'.WPB_VC_VERSION;
         $disable_responsive = WPBakeryVisualComposerSettings::get('not_responsive_css');
         if($disable_responsive!=='1') $classes[] = 'vc_responsive';
+        else $classes[] = 'vc_non_responsive';
         return $classes;
     }
 

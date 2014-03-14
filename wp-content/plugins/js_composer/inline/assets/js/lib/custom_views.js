@@ -202,7 +202,7 @@
       this.layout = _.reject(vc.shortcodes.where({parent_id: this.model.get('id')}), function(model){return model.get('deleted')}).length;
       this.$el.addClass('vc_layout_' + this.layout);
     },
-    convertRowColumns: function(layout) {
+    convertRowColumns: function(layout, builder) {
       if(!layout) return false;
       var view = this, columns_contents = [], new_model,
         columns = this.convertToWidthsArray(layout);
@@ -215,13 +215,13 @@
       _.each(columns, function(column){
         var prev_settings = columns_contents.shift();
         if(_.isObject(prev_settings)) {
-          new_model = vc.ShortcodesBuilder.create({shortcode: this.column_tag, parent_id: this.model.get('id'), order: vc.shortcodes.nextOrder(), params: _.extend({}, prev_settings.params, {width: column})}).last();
+          new_model = builder.create({shortcode: this.column_tag, parent_id: this.model.get('id'), order: vc.shortcodes.nextOrder(), params: _.extend({}, prev_settings.params, {width: column})}).last();
           _.each(prev_settings.shortcodes, function(shortcode){
             shortcode.save({parent_id: new_model.get('id'), order: vc.shortcodes.nextOrder()}, {silent: true});
             vc.layout_change_shortcodes.push(shortcode);
           }, this);
         } else {
-          new_model = vc.ShortcodesBuilder.create({shortcode: this.column_tag, parent_id: this.model.get('id'), order: vc.shortcodes.nextOrder(), params: {width: column}}).last();
+          new_model = builder.create({shortcode: this.column_tag, parent_id: this.model.get('id'), order: vc.shortcodes.nextOrder(), params: {width: column}}).last();
         }
       }, this);
       _.each(columns_contents, function(column) {
@@ -230,7 +230,7 @@
           vc.layout_change_shortcodes.push(shortcode);
         }, this);
       },this);
-      vc.ShortcodesBuilder.render(function(){
+      builder.render(function(){
         _.each(vc.layout_change_shortcodes, function(shortcode){
           shortcode.trigger('change:parent_id');
         });
@@ -393,8 +393,9 @@
     },
     addElement: function(e) {
       e && e.preventDefault();
-      vc.ShortcodesBuilder.create({shortcode: 'vc_tab', params: {tab_id: vc_guid() + '-' + this.tabsControls().find('li').length, title: window.i18nLocale.tab}, parent_id: this.model.get('id')});
-      vc.ShortcodesBuilder.render();
+      new vc.ShortcodesBuilder()
+            .create({shortcode: 'vc_tab', params: {tab_id: vc_guid() + '-' + this.tabsControls().find('li').length, title: window.i18nLocale.tab}, parent_id: this.model.get('id')})
+            .render();
     },
     setSorting: function() {
       vc.frame_window.vc_iframe.setTabsSorting(this);
@@ -489,9 +490,10 @@
       _.isObject(e) && e.preventDefault()  && e.stopPropagation();
       vc.clone_index = vc.clone_index / 10;
       var clone = this.model.clone(),
-          params = clone.get('params');
-      vc.CloneModel(this.model, this.model.get('parent_id'));
-      vc.ShortcodesBuilder.render();
+          params = clone.get('params'),
+          builder = new vc.ShortcodesBuilder();
+      vc.CloneModel(builder, this.model, this.model.get('parent_id'));
+      builder.render();
     }
   });
   window.InlineShortcodeView_vc_accordion = window.InlineShortcodeView_vc_row.extend({
@@ -530,8 +532,9 @@
     },
     addElement: function(e) {
       e && e.preventDefault();
-      vc.ShortcodesBuilder.create({shortcode: 'vc_accordion_tab', params: {title: window.i18nLocale.section}, parent_id: this.model.get('id')});
-      vc.ShortcodesBuilder.render();
+      new vc.ShortcodesBuilder()
+            .create({shortcode: 'vc_accordion_tab', params: {title: window.i18nLocale.section}, parent_id: this.model.get('id')})
+            .render();
     }
   });
   window.InlineShortcodeView_vc_accordion_tab = window.InlineShortcodeView_vc_tab.extend({

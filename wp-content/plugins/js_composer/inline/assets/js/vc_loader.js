@@ -5,18 +5,20 @@ var vc_iframe = {
   activities_list: [],
   scripts_to_load: false,
   loaded_script: {},
-  loaded_styles: {}
+  loaded_styles: {},
+  inline_scripts: []
 };
 (function($) {
   vc_iframe.showNoContent = function(show) {
     (show === false && $('#vc-no-content-helper').addClass('vc-not-empty')) || $('#vc-no-content-helper').removeClass('vc-not-empty');
   };
   vc_iframe.scrollTo = function(id) {
-    var $el, el_height, hidden = true, position_y,
+    var $el, el_height, hidden = true, position_y, position,
         window_height = $(window).height(),
         window_scroll_top = $(window).scrollTop();
     if(id && ($el = $('[data-model-id=' + id +']'))) {
-      position_y = $el.offset().top;
+      position = $el.offset();
+      if((position_y = position ? position.top : false) === false) return false;
       el_height = $el.height();
       if((position_y > window_scroll_top + window_height) ||
         (position_y + el_height < window_scroll_top)) {
@@ -190,6 +192,18 @@ var vc_iframe = {
     }
     vc_iframe.$custom_style.html(css)
   };
+  vc_iframe.addInlineScript = function(script) {
+    return this.inline_scripts.push(script)-1;
+  };
+  vc_iframe.loadInlineScripts = function() {
+    var script,i = 0;
+    while(this.inline_scripts[i]) {
+      $(this.inline_scripts[i]).insertAfter('.js_placeholder_' + i);
+      $('.js_placeholder_' + i).remove();
+      i++;
+    }
+    this.inline_scripts = [];
+  };
   vc_iframe.allowedLoadScript = function(src) {
     var script_url, i, scripts_string, scripts = [], scripts_to_add = [], ls_rc;
     if(src.match(/load\-scripts\.php/)) {
@@ -241,6 +255,7 @@ var vc_iframe = {
     }
     this.activities_list = [];
     this.collectScriptsData();
+    this.loadInlineScripts();
     return true;
   };
   vc_iframe.addScripts = function($elements) {

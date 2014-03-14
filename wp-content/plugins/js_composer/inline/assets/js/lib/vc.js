@@ -102,16 +102,16 @@ _.extend(vc, {
     _.each(vc.map, function (object) {
 
       if (_.isObject(object.as_parent) && _.isString(object.as_parent.only)) {
-        vc.shortcode_relevance['parent_only_' + object.base] = object.as_parent.only.split(',');
+        vc.shortcode_relevance['parent_only_' + object.base] = object.as_parent.only.replace(/\s/, '').split(',');
       }
       if (_.isObject(object.as_parent) && _.isString(object.as_parent.except)) {
-        vc.shortcode_relevance['parent_except_' + object.base] = object.as_parent.except.split(',');
+        vc.shortcode_relevance['parent_except_' + object.base] = object.as_parent.except.replace(/\s/, '').split(',');
       }
       if (_.isObject(object.as_child) && _.isString(object.as_child.only)) {
-        vc.shortcode_relevance['child_only_' + object.base] = object.as_child.only.split(',');
+        vc.shortcode_relevance['child_only_' + object.base] = object.as_child.only.replace(/\s/, '').split(',');
       }
       if (_.isObject(object.as_child) && _.isString(object.as_child.except)) {
-        vc.shortcode_relevance['child_except_' + object.base] = object.as_child.except.split(',');
+        vc.shortcode_relevance['child_except_' + object.base] = object.as_child.except.replace(/\s/, '').split(',');
       }
     });
     /**
@@ -137,7 +137,7 @@ _.extend(vc, {
     };
   };
 
-  vc.CloneModel = function (model, parent_id, child_of_clone) {
+  vc.CloneModel = function (builder, model, parent_id, child_of_clone) {
     var new_order = _.isBoolean(child_of_clone) && child_of_clone === true ? model.get('order') : parseFloat(model.get('order')) + vc.clone_index,
         params = _.extend({}, model.get('params')),
         tag = model.get('shortcode'),
@@ -150,12 +150,11 @@ _.extend(vc, {
           params: params
         };
     if(vc['cloneMethod_' + tag]) data = vc['cloneMethod_' + tag](data, model);
-    vc.ShortcodesBuilder.create(data);
-    var new_model = vc.ShortcodesBuilder.last();
-    var new_model_id = vc.ShortcodesBuilder.lastID();
+    builder.create(data);
+    var new_model = builder.last();
     if(!_.isBoolean(child_of_clone) || child_of_clone !== true) model.view.$el.addClass('vc-place-after');
     _.each(vc.shortcodes.where({parent_id:model.get('id')}), function (shortcode) {
-      vc.CloneModel(shortcode, new_model_id, true);
+      vc.CloneModel(builder, shortcode, new_model.get('id'), true);
     }, this);
     return new_model;
   };
@@ -303,7 +302,7 @@ _.extend(vc, {
     },
     changeParentId: function() {
       var parent_id = this.model.get('parent_id'), parent;
-      vc.ShortcodesBuilder.notifyParent(this.model.get('parent_id'));
+      vc.builder.notifyParent(this.model.get('parent_id'));
       if(parent_id === false) {
         app.placeElement(this.$el);
       } else {
@@ -330,7 +329,7 @@ _.extend(vc, {
     removeView: function(model) {
       this.remove();
       vc.setDataChanged();
-      vc.ShortcodesBuilder.notifyParent(this.model.get('parent_id'));
+      vc.builder.notifyParent(this.model.get('parent_id'));
       if(vc.active_panel.model && vc.active_panel.model.get('id') === model.get('id')) {
         vc.closeActivePanel();
       }
@@ -338,15 +337,15 @@ _.extend(vc, {
     },
     update: function() {
       this.beforeUpdate();
-      vc.ShortcodesBuilder.update(this.model);
+      vc.builder.update(this.model);
     },
     clone: function(e) {
-      var new_model;
+      var new_model, builder = new vc.ShortcodesBuilder();
       _.isObject(e) && e.preventDefault()  && e.stopPropagation();
       vc.clone_index = vc.clone_index / 10;
-      new_model = vc.CloneModel(this.model, this.model.get('parent_id'));
-      vc.ShortcodesBuilder.setResultMessage(window.sprintf(window.i18nLocale.inline_element_cloned, new_model.setting('name'), new_model.get('id')));
-      vc.ShortcodesBuilder.render();
+      new_model = vc.CloneModel(builder, this.model, this.model.get('parent_id'));
+      builder.setResultMessage(window.sprintf(window.i18nLocale.inline_element_cloned, new_model.setting('name'), new_model.get('id')));
+      builder.render();
     },
     getParam: function(param_name) {
       return _.isObject(this.model.get('params')) && !_.isUndefined(this.model.get('params')[param_name]) ? this.model.get('params')[param_name] : null;
@@ -415,15 +414,18 @@ _.extend(vc, {
     },
     addTextBlock: function(e) {
       e && e.preventDefault && e.preventDefault();
-      vc.ShortcodesBuilder
-        .create({shortcode: 'vc_row'})
-        .create({shortcode: 'vc_column', parent_id: vc.ShortcodesBuilder.lastID(), params: {width: '1/1'}})
-        .create({shortcode: 'vc_column_text', parent_id: vc.ShortcodesBuilder.lastID(), params: vc.getDefaults('vc_column_text')})
+      var builder = new vc.ShortcodesBuilder();
+      builder.create({shortcode: 'vc_row'})
+        .create({shortcode: 'vc_column', parent_id: builder.lastID(), params: {width: '1/1'}})
+        .create({shortcode: 'vc_column_text', parent_id: builder.lastID(), params: vc.getDefaults('vc_column_text')})
         .render();
-      vc.edit_element_block_view.render(vc.ShortcodesBuilder.last());
+      vc.edit_element_block_view.render(builder.last());
     },
     scrollTo: function(model) {
       vc.frame_window.vc_iframe.scrollTo(model.get('id'));
+    },
+    addInlineScript: function(script) {
+      return vc.frame_window.vc_iframe.addInlineScript(script);
     }
   });
   vc.View = Backbone.View.extend({
@@ -496,7 +498,7 @@ _.extend(vc, {
     },
     save: function(e) {
       _.isObject(e) && e.preventDefault();
-      vc.ShortcodesBuilder.save($(e.currentTarget).data('changeStatus'));
+      vc.builder.save($(e.currentTarget).data('changeStatus'));
     },
     resizeFrame: function(e) {
       var $control = $(e.currentTarget), current;
@@ -571,9 +573,10 @@ _.extend(vc, {
     createRow: function(e) {
      _.isObject(e) && e.preventDefault();
       // e.stopPropagation();
-      vc.ShortcodesBuilder
+      var builder = new vc.ShortcodesBuilder();
+      builder
         .create({shortcode: 'vc_row'})
-        .create({shortcode: 'vc_column', parent_id: vc.ShortcodesBuilder.lastID(), params: {width: '1/1'}})
+        .create({shortcode: 'vc_column', parent_id: builder.lastID(), params: {width: '1/1'}})
         .render();
     },
     addElement: function(e) {
@@ -595,7 +598,8 @@ _.extend(vc, {
     },
     saveRowOrder: function() {
       _.defer(function (app) {
-        var $rows = vc.$page.find('> [data-tag=vc_row]');
+        var $rows = vc.$page.find('> [data-tag=vc_row]'),
+            builder = new vc.ShortcodesBuilder();
         $rows.each(function (key, value) {
           var $this = $(this);
           if($this.is('.droppable')) {
@@ -605,9 +609,9 @@ _.extend(vc, {
             } else if(key+1 != $rows.length) {
               vc.$page.find('> [data-tag=vc_row]:eq(' + (key - 1) +')').addClass('vc-place-after')
             }
-            vc.ShortcodesBuilder
+            builder
               .create({shortcode: 'vc_row', order: key})
-              .create({shortcode: 'vc_column', parent_id: vc.ShortcodesBuilder.lastID(), params: {width: '1/1'}})
+              .create({shortcode: 'vc_column', parent_id: builder.lastID(), params: {width: '1/1'}})
               .render();
           } else {
             vc.shortcodes.get($this.data('modelId')).save({'order':key}, {silent: true});
@@ -640,8 +644,8 @@ _.extend(vc, {
               model.save({order: key, parent_id: current_parent}, {silent: true});
 
               if(prev_parent!==current_parent) {
-                vc.ShortcodesBuilder.notifyParent(current_parent);
-                vc.ShortcodesBuilder.notifyParent(prev_parent);
+                vc.builder.notifyParent(current_parent);
+                vc.builder.notifyParent(prev_parent);
               }
             }
 

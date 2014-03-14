@@ -1,8 +1,8 @@
 @import (reference) "../lib/bootstrap/less/bootstrap.less";
 // Reset
-@import "../lib/bootstrap/less/normalize.less";
-@import "../lib/bootstrap/less/print.less";
-//@import (reference) "_variables.less";
+//@import "../lib/bootstrap/less/normalize.less";
+//@import "../lib/bootstrap/less/print.less";
+
 //From "bootstrap_less/scaffolding.less";
 // Clearfix
 // --------
@@ -100,24 +100,45 @@
 }
 .wpb_row {
   .make-row();
-  // remove margins for in bootstrap 2
+  // remove margins in bootstrap 2
   .vc_span1, .vc_span2, .vc_span3, .vc_span4, .vc_span5, .vc_span6, .vc_span7, .vc_span8, .vc_span9, .vc_span10, .vc_span11, .vc_span12 {
     margin-left: 0;
   }
-  //
-  //TODO: xs, lg, push, pulls
-  .vc_span1 {  .make-md-column(1); }
-  .vc_span2 {  .make-md-column(2); }
-  .vc_span3 {  .make-md-column(3); }
-  .vc_span4 {  .make-md-column(4); }
-  .vc_span5 {  .make-md-column(5); }
-  .vc_span6 {  .make-md-column(6); }
-  .vc_span7 {  .make-md-column(7); }
-  .vc_span8 {  .make-md-column(8); }
-  .vc_span9 {  .make-md-column(9); }
-  .vc_span10 { .make-md-column(10); }
-  .vc_span11 { .make-md-column(11); }
-  .vc_span12 { .make-md-column(12); }
+}
+
+.vc_non_responsive {
+  //If "Disable responsive content elements" is checked in VC Settings
+  .wpb_row {
+    .vc_span1 {  .make-xs-column(1); }
+    .vc_span2 {  .make-xs-column(2); }
+    .vc_span3 {  .make-xs-column(3); }
+    .vc_span4 {  .make-xs-column(4); }
+    .vc_span5 {  .make-xs-column(5); }
+    .vc_span6 {  .make-xs-column(6); }
+    .vc_span7 {  .make-xs-column(7); }
+    .vc_span8 {  .make-xs-column(8); }
+    .vc_span9 {  .make-xs-column(9); }
+    .vc_span10 { .make-xs-column(10); }
+    .vc_span11 { .make-xs-column(11); }
+    .vc_span12 { .make-xs-column(12); }
+  }
+}
+
+.vc_responsive {
+  .wpb_row {
+    .vc_span1 {  .make-sm-column(1); }
+    .vc_span2 {  .make-sm-column(2); }
+    .vc_span3 {  .make-sm-column(3); }
+    .vc_span4 {  .make-sm-column(4); }
+    .vc_span5 {  .make-sm-column(5); }
+    .vc_span6 {  .make-sm-column(6); }
+    .vc_span7 {  .make-sm-column(7); }
+    .vc_span8 {  .make-sm-column(8); }
+    .vc_span9 {  .make-sm-column(9); }
+    .vc_span10 { .make-sm-column(10); }
+    .vc_span11 { .make-sm-column(11); }
+    .vc_span12 { .make-sm-column(12); }
+  }
 }
 
 //Helper classes
@@ -441,7 +462,7 @@
     width: 50%;
     .vc_sep_line {
       height: 1px;
-      border-top: 1px solid @vc_grey;
+      border-top: 1px solid @grey;
       display: block;
       position: relative;
       top: 1px;
@@ -452,8 +473,8 @@
     &double {
       height: 3px;
       .vc_sep_line {
-        border-bottom: 1px solid @vc_grey;
-        border-top: 1px solid @vc_grey;
+        border-bottom: 1px solid @grey;
+        border-top: 1px solid @grey;
         height: 3px;
       }
     }

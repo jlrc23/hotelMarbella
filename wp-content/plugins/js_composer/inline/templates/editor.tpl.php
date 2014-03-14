@@ -58,7 +58,7 @@ $can_publish = current_user_can($this->post_type->cap->publish_posts);
             </li>
             <li class="line"></li>
             <li  class="vc-show-mobile">
-                <button data-url="<?php echo get_edit_post_link( $this->post_id ) ?>" class="btn btn-default navbar-btn btn-sm vc_button_cancel" id="vc-button-cancel" title="<?php _e("Cancel all changes and return to WP dashboard", 'js_composer') ?>"><?php _e('WP dashboard', 'js_composer') ?></button>
+                <button data-url="<?php echo get_edit_post_link( $this->post_id ) ?>" class="btn btn-default navbar-btn btn-sm vc_button_cancel" id="vc-button-cancel" title="<?php _e("Cancel all changes and return to WP dashboard", 'js_composer') ?>"><?php _e('Backend editor', 'js_composer') ?></button>
                 <?php if(!in_array( $this->post->post_status, array('publish', 'future', 'private') )): ?>
                     <?php if($this->post->post_status === 'draft'): ?>
                 <button type="button" class="btn btn-default navbar-btn btn-sm vc_button_save_draft" id="vc-button-save-draft" title="<?php esc_attr_e("Save draft", 'js_composer') ?>"><?php _e('Save draft', 'js_composer') ?></button>
@@ -269,7 +269,7 @@ $can_publish = current_user_can($this->post_type->cap->publish_posts);
                     <a class="vc-layout-btn <?php echo $layout['icon_class']
                                                         .'" data-cells="'.$layout['cells']
                                                         .'" data-cells-mask="'.$layout['mask']
-                                                        .'" title="'.$layout['title'] ?>"></a>
+                                                        .'" title="'.$layout['title'] ?>"><span class="icon"></span></a>
                     <?php endforeach; ?>
                 <span class="description clear"><?php _e("Choose row layout from predefined options.", "js_composer"); ?></span>
             </div>
@@ -381,7 +381,7 @@ $can_publish = current_user_can($this->post_type->cap->publish_posts);
         vc_mapper = <?php echo json_encode(WPBMap::getShortCodes()) ?>;
 </script>
 
-<script type="text/html" id="vc-template-post-content">
+<div data-type="text/html" id="vc-template-post-content" style="display: none;">
     <?php $this->getPageShortcodes() ?>
     <div id="vc-no-content-helper" class="vc-no-content-helper">
         <span class="icon"></span>
@@ -394,7 +394,7 @@ $can_publish = current_user_can($this->post_type->cap->publish_posts);
         </div>
 
     </div>
-</script>
+</div>
 <script type="text/javascript">
     vc_post_shortcodes = <?php echo json_encode($this->post_shortcodes) ?>
 </script>

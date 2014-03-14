@@ -53,7 +53,7 @@
     },
     initialize:function () {
       this.bind('remove', this.removeChildren, this);
-      this.bind('remove', vc.ShortcodesBuilder.checkNoContent);
+      this.bind('remove', vc.builder.checkNoContent);
     },
     comparator:function (model) {
       return model.get('order');

@@ -58,6 +58,16 @@ var vc = {filters:{templates:[]}, addTemplateFilter:function (callback) {
                 return _.isUndefined(value) ? value : vc_wpautop(value);
             }
         },
+        textarea_safe: {
+          parse:function (param) {
+            var $field = this.content().find('.wpb_vc_param_value[name=' + param.param_name + ']'),
+                new_value = $field.val();
+            return new_value.match(/"/) ? '#E-8_' + base64_encode(rawurlencode(new_value)) : new_value;
+          },
+          render:function (param, value) {
+            return value && value.match(/^#E\-8_/) ? $("<div/>").text(rawurldecode(base64_decode(value.replace(/^#E\-8_/, '')))).html() : value;
+          }
+        },
         checkbox:{
             parse:function (param) {
                 var arr = [],

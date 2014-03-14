@@ -44,7 +44,7 @@ if(_.isUndefined(vc)) var vc = {};
     vc.frame.render();
     // }}
     // Build content of the page
-    vc.ShortcodesBuilder.buildFromContent();
+    vc.builder.buildFromContent();
     vc.removePreLoader();
   };
 

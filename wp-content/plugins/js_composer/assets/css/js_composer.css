@@ -689,10 +689,9 @@ div.wpb_ui-state-active .wpb_ui-state-active {
 .wpb_vc_accordion_tab > .controls_column,
 .wpb_vc_column_inner > .controls_column {
   text-align: center;
-  position: absolute;
+  position: relative;
   width: 100%;
-  top: -8px;
-  left: 0;
+  top: 4px;
   line-height: 1px;
 }
 .wpb_vc_column > .controls_column a,
@@ -735,21 +734,12 @@ div.wpb_ui-state-active .wpb_ui-state-active {
 .wpb_vc_accordion_tab > .bottom-controls,
 .wpb_vc_column_inner > .bottom-controls {
   top: auto;
-  bottom: -8px;
+  bottom: 4px;
 }
 /* Tabs, Tour, Accordion controls position */
-.wpb_vc_tab > .controls_column,
-.wpb_vc_accordion_tab > .controls_column {
-  top: 3px;
-}
 .wpb_vc_tab > .bottom-controls,
 .wpb_vc_accordion_tab > .bottom-controls {
   top: auto;
-  bottom: 3px;
-}
-.wpb_vc_tab .wpb_column_container,
-.wpb_vc_accordion_tab .wpb_column_container {
-  padding: 20px 4px 23px;
 }
 .wpb_vc_tab .empty_container,
 .wpb_vc_accordion_tab .empty_container {
@@ -1836,17 +1826,12 @@ ul.wpb-content-layouts-container,
 /* Add element grid icons
 ---------------------------------------------------------- */
 .modal-header .close {
-  margin-top: -10px;
-  right: -10px;
+  z-index: 5;
 }
 #vc_elements_name_filter {
-  position: absolute;
   padding: 6px 6px 4px 25px;
-  top: -5px;
-  right: 0px;
-  width: 175px;
-  background: #ffffff url(../vc/search.png) no-repeat 6px 5px;
-  z-index: 1;
+  width: 210px;
+  background: #ffffff url(../vc/search.png) no-repeat 8px 10px;
 }
 .wpb_bootstrap_modals .vc-element-icon {
   background-image: url(../vc/elements_icons/sprite.png);

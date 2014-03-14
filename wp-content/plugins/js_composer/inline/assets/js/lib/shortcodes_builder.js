@@ -8,11 +8,19 @@
  * ========================================================= */
 (function($) {
   if(_.isUndefined(window.vc)) window.vc = {};
-  vc.ShortcodesBuilder = {
+  vc.ShortcodesBuilder = function(models) {
+    this.models = models || [];
+    this.is_build_complete = true;
+    return this;
+  };
+  vc.ShortcodesBuilder.prototype = {
     _ajax: false,
-    models: [],
     message: false,
+    isBuildComplete: function() {
+      return this.is_build_complete;
+    },
     create: function(attributes) {
+      this.is_build_complete = false;
       this.models.push(vc.shortcodes.create(attributes));
       return this;
     },
@@ -26,8 +34,11 @@
       this.build(shortcodes, callback);
     },
     build: function(shortcodes, callback) {
+      var that = this;
       this.ajax({action: 'vc_load_shortcode', shortcodes: shortcodes}).done(function(html){
-        $(html).each(this._renderBlockCallback);
+        _.each($(html), function(block){
+          this._renderBlockCallback(block);
+        }, this);
         if(_.isFunction(callback)) callback(html);
         vc.frame.setSortable();
         vc.activity = false;
@@ -36,7 +47,20 @@
         this.last() && vc.frame.scrollTo(this.first());
         this.models = [];
         this.showResultMessage();
+        this.is_build_complete = true;
       });
+    },
+    lastID: function() {
+      return this.models.length ? _.last(this.models).get('id') : '';
+    },
+    last: function() {
+      return this.models.length ? _.last(this.models) : false;
+    },
+    firstID: function() {
+      return this.models.length ? _.first(this.models).get('id') : '';
+    },
+    first: function() {
+      return this.models.length ? _.first(this.models) : false;
     },
     buildFromContent: function() {
       _.each(vc.post_shortcodes, function(shortcode){
@@ -51,7 +75,7 @@
           from_content: true
         });
         $block.attr('data-model-id', model.get('id'));
-        this._renderBlockCallback.call($block.get(0));
+        this._renderBlockCallback($block.get(0));
       }, this);
       vc.frame.setSortable();
       this.checkNoContent();
@@ -72,25 +96,33 @@
             parent_id: $parent.hasClass('vc-element') ? $parent.data('modelId') : false,
             default_content: true
           });
-        this._renderBlockCallback.call($block.get(0));
+        this._renderBlockCallback($block.get(0));
       }, this);
       vc.frame.setSortable();
       this.checkNoContent();
       vc.frame_window.vc_iframe.loadScripts();
     },
-    _renderBlockCallback: function() {
-      var $this = $(this), $html, model;
+    _renderBlockCallback: function(block) {
+      var $this = $(block), $html, model;
       if($this.data('type')==='files') {
         vc.frame_window.vc_iframe.addScripts($this.find('script[src],link'));
       } else {
         model = vc.shortcodes.get($this.data('modelId'));
         $html = $this.is('[data-type=element]') ? $($this.html()) : $this;
-        model && model.get('shortcode') && vc.ShortcodesBuilder.renderShortcode($html, model);
+        model && model.get('shortcode') && this.renderShortcode($html, model);
       }
       vc.setFrameSize();
     },
     renderShortcode: function($html, model) {
-      var view_name = this.getView(model);
+      var match, view_name = this.getView(model), inner_html = $html.html(), update_inner,
+          js_re = /(<script\b[^>]+src[^>]+>|<script\b[^>]*>([\s\S]*?)<\/script>)/gm;
+      vc.last_inner = inner_html;
+      while ((match = js_re.exec(inner_html)) != null) {
+          var key = vc.frame.addInlineScript(match[0]);
+          inner_html = inner_html.replace(match[0], '<span class="js_placeholder_' + key +'"></span>');
+        update_inner = true;
+      }
+      if(update_inner) $html.html(inner_html);
       !model.get('from_content') && this.placeContainer($html, model);
       model.view = new view_name({model: model, el: $html}).render();
       this.notifyParent(model.get('parent_id'));
@@ -100,11 +132,7 @@
       var view = model.setting('is_container') || model.setting('as_parent') ? InlineShortcodeViewContainer : InlineShortcodeView;
       if(_.isObject(window['InlineShortcodeView' + '_' + model.get('shortcode')])) {
         view = window['InlineShortcodeView' + '_' + model.get('shortcode')];
-      } /*
-      else if(_.isString(vc.getMapped(model.get('shortcode')).js_view) && vc.getMapped(model.get('shortcode')).js_view.length && window[vc.getMapped(model.get('shortcode')).js_view]) {
-        view = window[vc.getMapped(model.get('shortcode')).js_view];
       }
-      */
       return view;
     },
     update: function(model) {
@@ -112,18 +140,21 @@
       vc.setDataChanged();
       this.ajax({action: 'vc_load_shortcode', shortcodes: [{id: model.get('id'), string: shortcode, tag: model.get('shortcode')}]})
         .done(function(html){
-          var old_view = model.view,
-            $html = $(html);
-          $html.each(this._renderBlockCallback);
-          model.view.$el.insertAfter(old_view.$el);
-          if(vc.shortcodes.where({parent_id: model.get('id')}).length) {
-            old_view.content().find('> *').appendTo(model.view.content());
+          var old_view = model.view;
+          _.each($(html), function(block){
+            this._renderBlockCallback(block);
+          }, this);
+          if(model.view) {
+            model.view.$el.insertAfter(old_view.$el);
+            if(vc.shortcodes.where({parent_id: model.get('id')}).length) {
+              old_view.content().find('> *').appendTo(model.view.content());
+            }
+            old_view.remove();
+            vc.frame_window.vc_iframe.loadScripts();
+            model.view.changed();
+            vc.frame.setSortable();
+            model.view.updated();
           }
-          old_view.remove();
-          vc.frame_window.vc_iframe.loadScripts();
-          model.view.changed();
-          vc.frame.setSortable();
-          model.view.updated();
         });
     },
     ajax: function(data, url) {
@@ -134,18 +165,6 @@
         data: _.extend({post_id: vc.post_id, vc_inline: true}, data),
         context: this
       });
-    },
-    lastID: function() {
-      return this.models.length ? _.last(this.models).get('id') : '';
-    },
-    last: function() {
-      return this.models.length ? _.last(this.models) : false;
-    },
-    firstID: function() {
-      return this.models.length ? _.first(this.models).get('id') : '';
-    },
-    first: function() {
-      return this.models.length ? _.first(this.models) : false;
     },
     notifyParent: function(parent_id) {
       var parent = vc.shortcodes.get(parent_id);
@@ -213,7 +232,7 @@
           user_ID: $('#user-id').val(),
           content: string,
           post_ID: vc.post_id,
-          post_custom_css: vc.$custom_css.val()
+          wpb_vc_post_custom_css: vc.$custom_css.val()
         };
       if(status) {
         data.post_status = status;
@@ -297,4 +316,5 @@
       this.message = false;
     }
   };
+  vc.builder = new vc.ShortcodesBuilder();
 })(window.jQuery);

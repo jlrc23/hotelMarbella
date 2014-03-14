@@ -1,0 +1,4876 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: U-Design WP Theme\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-02-27 13:57-0500\n"
+"PO-Revision-Date: 2014-02-27 13:57-0500\n"
+"Last-Translator: Andon <andon.design@gmail.com>\n"
+"Language-Team:  <afk.hamed@yahoo.com>\n"
+"Language: fa_IR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _e;__;esc_attr__;esc_attr_e;esc_html__;esc_html_e;"
+"_n_noop\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../404.php:17
+msgid ""
+"Oops..., I cannot find that page you are looking for, sorry... (Error 404)"
+msgstr ""
+"با عرض پوزش، من نمی توانم برگه ای را که شما به دنبال آن هستید پیدا کنم، "
+"ببخشید... (خطای 404)"
+
+#: ../404.php:20
+msgid "Let me help you find it:"
+msgstr "اجازه دهید که در پیدا کردن آن به شما کمک کنم:"
+
+#: ../404.php:23
+msgid "<strong>Search</strong> for it:"
+msgstr "<strong>جست و جو</strong> برای آن:"
+
+#: ../404.php:27
+msgid ""
+"<strong>If you typed in a URL...</strong> check the spelling and try "
+"reloading the page."
+msgstr ""
+"<strong>اگر شما یک آدرس را وارد کرده اید</strong> آنرا بررسی کنید و صفحه را "
+"مجددا بارگذاری کنید."
+
+#: ../404.php:30
+#, php-format
+msgid "<strong>Start over again</strong> with the %1$sHomepage%2$s."
+msgstr "دوباره از %1$sصفحه اصلی%2$s شروع کنید."
+
+#: ../archive.php:68
+#, php-format
+msgid ""
+"<h2 class='center'>Sorry, but there aren't any posts in the %s category yet."
+"</h2>"
+msgstr ""
+"<h2 class='center'>ببخشید، ولی هیچ نوشته ای در دسته %s وجود ندارد.</h2>"
+
+#: ../archive.php:70
+msgid "<h2>Sorry, but there aren't any posts with this date.</h2>"
+msgstr ""
+"<h2 class='center'>ببخشید، ولی هیچ نوشته ای با این تاریخ وجود ندارد.</h2>"
+
+#: ../archive.php:73
+#, php-format
+msgid "<h2 class='center'>Sorry, but there aren't any posts by %s yet.</h2>"
+msgstr "<h2 class='center'>ببخشید، ولی هیچ نوشته ای توسط %s وجود ندارد.</h2>"
+
+#: ../archive.php:75
+msgid "<h2 class='center'>No posts found.</h2>"
+msgstr "<h2 class='center'>هیچ نوشته ای پیدا نشد.</h2>"
+
+#: ../archives.php:28 ../image.php:31 ../page-FullWidth.php:22
+#: ../single-Portfolio.php:24 ../single.php:36
+msgid "<p class=\"serif\">Read the rest of this entry &raquo;</p>"
+msgstr "<p class=\"serif\">خواندن ادامه این نوشته &laquo;</p>"
+
+#: ../archives.php:38
+msgid "Archives by Year:"
+msgstr "آرشیو سالانه"
+
+#: ../archives.php:43
+msgid "Archives by Month:"
+msgstr "آرشیو ماهانه"
+
+#: ../archives.php:48
+msgid "Archives by Subject:"
+msgstr "آرشیو موضوعی"
+
+#: ../author.php:17
+msgid "About:"
+msgstr "درباره:"
+
+#: ../author.php:20
+msgid "Website:"
+msgstr "وبسایت:"
+
+#: ../author.php:21
+msgid "Profile:"
+msgstr "شناسنامه:"
+
+#: ../author.php:25
+msgid "Posts by"
+msgstr "نوشته های"
+
+#: ../author.php:45
+msgid "No posts by this author."
+msgstr "این نویسنده نوشته ای ندارد."
+
+#: ../comments.php:13
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+"این نوشته با رمز محافظت شده است. برای نمایش دیدگاه‌ها رمز خود را وارد کنید."
+
+#: ../comments.php:23
+msgid "No Responses"
+msgstr "بدون پاسخ"
+
+#: ../comments.php:23 ../functions.php:2123 ../sitemap.php:58
+msgid "1 Comment"
+msgstr "1 نظر"
+
+#: ../comments.php:23 ../functions.php:2124 ../sitemap.php:58
+msgid "% Comments"
+msgstr "% نظر"
+
+#: ../comments.php:46
+msgid "Leave a Reply"
+msgstr "نظر شما"
+
+#: ../comments.php:46
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr "پاسخ دادن به %s"
+
+#: ../comments.php:52
+#, php-format
+msgid "<p>You must be <a href=\"%s\">logged in</a> to post a comment.</p>"
+msgstr "<p>شما برای ارسال یک دیدگاه باید <a href=\"%s\">وارد شوید</a>.</p>"
+
+#: ../comments.php:56
+#, php-format
+msgid "Logged in as <a href=\"%1$s/wp-admin/profile.php\">%2$s</a>."
+msgstr ""
+"شما با نام روبرو وارد شده اید: <a href=\"%1$s/wp-admin/profile.php\">%2$s</"
+"a>."
+
+#: ../comments.php:56
+msgid "Log out of this account"
+msgstr "بیرون رفتن از‌این حساب کاربری"
+
+#: ../comments.php:56
+msgid "Log out &raquo;"
+msgstr "بیرون رفتن &raquo;"
+
+#: ../comments.php:60 ../page-Contact.php:190
+msgid "Name"
+msgstr "نام"
+
+#: ../comments.php:60 ../comments.php:64 ../page-Contact.php:198
+#: ../page-Contact.php:211
+msgid "(required)"
+msgstr "(الزامی)"
+
+#: ../comments.php:64
+msgid "Mail (will not be published)"
+msgstr "ایمیل (منتشر نخواهد شد)"
+
+#: ../comments.php:68
+msgid "Website"
+msgstr "وبسایت"
+
+#: ../comments.php:73
+msgid "Submit Comment"
+msgstr "ارسال دیدگاه"
+
+#: ../comments.php:81
+msgid "Comments are closed."
+msgstr "دیدگاه ها بسته شده اند."
+
+#: ../functions.php:197
+msgid "Type here to search"
+msgstr ""
+
+#: ../functions.php:211
+#, fuzzy
+msgid "Navigation"
+msgstr "فهرست اصلی"
+
+#: ../functions.php:241
+msgid "Primary Navigation"
+msgstr "فهرست اصلی"
+
+#: ../functions.php:268 ../sitemap.php:33 ../scripts/breadcrumbs.php:39
+msgid "Home"
+msgstr "خانه"
+
+#: ../functions.php:284
+msgid "Search for:"
+msgstr "جست و جو برای:"
+
+#: ../functions.php:286 ../scripts/breadcrumbs.php:109
+msgid "Search"
+msgstr "جست و جو"
+
+#: ../functions.php:400 ../functions.php:409
+#, php-format
+msgid "Go back to %s"
+msgstr "بازگشت به %s"
+
+#: ../functions.php:456
+#, php-format
+msgid ""
+"<span class=\"time\">%1$s</span> on <a href=\"#comment-%2$s\" title=\"\">"
+"%3$s</a>"
+msgstr ""
+"<span class=\"time\">%1$s</span> در <a href=\"#comment-%2$s\" title=\"\">"
+"%3$s</a>"
+
+#: ../functions.php:456
+msgid "g:i a"
+msgstr "g:i a"
+
+#: ../functions.php:456
+msgid "F j, Y"
+msgstr "j F Y"
+
+#: ../functions.php:457
+msgid "edit"
+msgstr "ویرایش"
+
+#: ../functions.php:463
+msgid "Your comment is awaiting moderation."
+msgstr "نظر شما در انتظار تایید است."
+
+#: ../functions.php:526 ../functions.php:1009
+#: ../widgets/latestPost-widget.php:63 ../widgets/latestPost-widget.php:141
+msgid "Read more"
+msgstr "بیشتر بخوانید"
+
+#: ../functions.php:545 ../functions.php:574 ../functions.php:603
+#: ../functions.php:632 ../functions.php:661
+msgid "Read more..."
+msgstr "بیشتر بخوانید..."
+
+#: ../functions.php:698
+msgid "Top of Page"
+msgstr "بالای صفحه"
+
+#: ../functions.php:698 ../functions.php:2168
+msgid "Back to Top"
+msgstr "بازگشت به بالا"
+
+#: ../functions.php:1002 ../widgets/latestPost-widget.php:141
+msgid "Latest Posts"
+msgstr "آخرین پست ها"
+
+#: ../functions.php:1021
+#, php-format
+msgid ""
+"%s: Widget class not found. Make sure this widget exists and the class name "
+"is correct"
+msgstr ""
+"%s: کلاس ابزارک پیدا نشد. اطمینان حاصل کنید که ابزارک موجود است و نام کلاس "
+"صحیح است."
+
+#: ../functions.php:1202
+msgid "A widget area, used as a sidebar for regular pages."
+msgstr "یک ناحیه ابزارک که به عنوان سایدبار برگه های عادی استفاده می شود."
+
+#: ../functions.php:1211
+msgid "A widget area, used as a sidebar for the Portfolio section."
+msgstr "یک ناحیه ابزارک که به عنوان سایدبار بخش نمونه کار استفاده می شود."
+
+#: ../functions.php:1220
+msgid "A widget area, used as a sidebar for the Blog/News section."
+msgstr "یک ناحیه ابزارک که به عنوان سایدبار بخش بلاگ/اخبار استفاده می شود."
+
+#: ../functions.php:1229
+msgid "A widget area, used as a sidebar for the Contact page."
+msgstr "یک ناحیه ابزارک که به عنوان سایدبار برگه تماس استفاده می شود."
+
+#: ../functions.php:1238
+msgid "A widget area, used as a sidebar for the Sitemap page."
+msgstr "یک ناحیه ابزارک که به عنوان سایدبار برگه نقشه سایت استفاده می شود."
+
+#: ../functions.php:1247
+msgid "Home Page Before Content"
+msgstr "محتوای قبل از صفحه اصلی"
+
+#: ../functions.php:1249
+msgid "A widget area positioned just above the Home Page Main Content area."
+msgstr "یک ناحیه ابزارک که درست بالای ناحیه محتوای صفحه اصلی واقع شده است."
+
+#: ../functions.php:1258 ../udesign_options_page.php:1612
+#: ../udesign_options_page.php:1614
+msgid "Home Page Column 1"
+msgstr "ستون 1 صفحه اصلی"
+
+#: ../functions.php:1260
+msgid "A widget area, used as the 1st column in the Main Content area."
+msgstr "یک ناحیه ابزارک که در ستون اول ناحیه محتوای اصلی استفاده می شود."
+
+#: ../functions.php:1268
+msgid "Home Page Column 2"
+msgstr "ستون 2 صفحه اصلی"
+
+#: ../functions.php:1270
+msgid "A widget area, used as the 2nd column in the Main Content area."
+msgstr "یک ناحیه ابزارک که در ستون دوم ناحیه محتوای اصلی استفاده می شود."
+
+#: ../functions.php:1278
+msgid "Home Page Column 3"
+msgstr "ستون 3 صفحه اصلی"
+
+#: ../functions.php:1280
+msgid "A widget area, used as the 3rd column in the Main Content area."
+msgstr "یک ناحیه ابزارک که در ستون سوم ناحیه محتوای اصلی استفاده می شود."
+
+#: ../functions.php:1288
+msgid "Home Page Column 4"
+msgstr "ستون 4 صفحه اصلی"
+
+#: ../functions.php:1290
+msgid "A widget area, used as the 4th column in the Main Content area."
+msgstr "یک ناحیه ابزارک که در ستون چهارم ناحیه محتوای اصلی استفاده می شود."
+
+#: ../functions.php:1299
+msgid "Home Page After Content Row 1"
+msgstr "ردیف 1 محتوای بعد از صفحه اصلی"
+
+#: ../functions.php:1301
+msgid "A widget area positioned just below the Home Page Main Content area."
+msgstr "یک ناحیه ابزارک که درست پایین ناحیه محتوای اصلی واقع شده است."
+
+#: ../functions.php:1310
+msgid "Home Page After Content Row 2"
+msgstr "ردیف 2 محتوای بعد از صفحه اصلی"
+
+#: ../functions.php:1312
+msgid "A widget area positioned just above the Bottom Widget area."
+msgstr "یک ناحیه ابزارک که درست بالای ناحیه ابزارک پایین واقع شده است."
+
+#: ../functions.php:1321
+msgid "Bottom 1"
+msgstr "پایین 1"
+
+#: ../functions.php:1323
+msgid ""
+"A widget area, used as the 1st column in the Bottom area (just above the "
+"footer)."
+msgstr ""
+"یک ناحیه ابزارک که در ستون اول ناحیه پایین استفاده می شود (درست بالای ته "
+"برگ)."
+
+#: ../functions.php:1331
+msgid "Bottom 2"
+msgstr "پایین 2"
+
+#: ../functions.php:1333
+msgid ""
+"A widget area, used as the 2nd column in the Bottom area (just above the "
+"footer)."
+msgstr ""
+"یک ناحیه ابزارک که در ستون دوم ناحیه پایین استفاده می شود (درست بالای ته "
+"برگ)."
+
+#: ../functions.php:1341
+msgid "Bottom 3"
+msgstr "پایین 3"
+
+#: ../functions.php:1343
+msgid ""
+"A widget area, used as the 3rd column in the Bottom area (just above the "
+"footer)."
+msgstr ""
+"یک ناحیه ابزارک که در ستون سوم ناحیه پایین استفاده می شود (درست بالای ته "
+"برگ)."
+
+#: ../functions.php:1351
+msgid "Bottom 4"
+msgstr "پایین 4"
+
+#: ../functions.php:1353
+msgid ""
+"A widget area, used as the 4th column in the Bottom area (just above the "
+"footer)."
+msgstr ""
+"یک ناحیه ابزارک که در ستون چهارم ناحیه پایین استفاده می شود (درست بالای ته "
+"برگ)."
+
+#: ../functions.php:1362
+msgid "A widget area, used as a sidebar for the Page Template 2."
+msgstr "یک ناحیه ابزارک که به عنوان سایدبار برگه قالب 2 استفاده می شود."
+
+#: ../functions.php:1371
+msgid "A widget area, used as a sidebar for the Page Template 3."
+msgstr "یک ناحیه ابزارک که به عنوان سایدبار برگه قالب 3 استفاده می شود."
+
+#: ../functions.php:1380
+msgid "A widget area, used as a sidebar for the Page Template 4."
+msgstr "یک ناحیه ابزارک که به عنوان سایدبار برگه قالب 4 استفاده می شود."
+
+#: ../functions.php:1389
+msgid "A widget area, used as a sidebar for the Page Template 5."
+msgstr "یک ناحیه ابزارک که به عنوان سایدبار برگه قالب 5 استفاده می شود."
+
+#: ../functions.php:1398
+msgid "A widget area, used as a sidebar for the Page Template 6."
+msgstr "یک ناحیه ابزارک که به عنوان سایدبار برگه قالب 6 استفاده می شود."
+
+#: ../functions.php:1407
+msgid "A widget area, used as a sidebar for the Page Template 7."
+msgstr "یک ناحیه ابزارک که به عنوان سایدبار برگه قالب 7 استفاده می شود."
+
+#: ../functions.php:1416
+msgid "A widget area, used as a sidebar for the Page Template 8."
+msgstr "یک ناحیه ابزارک که به عنوان سایدبار برگه قالب 8 استفاده می شود."
+
+#: ../functions.php:1425
+msgid "Top Area Social Media"
+msgstr "آیکون های اجتماعی ناحیه بالا"
+
+#: ../functions.php:1427
+msgid ""
+"A widget area positioned in the top right corner of the site designated for "
+"social media links and icons."
+msgstr ""
+"یک ناحیه ابزارک که در گوشه بالا چپ سایت واقع و برای لینک ها و آیکون های "
+"اجتماعی تعیین شده است."
+
+#: ../functions.php:1737
+#, php-format
+msgid "Archive for the <em>%s</em> Category"
+msgstr "آرشیو برای دسته <em>%s</em>"
+
+#: ../functions.php:1740
+#, php-format
+msgid "Search Results for <em>%s</em>"
+msgstr "نتایج جست و جو برای <em>%s</em>"
+
+#: ../functions.php:1742
+msgid "Page Not Found (Error 404)"
+msgstr "برگه پیدا نشد (خطای 404)"
+
+#: ../functions.php:1744
+#, php-format
+msgid "Posts Tagged <em>%s</em>"
+msgstr "برچسب پست <em>%s</em>"
+
+#: ../functions.php:1746 ../functions.php:1748 ../functions.php:1750
+#, php-format
+msgid "Archive for %s"
+msgstr "آرشیو %s"
+
+#: ../functions.php:1752
+msgid "Author Archive"
+msgstr "آرشیو نویسنده"
+
+#: ../functions.php:1754
+msgid "Blog Archives"
+msgstr "آرشیوهای بلاگ"
+
+#: ../functions.php:1847
+msgid "Feedback"
+msgstr "بازخورد"
+
+#: ../functions.php:1862
+msgid "Subscribe"
+msgstr "اشتراک فید سایت"
+
+#: ../functions.php:1926
+msgid "Search..."
+msgstr "جست و جو..."
+
+#: ../functions.php:2016
+msgid "Edit this page"
+msgstr "ویرایش این برگه"
+
+#: ../functions.php:2042 ../functions.php:2065 ../functions.php:2095
+#, php-format
+msgid "By %1$s on %2$s "
+msgstr "توسط %1$s در %2$s "
+
+#: ../functions.php:2044 ../functions.php:2067 ../functions.php:2097
+#, php-format
+msgid "On %1$s "
+msgstr "در %1$s "
+
+#: ../functions.php:2046 ../functions.php:2069 ../functions.php:2099
+msgid "Edit"
+msgstr "ویرایش"
+
+#: ../functions.php:2047 ../functions.php:2070 ../functions.php:2100
+msgid "Tags: "
+msgstr "برچسب ها: "
+
+#: ../functions.php:2122
+msgid "Leave a comment"
+msgstr "نظر دهید"
+
+#: ../functions.php:2143
+msgid ""
+" is proudly powered by <a href=\"http://wordpress.org/\"><strong>WordPress</"
+"strong></a>"
+msgstr ""
+" is proudly powered by <a href=\"http://wp-persian.com/\"><strong>WordPress</"
+"strong></a>"
+
+#: ../functions.php:2146
+#, php-format
+msgid " | Designed with %1$sU-Design Theme%2$s"
+msgstr " | Designed with %1$sU-Design Theme%2$s"
+
+#: ../functions.php:2149
+msgid "Entries (RSS)"
+msgstr "Entries (RSS)"
+
+#: ../functions.php:2152
+msgid "Comments (RSS)"
+msgstr "Comments (RSS)"
+
+#: ../image.php:36
+msgid "Previous Image"
+msgstr ""
+
+#: ../image.php:37
+#, fuzzy
+msgid "Next Image"
+msgstr "تصویر پیش فرض"
+
+#: ../image.php:49
+msgid "Sorry, no attachments matched your criteria."
+msgstr "ببخشید، هیچ فایل ضمیمه ای با درخواست شما یکسان  نبود."
+
+#: ../page-Blog.php:117
+msgid "Not Found"
+msgstr "پیدا نشد"
+
+#: ../page-Blog.php:118
+msgid "Sorry, but you are looking for something that isn't here."
+msgstr "ببخشید، ولی شما دنبال چیزی هستید که در اینجا نیست."
+
+#: ../page-Contact.php:52 ../page-Contact.php:193
+msgid "Please enter a name"
+msgstr "لطفا یک نام را وارد کنید"
+
+#: ../page-Contact.php:54 ../page-Contact.php:194
+msgid "Your name must consist of at least 2 characters"
+msgstr "نام شما حداقل باید شامل 2 کارکتر باشد"
+
+#: ../page-Contact.php:58 ../page-Contact.php:60 ../page-Contact.php:200
+msgid "Please enter a valid email address"
+msgstr "لطفا یک آدرس ایمیل معتبر را وارد کنید"
+
+#: ../page-Contact.php:65
+msgid "phone number"
+msgstr "شماره تلفن"
+
+#: ../page-Contact.php:68
+msgid "extension"
+msgstr "کد شهر"
+
+#: ../page-Contact.php:72
+#, php-format
+msgid "Please enter a valid %1$s and %2$s"
+msgstr "لطفا یک %1$s and %2$s معتبر را وارد کنید"
+
+#: ../page-Contact.php:74 ../page-Contact.php:76
+#, php-format
+msgid "Please enter a valid %s"
+msgstr "لطفا یک %s معتبر را وارد کنید"
+
+#: ../page-Contact.php:80
+msgid "Please enter your message"
+msgstr "لطفا پیام تان را وارد کنید"
+
+#: ../page-Contact.php:84 ../page-Contact.php:206
+msgid "ext."
+msgstr "کد شهر"
+
+#: ../page-Contact.php:85
+msgid "Phone: "
+msgstr "تلفن: "
+
+#: ../page-Contact.php:88
+#, php-format
+msgid "Contact Form submission from %s"
+msgstr "ارائه فرم تماس از %s"
+
+#: ../page-Contact.php:89
+msgid "Sender's name: "
+msgstr "نام فرستنده: "
+
+#: ../page-Contact.php:90
+msgid "E-mail: "
+msgstr "ایمیل: "
+
+#: ../page-Contact.php:92
+msgid "Message: "
+msgstr "پیام: "
+
+#: ../page-Contact.php:146 ../page-PageTemplate2.php:26
+#: ../page-PageTemplate3.php:26 ../page-PageTemplate4.php:26
+#: ../page-PageTemplate5.php:26 ../page-PageTemplate6.php:26
+#: ../page-PageTemplate7.php:26 ../page-PageTemplate8.php:26
+#: ../page-Portfolio1Col.php:40 ../page-Portfolio1ColSortable.php:46
+#: ../page-Portfolio2Col.php:40 ../page-Portfolio2ColSortable.php:46
+#: ../page-Portfolio3Col.php:40 ../page-Portfolio3ColSortable.php:46
+#: ../page-Portfolio4Col.php:40 ../page-Portfolio4ColSortable.php:46
+#: ../page.php:23
+msgid "<p class=\"serif\">Read the rest of this page &raquo;</p>"
+msgstr "<p class=\"serif\">خواندن ادامه مطالب این برگه &laquo;</p>"
+
+#: ../page-Contact.php:175
+msgid "Email Successfully Sent!"
+msgstr "ایمیل با موفقیت ارسال شد!"
+
+#: ../page-Contact.php:176
+#, php-format
+msgid ""
+"Thank you <strong>%s</strong> for using our contact form! Your email was "
+"successfully sent and we will be in touch with you shortly."
+msgstr ""
+"<strong>%s</strong> گرامی، از شما جهت استفاده از فرم تماس  با ما سپاس "
+"گذاریم! ایمیل شما با موفقیت ارسال شد و ما در اولین فرصت آن را بررسی می کنیم."
+
+#: ../page-Contact.php:182
+msgid "Failed to connect to mailserver!"
+msgstr "عدم امکان ارتباط با mailserver!"
+
+#: ../page-Contact.php:188
+msgid "Please use the form below to send us an email:"
+msgstr "لطفا برای ارسال یک ایمیل به ما از فرم پایین استفاده کنید:"
+
+#: ../page-Contact.php:190
+msgid "(required, at least 2 characters)"
+msgstr "(الزامی، حداقل 2 کارکتر)"
+
+#: ../page-Contact.php:192
+msgid "required"
+msgstr "الزامی"
+
+#: ../page-Contact.php:198
+msgid "E-Mail"
+msgstr "ایمیل"
+
+#: ../page-Contact.php:204
+msgid "Phone"
+msgstr "تلفن"
+
+#: ../page-Contact.php:204
+msgid "(optional)"
+msgstr "(اختیاری)"
+
+#: ../page-Contact.php:211
+msgid "Your comment"
+msgstr "پیام شما"
+
+#: ../page-Contact.php:213
+msgid "<br />Please enter your message"
+msgstr "<br />لطفا پیام تان را وارد کنید"
+
+#: ../page-Contact.php:221
+#, php-format
+msgid "%1$sThe reCAPTCHA was not entered correctly. Please try it again%2$s"
+msgstr ""
+
+#: ../page-Contact.php:228
+msgid "Submit"
+msgstr "ارسال"
+
+#: ../page-Portfolio1Col.php:55 ../page-Portfolio2Col.php:55
+#: ../page-Portfolio3Col.php:55 ../page-Portfolio4Col.php:55 ../sitemap.php:37
+#: ../widgets/customCategory-widget.php:124
+msgid "Categories"
+msgstr "دسته ها"
+
+#: ../page-Portfolio1Col.php:58 ../page-Portfolio1Col.php:60
+#: ../page-Portfolio2Col.php:58 ../page-Portfolio2Col.php:60
+#: ../page-Portfolio3Col.php:58 ../page-Portfolio3Col.php:60
+#: ../page-Portfolio4Col.php:58 ../page-Portfolio4Col.php:60
+msgid "All"
+msgstr "همه"
+
+#: ../page-Portfolio1Col.php:141 ../page-Portfolio1ColSortable.php:197
+#: ../page-Portfolio2Col.php:146 ../page-Portfolio2ColSortable.php:196
+#: ../page-Portfolio3Col.php:146 ../page-Portfolio3ColSortable.php:196
+#: ../page-Portfolio4Col.php:146 ../page-Portfolio4ColSortable.php:196
+msgid "Portfolio section for this page has not been found!"
+msgstr "برای این برگه بخش نمونه کاری پیدا نشد!"
+
+#: ../page-Portfolio1Col.php:142 ../page-Portfolio1ColSortable.php:198
+#: ../page-Portfolio2Col.php:147 ../page-Portfolio2ColSortable.php:197
+#: ../page-Portfolio3Col.php:147 ../page-Portfolio3ColSortable.php:197
+#: ../page-Portfolio4Col.php:147 ../page-Portfolio4ColSortable.php:197
+msgid ""
+"<strong>Reason:</strong> No category has been assigned as Portfolio section "
+"for this page yet. In order to fix this, go to the theme's options page and "
+"assign a category for this page."
+msgstr ""
+"<strong>دلیل:</strong> هیچ بخش نمونه کاری تاکنون به این برگه اختصاص پیدا "
+"نکرده است. برای برطرف کردن آن به برگه تنظیمات پوسته بروید و یک دسته به این "
+"برگه اختصاص دهید."
+
+#: ../page-Portfolio1ColSortable.php:61 ../page-Portfolio2ColSortable.php:61
+#: ../page-Portfolio3ColSortable.php:61 ../page-Portfolio4ColSortable.php:61
+msgid "Categories:"
+msgstr "دسته ها:"
+
+#: ../page-Portfolio1ColSortable.php:62 ../page-Portfolio1ColSortable.php:92
+#: ../page-Portfolio2ColSortable.php:62 ../page-Portfolio2ColSortable.php:92
+#: ../page-Portfolio3ColSortable.php:62 ../page-Portfolio3ColSortable.php:92
+#: ../page-Portfolio4ColSortable.php:62 ../page-Portfolio4ColSortable.php:92
+msgid "Show All"
+msgstr "همه"
+
+#: ../page-Portfolio1ColSortable.php:91 ../page-Portfolio2ColSortable.php:91
+#: ../page-Portfolio3ColSortable.php:91 ../page-Portfolio4ColSortable.php:91
+msgid "Tags:"
+msgstr "برچسب ها:"
+
+#: ../page-Portfolio1ColSortable.php:106 ../page-Portfolio2ColSortable.php:106
+#: ../page-Portfolio3ColSortable.php:106 ../page-Portfolio4ColSortable.php:106
+msgid "Sort By:"
+msgstr "نمایش به ترتیب:"
+
+#: ../page-Portfolio1ColSortable.php:107 ../page-Portfolio2ColSortable.php:107
+#: ../page-Portfolio3ColSortable.php:107 ../page-Portfolio4ColSortable.php:107
+msgid "Original Order"
+msgstr "اصلی"
+
+#: ../page-Portfolio1ColSortable.php:109 ../page-Portfolio2ColSortable.php:109
+#: ../page-Portfolio3ColSortable.php:109 ../page-Portfolio4ColSortable.php:109
+msgid "Alphabetical"
+msgstr "الفبایی"
+
+#: ../page-Portfolio1ColSortable.php:113 ../page-Portfolio2ColSortable.php:113
+#: ../page-Portfolio3ColSortable.php:113 ../page-Portfolio4ColSortable.php:113
+msgid "Ascending"
+msgstr "صعودی"
+
+#: ../page-Portfolio1ColSortable.php:114 ../page-Portfolio2ColSortable.php:114
+#: ../page-Portfolio3ColSortable.php:114 ../page-Portfolio4ColSortable.php:114
+msgid "Descending"
+msgstr "نزولی"
+
+#: ../search.php:55
+msgid "Didn't find what you were looking for? Refine your search!"
+msgstr "چیزی که دنبالش بودید را پیدا نکردید؟ دوباره تلاش کنید!"
+
+#: ../sidebar-BlogSidebar.php:22 ../sidebar-ContactSidebar.php:22
+#: ../sidebar-PagesSidebar2.php:21 ../sidebar-PagesSidebar3.php:21
+#: ../sidebar-PagesSidebar4.php:21 ../sidebar-PagesSidebar5.php:21
+#: ../sidebar-PagesSidebar6.php:21 ../sidebar-PagesSidebar7.php:21
+#: ../sidebar-PagesSidebar8.php:21 ../sidebar-PortfolioSidebar.php:24
+#: ../sidebar-SitemapSidebar.php:22 ../sidebar.php:21
+msgid "About This Sidebar"
+msgstr "درباره این سایدبار"
+
+#: ../sidebar-BlogSidebar.php:24
+msgid ""
+"To edit this sidebar, go to admin backend's <strong><em>Appearance -> "
+"Widgets</em></strong> and place widgets into the <strong><em>BlogSidebar</"
+"em></strong> Widget Area"
+msgstr ""
+"برای ویرایش این سایدبار، به <strong><em>نمایش -> ابزارک ها</em></strong> "
+"مراجعه کنید و ابزارک ها را در ناحیه ابزارک <strong><em>BlogSidebar</em></"
+"strong> قرار دهید."
+
+#: ../sidebar-ContactSidebar.php:24
+msgid ""
+"To edit this sidebar, go to admin backend's <strong><em>Appearance -> "
+"Widgets</em></strong> and place widgets into the <strong><em>ContactSidebar</"
+"em></strong> Widget Area"
+msgstr ""
+"برای ویرایش این سایدبار، به <strong><em>نمایش -> ابزارک ها</em></strong> "
+"مراجعه کنید و ابزارک ها را در ناحیه ابزارک <strong><em>ContactSidebar</em></"
+"strong> قرار دهید."
+
+#: ../sidebar-PagesSidebar2.php:23
+msgid ""
+"To edit this sidebar, go to admin backend's <strong><em>Appearance -> "
+"Widgets</em></strong> and place widgets into the <strong><em>Pages Sidebar "
+"2</em></strong> Widget Area"
+msgstr ""
+"برای ویرایش این سایدبار، به <strong><em>نمایش -> ابزارک ها</em></strong> "
+"مراجعه کنید و ابزارک ها را در ناحیه ابزارک <strong><em>Pages Sidebar 2</em></"
+"strong> قرار دهید."
+
+#: ../sidebar-PagesSidebar3.php:23
+msgid ""
+"To edit this sidebar, go to admin backend's <strong><em>Appearance -> "
+"Widgets</em></strong> and place widgets into the <strong><em>Pages Sidebar "
+"3</em></strong> Widget Area"
+msgstr ""
+"برای ویرایش این سایدبار، به <strong><em>نمایش -> ابزارک ها</em></strong> "
+"مراجعه کنید و ابزارک ها را در ناحیه ابزارک <strong><em>Pages Sidebar 3</em></"
+"strong> قرار دهید."
+
+#: ../sidebar-PagesSidebar4.php:23
+msgid ""
+"To edit this sidebar, go to admin backend's <strong><em>Appearance -> "
+"Widgets</em></strong> and place widgets into the <strong><em>Pages Sidebar "
+"4</em></strong> Widget Area"
+msgstr ""
+"برای ویرایش این سایدبار، به <strong><em>نمایش -> ابزارک ها</em></strong> "
+"مراجعه کنید و ابزارک ها را در ناحیه ابزارک <strong><em>Pages Sidebar 4</em></"
+"strong> قرار دهید."
+
+#: ../sidebar-PagesSidebar5.php:23
+msgid ""
+"To edit this sidebar, go to admin backend's <strong><em>Appearance -> "
+"Widgets</em></strong> and place widgets into the <strong><em>Pages Sidebar "
+"5</em></strong> Widget Area"
+msgstr ""
+"برای ویرایش این سایدبار، به <strong><em>نمایش -> ابزارک ها</em></strong> "
+"مراجعه کنید و ابزارک ها را در ناحیه ابزارک <strong><em>Pages Sidebar 5</em></"
+"strong> قرار دهید."
+
+#: ../sidebar-PagesSidebar6.php:23
+msgid ""
+"To edit this sidebar, go to admin backend's <strong><em>Appearance -> "
+"Widgets</em></strong> and place widgets into the <strong><em>Pages Sidebar "
+"6</em></strong> Widget Area"
+msgstr ""
+"برای ویرایش این سایدبار، به <strong><em>نمایش -> ابزارک ها</em></strong> "
+"مراجعه کنید و ابزارک ها را در ناحیه ابزارک <strong><em>Pages Sidebar 6</em></"
+"strong> قرار دهید."
+
+#: ../sidebar-PagesSidebar7.php:23
+msgid ""
+"To edit this sidebar, go to admin backend's <strong><em>Appearance -> "
+"Widgets</em></strong> and place widgets into the <strong><em>Pages Sidebar "
+"7</em></strong> Widget Area"
+msgstr ""
+"برای ویرایش این سایدبار، به <strong><em>نمایش -> ابزارک ها</em></strong> "
+"مراجعه کنید و ابزارک ها را در ناحیه ابزارک <strong><em>Pages Sidebar 7</em></"
+"strong> قرار دهید."
+
+#: ../sidebar-PagesSidebar8.php:23
+msgid ""
+"To edit this sidebar, go to admin backend's <strong><em>Appearance -> "
+"Widgets</em></strong> and place widgets into the <strong><em>Pages Sidebar "
+"8</em></strong> Widget Area"
+msgstr ""
+"برای ویرایش این سایدبار، به <strong><em>نمایش -> ابزارک ها</em></strong> "
+"مراجعه کنید و ابزارک ها را در ناحیه ابزارک <strong><em>Pages Sidebar 8</em></"
+"strong> قرار دهید."
+
+#: ../sidebar-PortfolioSidebar.php:26
+msgid ""
+"To edit this sidebar, go to admin backend's <strong><em>Appearance -> "
+"Widgets</em></strong> and place widgets into the "
+"<strong><em>PortfolioSidebar</em></strong> Widget Area"
+msgstr ""
+"برای ویرایش این سایدبار، به <strong><em>نمایش -> ابزارک ها</em></strong> "
+"مراجعه کنید و ابزارک ها را در ناحیه ابزارک <strong><em>PortfolioSidebar</"
+"em></strong> قرار دهید."
+
+#: ../sidebar-SitemapSidebar.php:24
+msgid ""
+"To edit this sidebar, go to admin backend's <strong><em>Appearance -> "
+"Widgets</em></strong> and place widgets into the <strong><em>SitemapSidebar</"
+"em></strong> Widget Area"
+msgstr ""
+"برای ویرایش این سایدبار، به <strong><em>نمایش -> ابزارک ها</em></strong> "
+"مراجعه کنید و ابزارک ها را در ناحیه ابزارک <strong><em>SitemapSidebar</em></"
+"strong> قرار دهید."
+
+#: ../sidebar.php:23
+msgid ""
+"To edit this sidebar, go to admin backend's <strong><em>Appearance -> "
+"Widgets</em></strong> and place widgets into the <strong><em>Pages Sidebar</"
+"em></strong> Widget Area"
+msgstr ""
+"برای ویرایش این سایدبار، به <strong><em>نمایش -> ابزارک ها</em></strong> "
+"مراجعه کنید و ابزارک ها را در ناحیه ابزارک <strong><em>Pages Sidebar</em></"
+"strong> قرار دهید."
+
+#: ../single-Portfolio.php:36 ../single.php:45
+msgid "Sorry, no posts matched your criteria."
+msgstr "ببخشید، نوشته‌ای با درخواست شما یکسان  نبود."
+
+#: ../sitemap.php:25
+msgid "Site Feeds"
+msgstr "فیدهای سایت"
+
+#: ../sitemap.php:27
+msgid "Main RSS Feed"
+msgstr "فید RSS اصلی"
+
+#: ../sitemap.php:28
+msgid "Comments RSS Feed"
+msgstr "فید RSS دیدگاه ها"
+
+#: ../sitemap.php:31
+msgid "Pages"
+msgstr "برگه ها"
+
+#: ../sitemap.php:42
+msgid "Monthly Archives"
+msgstr "آرشیوهای ماهیانه"
+
+#: ../sitemap.php:47
+msgid "Tags"
+msgstr "برچسب ها"
+
+#: ../sitemap.php:53
+msgid "All Articles"
+msgstr "همه مقالات"
+
+#: ../sitemap.php:58
+msgid "j-M-y"
+msgstr "j-M-y"
+
+#: ../sitemap.php:58
+msgid "0 Comment"
+msgstr "0 نظر"
+
+#: ../udesign_options_page.php:376
+msgid "U-Design"
+msgstr "U-Design"
+
+#: ../udesign_options_page.php:424
+msgid "Help"
+msgstr "راهنمایی"
+
+#: ../udesign_options_page.php:425
+msgid "General Options"
+msgstr "تنظیمات همگانی"
+
+#: ../udesign_options_page.php:426
+#, fuzzy
+msgid "Layout Options"
+msgstr "تنظیمات ته برگ"
+
+#: ../udesign_options_page.php:427
+msgid "Font Settings"
+msgstr "تنظیمات فونت"
+
+#: ../udesign_options_page.php:428
+msgid "Custom Colors"
+msgstr "رنگ های سفارشی"
+
+#: ../udesign_options_page.php:429
+msgid "Front Page Sliders"
+msgstr "اسلایدرهای صغحه اول"
+
+#: ../udesign_options_page.php:430
+msgid "Portfolio Section"
+msgstr "بخش نمونه کار"
+
+#: ../udesign_options_page.php:431
+msgid "Blog Section"
+msgstr "بخش بلاگ"
+
+#: ../udesign_options_page.php:432
+msgid "Contact Page"
+msgstr "برگه تماس"
+
+#: ../udesign_options_page.php:433
+msgid "Footer Options"
+msgstr "تنظیمات ته برگ"
+
+#: ../udesign_options_page.php:434
+msgid "Statistics"
+msgstr "آمار"
+
+#: ../udesign_options_page.php:435
+msgid "Responsive Layout"
+msgstr "طرح واکنش گرا"
+
+#: ../udesign_options_page.php:436
+#, fuzzy
+msgid "Advanced Options"
+msgstr "تنظیمات همگانی"
+
+#: ../udesign_options_page.php:481
+msgid "Settings saved."
+msgstr "تنظیمات ذخیره شد."
+
+#: ../udesign_options_page.php:498
+#, php-format
+msgid "Options <small>(version %1$s)</small>"
+msgstr "تنظیمات <small>(نسخه %1$s)</small>"
+
+#: ../udesign_options_page.php:523 ../udesign_options_page.php:1352
+#: ../udesign_options_page.php:1455 ../udesign_options_page.php:1727
+#: ../udesign_options_page.php:5692
+msgid "Save Changes"
+msgstr "ذخیره تغییرات"
+
+#: ../udesign_options_page.php:528
+msgid "Reset to defaults"
+msgstr "بازگشت به تنظیمات پیش فرض"
+
+#: ../udesign_options_page.php:1231
+msgid "Cheatin' uh?"
+msgstr "کلک میزنی،‌ها؟!"
+
+#: ../udesign_options_page.php:1260
+msgid "U-Design theme help resources:"
+msgstr "منابع راهنما پوسته U-Design:"
+
+#: ../udesign_options_page.php:1262
+msgid "Documentation"
+msgstr "مستندات"
+
+#: ../udesign_options_page.php:1263
+#, fuzzy
+msgid "Go to the Support Forum"
+msgstr "انجمن پشتیبانی"
+
+#: ../udesign_options_page.php:1263
+msgid "Support Forum"
+msgstr "انجمن پشتیبانی"
+
+#: ../udesign_options_page.php:1263
+#, php-format
+msgid ""
+"You should be able to register yourself with the Support Forum %1$sHERE%2$s."
+msgstr ""
+
+#: ../udesign_options_page.php:1264
+msgid "Go to the Video Tutorials"
+msgstr ""
+
+#: ../udesign_options_page.php:1264
+msgid "Video Tutorials (Author's YouTube Tutorials Channel)"
+msgstr "آموزش های ویدیویی (آموزش های نویسنده پوسته در یوتیوب)"
+
+#: ../udesign_options_page.php:1265
+#, fuzzy
+msgid "Go to the U-Design Demo Site"
+msgstr "سایت پیش نمایش U-Design"
+
+#: ../udesign_options_page.php:1265
+msgid "U-Design Demo Site"
+msgstr "سایت پیش نمایش U-Design"
+
+#: ../udesign_options_page.php:1266
+#, fuzzy
+msgid "Go to the U-Design Shortcodes examples"
+msgstr "شورت کدهای U-Design"
+
+#: ../udesign_options_page.php:1266
+msgid "U-Design Shortcodes"
+msgstr "شورت کدهای U-Design"
+
+#: ../udesign_options_page.php:1267
+msgid "Go to the \"Get the Code\" page"
+msgstr ""
+
+#: ../udesign_options_page.php:1267
+msgid ""
+"Get the Code: All of the Home page examples source code is available here."
+msgstr "دریافت کد: کد همه نمونه های صفحه اصلی در اینجا آماده است."
+
+#: ../udesign_options_page.php:1275
+msgid "Custom Logo"
+msgstr "لوگو سفارشی"
+
+#: ../udesign_options_page.php:1278
+msgid "Enter a URL or upload an image for your logo:"
+msgstr "برای لوگو تان یک آدرس وارد کنید یا یک تصویر بارگذاری کنید:"
+
+#: ../udesign_options_page.php:1280 ../udesign_options_page.php:5585
+msgid "Upload Logo"
+msgstr "بارگذاری لوگو"
+
+#: ../udesign_options_page.php:1283
+#, fuzzy
+msgid ""
+"To upload an image click on \"Upload Logo\" button. Once you upload or "
+"choose your image click the \"Choose Image\" button to inserted it into the "
+"text field above."
+msgstr ""
+"برای بارگذاری یک تصویر روی دکمه \"بارگذاری لوگو\" کلیک کنید. وقتی که تصویر "
+"بارگذاری شد گزینه های مختلفی به شما نشان داده می شود. روی دکمه \"گذاشتن در "
+"نوشته\" کلیک کنید. وقتی که شما روی دکمه \"گذاشتن در نوشته\" کلیک کنید، لینک "
+"تصویر بارگذاری شده به فیلد متنی بالا اضافه خواهد شد."
+
+#: ../udesign_options_page.php:1287
+msgid "Top Area Height"
+msgstr "ارتفاع ناحیه فوقانی"
+
+#: ../udesign_options_page.php:1290
+msgid "(Height) in pixels."
+msgstr "(ارتفاع) بر حسب پیکسل."
+
+#: ../udesign_options_page.php:1291
+msgid "Note: the minimum recommended height is 55px."
+msgstr "توجه: کم ترین ارتفاع توصیه شده 55 پیکسل هست."
+
+#: ../udesign_options_page.php:1295
+msgid "Logo Dimensions"
+msgstr "ابعاد لوگو"
+
+#: ../udesign_options_page.php:1300
+msgid "(Width X Height) in pixels."
+msgstr "(پهنا X ارتفاع) بر حسب پیکسل."
+
+#: ../udesign_options_page.php:1304
+msgid "Slogan Position from the Top"
+msgstr "موقعیت شعار سایت از بالا"
+
+#: ../udesign_options_page.php:1307
+msgid "from the top."
+msgstr "از بالا."
+
+#: ../udesign_options_page.php:1311
+msgid "Slogan Position from the Left"
+msgstr "موقعیت شعار سایت از راست"
+
+#: ../udesign_options_page.php:1314
+msgid "from the left. Enter a number between 0 and 400."
+msgstr "از راست. یک عدد بین 0 و 400 وارد کنید."
+
+#: ../udesign_options_page.php:1315
+#, fuzzy, php-format
+msgid ""
+"Please note that the actual Slogan text can be changed or deleted at "
+"%1$sSettings %2$s General%3$s <strong>Tagline</strong> option."
+msgstr ""
+"لطفا توجه کنید که متن شعار سایت می تواند در %1$sتنظیمات -> همگانی%2$s گزینه "
+"<strong>معرفی کوتاه</strong> تغییر یابد یا پاک شود."
+
+#: ../udesign_options_page.php:1315
+#, fuzzy
+msgid "Go to the \"General Settings\" page"
+msgstr "تنظیمات همگانی:"
+
+#: ../udesign_options_page.php:1319
+msgid "Slogan Font Size"
+msgstr "اندازه فونت شعار سایت"
+
+#: ../udesign_options_page.php:1322 ../udesign_options_page.php:1830
+#: ../udesign_options_page.php:1886 ../udesign_options_page.php:4413
+#: ../udesign_options_page.php:4697
+msgid "Font Size: "
+msgstr "اندازه فونت: "
+
+#: ../udesign_options_page.php:1358
+msgid "Phone Number Information"
+msgstr "اطلاعات شماره تلفن"
+
+#: ../udesign_options_page.php:1361
+msgid ""
+"Use this field to provide a phone number or any other short piece of "
+"information (30 character limit for display).  It is displayed near the "
+"search box located at the top right corner of the theme."
+msgstr ""
+"از این فیلد برای آماده کردن شماره تلفن یا هر قطعه کوتاه دیگری از اطلاعات "
+"استفاده کنید (محدودیت 30 کارکتری برای نمایش). این فیلد نزدیک باکس جست و جو "
+"واقع در گوشه بالا چپ پوسته نمایش می یابد."
+
+#: ../udesign_options_page.php:1365
+msgid "Search Box"
+msgstr "باکس جست و جو"
+
+#: ../udesign_options_page.php:1369
+msgid "Enable the Search box displayed in the top area of the page."
+msgstr "فعال کردن باکس جست و جو که در ناحیه بالای برگه نمایش می یابد."
+
+#: ../udesign_options_page.php:1374
+msgid "Page Peel"
+msgstr "برگه پوسته ای"
+
+#: ../udesign_options_page.php:1378
+msgid ""
+"Enable Page Peel (Display the page curl/peel located in the top right corner "
+"of the site).  Could be used for your FeedBurner subscription or advertising."
+msgstr ""
+"فعال کردن برگه پوسته ای (واقع در گوشه بالا راست سایت). می تواند برای اشتراک "
+"فید یا تبلیغات شما استفاده شود."
+
+#: ../udesign_options_page.php:1380
+msgid "Page Peel Link URL:"
+msgstr "آدرس لینک برگه پوسته ای:"
+
+#: ../udesign_options_page.php:1385
+msgid "Feedback Button"
+msgstr "دکمه Feedback"
+
+#: ../udesign_options_page.php:1389
+msgid ""
+"Enable Feedback button (Display the Feedback button located in the most left "
+"side of the site)"
+msgstr "فعال کردن دکمه Feedback (نمایش دکمه Feedback واقع در سمت چپ سایت)"
+
+#: ../udesign_options_page.php:1391
+msgid "Feedback Button URL:"
+msgstr "آدرس دکمه Feedback:"
+
+#: ../udesign_options_page.php:1396
+msgid ""
+"Fix the position of the \"Feedback\" button to prevent it from scrolling "
+"with the page."
+msgstr ""
+"ثابت کردن موقعیت دکمه \"Feedback\" به طوری که با اسکرول کردن صفحه، همواره در "
+"یک قسمت از مانیتور نمایش یابد."
+
+#: ../udesign_options_page.php:1401
+msgid "Enable prettyPhoto script"
+msgstr "فعال کردن اسکریپت prettyPhoto"
+
+#: ../udesign_options_page.php:1405
+#, php-format
+msgid ""
+"Enable %1$sprettyPhoto%2$s script. In case of conflicts with some other "
+"lightbox plugins you may wish to disable the %1$sprettyPhoto%2$s script."
+msgstr ""
+"فعال کردن اسکریپت %1$sprettyPhoto%2$s. شاید شما بخواهید در موارد ناسازگاری "
+"با سایر افزونه های lightbox، اسکریپت %1$sprettyPhoto%2$s را غیرفعال کنید."
+
+#: ../udesign_options_page.php:1410
+msgid "\"Stay-On-Top\" Main Menu"
+msgstr " فهرست اصلی"
+
+#: ../udesign_options_page.php:1412
+msgid "\"Stay-On-Top\" the Main Menu"
+msgstr "موقعیت فهرست اصلی"
+
+#: ../udesign_options_page.php:1415
+msgid ""
+"Fix the main navigation bar to stay on top of the page once header has been "
+"scrolled past."
+msgstr "نمایش نوار ناوبری به صوت ثابت در بالای برگه در هنگام اسکرول کردن."
+
+#: ../udesign_options_page.php:1421 ../udesign_options_page.php:1423
+#, fuzzy
+msgid "\"Stay-On-Top\" Menu Shadow"
+msgstr " فهرست اصلی"
+
+#: ../udesign_options_page.php:1426
+#, fuzzy
+msgid "Add shadow to the Stay-On-Top menu."
+msgstr "فعال کردن سایه در زیرمنوها."
+
+#: ../udesign_options_page.php:1432 ../udesign_options_page.php:1434
+#, fuzzy
+msgid "\"Stay-On-Top\" Remove Background Image"
+msgstr "پاک کردن تصاویر پس زمینه"
+
+#: ../udesign_options_page.php:1437
+msgid ""
+"Remove the background image behind the Stay-On-Top menu, in which case the "
+"background color assigned to the Top Area will be used instead."
+msgstr ""
+
+#: ../udesign_options_page.php:1443 ../udesign_options_page.php:1445
+msgid "Disable \"Stay-On-Top\" Menu on Mobile Devices"
+msgstr ""
+
+#: ../udesign_options_page.php:1448
+msgid "This option will disable the Stay-On-Top menu on mobile devices only."
+msgstr ""
+
+#: ../udesign_options_page.php:1449
+#, fuzzy
+msgid "It only applies for non-responsive layout."
+msgstr "فعال کردن طرح واکنش گرا."
+
+#: ../udesign_options_page.php:1461
+msgid "Main Menu Alignment"
+msgstr "ترازبندی فهرست اصلی"
+
+#: ../udesign_options_page.php:1463
+msgid "Choose alignment:"
+msgstr "یک تراز را انتخاب کنید:"
+
+#: ../udesign_options_page.php:1464 ../udesign_options_page.php:1637
+#: ../udesign_options_page.php:1646 ../udesign_options_page.php:1655
+#: ../udesign_options_page.php:1664 ../udesign_options_page.php:1673
+#: ../udesign_options_page.php:1682 ../udesign_options_page.php:1691
+#: ../udesign_options_page.php:1700 ../udesign_options_page.php:1709
+#: ../udesign_options_page.php:4997 ../udesign_options_page.php:5086
+#: ../udesign_options_page.php:5282 ../udesign_options_page.php:5350
+msgid "Left"
+msgstr "چپ"
+
+#: ../udesign_options_page.php:1465 ../udesign_options_page.php:1638
+#: ../udesign_options_page.php:1647 ../udesign_options_page.php:1656
+#: ../udesign_options_page.php:1665 ../udesign_options_page.php:1674
+#: ../udesign_options_page.php:1683 ../udesign_options_page.php:1692
+#: ../udesign_options_page.php:1701 ../udesign_options_page.php:1710
+#: ../udesign_options_page.php:4998 ../udesign_options_page.php:5087
+#: ../udesign_options_page.php:5284 ../udesign_options_page.php:5351
+msgid "Right"
+msgstr "راست"
+
+#: ../udesign_options_page.php:1466
+msgid "This option sets the main navigation menu alignment."
+msgstr "این گزینه موقعیت فهرست ناوبری اصلی را تنظیم می کند."
+
+#: ../udesign_options_page.php:1470 ../udesign_options_page.php:1472
+msgid "Top Menu Auto Arrows"
+msgstr "فلش های اتوماتیک فهرست بالا"
+
+#: ../udesign_options_page.php:1475
+msgid ""
+"Show the top navigation menu's auto arrows. Those are the arrows indicating "
+"a submenu. "
+msgstr ""
+"نشان دادن فلش های اتوماتیک فهرست ناوبری بالا. آن ها فلش هایی هستند که در "
+"زیرمنو هم نشان داده می شوند."
+
+#: ../udesign_options_page.php:1481 ../udesign_options_page.php:1483
+msgid "Top Menu Drop Shadows"
+msgstr "سایه فهرست بالا"
+
+#: ../udesign_options_page.php:1486
+msgid "Enable drop shadows to the sub-menus. "
+msgstr "فعال کردن سایه در زیرمنوها."
+
+#: ../udesign_options_page.php:1492 ../udesign_options_page.php:1494
+msgid "Border Under the Menu"
+msgstr "مرز زیر فهرست"
+
+#: ../udesign_options_page.php:1497
+msgid "Remove the border line located under the menu. "
+msgstr "پاک کردن خط مرزی واقع در زیر فهرست."
+
+#: ../udesign_options_page.php:1503
+msgid "Breadcrumbs"
+msgstr "Breadcrumbs"
+
+#: ../udesign_options_page.php:1505 ../udesign_options_page.php:1508
+msgid "Show Breadcrumbs"
+msgstr "نشان دادن Breadcrumbs"
+
+#: ../udesign_options_page.php:1514
+msgid "Default Post Thumbnail"
+msgstr "بند انگشتی پیش فرض پست ها"
+
+#: ../udesign_options_page.php:1516
+msgid "Enable Default Thumb"
+msgstr "فعال کردن بند انگشتی پیش فرض"
+
+#: ../udesign_options_page.php:1519
+msgid ""
+"Enable default thumbnail for posts (This options is used with the \"U-"
+"Design: Recent Posts\" widget)."
+msgstr ""
+"فعال کردن بند انگشتی پیش فرض پست ها (این گزینه در ابزارک \"U-Design: آخرین "
+"پست ها\" استفاده می شود)."
+
+#: ../udesign_options_page.php:1529 ../udesign_options_page.php:1531
+msgid "Disable Theme Update Notifier"
+msgstr "غیرفعال کردن پیام به روز رسانی پوسته"
+
+#: ../udesign_options_page.php:1534
+msgid "Disable the theme's notification of new updates."
+msgstr "غیرفعال کردن پیام پوسته درباره به روز رسانی های جدید."
+
+#: ../udesign_options_page.php:1540 ../udesign_options_page.php:1542
+msgid "Disable Image Cropping"
+msgstr "غیرفعال کردن قاب بری تصاویر"
+
+#: ../udesign_options_page.php:1545
+msgid ""
+"Disable image cropping when generating thumbnail images in sections like "
+"Blog, Portfolio, 'U-Design: Recent Posts' widget, etc."
+msgstr ""
+"غیرفعال کردن  قاب بری، بزرگنمایی و تغییر اندازه تصاویر در هنگام ساخت تصاویر "
+"بندانگشتی در بخش هایی مانند بلاگ، نمونه کار، ابزارک \"U-Design: آخرین پست ها"
+"\" استفاده می شود."
+
+#: ../udesign_options_page.php:1551 ../udesign_options_page.php:1553
+msgid "Enable Retina for Cropped Images"
+msgstr "فعال کردن Retina برای تصاویر قاب بری شده"
+
+#: ../udesign_options_page.php:1556
+msgid ""
+"Enable automatic retina images for the ones being cropped. If enabled, a "
+"double pixel ratio will be used for the cropped images. In order for this "
+"option to be applied the above 'Disable Image Cropping' option should not be "
+"checked. This option can be overwritten for individual portfolio thumbnails "
+"by the use of custom fields (see documentation for more information)."
+msgstr ""
+"فعال کردن Retina برای تصاویری که قاب بری شده اند. این گزینه فقط در صورت فعال "
+"بودن گزینه قاب بری تصاویر، اعمال می شود. این گزینه برای بندانگشتی های نمونه "
+"کارها می تواند به طور جداگانه توسط زمینه های دلخواه تنظیم شود. (برای اطلاعات "
+"بیشتر به مستندات مراجعه کنید) "
+
+#: ../udesign_options_page.php:1562
+#, php-format
+msgid "Enable %1$sstyle.css%2$s"
+msgstr "فعال کردن %1$sstyle.css%2$s"
+
+#: ../udesign_options_page.php:1564
+msgid "Enable \"style.css\""
+msgstr "فعال کردن \"style.css\""
+
+#: ../udesign_options_page.php:1567
+#, fuzzy, php-format
+msgid ""
+"Enable the %1$sstyle.css%2$s located in the theme's root folder. You can "
+"then edit that file from %3$sAppearance %4$s Edit%5$s to add any custom CSS. "
+"You would also need to enable this option if you want to use a %6$schild "
+"theme%7$s."
+msgstr ""
+"فعال کردن %1$sstyle.css%2$s واقع در پوشه پوسته. شما می توانید این فایل را از "
+"%3$sنمایش -> ویرایشگر%4$s ویرایش و هر CSS سفارشی ای را به آن اضافه کنید. اگر "
+"می خواهید از یک %5$sزیرپوسته%6$s استفاده کنید نیز این گزینه باید فعال باشد."
+
+#: ../udesign_options_page.php:1583
+msgid "Page Title"
+msgstr "عنوان برگه"
+
+#: ../udesign_options_page.php:1587 ../udesign_options_page.php:1599
+msgid "Title Position 1"
+msgstr "موقعیت 1 عنوان"
+
+#: ../udesign_options_page.php:1588 ../udesign_options_page.php:1600
+msgid "Title Position 2"
+msgstr "موقعیت 2 عنوان"
+
+#: ../udesign_options_page.php:1589 ../udesign_options_page.php:1601
+msgid "Remove Title (SEO-Friendly)"
+msgstr "پاک کردن عنوان (SEO-Friendly)"
+
+#: ../udesign_options_page.php:1590 ../udesign_options_page.php:1602
+msgid "Remove Title Completely"
+msgstr "پاک کردن عنوان به طور کامل"
+
+#: ../udesign_options_page.php:1595 ../udesign_options_page.php:1797
+#: ../udesign_options_page.php:1989 ../udesign_options_page.php:2701
+msgid "Update"
+msgstr "به روز رسانی"
+
+#: ../udesign_options_page.php:1599
+msgid ""
+"Display Title immediately under the Main Menu, it spans the full width of "
+"page."
+msgstr "نمایش عنوان بلافاصله در پایین فهرست اصلی، با پهنای تمام صفحه."
+
+#: ../udesign_options_page.php:1600
+msgid "Display Title inside Main Content, it spans the main content width."
+msgstr "نمایش عنوان داخل محتوای اصلی، با پهنای محتوای اصلی."
+
+#: ../udesign_options_page.php:1601
+msgid ""
+"Remove Title visually, so that human visitors will not see it, yet it will "
+"still be served as an \"h1\" heading to search engine spiders."
+msgstr ""
+"پاک کردن ظاهری عنوان، به طوری که برای بازدیدکنندگان قابل مشاهده نیست؛ ولی "
+"برای موتورهای جست و جو به صورت \"h1\" قابل رویت است."
+
+#: ../udesign_options_page.php:1602
+msgid ""
+" ... just as it says! A word of caution, when using this option keep in mind "
+"that your pages will be left without an \"h1\" heading. It is your "
+"responsibility to look after that."
+msgstr ""
+"به یاد داشته باشید که در هنگام استفاده از این گزینه برگه های شما فاقد \"h1\" "
+"خواهند شد و مسئولیت مراقبت از آن ها به عهده شخص شما خواهد بود."
+
+#: ../udesign_options_page.php:1617
+msgid ""
+"Set the width of the \"Home Page Column 1\" Widget Area as constant 1/3 "
+"width (Applies only to a two column layout, in other words having the first "
+"widget area \"Home Page Column 1\" in combination with any of the other "
+"widget areas being active)."
+msgstr ""
+"پهنا ناحیه ابزارک \"ستون 1 صفحه اصلی\" را روی 1/3 پهنا کل تنظیم می کند (فقط "
+"روی طرح دو ستونی اعمال می شود، به عبارت دیگر ناحیه ابزارک \"ستون 1 صفحه اصلی"
+"\" در ترکیب با یکی از ناحیه های ابزارک دیگر که فعال است)."
+
+#: ../udesign_options_page.php:1623 ../udesign_options_page.php:1625
+#, fuzzy
+msgid "Remove Sidebar from Default Pages"
+msgstr "پاک کردن سایدبار از برگه های بلاگ."
+
+#: ../udesign_options_page.php:1628
+#, fuzzy
+msgid ""
+"Remove the sidebar from the default page template. This will make all pages "
+"that have been assigned \"Default Template\" full width."
+msgstr ""
+"پاک کردن سایدبار از برگه تماس که در نتیجه به آن برگه طرح تمام صفحه را اختصاص "
+"می دهد."
+
+#: ../udesign_options_page.php:1634
+msgid "Default Pages Sidebar Position"
+msgstr "موقعیت سایدبار برگه ها"
+
+#: ../udesign_options_page.php:1636 ../udesign_options_page.php:1645
+#: ../udesign_options_page.php:1654 ../udesign_options_page.php:1663
+#: ../udesign_options_page.php:1672 ../udesign_options_page.php:1681
+#: ../udesign_options_page.php:1690 ../udesign_options_page.php:1699
+#: ../udesign_options_page.php:1708 ../udesign_options_page.php:4980
+#: ../udesign_options_page.php:4996 ../udesign_options_page.php:5085
+#: ../udesign_options_page.php:5349
+msgid "Choose position:"
+msgstr "انتخاب موقعیت:"
+
+#: ../udesign_options_page.php:1639
+msgid ""
+"This is the sidebar position for all pages assigned with \"Default Template"
+"\"."
+msgstr "موقعیت سایدبار برای برگه های با قالب \"قالب پیش فرض\"."
+
+#: ../udesign_options_page.php:1643
+msgid "Default Pages Sidebar 2 Position"
+msgstr "موقعیت 2 سایدبار برگه ها"
+
+#: ../udesign_options_page.php:1648
+msgid ""
+"This is the sidebar position for all pages assigned with \"Page Template 2\"."
+msgstr "موقعیت سایدبار برای برگه های با قالب \"Page Template 2\"."
+
+#: ../udesign_options_page.php:1652
+msgid "Default Pages Sidebar 3 Position"
+msgstr "موقعیت 3 سایدبار برگه ها"
+
+#: ../udesign_options_page.php:1657
+msgid ""
+"This is the sidebar position for all pages assigned with \"Page Template 3\"."
+msgstr "موقعیت سایدبار برای برگه های با قالب \"Page Template 3\"."
+
+#: ../udesign_options_page.php:1661
+msgid "Default Pages Sidebar 4 Position"
+msgstr "موقعیت 4 سایدبار برگه ها"
+
+#: ../udesign_options_page.php:1666
+msgid ""
+"This is the sidebar position for all pages assigned with \"Page Template 4\"."
+msgstr "موقعیت سایدبار برای برگه های با قالب \"Page Template 4\"."
+
+#: ../udesign_options_page.php:1670
+msgid "Default Pages Sidebar 5 Position"
+msgstr "موقعیت 5 سایدبار برگه ها"
+
+#: ../udesign_options_page.php:1675
+msgid ""
+"This is the sidebar position for all pages assigned with \"Page Template 5\"."
+msgstr "موقعیت سایدبار برای برگه های با قالب \"Page Template 5\"."
+
+#: ../udesign_options_page.php:1679
+msgid "Default Pages Sidebar 6 Position"
+msgstr "موقعیت 6 سایدبار برگه ها"
+
+#: ../udesign_options_page.php:1684
+msgid ""
+"This is the sidebar position for all pages assigned with \"Page Template 6\"."
+msgstr "موقعیت سایدبار برای برگه های با قالب \"Page Template 6\"."
+
+#: ../udesign_options_page.php:1688
+msgid "Default Pages Sidebar 7 Position"
+msgstr "موقعیت 7 سایدبار برگه ها"
+
+#: ../udesign_options_page.php:1693
+msgid ""
+"This is the sidebar position for all pages assigned with \"Page Template 7\"."
+msgstr "موقعیت سایدبار برای برگه های با قالب \"Page Template 7\"."
+
+#: ../udesign_options_page.php:1697
+msgid "Default Pages Sidebar 8 Position"
+msgstr "موقعیت 8 سایدبار برگه ها"
+
+#: ../udesign_options_page.php:1702
+msgid ""
+"This is the sidebar position for all pages assigned with \"Page Template 8\"."
+msgstr "موقعیت سایدبار برای برگه های با قالب \"Page Template 8\"."
+
+#: ../udesign_options_page.php:1706
+msgid "Sitemap Page Sidebar Position"
+msgstr "موقعیت سایدبار برگه نقشه سایت"
+
+#: ../udesign_options_page.php:1711
+msgid ""
+"This is the sidebar position for all pages assigned with \"Sitemap page\" "
+"template."
+msgstr "موقعیت سایدبار برای برگه های با قالب \"Sitemap page\"."
+
+#: ../udesign_options_page.php:1715 ../udesign_options_page.php:1717
+msgid "Show Comments on Pages"
+msgstr "نمایش دیدگاه ها در برگه ها"
+
+#: ../udesign_options_page.php:1720
+msgid ""
+"Show Comments on Pages. Those are the pages assigned with the 'Default "
+"Page', 'Page Template 2', ..., 'Page Template 8' and 'Full-width Page' "
+"templates. Additionally, you can 'Allow' these comments from the individual "
+"page's configuration."
+msgstr ""
+"نمایش دیدگاه ها در برگه های با قالب های 'قالب پیش فرض' ، 'Page Template "
+"2'، ... ، 'Page Template 8' و 'Full-width Page'. علاوه بر این شما می توانید "
+"از قسمت گفت و گوها مربوط به هر برگه تعیین کنید که در آن برگه دیدگاه ها "
+"پذیرفته نشوند."
+
+#: ../udesign_options_page.php:1736
+msgid "Greater than 960px Theme Width Fluid Layout"
+msgstr ""
+
+#: ../udesign_options_page.php:1737
+msgid ""
+"In Fluid Layout the widths of elements such as the main content block, "
+"sidebar, columns, etc. are converted to percentages rather than fixed width "
+"in pixels. This allows resizing of those elements to be relative to the "
+"browser window width. This section allows you to set the overall theme and "
+"sidebar width. The theme width can only be greater than the default 960px "
+"and will only exhibit fluid behaviour in widths greater than the default "
+"960px width. If the site is viewed in a device or browser with width less "
+"than 960px then the theme will behave as a standard fixed width theme with "
+"960px width frame, unless of course Responsive layout is enabled."
+msgstr ""
+
+#: ../udesign_options_page.php:1741 ../udesign_options_page.php:1743
+msgid "Enable Maximum Width"
+msgstr ""
+
+#: ../udesign_options_page.php:1746
+msgid "Set the theme width to the maximum possible browser or device width."
+msgstr ""
+
+#: ../udesign_options_page.php:1747
+msgid "(Fluid Layout)"
+msgstr ""
+
+#: ../udesign_options_page.php:1753
+msgid "Global Theme Width"
+msgstr ""
+
+#: ../udesign_options_page.php:1757 ../udesign_options_page.php:5649
+#, fuzzy
+msgid "(Width) in pixels."
+msgstr "(ارتفاع) بر حسب پیکسل."
+
+#: ../udesign_options_page.php:1758
+msgid ""
+"This option is about the overall theme width and it will be applied to all "
+"pages. You may specify a range between 960px and 1600px."
+msgstr ""
+
+#: ../udesign_options_page.php:1759
+msgid "(default: 960)"
+msgstr ""
+
+#: ../udesign_options_page.php:1763
+msgid "Global Sidebar Width"
+msgstr ""
+
+#: ../udesign_options_page.php:1767
+msgid "(Width) in percentage."
+msgstr ""
+
+#: ../udesign_options_page.php:1768
+msgid ""
+"This option is about the overall sidebar width and it will be applied to all "
+"pages. You may specify a range between 20% and 50%."
+msgstr ""
+
+#: ../udesign_options_page.php:1769
+msgid "(default: 33)"
+msgstr ""
+
+#: ../udesign_options_page.php:1784
+msgid "Google WebFont Directory"
+msgstr "دایرکتوری فونت های تحت وب گوگل"
+
+#: ../udesign_options_page.php:1786
+msgid "Google Web Fonts"
+msgstr "فونت های تحت وب گوگل"
+
+#: ../udesign_options_page.php:1789
+msgid "Enable Google WebFonts."
+msgstr "فعال کردن فونت های تحت وب گوگل."
+
+#: ../udesign_options_page.php:1792
+msgid ""
+"Enable this option and hit \"Update\" to add the Google Fonts to the "
+"available fonts listed below."
+msgstr ""
+"برای اضافه کردن فونت های گوگل به فونت های موجود در لیست پایین، این گزینه را "
+"فعال کنید و روی \"به روز رسانی\" کلیک کنید."
+
+#: ../udesign_options_page.php:1793
+msgid "Preview the available fonts at"
+msgstr "نمایش فونت های موجود در"
+
+#: ../udesign_options_page.php:1793
+msgid "Go to the \"Google Fonts\" site"
+msgstr ""
+
+#: ../udesign_options_page.php:1804
+msgid "General Font Settings"
+msgstr "تنظیمات فونت همگانی"
+
+#: ../udesign_options_page.php:1807 ../udesign_options_page.php:1863
+#: ../udesign_options_page.php:1921
+msgid "Font Family: "
+msgstr "نام فونت: "
+
+#: ../udesign_options_page.php:1860
+msgid "Top Navigation Menu Font Settings"
+msgstr "تنظیمات فونت فهرست ناوبری بالا"
+
+#: ../udesign_options_page.php:1916
+msgid "Title Headings Font Settings"
+msgstr "تنظیمات فونت عنوان ها"
+
+#: ../udesign_options_page.php:1918
+msgid ""
+"This font is applied to all h1, h2, h3, h4, h5, h6 - Headings (with small "
+"exceptions) and  the Slogan (Tagline):"
+msgstr ""
+"این فونت روی تمام عنوان های h1, h2, h3, h4, h5, h6 اعمال می شود - عنوان ها "
+"(با چند استثنای کوچک) و شعار سایت (معرفی کوتاه):"
+
+#: ../udesign_options_page.php:1950
+msgid "Font Size Coefficient: "
+msgstr "ضریب اندازه فونت: "
+
+#: ../udesign_options_page.php:1968
+msgid ""
+"The Font Size Coefficient is multiplied by the actual heading size in \"em"
+"\", thus any coefficient greater than \"1.0\" will cause the font size to "
+"inclease and any coefficient less than \"1.0 will produce smaller font size."
+msgstr ""
+"ضریب اندازه فونت در اندازه واقعی فونت برحسب \"em\" ضرب می شود، بنابراین هر "
+"ضریب بزرگتر از \"1.0\" باعث بزرگتر شدن اندازه فونت و هر ضریب کوچکتر از "
+"\"1.0\" باعث کوچکتر شدن اندازه فونت می شود."
+
+#: ../udesign_options_page.php:1980
+msgid "Custom Colors Switch"
+msgstr "وضعیت رنگ های سفارشی"
+
+#: ../udesign_options_page.php:1982
+msgid "If enabled this option will overwrite the default CSS styles."
+msgstr ""
+"اگر این گزینه فعال شود استایل های زیر به جای استایل های CSS پیش فرض فعال می "
+"شوند."
+
+#: ../udesign_options_page.php:1983
+msgid "Custom colors option:"
+msgstr "گزینه رنگ های سفارشی:"
+
+#: ../udesign_options_page.php:1984
+msgid "Enable"
+msgstr "فعال"
+
+#: ../udesign_options_page.php:1985
+msgid "Disable"
+msgstr "غیرفعال"
+
+#: ../udesign_options_page.php:1993
+msgid "Continue with the section below to customize the colors..."
+msgstr "برای سفارشی سازی رنگ ها بخش پایین را دنبال کنید..."
+
+#: ../udesign_options_page.php:2003
+msgid "General Text and Link Colors:"
+msgstr "رنگ های همگانی متن و لینک:"
+
+#: ../udesign_options_page.php:2007
+msgid "Body Text Color"
+msgstr "رنگ متن"
+
+#: ../udesign_options_page.php:2015
+msgid "Main body text color affecting the entire site."
+msgstr "رنگ متن کلی تمام سایت را تحت تاثیر قرار می دهد."
+
+#: ../udesign_options_page.php:2019
+msgid "Link Color"
+msgstr "رنگ لینک"
+
+#: ../udesign_options_page.php:2027
+msgid "Main link color affecting the entire site."
+msgstr "رنگ لینک کلی تمام سایت را تحت تاثیر قرار می دهد."
+
+#: ../udesign_options_page.php:2031
+msgid "Link Hover Color"
+msgstr "رنگ لینک (Hover)"
+
+#: ../udesign_options_page.php:2039
+msgid "This is the link hover color."
+msgstr "این رنگ لینک در حالت hover است."
+
+#: ../udesign_options_page.php:2043
+msgid "Headings Color"
+msgstr "رنگ عنوان ها"
+
+#: ../udesign_options_page.php:2051
+msgid ""
+"This is the color for general H1, H2, H3, H4 ,H5 ,H6 Headings where "
+"applicable."
+msgstr "این رنگ عنوان های همگانی H1, H2, H3, H4, H5, H6 در جاهای اجراشدنی است."
+
+#: ../udesign_options_page.php:2056
+msgid "Top Section Colors:"
+msgstr "رنگ های بخش بالا:"
+
+#: ../udesign_options_page.php:2060
+msgid "Top Area Background"
+msgstr "پس زمینه ناحیه بالا"
+
+#: ../udesign_options_page.php:2068
+msgid ""
+"Site's top section background color. This is the section with the logo, "
+"slogan, phone number and search box, immediately above the menu."
+msgstr ""
+"رنگ پس زمینه بخش بالای سایت. این بخش شامل لوگو، شعار سایت، شماره تلفن و باکس "
+"جست و جو بالای فهرست است."
+
+#: ../udesign_options_page.php:2076
+msgid "Top Area Text Color"
+msgstr "رنگ متن ناحیه بالا"
+
+#: ../udesign_options_page.php:2084
+msgid "This color affects the slogan, phone number and search text."
+msgstr "این رنگ شعار سایت، شماره تلفن و متن جست و جو را تحت تاثیر قرار می دهد."
+
+#: ../udesign_options_page.php:2088
+msgid "Top Menu Link Color"
+msgstr "رنگ لینک فهرست بالا"
+
+#: ../udesign_options_page.php:2096
+msgid "This is the color of the main menu links."
+msgstr "این رنگ لینک های فهرست اصلی است."
+
+#: ../udesign_options_page.php:2100
+msgid "Top Menu Active Link Color"
+msgstr "رنگ لینک (Active) فهرست بالا"
+
+#: ../udesign_options_page.php:2108
+msgid "This is the color of the main menu active/selected link."
+msgstr "این رنگ لینک (active/selected) فهرست اصلی است."
+
+#: ../udesign_options_page.php:2112
+msgid "Top Menu Hover Link Color"
+msgstr "رنگ لینک (Hover) فهرست بالا"
+
+#: ../udesign_options_page.php:2120
+msgid "This is the color of the main menu hover link."
+msgstr "این رنگ لینک (hover) فهرست اصلی است."
+
+#: ../udesign_options_page.php:2125
+msgid "Midsection Colors:"
+msgstr "رنگ های بخش میانی:"
+
+#: ../udesign_options_page.php:2129
+msgid "Page Title Color"
+msgstr "رنگ عنوان برگه"
+
+#: ../udesign_options_page.php:2137
+msgid ""
+"This is the color for the title of pages/posts/archives, etc. located in the "
+"area underneath the menu."
+msgstr ""
+"این رنگ عنوان برگه ها/نوشته ها/بایگانی ها و غیره واقع در ناحیه زیر فهرست است."
+
+#: ../udesign_options_page.php:2141
+msgid "Page Title Background Color"
+msgstr "رنگ پس زمینه عنوان برگه"
+
+#: ../udesign_options_page.php:2149
+msgid "This is the background color behind the page titles."
+msgstr "این رنگ پس زمینه پشت عنوان برگه است."
+
+#: ../udesign_options_page.php:2153
+msgid "Header/Slider Background"
+msgstr "پس زمینه سربرگ/اسلایدر"
+
+#: ../udesign_options_page.php:2161
+msgid "This is the background color behind the home page sliders."
+msgstr "این رنگ پس زمینه پشت اسلایدرهای صفحه اصلی است."
+
+#: ../udesign_options_page.php:2165
+msgid "Main Content Area Background"
+msgstr "پس زمینه ناحیه محتوای اصلی"
+
+#: ../udesign_options_page.php:2173
+msgid "This is the color of the main content wrapper background."
+msgstr "این رنگ پس زمینه محتوای اصلی است."
+
+#: ../udesign_options_page.php:2178
+msgid "Home Page Before Content Widget Area Colors:"
+msgstr "رنگ های ناحیه ابزارک محتوای قبل از صفحه اصلی:"
+
+#: ../udesign_options_page.php:2182
+msgid "Title Color"
+msgstr "رنگ عنوان"
+
+#: ../udesign_options_page.php:2190
+msgid ""
+"This is the color for the title of widgets used in this Widget Area, usually "
+"an \"H3\" Headings."
+msgstr ""
+"این رنگ عنوان ابزارک های استفاده شده در ناحیه این ابزارک است، معمولا عنوان "
+"های \"H3\"."
+
+#: ../udesign_options_page.php:2194 ../udesign_options_page.php:4470
+#: ../udesign_options_page.php:4754
+msgid "Text Color"
+msgstr "رنگ متن"
+
+#: ../udesign_options_page.php:2202
+msgid "This is the default text color applied to this Widget Area."
+msgstr "این رنگ متن پیش فرض استفاده شده در ناحیه این ابزارک است."
+
+#: ../udesign_options_page.php:2206
+msgid "Background Color"
+msgstr "رنگ پس زمینه"
+
+#: ../udesign_options_page.php:2214
+msgid "This is the background color."
+msgstr "این رنگ پس زمینه است."
+
+#: ../udesign_options_page.php:2219
+msgid "Bottom Area Colors:"
+msgstr "رنگ های ناحیه پایین:"
+
+#: ../udesign_options_page.php:2223
+msgid "Bottom Background Color"
+msgstr "رنگ پس زمینه پایین"
+
+#: ../udesign_options_page.php:2231
+msgid "This is the background color for the bottom area."
+msgstr "این رنگ پس زمینه ناحیه پایین است."
+
+#: ../udesign_options_page.php:2235
+msgid "Bottom Titles Color"
+msgstr "رنگ عنوان های پایین"
+
+#: ../udesign_options_page.php:2243
+msgid "This is the color applied to the bottom area widget titles."
+msgstr "این رنگ استفاده شده در عنوان های ابزارک ناحیه پایین است."
+
+#: ../udesign_options_page.php:2247
+msgid "Bottom Text Color"
+msgstr "رنگ متن پایین"
+
+#: ../udesign_options_page.php:2255
+msgid "This is the default text color applied to the bottom area."
+msgstr "این رنگ متن پیش فرض استفاده شده در ناحیه پایین است. "
+
+#: ../udesign_options_page.php:2259
+msgid "Bottom Link Color"
+msgstr "رنگ لینک پایین"
+
+#: ../udesign_options_page.php:2267
+msgid "This is the bottom area link color."
+msgstr "این رنگ لینک ناحیه پایین است."
+
+#: ../udesign_options_page.php:2271
+msgid "Bottom Link Hover Color"
+msgstr "رنگ لینک (Hover) پایین"
+
+#: ../udesign_options_page.php:2279
+msgid "This is the bottom area link hover color."
+msgstr "این رنگ لینک (hover) ناحیه پایین است."
+
+#: ../udesign_options_page.php:2284
+msgid "Footer Area Colors:"
+msgstr "رنگ های ناحیه ته برگ:"
+
+#: ../udesign_options_page.php:2288
+msgid "Footer Background Color"
+msgstr "رنگ پس زمینه ته برگ"
+
+#: ../udesign_options_page.php:2296
+msgid "This is the footer background color."
+msgstr "این رنگ پس زمینه ته برگ است."
+
+#: ../udesign_options_page.php:2300
+msgid "Footer Text Color"
+msgstr "رنگ متن ته برگ"
+
+#: ../udesign_options_page.php:2308
+msgid "This is the footer general text color."
+msgstr "این رنگ متن همگانی ته برگ است."
+
+#: ../udesign_options_page.php:2312
+msgid "Footer Link Color"
+msgstr "رنگ لینک ته برگ"
+
+#: ../udesign_options_page.php:2320
+msgid "This is the footer link color."
+msgstr "این رنگ لینک ته برگ است."
+
+#: ../udesign_options_page.php:2324
+msgid "Footer Link Hover Color"
+msgstr "رنگ لینک (Hover) ته برگ"
+
+#: ../udesign_options_page.php:2332
+msgid "This is the footer link hover color."
+msgstr "این رنگ لینک (hover) ته برگ است."
+
+#: ../udesign_options_page.php:2341
+msgid "Background Images:"
+msgstr "تصاویر پس زمینه:"
+
+#: ../udesign_options_page.php:2342
+msgid ""
+"Tip: To upload an image click on 'Upload Image' button below. Once the image "
+"is uploaded it will give you various options. Click on 'Insert into Post' "
+"button. Once you click on 'Insert into Post', link with the uploaded image "
+"will be inserted into the corresponding text field below. The background "
+"image is placed according to the background-position property. If 'No "
+"Repeat' is specified (see below), the image is placed at the element's top "
+"center possition."
+msgstr ""
+"برای بارگذاری یک تصویر روی دکمه 'بارگذاری تصویر' پایین کلیک کنید. وقتی که "
+"تصویر بارگذاری شد گزینه های مختلفی به شما نشان داده می شود. روی دکمه 'گذاشتن "
+"در نوشته' کلیک کنید. وقتی که شما روی 'گذاشتن در نوشته' کلیک کنید، لینک تصویر "
+"بارگذاری شده به فیلد متنی مربوطه پایین اضافه خواهد شد. تصویر پس زمینه بر طبق "
+"ویژگی background-position در مکانی گذاشته می شود. اگر 'بدون تکرار' مشخص شود "
+"(پایین را ببینید)، تصویر در موقعیت بالا وسط عنصر گذاشته می شود."
+
+#: ../udesign_options_page.php:2346
+msgid "Top Background Image"
+msgstr "تصویر پس زمینه بالا"
+
+#: ../udesign_options_page.php:2349 ../udesign_options_page.php:2385
+#: ../udesign_options_page.php:2421 ../udesign_options_page.php:2457
+#: ../udesign_options_page.php:2493 ../udesign_options_page.php:2529
+#: ../udesign_options_page.php:2565 ../udesign_options_page.php:2601
+#: ../udesign_options_page.php:4224 ../udesign_options_page.php:4292
+msgid "Enter a URL or upload an image:"
+msgstr "یک آدرس وارد کنید یا یک تصویر بارگذاری کنید:"
+
+#: ../udesign_options_page.php:2351 ../udesign_options_page.php:2387
+#: ../udesign_options_page.php:2423 ../udesign_options_page.php:2459
+#: ../udesign_options_page.php:2495 ../udesign_options_page.php:2531
+#: ../udesign_options_page.php:2567 ../udesign_options_page.php:2603
+#: ../udesign_options_page.php:2873 ../udesign_options_page.php:2925
+#: ../udesign_options_page.php:3191 ../udesign_options_page.php:3218
+#: ../udesign_options_page.php:3736 ../udesign_options_page.php:3768
+#: ../udesign_options_page.php:3787 ../udesign_options_page.php:3836
+#: ../udesign_options_page.php:3880 ../udesign_options_page.php:3911
+#: ../udesign_options_page.php:4226 ../udesign_options_page.php:4294
+#: ../udesign_options_page.php:4499 ../udesign_options_page.php:4582
+#: ../udesign_options_page.php:4783 ../udesign_options_page.php:4807
+#: ../udesign_options_page.php:4832 ../udesign_options_page.php:4856
+msgid "Upload Image"
+msgstr "بارگذاری تصویر"
+
+#: ../udesign_options_page.php:2355 ../udesign_options_page.php:2391
+#: ../udesign_options_page.php:2427 ../udesign_options_page.php:2463
+msgid "Background  Properties:"
+msgstr "ویژگی های پس زمینه:"
+
+#: ../udesign_options_page.php:2357 ../udesign_options_page.php:2393
+#: ../udesign_options_page.php:2429 ../udesign_options_page.php:2465
+#: ../udesign_options_page.php:2501 ../udesign_options_page.php:2537
+#: ../udesign_options_page.php:2573 ../udesign_options_page.php:2609
+msgid "No Repeat"
+msgstr "بدون تکرار"
+
+#: ../udesign_options_page.php:2358 ../udesign_options_page.php:2394
+#: ../udesign_options_page.php:2430 ../udesign_options_page.php:2466
+#: ../udesign_options_page.php:2502 ../udesign_options_page.php:2538
+#: ../udesign_options_page.php:2574 ../udesign_options_page.php:2610
+msgid "Repeat only Horizontally"
+msgstr "تکرار فقط به صورت افقی"
+
+#: ../udesign_options_page.php:2359 ../udesign_options_page.php:2395
+#: ../udesign_options_page.php:2431 ../udesign_options_page.php:2467
+#: ../udesign_options_page.php:2503 ../udesign_options_page.php:2539
+#: ../udesign_options_page.php:2575 ../udesign_options_page.php:2611
+msgid "Repeat only Vertically"
+msgstr "تکرار فقط به صورت عمودی"
+
+#: ../udesign_options_page.php:2360 ../udesign_options_page.php:2396
+#: ../udesign_options_page.php:2432 ../udesign_options_page.php:2468
+#: ../udesign_options_page.php:2504 ../udesign_options_page.php:2540
+#: ../udesign_options_page.php:2576 ../udesign_options_page.php:2612
+msgid "Repeat both Vertically and Horizontally"
+msgstr "تکرار به هر دو صورت عمودی و افقی"
+
+#: ../udesign_options_page.php:2362 ../udesign_options_page.php:2398
+#: ../udesign_options_page.php:2434 ../udesign_options_page.php:2470
+#: ../udesign_options_page.php:2506 ../udesign_options_page.php:2542
+#: ../udesign_options_page.php:2578 ../udesign_options_page.php:2614
+msgid "Horizontal:"
+msgstr "افقی:"
+
+#: ../udesign_options_page.php:2364 ../udesign_options_page.php:2371
+#: ../udesign_options_page.php:2400 ../udesign_options_page.php:2407
+#: ../udesign_options_page.php:2436 ../udesign_options_page.php:2443
+#: ../udesign_options_page.php:2472 ../udesign_options_page.php:2479
+#: ../udesign_options_page.php:2508 ../udesign_options_page.php:2515
+#: ../udesign_options_page.php:2544 ../udesign_options_page.php:2551
+#: ../udesign_options_page.php:2580 ../udesign_options_page.php:2587
+#: ../udesign_options_page.php:2616 ../udesign_options_page.php:2623
+#: ../udesign_options_page.php:3538
+msgid "center"
+msgstr "وسط"
+
+#: ../udesign_options_page.php:2365 ../udesign_options_page.php:2401
+#: ../udesign_options_page.php:2437 ../udesign_options_page.php:2473
+#: ../udesign_options_page.php:2509 ../udesign_options_page.php:2545
+#: ../udesign_options_page.php:2581 ../udesign_options_page.php:2617
+#: ../udesign_options_page.php:3539
+msgid "left"
+msgstr "چپ"
+
+#: ../udesign_options_page.php:2366 ../udesign_options_page.php:2402
+#: ../udesign_options_page.php:2438 ../udesign_options_page.php:2474
+#: ../udesign_options_page.php:2510 ../udesign_options_page.php:2546
+#: ../udesign_options_page.php:2582 ../udesign_options_page.php:2618
+#: ../udesign_options_page.php:3540
+msgid "right"
+msgstr "راست"
+
+#: ../udesign_options_page.php:2368 ../udesign_options_page.php:2404
+#: ../udesign_options_page.php:2440 ../udesign_options_page.php:2476
+#: ../udesign_options_page.php:2512 ../udesign_options_page.php:2548
+#: ../udesign_options_page.php:2584 ../udesign_options_page.php:2620
+msgid "Vertical:"
+msgstr "عمودی:"
+
+#: ../udesign_options_page.php:2370 ../udesign_options_page.php:2406
+#: ../udesign_options_page.php:2442 ../udesign_options_page.php:2478
+#: ../udesign_options_page.php:2514 ../udesign_options_page.php:2550
+#: ../udesign_options_page.php:2586 ../udesign_options_page.php:2622
+msgid "top"
+msgstr "بالا"
+
+#: ../udesign_options_page.php:2372 ../udesign_options_page.php:2408
+#: ../udesign_options_page.php:2444 ../udesign_options_page.php:2480
+#: ../udesign_options_page.php:2516 ../udesign_options_page.php:2552
+#: ../udesign_options_page.php:2588 ../udesign_options_page.php:2624
+msgid "bottom"
+msgstr "پایین"
+
+#: ../udesign_options_page.php:2382
+msgid "Home Page Header/Slider Background Image"
+msgstr "تصویر پس زمینه سربرگ/اسلایدر صفحه اصلی"
+
+#: ../udesign_options_page.php:2418
+msgid "Home Page Before Content Background Image"
+msgstr "تصویر پس زمینه محتوای قبل از صفحه اصلی"
+
+#: ../udesign_options_page.php:2454
+msgid "Page Title Background Image"
+msgstr "تصویر پس زمینه عنوان برگه"
+
+#: ../udesign_options_page.php:2490
+msgid "Main Content Background Image"
+msgstr "تصویر پس زمینه محتوای اصلی"
+
+#: ../udesign_options_page.php:2499 ../udesign_options_page.php:2535
+#: ../udesign_options_page.php:2571 ../udesign_options_page.php:2607
+msgid "Background Properties:"
+msgstr "ویژگی های پس زمینه:"
+
+#: ../udesign_options_page.php:2526
+msgid "Bottom Area Background Image"
+msgstr "تصویر پس زمینه ناحیه پایین"
+
+#: ../udesign_options_page.php:2562
+msgid "Footer Background Image"
+msgstr "تصویر پس زمینه ناحیه ته برگ"
+
+#: ../udesign_options_page.php:2598
+msgid "One Continuous Background Image That Will Span Across All Sections"
+msgstr "یک تصویر پیوسته که تمام بخش ها را پوشش می دهد"
+
+#: ../udesign_options_page.php:2628
+#, php-format
+msgid "For Background color  %1$sTop Area Background %2$s%3$s  will be used."
+msgstr "برای رنگ پس زمینه %1$sپس زمینه ناحیه بالا %2$s%3$s استفاده خواهد شد."
+
+#: ../udesign_options_page.php:2630
+msgid "Fixed Position"
+msgstr "موقعیت ثابت"
+
+#: ../udesign_options_page.php:2633
+msgid "Fix the position of the background image so that it is not scrollable."
+msgstr "ثابت کردن موقعیت تصویر پس زمینه به طوری که قابل پیمایش نباشد."
+
+#: ../udesign_options_page.php:2636
+msgid "Allow Other Sections' Images"
+msgstr "فعال کردن تصاویر بخش های دیگر"
+
+#: ../udesign_options_page.php:2639
+msgid ""
+"Enable background images from other sections to show as well, you can "
+"achieve sort of layered layout."
+msgstr ""
+"فعال کردن تصاویر پس زمینه از بخش های دیگر برای نمایش، برای دست یافتن به طرح "
+"لایه لایه. "
+
+#: ../udesign_options_page.php:2650 ../udesign_options_page.php:2652
+#, fuzzy
+msgid "Remove Horizontal Rulers"
+msgstr "تکرار فقط به صورت افقی"
+
+#: ../udesign_options_page.php:2655
+msgid ""
+"This option will allow you to remove the horizontal ruler lines that are "
+"enabled by default for some sections."
+msgstr ""
+
+#: ../udesign_options_page.php:2657
+#, php-format
+msgid ""
+"Note: If you wish to remove the border line under the top navigation menu, "
+"the option for that is located under: %1$s General Options %2$s Border Under "
+"the Menu %3$s"
+msgstr ""
+"توجه: اگر شما مایل به پاک کردن مرز زیر فهرست ناوبری بالا هستید، گزینه آن در "
+"%1$s تنظیمات همگانی %2$s مرز زیر فهرست %3$s واقع شده است."
+
+#: ../udesign_options_page.php:2668
+msgid "Administrative Tasks:"
+msgstr "کارهای اجرایی:"
+
+#: ../udesign_options_page.php:2671
+msgid "Save the current custom colors."
+msgstr "ذخیره کردن رنگ های سفارشی فعلی."
+
+#: ../udesign_options_page.php:2673
+msgid ""
+"A Color Scheme will be saved with an automatic name generated from the "
+"current time stamp. Once saved you will be able to choose it from the "
+"dropdown below and load it at a later time."
+msgstr ""
+"یک طرح رنگ با یک نام اتوماتیک که از زمان فعلی تولید شده است، ذخیره خواهد شد. "
+"وقتی که طرح ذخیره شد شما خواهید توانست در آینده آن را از فهرست پایین افتادنی "
+"پایین انتخاب و بارگذاری کنید."
+
+#: ../udesign_options_page.php:2676
+msgid "Save"
+msgstr "ذخیره"
+
+#: ../udesign_options_page.php:2682
+msgid ""
+"Choose a custom color scheme from the first dropdown below and then choose a "
+"task to perform from the second dropdown, then hit the \"Update\" button."
+msgstr ""
+"یک طرح رنگ سفارشی را از اولین فهرست پایین افتادنی پایین انتخاب کنید و سپس از "
+"فهرست پایین افتادنی دوم یک کار برای اجرا کردن انتخاب کنید، سپس روی دکمه \"به "
+"روز رسانی\" کلیک کنید."
+
+#: ../udesign_options_page.php:2697
+msgid "Note: The \"Default Colors\" cannot be deleted."
+msgstr "توجه: \"رنگ های پیش فرض\" نمی تواند پاک شود."
+
+#: ../udesign_options_page.php:2717
+msgid "Current Slider"
+msgstr "اسلایدر فعلی"
+
+#: ../udesign_options_page.php:2719
+msgid "Choose a slider:"
+msgstr "یک اسلایدر را انتخاب کنید:"
+
+#: ../udesign_options_page.php:2722
+msgid "Flashmo Grid Slider"
+msgstr "اسلایدر Flashmo Grid"
+
+#: ../udesign_options_page.php:2723
+msgid "Piecemaker"
+msgstr "اسلایدر Piecemaker"
+
+#: ../udesign_options_page.php:2724
+msgid "Piecemaker 2"
+msgstr "اسلایدر Piecemaker 2"
+
+#: ../udesign_options_page.php:2725
+msgid "Cycle 1 (full width image)"
+msgstr "اسلایدر Cycle 1 (تصویر تمام صفحه)"
+
+#: ../udesign_options_page.php:2726
+msgid "Cycle 2 (image with text)"
+msgstr "اسلایدر Cycle 2 (تصویر با متن)"
+
+#: ../udesign_options_page.php:2727
+msgid "Cycle 3 (image with sliding text)"
+msgstr "اسلایدر Cycle 3 (تصویر با متن متحرک)"
+
+#: ../udesign_options_page.php:2728 ../udesign_options_page.php:4916
+msgid "Revolution Slider"
+msgstr "اسلایدر Revolution"
+
+#: ../udesign_options_page.php:2729
+msgid "No Slider"
+msgstr "بدون اسلایدر"
+
+#: ../udesign_options_page.php:2734
+msgid "Save & Activate"
+msgstr "ذخیره و فعال کردن"
+
+#: ../udesign_options_page.php:2738
+msgid "Continue with the section below to customize the slider..."
+msgstr "برای سفارشی سازی اسلایدر بخش پایین را دنبال کنید..."
+
+#: ../udesign_options_page.php:2772
+msgid "Flashmo Grid Slider Settings:"
+msgstr "تنظیمات اسلایدر Flashmo Grid:"
+
+#: ../udesign_options_page.php:2776 ../udesign_options_page.php:3016
+#: ../udesign_options_page.php:3274 ../udesign_options_page.php:5251
+msgid "Image Width"
+msgstr "پهنا تصویر"
+
+#: ../udesign_options_page.php:2779
+msgid "The width in pixels of the slider images (940 recommended)."
+msgstr "پهنا تصاویر اسلایدر بر حسب پیکسل (940 توصیه می شود)."
+
+#: ../udesign_options_page.php:2783 ../udesign_options_page.php:3023
+#: ../udesign_options_page.php:3281 ../udesign_options_page.php:5258
+msgid "Image Height"
+msgstr "ارتفاع تصویر"
+
+#: ../udesign_options_page.php:2786
+msgid "The height in pixels of the slider images (400 recommended)."
+msgstr "ارتفاع تصاویر اسلایدر بر حسب پیکسل (400 توصیه می شود)."
+
+#: ../udesign_options_page.php:2790
+msgid "Auto Play"
+msgstr "پخش اتوماتیک"
+
+#: ../udesign_options_page.php:2793
+msgid "True"
+msgstr "روشن"
+
+#: ../udesign_options_page.php:2794
+msgid "False"
+msgstr "خاموش"
+
+#: ../udesign_options_page.php:2796
+msgid "Set the auto play option, true by default ( or false )."
+msgstr "گزینه پخش اتوماتیک را تنظیم کنید، روشن به صورت پیش فرض (یا خاموش)."
+
+#: ../udesign_options_page.php:2800
+msgid "Auto Play Duration"
+msgstr "مدت زمان پخش اتوماتیک"
+
+#: ../udesign_options_page.php:2803
+msgid ""
+"Number of seconds between transitions, 2.4 seconds by default ( or any "
+"number of seconds )."
+msgstr ""
+"تعداد ثانیه ها بین گذار، 2.4 ثانیه به صورت پیش فرض (یا هر تعداد ثانیه دیگر)."
+
+#: ../udesign_options_page.php:2807
+msgid "Number of Rows"
+msgstr "تعداد ردیف ها"
+
+#: ../udesign_options_page.php:2810
+msgid ""
+"Number of rows, in which the images will be sliced, 4 rows by default ( or "
+"any number of rows )"
+msgstr ""
+"تعداد ردیف هایی که تصاویر برش زده خواهند شد، 4 ردیف به صورت پیش فرض (یا هر "
+"تعداد ردیف دیگر)"
+
+#: ../udesign_options_page.php:2814
+msgid "Number of Columns"
+msgstr "تعداد ستون ها"
+
+#: ../udesign_options_page.php:2817
+msgid ""
+"Number of columns, in which the images will be sliced, 6 columns by default "
+"( or any number of columns )"
+msgstr ""
+"تعداد ستون هایی که تصاویر برش زده خواهند شد، 6 ستون به صورت پیش فرض (یا هر "
+"تعداد ستون دیگر)"
+
+#: ../udesign_options_page.php:2821
+msgid "Tween Duration"
+msgstr "مدت زمان بین"
+
+#: ../udesign_options_page.php:2824
+msgid ""
+"Duration in seconds of the motion tween for each block in the transition."
+msgstr "مدت زمان حرکت برای هر بلاک در هنگام گذار بر حسب ثانیه."
+
+#: ../udesign_options_page.php:2828 ../udesign_options_page.php:3044
+msgid "Tween Delay"
+msgstr "تاخیر بین"
+
+#: ../udesign_options_page.php:2831
+msgid "Delay in seconds between each block in the transition."
+msgstr "تاخیر بین هر بلاک در هنگام گذار بر حسب ثانیه."
+
+#: ../udesign_options_page.php:2835
+msgid "Bar Status"
+msgstr "وضعیت نوار"
+
+#: ../udesign_options_page.php:2838
+msgid "Hide the Bar"
+msgstr "عدم نمایش نوار"
+
+#: ../udesign_options_page.php:2839
+msgid "Show the Bar"
+msgstr "نمایش نوار"
+
+#: ../udesign_options_page.php:2840
+msgid "Show the Bar and Photo Description"
+msgstr "نمایش نوار و توضیحات تصویر"
+
+#: ../udesign_options_page.php:2842
+msgid "This is the area in the slider displaying additional controls and text."
+msgstr "در این ناحیه از اسلایدر کنترل های اضافی و متن نمایش می یابند."
+
+#: ../udesign_options_page.php:2846 ../udesign_options_page.php:2848
+#: ../udesign_options_page.php:3135 ../udesign_options_page.php:3137
+#: ../udesign_options_page.php:4199 ../udesign_options_page.php:4201
+msgid "3D Shadow"
+msgstr "سایه سه بعدی"
+
+#: ../udesign_options_page.php:2851 ../udesign_options_page.php:3140
+#: ../udesign_options_page.php:4204
+msgid "Remove the 3D shadow under the slider"
+msgstr "پاک کردن سایه سه بعدی زیر اسلایدر"
+
+#: ../udesign_options_page.php:2871 ../udesign_options_page.php:2923
+#: ../udesign_options_page.php:3189 ../udesign_options_page.php:3216
+#: ../udesign_options_page.php:3734 ../udesign_options_page.php:3766
+#: ../udesign_options_page.php:3785 ../udesign_options_page.php:3834
+#: ../udesign_options_page.php:3878 ../udesign_options_page.php:3909
+#: ../udesign_options_page.php:4497 ../udesign_options_page.php:4580
+#: ../udesign_options_page.php:4781 ../udesign_options_page.php:4830
+msgid "Image:"
+msgstr "تصویر:"
+
+#: ../udesign_options_page.php:2877 ../udesign_options_page.php:2929
+msgid "Flow:"
+msgstr "جریان:"
+
+#: ../udesign_options_page.php:2884 ../udesign_options_page.php:2936
+msgid "Direction:"
+msgstr "جهت:"
+
+#: ../udesign_options_page.php:2894 ../udesign_options_page.php:2946
+msgid "Rotation:"
+msgstr "چرخش:"
+
+#: ../udesign_options_page.php:2904 ../udesign_options_page.php:2956
+#: ../udesign_options_page.php:3756 ../udesign_options_page.php:3856
+#: ../udesign_options_page.php:4551 ../udesign_options_page.php:4634
+#: ../udesign_options_page.php:4812 ../udesign_options_page.php:4861
+msgid "Slide text"
+msgstr "متن اسلاید"
+
+#: ../udesign_options_page.php:2908 ../udesign_options_page.php:2960
+msgid ""
+"This textfield supports HTML and CSS. The CSS classes used are located in "
+"\"sliders/flashmo/grid_slider/flashmo_224_style.css\""
+msgstr ""
+"این فیلد متنی HTML و CSS را پشتیبانی می کند. کلاس های CSS ای که استفاده می "
+"شوند در \"sliders/flashmo/grid_slider/flashmo_224_style.css\" واقع شده اند."
+
+#: ../udesign_options_page.php:2970 ../udesign_options_page.php:3237
+#: ../udesign_options_page.php:4131
+msgid "No JavaScript image"
+msgstr "تصویر بدون جاوااسکریپت"
+
+#: ../udesign_options_page.php:2972 ../udesign_options_page.php:3239
+#: ../udesign_options_page.php:4133
+msgid "Paste the full path to your image:"
+msgstr "آدرس تصویرتان را وارد کنید:"
+
+#: ../udesign_options_page.php:2974
+msgid ""
+"In the case when JavaScript is disabled the 1st slider image is displayed by "
+"default in place of the Flashmo slider, you may change that in here"
+msgstr ""
+"در مواردی که جاوااسکریپت غیرفعال است به صورت پیش فرض اولین تصویر اسلایدر در "
+"مکان اسلایدر Flashmo نمایش می یابد، شما می توانید آن را از اینجا تغییر دهید"
+
+#: ../udesign_options_page.php:3012
+msgid "Piecemaker Slider Settings:"
+msgstr "تنظیمات اسلایدر Piecemaker:"
+
+#: ../udesign_options_page.php:3019
+msgid "The width of the images to be loaded."
+msgstr "پهنا تصاویری که بارگذاری می شوند."
+
+#: ../udesign_options_page.php:3026
+msgid "The height of the images to be loaded."
+msgstr "ارتفاع تصاویری که بارگذاری می شوند."
+
+#: ../udesign_options_page.php:3030
+msgid "Number of segments"
+msgstr "تعداد بخش ها"
+
+#: ../udesign_options_page.php:3033
+msgid "Number of segments, in which the images will be sliced."
+msgstr "تعداد بخش هایی که تصاویر برش زده خواهند شد."
+
+#: ../udesign_options_page.php:3037
+msgid "Tween Time"
+msgstr "مدت زمان بین"
+
+#: ../udesign_options_page.php:3040
+msgid "Number of seconds for each element to be turned."
+msgstr "تعداد ثانیه ها برای چرخش هر عنصر."
+
+#: ../udesign_options_page.php:3047
+msgid ""
+"Number of seconds from one element starting to turn to the next element "
+"starting."
+msgstr "تعداد ثانیه هااز شروع چرخش یک عنصر تا شروع چرخش عنصر بعدی."
+
+#: ../udesign_options_page.php:3051
+msgid "Tween Type"
+msgstr "نوع بین"
+
+#: ../udesign_options_page.php:3096
+#, php-format
+msgid ""
+"Type of transition from Caurina&#39;s Tweener class. Find all possible "
+"transition types and more information about Tweener in the official "
+"%1$sdocumentation%2$s."
+msgstr ""
+"تمام حالت های گذار ممکن و اطلاعات بیشتر درباره Tweener را در %1$sمستندات%2$s "
+"رسمی پیدا کنید."
+
+#: ../udesign_options_page.php:3100
+msgid "Z Distance"
+msgstr "فاصله عمودی (Z)"
+
+#: ../udesign_options_page.php:3103
+msgid ""
+"To which extent are the cubes moved on z axis when being tweened. Negative "
+"values bring the cube closer to the camera, positive values take it further "
+"away. A good range is roughly between -200 and 700."
+msgstr ""
+"مقداری که مکعب ها هنگام گذار از محور z دور می شوند. مقادیر منفی مکعب را به "
+"دوربین نزدیکتر، مقادیر مثبت آن را دورتر می کند. یک محدوده خوب تقریبا بین "
+"-200 و 700 است."
+
+#: ../udesign_options_page.php:3107
+msgid "Expand"
+msgstr "گسترش"
+
+#: ../udesign_options_page.php:3110
+msgid "To which extent are the cubes moved away from each other when tweening."
+msgstr "مقداری که مکعب ها هنگام گذار از یکدیگر دور می شوند."
+
+#: ../udesign_options_page.php:3114
+msgid "Shadow Darkness"
+msgstr "تاریکی سایه"
+
+#: ../udesign_options_page.php:3117
+msgid ""
+"To which extent are the sides shadowed, when the elements are tweening and "
+"the sided move towards the background. 100 is black, 0 is no darkening."
+msgstr ""
+"مقداری که ضلع های مجاور سایه دارند در هنگامی که عناصر در حال گذار هستند و "
+"ضلع های مجاور در حال آمدن به طرف پس زمینه هستند. 100 تیره و  0 بدون تیرگی "
+"است."
+
+#: ../udesign_options_page.php:3121 ../udesign_options_page.php:3322
+msgid "Autoplay"
+msgstr "پخش اتوماتیک"
+
+#: ../udesign_options_page.php:3124
+msgid "Number of seconds to the next image."
+msgstr "تعداد ثانیه ها تا تصویر بعدی."
+
+#: ../udesign_options_page.php:3128
+msgid "Text Distance"
+msgstr "فاصله متن"
+
+#: ../udesign_options_page.php:3131
+msgid "Distance of the info text to the borders of its background."
+msgstr "فاصله متن توضیحات از مرزهای پس زمینه آن."
+
+#: ../udesign_options_page.php:3151
+msgid "Text Background"
+msgstr "پس زمینه متن"
+
+#: ../udesign_options_page.php:3159
+msgid "Description text background"
+msgstr "پس زمینه متن توضیحات"
+
+#: ../udesign_options_page.php:3163
+msgid "Inner Color"
+msgstr "رنگ داخلی"
+
+#: ../udesign_options_page.php:3171
+msgid "Sides color of the sliced elements"
+msgstr "رنگ ضلع های مجاور عناصر برش زده شده"
+
+#: ../udesign_options_page.php:3197 ../udesign_options_page.php:3223
+msgid "Edit the info text, erase all for none:"
+msgstr "ویرایش متن توضیحات، برای عدم نمایش تمام آنرا پاک کنید:"
+
+#: ../udesign_options_page.php:3201 ../udesign_options_page.php:3227
+msgid "Study the above text for slider's specific syntax"
+msgstr "متن بالا را برای دستور ویژه اسلایدر مطالعه کنید."
+
+#: ../udesign_options_page.php:3241
+msgid ""
+"In the case when JavaScript is disabled the 1st slider image is displayed by "
+"default in place of the Piecemaker slider, you may change that in here"
+msgstr ""
+"در مواردی که جاوااسکریپت غیرفعال است به صورت پیش فرض اولین تصویر اسلایدر در "
+"مکان اسلایدر Piecemaker نمایش می یابد، شما می توانید آن را از اینجا تغییر "
+"دهید"
+
+#: ../udesign_options_page.php:3267
+msgid "Piecemaker 2 Slider Settings:"
+msgstr "تنظیمات اسلایدر Piecemaker 2:"
+
+#: ../udesign_options_page.php:3270
+msgid "General Settings:"
+msgstr "تنظیمات همگانی:"
+
+#: ../udesign_options_page.php:3277
+msgid "The width of every image."
+msgstr "پهنا هر تصویر."
+
+#: ../udesign_options_page.php:3284
+msgid "The height of every image."
+msgstr "ارتفاع هر تصویر."
+
+#: ../udesign_options_page.php:3293
+msgid "Loader Color"
+msgstr "رنگ Loader"
+
+#: ../udesign_options_page.php:3301
+msgid ""
+"Color of the cubes before the first image appears, also the color of the "
+"back sides of the cube, which become visible at some transition types."
+msgstr ""
+"رنگ مکعب ها قبل از اینکه اولین تصویر ظاهر شود. همچنین رنگ ضلع های مجاور مکعب "
+"که در حالت گذار آشکار می شوند."
+
+#: ../udesign_options_page.php:3305
+msgid "Inner Side Color"
+msgstr "رنگ ضلع داخلی"
+
+#: ../udesign_options_page.php:3313
+msgid "Color of the inner sides of the cube when sliced"
+msgstr "رنگ ضلع های داخلی مکعب هنگامی که برش زده می شود."
+
+#: ../udesign_options_page.php:3325
+msgid ""
+"Number of seconds from one transition to another, if not stopped. Set to 0 "
+"to disable autoplay."
+msgstr ""
+"تعداد ثانیه ها از یک گذار تا گذار بعدی، اگر وقفه ای ایجاد نشود. برای غیرفعال "
+"کردن روی 0 تنظیم کنید."
+
+#: ../udesign_options_page.php:3329
+msgid "Field of View"
+msgstr "فیلد نمایش"
+
+#: ../udesign_options_page.php:3332
+#, php-format
+msgid ""
+"The display of the slide object moving down the z axis (1 to 179). It "
+"appears to change size quickly and moves a great distance. %1$sMore info%2$s"
+msgstr ""
+"نمایش پایین رفتن اسلاید در راستای محور  z (1 تا 179). این با تغییر سریع "
+"اندازه و جا به جایی فاصله نمایش می یابد. %1$sاطلاعات بیشتر%2$s"
+
+#: ../udesign_options_page.php:3340
+msgid "Shadows:"
+msgstr "سایه ها:"
+
+#: ../udesign_options_page.php:3344
+msgid "Side Shadow Alpha"
+msgstr "مقدار Alpha در سایه ضلع"
+
+#: ../udesign_options_page.php:3347
+#, php-format
+msgid ""
+"Sides get darker when moved away from the front. This is the degree of "
+"darkness 0 = no change, 1 = 100%s black."
+msgstr ""
+"ضلع ها در هنگام دور شدن از روبرو تیره تر می شوند. این یک درجه بین تیرگی 0 = "
+"بدون تغییر، 1 = 100%s سیاه است."
+
+#: ../udesign_options_page.php:3351
+msgid "Drop Shadow Alpha"
+msgstr "مقدار Alpha در سایه پایین"
+
+#: ../udesign_options_page.php:3354
+msgid "Alpha of the drop shadow 0 = no shadow, 1 = opaque."
+msgstr "مقدار Alpha در سایه پایین 0 = بدون سایه، 1= مات"
+
+#: ../udesign_options_page.php:3358
+msgid "Drop Shadow Distance"
+msgstr "فاصله سایه پایین"
+
+#: ../udesign_options_page.php:3361
+msgid "Distance of the shadow from the bottom of the image."
+msgstr "فاصله سایه از پایین تصویر."
+
+#: ../udesign_options_page.php:3365
+msgid "Drop Shadow Scale"
+msgstr "مقیاس سایه پایین"
+
+#: ../udesign_options_page.php:3368
+msgid ""
+"As the shadow is blurred, it appears wider that the actual image, when not "
+"resized. Thus it's a good idea to make it slightly smaller. 1 would be no "
+"resizing at all."
+msgstr ""
+"با محو شدن سایه، آن از اندازه واقعی پهن تر می شود، درحالی که اندازه آن تغییر "
+"نکرده است. بنابراین کمی کوچک کردن آن ایده خوبی است. برای عدم تغییر اندازه "
+"آنرا روی 1 تنظیم کنید."
+
+#: ../udesign_options_page.php:3372
+msgid "Drop Shadow Blur X"
+msgstr "محو شدگی سایه محور X"
+
+#: ../udesign_options_page.php:3375
+msgid "Blur of the drop shadow on the x-axis."
+msgstr "محو شدگی سایه پایین در راستای محور x."
+
+#: ../udesign_options_page.php:3379
+msgid "Drop Shadow Blur Y"
+msgstr "محو شدگی سایه محور Y"
+
+#: ../udesign_options_page.php:3382
+msgid "Blur of the drop shadow on the y-axis."
+msgstr "محو شدگی سایه پایین در راستای محور y."
+
+#: ../udesign_options_page.php:3390
+msgid "Menu:"
+msgstr "منو:"
+
+#: ../udesign_options_page.php:3394
+msgid "Menu Distance X"
+msgstr "فاصله منو X"
+
+#: ../udesign_options_page.php:3397
+msgid "Distance between two menu items (from center to center)."
+msgstr "فاصله بین دو آیتم منو (از وسط تا وسط)."
+
+#: ../udesign_options_page.php:3401
+msgid "Menu Distance Y"
+msgstr "فاصله منو Y"
+
+#: ../udesign_options_page.php:3404
+msgid "Distance of the menu from the bottom of the image."
+msgstr "فاصله منو از پایین تصویر."
+
+#: ../udesign_options_page.php:3413
+msgid "Menu Color 1"
+msgstr "رنگ 1 منو"
+
+#: ../udesign_options_page.php:3421
+msgid "Color of an inactive menu item."
+msgstr "رنگ یک آیتم منو غیرفعال."
+
+#: ../udesign_options_page.php:3425
+msgid "Menu Color 2"
+msgstr "رنگ 2 منو"
+
+#: ../udesign_options_page.php:3433
+msgid "Color of an active menu item."
+msgstr "رنگ یک آیتم منو فعال."
+
+#: ../udesign_options_page.php:3437
+msgid "Menu Color 3"
+msgstr "رنگ 3 منو"
+
+#: ../udesign_options_page.php:3445
+msgid ""
+"Color of the inner circle of an active menu item. Should equal the "
+"background color of the whole thing."
+msgstr "رنگ داخلی دایره یک آیتم منو فعال. می تواند رنگ پس زمینه همه چیز باشد."
+
+#: ../udesign_options_page.php:3453
+msgid "Controls:"
+msgstr "کنترل ها:"
+
+#: ../udesign_options_page.php:3457
+msgid "Controls' Size"
+msgstr "اندازه کنترل ها"
+
+#: ../udesign_options_page.php:3460
+msgid ""
+"Size of the controls, which appear on rollover (play, stop, info, link)."
+msgstr ""
+"اندازه کنترل ها، که در حالت hover ظاهر می شوند (paly, stop, info, link)."
+
+#: ../udesign_options_page.php:3464
+msgid "Controls' Distance"
+msgstr "فاصله کنترل ها"
+
+#: ../udesign_options_page.php:3467
+msgid "Distance between the controls (from the borders)."
+msgstr "فاصله بین کنترل ها (از مرزها)."
+
+#: ../udesign_options_page.php:3476
+msgid "Control Color 1"
+msgstr "رنگ 1 کنترل"
+
+#: ../udesign_options_page.php:3484
+msgid "Background color of the controls."
+msgstr "رنگ پس زمینه کنترل ها."
+
+#: ../udesign_options_page.php:3488
+msgid "Control Color 2"
+msgstr "رنگ 2 کنترل"
+
+#: ../udesign_options_page.php:3496
+msgid "Font color of the controls."
+msgstr "رنگ فونت کنترل ها."
+
+#: ../udesign_options_page.php:3505
+msgid "Control Alpha"
+msgstr "مقدار Alpha در کنترل"
+
+#: ../udesign_options_page.php:3508
+msgid "Alpha of a control, when mouse is not over."
+msgstr "مقدار Alpha در یک کنترل، هنگامی که ماوس روی آن نیست."
+
+#: ../udesign_options_page.php:3512
+msgid "Control Alpha Over"
+msgstr "مقدار Alpha در hover"
+
+#: ../udesign_options_page.php:3515
+msgid "Alpha of a control, when mouse is over."
+msgstr "مقدار Alpha در یک کنترل ، هنگامی که ماوس روی آن است."
+
+#: ../udesign_options_page.php:3519
+msgid "Controls X"
+msgstr "کنترل ها X"
+
+#: ../udesign_options_page.php:3522
+msgid ""
+"X-position of the point, which aligns the controls (measured from [0,0] of "
+"the image)."
+msgstr ""
+"موقعیت-X از یک نقطه، که کنترل ها را تراز می کند (از [0,0] تصویر اندازه گرفته "
+"می شود)."
+
+#: ../udesign_options_page.php:3526
+msgid "Controls Y"
+msgstr "کنترل ها Y"
+
+#: ../udesign_options_page.php:3529
+msgid ""
+"Y-position of the point, which aligns the controls (measured from [0,0] of "
+"the image)."
+msgstr ""
+"موقعیت-Y از یک نقطه، که کنترل ها را تراز می کند (از [0,0] تصویر اندازه گرفته "
+"می شود)."
+
+#: ../udesign_options_page.php:3533
+msgid "Controls' Alignment"
+msgstr "تراز کنترل ها"
+
+#: ../udesign_options_page.php:3536 ../udesign_options_page.php:5280
+msgid "Choose Alignment: "
+msgstr "یک تراز را انتخاب کنید:"
+
+#: ../udesign_options_page.php:3543
+msgid ""
+"Type of alignment from the point [controlsX, controlsY] - can be \"center\", "
+"\"left\" or \"right\"."
+msgstr ""
+"نوع تراز نسبت به نقطه [کنترل ها X,کنترل ها Y] - می تواند \"وسط\"، \"چپ\" یا "
+"\"راست\" باشد."
+
+#: ../udesign_options_page.php:3551
+msgid "Toolstips:"
+msgstr "تولتیپ ها:"
+
+#: ../udesign_options_page.php:3555
+msgid "Tooltip Height"
+msgstr "ارتفاع تولتیپ"
+
+#: ../udesign_options_page.php:3558
+msgid "Height of the tooltip surface in the menu."
+msgstr "ارتفاع سطح تولتیپ در منو."
+
+#: ../udesign_options_page.php:3567
+msgid "Tooltip Color"
+msgstr "رنگ تولتیپ"
+
+#: ../udesign_options_page.php:3575
+msgid "Color of the tooltip surface in the menu."
+msgstr "رنگ سطح تولتیپ در منو."
+
+#: ../udesign_options_page.php:3584
+msgid "Tooltip Text Y"
+msgstr "متن Y تولتیپ"
+
+#: ../udesign_options_page.php:3587
+msgid "Y-distance of the tooltip text field from the top of the tooltip."
+msgstr "فاصله-Y فیلد متنی تولتیپ از بالای تولتیپ."
+
+#: ../udesign_options_page.php:3591
+msgid "Tooltip Text Style"
+msgstr "استایل متن تولتیپ"
+
+#: ../udesign_options_page.php:3594
+msgid ""
+"The style of the tooltip text, specified in the CSS file. Default: \"P-Italic"
+"\""
+msgstr "استایل متن تولتیپ، مشخص شده در فایل CSS. پیش فرض: \"P-Italic\""
+
+#: ../udesign_options_page.php:3603
+msgid "Tooltip Text Color"
+msgstr "رنگ متن تولتیپ"
+
+#: ../udesign_options_page.php:3611
+msgid "Color of the tooltip text."
+msgstr "رنگ متن تولتیپ."
+
+#: ../udesign_options_page.php:3620
+msgid "Tooltip Margin Left"
+msgstr "فاصله تولتیپ از چپ"
+
+#: ../udesign_options_page.php:3623
+msgid "Margin of the text to the left end of the tooltip."
+msgstr "فاصله متن از انتهای چپ تولتیپ."
+
+#: ../udesign_options_page.php:3627
+msgid "Tooltip Margin Right"
+msgstr "فاصله تولتیپ از راست"
+
+#: ../udesign_options_page.php:3630
+msgid "Margin of the text to the right end of the tooltip."
+msgstr "فاصله متن از انتهای راست تولتیپ."
+
+#: ../udesign_options_page.php:3634
+msgid "Tooltip Text Sharpness"
+msgstr "برندگی متن تولتیپ"
+
+#: ../udesign_options_page.php:3637
+#, php-format
+msgid "Sharpness of the tooltip text (-400 to 400). %1$sMore info%2$s"
+msgstr "برندگی متن تولتیپ (-400 تا 400). %1$sاطلاعات بیشتر%2$s"
+
+#: ../udesign_options_page.php:3641
+msgid "Tooltip Text Thickness"
+msgstr "ضخامت متن تولتیپ"
+
+#: ../udesign_options_page.php:3644
+#, php-format
+msgid "Thickness of the tooltip text (-400 to 400). %1$sMore info%2$s"
+msgstr "ضخامت متن تولتیپ (-400 تا 400). %1$sاطلاعات بیشتر%2$s"
+
+#: ../udesign_options_page.php:3652
+msgid "Info Text:"
+msgstr "متن اطلاعات:"
+
+#: ../udesign_options_page.php:3656
+msgid "Info Width"
+msgstr "پهنا اطلاعات"
+
+#: ../udesign_options_page.php:3659
+msgid "The width of the info text field."
+msgstr "پهنا فیلد متنی اطلاعات."
+
+#: ../udesign_options_page.php:3668
+msgid "Info Background"
+msgstr "پس زمینه اطلاعات"
+
+#: ../udesign_options_page.php:3676
+msgid "The background color of the info text field."
+msgstr "رنگ پس زمینه فیلد متنی اطلاعات."
+
+#: ../udesign_options_page.php:3685
+msgid "Info Background Alpha"
+msgstr "مقدار Alpha در پس زمینه اطلاعات"
+
+#: ../udesign_options_page.php:3688
+msgid ""
+"The alpha of the background of the info text, the image shines through, when "
+"smaller than 1."
+msgstr ""
+"هنگامی که مقدار Alpha در پس زمینه فیلد متنی اطلاعات کوچکتر از 1 باشد، تصویر "
+"می درخشد."
+
+#: ../udesign_options_page.php:3692
+msgid "Info Margin"
+msgstr "فاصله اطلاعات"
+
+#: ../udesign_options_page.php:3695
+msgid "The margin of the text field in the info section to all sides."
+msgstr "فاصله فیلد متنی اطلاعات از تمام ضلع های بخش اطلاعات."
+
+#: ../udesign_options_page.php:3699
+msgid "Info Sharpness"
+msgstr "برندگی اطلاعات"
+
+#: ../udesign_options_page.php:3702
+msgid "Sharpness of the info text (-400 to 400)."
+msgstr "برندگی متن اطلاعات (-400 تا 400)."
+
+#: ../udesign_options_page.php:3706
+msgid "Info Thickness"
+msgstr "ضخامت اطلاعات"
+
+#: ../udesign_options_page.php:3709
+msgid "Thickness of the info text (-400 to 400)."
+msgstr "ضخامت متن اطلاعات (-400 تا 400)."
+
+#: ../udesign_options_page.php:3718
+msgid "Piecemaker 2 Slides:"
+msgstr "اسلایدهای Piecemaker 2"
+
+#: ../udesign_options_page.php:3741 ../udesign_options_page.php:3841
+#: ../widgets/customCategory-widget.php:129
+#: ../widgets/googleMap-widget.php:101 ../widgets/latestPost-widget.php:146
+#: ../widgets/loginForm-widget.php:134 ../widgets/subpages-widget.php:119
+msgid "Title:"
+msgstr "عنوان:"
+
+#: ../udesign_options_page.php:3745 ../udesign_options_page.php:3845
+#: ../udesign_options_page.php:4264 ../udesign_options_page.php:4332
+#: ../udesign_options_page.php:4536 ../udesign_options_page.php:4619
+msgid "Link:"
+msgstr "لینک:"
+
+#: ../udesign_options_page.php:3748 ../udesign_options_page.php:3848
+#: ../udesign_options_page.php:4267 ../udesign_options_page.php:4335
+#: ../udesign_options_page.php:4539 ../udesign_options_page.php:4622
+#: ../udesign_options_page.php:4791 ../udesign_options_page.php:4840
+msgid "Target: "
+msgstr "باز کردن در:"
+
+#: ../udesign_options_page.php:3750 ../udesign_options_page.php:3850
+#: ../udesign_options_page.php:4269 ../udesign_options_page.php:4337
+#: ../udesign_options_page.php:4541 ../udesign_options_page.php:4624
+#: ../udesign_options_page.php:4793 ../udesign_options_page.php:4842
+msgid "self"
+msgstr "پنجره جاری"
+
+#: ../udesign_options_page.php:3751 ../udesign_options_page.php:3851
+#: ../udesign_options_page.php:4270 ../udesign_options_page.php:4338
+#: ../udesign_options_page.php:4542 ../udesign_options_page.php:4625
+#: ../udesign_options_page.php:4794 ../udesign_options_page.php:4843
+msgid "blank"
+msgstr "پنجره تازه"
+
+#: ../udesign_options_page.php:3761 ../udesign_options_page.php:3861
+msgid "To remove the text just leave a single space."
+msgstr "برای پاک کردن متن فضای بالا را خالی بگذارید."
+
+#: ../udesign_options_page.php:3773 ../udesign_options_page.php:3792
+#: ../udesign_options_page.php:3885 ../udesign_options_page.php:3916
+msgid "Title Attribute:"
+msgstr "نشان عنوان:"
+
+#: ../udesign_options_page.php:3775 ../udesign_options_page.php:3794
+#: ../udesign_options_page.php:3887 ../udesign_options_page.php:3918
+msgid "(The title attribute will be shown in the tooltip on the menu)"
+msgstr "(نشان عنوان در تولتیپ در منو نشان داده می شود)"
+
+#: ../udesign_options_page.php:3778 ../udesign_options_page.php:3890
+msgid "SWF Link:"
+msgstr "لینک SWF:"
+
+#: ../udesign_options_page.php:3780 ../udesign_options_page.php:3892
+msgid "(Paste the URL to the SWF file here. Should be on same Server)"
+msgstr "(آدرس فایل SWF را اینجا وارد کنید. باید در سرور یکسان باشد.)"
+
+#: ../udesign_options_page.php:3797 ../udesign_options_page.php:3921
+msgid "Video Link:"
+msgstr "لینک ویدیو:"
+
+#: ../udesign_options_page.php:3799
+msgid ""
+"(Paste the URL to the video file here. Should be on same Server. Accepted "
+"file formats are MPEG4 with H.264 Codec, as well as F4V and FLV)"
+msgstr ""
+"(آدرس فایل SWF را اینجا وارد کنید. باید در سرور یکسان باشد. فرمت های پذیرفته "
+"شده MPEG4 با Codec H.264 و F4V و FLV هستند.)"
+
+#: ../udesign_options_page.php:3802 ../udesign_options_page.php:3926
+msgid "Width:"
+msgstr "پهنا:"
+
+#: ../udesign_options_page.php:3806 ../udesign_options_page.php:3930
+msgid "Height:"
+msgstr "ارتفاع:"
+
+#: ../udesign_options_page.php:3811 ../udesign_options_page.php:3935
+msgid "Autoplay: "
+msgstr "پخش اتوماتیک:"
+
+#: ../udesign_options_page.php:3813 ../udesign_options_page.php:3937
+msgid "Yes"
+msgstr "بله"
+
+#: ../udesign_options_page.php:3814 ../udesign_options_page.php:3938
+msgid "No"
+msgstr "خیر"
+
+#: ../udesign_options_page.php:3923
+msgid ""
+"(Paste the URL to the FLV file here. Should be on same Server. Accepted file "
+"formats are MPEG4 with H.264 Codec, as well as F4V and FLV)"
+msgstr ""
+"(آدرس فایل FLV را اینجا وارد کنید. باید در سرور یکسان باشد. فرمت های پذیرفته "
+"شده MPEG4 با Codec H.264 و F4V و FLV هستند.)"
+
+#: ../udesign_options_page.php:3949
+msgid "Piecemaker 2 Transitions:"
+msgstr "گذارهای Piecemaker 2:"
+
+#: ../udesign_options_page.php:3950
+msgid ""
+"You can add as many transitions to the Piecemaker 2 as you want. These "
+"transitions will be started in the order they are specified below. This "
+"order is entirely independent from the order of the slides above. Once the "
+"last transition is reached, it starts over again with the first transition."
+msgstr ""
+"شما می توانید هر تعداد گذار را به دلخواه به Piecemaker 2 اضافه کنید. این "
+"گذار ها به ترتیب مشخص شده پایین شروع خواهند شد. این ترتیب کاملا مستقل از "
+"ترتیب اسلایدهای بالا است. وقتی که آخرین گذار می رسد، دوباره از اولین گذار "
+"شروع می شود."
+
+#: ../udesign_options_page.php:3951
+msgid ""
+"Every transition needs to have the following six attributes assigned to it:"
+msgstr "هر گذار نیاز به تعیین شش ویژگی پایین دارد:"
+
+#: ../udesign_options_page.php:3953
+msgid "Pieces"
+msgstr "قطعه ها"
+
+#: ../udesign_options_page.php:3953
+msgid "Number of pieces to which the image is sliced."
+msgstr "تعداد قطعه هایی که تصویر برش زدن می شود."
+
+#: ../udesign_options_page.php:3954
+msgid "Time"
+msgstr "زمان"
+
+#: ../udesign_options_page.php:3954
+msgid "Time for one cube to turn."
+msgstr "زمان برای چرخش یک مکعب."
+
+#: ../udesign_options_page.php:3955
+msgid "Transition"
+msgstr "گذار"
+
+#: ../udesign_options_page.php:3955
+msgid ""
+"Transition type of the Tweener class. For more info on these types see the "
+"official Tweener Documentation and go to \"Transition Types\". The best "
+"results are achieved by those transition types, which begin with easeInOut."
+msgstr ""
+"نوع گذار از کلاس Tweener است. برای دریافت اطلاعات بیشتر درباره این انواع به "
+"مستندات رسمی Tweener مراجعه کنید و به قسمت \"Transition Types\" بروید. "
+"بهترین نتایج با آن نوع از گذارهایی به دست می آیند که با easeInOut شروع می "
+"شوند."
+
+#: ../udesign_options_page.php:3956
+msgid "Delay"
+msgstr "تاخیر"
+
+#: ../udesign_options_page.php:3956
+msgid "Delay between the start of one cube to the start of the next cube."
+msgstr "تاخیر بین شروع یک مکعب تا شروع مکعب بعدی."
+
+#: ../udesign_options_page.php:3957
+msgid "Depth Offset"
+msgstr "آفست عمق"
+
+#: ../udesign_options_page.php:3957
+msgid ""
+"The offset during transition on the z-axis. Value between 100 and 1000 are "
+"recommended. But go for experiments."
+msgstr ""
+"آفست در محور-z در طول گذار. مقدار بین 100 و 1000 توصیه می شود. اما بهتر است "
+"خودتان امتحان کنید."
+
+#: ../udesign_options_page.php:3958
+msgid "Cube Distance"
+msgstr "فاصله مکعب"
+
+#: ../udesign_options_page.php:3958
+msgid ""
+"The distance between the cubes during transition. Values between 5 and 50 "
+"are recommended. But go for experiments."
+msgstr ""
+"فاصله بین مکعب ها در طول گذار. مقدار بین 5 و 50 توصیه می شود. اما بهتر است "
+"خودتان امتحان کنید."
+
+#: ../udesign_options_page.php:3973 ../udesign_options_page.php:4053
+msgid "Pieces:"
+msgstr "قطعه ها:"
+
+#: ../udesign_options_page.php:3977 ../udesign_options_page.php:4057
+msgid "Time:"
+msgstr "زمان:"
+
+#: ../udesign_options_page.php:3982 ../udesign_options_page.php:4062
+msgid "Transition: "
+msgstr "گذار:"
+
+#: ../udesign_options_page.php:4029 ../udesign_options_page.php:4109
+msgid "Delay:"
+msgstr "تاخیر:"
+
+#: ../udesign_options_page.php:4033 ../udesign_options_page.php:4113
+msgid "Depth Offset:"
+msgstr "آفست عمق:"
+
+#: ../udesign_options_page.php:4037 ../udesign_options_page.php:4117
+msgid "Cube Distance:"
+msgstr "فاصله مکعب:"
+
+#: ../udesign_options_page.php:4135
+msgid ""
+"In the case when JavaScript is disabled the 1st slider image is displayed by "
+"default in place of the Piecemaker 2 slider, you may change that in here"
+msgstr ""
+"در مواردی که جاوااسکریپت غیرفعال است به صورت پیش فرض اولین تصویر اسلایدر در "
+"مکان اسلایدر Piecemaker 2 نمایش می یابد، شما می توانید آن را از اینجا تغییر "
+"دهید"
+
+#: ../udesign_options_page.php:4158
+msgid "Cycle 1 Slider Settings:"
+msgstr "تنظیمات اسلایدر Cycle 1:"
+
+#: ../udesign_options_page.php:4162 ../udesign_options_page.php:4374
+msgid "Transition Speed"
+msgstr "سرعت گذار"
+
+#: ../udesign_options_page.php:4165 ../udesign_options_page.php:4377
+msgid "Speed of the transition."
+msgstr "تعیین سرعت گذار."
+
+#: ../udesign_options_page.php:4169 ../udesign_options_page.php:4381
+#: ../udesign_options_page.php:4676
+msgid "Timeout"
+msgstr "وقفه"
+
+#: ../udesign_options_page.php:4172 ../udesign_options_page.php:4384
+#: ../udesign_options_page.php:4679
+msgid "Milliseconds between slide transitions (0 to disable auto advance)."
+msgstr "میلی ثانیه بین گذارهای اسلاید (برای غیرفعال کردن 0 را وارد کنید)."
+
+#: ../udesign_options_page.php:4176 ../udesign_options_page.php:4178
+#: ../udesign_options_page.php:4388 ../udesign_options_page.php:4390
+msgid "Sync"
+msgstr "Sync"
+
+#: ../udesign_options_page.php:4181 ../udesign_options_page.php:4393
+msgid ""
+"Toggle this option to see how some effects behave differently (such as "
+"blind, curtain, and zoom)."
+msgstr ""
+"با غیرفعال کردن این گزینه ببینید که بعضی از افکت ها چکونه تغییر رفتار می "
+"دهند (مانند نابینا، پرده و بزرگ نمایی)."
+
+#: ../udesign_options_page.php:4187 ../udesign_options_page.php:4189
+msgid "Image Frame"
+msgstr "قاب تصویر"
+
+#: ../udesign_options_page.php:4192
+msgid "Remove the image frame with the border around the image?"
+msgstr "پاک کردن قاب تصویر با حاشیه دور آن."
+
+#: ../udesign_options_page.php:4193
+msgid ""
+"With the frame enabled (default state) image dimension is 914px by 374px "
+"(width by height). Without the frame image dimension is 940px by 400px. "
+"Depending on which option is selected, create and upload images with the "
+"corresponding dimensions for optimal quality."
+msgstr ""
+"با فعال بودن قاب (حالت پیش فرض) ابعاد تصویر 914 پیکسل در 374 پیکسل است (پهنا "
+"در ارتفاع). ابعاد آن بدون قاب تصویر 940 پیکسل در 400 پیکسل است. با توجه به "
+"اینکه کدام را انتخاب کرده اید، تصاویر با ابعاد مربوطه را برای کیفیت مطلوب "
+"بارگذاری کنید."
+
+#: ../udesign_options_page.php:4261 ../udesign_options_page.php:4329
+msgid "Transition effect."
+msgstr "حالت گذار."
+
+#: ../udesign_options_page.php:4274 ../udesign_options_page.php:4342
+#: ../udesign_options_page.php:4546 ../udesign_options_page.php:4629
+#: ../udesign_options_page.php:4798 ../udesign_options_page.php:4847
+msgid "Alt Tag:"
+msgstr "برچسب:"
+
+#: ../udesign_options_page.php:4277 ../udesign_options_page.php:4345
+#: ../udesign_options_page.php:4801 ../udesign_options_page.php:4850
+msgid "(To clear a text field above, replace it with a single space)"
+msgstr "(برای پاک کردن فیلد متنی بالا، آن را با یک فضای خالی جایگزین کنید)"
+
+#: ../udesign_options_page.php:4370
+msgid "Cycle 2 Slider Settings:"
+msgstr "تنظیمات اسلایدر Cycle 2:"
+
+#: ../udesign_options_page.php:4399 ../udesign_options_page.php:4401
+msgid "Enable Transition on Text"
+msgstr "فعال کردن گذار روی متن"
+
+#: ../udesign_options_page.php:4404
+msgid ""
+"Toggle this option to enable/disable the transition effect on the info text. "
+"If disabled (unchecked) then the text will disapear for the duration of the "
+"transition."
+msgstr ""
+"با استفاده از این گزینه تعیین کنید که حالت گذار روی متن اطلاعات فعال/غیرفعال "
+"شود. اگر غیرفعال شود (بدون علامت)، متن در مدت گذار ناپدید می شود."
+
+#: ../udesign_options_page.php:4410 ../udesign_options_page.php:4694
+msgid "Text Size"
+msgstr "اندازه متن"
+
+#: ../udesign_options_page.php:4429 ../udesign_options_page.php:4713
+msgid ""
+"When using \"em\" you are specifying size relative to the general font size."
+msgstr ""
+"شما هنگام استفاده از \"em\" اندازه را نسبت به اندازه همگانی فونت مشخص می "
+"کنید."
+
+#: ../udesign_options_page.php:4433 ../udesign_options_page.php:4717
+msgid "Text Line Height"
+msgstr "ارتفاع خط متن"
+
+#: ../udesign_options_page.php:4436 ../udesign_options_page.php:4720
+msgid "Line Height: "
+msgstr "ارتفاع خط: "
+
+#: ../udesign_options_page.php:4478
+msgid "Slider text color including the Title."
+msgstr "رنگ متن اسلایدر که شامل عنوان نیز می شود."
+
+#: ../udesign_options_page.php:4503 ../udesign_options_page.php:4586
+msgid "Transition:"
+msgstr "گذار:"
+
+#: ../udesign_options_page.php:4551 ../udesign_options_page.php:4634
+#: ../udesign_options_page.php:4812 ../udesign_options_page.php:4861
+msgid "(You could use text and/or html)"
+msgstr "(شما می توانید از متن و/یا html استفاده کنید)"
+
+#: ../udesign_options_page.php:4557 ../udesign_options_page.php:4640
+msgid "Button Text:"
+msgstr "متن دکمه:"
+
+#: ../udesign_options_page.php:4559 ../udesign_options_page.php:4642
+msgid "Button Style: "
+msgstr "استایل دکمه: "
+
+#: ../udesign_options_page.php:4561 ../udesign_options_page.php:4644
+msgid "Dark"
+msgstr "تیره"
+
+#: ../udesign_options_page.php:4562 ../udesign_options_page.php:4645
+msgid "Light"
+msgstr "روشن"
+
+#: ../udesign_options_page.php:4565 ../udesign_options_page.php:4648
+msgid ""
+"The button is activated only if a <strong>Link</strong> is provided. To "
+"remove the button just replace the link with a single space."
+msgstr ""
+"تنها در صورتی که یک <strong>لینک</strong> آماده شود، دکمه فعال می شود. برای "
+"پاک کردن دکمه لینک را با یک فضای خالی جایگزین کنید."
+
+#: ../udesign_options_page.php:4672
+msgid "Cycle 3 Slider Settings:"
+msgstr "تنظیمات اسلایدر Cycle 3:"
+
+#: ../udesign_options_page.php:4683 ../udesign_options_page.php:4685
+msgid "Autostop"
+msgstr "توقف اتوماتیک"
+
+#: ../udesign_options_page.php:4688
+msgid "End slideshow after the last slide."
+msgstr "پایان یافتن نمایش اسلایدها بعد از آخرین اسلاید."
+
+#: ../udesign_options_page.php:4762
+msgid "Slider text color."
+msgstr "رنگ متن اسلایدر."
+
+#: ../udesign_options_page.php:4788 ../udesign_options_page.php:4837
+msgid "Image Link:"
+msgstr "لینک تصویر:"
+
+#: ../udesign_options_page.php:4805 ../udesign_options_page.php:4854
+msgid "Image 2:"
+msgstr "تصویر 2:"
+
+#: ../udesign_options_page.php:4886
+msgid "Title Text"
+msgstr "متن عنوان"
+
+#: ../udesign_options_page.php:4888
+msgid "Change the Title:"
+msgstr "تغییر عنوان:"
+
+#: ../udesign_options_page.php:4890
+msgid ""
+"This is the title text displayed in the place of the slider on the home page"
+msgstr "این متن عنوان در مکان اسلایدر در صفحه اصلی نمایش می یابد."
+
+#: ../udesign_options_page.php:4910
+#, php-format
+msgid ""
+"You need  to install the \"Revolution Slider\" first before using this "
+"feature. You may install the slider through the %1$sInstall Plugins%2$s "
+"section."
+msgstr ""
+"شما پیش از استفاده از این ویژگی \"اسلایدر Revolution\" را نصب کنید. شما می "
+"توانید اسلایدر را از بخش %1$sنصب افزونه ها%2$s نصب کنید."
+
+#: ../udesign_options_page.php:4922
+#, php-format
+msgid ""
+"No sliders found!  Please create a new slider from the %1$sRevolution Slider"
+"%2$s page."
+msgstr ""
+"هیچ اسلایدری پیدا نشد! لطفا از برگه %1$sاسلایدر Revolution%2$s یک اسلایدر "
+"جدید بسازید."
+
+#: ../udesign_options_page.php:4925
+msgid "Choose a Revolution Slider:"
+msgstr "یک اسلایدر Revolution انتخاب کنید:"
+
+#: ../udesign_options_page.php:4927
+msgid "--Select Slider--"
+msgstr "--انتخاب اسلایدر--"
+
+#: ../udesign_options_page.php:4932
+#, php-format
+msgid ""
+"To create additional sliders or to configure the existing ones please refer "
+"to the %1$sRevolution Slider%2$s page."
+msgstr ""
+"لطفا برای ساخت اسلایدرهای اضافی یا ویرایش یک اسلایدر آماده به برگه "
+"%1$sاسلایدر Revolution%2$s مراجعه کنید."
+
+#: ../udesign_options_page.php:4932
+#, fuzzy
+msgid "Go to Revolution Slider page"
+msgstr "اسلایدر Revolution"
+
+#: ../udesign_options_page.php:4933
+#, php-format
+msgid "For help please refer to the %1$sDocumentation%2$s."
+msgstr "برای راهنمایی به %1$sمستندات%2$s مراجعه کنید."
+
+#: ../udesign_options_page.php:4933
+#, fuzzy
+msgid "Go to the Documentation"
+msgstr "مستندات"
+
+#: ../udesign_options_page.php:4953
+msgid "Portfolio Pages"
+msgstr "برگه های نمونه کارها"
+
+#: ../udesign_options_page.php:4955
+msgid ""
+"Use this area to assign Portfolio Categories to their respective Portfolio "
+"pages."
+msgstr ""
+"از این ناحیه برای اختصاص دسته های نمونه کارها به برگه های نمونه کارهای "
+"مربوطه استفاده کنید."
+
+#: ../udesign_options_page.php:4956
+msgid ""
+"Firstly though, you have to create the Portfolio page(s) and assign the "
+"\"Portfolio page\" template to it."
+msgstr ""
+"در ابتدا شما باید برگه (های) نمونه کار را بسازید و قالب \"Portfolio page\" "
+"را به آن اختصاص دهید."
+
+#: ../udesign_options_page.php:4957
+#, fuzzy
+msgid ""
+"If you don't see any categories in the dropdown(s) below it's because you "
+"haven't created any yet, in that case go to 'Posts &rarr; Categories' and "
+"create a 'Portfolio' category there. Also don't forget to save all your "
+"Portfolio related Posts and sub categories under that category."
+msgstr ""
+"اگر شما در لیست (های) پایین هیچ دسته ای را مشاهده نمی کنید به دلیل این است "
+"که تاکنون هیچ دسته ای نساخته اید. به این منظور به 'نوشته ها -> دسته ها' "
+"بروید و در آنجا یک دسته 'نمونه کار' بسازید. همچنین توجه داشته باشید که مادر "
+"تمام نوشته ها و زیردسته های مربوط به نمونه کار باید آن دسته ای که ساخته اید "
+"باشد. "
+
+#: ../udesign_options_page.php:4962
+msgid "To Portfolio page"
+msgstr "برگه نمونه کار"
+
+#: ../udesign_options_page.php:4963
+msgid "assign the Category:"
+msgstr "اختصاص دسته:"
+
+#: ../udesign_options_page.php:4963 ../widgets/customCategory-widget.php:73
+msgid "Select Category"
+msgstr "گزینش دسته"
+
+#: ../udesign_options_page.php:4964
+msgid "with"
+msgstr "با"
+
+#: ../udesign_options_page.php:4964
+msgid "items per page."
+msgstr "آیتم در برگه."
+
+#: ../udesign_options_page.php:4969
+msgid "Do not link adjacent items in this category as gallery."
+msgstr "غیرفعال کردن لینک به آیتم های مجاور در گالری های با این دسته."
+
+#: ../udesign_options_page.php:4971
+msgid ""
+"(Remove the ability to go to the next or previous item when previewing with "
+"prettyPhoto lightbox)"
+msgstr ""
+"(غیرفعال کردن امکان رفتن به آیتم بعدی یا قبلی در هنگام نمایش با اسکریپت "
+"prettyPhoto)"
+
+#: ../udesign_options_page.php:4978
+msgid "Portfolio Title Position"
+msgstr "موقعیت عنوان نمونه کار"
+
+#: ../udesign_options_page.php:4981
+msgid "Below"
+msgstr "پایین"
+
+#: ../udesign_options_page.php:4982
+msgid "Above"
+msgstr "بالا"
+
+#: ../udesign_options_page.php:4983
+msgid ""
+"This is the post title shown with every thumbnail. Choose whether you would "
+"like to have it displayed above the Thumbnail or just below it."
+msgstr ""
+"این عنوان پست است که با هر تصویر بند انگشتی (thumbnail) نمایش می یابد. "
+"انتخاب کنید که این عنوان در بالا یا پایین تصویر بندانگشتی قرار گیرد."
+
+#: ../udesign_options_page.php:4990
+msgid ""
+"The following settings refer to the individual portfolio item post (single "
+"post view)"
+msgstr "تنظیمات پایین مربوط به پست های آیتم نمونه کار (single post view) است"
+
+#: ../udesign_options_page.php:4994 ../udesign_options_page.php:5083
+#: ../udesign_options_page.php:5348
+msgid "Sidebar Position"
+msgstr "موقعیت سایدبار"
+
+#: ../udesign_options_page.php:4999
+msgid "This is the sidebar shown on individual portfolio items' posts"
+msgstr "این سایدبار در پست های آیتم های نمونه کار نمایش می یابد."
+
+#: ../udesign_options_page.php:5003 ../udesign_options_page.php:5005
+#, fuzzy
+msgid "Portfolio Postmetadata"
+msgstr "Post Metadata نمونه کار"
+
+#: ../udesign_options_page.php:5008
+msgid "Show Portfolio Post Metadata box (Single View)."
+msgstr "نمایش قسمت Post Metadata نمونه کار (Single View)"
+
+#: ../udesign_options_page.php:5009
+msgid ""
+"This is the info block containing the informationa about Author, Date, "
+"Categories, Comments in a single view portfoilo post."
+msgstr ""
+
+#: ../udesign_options_page.php:5015
+#, fuzzy
+msgid "Portfolio Postmetadata Location"
+msgstr "Post Metadata نمونه کار"
+
+#: ../udesign_options_page.php:5018 ../udesign_options_page.php:5210
+#, fuzzy
+msgid "Choose Location: "
+msgstr "انتخاب موقعیت:"
+
+#: ../udesign_options_page.php:5020 ../udesign_options_page.php:5212
+#, fuzzy
+msgid "Bottom"
+msgstr "پایین 1"
+
+#: ../udesign_options_page.php:5021 ../udesign_options_page.php:5213
+#, fuzzy
+msgid "Top"
+msgstr "بالا"
+
+#: ../udesign_options_page.php:5023
+msgid ""
+"This is the location of the block containing the informationa about Author, "
+"Date, Categories, Comments in a single view portfoilo post."
+msgstr ""
+
+#: ../udesign_options_page.php:5028 ../udesign_options_page.php:5030
+msgid "Portfolio Post Author"
+msgstr "نویسنده پست نمونه کار"
+
+#: ../udesign_options_page.php:5033
+msgid ""
+"Show Author Name (\"Portfolio Post Metadata\" needs to be enabled for this "
+"option)"
+msgstr ""
+"نمایش نام نویسنده (این گزینه احتیاج به فعال بودن \"Post Metadata نمونه کار\" "
+"دارد)"
+
+#: ../udesign_options_page.php:5034 ../udesign_options_page.php:5135
+#, fuzzy, php-format
+msgid ""
+"The following text: \"Written by: Author Name\" will be added to the "
+"postmetadata box. The author's name will be displayed as specified under "
+"%1$sUsers %2$s Your Profile%3$s <strong>Display name publicly as</strong> "
+"field and linking it to the author's page."
+msgstr ""
+"متن \"توسط: نام نویسنده\" به قسمت postmetadata اضافه می شود. نام نویسنده در "
+"قسمت %1$sکاربران -> شناسنامه شما%2$s و فیلد <strong>نمایش عمومی نام</strong> "
+"تعیین می شود."
+
+#: ../udesign_options_page.php:5034
+msgid "Go to your Profile"
+msgstr ""
+
+#: ../udesign_options_page.php:5040 ../udesign_options_page.php:5042
+msgid "Portfolio Post Tags"
+msgstr "برچسب های پست نمونه کار"
+
+#: ../udesign_options_page.php:5045
+msgid "Show Portfolio Post Tags"
+msgstr "نمایش برچسب های پست نمونه کار"
+
+#: ../udesign_options_page.php:5051 ../udesign_options_page.php:5053
+msgid "Show Comment Area"
+msgstr "نمایش ناحیه دیدگاه"
+
+#: ../udesign_options_page.php:5056
+msgid "Show comment area in Portfolio posts (Single View)"
+msgstr "نمایش ناحیه دیدگاه در پست های نمونه کار (Single View)"
+
+#: ../udesign_options_page.php:5062 ../udesign_options_page.php:5064
+#: ../udesign_options_page.php:5196 ../udesign_options_page.php:5198
+msgid "Full-width Single Post View Page"
+msgstr "برگه نمایش پست تمام صفحه"
+
+#: ../udesign_options_page.php:5067
+msgid "Remove the sidebar from Single Post View Portfolio pages."
+msgstr "پاک کردن سایدبار از پست های نمونه کار در حالت Single Post."
+
+#: ../udesign_options_page.php:5088
+msgid "This is the sidebar shown on blog pages"
+msgstr "این سایدبار در برگه های بلاگ نمایش می یابد."
+
+#: ../udesign_options_page.php:5092
+msgid "Show Excerpt"
+msgstr "نمایش Excerpt"
+
+#: ../udesign_options_page.php:5094 ../udesign_options_page.php:5117
+#: ../udesign_options_page.php:5119
+msgid "Exclude Portfolio(s) from Blog"
+msgstr "عدم نمایش نمونه کارها از بلاگ"
+
+#: ../udesign_options_page.php:5097
+msgid "Show the excerpt instead of the full post content on the Blog page."
+msgstr "نمایش خلاصه () به جای نمایش کامل محتوای پست در برگه بلاگ."
+
+#: ../udesign_options_page.php:5103
+msgid "Excerpt Length"
+msgstr "طول Excerpt"
+
+#: ../udesign_options_page.php:5105
+msgid "Change the excerpt length:"
+msgstr "تغییر طول excerpt (خلاصه):"
+
+#: ../udesign_options_page.php:5106
+msgid "This number refers to the number of words to show."
+msgstr "این عدد تعداد کلمه هایی را که نمایش می یابند را نمایش می دهد."
+
+#: ../udesign_options_page.php:5110
+msgid "\"Read more\" Link"
+msgstr "لینک \"بیشتر بخوانید\""
+
+#: ../udesign_options_page.php:5113
+msgid ""
+"Enter the text for the post's 'Read more' link.  Leave blank to hide it."
+msgstr ""
+"یک متن برای لینک \"بیشتر بخوانید\" وارد کنید. برای عدم نمایش آن را خالی "
+"بگذارید."
+
+#: ../udesign_options_page.php:5122
+msgid ""
+"Exclude Portfolio section(s) related posts from showing in the the general "
+"Blog section (\"Blog page\" template loop)."
+msgstr ""
+"عدم نمایش پست های مربوط به بخش نمونه کارها در بخش بلاگ (حلقه قالب \"Blog page"
+"\")"
+
+#: ../udesign_options_page.php:5123
+msgid ""
+"Note: Portfolio posts are those that have been assigned to a portfolio "
+"related category. A portfolio related category is one which either directly "
+"or indirectly (parent or descendant) has been assigned to a \"Portfolio page"
+"\" template (see the \"Portfolio section above for these assignments)"
+msgstr ""
+"توجه: منظور از پست های نمونه کار، آن پست هایی است که دسته مربوط به نمونه کار "
+"به آن ها اختصاص داده شده است. منظور از دسته مربوط به نمونه کار، آن دسته ای "
+"است (که به صورت مستقیم یا غیرمستقیم) قالب \"Portfolio page\" به آن اختصاص "
+"پیدا کرده است (برای اطلاعات بیشتر \"نمونه کار\" در بالا را ببینید)."
+
+#: ../udesign_options_page.php:5129 ../udesign_options_page.php:5131
+msgid "Show Post Author"
+msgstr "نمایش نویسنده پست"
+
+#: ../udesign_options_page.php:5134
+msgid "Show Author Name"
+msgstr "نمایش نام نویسنده"
+
+#: ../udesign_options_page.php:5135
+msgid "Go to Your Profile"
+msgstr ""
+
+#: ../udesign_options_page.php:5141 ../udesign_options_page.php:5143
+msgid "Post Tags"
+msgstr "تگ های پست"
+
+#: ../udesign_options_page.php:5146
+msgid "Show Post Tags"
+msgstr "نمایش تگ های پست"
+
+#: ../udesign_options_page.php:5152 ../udesign_options_page.php:5154
+msgid "Category Archive Title"
+msgstr "عنوان آرشیو دسته ای"
+
+#: ../udesign_options_page.php:5157
+msgid ""
+"Remove the \"Archive for the '...' Category\" string from the category "
+"archive title."
+msgstr "پاک کردن رشته \" آرشیو برای دسته '...' \" از عنوان آرشیو دسته ای."
+
+#: ../udesign_options_page.php:5163 ../udesign_options_page.php:5165
+#, fuzzy
+msgid "\"Comments are closed\" message"
+msgstr "دیدگاه ها بسته شده اند."
+
+#: ../udesign_options_page.php:5168
+msgid ""
+"Show \"Comments are closed\" message for posts where the comments have been "
+"disabled, otherwise no message will be displayed."
+msgstr ""
+
+#: ../udesign_options_page.php:5174 ../udesign_options_page.php:5176
+msgid "Full-width Blog Page"
+msgstr "برگه بلاگ تمام صفحه"
+
+#: ../udesign_options_page.php:5179
+msgid "Remove the sidebar from Blog pages."
+msgstr "پاک کردن سایدبار از برگه های بلاگ."
+
+#: ../udesign_options_page.php:5185 ../udesign_options_page.php:5187
+msgid "Full-width Archive Page"
+msgstr "برگه آرشیو تمام صفحه"
+
+#: ../udesign_options_page.php:5190
+msgid ""
+"Remove the sidebar from Archive pages (e.g. Category archives, Date "
+"archives, Tag archives, etc.)."
+msgstr ""
+"پاک کردن سایدبار از برگه های آرشیو (به عنوان مثال آرشیو دسته ای، آرشیو "
+"روزانه، آرشیو برچسب ها و ...)."
+
+#: ../udesign_options_page.php:5201
+msgid "Remove the sidebar from Single Post View pages."
+msgstr "پاک کردن سایدبار از برگه های نمایش پست (Single Post View)."
+
+#: ../udesign_options_page.php:5207
+msgid "Single View Postmetadata Location"
+msgstr ""
+
+#: ../udesign_options_page.php:5215
+msgid ""
+"This is the location of the block containing the informationa about Author, "
+"Date, Categories, Comments in a single view post."
+msgstr ""
+
+#: ../udesign_options_page.php:5220 ../udesign_options_page.php:5222
+msgid "Post Image in Single Post View"
+msgstr "تصویر پست در نمایش پست"
+
+#: ../udesign_options_page.php:5225
+msgid "Display the post image in single post view."
+msgstr "نمایش تصویر پست در هنگام مشاهده محتوای پست."
+
+#: ../udesign_options_page.php:5235
+msgid "Blog and Archive Section \"Featured Image\":"
+msgstr "\"تصویر شاخص\" در بخش بلاگ و آرشیو:"
+
+#: ../udesign_options_page.php:5236
+msgid ""
+"Use this section to set the Post \"Featured Image\" the way it will be shown "
+"on the Blog and Archive Pages for each post. Please note, that if you have "
+"\"post_image\" custom field specified in a post, it will be given priority "
+"over the post \"Featured Image\", so if you would like to use the \"Featured "
+"Image\" do not use the custom field \"post_image\"."
+msgstr ""
+"از این بخش برای تنظیم \"تصویر شاخص\" که در برگه های بلاگ و آرشیو و برای هر "
+"پست نمایش می یابد استفاده کنید. لطفا توجه کنید که در یک پست  پس زمینه دلخواه "
+"\"post_image\" بر \"تصویر شاخص\" پست اولویت دارد، بنابراین اگر مایل به "
+"استفاده از \"تصویر شاخص\" هستید از پس زمینه دلخواه \"post_image\" استفاده "
+"نکنید."
+
+#: ../udesign_options_page.php:5240
+msgid "Enable This Section"
+msgstr "فعال کردن این بخش"
+
+#: ../udesign_options_page.php:5242 ../udesign_options_page.php:5267
+msgid "Enable Custom \"Featured Image\""
+msgstr "فعال کردن \"تصویر شاخص\" سفارشی"
+
+#: ../udesign_options_page.php:5245
+msgid ""
+"Select this option to apply the settings below to the \"Featured Image\"."
+msgstr "برای اعمال تنظیمات بالا به \"تصویر شاخص\" این گزینه را انتخاب کنید."
+
+#: ../udesign_options_page.php:5254
+msgid "Apply this image width in pixels."
+msgstr "پهنا تصویر بر حسب پیکسل."
+
+#: ../udesign_options_page.php:5261
+msgid "Apply this image height in pixels."
+msgstr "ارتفاع تصویر بر حسب پیکسل."
+
+#: ../udesign_options_page.php:5265
+msgid "Force Image Dimensions"
+msgstr "ابعاد تصویر"
+
+#: ../udesign_options_page.php:5270
+msgid ""
+"Select this option to force cropping and resizing the images which is "
+"recommended if you would like all images to be of the same specified "
+"dimensions."
+msgstr ""
+"اگر می خواهید که همه تصاویر ابعاد یکسان و مشخصی داشته باشند، این گزینه را "
+"برای قاب بری و تغییر اندازه تصاویر انتخاب کنید."
+
+#: ../udesign_options_page.php:5273
+msgid ""
+"(This option would only be considered if image cropping is enabled (default) "
+"from the \"General Options\" section)"
+msgstr ""
+"(این گزینه تنها در صورتی که اسکریپت TimThumb از \"تنظیمات همگانی\" فعال "
+"باشد، در نظر گرفته می شود)"
+
+#: ../udesign_options_page.php:5277
+msgid "Image Alignment"
+msgstr "تراز تصویر"
+
+#: ../udesign_options_page.php:5283
+msgid "Center"
+msgstr "وسط"
+
+#: ../udesign_options_page.php:5315
+msgid "Enable Business Contact"
+msgstr "فعال کردن تماس تجاری"
+
+#: ../udesign_options_page.php:5316
+msgid "Enable Contact Info Fields"
+msgstr "فعال کردن فیلدهای اطلاعات تماس"
+
+#: ../udesign_options_page.php:5319
+msgid "Enable the Business Contact fields (see below for description)"
+msgstr "فعال کردن فیلدهای تماس تجاری (برای توضیحات پایین را ببینید)"
+
+#: ../udesign_options_page.php:5322
+msgid "Business Contact Fields"
+msgstr "فیلدهای تماس تجاری"
+
+#: ../udesign_options_page.php:5324
+msgid ""
+"The Business Contact Fields provide a way to better display additional "
+"contact information such as Company Name, Address, Phone, etc. An example of "
+"a Field pair could be <strong>Telephone: (123) 123-4567</strong>, where you "
+"would enter the \"<strong>Telephone:</strong>\" part in the first field and "
+"\"<strong>(123) 123-4567</strong>\" in the second (under the same \"Line #"
+"\") respectively."
+msgstr ""
+"فیلدهای تماس تجاری یک راه برای نمایش بهتر اطلاعات تماس اضافی مانند نام شرکت، "
+"آدرس، تلفن و ... فراهم می کند. یک نمونه از آن ها <strong>\"تلفن: 4567 123 "
+"0131\"</strong> است که شما قسمت <strong>\"تلفن:\"</strong> را در فیلد اول و "
+"<strong>\"4567 123 0131\"</strong> را در فیلد دوم (در همان \"سطر#\") به "
+"ترتیب وارد می کنید."
+
+#: ../udesign_options_page.php:5325
+msgid "Line 1:"
+msgstr "سطر 1:"
+
+#: ../udesign_options_page.php:5328
+msgid "Line 2:"
+msgstr "سطر 2:"
+
+#: ../udesign_options_page.php:5331
+msgid "Line 3:"
+msgstr "سطر 3:"
+
+#: ../udesign_options_page.php:5334
+msgid "Line 4:"
+msgstr "سطر 4:"
+
+#: ../udesign_options_page.php:5337
+msgid "Line 5:"
+msgstr "سطر 5:"
+
+#: ../udesign_options_page.php:5340
+msgid "Line 6:"
+msgstr "سطر 6:"
+
+#: ../udesign_options_page.php:5343
+msgid "Line 7:"
+msgstr "سطر 7:"
+
+#: ../udesign_options_page.php:5346
+msgid ""
+"Some html tags and inline styling could be used for formatting here, e.g."
+msgstr ""
+"برخی از تگ های html و استایل هایی که برای ویرایش در اینجا می تواند استفاده "
+"شود، عبارت است از"
+
+#: ../udesign_options_page.php:5346
+msgid "Address"
+msgstr "آدرس"
+
+#: ../udesign_options_page.php:5346
+msgid "or"
+msgstr "یا"
+
+#: ../udesign_options_page.php:5352
+msgid "This is the sidebar shown on the Contact page"
+msgstr "این سایدبار در برگه تماس نمایش می یابد."
+
+#: ../udesign_options_page.php:5354 ../udesign_options_page.php:5355
+msgid "Remove Sidebar"
+msgstr "پاک کردن سایدبار"
+
+#: ../udesign_options_page.php:5358
+msgid ""
+"Remove the sidebar from the Contact page, which will make it a full-width "
+"page layout."
+msgstr ""
+"پاک کردن سایدبار از برگه تماس که در نتیجه به آن برگه طرح تمام صفحه را اختصاص "
+"می دهد."
+
+#: ../udesign_options_page.php:5361
+msgid "Phone Number validation"
+msgstr "تایید شماره تلفن"
+
+#: ../udesign_options_page.php:5362
+msgid ""
+"This is the field displayed in the E-mail form on the Contact page template. "
+"If checked, the validation for North American phone numbers will be enabled."
+msgstr ""
+"این فیلد در فرم ارسال ایمیل در برگه تماس نمایش می یابد. اگر فعال شود، تایید "
+"شماره های تلفن آمریکای شمالی فعال خواهد شد."
+
+#: ../udesign_options_page.php:5363
+msgid "Enable North American phone number validation"
+msgstr "فعال کردن تایید شماره تلفن آمریکای شمالی"
+
+#: ../udesign_options_page.php:5366
+msgid "Enable North American phone number validation in the contact email form"
+msgstr "فعال کردن تایید شماره تلفن آمریکای شمالی در فرم ایمیل تماس"
+
+#: ../udesign_options_page.php:5372
+msgid "E-mail Recipient(s)"
+msgstr "دریافت کننده های های ایمیل"
+
+#: ../udesign_options_page.php:5374
+msgid ""
+"Please enter recipient's email address, comma-separate multiple recipients:"
+msgstr ""
+"لطفا آدرس ایمیل دریافت کننده ها را وارد کنید، ایمیل ها را با کاما جدا کنید:"
+
+#: ../udesign_options_page.php:5379 ../udesign_options_page.php:5381
+#, fuzzy
+msgid "Enable reCAPTCHA"
+msgstr "فعال کردن تصویر امنیتی"
+
+#: ../udesign_options_page.php:5384
+#, fuzzy, php-format
+msgid ""
+"Add reCAPTCHA to the email form for extra security (for more information "
+"visit %s)"
+msgstr ""
+"افزودن تصویر امنیتی به فرم ایمیل برای امنیت بیشتر (برای اطلاعات بیشتر به "
+"سایت روبرو مراجعه کنید: %s)"
+
+#: ../udesign_options_page.php:5384 ../udesign_options_page.php:5394
+#: ../udesign_options_page.php:5401
+msgid "Go to www.reCAPTCHA.net"
+msgstr ""
+
+#: ../udesign_options_page.php:5386
+#, fuzzy
+msgid ""
+"Please note: reCAPTCHA will be automatically disabled if the two fields "
+"below are empty!"
+msgstr ""
+"لطفا توجه کنید که اگر دو فیلد پایین خالی باشند تصویر امنیتی به طور اتوماتیک "
+"غیرفعال می شود!"
+
+#: ../udesign_options_page.php:5391
+#, fuzzy
+msgid "reCAPTCHA Public Key"
+msgstr "کلید عمومی تصویر امنیتی"
+
+#: ../udesign_options_page.php:5394
+msgid "To use reCAPTCHA you must get an API public key from"
+msgstr ""
+"شما باید برای استفاده از تصویر امنیتی یک کد عمومی (public key) از سایت روبرو "
+"دریافت کنید:"
+
+#: ../udesign_options_page.php:5398
+#, fuzzy
+msgid "reCAPTCHA Private Key"
+msgstr "کلید خصوصی تصویر امنیتی"
+
+#: ../udesign_options_page.php:5401
+#, fuzzy
+msgid "To use reCAPTCHA you must get an API private key from"
+msgstr ""
+"شما باید برای استفاده از تصویر امنیتی یک کد خصوصی (private key) از سایت "
+"روبرو دریافت کنید:"
+
+#: ../udesign_options_page.php:5402
+#, fuzzy
+msgid ""
+"This key is used when communicating between your server and the reCAPTCHA "
+"server. Be sure to keep it a secret."
+msgstr ""
+"این کلید در هنگام ارتباط بین سرور شما و سرور تصویر امنیتی استفاده می شود. از "
+"مخفی بودن آن اطمینان حاصل کنید."
+
+#: ../udesign_options_page.php:5406
+#, fuzzy
+msgid "reCAPTCHA Theme"
+msgstr "پوسته تصویر امنیتی"
+
+#: ../udesign_options_page.php:5409
+msgid "Choose Theme: "
+msgstr "انتخاب پوسته: "
+
+#: ../udesign_options_page.php:5411
+msgid "white"
+msgstr "سفید"
+
+#: ../udesign_options_page.php:5412
+msgid "red"
+msgstr "قرمز"
+
+#: ../udesign_options_page.php:5413
+msgid "blackglass"
+msgstr "شیشه ای سیاه سفید"
+
+#: ../udesign_options_page.php:5414
+msgid "clean"
+msgstr "ساده"
+
+#: ../udesign_options_page.php:5420
+#, fuzzy
+msgid "reCAPTCHA Language"
+msgstr "زبان تصویر امنیتی"
+
+#: ../udesign_options_page.php:5423
+msgid "Language: "
+msgstr "زبان: "
+
+#: ../udesign_options_page.php:5450
+msgid "Copyright Message"
+msgstr "متن کپی رایت"
+
+#: ../udesign_options_page.php:5454
+msgid "Copyright message displayed in the footer."
+msgstr "متن کپی رایت در ته برگ نمایش می یابد."
+
+#: ../udesign_options_page.php:5458 ../udesign_options_page.php:5460
+msgid "WordPress credits link"
+msgstr "لینک WordPress"
+
+#: ../udesign_options_page.php:5463
+#, php-format
+msgid "Show \"is proudly powered by %s\" in footer?"
+msgstr "\"is proudly powered by %s\" در ته برگ نمایش یابد؟"
+
+#: ../udesign_options_page.php:5474 ../udesign_options_page.php:5476
+msgid "Your \"U-Design\" Affiliate Link"
+msgstr "لینک Affiliate شما"
+
+#: ../udesign_options_page.php:5479
+#, php-format
+msgid "Show %1$sThemeForest Affiliate%2$s link in footer?"
+msgstr "لینک %1$sThemeForest Affiliate%2$s در ته برگ نمایش یابد؟"
+
+#: ../udesign_options_page.php:5481
+#, php-format
+msgid "ThemeForest %1$susername%2$s:"
+msgstr "%1$sنام کاربری%2$s تم فارست:"
+
+#: ../udesign_options_page.php:5483
+msgid "(case-sensitive)"
+msgstr "(حساس به حروف کوچک و بزرگ)"
+
+#: ../udesign_options_page.php:5484
+#, php-format
+msgid ""
+"Would you like to make money with \"U-Design\"? Refer new ThemeForest users "
+"to the \"U-Design\" theme and ThemeForest will pay you 30&#37; of their "
+"first purchase or cash deposit!! Click %1$shere%2$s for more information."
+msgstr ""
+"آیا مایل به کسب درآمد با \"U-Design\" هستید؟ کاربران جدید تم فارست را با \"U-"
+"Design\" آشنا کنید و تم فارست 30&#37; از اولین خرید یا سپرده نقدی آن ها را "
+"به شما پرداخت می کند!! برای اطلاعات بیشتر %1$sاینجا%2$s کلیک کنید."
+
+#: ../udesign_options_page.php:5494 ../udesign_options_page.php:5496
+msgid "Entries (RSS) link"
+msgstr "لینک Entries (RSS)"
+
+#: ../udesign_options_page.php:5499
+msgid "Show \"Entries (RSS)\" link in footer?"
+msgstr "\"Entries (RSS)\" در ته برگ نمایش یابد؟"
+
+#: ../udesign_options_page.php:5505 ../udesign_options_page.php:5507
+msgid "Comments (RSS) link"
+msgstr "لینک Comments (RSS)"
+
+#: ../udesign_options_page.php:5510
+msgid "Show \"Comments (RSS)\" link in footer?"
+msgstr "\"Comments (RSS)\" در ته برگ نمایش یابد؟"
+
+#: ../udesign_options_page.php:5516 ../udesign_options_page.php:5518
+msgid "\"Sticky\" Footer"
+msgstr ""
+
+#: ../udesign_options_page.php:5521
+msgid ""
+"Have the footer stay at the bottom of the page on pages that have very "
+"little content."
+msgstr ""
+
+#: ../udesign_options_page.php:5536
+msgid "Google Analytics"
+msgstr "آنالیز گوگل"
+
+#: ../udesign_options_page.php:5540
+msgid ""
+"Paste your Google Analytics or other tracking code here. It will be inserted "
+"just before the closing &lt;/head&gt; tag."
+msgstr ""
+"کد آنالیز گوگل تان را وارد کنید. این کد درست قبل از بسته شدن تگ </head> "
+"اضافه می شود."
+
+#: ../udesign_options_page.php:5553
+#, fuzzy
+msgid "General Information"
+msgstr "اطلاعات همگانی"
+
+#: ../udesign_options_page.php:5555
+msgid ""
+"960px is the theme's default width. If responsive is enabled the theme will "
+"resize automatically to adjust to the size of the browser window or the type "
+"of device being used based on the following three breakpoints:"
+msgstr ""
+"پهنا پیش فرض پوسته 960 پیکسل است. اگر واکنش گرایی فعال شود، به منظور سازگاری "
+"با پنجره مرورگر یا هر وسیله دیگر ابعاد پوسته مطابق لیست پایین به صورت "
+"اتوماتیک تغییر می کند:"
+
+#: ../udesign_options_page.php:5557
+msgid "1 ) Breakpoint 1 - [ 960px to 720px ]"
+msgstr "1 ) بازه 1 - [ 960px تا 720px ]"
+
+#: ../udesign_options_page.php:5558
+msgid "2 ) Breakpoint 2 - [ 720px to 480px ]"
+msgstr "2 ) بازه 2 - [ 720px تا 480px ]"
+
+#: ../udesign_options_page.php:5559
+msgid "3 ) Breakpoint 3 - [ smaller than 480px ]"
+msgstr "3 ) بازه 3 - [ کوچکتر از 480px ]"
+
+#: ../udesign_options_page.php:5569 ../udesign_options_page.php:5571
+msgid "Enable Responsive"
+msgstr "فعال کردن واکنش گرایی"
+
+#: ../udesign_options_page.php:5574
+msgid "Enable responsive layout."
+msgstr "فعال کردن طرح واکنش گرا."
+
+#: ../udesign_options_page.php:5580
+msgid "Responsive Logo (optional)"
+msgstr "لوگو واکنش گرا (اختیاری)"
+
+#: ../udesign_options_page.php:5583
+msgid "Enter a URL or upload an image for your alternative logo:"
+msgstr "برای لوگو بعدی تان یک آدرس وارد کنید یا یک تصویر بارگذاری کنید:"
+
+#: ../udesign_options_page.php:5588
+msgid ""
+"An alternative logo will be loaded ONLY in the case Breakpoints 2 and 3. "
+"Please note, this is optional, in most cases you won't need an alternative "
+"logo but in some cases might be handy. In either case the theme will resize "
+"(if necessary) and center the logo automatically."
+msgstr ""
+"این لوگو فقط در موارد 2 و 3 بارگذاری می شود. لطفا توجه کنید که این مورد "
+"اختیاری است و در بیشتر موارد شما به آن احتیاج ندارید ولی در بعضی موارد می "
+"تواند مفید باشد. در هر یک از دو حالت فوق ابعاد پوسته تغییر می کند و لوگو به "
+"طور اتوماتیک در وسط قرار می گیرد."
+
+#: ../udesign_options_page.php:5592
+msgid "Responsive Logo Height"
+msgstr "ارتفاع لوگو واکنش گرا"
+
+#: ../udesign_options_page.php:5595
+msgid ""
+"(Height) in pixels.  Note: The width is automatically adjusted to the "
+"maximum allowed width."
+msgstr ""
+"(ارتفاع) برحسب پیکسل. توجه: پهنا به طور اتوماتیک روی بیشترین مقدار مجاز "
+"تنظیم می شود."
+
+#: ../udesign_options_page.php:5599 ../udesign_options_page.php:5601
+msgid "Remove the Slider Area"
+msgstr "پاک کردن ناحیه اسلایدر"
+
+#: ../udesign_options_page.php:5604
+msgid ""
+"Remove the Slider Area completely from the home page for the Breakpoints 2 "
+"and 3."
+msgstr "پاک کردن ناحیه اسلایدر از صفحه اصلی به طور کامل در موارد 2 و 3."
+
+#: ../udesign_options_page.php:5610 ../udesign_options_page.php:5612
+msgid "Remove Background Images"
+msgstr "پاک کردن تصاویر پس زمینه"
+
+#: ../udesign_options_page.php:5615
+msgid ""
+"Remove all background images for Breakpoint 1. Those are the background "
+"images that have been assigned through the theme's 'Custom Colors' section."
+msgstr ""
+"پاک کردن تمام تصاویر پس زمینه در مورد 1. این تصاویر پس زمینه از قسمت 'رنگ "
+"های سفارشی' پوسته تنظیم می شوند."
+
+#: ../udesign_options_page.php:5616
+msgid ""
+"(Note: The background images will be replaced with their corresponding "
+"background colors for those respective sections. Also, by default the "
+"background images will be removed automatically for Breakpoints 2 and 3 "
+"respectively)"
+msgstr ""
+"(توجه: تصویر پس زمینه هر بخش جایگزین رنگ پس زمینه مربوط به همان بخش می شود. "
+"همچنین به صورت پیش فرض تصاویر پس زمینه در موارد 2 و 3 به طور اتوماتیک پاک می "
+"شوند.)"
+
+#: ../udesign_options_page.php:5622
+msgid "Responsive Menu"
+msgstr "فهرست واکنش گرا"
+
+#: ../udesign_options_page.php:5626
+msgid "Responsive Menu 1"
+msgstr "فهرست 1 واکنش گرا"
+
+#: ../udesign_options_page.php:5627
+msgid "Responsive Menu 2"
+msgstr "فهرست 2 واکنش گرا"
+
+#: ../udesign_options_page.php:5629
+msgid "Choose a menu to be used for Breakpoints 2 and 3."
+msgstr "انتخاب یک فهرست که در موارد 2 و 3 استفاده می شود."
+
+#: ../udesign_options_page.php:5634 ../udesign_options_page.php:5636
+msgid "Pinch-to-Zoom"
+msgstr ""
+
+#: ../udesign_options_page.php:5639
+msgid ""
+"Enable pinch-to-zoom on mobile devices. Adds the ability to zoom in on "
+"images, text, links, etc. which could come really handy in some situations."
+msgstr ""
+
+#: ../udesign_options_page.php:5645
+#, fuzzy
+msgid "Disable prettyPhoto"
+msgstr "فعال کردن اسکریپت prettyPhoto"
+
+#: ../udesign_options_page.php:5650
+msgid ""
+"This is the device width or browser width at which the prettyPhoto lightbox "
+"effect will be disabled, anything smaller than that width will not have "
+"prettyPhoto enabled. This is especially useful for widths smaller than the "
+"Breakpoint 3 - [ 480px ], but a value slightly greater than that could be a "
+"good start, for instance \"600\". To disable this option set the width to "
+"\"0\"."
+msgstr ""
+
+#: ../udesign_options_page.php:5660
+msgid ""
+"The options in this section are generally offered to assist more advanced "
+"users with deeper knowledge of WordPress programming."
+msgstr ""
+
+#: ../udesign_options_page.php:5664 ../udesign_options_page.php:5666
+msgid "Show Action Hook Locations"
+msgstr ""
+
+#: ../udesign_options_page.php:5669
+msgid ""
+"Enabling this option will allow you to see in the front end the exact "
+"locations of the U-Design action hooks located within the \"body\" tags."
+msgstr ""
+
+#: ../lib/plugin-activation/class-tgm-plugin-activation.php:165
+#: ../lib/plugin-activation/register-required-plugins.php:140
+msgid "Install Required Plugins"
+msgstr "نصب افزونه های الزامی"
+
+#: ../lib/plugin-activation/class-tgm-plugin-activation.php:166
+#: ../lib/plugin-activation/register-required-plugins.php:141
+msgid "Install Plugins"
+msgstr "نصب افزونه ها"
+
+#: ../lib/plugin-activation/class-tgm-plugin-activation.php:167
+#: ../lib/plugin-activation/register-required-plugins.php:142
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr "در حال نصب افزونه: %s"
+
+#: ../lib/plugin-activation/class-tgm-plugin-activation.php:168
+msgid "Something went wrong."
+msgstr "مشکلی به وجود آمده است."
+
+#: ../lib/plugin-activation/class-tgm-plugin-activation.php:169
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgstr "این پوسته افزونه های روبرو را لازم دارد: %1$s."
+
+#: ../lib/plugin-activation/class-tgm-plugin-activation.php:170
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgstr "این پوسته افزونه روبرو را توصیه می کند: %1$s."
+
+#: ../lib/plugin-activation/class-tgm-plugin-activation.php:171
+#: ../lib/plugin-activation/register-required-plugins.php:146
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to install the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"installed."
+msgstr ""
+"ببخشید، ولی شما اجازه نصب افزونه %s را ندارید. برای نصب افزونه با مدیر سایت "
+"تماس بگیرید."
+
+#: ../lib/plugin-activation/class-tgm-plugin-activation.php:172
+#: ../lib/plugin-activation/register-required-plugins.php:147
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgstr "افزونه الزامی روبرو در حال حاضر غیرفعال است: %1$s."
+
+#: ../lib/plugin-activation/class-tgm-plugin-activation.php:173
+#: ../lib/plugin-activation/register-required-plugins.php:148
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgstr "افزونه توصیه شده روبرو در حال حاضر غیرفعال است: %1$s"
+
+#: ../lib/plugin-activation/class-tgm-plugin-activation.php:174
+#: ../lib/plugin-activation/register-required-plugins.php:149
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to activate the %s "
+"plugin. Contact the administrator of this site for help on getting the "
+"plugin activated."
+msgstr ""
+"ببخشید، ولی شما اجازه فعال کردن افزونه %s را ندارید. برای فعال کردن افزونه "
+"با مدیر سایت تماس بگیرید."
+
+#: ../lib/plugin-activation/class-tgm-plugin-activation.php:175
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr ""
+"افزونه روبرو برای بیشترین تطابق با این پوسته احتیاج به به روز رسانی به آخرین "
+"ورژن دارد: %1$s."
+
+#: ../lib/plugin-activation/class-tgm-plugin-activation.php:176
+#: ../lib/plugin-activation/register-required-plugins.php:151
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to update the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"updated."
+msgstr ""
+"ببخشید، ولی شما اجازه به روز رسانی افزونه %s را ندارید. برای به روز رسانی "
+"افزونه با مدیر سایت تماس بگیرید."
+
+#: ../lib/plugin-activation/class-tgm-plugin-activation.php:177
+#: ../lib/plugin-activation/register-required-plugins.php:152
+msgid "Begin installing plugin"
+msgstr "شروع نصب افزونه"
+
+#: ../lib/plugin-activation/class-tgm-plugin-activation.php:178
+#: ../lib/plugin-activation/register-required-plugins.php:153
+msgid "Activate installed plugin"
+msgstr "فعال کردن افزونه نصب شده"
+
+#: ../lib/plugin-activation/class-tgm-plugin-activation.php:179
+#: ../lib/plugin-activation/class-tgm-plugin-activation.php:491
+#: ../lib/plugin-activation/register-required-plugins.php:154
+msgid "Return to Required Plugins Installer"
+msgstr "بازگشت به نصب کننده افزونه های الزامی"
+
+#: ../lib/plugin-activation/class-tgm-plugin-activation.php:180
+#: ../lib/plugin-activation/class-tgm-plugin-activation.php:1847
+#: ../lib/plugin-activation/register-required-plugins.php:155
+msgid "Plugin activated successfully."
+msgstr "افزونه با موفقیت نصب شد."
+
+#: ../lib/plugin-activation/class-tgm-plugin-activation.php:181
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr "همه افزونه ها با موفقیت نصب و فعال شدند. %1$s"
+
+#: ../lib/plugin-activation/class-tgm-plugin-activation.php:518
+#: ../lib/plugin-activation/class-tgm-plugin-activation.php:2059
+msgid "Return to the Dashboard"
+msgstr "بازگشت به پیشخوان"
+
+#: ../lib/plugin-activation/class-tgm-plugin-activation.php:546
+#, php-format
+msgid "The following plugin was activated successfully: %s."
+msgstr "افزونه روبرو با موفقیت فعال شد: %s."
+
+#: ../lib/plugin-activation/class-tgm-plugin-activation.php:705
+msgid "Dismiss this notice"
+msgstr "نادیده گرفتن این تذکر"
+
+#: ../lib/plugin-activation/class-tgm-plugin-activation.php:1092
+msgid "External Link"
+msgstr "لینک خارجی"
+
+#: ../lib/plugin-activation/class-tgm-plugin-activation.php:1097
+msgid "Private Repository"
+msgstr "مخزن شخصی"
+
+#: ../lib/plugin-activation/class-tgm-plugin-activation.php:1100
+msgid "Pre-Packaged"
+msgstr "از پیش آماده"
+
+#: ../lib/plugin-activation/class-tgm-plugin-activation.php:1104
+msgid "WordPress Repository"
+msgstr "مخزن وردپرس"
+
+#: ../lib/plugin-activation/class-tgm-plugin-activation.php:1107
+msgid "Required"
+msgstr "الزامی"
+
+#: ../lib/plugin-activation/class-tgm-plugin-activation.php:1107
+msgid "Recommended"
+msgstr "توصیه شده"
+
+#: ../lib/plugin-activation/class-tgm-plugin-activation.php:1110
+msgid "Not Installed"
+msgstr "نصب نشده"
+
+#: ../lib/plugin-activation/class-tgm-plugin-activation.php:1112
+msgid "Installed But Not Activated"
+msgstr "نصب شده ولی فعال نشده"
+
+#: ../lib/plugin-activation/class-tgm-plugin-activation.php:1282
+#, php-format
+msgid ""
+"No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
+"Dashboard\">Return to the Dashboard</a>"
+msgstr ""
+"هیچ افزونه ای برای نصب و فعال سازی وجود ندارد. <a href=\"%1$s\" title="
+"\"بازگشت به پیشخوان\">بازگشت به پیشخوان</a>"
+
+#: ../lib/plugin-activation/class-tgm-plugin-activation.php:1298
+msgid "Plugin"
+msgstr "افزونه"
+
+#: ../lib/plugin-activation/class-tgm-plugin-activation.php:1299
+msgid "Source"
+msgstr "منبع"
+
+#: ../lib/plugin-activation/class-tgm-plugin-activation.php:1300
+msgid "Type"
+msgstr "نوع"
+
+#: ../lib/plugin-activation/class-tgm-plugin-activation.php:1301
+msgid "Status"
+msgstr "وضعیت"
+
+#: ../lib/plugin-activation/class-tgm-plugin-activation.php:1319
+msgid "Install"
+msgstr "نصب کردن"
+
+#: ../lib/plugin-activation/class-tgm-plugin-activation.php:1320
+msgid "Activate"
+msgstr "فعال کردن"
+
+#: ../lib/plugin-activation/class-tgm-plugin-activation.php:1830
+msgid "Install package not available."
+msgstr "بسته‌ی نصب در دسترس نیست."
+
+#: ../lib/plugin-activation/class-tgm-plugin-activation.php:1831
+#, php-format
+msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+msgstr "در حال دریافت بسته‌ی نصب از <span class=\"code\">%s</span>&#8230;"
+
+#: ../lib/plugin-activation/class-tgm-plugin-activation.php:1832
+msgid "Unpacking the package&#8230;"
+msgstr "گشودن بسته‌ی فشرده شده&#8230;"
+
+#: ../lib/plugin-activation/class-tgm-plugin-activation.php:1833
+msgid "Installing the plugin&#8230;"
+msgstr "در حال نصب افزونه&#8230;"
+
+#: ../lib/plugin-activation/class-tgm-plugin-activation.php:1834
+msgid "Plugin install failed."
+msgstr "نصب افزونه با مشکل مواجه شد."
+
+#: ../lib/plugin-activation/class-tgm-plugin-activation.php:1835
+msgid "Plugin installed successfully."
+msgstr "افزونه با موفقیت نصب شد."
+
+#: ../lib/plugin-activation/class-tgm-plugin-activation.php:1846
+msgid "Plugin activation failed."
+msgstr "فعال سازی افزونه با مشکل مواجه شد."
+
+#: ../lib/plugin-activation/class-tgm-plugin-activation.php:1956
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+"فرایند نصب و فعال سازی شروع شد. این فرایند در بعضی از هاست ها ممکن است کمی "
+"به طول بیانجامد، لطفا صبور باشید."
+
+#: ../lib/plugin-activation/class-tgm-plugin-activation.php:1957
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr "%1$s با موفقیت نصب و فعال شد."
+
+#: ../lib/plugin-activation/class-tgm-plugin-activation.php:1957
+#: ../lib/plugin-activation/class-tgm-plugin-activation.php:1966
+msgid "Show Details"
+msgstr "نشان دادن جزییات"
+
+#: ../lib/plugin-activation/class-tgm-plugin-activation.php:1957
+#: ../lib/plugin-activation/class-tgm-plugin-activation.php:1966
+msgid "Hide Details"
+msgstr "پنهان کردن جزییات"
+
+#: ../lib/plugin-activation/class-tgm-plugin-activation.php:1958
+msgid "All installations and activations have been completed."
+msgstr "تمام نصب ها و فعال سازی ها با موفقیت به اتمام رسید."
+
+#: ../lib/plugin-activation/class-tgm-plugin-activation.php:1959
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr "نصب و فعال سازی افزونه %1$s (%2$d/%3$d)"
+
+#: ../lib/plugin-activation/class-tgm-plugin-activation.php:1963
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+"فرایند نصب شروع شد. این فرایند در بعضی از هاست ها ممکن است کمی به طول "
+"بیانجامد، لطفا صبور باشید."
+
+#: ../lib/plugin-activation/class-tgm-plugin-activation.php:1964
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr "یک مشکل در هنگام نصب افزونه %1$s پیش آمد: <strong>%2$s</strong>."
+
+#: ../lib/plugin-activation/class-tgm-plugin-activation.php:1965
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr "نصب افزونه %1$s با مشکل مواجه شد."
+
+#: ../lib/plugin-activation/class-tgm-plugin-activation.php:1966
+#, php-format
+msgid "%1$s installed successfully."
+msgstr "%1$s با موفقیت نصب شد."
+
+#: ../lib/plugin-activation/class-tgm-plugin-activation.php:1967
+msgid "All installations have been completed."
+msgstr "همه نصب ها به اتمام رسید."
+
+#: ../lib/plugin-activation/class-tgm-plugin-activation.php:1968
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr "در حال نصب افزونه %1$s (%2$d/%3$d)"
+
+#: ../lib/plugin-activation/register-required-plugins.php:143
+msgid "Something went wrong with the plugin API."
+msgstr "مشکلی با API افزونه به وجود آمده است."
+
+#: ../lib/plugin-activation/register-required-plugins.php:144
+#, php-format
+msgid "The \"U-Design\" theme requires the following plugin: %1$s."
+msgstr "پوسته \"U-Design\" افزونه روبرو را لازم دارد: %1$s."
+
+#: ../lib/plugin-activation/register-required-plugins.php:145
+#, php-format
+msgid "The \"U-Design\" theme recommends the following plugin: %1$s."
+msgstr "پوسته \"U-Design\" افزونه روبرو را توصیه می کند: %1$s."
+
+#: ../lib/plugin-activation/register-required-plugins.php:150
+#, fuzzy, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s (<a href=\""
+msgstr ""
+"افزونه روبرو برای بیشترین تطابق با این پوسته احتیاج به به روز رسانی به آخرین "
+"ورژن دارد: %1$s."
+
+#: ../lib/plugin-activation/register-required-plugins.php:156
+#, php-format
+msgid "All plugins installed and activated successfully. %s"
+msgstr "همه افزونه ها با موفقیت نصب و فعال شدند. %s"
+
+#: ../scripts/breadcrumbs.php:105
+msgid "Author: "
+msgstr "نویسنده: "
+
+#: ../scripts/breadcrumbs.php:107
+msgid "Tag: "
+msgstr "برچسب: "
+
+#: ../scripts/breadcrumbs.php:108
+msgid "404 - Page not Found"
+msgstr "404 - برگه پیدا نشد"
+
+#: ../scripts/portfolio-item-thumbnail.php:61
+msgid "Preview item is not available!."
+msgstr "آیتمی برای پیش نمایش موجود نیست!"
+
+#: ../scripts/portfolio-item-thumbnail.php:79
+msgid "Preview image not available!."
+msgstr "تصویری برای پیش نمایش موجود نیست!"
+
+#: ../scripts/portfolio-item-thumbnail.php:86
+msgid "Default Image"
+msgstr "تصویر پیش فرض"
+
+#: ../scripts/notifier/update-notifier.php:88
+#, php-format
+msgid ""
+"It looks like you have the <em>Envato WordPress Toolkit</em> plugin "
+"installed and active. If this is the first time using the plugin have your "
+"ThemeForest account username and API key for the account you used to "
+"purchase the theme. To proceed with updating the 'U-Design' theme, head over "
+"to the %s page now and follow the insturctions there."
+msgstr ""
+
+#: ../sliders/cycle/cycle1/cycle1_display.php:35
+#: ../sliders/cycle/cycle2/cycle2_display.php:39
+#: ../sliders/cycle/cycle3/cycle3_display.php:45
+msgid "Play"
+msgstr "شروع"
+
+#: ../sliders/cycle/cycle1/cycle1_display.php:36
+#: ../sliders/cycle/cycle2/cycle2_display.php:38
+#: ../sliders/cycle/cycle3/cycle3_display.php:46
+msgid "Pause"
+msgstr "توقف"
+
+#: ../sliders/flashmo/grid_slider/grid_slider_display.php:28
+#: ../sliders/flashmo/grid_slider/grid_slider_display.php:32
+#: ../sliders/piecemaker/piecemaker_display.php:13
+#: ../sliders/piecemaker/piecemaker_display.php:21
+#: ../sliders/piecemaker_2/piecemaker_display.php:13
+#: ../sliders/piecemaker_2/piecemaker_display.php:18
+msgid "Slider Image"
+msgstr "تصویر اسلایدر"
+
+#: ../widgets/customCategory-widget.php:40
+msgid "A list or dropdown of a single category's descendants."
+msgstr "یک لیست (پایین افتادنی) از یک دسته خاص و زیردسته های آن"
+
+#: ../widgets/customCategory-widget.php:46
+msgid "U-Design: Custom Category"
+msgstr "U-Design: دسته سفارشی"
+
+#: ../widgets/customCategory-widget.php:135
+msgid "Category to be displayed:"
+msgstr "دسته ای که نمایش می یابد:"
+
+#: ../widgets/customCategory-widget.php:145
+msgid "Show as dropdown"
+msgstr "نمایش به صورت پایین افتادنی"
+
+#: ../widgets/customCategory-widget.php:151
+msgid "Show post counts"
+msgstr "نمایش تعداد پست ها"
+
+#: ../widgets/customCategory-widget.php:157
+msgid "Show hierarchy"
+msgstr "نمایش سلسله مراتب"
+
+#: ../widgets/googleMap-widget.php:40
+msgid "A Google Map widget."
+msgstr "ابزارک نقشه گوگل"
+
+#: ../widgets/googleMap-widget.php:46
+msgid "U-Design: Google Map"
+msgstr "U-Design: نقشه گوگل"
+
+#: ../widgets/googleMap-widget.php:96
+msgid "Google Map"
+msgstr "نقشه گوگل"
+
+#: ../widgets/googleMap-widget.php:106
+msgid "Google Map Code:"
+msgstr "کد نقشه گوگل:"
+
+#: ../widgets/latestPost-widget.php:40
+msgid "The most recent posts with teaser text"
+msgstr "آخرین پست ها با متن و تصویر"
+
+#: ../widgets/latestPost-widget.php:46
+msgid "U-Design: Recent Posts"
+msgstr "U-Design: آخرین پست ها"
+
+#: ../widgets/latestPost-widget.php:87
+#, php-format
+msgid "%1$s by %2$s "
+msgstr "%1$s توسط %2$s "
+
+#: ../widgets/latestPost-widget.php:152
+msgid "Pick a specific category:"
+msgstr "یک دسته ویژه را برگزینید:"
+
+#: ../widgets/latestPost-widget.php:158
+msgid "Number of posts to show:"
+msgstr "تعداد پست ها برای نمایش:"
+
+#: ../widgets/latestPost-widget.php:161
+msgid "(at most 15)"
+msgstr "(حداکثر 15)"
+
+#: ../widgets/latestPost-widget.php:166
+msgid "Number of posts to skip:"
+msgstr "تعداد پست ها برای پریدن:"
+
+#: ../widgets/latestPost-widget.php:169
+msgid "(offset from latest)"
+msgstr "(از آخرین پست)"
+
+#: ../widgets/latestPost-widget.php:174
+msgid "Limit the number of words to show from each post:"
+msgstr "محدودیت  تعداد کلمه ها برای نمایش از هر پست:"
+
+#: ../widgets/latestPost-widget.php:177
+msgid ""
+"(Could also be limited by \"Excerpt Length\" defined in the theme's options "
+"page)"
+msgstr ""
+"(همچنین می تواند توسط \"طول متن برگزیده\" که در برگه تنظیمات پوسته است محدود "
+"شود)"
+
+#: ../widgets/latestPost-widget.php:184
+msgid "Show date & author info"
+msgstr "نمایش تاریخ و اطلاعات نویسنده"
+
+#: ../widgets/latestPost-widget.php:192
+#, fuzzy
+msgid "Show \"more\" link."
+msgstr "نمایش لینک \"بیشتر بخوانید &larr;\""
+
+#: ../widgets/latestPost-widget.php:195
+#, fuzzy
+msgid "The text:"
+msgstr "متن اسلاید"
+
+#: ../widgets/latestPost-widget.php:203
+msgid "Show thumbnails"
+msgstr "نمایش بند انگشتی ها"
+
+#: ../widgets/latestPost-widget.php:214
+msgid "Show thumbnail frame shadow"
+msgstr "نمایش سایه قاب بند انگشتی"
+
+#: ../widgets/latestPost-widget.php:220
+msgid "Thumbnail Dimensions:"
+msgstr "ابعاد بند انگشتی:"
+
+#: ../widgets/latestPost-widget.php:225
+msgid "(Width X Height) in pixels"
+msgstr "(پهنا X ارتفاع) بر حسب پیکسل"
+
+#: ../widgets/loginForm-widget.php:40
+msgid "A user login form."
+msgstr "فرم ورود کاربر"
+
+#: ../widgets/loginForm-widget.php:46
+msgid "U-Design: Login Form"
+msgstr "U-Design: فرم ورود"
+
+#: ../widgets/loginForm-widget.php:70
+msgid "You are logged in as"
+msgstr "شما با نام روبرو وارد شده اید:"
+
+#: ../widgets/loginForm-widget.php:73
+msgid "Logout"
+msgstr "بیرون رفتن"
+
+#: ../widgets/loginForm-widget.php:80
+msgid "User"
+msgstr "شناسه"
+
+#: ../widgets/loginForm-widget.php:83
+msgid "Password"
+msgstr "رمز"
+
+#: ../widgets/loginForm-widget.php:87
+msgid "Login"
+msgstr "ورود"
+
+#: ../widgets/loginForm-widget.php:88
+msgid "Remember me"
+msgstr "مرا بخاطر بسپار"
+
+#: ../widgets/loginForm-widget.php:95
+msgid "Register"
+msgstr "نام نویسی"
+
+#: ../widgets/loginForm-widget.php:97
+msgid "Recover password"
+msgstr "رمزتان را گم کرده اید؟"
+
+#: ../widgets/loginForm-widget.php:129
+msgid "Login Form"
+msgstr "فرم ورود"
+
+#: ../widgets/subpages-widget.php:40
+msgid "Display subpages if present page only."
+msgstr "نمایش زیربرگه های برگه جاری"
+
+#: ../widgets/subpages-widget.php:46
+msgid "U-Design: Subpages"
+msgstr "U-Design: زیربرگه ها"
+
+#: ../widgets/subpages-widget.php:122
+msgid ""
+"Leave the Title field blank if you would like to display the parent page "
+"Title instead."
+msgstr "اگر می خواهید عنوان برگه مادر نمایش یابد، فیلد عنوان را خالی بگذارید."
+
+#~ msgid "Archive Index Page"
+#~ msgstr "برگه محتوای آرشیو"
+
+#~ msgid "Edit this entry."
+#~ msgstr "ویرایش"
+
+#~ msgid "Contact the Author"
+#~ msgstr "تماس با نویسنده"
+
+#~ msgid "Google Font Directory"
+#~ msgstr "دایرکتوری فونت های گوگل"
+
+#~ msgid "--Choose Admin Task--"
+#~ msgstr "--انتخاب کار اجرایی--"
+
+#~ msgid "Load"
+#~ msgstr "بارگذاری"
+
+#~ msgid "Delete"
+#~ msgstr "پاک کردن"
+
+#~ msgid "--Custom Color Schemes--"
+#~ msgstr "--طرح های رنگ سفارشی--"
+
+#~ msgid "0. Default Colors"
+#~ msgstr "0. رنگ های پیش فرض"
+
+#~ msgid "HELP"
+#~ msgstr "راهنمایی"
+
+#~ msgid ""
+#~ "This is the info box situated right under the post and just above the "
+#~ "comments area."
+#~ msgstr "این قسمت درست پایین پست و بالای ناحیه دیدگاه قرار دارد."
+
+#~ msgid "Thumbnail Properties:"
+#~ msgstr "ویژگی های بند انگشتی:"

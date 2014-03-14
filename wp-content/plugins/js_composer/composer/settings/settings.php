@@ -457,7 +457,7 @@ class WPBakeryVisualComposerSettings {
     public function gutter_callback($args) {
         $value = ($value = get_option(self::$field_prefix.$args['id'])) ? $value : $this->getDefault($args['id']);
         echo '<input type="text" name="'.self::$field_prefix.$args['id'].'" value="'.$value.'" class="css-control"> px';
-        echo '<p class="description indicator-hint css-control">'.__('To change default horizontal spacing between columns, enter new value in percents here.', 'js_composer').'</p>';
+        echo '<p class="description indicator-hint css-control">'.__('To change default horizontal spacing between columns, enter new value in pixels here.', 'js_composer').'</p>';
     }
 
     public function responsive_max_callback($args) {

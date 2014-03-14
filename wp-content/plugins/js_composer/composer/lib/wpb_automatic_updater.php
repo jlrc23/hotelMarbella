@@ -52,7 +52,7 @@ if(!class_exists('WpbAutomaticUpdater')) {
             global $wp_filesystem;
             $this->init();
             $this->upgrade_strings();
-            $this->strings['download_envato'] = __('Downloading package from envato market&#8230;', 'js_composer');
+            $this->strings['download_envato'] = __('Downloading package from envato market...', 'js_composer');
             add_filter('upgrader_pre_install', array(&$this, 'deactivate_plugin_before_upgrade'), 10, 2);
             add_filter('upgrader_clear_destination', array(&$this, 'delete_old_plugin'), 10, 4);
             $this->run(array(

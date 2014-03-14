@@ -560,6 +560,11 @@ if (!class_exists('WPBakeryShortCode_UniversalAdmin')) {
                 // $param_value = __($param_value, "js_composer");
                 $param_line .= '<textarea name="'.$param['param_name'].'" class="wpb_vc_param_value wpb-textarea_raw_html '.$param['param_name'].' '.$param['type'].'" rows="16">' . htmlentities(rawurldecode(base64_decode($param_value)), ENT_COMPAT, 'UTF-8' ) . '</textarea>';
             }
+            // Big Regular textarea
+            else if ( $param['type'] == 'textarea_safe' ) {
+                // $param_value = __($param_value, "js_composer");
+                $param_line .= '<textarea name="'.$param['param_name'].'" class="wpb_vc_param_value wpb-textarea_raw_html '.$param['param_name'].' '.$param['type'].'">' . vc_value_from_safe($param_value, true) . '</textarea>';
+            }
             // Regular textarea
             else if ( $param['type'] == 'textarea' ) {
                 $param_value = __($param_value, "js_composer");

@@ -41,6 +41,7 @@
   vc.AddElementBlockView = vc.ModalView.extend({
     el: $('#vc-add-element-dialog'),
     prepend: false,
+    builder: '',
     events: {
       'click .vc-shortcode-link': 'createElement',
       'keyup #vc_elements_name_filter':'filterElements',
@@ -48,11 +49,10 @@
       'shown.bs.modal': 'buildFiltering',
       'click .wpb-content-layouts-container .isotope-filter a':'filterElements'
     },
-
     buildFiltering: function() {
       this.do_render = false;
       if(!vc.is_mobile) $('#vc_elements_name_filter').focus();
-      var item_selector, tag, not_in;
+      var item_selector, tag, not_in,
       item_selector = '.wpb-layout-element-button';
       tag = this.model ? this.model.get('shortcode') : 'vc_column';
       not_in = this._getNotIn(tag);
@@ -61,13 +61,13 @@
       if (_.isObject(as_parent)) {
         var parent_selector = [];
         if (_.isString(as_parent.only)) {
-          parent_selector.push(_.reduce(as_parent.only.split(','), function (memo, val) {
+          parent_selector.push(_.reduce(as_parent.only.replace(/\s/, '').split(','), function (memo, val) {
             return memo + ( _.isEmpty(memo) ? '' : ',') + '[data-element="' + val.trim() + '"]';
           }, ''));
         }
         if (_.isString(as_parent.except)) {
-          parent_selector.push(_.reduce(as_parent.except.split(','), function (memo, val) {
-            return memo + ( _.isEmpty(memo) ? '' : ',') + '[data-element!="' + val.trim() + '"]';
+          parent_selector.push(_.reduce(as_parent.except.replace(/\s/, '').split(','), function (memo, val) {
+            return memo  + ':not([data-element="' + val.trim() + '"])';
           }, ''));
         }
         item_selector += parent_selector.join(',');
@@ -93,6 +93,7 @@
     },
     render: function(model, prepend) {
       var $list, item_selector, tag, not_in;
+      this.builder = new vc.ShortcodesBuilder();
       this.prepend = _.isBoolean(prepend) ? prepend : false;
       this.model = _.isObject(model) ? model : false;
       this.$content = this.$el.find('.wpb-elements-list');
@@ -103,9 +104,9 @@
       $(window).unbind('resize.vcAddElementModal');
       if(this.do_render) {
         if(this.show_settings) {
-          vc.edit_element_block_view.render(vc.ShortcodesBuilder.last());
+          vc.edit_element_block_view.render(this.builder.last());
         }
-        vc.ShortcodesBuilder.render();
+        this.builder.render();
       }
     },
     createElement: function(e) {
@@ -115,10 +116,10 @@
         tag = $control.data('tag'),
         model;
       if(this.model === false && tag !== 'vc_row') {
-        vc.ShortcodesBuilder
+        this.builder
           .create({shortcode: 'vc_row'})
-          .create({shortcode: 'vc_column', parent_id: vc.ShortcodesBuilder.lastID(), params: {width: '1/1'}});
-        this.model = vc.ShortcodesBuilder.last();
+          .create({shortcode: 'vc_column', parent_id: this.builder.lastID(), params: {width: '1/1'}});
+        this.model = this.builder.last();
       } else if(this.model !== false && tag === 'vc_row') {
         tag += '_inner';
       }
@@ -128,18 +129,18 @@
         if(shortcode_first) params.order = shortcode_first.get('order') -1;
         vc.activity = 'prepend';
       }
-      vc.ShortcodesBuilder.create(params);
+      this.builder.create(params);
       if(tag === 'vc_row') {
-        vc.ShortcodesBuilder.create({shortcode: 'vc_column', parent_id: vc.ShortcodesBuilder.lastID(), params: {width: '1/1'}});
+        this.builder.create({shortcode: 'vc_column', parent_id: this.builder.lastID(), params: {width: '1/1'}});
       } else if(tag === 'vc_row_inner') {
-        vc.ShortcodesBuilder.create({shortcode: 'vc_column_inner', parent_id: vc.ShortcodesBuilder.lastID(), params: {width: '1/1'}});
+        this.builder.create({shortcode: 'vc_column_inner', parent_id: this.builder.lastID(), params: {width: '1/1'}});
       }
       if(_.isString(vc.getMapped(tag).default_content) && vc.getMapped(tag).default_content.length) {
-        var new_data = vc.ShortcodesBuilder.parse({}, vc.getMapped(tag).default_content, vc.ShortcodesBuilder.last().toJSON());
+        var new_data = this.builder.parse({}, vc.getMapped(tag).default_content, this.builder.last().toJSON());
         _.each(new_data, function(object){
           object.default_content = true;
-          vc.ShortcodesBuilder.create(object);
-        });
+          this.builder.create(object);
+        }, this);
       }
       this.show_settings = _.isBoolean(vc.getMapped(tag).show_settings_on_create) && vc.getMapped(tag).show_settings_on_create === false ? false : true;
       this.$el.modal('hide');
@@ -156,12 +157,12 @@
         var separator = _.isEmpty(memo) ? '' : ',';
         if (_.isObject(shortcode.as_child)) {
           if (_.isString(shortcode.as_child.only)) {
-            if (!_.contains(shortcode.as_child.only.split(','), tag)) {
+            if (!_.contains(shortcode.as_child.only.replace(/\s/, '').split(','), tag)) {
               memo += separator + '[data-element=' + shortcode.base + ']';
             }
           }
           if (_.isString(shortcode.as_child.except)) {
-            if (_.contains(shortcode.as_child.except.split(','), tag)) {
+            if (_.contains(shortcode.as_child.except.replace(/\s/, '').split(','), tag)) {
               memo += separator + '[data-element=' + shortcode.base + ']';
             }
           }
@@ -279,7 +280,6 @@
     setSize: function() {
       var height = $(window).height() - 190;
       this.$content.css('maxHeight', height);
-
     },
     render: function(model, not_request_template) {
       this.model = model;
@@ -302,7 +302,7 @@
           action:'wpb_show_edit_form',
           element:this.model.get('shortcode'),
           post_id: $('#post_ID').val(),
-          shortcode: vc.ShortcodesBuilder.toString(this.model),
+          shortcode: vc.builder.toString(this.model),
           vc_inline: true
         },
         context:this
@@ -539,7 +539,7 @@
           var $html = $(html),
             template = $($html.get(0)).html(),
             data = JSON.parse($($html.get(1)).text());
-          vc.ShortcodesBuilder.buildFromTemplate(template, data);
+          vc.builder.buildFromTemplate(template, data);
           this.showMessage(window.i18nLocale.template_added, 'success');
           /*
            _.each(vc.filters.templates, function (callback) {
@@ -559,7 +559,7 @@
       var name = this.$name.val(),
         data, shortcodes;
       if (_.isString(name) && name.length) {
-        shortcodes = vc.ShortcodesBuilder.getContent();
+        shortcodes = vc.builder.getContent();
         if(!shortcodes.trim().length) {
           this.showMessage(window.i18nLocale.template_is_empty, 'error');
           return false;
@@ -590,6 +590,7 @@
     },
     render: function(model) {
       this.$input = $('#vc-row-layout');
+      this.builder = new vc.ShortcodesBuilder();
       if(model) this.model = model;
       this.addCurrentLayout();
       vc.column_trig_changes = true;
@@ -610,9 +611,10 @@
     },
     setLayout: function(e) {
       e && e.preventDefault();
+      if (!this.builder.isBuildComplete()) return false;
       var $control = $(e.currentTarget),
         layout = $control.attr('data-cells'),
-        columns = this.model.view.convertRowColumns(layout);
+        columns = this.model.view.convertRowColumns(layout, this.builder);
       this.$input.val(columns.join(' + '));
     },
     updateFromInput: function(e) {

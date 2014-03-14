@@ -1818,19 +1818,18 @@ vc_map( array(
       "description" => __("Enter text which will be used as widget title. Leave blank if no title is needed.", "js_composer")
     ),
     array(
-      "type" => "textfield",
-      "heading" => __("Google map link", "js_composer"),
+      "type" => "textarea_safe",
+      "heading" => __("Map embed iframe", "js_composer"),
       "param_name" => "link",
-      "admin_label" => true,
-      "description" => sprintf(__('Link to your map. Visit %s to find your address and then click "Link" button to obtain your map link.', "js_composer"), '<a href="http://maps.google.com" target="_blank">Google maps</a>')
+      "description" => sprintf(__('Visit %s to create your map. 1) Find location 2) Click "Share" and make sure map is public on the web 3) Click folder icon to reveal "Embed on my site" link 4) Copy iframe code and paste it here.', "js_composer"), '<a href="https://mapsengine.google.com/" target="_blank">Google maps</a>')
     ),
     array(
       "type" => "textfield",
       "heading" => __("Map height", "js_composer"),
       "param_name" => "size",
-      "description" => __('Enter map height in pixels. Example: 200.', "js_composer")
+      "description" => __('Enter map height in pixels. Example: 200 or leave it empty to make map responsive.', "js_composer")
     ),
-    array(
+    /*array(
       "type" => "dropdown",
       "heading" => __("Map type", "js_composer"),
       "param_name" => "type",
@@ -1849,7 +1848,7 @@ vc_map( array(
       "param_name" => "bubble",
       "description" => __("If selected, information bubble will be hidden.", "js_composer"),
       "value" => Array(__("Yes, please", "js_composer") => true),
-    ),
+    ),*/
     array(
       "type" => "textfield",
       "heading" => __("Extra class name", "js_composer"),

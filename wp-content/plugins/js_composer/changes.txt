@@ -1,8 +1,21 @@
+07.03.2014 - ver 4.0.2
+   - Google maps element updated to support new google maps version
+   - Child theme support added
+   - Disable responsivness is back
+   - h1 css rules, normalize.css and print.css removed fron final js_composer_front.css removed
+   - Workaround for inline scripts added (for devs who output js code inline)
+   - Revolution slider support added
+   - Nested shortcodes: except param can accept comma separated values now
+   - CSS code added in front end is mirrored in backend interface
+   - Sprite for predefined row laoyouts added
+   - "Close" modal button in backend position tweak added
+   - Update .po/.mo files
+
 03.03.2014 - ver 4.0.1
-  - Optimizations for WPEngine
-  - Plugin search is back
-  - User access rules logic improved (for publish/save posts in inline mode)
-  - Nested shortcodes can now accept except param
+   - Optimizations for WPEngine
+   - Plugin search is back
+   - User access rules logic improved (for publish/save posts in inline mode)
+   - Nested shortcodes can now accept except param
 
 02.03.2014 - ver 4.0
    - Major update. All new inline (front end) editing mode. Now you can see what you are doing, no more trials and errors

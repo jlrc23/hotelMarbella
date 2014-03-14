@@ -736,11 +736,12 @@ div.wpb_ui-state-active .wpb_ui-state-active {
   position: relative;
   > .controls_column {
     text-align: center;
-    position: absolute;
+    position: relative;
     width: 100%;
     //top: 7px;
-    top: -8px;
-    left: 0;
+    //top: -8px;
+    top: 4px;
+    //left: 0;
     line-height: 1px;
     
     a {
@@ -767,21 +768,22 @@ div.wpb_ui-state-active .wpb_ui-state-active {
   }
   > .bottom-controls {
     top: auto;
-    bottom: -8px;
+    //bottom: -8px;
+    bottom: 4px;
   }
 }
 /* Tabs, Tour, Accordion controls position */
 .wpb_vc_tab,
 .wpb_vc_accordion_tab {
   > .controls_column {
-    top: 3px;
+    //top: 3px;
   }
   > .bottom-controls {
     top: auto;
-    bottom: 3px;
+    //bottom: 3px;
   }
   .wpb_column_container {
-    padding: 20px 4px 23px;
+    //padding: 20px 4px 23px;
   }
   .empty_container {
     background-position: center center;
@@ -1850,17 +1852,15 @@ ul.wpb-content-layouts-container,
 /* Add element grid icons
 ---------------------------------------------------------- */
 .modal-header .close {
-  margin-top: -10px;
-  right: -10px;
+  z-index: 5;
 }
 #vc_elements_name_filter { 
-  position: absolute;
   padding: 6px 6px 4px 25px;
-  top: -5px;
-  right: 0px;
-  width: 175px;
-  background: #ffffff url(../vc/search.png) no-repeat 6px 5px;
-  z-index: 1;
+  // top: -5px;
+  // right: 0px;
+  width: 210px;
+  background: #ffffff url(../vc/search.png) no-repeat 8px 10px;
+  //z-index: 1;
 }
 .wpb_bootstrap_modals {
     .vc-element-icon {

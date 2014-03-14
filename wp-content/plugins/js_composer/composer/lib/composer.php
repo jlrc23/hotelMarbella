@@ -469,7 +469,7 @@ if (!class_exists('WPBakeryVisualComposer')) {
         public static function getUserTemplate($template) {
             if(empty(self::$user_template_dir)) {
                 $dir_name = isset(WPBakeryVisualComposer::$config['USER_DIR_NAME']) ? WPBakeryVisualComposer::$config['USER_DIR_NAME'] : 'vc_templates';
-                self::$user_template_dir = get_template_directory().'/'.$dir_name.'/';
+                self::$user_template_dir = get_stylesheet_directory().'/'.$dir_name.'/';
             }
             return self::$user_template_dir.$template;
         }
