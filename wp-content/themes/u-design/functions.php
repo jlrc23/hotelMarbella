@@ -1819,7 +1819,7 @@ add_action('udesign_top_elements_inside', 'udesign_top_elements_logo', 9);
 // Setup the slogan/tagline
 function udesign_top_elements_slogan() {
     ob_start(); ?>
-                    <div id="slogan" class="grid_17"><?php bloginfo('description'); ?></div>
+                    <div id="slogan" class="grid_17"><?php bloginfo('title'); ?></div>
                     <!-- end logo slogan -->
 <?php
     $slogan_html = ob_get_clean();

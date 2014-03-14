@@ -1,0 +1,15 @@
+------------------------------------------------------------
+Version 1.0
+    - Updated to include Vendor and Partner variables to connect to API. 
+    - Fixed account authorization issue when password included special charcaters (i.e. !).
+    - Updated to void initial authorization transaction.
+
+------------------------------------------------------------
+Version 1.0.beta1.1
+    - Updated insert_transaction method to include value for feed_id since the DB table required it.
+
+------------------------------------------------------------
+Version 1.0.alpha1
+    - Added hooks
+
+
