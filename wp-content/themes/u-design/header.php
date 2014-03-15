@@ -112,17 +112,17 @@ echo apply_filters( 'udesign_head_title_element', ob_get_clean() );  ?>
                     } ?>
 		</div>
 		<!-- end rev-slider-header -->
-<?php	    elseif ( $current_slider == '7' ) : // no slider ?>
+<?php	    elseif ( $current_slider == '7' ) :/* // no slider ?>
 		<div id="page-content-title">
 		    <div id="page-content-header" class="container_24">
-			<div id="page-title">11
+			<div id="page-title">
 <?php                       if ( $udesign_options['no_slider_text'] ) echo '<h2>' . $udesign_options['no_slider_text'] . '</h2>'; ?>
 			</div>
 		    </div>
 		    <!-- end page-content-header -->
 		</div>
 		<!-- end page-content-title -->
-<?php	    endif; ?>
+<?php	    */ endif; ?>
                 
 <?php       udesign_front_page_slider_after(); ?>
 

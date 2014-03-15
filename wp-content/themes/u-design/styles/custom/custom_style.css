@@ -79,3 +79,42 @@ h3.bottom-col-title {font-size:1.35em !important; }
 @media screen and (min-width: 720px) {
     .u-design-fixed-menu-on.fixed-menu #top-wrapper { background-color:#FBFBFB; }
 }
+    
+    @media screen and (min-width: 960px) {
+        /* Set the Container widths first */
+        .container_24 {
+            max-width: 1024px;
+            width: auto;
+        }
+        /* Sidebar */
+        #main-content.grid_16 { width: 67%; }
+        #sidebar.grid_8 { width: 33%; }
+        #sidebar.push_8, #main-content.push_8 { left: 33%; }
+        #main-content.pull_16, #sidebar.pull_16 { right: 67%; }
+    }
+    @media screen and (max-width: 1124px) {
+        #page-peel { display: none; }
+    }
+    
+    /* BEGIN: STICKY FOOTER CSS */
+    html, body { height: 100%; }
+    #wrapper-1 { min-height: 100%; }
+    .push {
+        overflow:auto;
+        padding-bottom: 44px; 
+    }
+    #footer-bg {
+        position: relative;
+        margin-top: -44px; /* negative value of footer height */
+        height: 44px;
+        clear:both;
+    }
+    /* Opera Fix */
+    body:before {
+        content:"";
+        height:100%;
+        float:left;
+        width:0;
+        margin-top:-32767px;
+    }
+    /* END: STICKY FOOTER CSS */
