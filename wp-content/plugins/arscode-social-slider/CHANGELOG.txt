@@ -1,0 +1,48 @@
+v2.9.3
+- fix for G+ API Key,
+v2.9.2
+- fixed Pinterest feed url
+v2.9
+- fix for Twitter (new API)
+v2.8
+- fix for new jQuery
+- Instagram support
+v2.6
+- Disable on Home Page, Disable on Category Page, Disable on Archive Page
+v2.5
+- YouTube show/hide badge
+- YouTube stream select: uploads, favorites, playlist
+- Google Plus show/hide badge
+- Load widget: on page load/on slideout
+- Pinterest support
+v2.2
+- LinkedIn support
+- new button designs
+- behavior click/hover
+- disable/enable on mobile devices
+v2.0
+- YouTube SUPPORT
+v1.8
+- Google Plus fixes
+- iPad and other tablets fixes
+- add twitter follow button
+- fix for short_open_tag=Off
+v1.7
+- GOOGLE PLUS SUPPORT !
+v1.6
+- some fixes for IE7
+- TWITTER SUPPORT !
+v1.5
+- show header option
+- separate widget options (Width, Height, Show faces, Show stream, Show - header, Color Scheme, Border Color)
+- 3 new tab designs (black)
+- z-index option
+- color picker for border color
+v1.4
+- facebook widget
+v1.3
+- middle/fixed vertical position
+v1.2
+- light/dark color scheme
+v1.1
+- locale settings

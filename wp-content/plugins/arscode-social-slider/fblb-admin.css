@@ -1,0 +1,36 @@
+#STabs  ul li {
+	min-height: 36px;
+}
+#STabs .ui-tabs-nav .ui-icon-my {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	text-indent: -99999px;
+	overflow: hidden;
+	background-repeat: no-repeat;
+}
+#STabs .ui-tabs-nav .ui-icon-fb  {
+	background-image: url(img/icons/fb-20x20.png)
+}
+#STabs .ui-tabs-nav .ui-icon-tw {
+	background-image: url(img/icons/tw-20x20.png)
+}
+#STabs .ui-tabs-nav .ui-icon-gp  {
+	background-image: url(img/icons/gp-20x20.png)
+}
+#STabs .ui-tabs-nav .ui-icon-pi  {
+	background-image: url(img/icons/pi-20x20.png)
+}
+#STabs .ui-tabs-nav .ui-icon-vi  {
+	background-image: url(img/icons/vi-20x20.png)
+}
+#STabs .ui-tabs-nav .ui-icon-yt  {
+	background-image: url(img/icons/yt-20x20.png)
+}
+#STabs .ui-tabs-nav .ui-icon-li  {
+	background-image: url(img/icons/li-20x20.png)
+}
+
+#STabs .ui-tabs-nav .ui-icon-inst  {
+	background-image: url(img/icons/inst-20x20.png)
+}

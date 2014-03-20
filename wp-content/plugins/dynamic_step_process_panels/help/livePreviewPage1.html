@@ -1,0 +1,28 @@
+[dspp id='example1']
+<br />
+<script type="text/javascript">var timesOpened = 0;</script> 
+[dspp id='example2']
+<br />
+[dspp id='example3']
+<br />
+<script type="text/javascript">function checkEmail(email) 
+{
+	if(email=="")
+		return false;
+	var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+	if(reg.test(email) == false)
+		return false;
+	else
+		return true;
+}
+jQuery(document).ready(function($){
+	$("#processPanel_example4").submit(function(){
+		$("#content3_example4 .alert").remove();
+		if($("[name=check]").val()!="5")
+		{
+			$("#content3_example4").prepend("<span class='alert'>Please enter correct result!</span>");
+			return false;
+		}
+	});
+});</script>
+[dspp id='example4']
