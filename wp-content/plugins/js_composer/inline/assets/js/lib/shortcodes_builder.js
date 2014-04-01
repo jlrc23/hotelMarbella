@@ -71,7 +71,7 @@
           id: shortcode.id,
           shortcode: shortcode.tag,
           params: params,
-          parent_id: $parent.hasClass('vc-element') ? $parent.data('modelId') : false,
+          parent_id: shortcode.parent_id,
           from_content: true
         });
         $block.attr('data-model-id', model.get('id'));
@@ -82,6 +82,39 @@
       vc.frame_window.vc_iframe.reload();
     },
     buildFromTemplate: function(html, data) {
+      var $html = $(html);
+      _.each($(html), function(block){
+        var $block = $(block);
+        if($block.is('[data-type=files]')) {
+          this._renderBlockCallback(block);
+        } else {
+          vc.app.placeElement($block);
+        }
+      }, this);
+      _.each(data, function(shortcode){
+        var $block = vc.$page.find('[data-model-id=' + shortcode.id + ']'),
+            params = _.isObject(shortcode.attrs) ? shortcode.attrs : {},
+            model = vc.shortcodes.create({
+              id: shortcode.id,
+              shortcode: shortcode.tag,
+              params: params,
+              parent_id: shortcode.parent_id,
+              from_template: true
+            });
+        $block.attr('data-model-id', model.get('id'));
+        this._renderBlockCallback($block.get(0));
+
+      }, this);
+      vc.frame.setSortable();
+      vc.activity = false;
+      this.checkNoContent();
+      vc.frame_window.vc_iframe.loadScripts();
+      this.last() && vc.frame.scrollTo(this.first());
+      this.models = [];
+      this.showResultMessage();
+      this.is_build_complete = true;
+    },
+    _buildFromTemplate: function(html, data) {
       var $html = $(html);
       vc.setDataChanged();
       vc.app.placeElement($html);
@@ -94,7 +127,7 @@
             shortcode: shortcode.tag,
             params: params,
             parent_id: $parent.hasClass('vc-element') ? $parent.data('modelId') : false,
-            default_content: true
+            from_template: true
           });
         this._renderBlockCallback($block.get(0));
       }, this);
@@ -123,7 +156,7 @@
         update_inner = true;
       }
       if(update_inner) $html.html(inner_html);
-      !model.get('from_content') && this.placeContainer($html, model);
+      !model.get('from_content') && !model.get('from_template') && this.placeContainer($html, model);
       model.view = new view_name({model: model, el: $html}).render();
       this.notifyParent(model.get('parent_id'));
       model.view.rendered();

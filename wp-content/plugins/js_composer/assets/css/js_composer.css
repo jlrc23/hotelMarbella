@@ -99,46 +99,69 @@
 ---------------------------------------------------------- */
 /* Visual Composer structure blocks
 ---------------------------------------------------------- */
-.button-primary.composer-switch {
+.composer-switch {
   cursor: default;
-  height: 28px;
-  margin-bottom: 6px;
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 0;
+  font-size: 11px;
+  line-height: 27px;
+  border-radius: 4px;
+  margin-bottom: 8px;
 }
-.button-primary.composer-switch:hover a {
-  opacity: 0.5;
-  filter: alpha(opacity=50);
-}
-.button-primary.composer-switch a,
-.button-primary.composer-switch a:visited {
+.composer-switch a,
+.composer-switch a:visited {
   text-decoration: none;
   cursor: pointer;
   color: #ffffff;
+  display: inline-block;
+  line-height: 28px;
+  height: 28px;
+  padding: 4px 10px;
+  background-color: #114C7F;
 }
-.button-primary.composer-switch a:hover,
-.button-primary.composer-switch a:visited:hover {
-  opacity: 1;
-  filter: alpha(opacity=100);
+.composer-switch a.wpb_switch-to-composer:hover,
+.composer-switch a:visited.wpb_switch-to-composer:hover {
+  background-color: #0d3d63;
 }
-.button-primary.composer-switch .icon {
-  background: url(../vc/visual_composer.png) no-repeat center center;
+.composer-switch a.wpb_switch-to-front-composer,
+.composer-switch a:visited.wpb_switch-to-front-composer {
+  background-color: #114C7F;
+  -webkit-border-top-right-radius: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  -moz-border-radius-bottomright: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.composer-switch a.wpb_switch-to-front-composer:hover,
+.composer-switch a:visited.wpb_switch-to-front-composer:hover {
+  background-color: #0d3d63;
+}
+.composer-switch .logo-icon {
+  -webkit-border-top-left-radius: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  background: #114c7f url(../vc/visual_composer.png) no-repeat center center;
   width: 16px;
-  height: 25px;
+  height: 28px;
   padding: 0;
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
+  padding: 4px 10px;
 }
-.button-primary.composer-switch .vc-spacer {
+.composer-switch .vc-spacer {
   display: inline-block;
   width: 1px;
-  -webkit-box-shadow: inset 2px 0px 3px -2px rgba(255, 255, 255, 0.42);
-  -moz-box-shadow: inset 2px 0px 3px -2px rgba(255, 255, 255, 0.42);
-  box-shadow: inset 2px 0px 3px -2px rgba(255, 255, 255, 0.42);
-  border-right: 1px solid rgba(0, 0, 0, 0.3);
-  margin: 0 6px;
-  height: 26px;
-  vertical-align: middle;
+  background-color: #1f5b8c;
+  margin: 0;
+  height: 28px;
+  padding: 4px 0;
+  vertical-align: top;
   position: relative;
-  top: -2px;
 }
 #wpb_visual_composer {
   background: #ffffff;

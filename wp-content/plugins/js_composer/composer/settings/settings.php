@@ -915,7 +915,7 @@ EOF;
         $replace[] = 'url('.WPBakeryVisualComposer::getInstance()->assetURL('');
         $css_string = preg_replace($pattern, $replace, $css_string);
         $array_span_css = array();
-        $i = 1; while($i<=12) {$array_span_css[] ='.wpb_row .vc_span'.$i++;}
+        $i = 1; while($i<=12) {$array_span_css[] = '.vc_responsive .wpb_row .vc_span'.$i.', .vc_non_responsive .wpb_row .vc_span'.$i++;}
         // @fluidGridGutterWidth;
         $css_string .= ''.implode(','."\n", $array_span_css).', .vc_container {
             padding-left: '.($fluidGridGutterWidth/2).'px;

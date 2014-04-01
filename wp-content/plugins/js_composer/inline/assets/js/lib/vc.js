@@ -138,7 +138,8 @@ _.extend(vc, {
   };
 
   vc.CloneModel = function (builder, model, parent_id, child_of_clone) {
-    var new_order = _.isBoolean(child_of_clone) && child_of_clone === true ? model.get('order') : parseFloat(model.get('order')) + vc.clone_index,
+    // vc.clone_index = vc.clone_index / 10;
+    var new_order = _.isBoolean(child_of_clone) && child_of_clone === true ? model.get('order') : parseFloat(model.get('order')) + 1,
         params = _.extend({}, model.get('params')),
         tag = model.get('shortcode'),
         data = {
@@ -150,9 +151,10 @@ _.extend(vc, {
           params: params
         };
     if(vc['cloneMethod_' + tag]) data = vc['cloneMethod_' + tag](data, model);
+    if(!_.isBoolean(child_of_clone) || child_of_clone !== true) data.place_after_id = model.get('id');
     builder.create(data);
     var new_model = builder.last();
-    if(!_.isBoolean(child_of_clone) || child_of_clone !== true) model.view.$el.addClass('vc-place-after');
+    // if(!_.isBoolean(child_of_clone) || child_of_clone !== true) model.view.$el.addClass('vc-place-after');
     _.each(vc.shortcodes.where({parent_id:model.get('id')}), function (shortcode) {
       vc.CloneModel(builder, shortcode, new_model.get('id'), true);
     }, this);
@@ -199,6 +201,7 @@ _.extend(vc, {
     move_timeout: false,
     out_timeout: false,
     hold_active: true,
+    builder: false,
     initialize: function() {
       // _.bindAll(this, 'setControlPosition', 'unsetControlPosition');
       this.listenTo(this.model, 'destroy', this.removeView);
@@ -342,7 +345,8 @@ _.extend(vc, {
     clone: function(e) {
       var new_model, builder = new vc.ShortcodesBuilder();
       _.isObject(e) && e.preventDefault()  && e.stopPropagation();
-      vc.clone_index = vc.clone_index / 10;
+      if(this.builder && !this.builder.is_build_complete) return false;
+      this.builder = builder;
       new_model = vc.CloneModel(builder, this.model, this.model.get('parent_id'));
       builder.setResultMessage(window.sprintf(window.i18nLocale.inline_element_cloned, new_model.setting('name'), new_model.get('id')));
       builder.render();
@@ -351,9 +355,10 @@ _.extend(vc, {
       return _.isObject(this.model.get('params')) && !_.isUndefined(this.model.get('params')[param_name]) ? this.model.get('params')[param_name] : null;
     },
     placeElement: function($view, activity) {
-      var $place_after = this.content().find('.vc-place-after');
-      if($place_after.is('.vc-element')) {
-        $view.insertAfter($place_after.removeClass('vc-place-after'));
+      var model = vc.shortcodes.get($view.data('modelId'));
+      if(model && model.get('place_after_id')) {
+        $view.insertAfter(vc.$page.find('[data-model-id=' + model.get('place_after_id') + ']'));
+        model.unset('place_after_id');
       } else if(_.isString(activity) && activity === 'prepend') {
         $view.prependTo(this.content());
       } else {
@@ -547,9 +552,10 @@ _.extend(vc, {
       vc.$frame_body.addClass(this.mode + '-mode');
     },
     placeElement: function($view, activity) {
-      var $place_after =  vc.$page.find('> .vc-place-after');
-      if(vc.$page.find('> .vc-place-after').length) {
-        $view.insertAfter(vc.$page.find('> .vc-place-after').removeClass('vc-place-after'));
+      var model = vc.shortcodes.get($view.data('modelId'));
+      if(model && model.get('place_after_id')) {
+        $view.insertAfter(vc.$page.find('[data-model-id=' + model.get('place_after_id') + ']'));
+        model.unset('place_after_id');
       } else if(_.isString(activity) && activity === 'prepend') {
         $view.prependTo(vc.$page);
       } else {
@@ -599,18 +605,21 @@ _.extend(vc, {
     saveRowOrder: function() {
       _.defer(function (app) {
         var $rows = vc.$page.find('> [data-tag=vc_row]'),
-            builder = new vc.ShortcodesBuilder();
+            builder = new vc.ShortcodesBuilder(),
+            place_after_id, row_data;
         $rows.each(function (key, value) {
           var $this = $(this);
           if($this.is('.droppable')) {
             $this.remove();
+            var row_data = {shortcode: 'vc_row', order: key};
             if(key === 0) {
               vc.activity = 'prepend';
             } else if(key+1 != $rows.length) {
-              vc.$page.find('> [data-tag=vc_row]:eq(' + (key - 1) +')').addClass('vc-place-after')
+              // vc.$page.find('> [data-tag=vc_row]:eq(' + (key - 1) +')').addClass('vc-place-after')
+              row_data.place_after_id = vc.$page.find('> [data-tag=vc_row]:eq(' + (key - 1) +')').data('modelId');
             }
             builder
-              .create({shortcode: 'vc_row', order: key})
+              .create(row_data)
               .create({shortcode: 'vc_column', parent_id: builder.lastID(), params: {width: '1/1'}})
               .render();
           } else {
@@ -627,16 +636,17 @@ _.extend(vc, {
               $elements = $column.find('> [data-model-id]');
           $column.find('> [data-model-id]').each(function(key, value){
             var $element = $(this),
-                model, prev_parent, current_parent;
+                model, prev_parent, current_parent, prepend = false;
             if($element.is('.droppable')) {
               current_parent = vc.shortcodes.get($column.parents('.vc-element:first').data('modelId'));
               $element.remove();
               if(key === 0) {
-                vc.activity = 'prepend';
+                prepend = true;
               } else if(key+1 != $elements.length) {
-                $column.find('> [data-tag]:eq(' + (key - 1) +')').addClass('vc-place-after');
+                prepend = $column.find('> [data-tag]:eq(' + (key - 1) +')').data('modelId');
+                // $column.find('> [data-tag]:eq(' + (key - 1) +')').addClass('vc-place-after');
               }
-              if(current_parent) vc.add_element_block_view.render(current_parent);
+              if(current_parent) vc.add_element_block_view.render(current_parent, prepend);
             } else {
               model = vc.shortcodes.get($element.data('modelId'));
               prev_parent = model.get('parent_id');

@@ -423,7 +423,8 @@ class WPBakeryVisualComposerLayout implements  WPBakeryVisualComposerTemplateInt
         ?>
         <script type="text/javascript">
             var vc_user_mapper = <?php echo json_encode(WPBMap::getUserShortCodes()) ?>,
-                vc_mapper = <?php echo json_encode(WPBMap::getShortCodes()) ?>;
+                vc_mapper = <?php echo json_encode(WPBMap::getShortCodes()) ?>,
+                vc_frontend_enabled = <?php echo vc_enabled_frontend() ? 'true' : 'false' ?>;
         </script>
         <?php
 

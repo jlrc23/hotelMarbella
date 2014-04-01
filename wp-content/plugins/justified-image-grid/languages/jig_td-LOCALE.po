@@ -1,0 +1,744 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Justified Image Grid\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-07-06 02:50+0100\n"
+"PO-Revision-Date: 2012-07-06 02:51+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: ./\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../jig-shortcode-editor.php:167
+msgid "Edit Shortcode"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:171
+msgid "Edit Shortcode (remove the old shortcode once this is added)"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:211
+msgid "Please set an ID in the General settings, otherwise the template tag will not work."
+msgstr ""
+
+#: ../jig-shortcode-editor.php:224
+msgid "Hint: If you already have a shortcode in your post and you wish to edit its attributes instead of starting over:<br />Please close this popup, select the shortcode, then open this again. Your settings will be loaded."
+msgstr ""
+
+#: ../jig-shortcode-editor.php:229
+msgid "Preset"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:232
+#: ../jig-shortcode-editor.php:288
+#: ../jig-shortcode-editor.php:302
+#: ../jig-shortcode-editor.php:321
+#: ../jig-shortcode-editor.php:346
+#: ../jig-shortcode-editor.php:357
+#: ../jig-shortcode-editor.php:369
+#: ../jig-shortcode-editor.php:384
+#: ../jig-shortcode-editor.php:415
+#: ../jig-shortcode-editor.php:435
+#: ../jig-shortcode-editor.php:461
+msgid "default"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:233
+msgid "Preset 1: Out of the box"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:234
+#: ../justified-image-grid.php:272
+msgid "Preset 2: Author's favorite"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:235
+#: ../justified-image-grid.php:273
+msgid "Preset 3: Flickr style"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:236
+#: ../justified-image-grid.php:274
+msgid "Preset 4: Google+ style"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:237
+#: ../justified-image-grid.php:275
+msgid "Preset 5: Fixed height, no fancy"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:238
+#: ../justified-image-grid.php:276
+msgid "Preset 6: Artistic-zen"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:239
+#: ../justified-image-grid.php:277
+msgid "Preset 7: Color magic fancy style"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:240
+#: ../justified-image-grid.php:278
+msgid "Preset 8: Big images no click"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:241
+#: ../justified-image-grid.php:279
+msgid "Preset 9: Focus on the text"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:243
+msgid "choose one of the 9 presets"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:249
+#: ../justified-image-grid.php:371
+msgid "Height of the rows"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:252
+#: ../justified-image-grid.php:376
+msgid "target height in pixels: 200 without px"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:255
+#: ../justified-image-grid.php:381
+msgid "Row height max deviation (+-)"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:258
+#: ../justified-image-grid.php:386
+msgid "height +/- this value: 50 without px"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:261
+#: ../justified-image-grid.php:391
+msgid "Spacing between the thumbnails"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:264
+#: ../justified-image-grid.php:396
+msgid "0 or 4 or 10 etc... without px"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:267
+#: ../justified-image-grid.php:401
+msgid "Margin around gallery"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:270
+msgid "CSS margin value: 10px or \"0px 10px\" (wrap shorthand with \"\")"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:273
+#: ../justified-image-grid.php:411
+msgid "Animation speed"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:276
+#: ../justified-image-grid.php:416
+msgid "as milliseconds: 200 is fast, 600 is slow"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:279
+#: ../justified-image-grid.php:421
+msgid "Min height to avoid \"jumping\""
+msgstr ""
+
+#: ../jig-shortcode-editor.php:282
+#: ../justified-image-grid.php:426
+msgid "to avoid jumping footer if you have no sidebar: 800 without px<br />don't set it higher than the gallery itself"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:285
+msgid "Order by"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:289
+#: ../justified-image-grid.php:820
+msgid "Menu order"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:290
+#: ../justified-image-grid.php:821
+msgid "Random"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:291
+#: ../justified-image-grid.php:822
+msgid "Title ascending"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:292
+#: ../justified-image-grid.php:823
+msgid "Title descending"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:293
+#: ../justified-image-grid.php:824
+msgid "Date ascending"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:294
+#: ../justified-image-grid.php:825
+msgid "Date descending"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:296
+msgid "the order of the images"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:299
+#: ../justified-image-grid.php:439
+msgid "Disable right mouse menu"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:303
+#: ../jig-shortcode-editor.php:325
+#: ../justified-image-grid.php:831
+msgid "No"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:304
+#: ../justified-image-grid.php:832
+msgid "Yes"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:306
+#: ../justified-image-grid.php:830
+msgid "choose yes if you wish to disable right click menu"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:309
+msgid "Other post/page id"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:312
+msgid "to pull a gallery of other page/post: postID (number)"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:318
+#: ../justified-image-grid.php:456
+msgid "Lightbox type"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:322
+msgid "prettyPhoto"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:323
+msgid "ColorBox"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:324
+msgid "Custom"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:326
+msgid "Links-off"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:328
+#: ../justified-image-grid.php:758
+msgid "decide what happens when an image is clicked"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:331
+#: ../justified-image-grid.php:464
+msgid "Link class(es)"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:334
+#: ../justified-image-grid.php:469
+msgid "class of the image's anchor tag"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:337
+#: ../justified-image-grid.php:474
+msgid "Link rel"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:340
+msgid "no [], so format it like this: gallery(modal)<br />can also be set to auto for proper prettyPhoto deeplinking"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:343
+msgid "Maximum size for lightbox"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:347
+msgid "Large"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:348
+msgid "Full"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:349
+msgid "Medium"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:351
+#: ../justified-image-grid.php:768
+msgid "max size of the image that loads in the lightbox"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:354
+msgid "WP field for link title"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:358
+#: ../jig-shortcode-editor.php:371
+#: ../jig-shortcode-editor.php:416
+#: ../justified-image-grid.php:794
+#: ../justified-image-grid.php:802
+#: ../justified-image-grid.php:812
+msgid "Description"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:359
+#: ../jig-shortcode-editor.php:370
+#: ../justified-image-grid.php:803
+#: ../justified-image-grid.php:811
+msgid "Title"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:360
+#: ../jig-shortcode-editor.php:372
+#: ../jig-shortcode-editor.php:417
+#: ../justified-image-grid.php:795
+#: ../justified-image-grid.php:804
+#: ../justified-image-grid.php:813
+msgid "Caption"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:361
+#: ../jig-shortcode-editor.php:373
+#: ../jig-shortcode-editor.php:418
+msgid "Alternate"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:363
+#: ../justified-image-grid.php:801
+msgid "choose a WP field as link title from the image details"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:366
+msgid "WP field for img alt "
+msgstr ""
+
+#: ../jig-shortcode-editor.php:375
+#: ../justified-image-grid.php:810
+msgid "choose a WP field as img alt from the image details"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:381
+#: ../justified-image-grid.php:539
+msgid "Caption style"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:385
+msgid "Fade"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:386
+msgid "Slide"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:387
+msgid "Mixed"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:388
+msgid "Fixed"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:389
+#: ../jig-shortcode-editor.php:438
+#: ../jig-shortcode-editor.php:462
+#: ../justified-image-grid.php:753
+msgid "Off"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:391
+#: ../justified-image-grid.php:748
+msgid "choose how would you like the caption to appear"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:394
+#: ../justified-image-grid.php:549
+msgid "Caption opacity"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:397
+#: ../justified-image-grid.php:554
+msgid "affects entire caption, a number between 0 and 1"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:400
+#: ../justified-image-grid.php:559
+msgid "Caption background color"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:403
+#: ../justified-image-grid.php:564
+msgid "any CSS color,<br />for opacity use rgba(0,0,0,0.3) only when the caption_opacity is 1"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:406
+#: ../justified-image-grid.php:569
+msgid "Caption text color"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:409
+#: ../jig-shortcode-editor.php:452
+#: ../justified-image-grid.php:574
+#: ../justified-image-grid.php:651
+msgid "any CSS color except rgba"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:412
+msgid "WP field to use for caption"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:420
+#: ../justified-image-grid.php:793
+msgid "choose a WP field as caption description from the image details"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:423
+msgid "Text shadow"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:426
+msgid "\"1px 1px 0px black\" (\"x, y, blur, color\" respectively - wrap it within \"\")<br />it's only applied when caption_opacity is set to 1"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:432
+#: ../justified-image-grid.php:628
+msgid "Overlay type"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:436
+#: ../jig-shortcode-editor.php:463
+msgid "Others"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:437
+#: ../jig-shortcode-editor.php:464
+msgid "Hovered"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:440
+#: ../justified-image-grid.php:776
+msgid "choose a behavior for the overlay"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:443
+#: ../justified-image-grid.php:636
+msgid "Overlay opacity"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:446
+#: ../justified-image-grid.php:641
+msgid "a number between 0 and 1"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:449
+#: ../justified-image-grid.php:646
+msgid "Overlay color"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:458
+#: ../justified-image-grid.php:665
+msgid "Desaturate method"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:465
+msgid "Everything"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:467
+#: ../justified-image-grid.php:784
+msgid "choose a behavior for the on the fly grayscale effect"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:473
+#: ../justified-image-grid.php:682
+msgid "TimThumb quality"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:476
+#: ../justified-image-grid.php:687
+msgid "a number between 0 and 100, 90 is good quality"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:479
+msgid "Custom TimThumb path"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:482
+#: ../justified-image-grid.php:698
+msgid "absolute path (full URL)"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:489
+msgid "Generate template tag (optional / advanced users)"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:492
+msgid "Template tag"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:494
+msgid "add this to a PHP file of your template"
+msgstr ""
+
+#: ../jig-shortcode-editor.php:499
+msgid "Insert Shortcode"
+msgstr ""
+
+#: ../justified-image-grid.php:222
+#: ../justified-image-grid.php:223
+#: ../justified-image-grid.php:232
+msgid "Justified Image Grid"
+msgstr ""
+
+#: ../justified-image-grid.php:233
+msgid "<strong>Add images to the gallery of a page/post, then use the shortcode [justified_image_grid] instead of the gallery block or [gallery] inside the edit area.</strong><br/><br/>Refer to the right side help bubbles or the documentation for more information.<br/><br/> Here you can choose the base settings that every gallery will share. You can override these settings on a per-gallery basis using shortcode attributes. If you'd like to start with a preset, feel free to click the buttons below which will load and apply the preset's settings. You can use this as a base then fine-tune settings. Selecting a preset will overwrite every setting below."
+msgstr ""
+
+#: ../justified-image-grid.php:271
+msgid "Preset 1: Out of the box (default)"
+msgstr ""
+
+#: ../justified-image-grid.php:311
+#: ../justified-image-grid.php:316
+#: ../justified-image-grid.php:321
+#: ../justified-image-grid.php:326
+#: ../justified-image-grid.php:331
+#: ../justified-image-grid.php:336
+#: ../justified-image-grid.php:341
+#: ../justified-image-grid.php:346
+#: ../justified-image-grid.php:351
+msgid "has been successfully applied!"
+msgstr ""
+
+#: ../justified-image-grid.php:364
+msgid "General settings"
+msgstr ""
+
+#: ../justified-image-grid.php:406
+msgid "CSS margin value: 10px or 0px 10px without ' or \""
+msgstr ""
+
+#: ../justified-image-grid.php:431
+msgid "The order of the images"
+msgstr ""
+
+#: ../justified-image-grid.php:449
+msgid "Lightboxes"
+msgstr ""
+
+#: ../justified-image-grid.php:479
+msgid "groups images together like gallery[modal]<br/>make the field empty to ungroup or enter auto for prettyPhoto deeplinking"
+msgstr ""
+
+#: ../justified-image-grid.php:484
+msgid "Maximum size for lightbox (the image will link to this size)"
+msgstr ""
+
+#: ../justified-image-grid.php:492
+msgid "prettyPhoto JS settings"
+msgstr ""
+
+#: ../justified-image-grid.php:497
+msgid "extra JavaScript settings for <a href=\"http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/documentation/\" target=\"_blank\">prettyPhoto</a><br/>try theme: 'light_rounded', 'dark_rounded',<br/>'light_square', 'dark_square', or 'facebook',<br/>to disable social tools add the following line<br/>social_tools: false<br/>Watch for commas: every row ends with a comma except the last one!"
+msgstr ""
+
+#: ../justified-image-grid.php:503
+msgid "ColorBox JS settings"
+msgstr ""
+
+#: ../justified-image-grid.php:508
+msgid "extra JavaScript settings for <a href=\"http://www.jacklmoore.com/colorbox\" target=\"_blank\">ColorBox</a>"
+msgstr ""
+
+#: ../justified-image-grid.php:514
+msgid "WP field for link title (anchor tag's title attribute)"
+msgstr ""
+
+#: ../justified-image-grid.php:522
+msgid "WP field for img alt (image tag's alt attribute)"
+msgstr ""
+
+#: ../justified-image-grid.php:532
+msgid "Captions"
+msgstr ""
+
+#: ../justified-image-grid.php:579
+msgid "Caption title CSS"
+msgstr ""
+
+#: ../justified-image-grid.php:584
+msgid "extra CSS settings for the caption title"
+msgstr ""
+
+#: ../justified-image-grid.php:590
+msgid "Caption description CSS"
+msgstr ""
+
+#: ../justified-image-grid.php:595
+msgid "extra CSS settings for the caption description"
+msgstr ""
+
+#: ../justified-image-grid.php:601
+msgid "WP field to use for caption (description)"
+msgstr ""
+
+#: ../justified-image-grid.php:609
+msgid "Text shadow<br /><b>Only when caption opacity is 1</b>.<br />IE is unsupported."
+msgstr ""
+
+#: ../justified-image-grid.php:614
+msgid "1px 1px 0px black (x, y, blur, color - respectively)<br />it's only applied when caption_opacity is set to 1"
+msgstr ""
+
+#: ../justified-image-grid.php:621
+msgid "Color overlay"
+msgstr ""
+
+#: ../justified-image-grid.php:658
+msgid "Desaturate"
+msgstr ""
+
+#: ../justified-image-grid.php:675
+msgid "TimThumb"
+msgstr ""
+
+#: ../justified-image-grid.php:693
+msgid "Custom TimThumb path (leave empty if unsure)"
+msgstr ""
+
+#: ../justified-image-grid.php:715
+msgid "General layout/appearance settings for your Justified Image Grid galleries"
+msgstr ""
+
+#: ../justified-image-grid.php:718
+msgid "All settings related to lightbox (the modal gallery window that opens your images)"
+msgstr ""
+
+#: ../justified-image-grid.php:721
+msgid "Settings for the text caption over the thumbnails that replaces browser tooltips"
+msgstr ""
+
+#: ../justified-image-grid.php:724
+msgid "Setup the looks of the color overlay. This is mainly used to darken/lighten the images on mouse over"
+msgstr ""
+
+#: ../justified-image-grid.php:727
+msgid "This can turn the images to grayscale on the fly. Choose the setting that best suits your needs"
+msgstr ""
+
+#: ../justified-image-grid.php:730
+msgid "This is for advanced users/developers. The quality is fine at 90. If you use TimThumb already (by your theme) you can also point to its path"
+msgstr ""
+
+#: ../justified-image-grid.php:749
+msgid "Fade in/out"
+msgstr ""
+
+#: ../justified-image-grid.php:750
+msgid "Slide up/down (IE7 unsupported, falls back to Fade)"
+msgstr ""
+
+#: ../justified-image-grid.php:751
+msgid "Mixed - Tilte always visible but sliding description"
+msgstr ""
+
+#: ../justified-image-grid.php:752
+msgid "Fixed - Whole caption is always visible"
+msgstr ""
+
+#: ../justified-image-grid.php:759
+msgid "prettyPhoto (load the plugin's instance of prettyPhoto)."
+msgstr ""
+
+#: ../justified-image-grid.php:760
+msgid "ColorBox (load the plugin's instance of ColorBox)."
+msgstr ""
+
+#: ../justified-image-grid.php:761
+msgid "I already use a lightbox pugin so I'll set up the link class and/or rel accordingly."
+msgstr ""
+
+#: ../justified-image-grid.php:762
+msgid "No lightbox: the image will be opened by the browser. Disables link class and rel."
+msgstr ""
+
+#: ../justified-image-grid.php:763
+msgid "Turn the links off, only thumbnails. Disable pointer cursor and clickability."
+msgstr ""
+
+#: ../justified-image-grid.php:769
+msgid "Large - this should be best for most cases. "
+msgstr ""
+
+#: ../justified-image-grid.php:770
+msgid "Full - it can be an overkill as it'll load the original size in the lightbox."
+msgstr ""
+
+#: ../justified-image-grid.php:771
+msgid "Medium - if you wish to limit the lightbox to a relatively small size."
+msgstr ""
+
+#: ../justified-image-grid.php:777
+msgid "Other images have colored overlay, hovered returns to normal."
+msgstr ""
+
+#: ../justified-image-grid.php:778
+msgid "Hovered image has color overlay, others do not."
+msgstr ""
+
+#: ../justified-image-grid.php:779
+msgid "No overlay."
+msgstr ""
+
+#: ../justified-image-grid.php:785
+msgid "Turn desaturation effect off."
+msgstr ""
+
+#: ../justified-image-grid.php:786
+msgid "Other images are desaturated, hovered returns to color."
+msgstr ""
+
+#: ../justified-image-grid.php:787
+msgid "Hovered image gets desaturated, the others remain in color."
+msgstr ""
+
+#: ../justified-image-grid.php:788
+msgid "Everything is desaturated, even on hover."
+msgstr ""
+
+#: ../justified-image-grid.php:796
+#: ../justified-image-grid.php:805
+#: ../justified-image-grid.php:814
+msgid "Alternate Text"
+msgstr ""
+
+#: ../justified-image-grid.php:819
+msgid "choose the order the images appear in"
+msgstr ""
+
+#: ../justified-image-grid.php:1171
+msgid "Custom link for Justified Image Grid"
+msgstr ""
+
+#: ../justified-image-grid.php:1174
+msgid "Use this instead of Link URL when creating a gallery with JIG and you wish to point the image link to a custom URL"
+msgstr ""
+

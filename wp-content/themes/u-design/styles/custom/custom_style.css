@@ -3,7 +3,7 @@ body { font-family:'Arial'; }
 body { font-size:14px; }
 h1, h2, h3, h4, h5, h6, #slogan, .single-post-categories { font-family:'Kite One'; }
 #top-elements { height:75px; }
-#logo h1 a, #logo .site-name a { background:transparent url( http://hotel-marbella.com.mx/wp-content/uploads/2014/03/logoHotelMarbella2-e1394760017165.png ) no-repeat 0 100%; width:150px; height:104px; }       
+#logo h1 a, #logo .site-name a { background:transparent url( https://s3.amazonaws.com/marbella/logoHotelMarbella-elparaisoatualcanze.png ) no-repeat 0 100%; width:150px; height:104px; }       
 #slogan { 
     top:45px;
     left:155px;

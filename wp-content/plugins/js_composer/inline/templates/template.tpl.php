@@ -1,4 +1,4 @@
-<div>
+<div id="vc-template-html">
     <?php echo $this->parseShortcodesString($this->getTemplateContent()); ?>
     <div data-type="files">
         <?php
@@ -8,4 +8,6 @@
             print_footer_scripts();
         ?>
     </div>
-</div><script><?php echo json_encode($this->post_shortcodes) ?></script>
+</div>
+<div id="vc-template-data"><?php echo json_encode($this->post_shortcodes) ?></div>
+

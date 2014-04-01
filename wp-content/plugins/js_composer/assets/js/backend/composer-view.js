@@ -350,7 +350,11 @@
             $('.wpb-content-layouts', $list).isotope('reloadItems');
             $('.wpb-content-layouts-container .isotope-filter a:first', $list).trigger('click');
             $('[data-filter]', this.$el).each(function () {
-                if (!$($(this).data('filter') + ':visible', $list).length) $(this).hide();
+                if (!$($(this).data('filter') + ':visible', $list).length) {
+                  $(this).parent().hide();
+                } else {
+                  $(this).parent().show();
+                }
             });
             return this;
         },
@@ -651,8 +655,10 @@
             this.render();
         },
         render:function () {
+            var front = '';
             if (this.accessPolicy !== 'only') {
-                this.$buttonsContainer = $('<div class="button-primary composer-switch"><span class="icon"></span><span class="vc-spacer"></span><a class="wpb_switch-to-front-composer" href="' + $('#wpb-edit-inline').attr('href') +'">' + window.i18nLocale.main_button_title_frontend_editor + '</a><span class="vc-spacer"></span><a class="wpb_switch-to-composer" href="#">' + window.i18nLocale.main_button_title_backend_editor + '</a></div>').insertAfter('div#titlediv');
+                if(vc_frontend_enabled) front = '<span class="vc-spacer"></span><a class="wpb_switch-to-front-composer" href="' + $('#wpb-edit-inline').attr('href') +'">' + window.i18nLocale.main_button_title_frontend_editor + '</a>';
+                this.$buttonsContainer = $('<div class="composer-switch"><span class="logo-icon"></span><span class="vc-spacer"></span><a class="wpb_switch-to-composer" href="#">' + window.i18nLocale.main_button_title_backend_editor + '</a>' + front + '</div>').insertAfter('div#titlediv');
                 // this.$switchButton = $('<a class="wpb_switch-to-composer button-primary" href="#">' + window.i18nLocale.main_button_title + '</a>').insertAfter('div#titlediv').wrap('<p class="composer-switch" />');
                 this.$switchButton = this.$buttonsContainer.find('.wpb_switch-to-composer');
                 this.$switchButton.click(this.switchComposer);
@@ -1006,12 +1012,14 @@
         switchComposer:function (e) {
             if (_.isObject(e)) e.preventDefault();
             if (this.status == 'shown') {
-                if (!_.isUndefined(this.$switchButton)) this.$switchButton.text(window.i18nLocale.main_button_title);
-                this.close();
-                this.status = 'closed';
+             if (!_.isUndefined(this.$switchButton)) this.$switchButton.text(window.i18nLocale.main_button_title_backend_editor);
+              this.$buttonsContainer.removeClass('vc-backend-status');
+              this.close();
+              this.status = 'closed';
             } else {
-                if (!_.isUndefined(this.$switchButton)) this.$switchButton.text(window.i18nLocale.main_button_title_revert);
-                this.show();
+              if (!_.isUndefined(this.$switchButton)) this.$switchButton.text(window.i18nLocale.main_button_title_revert);
+              this.$buttonsContainer.addClass('vc-backend-status');
+              this.show();
                 this.status = 'shown';
 
             }
@@ -1037,7 +1045,7 @@
         },
         close:function () {
             this.$vcStatus.val("false");
-            if (this.$switchButton !== undefined) this.$switchButton.html(window.i18nLocale.main_button_title);
+            // if (this.$switchButton !== undefined) this.$switchButton.html(window.i18nLocale.main_button_title);
             this.$el.hide();
             this.$post.show();
         },

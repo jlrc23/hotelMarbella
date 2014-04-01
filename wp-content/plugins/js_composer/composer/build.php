@@ -231,9 +231,9 @@ class WPBakeryVisualComposerSetupAdmin extends WPBakeryVisualComposerSetup {
             $this->composer->inlineEditor()->addAction('wp_ajax_vc_inline_template', 'renderTemplate');
             $this->composer->inlineEditor()->addAction( 'wp_ajax_vc_show_inline_edit_form', 'buildInlineEditForm' );
             $this->addAction( 'admin_init', 'jsComposerEditPage', 5 );
+            $this->composer->inlineEditor()->addFilter('page_row_actions', 'renderRowAction');
+            $this->composer->inlineEditor()->addFilter('post_row_actions', 'renderRowAction');
         }
-        $this->composer->inlineEditor()->addFilter('page_row_actions', 'renderRowAction');
-        $this->composer->inlineEditor()->addFilter('post_row_actions', 'renderRowAction');
         if(vc_is_inline()) {
             $this->composer->inlineEditor()->addFilter( 'vc_single_param_edit', 'changeEditFormFieldParams');
             $this->composer->inlineEditor()->addFilter( 'vc_edit_form_class', 'changeEditFormParams');
@@ -361,9 +361,9 @@ class WPBakeryVisualComposerSetupAdmin extends WPBakeryVisualComposerSetup {
             'add_image' => __( 'Add Image', 'js_composer' ),
             'add_images' => __( 'Add Images', 'js_composer' ),
             'main_button_title' => __( 'Visual Composer', 'js_composer' ),
-            'main_button_title_backend_editor' => __( 'Backend editor', 'js_composer' ),
-            'main_button_title_frontend_editor' => __( 'Frontend editor', 'js_composer' ),
-            'main_button_title_revert' => __( 'Classic editor', 'js_composer' ),
+            'main_button_title_backend_editor' => __( 'BACKEND EDITOR', 'js_composer' ),
+            'main_button_title_frontend_editor' => __( 'FRONTEND EDITOR', 'js_composer' ),
+            'main_button_title_revert' => __( 'CLASSIC MODE', 'js_composer' ),
             'please_enter_templates_name' => __('Please enter template name', 'js_composer'),
             'confirm_deleting_template' => __('Confirm deleting "{template_name}" template, press Cancel to leave. This action cannot be undone.', 'js_composer'),
             'press_ok_to_delete_section' => __('Press OK to delete section, Cancel to leave', 'js_composer'),
@@ -395,7 +395,7 @@ class WPBakeryVisualComposerSetupAdmin extends WPBakeryVisualComposerSetup {
             'guides_on' => __('Guides ON', 'js_composer'),
             'guides_off' => __('Guides OFF', 'js_composer'),
             'template_save' => __('New template successfully saved!', 'js_composer'),
-            'template_added' => __('Template add to the page!', 'js_composer'),
+            'template_added' => __('Template added to the page.', 'js_composer'),
             'template_is_empty' => __('Nothing to save. Template is empty.', 'js_composer'),
             'css_updated' => __('Page settings updated!', 'js_composer'),
             'update_all' => __('Update all', 'js_composer'),

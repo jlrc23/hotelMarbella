@@ -43,6 +43,9 @@ $can_publish = current_user_can($this->post_type->cap->publish_posts);
             <li><a id="vc-post-settings-button" class="vc_post_settings" title="<?php esc_attr_e('Page settings', 'js_composer') ?>"><i class="icon"></i></a></li>
             <li class="line"></li>
             <li><button id="vc-guides-toggle-button" class="btn-primary btn navbar-btn btn-sm vc_guides_toggle" title="<?php esc_attr_e("Toggle editor's guides", 'js_composer') ?>"><?php _e('Guides ON', 'js_composer') ?></button></li>
+            <?php
+            $disable_responsive = WPBakeryVisualComposerSettings::get('not_responsive_css');
+            if($disable_responsive !== '1'): ?>
             <li class="line"></li>
             <li>
                 <div class="vc-dropdown" id="vc-screen-size-control">
@@ -56,6 +59,7 @@ $can_publish = current_user_can($this->post_type->cap->publish_posts);
                     </ul>
                 </div>
             </li>
+            <?php endif; ?>
             <li class="line"></li>
             <li  class="vc-show-mobile">
                 <button data-url="<?php echo get_edit_post_link( $this->post_id ) ?>" class="btn btn-default navbar-btn btn-sm vc_button_cancel" id="vc-button-cancel" title="<?php _e("Cancel all changes and return to WP dashboard", 'js_composer') ?>"><?php _e('Backend editor', 'js_composer') ?></button>

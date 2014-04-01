@@ -109,7 +109,7 @@ class WPBMap
             }
 
         }
-        usort(self::$user_sorted_sc, array("WPBMap", "sort"));
+        @usort(self::$user_sorted_sc, array("WPBMap", "sort"));
     }
 
     public static function getShortCodes()

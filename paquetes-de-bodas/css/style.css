@@ -1,0 +1,1448 @@
+/* 
+	style.css
+	
+	CSS Web Boxes
+	
+	v1.0
+	
+	Created by eucalyptuss
+	Copyright 2010 Mikolaj Dobrucki. All rights reserved.
+*/
+
+/*
+   ===============================
+   ====== GREEN & ORANGE BOX =====
+   =============================== 
+*/
+
+.webbox01 { /* frames */
+ width: 400px;
+ height: 400px;
+ position: relative;
+ margin: 15px auto 25px auto;
+}
+
+.webbox01  .box { /* body */
+ width: 348px;
+ height: 280px;
+ margin: 0 5px;
+ padding: 60px 20px;
+/* text */
+ text-align: left;
+ font: bold 12px/15px arial;
+ color: #273f00;
+ text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
+/* border radius */
+ -webkit-border-radius: 5px;
+ -moz-border-radius: 5px;
+ border-radius: 5px;
+/* backgorund */
+ background: -webkit-gradient(radial, center center, 0, center center, 200, from(rgba(255, 255, 255, .7)), to(rgba(255, 255, 255, 0))), -webkit-gradient(linear, left top, left bottom, from(#c9f33c), to(#82ca05));
+ background: -moz-radial-gradient(rgba(255, 255, 255, .7), rgba(255, 255, 255, 0)), -moz-linear-gradient(#c9f33c, #82ca05);
+ background-color: #82ca05;
+/* shadows and highlights */
+ -webkit-box-shadow: 0 1px 1px #fff inset, 0 0 1px 1px rgba(255, 255, 255, .7) inset, 0 2px 5px rgba(0, 0, 0, 0.3);
+ -moz-box-shadow: 0 1px 1px #fff inset, 0 0 1px 1px rgba(255, 255, 255, .7) inset, 0 2px 5px rgba(0, 0, 0, 0.3);  
+ box-shadow: 0 1px 1px #fff inset, 0 0 1px 1px rgba(255, 255, 255, .7) inset, 0 2px 5px rgba(0, 0, 0, 0.3);
+/* border */
+ border: 1px solid #7ab205;
+}
+
+.webbox01 .ribbon_top { /* 'FEATURED BOX' ribbon */
+ position: absolute;
+ top: 15px;
+ height: 60px;
+ width: 100%;
+}
+
+.webbox01 .ribbon_top .left_bg {
+ height: 5px;
+ width: 5px;
+ background-color: #f17715;
+ position: absolute;
+ top: 5px;
+}
+
+.webbox01 .ribbon_top .right_bg {
+ height: 5px;
+ width: 5px;
+ background-color: #f17715;
+ position: absolute;
+ top: 5px;
+ right: 0px;
+}
+
+.webbox01 .ribbon_top .left {
+ height: 10px;
+ width: 5px;
+ position: absolute;
+ top: 0;
+/* background */
+ background: -webkit-gradient(linear, left top, left bottom, from(#e86800), to(#c23b00));
+ background: -moz-linear-gradient(#e86800, #c23b00);
+ background-color: #e86800;
+/* border radius */
+ -moz-border-radius: 5px 0 0 5px;
+ -webkit-border-radius: 5px 0 0 5px;
+ border-radius: 5px 0 0 5px;
+}
+
+.webbox01 .ribbon_top .right {
+ height: 10px;
+ width: 5px;
+ top: 0px;
+ right: 0;
+/* background */
+ background: -webkit-gradient(linear, left top, left bottom, from(#e86800), to(#c23b00));
+ background: -moz-linear-gradient(#e86800, #c23b00);
+ background-color: #e86800;
+/* border radius */
+ -webkit-border-radius: 0 5px 5px 0;
+ -moz-border-radius: 0 5px 5px 0;
+ border-radius: 0 5px 5px 0;
+ position: absolute;
+}
+
+.webbox01 .ribbon_top .main { /* main part of the ribbon */
+ height: 25px;
+ width: 100%;
+ background-color: #aaa;
+ position: absolute;
+ top: 10px;
+ padding: 5px 0;
+/* border radius */
+ -webkit-border-radius: 0 0 5px 5px;
+ -moz-border-radius: 0 0 5px 5px;
+ border-radius: 0 0 5px 5px;
+/* text */
+ text-align: left;
+ font: bold 18px/24px arial;
+ color: #fff;
+ text-shadow:  0 1px 1px #e86800;
+/* backgorund */
+ background: -webkit-gradient(linear, left top, right top, from(#f17715), color-stop(.03, #ffa41c), color-stop(.1, #ffc230), color-stop(.5, #ffc230), color-stop(.9, #ffe220), color-stop(.97, #ffa41c), to(#f17715));
+ background: -moz-linear-gradient(180deg, #f17715, #ffa41c 3%, #ffc230 10%, #ffe220 50%, #ffc230 90%, #ffa41c 97%, #f17715);
+ background-color: #ffa41c;
+/* border */
+ border-top: solid 1px #f17715;
+ border-bottom: solid 1px #f17715;
+/* shadow */
+ -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+ -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+ box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.webbox01 .gloss_top {
+ width: 100%;
+ height: 1px;
+ position: absolute;
+ top: 0px;
+/* background */
+ background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(.05, rgba(255, 255, 255, 0)), color-stop(.2, #fff), color-stop(.8, #fff), color-stop(.95, rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0)));
+ background: -moz-linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 5%, #fff 20%, #fff 80%, rgba(255, 255, 255, 0) 95%, rgba(255, 255, 255, 0));
+ background-color: rgba(255, 255, 255, 0);
+} 
+
+.webbox01 .gloss_bottom {
+ width: 100%;
+ height: 1px;
+ position: absolute;
+ bottom: 0px;
+/* background */
+ background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(.05, rgba(255, 255, 255, 0)), color-stop(.2, #fff), color-stop(.8, #fff), color-stop(.95, rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0)));
+ background: -moz-linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 5%, #fff 20%, #fff 80%, rgba(255, 255, 255, 0) 95%, rgba(255, 255, 255, 0));
+ background-color: rgba(255, 255, 255, 0);
+} 
+ 
+.webbox01 .ribbon_bottom {  /* 'READ MORE' ribbon */
+ position: absolute;
+ bottom: -7px;
+ left: 130px;
+ height: 40px;
+ width: 140px;
+}
+
+.webbox01 .ribbon_bottom .left_bg {
+ height: 5px;
+ width: 5px;
+ background-color: #ffa41c;
+ position: absolute;
+ left: 5px;
+ bottom: 0;
+}
+
+.webbox01 .ribbon_bottom .right_bg {
+ height: 5px;
+ width: 5px;
+ background-color: #ffa41c;
+ position: absolute;
+ right: 5px;
+ bottom: 0;
+}
+
+.webbox01 .ribbon_bottom .left {
+ height: 5px;
+ width: 10px;
+ background-color: #e86800;
+ position: absolute;
+ bottom: 0;
+/* border radius */
+ -webkit-border-radius: 0 0 5px 5px;
+ -moz-border-radius: 0 0 5px 5px;
+ border-radius: 0 0 5px 5px;
+}
+
+.webbox01 .ribbon_bottom .right {
+ height: 5px;
+ width: 10px;
+ background-color: #e86800;
+ position: absolute;
+ bottom: 0;
+ right: 0;
+/* border radius */
+ -webkit-border-radius: 0 0 5px 5px;
+ -moz-border-radius: 0 0 5px 5px;
+ border-radius: 0 0 5px 5px;
+}
+
+.webbox01 .ribbon_bottom .main {  /* main part of the ribbon */
+ height: 39px;
+ width: 120px;
+ position: absolute;
+ left: 10px;
+ text-align: center;
+/* border radius */
+ -webkit-border-radius: 5px 5px 0 0;
+ -moz-border-radius: 5px 5px 0 0;
+ border-radius: 5px 5px 0 0;
+/* backgorund */
+ background: -webkit-gradient(linear, left top, left bottom, from(#ffc230), color-stop(.1, #ffc230), color-stop(.5, #ffe220), color-stop(.8, #ffc230), to(#ffa41c));
+ background: -moz-linear-gradient(#ffc230 10%, #ffe220 50%, #ffc230 80%, #ffa41c);
+ background-color: #ffa41c;
+/* shadows and highlights */
+ -webkit-box-shadow: 0 1px 1px #fff inset, 0 -1px 3px rgba(0, 0, 0, 0.3);  
+ -moz-box-shadow: 0 1px 0px #fff inset, 0 -1px 3px rgba(0, 0, 0, 0.3);
+ box-shadow: 0 1px 1px #fff inset, 0 -1px 3px rgba(0, 0, 0, 0.3);
+/* border */
+ border-top: solid 1px #ffa41c;
+ border-left: solid 1px #ffa41c;
+ border-right: solid 1px #ffa41c;
+}
+
+.webbox01 .ribbon_bottom .main:hover {
+/* backgorund */
+ background: -webkit-gradient(linear, left top, left bottom, from(#ffd50c), color-stop(.1, #ffd50c), color-stop(.5, #ffef65), color-stop(.8, #ffd50c), to(#ffa41c));
+ background: -moz-linear-gradient(#ffd50c 10%, #ffef65 50%, #ffd50c 80%, #ffa41c);
+}
+
+.webbox01 .ribbon_bottom .main  a { /* 'READ MORE' link styling */
+ text-decoration: none;
+ font: bold 14px/36px arial;
+ color: #e86800;
+ text-shadow:  0 1px 1px rgba(255, 255, 255, 1);
+}
+
+.webbox01 .ribbon_bottom .main:hover  a {
+ color: #ff8400;
+}
+
+/*
+   ===============================
+   ====== BLUE & PURPLE BOX =====
+   =============================== 
+*/
+
+.webbox02 { /* frames */
+ width: 400px;
+ height: 400px;
+ position: relative;
+ margin: 15px auto 25px auto;
+}
+
+.webbox02  .box { /* body */
+ width: 348px;
+ height: 280px;
+ margin: 0 5px;
+ padding: 60px 20px;
+/* text */
+ text-align: left;
+ font: bold 12px/15px arial;
+ color: #00258d;
+ text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
+/* border radius */
+ -webkit-border-radius: 5px;
+ -moz-border-radius: 5px;
+ border-radius: 5px;
+/* background */
+ background-image:  url("../imagenes/background1.jpg");
+ background-repeat: no-repeat;
+
+ background: -webkit-gradient(radial, center center, 0, center center, 200, from(rgba(255, 255, 255, .7)), to(rgba(255, 255, 255, 0))), -webkit-gradient(linear, left top, left bottom, from(#87deff), to(#40a9fd));
+ background: -moz-radial-gradient(rgba(255, 255, 255, .7), rgba(255, 255, 255, 0)), -moz-linear-gradient(#87deff, #40a9fd);
+ background-color: #40a9fd;
+/* shadows and highlights */
+ -webkit-box-shadow: 0 1px 1px #fff inset, 0 0 1px 1px rgba(255, 255, 255, .7) inset, 0 2px 5px rgba(0, 0, 0, 0.3);
+ -moz-box-shadow: 0 1px 1px #fff inset, 0 0 1px 1px rgba(255, 255, 255, .7) inset, 0 2px 5px rgba(0, 0, 0, 0.3);  
+ box-shadow: 0 1px 1px #fff inset, 0 0 1px 1px rgba(255, 255, 255, .7) inset, 0 2px 5px rgba(0, 0, 0, 0.3);
+/* border */
+ border: 1px solid #008af5;
+}
+
+.webbox02 .ribbon_top { /* 'FEATURED BOX' ribbon */
+ position: absolute;
+ top: 15px;
+ height: 60px;
+ width: 100%;
+}
+
+.webbox02 .ribbon_top .left_bg {
+ height: 5px;
+ width: 5px;
+ background-color: #6a14c3;
+ position: absolute;
+ top: 5px;
+}
+
+.webbox02 .ribbon_top .right_bg {
+ height: 5px;
+ width: 5px;
+ background-color: #6a14c3;
+ position: absolute;
+ top: 5px;
+ right: 0px;
+}
+
+.webbox02 .ribbon_top .left {
+ height: 10px;
+ width: 5px;
+ position: absolute;
+ top: 0;
+/* background */
+ background: -webkit-gradient(linear, left top, left bottom, from(#6000c3), to(#45008d));
+ background: -moz-linear-gradient(#6000c3, #45008d);
+ background-color: #6000c3;
+/* border radius */
+ -moz-border-radius: 5px 0 0 5px;
+ -webkit-border-radius: 5px 0 0 5px;
+ border-radius: 5px 0 0 5px;
+}
+
+.webbox02 .ribbon_top .right {
+ height: 10px;
+ width: 5px;
+ top: 0px;
+ right: 0;
+/* background */
+ background: -webkit-gradient(linear, left top, left bottom, from(#6000c3), to(#45008d));
+ background: -moz-linear-gradient(#6000c3, #45008d);
+ background-color: #6000c3;
+/* border radius */
+ -webkit-border-radius: 0 5px 5px 0;
+ -moz-border-radius: 0 5px 5px 0;
+ border-radius: 0 5px 5px 0;
+ position: absolute;
+}
+
+.webbox02 .ribbon_top .main { /* main part of the ribbon */
+ height: 25px;
+ width: 100%;
+ background-color: #aaa;
+ position: absolute;
+ top: 10px;
+ padding: 5px 0;
+/* border radius */
+ -webkit-border-radius: 0 0 5px 5px;
+ -moz-border-radius: 0 0 5px 5px;
+ border-radius: 0 0 5px 5px;
+/* text */
+ text-align: left;
+ font: bold 18px/24px arial;
+ color: #fff;
+ text-shadow:  0 1px 1px #6a14c3;
+/* backgorund */
+ background: -webkit-gradient(linear, left top, right top, from(#6a14c3), color-stop(.03, #8e2df2), color-stop(.1, #a75ff2), color-stop(.5, #cba7f5), color-stop(.9, #a75ff2), color-stop(.97, #8e2df2), to(#6a14c3));
+ background: -moz-linear-gradient(180deg, #6a14c3, #8e2df2 3%, #a75ff2 10%, #cba7f5 50%, #a75ff2 90%, #8e2df2 97%, #6a14c3);
+ background-color: #8e2df2;
+/* border */
+ border-top: solid 1px #6a14c3;
+ border-bottom: solid 1px #6a14c3;
+/* shadow */
+ -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+ -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+ box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.webbox02 .gloss_top {
+ width: 100%;
+ height: 1px;
+ position: absolute;
+ top: 0px;
+/* background */
+ background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(.05, rgba(255, 255, 255, 0)), color-stop(.2, #fff), color-stop(.8, #fff), color-stop(.95, rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0)));
+ background: -moz-linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 5%, #fff 20%, #fff 80%, rgba(255, 255, 255, 0) 95%, rgba(255, 255, 255, 0));
+ background-color: rgba(255, 255, 255, 0);
+} 
+
+.webbox02 .gloss_bottom {
+ width: 100%;
+ height: 1px;
+ position: absolute;
+ bottom: 0px;
+/* background */
+ background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(.05, rgba(255, 255, 255, 0)), color-stop(.2, #fff), color-stop(.8, #fff), color-stop(.95, rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0)));
+ background: -moz-linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 5%, #fff 20%, #fff 80%, rgba(255, 255, 255, 0) 95%, rgba(255, 255, 255, 0));
+ background-color: rgba(255, 255, 255, 0);
+} 
+ 
+.webbox02 .ribbon_bottom {  /* 'READ MORE' ribbon */
+ position: absolute;
+ bottom: -7px;
+ left: 130px;
+ height: 40px;
+ width: 140px;
+}
+
+.webbox02 .ribbon_bottom .left_bg {
+ height: 5px;
+ width: 5px;
+ background-color: #8e2df2;
+ position: absolute;
+ left: 5px;
+ bottom: 0;
+}
+
+.webbox02 .ribbon_bottom .right_bg {
+ height: 5px;
+ width: 5px;
+ background-color: #8e2df2;
+ position: absolute;
+ right: 5px;
+ bottom: 0;
+}
+
+.webbox02 .ribbon_bottom .left {
+ height: 5px;
+ width: 10px;
+ background-color: #6000c3;
+ position: absolute;
+ bottom: 0;
+/* border radius */
+ -webkit-border-radius: 0 0 5px 5px;
+ -moz-border-radius: 0 0 5px 5px;
+ border-radius: 0 0 5px 5px;
+}
+
+.webbox02 .ribbon_bottom .right {
+ height: 5px;
+ width: 10px;
+ background-color: #6000c3;
+ position: absolute;
+ bottom: 0;
+ right: 0;
+/* border radius */
+ -webkit-border-radius: 0 0 5px 5px;
+ -moz-border-radius: 0 0 5px 5px;
+ border-radius: 0 0 5px 5px;
+}
+
+.webbox02 .ribbon_bottom .main {  /* main part of the ribbon */
+ height: 39px;
+ width: 120px;
+ position: absolute;
+ left: 10px;
+ text-align: center;
+/* border radius */
+ -webkit-border-radius: 5px 5px 0 0;
+ -moz-border-radius: 5px 5px 0 0;
+ border-radius: 5px 5px 0 0;
+/* backgorund */
+ background: -webkit-gradient(linear, left top, left bottom, from(#b676f9), color-stop(.1, #b676f9), color-stop(.5, #bf88ff), color-stop(.8, #a75ff2), to(#8e2df2));
+ background: -moz-linear-gradient(#b676f9 10%, #bf88ff 50%, #a75ff2 80%, #8e2df2);
+ background-color: #8e2df2;
+/* shadows and highlights */
+ -webkit-box-shadow: 0 1px 1px #fff inset, 0 -1px 3px rgba(0, 0, 0, 0.3);  
+ -moz-box-shadow: 0 1px 0px #fff inset, 0 -1px 3px rgba(0, 0, 0, 0.3);
+ box-shadow: 0 1px 1px #fff inset, 0 -1px 3px rgba(0, 0, 0, 0.3);
+/* border */
+ border-top: solid 1px #8e2df2;
+ border-left: solid 1px #8e2df2;
+ border-right: solid 1px #8e2df2;
+}
+
+.webbox02 .ribbon_bottom .main:hover {
+/* backgorund */
+ background: -webkit-gradient(linear, left top, left bottom, from(#c389ff), color-stop(.1, #c389ff), color-stop(.5, #cda2ff), color-stop(.8, #b574fa), to(#8e2df2));
+ background: -moz-linear-gradient(#c389ff 10%, #cda2ff 50%, #b574fa 80%, #8e2df2);
+}
+
+.webbox02 .ribbon_bottom .main  a { /* 'READ MORE' link styling */
+ text-decoration: none;
+ font: bold 14px/36px arial;
+ color: #6a14c3;
+ text-shadow:  0 1px 1px rgba(255, 255, 255, 1);
+}
+
+.webbox02 .ribbon_bottom .main:hover  a {
+ color: #8b47d2;
+}
+
+/*
+   ===============================
+   ====== RED & GREY BOX =====
+   =============================== 
+*/
+
+.webbox03 { /* frames */
+ width: 400px;
+ height: 400px;
+ position: relative;
+ margin: 15px auto 25px auto;
+}
+
+.webbox03  .box { /* body */
+ width: 348px;
+ height: 280px;
+ margin: 0 5px;
+ padding: 60px 20px;
+/* text */
+ text-align: left;
+ font: bold 12px/15px arial;
+ color: #444;
+ text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
+/* border radius */
+ -webkit-border-radius: 5px;
+ -moz-border-radius: 5px;
+ border-radius: 5px;
+/* background */
+ background: -webkit-gradient(radial, center center, 0, center center, 200, from(rgba(255, 255, 255, .7)), to(rgba(255, 255, 255, 0))), -webkit-gradient(linear, left top, left bottom, from(#ddd), to(#a6a6a6));
+ background: -moz-radial-gradient(rgba(255, 255, 255, .7), rgba(255, 255, 255, 0)), -moz-linear-gradient(#ddd, #a6a6a6);
+ background-color: #a6a6a6;
+/* shadows and highlights */
+ -webkit-box-shadow: 0 1px 1px #fff inset, 0 0 1px 1px rgba(255, 255, 255, .7) inset, 0 2px 5px rgba(0, 0, 0, 0.3);
+ -moz-box-shadow: 0 1px 1px #fff inset, 0 0 1px 1px rgba(255, 255, 255, .7) inset, 0 2px 5px rgba(0, 0, 0, 0.3);  
+ box-shadow: 0 1px 1px #fff inset, 0 0 1px 1px rgba(255, 255, 255, .7) inset, 0 2px 5px rgba(0, 0, 0, 0.3);
+/* border */
+ border: 1px solid #888;
+}
+
+.webbox03 .ribbon_top { /* 'FEATURED BOX' ribbon */
+ position: absolute;
+ top: 15px;
+ height: 60px;
+ width: 100%;
+}
+
+.webbox03 .ribbon_top .left_bg {
+ height: 5px;
+ width: 5px;
+ background-color: #c40000;
+ position: absolute;
+ top: 5px;
+}
+
+.webbox03 .ribbon_top .right_bg {
+ height: 5px;
+ width: 5px;
+ background-color: #c40000;
+ background-color: #c40000;
+ position: absolute;
+ top: 5px;
+ right: 0px;
+}
+
+.webbox03 .ribbon_top .left {
+ height: 10px;
+ width: 5px;
+ position: absolute;
+ top: 0;
+/* background */
+ background: -webkit-gradient(linear, left top, left bottom, from(#950000), to(#790000));
+ background: -moz-linear-gradient(#950000, #790000);
+ background-color: #950000;
+/* border radius */
+ -moz-border-radius: 5px 0 0 5px;
+ -webkit-border-radius: 5px 0 0 5px;
+ border-radius: 5px 0 0 5px;
+}
+
+.webbox03 .ribbon_top .right {
+ height: 10px;
+ width: 5px;
+ top: 0px;
+ right: 0;
+/* background */
+ background: -webkit-gradient(linear, left top, left bottom, from(#950000), to(#790000));
+ background: -moz-linear-gradient(#950000, #790000);
+ background-color: #950000;
+/* border radius */
+ -webkit-border-radius: 0 5px 5px 0;
+ -moz-border-radius: 0 5px 5px 0;
+ border-radius: 0 5px 5px 0;
+ position: absolute;
+}
+
+.webbox03 .ribbon_top .main { /* main part of the ribbon */
+ height: 25px;
+ width: 100%;
+ background-color: #aaa;
+ position: absolute;
+ top: 10px;
+ padding: 5px 0;
+/* border radius */
+ -webkit-border-radius: 0 0 5px 5px;
+ -moz-border-radius: 0 0 5px 5px;
+ border-radius: 0 0 5px 5px;
+/* text */
+ text-align: left;
+ font: bold 18px/24px arial;
+ color: #fff;
+ text-shadow:  0 1px 1px #c40000;
+/* backgorund */
+ background: -webkit-gradient(linear, left top, right top, from(#c40000), color-stop(.03, #ef1c00), color-stop(.1, #ff513a), color-stop(.5, #ff9782), color-stop(.9, #ff513a), color-stop(.97, #ef1c00), to(#c40000));
+ background: -moz-linear-gradient(180deg, #c40000, #ef1c00 3%, #ff513a 10%, #ff9782 50%, #ff513a 90%, #ef1c00 97%, #c40000);
+ background-color: #c40000;
+/* border */
+ border-top: solid 1px #c40000;
+ border-bottom: solid 1px #c40000;
+/* shadow */
+ -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+ -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+ box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.webbox03 .gloss_top {
+ width: 100%;
+ height: 1px;
+ position: absolute;
+ top: 0px;
+/* background */
+ background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(.05, rgba(255, 255, 255, 0)), color-stop(.2, #fff), color-stop(.8, #fff), color-stop(.95, rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0)));
+ background: -moz-linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 5%, #fff 20%, #fff 80%, rgba(255, 255, 255, 0) 95%, rgba(255, 255, 255, 0));
+ background-color: rgba(255, 255, 255, 0);
+} 
+
+.webbox03 .gloss_bottom {
+ width: 100%;
+ height: 1px;
+ position: absolute;
+ bottom: 0px;
+/* background */
+ background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(.05, rgba(255, 255, 255, 0)), color-stop(.2, #fff), color-stop(.8, #fff), color-stop(.95, rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0)));
+ background: -moz-linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 5%, #fff 20%, #fff 80%, rgba(255, 255, 255, 0) 95%, rgba(255, 255, 255, 0));
+ background-color: rgba(255, 255, 255, 0);
+} 
+ 
+.webbox03 .ribbon_bottom {  /* 'READ MORE' ribbon */
+ position: absolute;
+ bottom: -7px;
+ left: 130px;
+ height: 40px;
+ width: 140px;
+}
+
+.webbox03 .ribbon_bottom .left_bg {
+ height: 5px;
+ width: 5px;
+ background-color: #ef1c00;
+ position: absolute;
+ left: 5px;
+ bottom: 0;
+}
+
+.webbox03 .ribbon_bottom .right_bg {
+ height: 5px;
+ width: 5px;
+ background-color: #ef1c00;
+ position: absolute;
+ right: 5px;
+ bottom: 0;
+}
+
+.webbox03 .ribbon_bottom .left {
+ height: 5px;
+ width: 10px;
+ background-color: #c40000;
+ position: absolute;
+ bottom: 0;
+/* border radius */
+ -webkit-border-radius: 0 0 5px 5px;
+ -moz-border-radius: 0 0 5px 5px;
+ border-radius: 0 0 5px 5px;
+}
+
+.webbox03 .ribbon_bottom .right {
+ height: 5px;
+ width: 10px;
+ background-color: #c40000;
+ position: absolute;
+ bottom: 0;
+ right: 0;
+/* border radius */
+ -webkit-border-radius: 0 0 5px 5px;
+ -moz-border-radius: 0 0 5px 5px;
+ border-radius: 0 0 5px 5px;
+}
+
+.webbox03 .ribbon_bottom .main {  /* main part of the ribbon */
+ height: 39px;
+ width: 120px;
+ position: absolute;
+ left: 10px;
+ text-align: center;
+/* border radius */
+ -webkit-border-radius: 5px 5px 0 0;
+ -moz-border-radius: 5px 5px 0 0;
+ border-radius: 5px 5px 0 0;
+/* backgorund */
+ background: -webkit-gradient(linear, left top, left bottom, from(#ff513a), color-stop(.1, #ff513a), color-stop(.5, #ff9782), color-stop(.8, #ff513a), to(#ef1c00));
+ background: -moz-linear-gradient(#ff513a 10%, #ff9782 50%, #ff513a 80%, #ef1c00);
+ background-color: #ef1c00;
+/* shadows and highlights */
+ -webkit-box-shadow: 0 1px 1px #fff inset, 0 -1px 3px rgba(0, 0, 0, 0.3);  
+ -moz-box-shadow: 0 1px 0px #fff inset, 0 -1px 3px rgba(0, 0, 0, 0.3);
+ box-shadow: 0 1px 1px #fff inset, 0 -1px 3px rgba(0, 0, 0, 0.3);
+/* border */
+ border-top: solid 1px #ef1c00;
+ border-left: solid 1px #ef1c00;
+ border-right: solid 1px #ef1c00;
+}
+
+.webbox03 .ribbon_bottom .main:hover {
+/* backgorund */
+ background: -webkit-gradient(linear, left top, left bottom, from(#ff7360), color-stop(.1, #ff7360), color-stop(.5, #ffb0a0), color-stop(.8, #ff7360), to(#ef1c00));
+ background: -moz-linear-gradient(#ff7360 10%, #ffb0a0 50%, #ff7360 80%, #ef1c00);
+}
+
+.webbox03 .ribbon_bottom .main  a { /* 'READ MORE' link styling */
+ text-decoration: none;
+ font: bold 14px/36px arial;
+ color: #c40000;
+ text-shadow:  0 1px 1px rgba(255, 255, 255, 1);
+}
+
+.webbox03 .ribbon_bottom .main:hover  a {
+ color: #e03030;
+}
+
+/*
+   ===============================
+   ====== RED & ORANGE BOX =====
+   =============================== 
+*/
+
+.webbox04 { /* frames */
+ width: 400px;
+ height: 400px;
+ position: relative;
+ margin: 15px auto 25px auto;
+}
+
+.webbox04  .box { /* body */
+ width: 348px;
+ height: 280px;
+ margin: 0 5px;
+ padding: 60px 20px;
+/* text */
+ text-align: left;
+ font: bold 12px/15px arial;
+ color: #620000;
+ text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
+/* border radius */
+ -webkit-border-radius: 5px;
+ -moz-border-radius: 5px;
+ border-radius: 5px;
+/* background */
+ background: -webkit-gradient(radial, center center, 0, center center, 200, from(rgba(255, 255, 255, .7)), to(rgba(255, 255, 255, 0))), -webkit-gradient(linear, left top, left bottom, from(#ff795e), to(#f43b22));
+ background: -moz-radial-gradient(rgba(255, 255, 255, .7), rgba(255, 255, 255, 0)), -moz-linear-gradient(#ff795e, #f43b22);
+ background-color: #f43b22;
+/* shadows and highlights */
+ -webkit-box-shadow: 0 1px 1px #fff inset, 0 0 1px 1px rgba(255, 255, 255, .7) inset, 0 2px 5px rgba(0, 0, 0, 0.3);
+ -moz-box-shadow: 0 1px 1px #fff inset, 0 0 1px 1px rgba(255, 255, 255, .7) inset, 0 2px 5px rgba(0, 0, 0, 0.3);  
+ box-shadow: 0 1px 1px #fff inset, 0 0 1px 1px rgba(255, 255, 255, .7) inset, 0 2px 5px rgba(0, 0, 0, 0.3);
+/* border */
+ border: 1px solid #b81f00;
+}
+
+.webbox04 .ribbon_top { /* 'FEATURED BOX' ribbon */
+ position: absolute;
+ top: 15px;
+ height: 60px;
+ width: 100%;
+}
+
+.webbox04 .ribbon_top .left_bg {
+ height: 5px;
+ width: 5px;
+ background-color: #f17715;
+ position: absolute;
+ top: 5px;
+}
+
+.webbox04 .ribbon_top .right_bg {
+ height: 5px;
+ width: 5px;
+ background-color: #f17715;
+ position: absolute;
+ top: 5px;
+ right: 0px;
+}
+
+.webbox04 .ribbon_top .left {
+ height: 10px;
+ width: 5px;
+ position: absolute;
+ top: 0;
+/* background */
+ background: -webkit-gradient(linear, left top, left bottom, from(#e86800), to(#c23b00));
+ background: -moz-linear-gradient(#e86800, #c23b00);
+ background-color: #e86800;
+/* border radius */
+ -moz-border-radius: 5px 0 0 5px;
+ -webkit-border-radius: 5px 0 0 5px;
+ border-radius: 5px 0 0 5px;
+}
+
+.webbox04 .ribbon_top .right {
+ height: 10px;
+ width: 5px;
+ top: 0px;
+ right: 0;
+/* background */
+ background: -webkit-gradient(linear, left top, left bottom, from(#e86800), to(#c23b00));
+ background: -moz-linear-gradient(#e86800, #c23b00);
+ background-color: #e86800;
+/* border radius */
+ -webkit-border-radius: 0 5px 5px 0;
+ -moz-border-radius: 0 5px 5px 0;
+ border-radius: 0 5px 5px 0;
+ position: absolute;
+}
+
+.webbox04 .ribbon_top .main { /* main part of the ribbon */
+ height: 25px;
+ width: 100%;
+ background-color: #aaa;
+ position: absolute;
+ top: 10px;
+ padding: 5px 0;
+/* border radius */
+ -webkit-border-radius: 0 0 5px 5px;
+ -moz-border-radius: 0 0 5px 5px;
+ border-radius: 0 0 5px 5px;
+/* text */
+ text-align: left;
+ font: bold 18px/24px arial;
+ color: #fff;
+ text-shadow:  0 1px 1px #e86800;
+/* backgorund */
+ background: -webkit-gradient(linear, left top, right top, from(#f17715), color-stop(.03, #ffa41c), color-stop(.1, #ffc230), color-stop(.9, #ffc230), color-stop(.5, #ffe220), color-stop(.97, #ffa41c), to(#f17715));
+ background: -moz-linear-gradient(180deg, #f17715, #ffa41c 3%, #ffc230 10%, #ffe220 50%, #ffc230 90%, #ffa41c 97%, #f17715);
+ background-color: #ffa41c;
+/* border */
+ border-top: solid 1px #f17715;
+ border-bottom: solid 1px #f17715;
+/* shadow */
+ -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+ -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+ box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.webbox04 .gloss_top {
+ width: 100%;
+ height: 1px;
+ position: absolute;
+ top: 0px;
+/* background */
+ background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(.05, rgba(255, 255, 255, 0)), color-stop(.2, #fff), color-stop(.8, #fff), color-stop(.95, rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0)));
+ background: -moz-linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 5%, #fff 20%, #fff 80%, rgba(255, 255, 255, 0) 95%, rgba(255, 255, 255, 0));
+ background-color: rgba(255, 255, 255, 0);
+} 
+
+.webbox04 .gloss_bottom {
+ width: 100%;
+ height: 1px;
+ position: absolute;
+ bottom: 0px;
+/* background */
+ background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(.05, rgba(255, 255, 255, 0)), color-stop(.2, #fff), color-stop(.8, #fff), color-stop(.95, rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0)));
+ background: -moz-linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 5%, #fff 20%, #fff 80%, rgba(255, 255, 255, 0) 95%, rgba(255, 255, 255, 0));
+ background-color: rgba(255, 255, 255, 0);
+} 
+ 
+.webbox04 .ribbon_bottom {  /* 'READ MORE' ribbon */
+ position: absolute;
+ bottom: -7px;
+ left: 130px;
+ height: 40px;
+ width: 140px;
+}
+
+.webbox04 .ribbon_bottom .left_bg {
+ height: 5px;
+ width: 5px;
+ background-color: #ffa41c;
+ position: absolute;
+ left: 5px;
+ bottom: 0;
+}
+
+.webbox04 .ribbon_bottom .right_bg {
+ height: 5px;
+ width: 5px;
+ background-color: #ffa41c;
+ position: absolute;
+ right: 5px;
+ bottom: 0;
+}
+
+.webbox04 .ribbon_bottom .left {
+ height: 5px;
+ width: 10px;
+ background-color: #e86800;
+ position: absolute;
+ bottom: 0;
+/* border radius */
+ -webkit-border-radius: 0 0 5px 5px;
+ -moz-border-radius: 0 0 5px 5px;
+ border-radius: 0 0 5px 5px;
+}
+
+.webbox04 .ribbon_bottom .right {
+ height: 5px;
+ width: 10px;
+ background-color: #e86800;
+ position: absolute;
+ bottom: 0;
+ right: 0;
+/* border radius */
+ -webkit-border-radius: 0 0 5px 5px;
+ -moz-border-radius: 0 0 5px 5px;
+ border-radius: 0 0 5px 5px;
+}
+
+.webbox04 .ribbon_bottom .main {  /* main part of the ribbon */
+ height: 39px;
+ width: 120px;
+ position: absolute;
+ left: 10px;
+ text-align: center;
+/* border radius */
+ -webkit-border-radius: 5px 5px 0 0;
+ -moz-border-radius: 5px 5px 0 0;
+ border-radius: 5px 5px 0 0;
+/* backgorund */
+ background: -webkit-gradient(linear, left top, left bottom, from(#ffc230), color-stop(.1, #ffc230), color-stop(.5, #ffe220), color-stop(.8, #ffc230), to(#ffa41c));
+ background: -moz-linear-gradient(#ffc230 10%, #ffe220 50%, #ffc230 80%, #ffa41c);
+ background-color: #ffa41c;
+/* shadows and highlights */
+ -webkit-box-shadow: 0 1px 1px #fff inset, 0 -1px 3px rgba(0, 0, 0, 0.3);  
+ -moz-box-shadow: 0 1px 0px #fff inset, 0 -1px 3px rgba(0, 0, 0, 0.3);
+ box-shadow: 0 1px 1px #fff inset, 0 -1px 3px rgba(0, 0, 0, 0.3);
+/* border */
+ border-top: solid 1px #ffa41c;
+ border-left: solid 1px #ffa41c;
+ border-right: solid 1px #ffa41c;
+}
+
+.webbox04 .ribbon_bottom .main:hover {
+/* backgorund */
+ background: -webkit-gradient(linear, left top, left bottom, from(#ffd50c), color-stop(.1, #ffd50c), color-stop(.5, #ffef65), color-stop(.8, #ffd50c), to(#ffa41c));
+ background: -moz-linear-gradient(#ffd50c 10%, #ffef65 50%, #ffd50c 80%, #ffa41c);
+}
+
+.webbox04 .ribbon_bottom .main  a { /* 'READ MORE' link styling */
+ text-decoration: none;
+ font: bold 14px/36px arial;
+ color: #e86800;
+ text-shadow:  0 1px 1px rgba(255, 255, 255, 1);
+}
+
+.webbox04 .ribbon_bottom .main:hover  a {
+ color: #ff8400;
+}
+
+/*
+   ===============================
+   ====== BLUE & GREEN BOX =====
+   =============================== 
+*/
+
+.webbox05 { /* frames */
+ width: 400px;
+ height: 400px;
+ position: relative;
+ margin: 15px auto 25px auto;
+}
+
+.webbox05  .box { /* body */
+ width: 348px;
+ height: 280px;
+ margin: 0 5px;
+ padding: 60px 20px;
+/* text */
+ text-align: left;
+ font: bold 12px/15px arial;
+ color: #0025a1;
+ text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
+/* border radius */
+ -webkit-border-radius: 5px;
+ -moz-border-radius: 5px;
+ border-radius: 5px;
+/* backgorund */
+ background: -webkit-gradient(radial, center center, 0, center center, 200, from(rgba(255, 255, 255, .7)), to(rgba(255, 255, 255, 0))), -webkit-gradient(linear, left top, left bottom, from(#87deff), to(#40a9fd));
+ background: -moz-radial-gradient(rgba(255, 255, 255, .7), rgba(255, 255, 255, 0)), -moz-linear-gradient(#87deff, #40a9fd);
+ background-color: #40a9fd;
+/* shadows and highlights */
+ -webkit-box-shadow: 0 1px 1px #fff inset, 0 0 1px 1px rgba(255, 255, 255, .7) inset, 0 2px 5px rgba(0, 0, 0, 0.3);
+ -moz-box-shadow: 0 1px 1px #fff inset, 0 0 1px 1px rgba(255, 255, 255, .7) inset, 0 2px 5px rgba(0, 0, 0, 0.3);  
+ box-shadow: 0 1px 1px #fff inset, 0 0 1px 1px rgba(255, 255, 255, .7) inset, 0 2px 5px rgba(0, 0, 0, 0.3);
+/* border */
+ border: 1px solid #008af5;
+}
+
+.webbox05 .ribbon_top { /* 'FEATURED BOX' ribbon */
+ position: absolute;
+ top: 15px;
+ height: 60px;
+ width: 100%;
+}
+
+.webbox05 .ribbon_top .left_bg {
+ height: 5px;
+ width: 5px;
+ background-color: #429b00;
+ position: absolute;
+ top: 5px;
+}
+
+.webbox05 .ribbon_top .right_bg {
+ height: 5px;
+ width: 5px;
+ background-color: #429b00;
+ position: absolute;
+ top: 5px;
+ right: 0px;
+}
+
+.webbox05 .ribbon_top .left {
+ height: 10px;
+ width: 5px;
+ position: absolute;
+ top: 0;
+/* background */
+ background: -webkit-gradient(linear, left top, left bottom, from(#378100), to(#255600));
+ background: -moz-linear-gradient(#378100, #255600);
+ background-color: #378100;
+/* border radius */
+ -moz-border-radius: 5px 0 0 5px;
+ -webkit-border-radius: 5px 0 0 5px;
+ border-radius: 5px 0 0 5px;
+}
+
+.webbox05 .ribbon_top .right {
+ height: 10px;
+ width: 5px;
+ top: 0px;
+ right: 0;
+/* background */
+ background: -webkit-gradient(linear, left top, left bottom, from(#378100), to(#255600));
+ background: -moz-linear-gradient(#378100, #255600);
+ background-color: #378100;
+/* border radius */
+ -webkit-border-radius: 0 5px 5px 0;
+ -moz-border-radius: 0 5px 5px 0;
+ border-radius: 0 5px 5px 0;
+ position: absolute;
+}
+
+.webbox05 .ribbon_top .main { /* main part of the ribbon */
+ height: 25px;
+ width: 100%;
+ background-color: #aaa;
+ position: absolute;
+ top: 10px;
+ padding: 5px 0;
+/* border radius */
+ -webkit-border-radius: 0 0 5px 5px;
+ -moz-border-radius: 0 0 5px 5px;
+ border-radius: 0 0 5px 5px;
+/* text */
+ text-align: left;
+ font: bold 18px/24px arial;
+ color: #fff;
+ text-shadow:  0 1px 1px #429b00;
+/* backgorund */
+ background: -webkit-gradient(linear, left top, right top, from(#429b00), color-stop(.03, #50b300), color-stop(.1, #82ca05), color-stop(.5, #c9f33c), color-stop(.9, #82ca05), color-stop(.97, #50b300), to(#429b00));
+ background: -moz-linear-gradient(180deg, #429b00, #50b300 3%, #82ca05 10%, #c9f33c 50%, #82ca05 90%, #50b300 97%, #429b00);
+ background-color: #429b00;
+/* border */
+ border-top: solid 1px #429b00;
+ border-bottom: solid 1px #429b00;
+/* shadow */
+ -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+ -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+ box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.webbox05 .gloss_top {
+ width: 100%;
+ height: 1px;
+ position: absolute;
+ top: 0px;
+/* background */
+ background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(.05, rgba(255, 255, 255, 0)), color-stop(.2, #fff), color-stop(.8, #fff), color-stop(.95, rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0)));
+ background: -moz-linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 5%, #fff 20%, #fff 80%, rgba(255, 255, 255, 0) 95%, rgba(255, 255, 255, 0));
+ background-color: rgba(255, 255, 255, 0);
+} 
+
+.webbox05 .gloss_bottom {
+ width: 100%;
+ height: 1px;
+ position: absolute;
+ bottom: 0px;
+/* background */
+ background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(.05, rgba(255, 255, 255, 0)), color-stop(.2, #fff), color-stop(.8, #fff), color-stop(.95, rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0)));
+ background: -moz-linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 5%, #fff 20%, #fff 80%, rgba(255, 255, 255, 0) 95%, rgba(255, 255, 255, 0));
+ background-color: rgba(255, 255, 255, 0);
+} 
+ 
+.webbox05 .ribbon_bottom {  /* 'READ MORE' ribbon */
+ position: absolute;
+ bottom: -7px;
+ left: 130px;
+ height: 40px;
+ width: 140px;
+}
+
+.webbox05 .ribbon_bottom .left_bg {
+ height: 5px;
+ width: 5px;
+ background-color: #5ed200;
+ position: absolute;
+ left: 5px;
+ bottom: 0;
+}
+
+.webbox05 .ribbon_bottom .right_bg {
+ height: 5px;
+ width: 5px;
+ background-color: #5ed200;
+ position: absolute;
+ right: 5px;
+ bottom: 0;
+}
+
+.webbox05 .ribbon_bottom .left {
+ height: 5px;
+ width: 10px;
+ background-color: #429b00;
+ position: absolute;
+ bottom: 0;
+/* border radius */
+ -webkit-border-radius: 0 0 5px 5px;
+ -moz-border-radius: 0 0 5px 5px;
+ border-radius: 0 0 5px 5px;
+}
+
+.webbox05 .ribbon_bottom .right {
+ height: 5px;
+ width: 10px;
+ background-color: #429b00;
+ position: absolute;
+ bottom: 0;
+ right: 0;
+/* border radius */
+ -webkit-border-radius: 0 0 5px 5px;
+ -moz-border-radius: 0 0 5px 5px;
+ border-radius: 0 0 5px 5px;
+}
+
+.webbox05 .ribbon_bottom .main {  /* main part of the ribbon */
+ height: 39px;
+ width: 120px;
+ position: absolute;
+ left: 10px;
+ text-align: center;
+/* border radius */
+ -webkit-border-radius: 5px 5px 0 0;
+ -moz-border-radius: 5px 5px 0 0;
+ border-radius: 5px 5px 0 0;
+/* backgorund */
+ background: -webkit-gradient(linear, left top, left bottom, from(#8fe200), color-stop(.1, #8fe200), color-stop(.5, #c9f33c), color-stop(.8, #8fe200), to(#5ed200));
+ background: -moz-linear-gradient(#8fe200 10%, #c9f33c 50%, #8fe200 80%, #5ed200);
+ background-color: #50b300;
+/* shadows and highlights */
+ -webkit-box-shadow: 0 1px 1px #fff inset, 0 -1px 3px rgba(0, 0, 0, 0.3);  
+ -moz-box-shadow: 0 1px 0px #fff inset, 0 -1px 3px rgba(0, 0, 0, 0.3);
+ box-shadow: 0 1px 1px #fff inset, 0 -1px 3px rgba(0, 0, 0, 0.3);
+/* border */
+ border-top: solid 1px #5ed200;
+ border-left: solid 1px #5ed200;
+ border-right: solid 1px #5ed200;
+}
+
+.webbox05 .ribbon_bottom .main:hover {
+/* backgorund */
+ background: -webkit-gradient(linear, left top, left bottom, from(#a0ef17), color-stop(.1, #a0ef17), color-stop(.5, #d3f955), color-stop(.8, #a0ef17), to(#5ed200));
+ background: -moz-linear-gradient(#a0ef17 10%, #d3f955 50%, #a0ef17 80%, #5ed200);
+}
+
+.webbox05 .ribbon_bottom .main  a { /* 'READ MORE' link styling */
+ text-decoration: none;
+ font: bold 14px/36px arial;
+ color: #429b00;
+ text-shadow:  0 1px 1px rgba(255, 255, 255, 1);
+}
+
+.webbox05 .ribbon_bottom .main:hover  a {
+ color: #4fba00;
+}
+
+/*
+   ===============================
+   ====== BLUE & GREY BOX =====
+   =============================== 
+*/
+
+.webbox06 { /* frames */
+ width: 400px;
+ height: 400px;
+ position: relative;
+ margin: 15px auto 25px auto;
+}
+
+.webbox06  .box { /* body */
+ width: 348px;
+ height: 280px;
+ margin: 0 5px;
+ padding: 60px 20px;
+/* text */
+ text-align: left;
+ font: bold 12px/15px arial;
+ color: #444444;
+ text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
+/* border radius */
+ -webkit-border-radius: 5px;
+ -moz-border-radius: 5px;
+ border-radius: 5px;
+/* background */
+ background: -webkit-gradient(radial, center center, 0, center center, 200, from(rgba(255, 255, 255, .7)), to(rgba(255, 255, 255, 0))), -webkit-gradient(linear, left top, left bottom, from(#ddd), to(#a6a6a6));
+ background: -moz-radial-gradient(rgba(255, 255, 255, .7), rgba(255, 255, 255, 0)), -moz-linear-gradient(#ddd, #a6a6a6);
+ background-color: #a6a6a6;
+/* shadows and highlights */
+ -webkit-box-shadow: 0 1px 1px #fff inset, 0 0 1px 1px rgba(255, 255, 255, .7) inset, 0 2px 5px rgba(0, 0, 0, 0.3);
+ -moz-box-shadow: 0 1px 1px #fff inset, 0 0 1px 1px rgba(255, 255, 255, .7) inset, 0 2px 5px rgba(0, 0, 0, 0.3);  
+ box-shadow: 0 1px 1px #fff inset, 0 0 1px 1px rgba(255, 255, 255, .7) inset, 0 2px 5px rgba(0, 0, 0, 0.3);
+/* border */
+ border: 1px solid #888;
+}
+
+.webbox06 .ribbon_top { /* 'FEATURED BOX' ribbon */
+ position: absolute;
+ top: 15px;
+ height: 60px;
+ width: 100%;
+}
+
+.webbox06 .ribbon_top .left_bg {
+ height: 5px;
+ width: 5px;
+ background-color: #005cc4;
+ position: absolute;
+ top: 5px;
+}
+
+.webbox06 .ribbon_top .right_bg {
+ height: 5px;
+ width: 5px;
+ background-color: #005cc4;
+ position: absolute;
+ top: 5px;
+ right: 0px;
+}
+
+.webbox06 .ribbon_top .left {
+ height: 10px;
+ width: 5px;
+ position: absolute;
+ top: 0;
+/* background */
+ background: -webkit-gradient(linear, left top, left bottom, from(#004fa8), to(#00397a));
+ background: -moz-linear-gradient(#004fa8, #00397a);
+ background-color: #004fa8;
+/* border radius */
+ -moz-border-radius: 5px 0 0 5px;
+ -webkit-border-radius: 5px 0 0 5px;
+ border-radius: 5px 0 0 5px;
+}
+
+.webbox06 .ribbon_top .right {
+ height: 10px;
+ width: 5px;
+ top: 0px;
+ right: 0;
+/* background */
+ background: -webkit-gradient(linear, left top, left bottom, from(#004fa8), to(#00397a));
+ background: -moz-linear-gradient(#004fa8, #00397a);
+ background-color: #004fa8;
+/* border radius */
+ -webkit-border-radius: 0 5px 5px 0;
+ -moz-border-radius: 0 5px 5px 0;
+ border-radius: 0 5px 5px 0;
+ position: absolute;
+}
+
+.webbox06 .ribbon_top .main { /* main part of the ribbon */
+ height: 25px;
+ width: 100%;
+ background-color: #aaa;
+ position: absolute;
+ top: 10px;
+ padding: 5px 0;
+/* border radius */
+ -webkit-border-radius: 0 0 5px 5px;
+ -moz-border-radius: 0 0 5px 5px;
+ border-radius: 0 0 5px 5px;
+/* text */
+ text-align: left;
+ font: bold 18px/24px arial;
+ color: #fff;
+ text-shadow:  0 1px 1px #005cc4;
+/* backgorund */
+ background: -webkit-gradient(linear, left top, right top, from(#005cc4), color-stop(.03, #107de3), color-stop(.1, #40a9fd), color-stop(.5, #87deff), color-stop(.9, #40a9fd), color-stop(.97, #107de3), to(#005cc4));
+ background: -moz-linear-gradient(180deg, #005cc4, #107de3 3%, #40a9fd 10%, #87deff 50%, #40a9fd 90%, #107de3 97%, #005cc4);
+ background-color: #005cc4;
+/* border */
+ border-top: solid 1px #005cc4;
+ border-bottom: solid 1px #005cc4;
+/* shadow */
+ -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+ -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+ box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.webbox06 .gloss_top {
+ width: 100%;
+ height: 1px;
+ position: absolute;
+ top: 0px;
+/* background */
+ background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(.05, rgba(255, 255, 255, 0)), color-stop(.2, #fff), color-stop(.8, #fff), color-stop(.95, rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0)));
+ background: -moz-linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 5%, #fff 20%, #fff 80%, rgba(255, 255, 255, 0) 95%, rgba(255, 255, 255, 0));
+ background-color: rgba(255, 255, 255, 0);
+} 
+
+.webbox06 .gloss_bottom {
+ width: 100%;
+ height: 1px;
+ position: absolute;
+ bottom: 0px;
+/* background */
+ background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(.05, rgba(255, 255, 255, 0)), color-stop(.2, #fff), color-stop(.8, #fff), color-stop(.95, rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0)));
+ background: -moz-linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 5%, #fff 20%, #fff 80%, rgba(255, 255, 255, 0) 95%, rgba(255, 255, 255, 0));
+ background-color: rgba(255, 255, 255, 0);
+} 
+ 
+.webbox06 .ribbon_bottom {  /* 'READ MORE' ribbon */
+ position: absolute;
+ bottom: -7px;
+ left: 130px;
+ height: 40px;
+ width: 140px;
+}
+
+.webbox06 .ribbon_bottom .left_bg {
+ height: 5px;
+ width: 5px;
+ background-color: #107de3;
+ position: absolute;
+ left: 5px;
+ bottom: 0;
+}
+
+.webbox06 .ribbon_bottom .right_bg {
+ height: 5px;
+ width: 5px;
+ background-color: #107de3;
+ position: absolute;
+ right: 5px;
+ bottom: 0;
+}
+
+.webbox06 .ribbon_bottom .left {
+ height: 5px;
+ width: 10px;
+ background-color: #005cc4;
+ position: absolute;
+ bottom: 0;
+/* border radius */
+ -webkit-border-radius: 0 0 5px 5px;
+ -moz-border-radius: 0 0 5px 5px;
+ border-radius: 0 0 5px 5px;
+}
+
+.webbox06 .ribbon_bottom .right {
+ height: 5px;
+ width: 10px;
+ background-color: #005cc4;
+ position: absolute;
+ bottom: 0;
+ right: 0;
+/* border radius */
+ -webkit-border-radius: 0 0 5px 5px;
+ -moz-border-radius: 0 0 5px 5px;
+ border-radius: 0 0 5px 5px;
+}
+
+.webbox06 .ribbon_bottom .main {  /* main part of the ribbon */
+ height: 39px;
+ width: 120px;
+ position: absolute;
+ left: 10px;
+ text-align: center;
+/* border radius */
+ -webkit-border-radius: 5px 5px 0 0;
+ -moz-border-radius: 5px 5px 0 0;
+ border-radius: 5px 5px 0 0;
+/* backgorund */
+ background: -webkit-gradient(linear, left top, left bottom, from(#42b8e4), color-stop(.1, #42b8e4), color-stop(.5, #87deff), color-stop(.8, #42b8e4), to(#218ef4));
+ background: -moz-linear-gradient(#42b8e4 10%, #87deff 50%, #42b8e4 80%, #218ef4);
+ background-color: #218ef4;
+/* shadows and highlights */
+ -webkit-box-shadow: 0 1px 1px #fff inset, 0 -1px 3px rgba(0, 0, 0, 0.3);  
+ -moz-box-shadow: 0 1px 0px #fff inset, 0 -1px 3px rgba(0, 0, 0, 0.3);
+ box-shadow: 0 1px 1px #fff inset, 0 -1px 3px rgba(0, 0, 0, 0.3);
+/* border */
+ border-top: solid 1px #218ef4;
+ border-left: solid 1px #218ef4;
+ border-right: solid 1px #218ef4;
+}
+
+.webbox06 .ribbon_bottom .main:hover {
+/* backgorund */
+ background: -webkit-gradient(linear, left top, left bottom, from(#6dc8ea), color-stop(.1, #6dc8ea), color-stop(.5, #ace8ff), color-stop(.8, #6dc8ea), to(#218ef4));
+ background: -moz-linear-gradient(#6dc8ea 10%, #ace8ff 50%, #6dc8ea 80%, #218ef4);
+}
+
+.webbox06 .ribbon_bottom .main  a { /* 'READ MORE' link styling */
+ text-decoration: none;
+ font: bold 14px/36px arial;
+ color: #005cc4;
+ text-shadow:  0 1px 1px rgba(255, 255, 255, 1);
+}
+
+.webbox06 .ribbon_bottom .main:hover  a {
+ color: #287cda;
+}
+.nombre_paquete{
+   margin-left: 10px;
+}
+.costo{
+   margin-right: 10px;
+   float: right;
+   font-size: 0.9em;
+}
+.box .list-7{
+   height: 170px;
+   overflow-y: scroll;
+}

@@ -82,19 +82,26 @@
           item_selector += ':not([data-is-container=true][data-element!=' + vc.getMapped(tag).allowed_container_element + '])';
         }
       }
-      this.$buttons.addClass('vc-inappropriate');
+      this.$buttons.removeClass('vc-visible').addClass('vc-inappropriate');
       $(item_selector, this.$content).removeClass('vc-inappropriate').addClass('vc-visible');
       this.hideEmptyFilters();
     },
     hideEmptyFilters: function() {
+      this.$el.find('.vc-filter-content-elements .active').removeClass('active');
+      this.$el.find('.vc-filter-content-elements > :first').addClass('active');
       this.$el.find('[data-filter]').each(function () {
-        if (!$($(this).data('filter') + '.vc-visible', this.$content).length) $(this).hide();
+        if (!$($(this).data('filter') + '.vc-visible:not(.vc-inappropriate)', this.$content).length) {
+          $(this).parent().hide();
+        } else {
+          $(this).parent().show();
+        }
       });
     },
     render: function(model, prepend) {
       var $list, item_selector, tag, not_in;
       this.builder = new vc.ShortcodesBuilder();
       this.prepend = _.isBoolean(prepend) ? prepend : false;
+      this.place_after_id = _.isString(prepend) ? prepend : false;
       this.model = _.isObject(model) ? model : false;
       this.$content = this.$el.find('.wpb-elements-list');
       this.$buttons = $('.wpb-layout-element-button', this.$content);
@@ -125,9 +132,12 @@
       }
       var params = {shortcode: tag, parent_id: (this.model ? this.model.get('id') : false), params: vc.getDefaults(tag)};
       if(this.prepend) {
+        params.order = 0;
         var shortcode_first = vc.shortcodes.findWhere({parent_id: this.model.get('id')});
         if(shortcode_first) params.order = shortcode_first.get('order') -1;
         vc.activity = 'prepend';
+      } else if(this.place_after_id) {
+        params.place_after_id = this.place_after_id;
       }
       this.builder.create(params);
       if(tag === 'vc_row') {
@@ -351,7 +361,7 @@
         : !master_value.length;
       if($master.is(':hidden') && !$master.is('[type=hidden]')) {
         _.each(dependent_elements, function($element) {
-          $element.closest('.vc_row-fluid').hide();
+          $element.closest('.vc_row').hide();
         });
       } else {
         _.each(dependent_elements, function ($element) {
@@ -536,10 +546,16 @@
         },
         context: this
       }).done(function (html) {
-          var $html = $(html),
-            template = $($html.get(0)).html(),
-            data = JSON.parse($($html.get(1)).text());
-          vc.builder.buildFromTemplate(template, data);
+          var template, data;
+          _.each($(html), function(element){
+            if(element.id === "vc-template-data") {
+              try {data = JSON.parse(element.innerHTML) } catch(e) {};
+            }
+            if(element.id === "vc-template-html") {
+              template = element.innerHTML;
+            }
+          });
+          template && data && vc.builder.buildFromTemplate(template, data);
           this.showMessage(window.i18nLocale.template_added, 'success');
           /*
            _.each(vc.filters.templates, function (callback) {

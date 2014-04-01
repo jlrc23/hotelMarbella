@@ -69,7 +69,7 @@ var wpb_change_tab_title, wpb_change_accordion_tab_title;
          $('#wpb_tinymce_content-tmce').trigger('click'); // Fix hidden toolbar
     }
 
-    $('.vc-color-control').wpColorPicker();
+  $('.vc-color-control').length && $.fn.wpColorPicker && $('.vc-color-control').wpColorPicker();
 
     var InitGalleries = function() {
         var that = this;

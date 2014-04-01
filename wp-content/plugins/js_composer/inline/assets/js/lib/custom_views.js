@@ -407,9 +407,10 @@
       });
     },
     placeElement: function($view, activity) {
-      var $place_after = this.content().find('.vc-place-after');
-      if($place_after.is('.vc-element')) {
-        $view.insertAfter($place_after.removeClass('vc-place-after'));
+      var model = vc.shortcodes.get($view.data('modelId'));
+      if(model && model.get('place_after_id')) {
+        $view.insertAfter(vc.$page.find('[data-model-id=' + model.get('place_after_id') + ']'));
+        model.unset('place_after_id');
       } else {
         $view.insertAfter(this.tabsControls());
       }

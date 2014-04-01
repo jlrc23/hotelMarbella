@@ -10,6 +10,7 @@ if (!class_exists('WPBakeryVisualComposer')) {
         private $layout;
         protected $shortcodes, $images_media_tab;
         protected static $user_template_dir = '';
+        protected static $use_custom_user_template_dir = false;
 
         public static function getInstance($is_admin = false) {
             static $instance=null;
@@ -468,13 +469,13 @@ if (!class_exists('WPBakeryVisualComposer')) {
         }
         public static function getUserTemplate($template) {
             if(empty(self::$user_template_dir)) {
-                $dir_name = isset(WPBakeryVisualComposer::$config['USER_DIR_NAME']) ? WPBakeryVisualComposer::$config['USER_DIR_NAME'] : 'vc_templates';
-                self::$user_template_dir = get_stylesheet_directory().'/'.$dir_name.'/';
+                self::$user_template_dir = isset(WPBakeryVisualComposer::$config['USER_DIR_NAME']) ? WPBakeryVisualComposer::$config['USER_DIR_NAME'] : 'vc_templates';
             }
-            return self::$user_template_dir.$template;
+            return self::$use_custom_user_template_dir ? self::$user_template_dir.'/'.$template : locate_template(self::$user_template_dir.'/'.$template);
         }
         public static function setUserTemplate($dir) {
-            self::$user_template_dir = $dir;
+            self::$user_template_dir = preg_replace('/\/$/', '', $dir);
+            self::$use_custom_user_template_dir = true;
         }
         public static function defaultTemplatesDIR() {
             if(isset(WPBakeryVisualComposer::$config['HTML_TEMPLATES'])) {

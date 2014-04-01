@@ -30,6 +30,7 @@ Class NewVisualComposer extends WPBakeryVisualComposerAbstract {
         $this->base_url = plugin_basename($this->dir);
         $this->composer = WPBakeryVisualComposer::getInstance();
         $this->addAction( 'admin_bar_menu', "adminBarEditLink", 1000);
+
         $this->setPost();
         $this->initIfActive();
     }
@@ -217,8 +218,10 @@ Class NewVisualComposer extends WPBakeryVisualComposerAbstract {
         global $current_user;
         get_currentuserinfo();
         $show = true;
+
         if(!self::inlineEnabled() || !current_user_can('edit_post', $post_id)) return false;
         /** @var $settings - get use group access rules */
+
         $settings = WPBakeryVisualComposerSettings::get('groups_access_rules');
         foreach($current_user->roles as $role) {
             if(isset($settings[$role]['show']) && $settings[$role]['show']==='no') {
@@ -228,11 +231,9 @@ Class NewVisualComposer extends WPBakeryVisualComposerAbstract {
         }
         return $show && in_array(get_post_type(), $this->composer->getPostTypes());
     }
-    function adminBarEditLink() {
-        global $wp_admin_bar, $current_user;
-        if ( ! is_super_admin() || ! is_admin_bar_showing() )
-            return;
-        if(is_page() || is_single()) {
+    function adminBarEditLink($wp_admin_bar) {
+        global $wp_admin_bar;
+        if(is_singular()) {
             if ($this->showButton(get_the_ID())) {
                 $wp_admin_bar->add_menu( array(
                     // 'parent' => $root_menu,
@@ -333,7 +334,7 @@ Class NewVisualComposer extends WPBakeryVisualComposerAbstract {
              $shortcode_settings = WPBMap::getShortCode($shortcode['tag']);
              $is_container = (isset($shortcode_settings['is_container']) && $shortcode_settings['is_container'] === true) || (isset($shortcode_settings['as_parent']) && $shortcode_settings['as_parent']!==false);
              if($is_container) $shortcode['string'] = preg_replace('/\]/', '][vc_container_anchor]', $shortcode['string'], 1);
-             echo '<div class="vc-element"'.self::cleanStyle().' data-container="'.$is_container.'">'.$this->wrapperStart().do_shortcode(stripslashes($shortcode['string'])).$this->wrapperEnd().'</div>';
+             echo '<div class="vc-element"'.self::cleanStyle().' data-container="'.$is_container.'" data-model-id="'.$shortcode['id'].'">'.$this->wrapperStart().do_shortcode(stripslashes($shortcode['string'])).$this->wrapperEnd().'</div>';
              echo '</div>';
          }
         }
@@ -435,26 +436,28 @@ Class NewVisualComposer extends WPBakeryVisualComposerAbstract {
         $content = isset($saved_templates[$template_id]) ? $saved_templates[$template_id]['template'] : '';
         echo $this->parseShortcodesString($content);
     }
-    function parseShortcodesString($content ,$is_container = false) {
+    function parseShortcodesString($content ,$is_container = false, $parent_id = false) {
         $string = '';
         preg_match_all('/'.self::shortcodesRegexp().'/', $content, $found);
         if(count($found[2]) == 0 ) {
-            return $is_container && strlen($content) > 0 ? $this->parseShortcodesString('[vc_column_text]'.$content.'[/vc_column_text]', false) : $content;
+            return $is_container && strlen($content) > 0 ? $this->parseShortcodesString('[vc_column_text]'.$content.'[/vc_column_text]', false, $parent_id) : $content;
             return $content;
         }
         foreach($found[2] as $index => $s) {
-            $shortcode = array('tag' => $s, 'attrs_query' => $found[3][$index], 'attrs' => shortcode_parse_atts($found[3][$index]), 'content' => $found[5][$index], 'id' => md5(time().'-'.$this->tag_index++));
-            if(WPBMap::getParam($s, 'content')!==false) $shortcode['attrs']['content'] = $shortcode['content'];
+            $id = md5(time().'-'.$this->tag_index++);
+            $content = $found[5][$index];
+            $shortcode = array('tag' => $s, 'attrs_query' => $found[3][$index], 'attrs' => shortcode_parse_atts($found[3][$index]), 'id' => $id, 'parent_id' => $parent_id);
+            if(WPBMap::getParam($s, 'content')!==false) $shortcode['attrs']['content'] = $content;
             $this->post_shortcodes[] = $shortcode;
-            $string .= $this->toString($shortcode);
+            $string .= $this->toString($shortcode, $content);
         }
         return $string;
     }
-    function toString($shortcode) {
+    function toString($shortcode, $content) {
         $shortcode_settings = WPBMap::getShortCode($shortcode['tag']);
         $is_container = (isset($shortcode_settings['is_container']) && $shortcode_settings['is_container'] === true) ||(isset($shortcode_settings['as_parent']) && $shortcode_settings['as_parent']!==false);
         return do_shortcode('<div class="vc-element" data-tag="'.$shortcode['tag'].'" data-model-id="'.$shortcode['id'].'"'.self::cleanStyle().'>'.$this->wrapperStart()
-               .'['.$shortcode['tag'].' '.$shortcode['attrs_query'].']'.($is_container ? '[vc_container_anchor]' : '').$this->parseShortcodesString($shortcode['content'], $is_container).'[/'.$shortcode['tag'].']'.$this->wrapperEnd().'</div>');
+               .'['.$shortcode['tag'].' '.$shortcode['attrs_query'].']'.($is_container ? '[vc_container_anchor]' : '').$this->parseShortcodesString($content, $is_container, $shortcode['id']).'[/'.$shortcode['tag'].']'.$this->wrapperEnd().'</div>');
     }
     function savePost() {
         /*

@@ -1,4 +1,15 @@
-07.03.2014 - ver 4.0.2
+20.03.2014 - ver 4.0.3
+   Bug fix round
+   - Cloning elements in frontend is handled better
+   - Enable/Disable Respinsivness in the backend from settings page
+   - "Edit with Visual Composer" button in the admin bar now shows for correct user roles (who have access rights)
+   - vc_disable_frontend() function enhanced
+   - "TypeError: $(...).wpColorPicker" error illuminated
+   - VC button in the backend reeived a facelift
+   - Visual Composer suppor for child themes improved
+   - Element dependencies tweaked to work with multiple values
+
+11.03.2014 - ver 4.0.2
    - Google maps element updated to support new google maps version
    - Child theme support added
    - Disable responsivness is back
@@ -9,7 +20,7 @@
    - CSS code added in front end is mirrored in backend interface
    - Sprite for predefined row laoyouts added
    - "Close" modal button in backend position tweak added
-   - Update .po/.mo files
+   - Updated .po/.mo files
 
 03.03.2014 - ver 4.0.1
    - Optimizations for WPEngine
