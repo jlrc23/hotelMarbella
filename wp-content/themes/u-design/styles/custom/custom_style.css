@@ -60,7 +60,7 @@ h3.bottom-col-title {font-size:1.35em !important; }
     
 
     @media screen and (max-width: 719px) {
-        #logo h1 a, #logo .site-name a { background:transparent url( http://hotel-marbella.com.mx/wp-content/uploads/2014/03/logoHotelMarbella.png ) no-repeat 0 100%; height:100px; }
+        #logo h1 a, #logo .site-name a { background:transparent url( https://s3.amazonaws.com/marbella/logoHotelMarbella-elparaisoatualcanze.png ) no-repeat 0 100%; height:100px; }
         #wrapper-1, #top-wrapper, #gs-header, #piecemaker-header, #c1-header, #c2-header, #c3-header, #rev-slider-header, #page-content-title, #home-page-content, #page-content, .no_title_section #page-content, #before-content, #bottom-bg, #footer-bg { background-image:none; }
     }
     @media screen and (max-width: 959px) {

@@ -138,6 +138,11 @@ jQuery(document).ready(function($){
 		$(_target_id_field).data('wp_uploader_modal',_modal);
 	});
 	//-- end wp_uploader type
+	//-- handle demo button
+	$('input.rh_demo').click(function(e){
+		alert( $(this).data('demo_message') );
+		return false;
+	});
 });
 
 function popex_list_add_item(body,items){

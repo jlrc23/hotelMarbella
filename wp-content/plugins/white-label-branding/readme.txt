@@ -4,9 +4,12 @@ Author URL: http://plugins.righthere.com/white-label-branding/
 Tags: white label branding, custom menus, custom dashboard panel, custom login, cms, WordPress, role manager, capability manager, WP MS, multisite, custom colors, downloadable content, import and export
 Requires at least: 3.1
 Tested up to: 3.8.1
-Stable tag: 3.2.6 rev46923
+Stable tag: 3.2.7 rev48663
 
 ======== CHANGE LOG ========
+Version 3.2.7 rev48667 - April 7, 2014
+* Bug Fixed: Some Toolbar (admin bar) items from the frontend are not shown in the Options > Navigation menu.
+
 Version 3.2.6 rev46923 - February 3, 2014
 * Compatibility Update: added compatibility workaround in order to better support ManageWP.com service.
 

@@ -145,8 +145,7 @@ function add_bundle(bundles){
 			if( rh_addon_details[ o.addon_path ] && rh_addon_details[ o.addon_path ].Version ){
 				o.iversion = rh_addon_details[ o.addon_path ].Version;
 			}
-			
-console.log( rh_addon_details, o );			
+						
 			var retina = typeof window.devicePixelRatio!='undefined' && window.devicePixelRatio > 1;
 			var src = o.image;
 			if(retina){

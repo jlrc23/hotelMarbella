@@ -13,6 +13,7 @@ get_header(); udesign_page_title(); ?>
       <div class="entry">
         
     <div class="one_half">
+
         <div class="webbox02">
           <div class="box"> 
               <h4>Este paquete incluye:</h4>
@@ -55,7 +56,7 @@ get_header(); udesign_page_title(); ?>
             <div class="right_bg"></div>
             <div class="left"></div>
             <div class="right"></div>
-            <div class="main"> <a href="#">SELECCIONAR</a> </div>
+            <div class="main"> <a href="/paquete-ilusion/">SELECCIONAR</a> </div>
           </div>
         </div>
 </div>
@@ -105,7 +106,7 @@ get_header(); udesign_page_title(); ?>
             <div class="right_bg"></div>
             <div class="left"></div>
             <div class="right"></div>
-            <div class="main"> <a href="#">SELECCIONAR</a> </div>
+            <div class="main"> <a href="/paquete-ensueno/">SELECCIONAR</a> </div>
           </div>
         </div>
 </div>        
@@ -165,7 +166,7 @@ get_header(); udesign_page_title(); ?>
             <div class="right_bg"></div>
             <div class="left"></div>
             <div class="right"></div>
-            <div class="main"> <a href="#">SELECCIONAR</a> </div>
+            <div class="main"> <a href="/paquete-comprometidos/">SELECCIONAR</a> </div>
           </div>
         </div>
 </div>        
@@ -221,7 +222,7 @@ get_header(); udesign_page_title(); ?>
             <div class="right_bg"></div>
             <div class="left"></div>
             <div class="right"></div>
-            <div class="main"> <a href="#">SELECCIONAR</a> </div>
+            <div class="main"> <a href="/paquete-amor-eterno/">SELECCIONAR</a> </div>
           </div>
         </div>
 </div>

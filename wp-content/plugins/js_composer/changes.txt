@@ -1,3 +1,8 @@
+27.03.2014 - ver 4.0.4
+   Bug fix round
+   - Post grid categories: z-index fixed so autosuggestions now visible
+   - Custom row layout input field in frontend mode works now
+
 20.03.2014 - ver 4.0.3
    Bug fix round
    - Cloning elements in frontend is handled better

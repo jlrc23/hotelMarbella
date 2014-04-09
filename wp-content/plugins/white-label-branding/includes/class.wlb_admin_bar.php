@@ -24,6 +24,24 @@ class wlb_admin_bar {
 	function store_nodes(){
 		global $wp_admin_bar,$wp_version;
 		if($wp_version<3.4)return;//not needed on 3.3
+
+		if(is_admin() && function_exists('get_current_screen')){
+			$screen = get_current_screen();
+			if( 'wlb-settings_page_white-label-branding-nav' == $screen->id){
+				//----- add some menu items that only show on frontend
+				$wp_admin_bar->add_menu( array(
+					'parent' => 'site-name',
+					'id'     => 'dashboard',
+					'title'  => __( 'Dashboard' ),
+					'href'   => admin_url(),
+				) );
+		
+				// Add the appearance submenu items.
+				wp_admin_bar_appearance_menu( $wp_admin_bar );
+				//-----			
+			}		
+		}
+		
 		$this->admin_bar_nodes = $wp_admin_bar->get_nodes();
 	}	
 		

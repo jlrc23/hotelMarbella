@@ -316,7 +316,13 @@ class pop_input {
 	}
 	
 	function _submit($tab,$i,$o){
-		return sprintf("<input class=\"%s\" type=\"submit\" name=\"theme_options_submit\" value=\"%s\" />",$o->class, $o->label);
+		if( !is_super_admin() && current_user_can('rh_demo') ){
+			$o->class.= ' rh_demo';
+			$o->demo_message = __('Sorry, but this feature is disabled in the demo!','pop');
+		}else{
+			$o->demo_message = '';
+		}
+		return sprintf("<input class=\"%s\" type=\"submit\" name=\"theme_options_submit\" value=\"%s\" data-demo_message=\"%s\" />",$o->class, $o->label, $o->demo_message);
 	}
 	
 	function _button($tab,$i,$o){

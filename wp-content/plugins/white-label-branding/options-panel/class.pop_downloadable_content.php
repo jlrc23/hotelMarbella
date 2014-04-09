@@ -146,6 +146,10 @@ class pop_downloadable_content {
 	}
 	
 	function download_bundle(){
+		if( !is_super_admin() && current_user_can('rh_demo') ){
+			die(json_encode(array('R'=>'ERR','MSG'=>__('No access.  You dont have permission to perform this action.','pop'))));		
+		}
+			
 		if(count($this->license_keys)==0){
 			$this->send_error( __('Please register the product before downloading content.','pop') );
 		}
@@ -207,7 +211,10 @@ class pop_downloadable_content {
 	}
 
 	function handle_activate_addon(){
-//error_log(print_r($this,true)."\n",3,ABSPATH.'rhc.log');
+		if(current_user_can('rh_demo')){
+			die(json_encode(array('R'=>'ERR','MSG'=>__('No access.  You dont have permission to perform this action.','pop'))));		
+		}
+
 		if(!current_user_can($this->capability)){
 			die(json_encode(array('R'=>'ERR','MSG'=>__('No access','pop'))));
 		}
@@ -350,7 +357,7 @@ min-width:200px;
 		$license_keys = $this->get_license_keys();
 
 		if(!is_array($license_keys) || count($license_keys)==0){
-			$message = __('Please enter your license key in the Options Panel in order to get access to Downloads and Add-ons.','pop');
+			$message = __('Please enter your License Key in the Options Panel to get access to the free add-ons and premium paid add-ons.','pop');
 			$message_class='updated';
 		}else{
 			$message = '';
@@ -498,6 +505,10 @@ min-width:200px;
 	function handle_stripe_token(){
 		global $userdata;
 		
+		if(current_user_can('rh_demo')){
+			die(json_encode(array('R'=>'ERR','MSG'=>__('No access.  You dont have permission to perform this action.','pop'))));		
+		}
+				
 		if(!current_user_can($this->capability)){
 			die(json_encode(array('R'=>'ERR','MSG'=>__('No access','pop'))));
 		}

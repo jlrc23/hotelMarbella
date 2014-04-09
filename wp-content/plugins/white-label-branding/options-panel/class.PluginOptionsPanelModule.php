@@ -17,7 +17,7 @@ class PluginOptionsPanelModule {
 	var $option_menu_parent;
 	var $notification;
 	var $description_rowspan=0;
-	var $version = '2.5.3';
+	var $version = '2.6.3';
 	var $rangeinput;
 	var $colorpicker;
 	var $registration = true;
@@ -207,7 +207,7 @@ class PluginOptionsPanelModule {
 			$version = substr($wp_version,0,3);
 			if($version>=3.5){
 				wp_register_style( $this->stylesheet, $this->url.'style.css', array(),'1.0.1');
-				wp_register_script( 'pop', $this->url.'js/pop.js', array(),'2.5.1.1');
+				wp_register_script( 'pop', $this->url.'js/pop.js', array(),'2.6.1.1');
 			}else{
 				wp_register_style( $this->stylesheet, $this->url.'style.css', array('thickbox'),'1.0.2');
 				wp_register_script( 'pop', $this->url.'js/pop.prewp35.js', array('media-upload','thickbox'),'1.0.2');
@@ -241,6 +241,9 @@ class PluginOptionsPanelModule {
 		if(!current_user_can($this->capability))
 			return;
 
+		if( !is_super_admin() && current_user_can('rh_demo') )
+			return;//users that have this capability are not allowed to save/modify options.	unless its super network admin
+			
 		if(isset($_POST['pop_preview'])){
 			return;
 		}

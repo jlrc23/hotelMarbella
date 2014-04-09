@@ -477,13 +477,13 @@ class WPBakeryVisualComposerSettings {
         $value = ($value = get_option(self::$field_prefix.$field)) ? $value : '';
         echo '<input type="text" name="'.self::$field_prefix.$field.'" value="'.$value.'"'.$this->disableIfActivated().'>';
         //echo '<p class="description indicator-hint">'.__('Your Item Purchase Code contained within the License Certificate which is accessible in your Envato account. o view your License Certificate: Login to your Envato account and visit Downloads section, then click "Download" button to reveal "License Certificate" link.', 'js_composer').'</p>';
-        echo '<p class="description indicator-hint">'. sprintf( __( 'Please enter your CodeCanyon Visual Composer license key, you can find your key by following the instructions on <a href="%s" target="_blank">this page</a>.', 'js_composer' ), esc_url( "http://kb.wpbakery.com/index.php?title=Item_Verification_Code" ) ) . '</p>';
+        echo '<p class="description indicator-hint">'. sprintf( __( 'Please enter your CodeCanyon Visual Composer license key, you can find your key by following the instructions on <a href="%s" target="_blank">this page</a>. License key looks similar to this: bjg759fk-kvta-6584-94h6-75jg8vblatftq.', 'js_composer' ), esc_url( "http://kb.wpbakery.com/index.php?title=Item_Verification_Code" ) ) . '</p>';
     }
     public function envato_api_key_callback() {
         $field = 'envato_api_key';
         $value = ($value = get_option(self::$field_prefix.$field)) ? $value : '';
         echo '<input type="password" name="'.self::$field_prefix.$field.'" value="'.$value.'"'.$this->disableIfActivated().'>';
-        echo '<p class="description indicator-hint">'.__("You can find API key by visiting your Envato Account page, then clicking the My Settings tab. At the bottom of the page you'll find your account's API key.", 'js_composer').'</p>';
+        echo '<p class="description indicator-hint">'. sprintf( __( "You can find API key by visiting your Envato Account page, then clicking the My Settings tab. At the bottom of the page you'll find your account's API key. <a href='%s' target='_blank'>Need help?</a>", 'js_composer' ), esc_url( "http://kb.wpbakery.com/index.php?title=Envato_API_key" ) ) . '</p>';
     }
     public function getDefault($key) {
         return !empty(self::$defaults[$key]) ? self::$defaults[$key] : '';

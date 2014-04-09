@@ -4,12 +4,12 @@
 Plugin Name: White Label Branding for WordPress
 Plugin URI: http://plugins.righthere.com/white-label-branding/
 Description: This plugin lets you take complete control over wp-admin. Add your own branding to WordPress. From customizing the login logo, footer logo in wp-admin to creating your own Login Templates and Color Schemes. Add your own Dashboard Panels viewable to all users, Editors or only Administrators. Remove the standard WordPress Dashboard Panels one-by-one and even custom Dashboard Panels added by installed plugins. Control the visibility of top level menu and sub-menus. Change the order of the top level menus. Hide update nag, Download link, Contextual Help, Screen Options, and hide the Administrator Role from the User List. Save your settings partially or complete, import and export settings. Enable advanced features like Dashboard Tool to add your own Dashboard Panels (visibility of these panels can be controlled with <a href="http://codecanyon.net/item/pages-by-user-role-for-wordpress/136020?ref=RightHere" target="_blank">Pages by User Role</a> plugin. Enable Role and Capability Manager lets you take complete control over user roles, create your own user roles and add custom capabilities. Enter the License Key (Item Purchase Code) and get access to Free Downloadable Content.
-Version: 3.2.6 rev46923
+Version: 3.2.7 rev48667
 Author: Alberto Lau (RightHere LLC)
 Author URI: http://plugins.righthere.com
  **/
 
-define('WLB_VERSION','3.2.6');
+define('WLB_VERSION','3.2.7');
 define('WLB_PATH', plugin_dir_path(__FILE__) ); 
 define("WLB_URL", plugin_dir_url(__FILE__) ); 
 define("WLB_SLUG", plugin_basename( __FILE__ ) );

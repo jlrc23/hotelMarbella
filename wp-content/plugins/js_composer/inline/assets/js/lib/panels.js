@@ -638,7 +638,7 @@
       var layout,
         cells = this.$input.val();
       if((layout = this.validateCellsList(cells))!==false) {
-        this.model.view.convertRowColumns(layout);
+        this.model.view.convertRowColumns(layout, this.builder);
       } else {
         window.alert(window.i18nLocale.wrong_cells_layout);
       }
