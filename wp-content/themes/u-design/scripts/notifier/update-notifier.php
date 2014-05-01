@@ -127,7 +127,7 @@ function get_latest_theme_version($interval) {
 		// cache doesn't exist, or is old, so refresh it
                 if( function_exists('wp_remote_get') ) { // if WordPress HTTP API is available use it...
                         $resp = wp_remote_get( $notifier_file_url, array( 'timeout' => 10 ) );
-                        if ( 200 == $resp['response']['code'] ) {
+                        if ( !is_wp_error( $resp ) && is_array($resp) && 200 == $resp['response']['code'] ) {
                             $cache = $resp['body'];
                         }
 		} elseif( function_exists('curl_init') ) { // if cURL is available, use it...

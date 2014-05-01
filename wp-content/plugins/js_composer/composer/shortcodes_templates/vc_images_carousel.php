@@ -25,6 +25,7 @@ $el_start = '';
 $el_end = '';
 $slides_wrap_start = '';
 $slides_wrap_end = '';
+$pretty_rand = $onclick == 'link_image' ? rand() : '';
 
 wp_enqueue_script('vc_carousel_js');
 wp_enqueue_style('vc_carousel_css');
@@ -76,7 +77,7 @@ $slider_width = $this->getSliderWidth($img_size);
                     <div class="vc-item"><div class="vc-inner">
                     <?php if ($onclick == 'link_image'): ?>
                         <?php $p_img_large = $post_thumbnail['p_img_large']; ?>
-                        <a class="prettyphoto" href="<?php echo $p_img_large[0] ?>" <?php echo ' rel="prettyPhoto[rel-'.rand().']"' ?>>
+                        <a class="prettyphoto" href="<?php echo $p_img_large[0] ?>" <?php echo ' rel="prettyPhoto[rel-'.$pretty_rand.']"' ?>>
                             <?php echo $thumbnail ?>
                         </a>
                     <?php elseif($onclick == 'custom_link' && isset( $custom_links[$i] ) && $custom_links[$i] != ''): ?>

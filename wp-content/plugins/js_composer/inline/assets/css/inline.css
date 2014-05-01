@@ -898,6 +898,11 @@ body.compose-mode.vc-column-dragging .vc-controls {
 .vc-helper .icon-wpb-row {
   background-position: 0 -1120px;
 }
+.vc-helper .icon-wpb-atm {
+  background-image: url(../vc/elements_icons/atm.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
 .vc-helper.vc-helper-vc_row {
   border: 1px solid #285A85;
   background-color: #285A85;

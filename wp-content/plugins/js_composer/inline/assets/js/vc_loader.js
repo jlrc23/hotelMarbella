@@ -192,6 +192,13 @@ var vc_iframe = {
     }
     vc_iframe.$custom_style.html(css)
   };
+  vc_iframe.setCustomShortcodeCss = function(css) {
+    this.$shortcodes_custom_css = $('[data-type=vc-shortcodes-custom-css]');
+    if(!this.$shortcodes_custom_css.length) {
+      this.$shortcodes_custom_css = $('<style data-type="vc-shortcodes-custom-css"></style>').prependTo('body');
+    }
+    this.$shortcodes_custom_css.append(css);
+  };
   vc_iframe.addInlineScript = function(script) {
     return this.inline_scripts.push(script)-1;
   };

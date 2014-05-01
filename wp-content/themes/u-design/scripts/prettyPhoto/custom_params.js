@@ -9,7 +9,7 @@ jQuery(document).ready(function($){
 
     if ( $(window).width() > ppMinWidthToEnable ) {
     
-        $("a[rel^='wp-prettyPhoto'], a[rel^='prettyPhoto']").prettyPhoto({
+        $("a[rel^='wp-prettyPhoto'], a[rel^='prettyPhoto'], a[data-rel^='prettyPhoto']").prettyPhoto({
                 animation_speed: 'normal', /* fast/slow/normal */
                 slideshow: 5000, /* false OR interval time in ms */
                 autoplay_slideshow: false, /* true/false */

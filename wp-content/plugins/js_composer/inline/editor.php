@@ -1,6 +1,6 @@
 <?php
 
-
+if(!class_exists('NewVisualComposer')) {
 Class NewVisualComposer extends WPBakeryVisualComposerAbstract {
     protected $dir;
     protected $tag_index = 1;
@@ -61,10 +61,10 @@ Class NewVisualComposer extends WPBakeryVisualComposerAbstract {
                 case 'attach_image':
                 case 'attach_images':
                 case 'textarea_html':
-                    $new_css = 'col-md-12 vc-column';
+                    $new_css = 'col-md-12';
                     break;
                 default:
-                    $new_css = 'col-md-12 vc-column';
+                    $new_css = 'col-md-12';
             }
         }
         if($index === false ) {
@@ -491,11 +491,14 @@ Class NewVisualComposer extends WPBakeryVisualComposerAbstract {
         die();
     }
  }
+}
 
 function vc_container_anchor() {
     return '<span class="vc-container-anchor"></span>';
 }
 add_shortcode('vc_container_anchor', 'vc_container_anchor');
-function new_vc() {
-    return NewVisualComposer::getInstance();
+if(!function_exists('new_vc')) {
+    function new_vc() {
+        return NewVisualComposer::getInstance();
+    }
 }

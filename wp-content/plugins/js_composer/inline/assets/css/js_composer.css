@@ -5994,6 +5994,86 @@ td.vc-editor .visible-print {
 .vc-editor .wpb-edit-form .vc-row input[type="checkbox"]:nth-child(2) {
   margin-left: 0;
 }
+.vc-editor .wpb-edit-form .vc-row .vc-color-picker .wp-picker-clear {
+  padding: 2px 4px;
+}
+.vc-editor .wpb-edit-form .vc-row .vc-color-picker .wp-color-result:after {
+  line-height: 20px;
+}
+.vc-editor .wpb-edit-form .vc-row .vc-color-picker .wp-picker-holder {
+  position: relative;
+}
+.vc-editor .wpb-edit-form .vc-row .vc-color-picker .wp-picker-holder .vc-alpha-container {
+  border-radius: 0;
+  border: 1px solid #dfdfdf;
+  padding: 6px;
+  background: #ffffff;
+  position: absolute;
+  width: 243px;
+  left: -1px;
+  z-index: 1000;
+  bottom: -64px;
+}
+.vc-editor .wpb-edit-form .vc-row .vc-color-picker .wp-picker-holder .vc-alpha-container label {
+  display: block;
+}
+.vc-editor .wpb-edit-form .vc-row .vc-color-picker .wp-picker-holder .vc-alpha-container label output {
+  padding-top: 0px;
+  display: inline;
+  vertical-align: top;
+}
+.vc-editor .wpb-edit-form .vc-row .vc-color-picker .wp-picker-holder .vc-alpha-container input {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.vc-editor .wpb-edit-form .vc-row .vc-tabs {
+  margin-top: -10px;
+}
+.vc-editor .wpb-edit-form .vc-row .vc-tabs > ul {
+  margin-left: 5px;
+  display: table;
+  width: 100%;
+  background-color: #e6e6e6;
+}
+.vc-editor .wpb-edit-form .vc-row .vc-tabs > ul li {
+  display: list-item;
+  list-style: none;
+  float: left;
+  position: relative;
+  top: 0;
+  margin: 7px 2px 0 0;
+  border: 1px solid transparent;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-width: 0;
+  padding: 0;
+  white-space: nowrap;
+  font-weight: normal;
+  color: #949494;
+}
+.vc-editor .wpb-edit-form .vc-row .vc-tabs > ul li a {
+  color: #949494;
+  float: left;
+  padding: 11px 15px;
+  text-decoration: none;
+  outline: none;
+  font-size: 12px;
+}
+.vc-editor .wpb-edit-form .vc-row .vc-tabs > ul li.ui-state-active {
+  background: #ffffff;
+  font-weight: normal;
+  color: #595959;
+}
+.vc-editor .wpb-edit-form .vc-row .vc-tabs > ul li.ui-state-active a {
+  color: #595959;
+}
+.vc-editor .wpb-edit-form .vc-row .vc-tabs > ul > :first-child {
+  margin-left: 6px;
+}
+.vc-editor .wpb-edit-form .vc-row .vc-tabs > div {
+  display: none;
+}
 .vc-editor .wpb_element_label {
   font-weight: bold;
   margin-bottom: 5px;
@@ -6307,6 +6387,235 @@ td.vc-editor .visible-print {
 }
 .vc-editor .vc-options-fields .vc_row-fluid .descr {
   margin-top: 5px;
+}
+.vc-editor .vc-colored-dropdown .blue {
+  background-color: #5472d2 !important;
+  color: #ffffff !important;
+}
+.vc-editor .vc-colored-dropdown .turquoise {
+  background-color: #00c1cf !important;
+  color: #ffffff !important;
+}
+.vc-editor .vc-colored-dropdown .pink {
+  background-color: #fe6c61 !important;
+  color: #ffffff !important;
+}
+.vc-editor .vc-colored-dropdown .violet {
+  background-color: #8d6dc4 !important;
+  color: #ffffff !important;
+}
+.vc-editor .vc-colored-dropdown .peacoc {
+  background-color: #4cadc9 !important;
+  color: #ffffff !important;
+}
+.vc-editor .vc-colored-dropdown .chino {
+  background-color: #cec2ab !important;
+  color: #ffffff !important;
+}
+.vc-editor .vc-colored-dropdown .mulled_wine {
+  background-color: #50485b !important;
+  color: #ffffff !important;
+}
+.vc-editor .vc-colored-dropdown .vista_blue {
+  background-color: #75d69c !important;
+  color: #ffffff !important;
+}
+.vc-editor .vc-colored-dropdown .black {
+  background-color: #2a2a2a !important;
+  color: #ffffff !important;
+}
+.vc-editor .vc-colored-dropdown .grey {
+  background-color: #ebebeb !important;
+  color: #666666 !important;
+}
+.vc-editor .vc-colored-dropdown .orange {
+  background-color: #f7be68 !important;
+  color: #ffffff !important;
+}
+.vc-editor .vc-colored-dropdown .sky {
+  background-color: #5aa1e3 !important;
+  color: #ffffff !important;
+}
+.vc-editor .vc-colored-dropdown .green {
+  background-color: #6dab3c !important;
+  color: #ffffff !important;
+}
+.vc-editor .vc-colored-dropdown .juicy_pink {
+  background-color: #f4524d !important;
+  color: #ffffff !important;
+}
+.vc-editor .vc-colored-dropdown .sandy_brown {
+  background-color: #f79468 !important;
+  color: #ffffff !important;
+}
+.vc-editor .vc-colored-dropdown .purple {
+  background-color: #b97ebb !important;
+  color: #ffffff !important;
+}
+.vc-editor .vc-colored-dropdown .white {
+  background-color: #ffffff !important;
+  color: #666666 !important;
+}
+.vc-editor .vc-css-editor .vc-layout-onion * {
+  margin: 44px;
+  position: relative;
+}
+.vc-editor .vc-css-editor .vc-layout-onion label {
+  position: absolute;
+  font-size: 9px;
+  line-height: 9px;
+  top: 6px;
+  left: 5px;
+  color: #2C2C2C;
+  margin: 0;
+  padding: 0;
+}
+.vc-editor .vc-css-editor .vc-layout-onion input {
+  position: absolute;
+  text-align: center;
+  padding: 3px 0;
+  height: 24px;
+  width: 34px;
+  margin: 0;
+  border: 1px solid #bdbdbd;
+  font-size: 11px;
+  line-height: 11px;
+}
+.vc-editor .vc-css-editor .vc-layout-onion input.vc-top {
+  top: 11px;
+  left: 50%;
+  margin-left: -17px;
+}
+.vc-editor .vc-css-editor .vc-layout-onion input.vc-bottom {
+  bottom: 11px;
+  left: 50%;
+  margin-left: -17px;
+}
+.vc-editor .vc-css-editor .vc-layout-onion input.vc-left {
+  top: 50%;
+  left: 5px;
+  margin-top: -12px;
+}
+.vc-editor .vc-css-editor .vc-layout-onion input.vc-right {
+  top: 50%;
+  right: 5px;
+  margin-top: -12px;
+}
+.vc-editor .vc-css-editor .vc-layout-onion .vc-margin {
+  border: 1px dashed #bababa;
+  margin: 1px;
+}
+.vc-editor .vc-css-editor .vc-layout-onion .vc-margin .vc-border {
+  border: 1px solid #bababa;
+  background: #f2f2f2;
+}
+.vc-editor .vc-css-editor .vc-layout-onion .vc-margin .vc-border .vc-padding {
+  border: 1px solid #bababa;
+  background: #e7e7e7;
+}
+.vc-editor .vc-css-editor .vc-layout-onion .vc-margin .vc-border .vc-padding .vc-content {
+  border: 1px solid  #bababa;
+  height: 50px;
+  padding: 0px;
+  text-align: center;
+  font-size: 10px;
+  line-height: 11px;
+  box-sizing: border-box;
+}
+.vc-editor .vc-css-editor .vc-layout-onion .vc-margin .vc-border .vc-padding .vc-content i {
+  margin: 8px auto;
+  background: transparent url(../vc/logo_ce.png) center center no-repeat;
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+.vc-editor .vc-css-editor .vc-layout-onion .vc-active {
+  background-color: #00aef0 !important;
+}
+.vc-editor .vc-css-editor .vc-settings .vc-background-image {
+  margin-bottom: 10px;
+}
+.vc-editor .vc-css-editor .vc-settings .vc-background-image .vc-image .added {
+  position: relative;
+  background: #F5F5F5;
+  padding: 4px;
+  float: left;
+  margin: 0px 5px 5px 0;
+  min-height: 75px;
+  min-width: 75px;
+  line-height: 70px;
+  text-align: center;
+}
+.vc-editor .vc-css-editor .vc-settings .vc-background-image .vc-image .added img {
+  width: 100%;
+}
+.vc-editor .vc-css-editor .vc-settings .vc-background-image .vc-image .added .icon-remove {
+  background: #f5f5f5 url(../vc/remove.png) center center no-repeat;
+  width: 16px;
+  height: 16px;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.vc-editor .vc-css-editor .vc-settings .vc-background-image .vc-add-image {
+  margin-top: 0px;
+  display: block;
+  float: left;
+  height: 80px;
+  width: 80px;
+  background: #f5f5f5 url("../vc/add.png") no-repeat center center;
+  border: 1px solid #DFDFDF;
+  font-size: 0px;
+  color: #F5F5F5;
+}
+.vc-editor .vc-css-editor .vc-settings .vc-background-image .vc-add-image .vc-image img.vc-preview {
+  width: 16px;
+  margin: 30px;
+}
+.vc-editor .vc-css-editor .vc-settings label {
+  margin-top: 10px;
+  margin-bottom: 2px;
+  display: block;
+}
+.vc-editor .vc-css-editor .vc-settings label.vc-checkbox {
+  font-weight: normal;
+}
+.vc-editor .vc-css-editor .vc-settings select {
+  width: auto;
+}
+.vc-editor .vc-css-editor .vc-settings .color-group {
+  margin-top: 5px;
+  margin-bottom: 6px;
+}
+.vc-editor .vc-css-editor .vc-settings .color-group .wp-picker-container {
+  position: relative;
+}
+.vc-editor .vc-css-editor .vc-settings .color-group .wp-picker-container .wp-picker-holder {
+  position: absolute;
+  left: -40px;
+  z-index: 10;
+}
+.vc-editor .vc-css-editor .vc-settings > :first-child {
+  margin-top: 0;
+}
+.vc-editor .vc-css-editor.vc-simplified .vc-layout-onion .vc-left,
+.vc-editor .vc-css-editor.vc-simplified .vc-layout-onion .vc-right,
+.vc-editor .vc-css-editor.vc-simplified .vc-layout-onion .vc-bottom {
+  display: none;
+}
+.vc-editor .vc-css-editor.vc-simplified .vc-layout-onion .vc-top {
+  left: 22px;
+  top: 20px;
+}
+.vc-editor .vc-sorted-list .vc-sorted-list-container li {
+  border: 1px dashed #CCCCCC;
+  width: 150px;
+  clear: both;
+  padding: 4px;
+  display: block;
+  margin-bottom: 2px;
+  cursor: move;
 }
 .vc-editor .vc-ui-front {
   z-index: 100052 !important;
@@ -6829,6 +7138,11 @@ td.vc-editor .visible-print {
 }
 .vc-editor .icon-wpb-row {
   background-position: 0 -1120px;
+}
+.vc-editor .icon-wpb-atm {
+  background-image: url(../../../assets/vc/elements_icons/atm.png);
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 .vc-editor #vc-breadcrumb,
 .vc-editor #vc-properties-panel {

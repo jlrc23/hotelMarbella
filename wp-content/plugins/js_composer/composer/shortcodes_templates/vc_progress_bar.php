@@ -18,7 +18,7 @@ $options = explode(",", $options);
 if (in_array("animated", $options)) $bar_options .= " animated";
 if (in_array("striped", $options)) $bar_options .= " striped";
 
-if ($bgcolor=="custom" && $custombgcolor!='') { $custombgcolor = ' style="background-color: '.$custombgcolor.';"'; $bgcolor=""; }
+if ($bgcolor=="custom" && $custombgcolor!='') { $custombgcolor = ' style="'.vc_get_css_color('background-color', $custombgcolor).'"'; $bgcolor=""; }
 if ($bgcolor!="") $bgcolor = " ".$bgcolor;
 
 $css_class = apply_filters(VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG, 'vc_progress_bar wpb_content_element'.$el_class, $this->settings['base']);

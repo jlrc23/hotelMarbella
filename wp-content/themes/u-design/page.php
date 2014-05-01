@@ -8,6 +8,7 @@ if ( !defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 get_header();
 
 $content_position = ( $udesign_options['pages_sidebar'] == 'left' ) ? 'grid_16 push_8' : 'grid_16';
+if ( $udesign_options['remove_default_page_sidebar'] == 'yes' ) $content_position = 'grid_24';
 ?>
 
 <div id="content-container" class="container_24">
@@ -31,7 +32,7 @@ $content_position = ( $udesign_options['pages_sidebar'] == 'left' ) ? 'grid_16 p
 	</div><!-- end main-content-padding -->
     </div><!-- end main-content -->
 
-<?php get_sidebar(); ?>
+<?php	if( !$udesign_options['remove_default_page_sidebar'] == 'yes'  ) { get_sidebar(); } ?>
 </div><!-- end content-container -->
 
 <div class="clear"></div>

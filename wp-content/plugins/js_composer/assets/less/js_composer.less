@@ -1,4 +1,5 @@
 @import "utils/_mixins.less";
+@import "utils/colors.less";
 /*
   1.  CSS Helpers
   2.  CSS Mixins
@@ -1899,8 +1900,12 @@ ul.wpb-content-layouts-container,
 /* Modal window (Tweaks)
 ---------------------------------------------------------- */
 .wpb_bootstrap_modals {
+  z-index: 10499;
+  .modal {
+      z-index: 10500;
+  }
   .modal-body {
-    //max-height: 440px;
+  //max-height: 440px;
   }
   // Add element modal
   .wpb-elements-list-modal.modal,
@@ -1912,7 +1917,6 @@ ul.wpb-content-layouts-container,
   .wpb-elements-list-modal.modal {
     width: 80%;
     margin-left: -40%;
-
     .modal-header {
       border-bottom: none;
       padding: 0;
@@ -1923,6 +1927,9 @@ ul.wpb-content-layouts-container,
     width: 770px;
     margin-left: -385px;
   }
+}
+.modal-backdrop {
+    z-index: 10498;
 }
 //Add element modal box
 @vc_element_li_w_and_margin: @vc_element_li_w + 2;
@@ -2034,6 +2041,49 @@ ul.wpb-content-layouts-container,
     padding: 2px 4px;
     margin: 2px 1px 4px;
   }
+  .vc-color-picker {
+    .wp-picker-holder {
+
+        position: relative;
+        .vc-alpha-container {
+            border-radius: 0;
+            border: 1px solid #dfdfdf;
+            padding: 6px;
+            background: #ffffff;
+            position: absolute;
+            width: 243px;
+            left: -1px;
+            z-index: 1000;
+            bottom: -64px;
+            label {
+                display: block;
+                output {
+                    padding-top: 0px;
+                    display: inline;
+                    vertical-align: top;
+                }
+            }
+            input {
+                padding: 0;
+                margin: 0;
+                width: 100%;
+            }
+        }
+    }
+  }
+}
+.wpb_edit_form_elements {
+    @import "lib/edit_form_tabs.less";
+    .vc-tabs {
+        margin-top: -28px;
+        .ui-tabs-nav {
+            margin-left: -15px;
+            padding-right: 30px;
+        }
+    }
+    .vc-css-editor .vc-layout-onion {
+        width: 350px;
+    }
 }
 .wpb_element_label {
   font-weight: bold;
@@ -2361,11 +2411,14 @@ ul.wpb-content-layouts-container,
     }
     display: none;
 }
+@import "utils/colors.less";
+@import "utils/color_edit_form.less";
 // Fix for bootstrap modal and autocomplete z-index
 .vc-ui-front {
-    z-index: 1052 !important;
+    z-index: 10602 !important;
 }
 @import "params/_sorted_list.less";
+@import "params/css_editor.less";
 .vc-updater-spinner-wrapper {
     display: none;
     width: 30px;

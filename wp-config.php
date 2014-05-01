@@ -33,6 +33,7 @@ define('DB_CHARSET', 'utf8');
 /** Cotejamiento de la base de datos. No lo modifiques si tienes dudas. */
 define('DB_COLLATE', '');
 define('WP_MEMORY_LIMIT', '128M');
+define( 'WP_POST_REVISIONS', false );
 
 /**#@+
  * Claves únicas de autentificación.

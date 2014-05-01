@@ -8,7 +8,8 @@ jQuery(document).ready(function ($) {
                 setCookie('wpb_js_composer_settings_group_tab', '#' + ui.newHeader.attr('id'), 365 * 24 * 60 * 60);
             else
                 setCookie('wpb_js_composer_settings_group_tab', '', 365 * 24 * 60 * 60);
-        }
+        },
+        heightStyle: 'content'
     });
     $('.wpb-settings-select-all-shortcodes').click(function (e) {
         e.preventDefault();
@@ -100,7 +101,8 @@ jQuery(document).ready(function ($) {
       data: {
           action: status=== 'activated' ? 'wpb_deactivate_license' : 'wpb_activate_license',
           username: $username.val(),
-          key: $key.val()
+          key: $key.val(),
+          api_key: $api_key.val()
       }
     }).done(function(data){
         var code;

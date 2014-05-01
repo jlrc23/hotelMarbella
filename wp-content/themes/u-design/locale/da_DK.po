@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: U-Design WP Theme\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-04 14:44-0500\n"
-"PO-Revision-Date: 2014-02-04 14:44-0500\n"
+"POT-Creation-Date: 2014-02-27 13:52-0500\n"
+"PO-Revision-Date: 2014-02-27 13:52-0500\n"
 "Last-Translator: Andon <andon.design@gmail.com>\n"
 "Language-Team: \n"
 "Language: da_DK\n"
@@ -111,11 +111,11 @@ msgstr ""
 msgid "No Responses"
 msgstr "Ingen svar"
 
-#: ../comments.php:23 ../functions.php:2052 ../sitemap.php:58
+#: ../comments.php:23 ../functions.php:2123 ../sitemap.php:58
 msgid "1 Comment"
 msgstr "1 Kommentar"
 
-#: ../comments.php:23 ../functions.php:2053 ../sitemap.php:58
+#: ../comments.php:23 ../functions.php:2124 ../sitemap.php:58
 msgid "% Comments"
 msgstr "% Kommentarer"
 
@@ -228,29 +228,29 @@ msgstr "ret"
 msgid "Your comment is awaiting moderation."
 msgstr "Din kommentar afventer godkendelse."
 
-#: ../functions.php:526 ../functions.php:950
+#: ../functions.php:526 ../functions.php:1009
 #: ../widgets/latestPost-widget.php:63 ../widgets/latestPost-widget.php:141
 msgid "Read more"
 msgstr "Læs mere"
 
-#: ../functions.php:545 ../functions.php:567 ../functions.php:589
-#: ../functions.php:611
+#: ../functions.php:545 ../functions.php:574 ../functions.php:603
+#: ../functions.php:632 ../functions.php:661
 msgid "Read more..."
 msgstr "Læs mere..."
 
-#: ../functions.php:639
+#: ../functions.php:698
 msgid "Top of Page"
 msgstr "Top af siden"
 
-#: ../functions.php:639 ../functions.php:2097
+#: ../functions.php:698 ../functions.php:2168
 msgid "Back to Top"
 msgstr "Tilbage til toppen"
 
-#: ../functions.php:943 ../widgets/latestPost-widget.php:141
+#: ../functions.php:1002 ../widgets/latestPost-widget.php:141
 msgid "Latest Posts"
 msgstr "Seneste indlæg"
 
-#: ../functions.php:962
+#: ../functions.php:1021
 #, php-format
 msgid ""
 "%s: Widget class not found. Make sure this widget exists and the class name "
@@ -259,91 +259,91 @@ msgstr ""
 "%s: Widgetklassen ikke fundet. Sikre dig at denne widget eksisterer og "
 "klassenavnet er korrekt"
 
-#: ../functions.php:1143
+#: ../functions.php:1202
 msgid "A widget area, used as a sidebar for regular pages."
 msgstr "Et wigetområde, anvendt som en sidebar for almindelige sider."
 
-#: ../functions.php:1152
+#: ../functions.php:1211
 msgid "A widget area, used as a sidebar for the Portfolio section."
 msgstr "Et widgetområde, anvendt som sidebar for porteføljesektioen."
 
-#: ../functions.php:1161
+#: ../functions.php:1220
 msgid "A widget area, used as a sidebar for the Blog/News section."
 msgstr "Et widgetområde, anvendt som en sidebar for Blog/Nyhedssektionen"
 
-#: ../functions.php:1170
+#: ../functions.php:1229
 msgid "A widget area, used as a sidebar for the Contact page."
 msgstr "Et widgetområde, anvendt som sidebar for kontaktsiden."
 
-#: ../functions.php:1179
+#: ../functions.php:1238
 msgid "A widget area, used as a sidebar for the Sitemap page."
 msgstr "Et widgetområde, anvendt som sidebar for sitemapsiden."
 
-#: ../functions.php:1188
+#: ../functions.php:1247
 msgid "Home Page Before Content"
 msgstr "Hjemmeside før Indhold"
 
-#: ../functions.php:1190
+#: ../functions.php:1249
 msgid "A widget area positioned just above the Home Page Main Content area."
 msgstr "Et widgetområde positioneret lige over Hjemmeside hovedindholdsområde"
 
-#: ../functions.php:1199 ../udesign_options_page.php:1610
-#: ../udesign_options_page.php:1612
+#: ../functions.php:1258 ../udesign_options_page.php:1612
+#: ../udesign_options_page.php:1614
 msgid "Home Page Column 1"
 msgstr "Hjemmeside Kolonne 1"
 
-#: ../functions.php:1201
+#: ../functions.php:1260
 msgid "A widget area, used as the 1st column in the Main Content area."
 msgstr ""
 "Et widgetområde, anvendt som den første kolonne i hovedindholdsområdet."
 
-#: ../functions.php:1209
+#: ../functions.php:1268
 msgid "Home Page Column 2"
 msgstr "Hjemmeside Kolonne 2"
 
-#: ../functions.php:1211
+#: ../functions.php:1270
 msgid "A widget area, used as the 2nd column in the Main Content area."
 msgstr "Et widgetområde, anvendt som anden kolonne i hovedindholdsområdet."
 
-#: ../functions.php:1219
+#: ../functions.php:1278
 msgid "Home Page Column 3"
 msgstr "Hjemmeside Kolonne 3"
 
-#: ../functions.php:1221
+#: ../functions.php:1280
 msgid "A widget area, used as the 3rd column in the Main Content area."
 msgstr ""
 "Et widgetområde, anvendt som den tredje kolonne i hovedindholdsområdet."
 
-#: ../functions.php:1229
+#: ../functions.php:1288
 msgid "Home Page Column 4"
 msgstr "Hjemmeside Kolonne 4"
 
-#: ../functions.php:1231
+#: ../functions.php:1290
 msgid "A widget area, used as the 4th column in the Main Content area."
 msgstr ""
 "Et widgetområde, anvendt som den fjerde kolonne i hovedindholdsområdet."
 
-#: ../functions.php:1240
+#: ../functions.php:1299
 msgid "Home Page After Content Row 1"
 msgstr "Hjemmeside efter indhold række 1"
 
-#: ../functions.php:1242
+#: ../functions.php:1301
 msgid "A widget area positioned just below the Home Page Main Content area."
 msgstr "Et widgetområde positioneret nedenfor hjemmeside hovedindholdsområde."
 
-#: ../functions.php:1251
+#: ../functions.php:1310
 msgid "Home Page After Content Row 2"
 msgstr "Hjemmeside efter indhold række 2"
 
-#: ../functions.php:1253
+#: ../functions.php:1312
 msgid "A widget area positioned just above the Bottom Widget area."
 msgstr "Et widgetområde lige ovenover nedre widgetområde."
 
-#: ../functions.php:1262
+#: ../functions.php:1321
 msgid "Bottom 1"
 msgstr "Bund 1"
 
-#: ../functions.php:1264
+#: ../functions.php:1323
 msgid ""
 "A widget area, used as the 1st column in the Bottom area (just above the "
 "footer)."
@@ -351,11 +351,11 @@ msgstr ""
 "Et widgetområde, anvendt som den første kolonne i bundområdet (lige over "
 "footeren)."
 
-#: ../functions.php:1272
+#: ../functions.php:1331
 msgid "Bottom 2"
 msgstr "Bund 2"
 
-#: ../functions.php:1274
+#: ../functions.php:1333
 msgid ""
 "A widget area, used as the 2nd column in the Bottom area (just above the "
 "footer)."
@@ -363,11 +363,11 @@ msgstr ""
 "Et widgetområde, anvendt som den anden række i bundområdet (lige over "
 "footeren)."
 
-#: ../functions.php:1282
+#: ../functions.php:1341
 msgid "Bottom 3"
 msgstr "Bund 3"
 
-#: ../functions.php:1284
+#: ../functions.php:1343
 msgid ""
 "A widget area, used as the 3rd column in the Bottom area (just above the "
 "footer)."
@@ -375,11 +375,11 @@ msgstr ""
 "Et widgetområde, anvendt som den tredje række i bundområdet (lige over "
 "footeren)."
 
-#: ../functions.php:1292
+#: ../functions.php:1351
 msgid "Bottom 4"
 msgstr "Bund 4"
 
-#: ../functions.php:1294
+#: ../functions.php:1353
 msgid ""
 "A widget area, used as the 4th column in the Bottom area (just above the "
 "footer)."
@@ -387,39 +387,39 @@ msgstr ""
 "Et widgetområdet, anvendt som den fjerde række i bundområdet (lige over "
 "footeren)."
 
-#: ../functions.php:1303
+#: ../functions.php:1362
 msgid "A widget area, used as a sidebar for the Page Template 2."
 msgstr "Et widgetområde, anvendt som sidebare for sideskabelonen 2."
 
-#: ../functions.php:1312
+#: ../functions.php:1371
 msgid "A widget area, used as a sidebar for the Page Template 3."
 msgstr "Et widgetområde, anvendt som sidebar for sideskabelonen 3."
 
-#: ../functions.php:1321
+#: ../functions.php:1380
 msgid "A widget area, used as a sidebar for the Page Template 4."
 msgstr "Et widgetområde, anvendt som sidebar for sideskabelonen 4."
 
-#: ../functions.php:1330
+#: ../functions.php:1389
 msgid "A widget area, used as a sidebar for the Page Template 5."
 msgstr "Et widgetområde, anvendt som sidebar for sideskabelonen 5."
 
-#: ../functions.php:1339
+#: ../functions.php:1398
 msgid "A widget area, used as a sidebar for the Page Template 6."
 msgstr "Et widgetområde, anvendt som sidebar for sideskabelonen 6."
 
-#: ../functions.php:1348
+#: ../functions.php:1407
 msgid "A widget area, used as a sidebar for the Page Template 7."
 msgstr "Et widgetområde, anvendt som sidebar for sideskabelonen 7."
 
-#: ../functions.php:1357
+#: ../functions.php:1416
 msgid "A widget area, used as a sidebar for the Page Template 8."
 msgstr "Et widgetområde, anvendt som sidebar for sideskabelonen 8."
 
-#: ../functions.php:1366
+#: ../functions.php:1425
 msgid "Top Area Social Media"
 msgstr "Topområde sociale medier"
 
-#: ../functions.php:1368
+#: ../functions.php:1427
 msgid ""
 "A widget area positioned in the top right corner of the site designated for "
 "social media links and icons."
@@ -427,78 +427,78 @@ msgstr ""
 "et widgetområde positioneret i det øverste højre hjørne udset til links til "
 "sociale medier og ikoner."
 
-#: ../functions.php:1678
+#: ../functions.php:1737
 #, php-format
 msgid "Archive for the <em>%s</em> Category"
 msgstr "Arkiv for <em>%s</em> kategorien"
 
-#: ../functions.php:1681
+#: ../functions.php:1740
 #, php-format
 msgid "Search Results for <em>%s</em>"
 msgstr "Søgeresultater for <em>%s</em>"
 
-#: ../functions.php:1683
+#: ../functions.php:1742
 msgid "Page Not Found (Error 404)"
 msgstr "Side Ikke Fundet (Fejl 404)"
 
-#: ../functions.php:1685
+#: ../functions.php:1744
 #, php-format
 msgid "Posts Tagged <em>%s</em>"
 msgstr ""
 
-#: ../functions.php:1687 ../functions.php:1689 ../functions.php:1691
+#: ../functions.php:1746 ../functions.php:1748 ../functions.php:1750
 #, php-format
 msgid "Archive for %s"
 msgstr "Arkiv for %s"
 
-#: ../functions.php:1693
+#: ../functions.php:1752
 msgid "Author Archive"
 msgstr "Forfatterarkiv"
 
-#: ../functions.php:1695
+#: ../functions.php:1754
 msgid "Blog Archives"
 msgstr "Blogarkiver"
 
-#: ../functions.php:1776
+#: ../functions.php:1847
 msgid "Feedback"
 msgstr "Tilbagemelding"
 
-#: ../functions.php:1791
+#: ../functions.php:1862
 msgid "Subscribe"
 msgstr "Abonner "
 
-#: ../functions.php:1855
+#: ../functions.php:1926
 msgid "Search..."
 msgstr "Søg..."
 
-#: ../functions.php:1945
+#: ../functions.php:2016
 msgid "Edit this page"
 msgstr "Ret denne side"
 
-#: ../functions.php:1971 ../functions.php:1994 ../functions.php:2024
+#: ../functions.php:2042 ../functions.php:2065 ../functions.php:2095
 #, php-format
 msgid "By %1$s on %2$s "
 msgstr "Af %1$s on %2$s "
 
-#: ../functions.php:1973 ../functions.php:1996 ../functions.php:2026
+#: ../functions.php:2044 ../functions.php:2067 ../functions.php:2097
 #, php-format
 msgid "On %1$s "
 msgstr "Den %1$s "
 
-#: ../functions.php:1975 ../functions.php:1998 ../functions.php:2028
+#: ../functions.php:2046 ../functions.php:2069 ../functions.php:2099
 msgid "Edit"
 msgstr "Ret"
 
-#: ../functions.php:1976 ../functions.php:1999 ../functions.php:2029
+#: ../functions.php:2047 ../functions.php:2070 ../functions.php:2100
 #, fuzzy
 msgid "Tags: "
 msgstr "Tags:"
 
-#: ../functions.php:2051
+#: ../functions.php:2122
 msgid "Leave a comment"
 msgstr "Efterlad en kommentar"
 
-#: ../functions.php:2072
+#: ../functions.php:2143
 msgid ""
 " is proudly powered by <a href=\"http://wordpress.org/\"><strong>WordPress</"
 "strong></a>"
@@ -506,16 +506,16 @@ msgstr ""
 "er stolt drevet af <a href=\"http://wordpress.org/\"><strong>WordPress</"
 "strong></a>"
 
-#: ../functions.php:2075
+#: ../functions.php:2146
 #, php-format
 msgid " | Designed with %1$sU-Design Theme%2$s"
 msgstr " | Designet med %1$sU-Design Theme%2$s"
 
-#: ../functions.php:2078
+#: ../functions.php:2149
 msgid "Entries (RSS)"
 msgstr "Bidrag (RSS)"
 
-#: ../functions.php:2081
+#: ../functions.php:2152
 msgid "Comments (RSS)"
 msgstr "Kommentarer (RSS)"
 
@@ -607,7 +607,7 @@ msgstr "Besked:"
 #: ../page-Portfolio2Col.php:40 ../page-Portfolio2ColSortable.php:46
 #: ../page-Portfolio3Col.php:40 ../page-Portfolio3ColSortable.php:46
 #: ../page-Portfolio4Col.php:40 ../page-Portfolio4ColSortable.php:46
-#: ../page.php:22
+#: ../page.php:23
 msgid "<p class=\"serif\">Read the rest of this page &raquo;</p>"
 msgstr "<p class=\"serif\">Læs resten af denne side &raquo;</p>"
 
@@ -917,160 +917,160 @@ msgstr "j-M-y"
 msgid "0 Comment"
 msgstr "0 Kommentarer"
 
-#: ../udesign_options_page.php:375
+#: ../udesign_options_page.php:376
 msgid "U-Design"
 msgstr "U-Design"
 
-#: ../udesign_options_page.php:423
+#: ../udesign_options_page.php:424
 msgid "Help"
 msgstr "Hjælp"
 
-#: ../udesign_options_page.php:424
+#: ../udesign_options_page.php:425
 msgid "General Options"
 msgstr "Generelle Indstillinger"
 
-#: ../udesign_options_page.php:425
+#: ../udesign_options_page.php:426
 #, fuzzy
 msgid "Layout Options"
 msgstr "Footer Indstillinger"
 
-#: ../udesign_options_page.php:426
+#: ../udesign_options_page.php:427
 msgid "Font Settings"
 msgstr "Font Indstillinger"
 
-#: ../udesign_options_page.php:427
+#: ../udesign_options_page.php:428
 msgid "Custom Colors"
 msgstr "Skræddersyede Farver"
 
-#: ../udesign_options_page.php:428
+#: ../udesign_options_page.php:429
 msgid "Front Page Sliders"
 msgstr "Forside Sliders"
 
-#: ../udesign_options_page.php:429
+#: ../udesign_options_page.php:430
 msgid "Portfolio Section"
 msgstr "Porteføljesektion"
 
-#: ../udesign_options_page.php:430
+#: ../udesign_options_page.php:431
 msgid "Blog Section"
 msgstr "Blogsektion"
 
-#: ../udesign_options_page.php:431
+#: ../udesign_options_page.php:432
 msgid "Contact Page"
 msgstr "Kontaktside"
 
-#: ../udesign_options_page.php:432
+#: ../udesign_options_page.php:433
 msgid "Footer Options"
 msgstr "Footer Indstillinger"
 
-#: ../udesign_options_page.php:433
+#: ../udesign_options_page.php:434
 msgid "Statistics"
 msgstr "Statistik"
 
-#: ../udesign_options_page.php:434
+#: ../udesign_options_page.php:435
 msgid "Responsive Layout"
 msgstr ""
 
-#: ../udesign_options_page.php:435
+#: ../udesign_options_page.php:436
 #, fuzzy
 msgid "Advanced Options"
 msgstr "Generelle Indstillinger"
 
-#: ../udesign_options_page.php:480
+#: ../udesign_options_page.php:481
 msgid "Settings saved."
 msgstr "Indstillinger gemt."
 
-#: ../udesign_options_page.php:497
+#: ../udesign_options_page.php:498
 #, php-format
 msgid "Options <small>(version %1$s)</small>"
 msgstr "Muligheder <small>(version %1$s)</small>"
 
-#: ../udesign_options_page.php:522 ../udesign_options_page.php:1350
-#: ../udesign_options_page.php:1453 ../udesign_options_page.php:1714
-#: ../udesign_options_page.php:5675
+#: ../udesign_options_page.php:523 ../udesign_options_page.php:1352
+#: ../udesign_options_page.php:1455 ../udesign_options_page.php:1727
+#: ../udesign_options_page.php:5692
 msgid "Save Changes"
 msgstr "Gem Ændringer"
 
-#: ../udesign_options_page.php:527
+#: ../udesign_options_page.php:528
 msgid "Reset to defaults"
 msgstr "Nulstil til grundlæggende"
 
-#: ../udesign_options_page.php:1229
+#: ../udesign_options_page.php:1231
 msgid "Cheatin' uh?"
 msgstr "Snyder du?"
 
-#: ../udesign_options_page.php:1258
+#: ../udesign_options_page.php:1260
 msgid "U-Design theme help resources:"
 msgstr "U-Design tema hjælperessourcer"
 
-#: ../udesign_options_page.php:1260
+#: ../udesign_options_page.php:1262
 msgid "Documentation"
 msgstr "Dokumentation"
 
-#: ../udesign_options_page.php:1261
+#: ../udesign_options_page.php:1263
 #, fuzzy
 msgid "Go to the Support Forum"
 msgstr "Supportforum"
 
-#: ../udesign_options_page.php:1261
+#: ../udesign_options_page.php:1263
 msgid "Support Forum"
 msgstr "Supportforum"
 
-#: ../udesign_options_page.php:1261
+#: ../udesign_options_page.php:1263
 #, php-format
 msgid ""
 "You should be able to register yourself with the Support Forum %1$sHERE%2$s."
 msgstr ""
 
-#: ../udesign_options_page.php:1262
+#: ../udesign_options_page.php:1264
 msgid "Go to the Video Tutorials"
 msgstr ""
 
-#: ../udesign_options_page.php:1262
+#: ../udesign_options_page.php:1264
 msgid "Video Tutorials (Author's YouTube Tutorials Channel)"
 msgstr "Videoundervisning (Forfatters YouTube Kanal)"
 
-#: ../udesign_options_page.php:1263
+#: ../udesign_options_page.php:1265
 #, fuzzy
 msgid "Go to the U-Design Demo Site"
 msgstr "U-Design Demo Site"
 
-#: ../udesign_options_page.php:1263
+#: ../udesign_options_page.php:1265
 msgid "U-Design Demo Site"
 msgstr "U-Design Demo Site"
 
-#: ../udesign_options_page.php:1264
+#: ../udesign_options_page.php:1266
 #, fuzzy
 msgid "Go to the U-Design Shortcodes examples"
 msgstr "U-Design Shortcodes"
 
-#: ../udesign_options_page.php:1264
+#: ../udesign_options_page.php:1266
 msgid "U-Design Shortcodes"
 msgstr "U-Design Shortcodes"
 
-#: ../udesign_options_page.php:1265
+#: ../udesign_options_page.php:1267
 msgid "Go to the \"Get the Code\" page"
 msgstr ""
 
-#: ../udesign_options_page.php:1265
+#: ../udesign_options_page.php:1267
 msgid ""
 "Get the Code: All of the Home page examples source code is available here."
 msgstr ""
 "Få al koden: Alle hjemmesidens eksempler er tilgængelig som sourcekode her."
 
-#: ../udesign_options_page.php:1273
+#: ../udesign_options_page.php:1275
 msgid "Custom Logo"
 msgstr "Skræddersyet Logo"
 
-#: ../udesign_options_page.php:1276
+#: ../udesign_options_page.php:1278
 msgid "Enter a URL or upload an image for your logo:"
 msgstr ""
 "Indtast en URL, eller upload et billede, der bliver brugt som dit logo:"
 
-#: ../udesign_options_page.php:1278 ../udesign_options_page.php:5568
+#: ../udesign_options_page.php:1280 ../udesign_options_page.php:5585
 msgid "Upload Logo"
 msgstr "Upload Logo"
 
-#: ../udesign_options_page.php:1281
+#: ../udesign_options_page.php:1283
 #, fuzzy
 msgid ""
 "To upload an image click on \"Upload Logo\" button. Once you upload or "
@@ -1082,43 +1082,43 @@ msgstr ""
 "knappen. Når du klikker på \"Indsæt i Indlæg\", linket med det uploadede "
 "billede, vil det blive indsat ind i tekstfeltet ovenfor."
 
-#: ../udesign_options_page.php:1285
+#: ../udesign_options_page.php:1287
 msgid "Top Area Height"
 msgstr "Topområde Højde"
 
-#: ../udesign_options_page.php:1288
+#: ../udesign_options_page.php:1290
 msgid "(Height) in pixels."
 msgstr "(Højde) i pixels."
 
-#: ../udesign_options_page.php:1289
+#: ../udesign_options_page.php:1291
 msgid "Note: the minimum recommended height is 55px."
 msgstr "Note: Mindste anbefalede højde er 55px."
 
-#: ../udesign_options_page.php:1293
+#: ../udesign_options_page.php:1295
 msgid "Logo Dimensions"
 msgstr "Logo Dimensioner"
 
-#: ../udesign_options_page.php:1298
+#: ../udesign_options_page.php:1300
 msgid "(Width X Height) in pixels."
 msgstr "(Bredde x Højde) i pixels."
 
-#: ../udesign_options_page.php:1302
+#: ../udesign_options_page.php:1304
 msgid "Slogan Position from the Top"
 msgstr "Sloganposition målt fra toppen."
 
-#: ../udesign_options_page.php:1305
+#: ../udesign_options_page.php:1307
 msgid "from the top."
 msgstr "fra toppen."
 
-#: ../udesign_options_page.php:1309
+#: ../udesign_options_page.php:1311
 msgid "Slogan Position from the Left"
 msgstr "Sloganposition fra venstre"
 
-#: ../udesign_options_page.php:1312
+#: ../udesign_options_page.php:1314
 msgid "from the left. Enter a number between 0 and 400."
 msgstr "fra venstre. Indtast et tal mellem 0 og 400."
 
-#: ../udesign_options_page.php:1313
+#: ../udesign_options_page.php:1315
 #, fuzzy, php-format
 msgid ""
 "Please note that the actual Slogan text can be changed or deleted at "
@@ -1127,26 +1127,26 @@ msgstr ""
 "Observer at den faktuelle slogantekst kan ændres eller slettes på "
 "%1$sSettings -> General%2$s <strong>Tagline</strong> muligheden."
 
-#: ../udesign_options_page.php:1313
+#: ../udesign_options_page.php:1315
 #, fuzzy
 msgid "Go to the \"General Settings\" page"
 msgstr "Generelle Indstillinger:"
 
-#: ../udesign_options_page.php:1317
+#: ../udesign_options_page.php:1319
 msgid "Slogan Font Size"
 msgstr "Slogan Fontstørrelse"
 
-#: ../udesign_options_page.php:1320 ../udesign_options_page.php:1814
-#: ../udesign_options_page.php:1870 ../udesign_options_page.php:4396
-#: ../udesign_options_page.php:4680
+#: ../udesign_options_page.php:1322 ../udesign_options_page.php:1830
+#: ../udesign_options_page.php:1886 ../udesign_options_page.php:4413
+#: ../udesign_options_page.php:4697
 msgid "Font Size: "
 msgstr "Fontstørrelse:"
 
-#: ../udesign_options_page.php:1356
+#: ../udesign_options_page.php:1358
 msgid "Phone Number Information"
 msgstr "Telefonnummer Information"
 
-#: ../udesign_options_page.php:1359
+#: ../udesign_options_page.php:1361
 msgid ""
 "Use this field to provide a phone number or any other short piece of "
 "information (30 character limit for display).  It is displayed near the "
@@ -1156,19 +1156,19 @@ msgstr ""
 "(30 karakterer vises max). Dataen vises tæt ved søgeboksen som er placeret i "
 "det øverste højre hjørne i temaet."
 
-#: ../udesign_options_page.php:1363
+#: ../udesign_options_page.php:1365
 msgid "Search Box"
 msgstr "Søgeboks"
 
-#: ../udesign_options_page.php:1367
+#: ../udesign_options_page.php:1369
 msgid "Enable the Search box displayed in the top area of the page."
 msgstr "Aktiver søgeboksen som er vist i topområdet af siden."
 
-#: ../udesign_options_page.php:1372
+#: ../udesign_options_page.php:1374
 msgid "Page Peel"
 msgstr "Sidepeeling"
 
-#: ../udesign_options_page.php:1376
+#: ../udesign_options_page.php:1378
 msgid ""
 "Enable Page Peel (Display the page curl/peel located in the top right corner "
 "of the site).  Could be used for your FeedBurner subscription or advertising."
@@ -1176,15 +1176,15 @@ msgstr ""
 "Aktiver sidepeeling (Vis side curl/peel placeret i øverste højre hjørne på "
 "siden). Kan bruges til Feedburnerbeskrivelse eller reklameformål."
 
-#: ../udesign_options_page.php:1378
+#: ../udesign_options_page.php:1380
 msgid "Page Peel Link URL:"
 msgstr "Page Peel Link URL:"
 
-#: ../udesign_options_page.php:1383
+#: ../udesign_options_page.php:1385
 msgid "Feedback Button"
 msgstr "Feedback Knap"
 
-#: ../udesign_options_page.php:1387
+#: ../udesign_options_page.php:1389
 msgid ""
 "Enable Feedback button (Display the Feedback button located in the most left "
 "side of the site)"
@@ -1192,11 +1192,11 @@ msgstr ""
 "Aktiver Feedback knap (vis Feedback knappen placeret helt ude til venstre af "
 "siden)"
 
-#: ../udesign_options_page.php:1389
+#: ../udesign_options_page.php:1391
 msgid "Feedback Button URL:"
 msgstr "Feedback Knap URL:"
 
-#: ../udesign_options_page.php:1394
+#: ../udesign_options_page.php:1396
 msgid ""
 "Fix the position of the \"Feedback\" button to prevent it from scrolling "
 "with the page."
@@ -1204,11 +1204,11 @@ msgstr ""
 "Fikser positionen af \"Feedback\"  knappen for at forebygge at den ruller "
 "sammen med siden."
 
-#: ../udesign_options_page.php:1399
+#: ../udesign_options_page.php:1401
 msgid "Enable prettyPhoto script"
 msgstr "Aktiver prettyPhoto script"
 
-#: ../udesign_options_page.php:1403
+#: ../udesign_options_page.php:1405
 #, php-format
 msgid ""
 "Enable %1$sprettyPhoto%2$s script. In case of conflicts with some other "
@@ -1218,92 +1218,92 @@ msgstr ""
 "lightboks plugins, vil du måske ønske at deaktivere %1$sprettyPhoto%2$s "
 "scriptet."
 
-#: ../udesign_options_page.php:1408
+#: ../udesign_options_page.php:1410
 msgid "\"Stay-On-Top\" Main Menu"
 msgstr ""
 
-#: ../udesign_options_page.php:1410
+#: ../udesign_options_page.php:1412
 msgid "\"Stay-On-Top\" the Main Menu"
 msgstr ""
 
-#: ../udesign_options_page.php:1413
+#: ../udesign_options_page.php:1415
 msgid ""
 "Fix the main navigation bar to stay on top of the page once header has been "
 "scrolled past."
 msgstr ""
 
-#: ../udesign_options_page.php:1419 ../udesign_options_page.php:1421
+#: ../udesign_options_page.php:1421 ../udesign_options_page.php:1423
 #, fuzzy
 msgid "\"Stay-On-Top\" Menu Shadow"
 msgstr "Topmenu Drop skygger"
 
-#: ../udesign_options_page.php:1424
+#: ../udesign_options_page.php:1426
 #, fuzzy
 msgid "Add shadow to the Stay-On-Top menu."
 msgstr "Aktiver Dropskygger til undermenuerne."
 
-#: ../udesign_options_page.php:1430 ../udesign_options_page.php:1432
+#: ../udesign_options_page.php:1432 ../udesign_options_page.php:1434
 #, fuzzy
 msgid "\"Stay-On-Top\" Remove Background Image"
 msgstr "Top Baggrundsbillede"
 
-#: ../udesign_options_page.php:1435
+#: ../udesign_options_page.php:1437
 msgid ""
 "Remove the background image behind the Stay-On-Top menu, in which case the "
 "background color assigned to the Top Area will be used instead."
 msgstr ""
 
-#: ../udesign_options_page.php:1441 ../udesign_options_page.php:1443
+#: ../udesign_options_page.php:1443 ../udesign_options_page.php:1445
 msgid "Disable \"Stay-On-Top\" Menu on Mobile Devices"
 msgstr ""
 
-#: ../udesign_options_page.php:1446
+#: ../udesign_options_page.php:1448
 msgid "This option will disable the Stay-On-Top menu on mobile devices only."
 msgstr ""
 
-#: ../udesign_options_page.php:1447
+#: ../udesign_options_page.php:1449
 msgid "It only applies for non-responsive layout."
 msgstr ""
 
-#: ../udesign_options_page.php:1459
+#: ../udesign_options_page.php:1461
 #, fuzzy
 msgid "Main Menu Alignment"
 msgstr "Billedealignment"
 
-#: ../udesign_options_page.php:1461
+#: ../udesign_options_page.php:1463
 #, fuzzy
 msgid "Choose alignment:"
 msgstr "Vælg Alignment:"
 
-#: ../udesign_options_page.php:1462 ../udesign_options_page.php:1624
-#: ../udesign_options_page.php:1633 ../udesign_options_page.php:1642
-#: ../udesign_options_page.php:1651 ../udesign_options_page.php:1660
-#: ../udesign_options_page.php:1669 ../udesign_options_page.php:1678
-#: ../udesign_options_page.php:1687 ../udesign_options_page.php:1696
-#: ../udesign_options_page.php:4980 ../udesign_options_page.php:5069
-#: ../udesign_options_page.php:5265 ../udesign_options_page.php:5333
+#: ../udesign_options_page.php:1464 ../udesign_options_page.php:1637
+#: ../udesign_options_page.php:1646 ../udesign_options_page.php:1655
+#: ../udesign_options_page.php:1664 ../udesign_options_page.php:1673
+#: ../udesign_options_page.php:1682 ../udesign_options_page.php:1691
+#: ../udesign_options_page.php:1700 ../udesign_options_page.php:1709
+#: ../udesign_options_page.php:4997 ../udesign_options_page.php:5086
+#: ../udesign_options_page.php:5282 ../udesign_options_page.php:5350
 msgid "Left"
 msgstr "Venstre"
 
-#: ../udesign_options_page.php:1463 ../udesign_options_page.php:1625
-#: ../udesign_options_page.php:1634 ../udesign_options_page.php:1643
-#: ../udesign_options_page.php:1652 ../udesign_options_page.php:1661
-#: ../udesign_options_page.php:1670 ../udesign_options_page.php:1679
-#: ../udesign_options_page.php:1688 ../udesign_options_page.php:1697
-#: ../udesign_options_page.php:4981 ../udesign_options_page.php:5070
-#: ../udesign_options_page.php:5267 ../udesign_options_page.php:5334
+#: ../udesign_options_page.php:1465 ../udesign_options_page.php:1638
+#: ../udesign_options_page.php:1647 ../udesign_options_page.php:1656
+#: ../udesign_options_page.php:1665 ../udesign_options_page.php:1674
+#: ../udesign_options_page.php:1683 ../udesign_options_page.php:1692
+#: ../udesign_options_page.php:1701 ../udesign_options_page.php:1710
+#: ../udesign_options_page.php:4998 ../udesign_options_page.php:5087
+#: ../udesign_options_page.php:5284 ../udesign_options_page.php:5351
 msgid "Right"
 msgstr "Højre"
 
-#: ../udesign_options_page.php:1464
+#: ../udesign_options_page.php:1466
 msgid "This option sets the main navigation menu alignment."
 msgstr "Denne indstilling angiver den primære navigations menu justering."
 
-#: ../udesign_options_page.php:1468 ../udesign_options_page.php:1470
+#: ../udesign_options_page.php:1470 ../udesign_options_page.php:1472
 msgid "Top Menu Auto Arrows"
 msgstr "Top Menu Auto pile"
 
-#: ../udesign_options_page.php:1473
+#: ../udesign_options_page.php:1475
 msgid ""
 "Show the top navigation menu's auto arrows. Those are the arrows indicating "
 "a submenu. "
@@ -1311,39 +1311,39 @@ msgstr ""
 "Vis topnavigationen menuer automatiske pile. Disse pile indikerer en "
 "undermenu."
 
-#: ../udesign_options_page.php:1479 ../udesign_options_page.php:1481
+#: ../udesign_options_page.php:1481 ../udesign_options_page.php:1483
 msgid "Top Menu Drop Shadows"
 msgstr "Topmenu Drop skygger"
 
-#: ../udesign_options_page.php:1484
+#: ../udesign_options_page.php:1486
 msgid "Enable drop shadows to the sub-menus. "
 msgstr "Aktiver Dropskygger til undermenuerne."
 
-#: ../udesign_options_page.php:1490 ../udesign_options_page.php:1492
+#: ../udesign_options_page.php:1492 ../udesign_options_page.php:1494
 msgid "Border Under the Menu"
 msgstr "Grænselinje under menuen"
 
-#: ../udesign_options_page.php:1495
+#: ../udesign_options_page.php:1497
 msgid "Remove the border line located under the menu. "
 msgstr "Fjern grænselinjen placeret under menuen."
 
-#: ../udesign_options_page.php:1501
+#: ../udesign_options_page.php:1503
 msgid "Breadcrumbs"
 msgstr "Brødkrummer"
 
-#: ../udesign_options_page.php:1503 ../udesign_options_page.php:1506
+#: ../udesign_options_page.php:1505 ../udesign_options_page.php:1508
 msgid "Show Breadcrumbs"
 msgstr "Vis Brødkrummer"
 
-#: ../udesign_options_page.php:1512
+#: ../udesign_options_page.php:1514
 msgid "Default Post Thumbnail"
 msgstr "Grundlæggende Indlægsbillede"
 
-#: ../udesign_options_page.php:1514
+#: ../udesign_options_page.php:1516
 msgid "Enable Default Thumb"
 msgstr "Aktiver Grundlæggende Billede"
 
-#: ../udesign_options_page.php:1517
+#: ../udesign_options_page.php:1519
 msgid ""
 "Enable default thumbnail for posts (This options is used with the \"U-"
 "Design: Recent Posts\" widget)."
@@ -1351,30 +1351,30 @@ msgstr ""
 "Aktiver grundlæggende billede for indlæg (denne mulighed er anvendt sammen "
 "med \"U-Design: Recent Posts\" widget)."
 
-#: ../udesign_options_page.php:1527 ../udesign_options_page.php:1529
+#: ../udesign_options_page.php:1529 ../udesign_options_page.php:1531
 msgid "Disable Theme Update Notifier"
 msgstr "Frakobl Tema opdaterings notifikationer"
 
-#: ../udesign_options_page.php:1532
+#: ../udesign_options_page.php:1534
 msgid "Disable the theme's notification of new updates."
 msgstr "Frakobl temaets notifikation af nye opdateringer."
 
-#: ../udesign_options_page.php:1538 ../udesign_options_page.php:1540
+#: ../udesign_options_page.php:1540 ../udesign_options_page.php:1542
 msgid "Disable Image Cropping"
 msgstr ""
 
-#: ../udesign_options_page.php:1543
+#: ../udesign_options_page.php:1545
 msgid ""
 "Disable image cropping when generating thumbnail images in sections like "
 "Blog, Portfolio, 'U-Design: Recent Posts' widget, etc."
 msgstr ""
 
-#: ../udesign_options_page.php:1549 ../udesign_options_page.php:1551
+#: ../udesign_options_page.php:1551 ../udesign_options_page.php:1553
 #, fuzzy
 msgid "Enable Retina for Cropped Images"
 msgstr "Aktiver skræddersyet \"Fremhævet Billede\""
 
-#: ../udesign_options_page.php:1554
+#: ../udesign_options_page.php:1556
 msgid ""
 "Enable automatic retina images for the ones being cropped. If enabled, a "
 "double pixel ratio will be used for the cropped images. In order for this "
@@ -1383,16 +1383,16 @@ msgid ""
 "by the use of custom fields (see documentation for more information)."
 msgstr ""
 
-#: ../udesign_options_page.php:1560
+#: ../udesign_options_page.php:1562
 #, php-format
 msgid "Enable %1$sstyle.css%2$s"
 msgstr "Aktiver %1$sstyle.css%2$s"
 
-#: ../udesign_options_page.php:1562
+#: ../udesign_options_page.php:1564
 msgid "Enable \"style.css\""
 msgstr "Aktiver \"style.css\""
 
-#: ../udesign_options_page.php:1565
+#: ../udesign_options_page.php:1567
 #, fuzzy, php-format
 msgid ""
 "Enable the %1$sstyle.css%2$s located in the theme's root folder. You can "
@@ -1405,44 +1405,44 @@ msgstr ""
 "CSS. Du har også brug for at tilkoble denne mulighed, hvis du vil bruge et "
 "%5$schild theme%6$s."
 
-#: ../udesign_options_page.php:1581
+#: ../udesign_options_page.php:1583
 msgid "Page Title"
 msgstr "Sidetitel"
 
-#: ../udesign_options_page.php:1585 ../udesign_options_page.php:1597
+#: ../udesign_options_page.php:1587 ../udesign_options_page.php:1599
 msgid "Title Position 1"
 msgstr "Titel Position 1"
 
-#: ../udesign_options_page.php:1586 ../udesign_options_page.php:1598
+#: ../udesign_options_page.php:1588 ../udesign_options_page.php:1600
 msgid "Title Position 2"
 msgstr "Titel Position 2"
 
-#: ../udesign_options_page.php:1587 ../udesign_options_page.php:1599
+#: ../udesign_options_page.php:1589 ../udesign_options_page.php:1601
 msgid "Remove Title (SEO-Friendly)"
 msgstr "Fjern Titel (SEO-Venligt)"
 
-#: ../udesign_options_page.php:1588 ../udesign_options_page.php:1600
+#: ../udesign_options_page.php:1590 ../udesign_options_page.php:1602
 msgid "Remove Title Completely"
 msgstr "Fjern Titel Helt"
 
-#: ../udesign_options_page.php:1593 ../udesign_options_page.php:1781
-#: ../udesign_options_page.php:1972 ../udesign_options_page.php:2684
+#: ../udesign_options_page.php:1595 ../udesign_options_page.php:1797
+#: ../udesign_options_page.php:1989 ../udesign_options_page.php:2701
 msgid "Update"
 msgstr "Opdater"
 
-#: ../udesign_options_page.php:1597
+#: ../udesign_options_page.php:1599
 msgid ""
 "Display Title immediately under the Main Menu, it spans the full width of "
 "page."
 msgstr ""
 "Vis afsnit direkte under hovedmenuen, den spænder over hele bredden på siden"
 
-#: ../udesign_options_page.php:1598
+#: ../udesign_options_page.php:1600
 msgid "Display Title inside Main Content, it spans the main content width."
 msgstr ""
 "Vis titlen i inholds området, den spænder over viden af indholds området."
 
-#: ../udesign_options_page.php:1599
+#: ../udesign_options_page.php:1601
 msgid ""
 "Remove Title visually, so that human visitors will not see it, yet it will "
 "still be served as an \"h1\" heading to search engine spiders."
@@ -1450,7 +1450,7 @@ msgstr ""
 "Fjern titel visuelt, således at menneskelige besøgende ikke ser den, men den "
 "vil stadig fungere som et \"h1 \" overskrift for søgemaskinen."
 
-#: ../udesign_options_page.php:1600
+#: ../udesign_options_page.php:1602
 msgid ""
 " ... just as it says! A word of caution, when using this option keep in mind "
 "that your pages will be left without an \"h1\" heading. It is your "
@@ -1460,7 +1460,7 @@ msgstr ""
 "huske på, at dine sider vil blive efterladt uden en  \"h1 \" overskrift. Det "
 "er dit ansvar at passe det."
 
-#: ../udesign_options_page.php:1615
+#: ../udesign_options_page.php:1617
 msgid ""
 "Set the width of the \"Home Page Column 1\" Widget Area as constant 1/3 "
 "width (Applies only to a two column layout, in other words having the first "
@@ -1472,21 +1472,34 @@ msgstr ""
 "det første widgetområde \"Home Page Column 1\" i kombination med enhver "
 "anden ad de andre widgets som er aktive)."
 
-#: ../udesign_options_page.php:1621
+#: ../udesign_options_page.php:1623 ../udesign_options_page.php:1625
+#, fuzzy
+msgid "Remove Sidebar from Default Pages"
+msgstr "Fjern sidenbaren fra blogsiderne"
+
+#: ../udesign_options_page.php:1628
+#, fuzzy
+msgid ""
+"Remove the sidebar from the default page template. This will make all pages "
+"that have been assigned \"Default Template\" full width."
+msgstr ""
+"Fjern sidebare fra Kontakt siden. Dette ændrer kontakt siden  til fuld brede."
+
+#: ../udesign_options_page.php:1634
 msgid "Default Pages Sidebar Position"
 msgstr "Grundlæggende Sider Sidebarposition"
 
-#: ../udesign_options_page.php:1623 ../udesign_options_page.php:1632
-#: ../udesign_options_page.php:1641 ../udesign_options_page.php:1650
-#: ../udesign_options_page.php:1659 ../udesign_options_page.php:1668
-#: ../udesign_options_page.php:1677 ../udesign_options_page.php:1686
-#: ../udesign_options_page.php:1695 ../udesign_options_page.php:4963
-#: ../udesign_options_page.php:4979 ../udesign_options_page.php:5068
-#: ../udesign_options_page.php:5332
+#: ../udesign_options_page.php:1636 ../udesign_options_page.php:1645
+#: ../udesign_options_page.php:1654 ../udesign_options_page.php:1663
+#: ../udesign_options_page.php:1672 ../udesign_options_page.php:1681
+#: ../udesign_options_page.php:1690 ../udesign_options_page.php:1699
+#: ../udesign_options_page.php:1708 ../udesign_options_page.php:4980
+#: ../udesign_options_page.php:4996 ../udesign_options_page.php:5085
+#: ../udesign_options_page.php:5349
 msgid "Choose position:"
 msgstr "Vælg position:"
 
-#: ../udesign_options_page.php:1626
+#: ../udesign_options_page.php:1639
 msgid ""
 "This is the sidebar position for all pages assigned with \"Default Template"
 "\"."
@@ -1494,81 +1507,81 @@ msgstr ""
 "Dette er sidebarpositionen for alle sider forbundet med \"Default Template"
 "\". "
 
-#: ../udesign_options_page.php:1630
+#: ../udesign_options_page.php:1643
 msgid "Default Pages Sidebar 2 Position"
 msgstr "Grundlæggende Sider Sidebar 2 Position"
 
-#: ../udesign_options_page.php:1635
+#: ../udesign_options_page.php:1648
 msgid ""
 "This is the sidebar position for all pages assigned with \"Page Template 2\"."
 msgstr ""
 "Dette er sidebarpositionen for alle sider forbundet med \"Page Template 2\"."
 
-#: ../udesign_options_page.php:1639
+#: ../udesign_options_page.php:1652
 msgid "Default Pages Sidebar 3 Position"
 msgstr "Grundlæggende Sider Sidebar 3 positionering"
 
-#: ../udesign_options_page.php:1644
+#: ../udesign_options_page.php:1657
 msgid ""
 "This is the sidebar position for all pages assigned with \"Page Template 3\"."
 msgstr ""
 "Dette er sidebarpositionen for alle sider forbundet med \"Page Template 3\"."
 
-#: ../udesign_options_page.php:1648
+#: ../udesign_options_page.php:1661
 msgid "Default Pages Sidebar 4 Position"
 msgstr "Grundlæggende Sider Sidebarposition 4"
 
-#: ../udesign_options_page.php:1653
+#: ../udesign_options_page.php:1666
 msgid ""
 "This is the sidebar position for all pages assigned with \"Page Template 4\"."
 msgstr ""
 "Dette er sidebarpositionen for alle sider forbundet med \"Page Template 4\"."
 
-#: ../udesign_options_page.php:1657
+#: ../udesign_options_page.php:1670
 msgid "Default Pages Sidebar 5 Position"
 msgstr "Grundlæggende sider sidebar 5 position"
 
-#: ../udesign_options_page.php:1662
+#: ../udesign_options_page.php:1675
 msgid ""
 "This is the sidebar position for all pages assigned with \"Page Template 5\"."
 msgstr ""
 "Dette er sidebarpositionen for alle sider forbundet med \"Page Template 5\"."
 
-#: ../udesign_options_page.php:1666
+#: ../udesign_options_page.php:1679
 msgid "Default Pages Sidebar 6 Position"
 msgstr "Grundlæggende Sider Sidebar 6 Position"
 
-#: ../udesign_options_page.php:1671
+#: ../udesign_options_page.php:1684
 msgid ""
 "This is the sidebar position for all pages assigned with \"Page Template 6\"."
 msgstr ""
 "Dette er sidebarpositionen for alle side forbundet med \"Page Template 6\". "
 
-#: ../udesign_options_page.php:1675
+#: ../udesign_options_page.php:1688
 msgid "Default Pages Sidebar 7 Position"
 msgstr "Grundlæggende Sider Sidebar 7 Position"
 
-#: ../udesign_options_page.php:1680
+#: ../udesign_options_page.php:1693
 msgid ""
 "This is the sidebar position for all pages assigned with \"Page Template 7\"."
 msgstr ""
 "Dette er sidebarpositionen for alle sider forbundet med \"Page Template 7\"."
 
-#: ../udesign_options_page.php:1684
+#: ../udesign_options_page.php:1697
 msgid "Default Pages Sidebar 8 Position"
 msgstr "Grundlæggende Sider Sidebar 8 Position"
 
-#: ../udesign_options_page.php:1689
+#: ../udesign_options_page.php:1702
 msgid ""
 "This is the sidebar position for all pages assigned with \"Page Template 8\"."
 msgstr ""
 "Dette er sidebarpositionen for alle sider forbundet med \"Page Template 8\"."
 
-#: ../udesign_options_page.php:1693
+#: ../udesign_options_page.php:1706
 msgid "Sitemap Page Sidebar Position"
 msgstr "Sitemapside Sidebarposition"
 
-#: ../udesign_options_page.php:1698
+#: ../udesign_options_page.php:1711
 msgid ""
 "This is the sidebar position for all pages assigned with \"Sitemap page\" "
 "template."
@@ -1576,11 +1589,11 @@ msgstr ""
 "Dette er sidebarpositionen for alle sider forbundet med  \"Sitemap page\" "
 "skabelonen."
 
-#: ../udesign_options_page.php:1702 ../udesign_options_page.php:1704
+#: ../udesign_options_page.php:1715 ../udesign_options_page.php:1717
 msgid "Show Comments on Pages"
 msgstr "Vis Kommentarer på Sider"
 
-#: ../udesign_options_page.php:1707
+#: ../udesign_options_page.php:1720
 msgid ""
 "Show Comments on Pages. Those are the pages assigned with the 'Default "
 "Page', 'Page Template 2', ..., 'Page Template 8' and 'Full-width Page' "
@@ -1592,11 +1605,11 @@ msgstr ""
 "skabelonen. Yderligere kan du 'tillade' disse kommentarer fra den "
 "individuelle sides konfiguration."
 
-#: ../udesign_options_page.php:1723
+#: ../udesign_options_page.php:1736
 msgid "Greater than 960px Theme Width Fluid Layout"
 msgstr ""
 
-#: ../udesign_options_page.php:1724
+#: ../udesign_options_page.php:1737
 msgid ""
 "In Fluid Layout the widths of elements such as the main content block, "
 "sidebar, columns, etc. are converted to percentages rather than fixed width "
@@ -1609,56 +1622,68 @@ msgid ""
 "960px width frame, unless of course Responsive layout is enabled."
 msgstr ""
 
-#: ../udesign_options_page.php:1728 ../udesign_options_page.php:1730
+#: ../udesign_options_page.php:1741 ../udesign_options_page.php:1743
 msgid "Enable Maximum Width"
 msgstr ""
 
-#: ../udesign_options_page.php:1733
+#: ../udesign_options_page.php:1746
 msgid "Set the theme width to the maximum possible browser or device width."
 msgstr ""
 
-#: ../udesign_options_page.php:1739
+#: ../udesign_options_page.php:1747
+msgid "(Fluid Layout)"
+msgstr ""
+
+#: ../udesign_options_page.php:1753
 msgid "Global Theme Width"
 msgstr ""
 
-#: ../udesign_options_page.php:1743 ../udesign_options_page.php:5632
+#: ../udesign_options_page.php:1757 ../udesign_options_page.php:5649
 #, fuzzy
 msgid "(Width) in pixels."
 msgstr "(Højde) i pixels."
 
-#: ../udesign_options_page.php:1744
+#: ../udesign_options_page.php:1758
 msgid ""
 "This option is about the overall theme width and it will be applied to all "
-"pages. You may specify a range between 960px and 1200px."
+"pages. You may specify a range between 960px and 1600px."
 msgstr ""
 
-#: ../udesign_options_page.php:1748
+#: ../udesign_options_page.php:1759
+msgid "(default: 960)"
+msgstr ""
+
+#: ../udesign_options_page.php:1763
 msgid "Global Sidebar Width"
 msgstr ""
 
-#: ../udesign_options_page.php:1752
+#: ../udesign_options_page.php:1767
 msgid "(Width) in percentage."
 msgstr ""
 
-#: ../udesign_options_page.php:1753
+#: ../udesign_options_page.php:1768
 msgid ""
 "This option is about the overall sidebar width and it will be applied to all "
 "pages. You may specify a range between 20% and 50%."
 msgstr ""
 
-#: ../udesign_options_page.php:1768
+#: ../udesign_options_page.php:1769
+msgid "(default: 33)"
+msgstr ""
+
+#: ../udesign_options_page.php:1784
 msgid "Google WebFont Directory"
 msgstr "Google WebFont Directory"
 
-#: ../udesign_options_page.php:1770
+#: ../udesign_options_page.php:1786
 msgid "Google Web Fonts"
 msgstr "Google Web Fonts"
 
-#: ../udesign_options_page.php:1773
+#: ../udesign_options_page.php:1789
 msgid "Enable Google WebFonts."
 msgstr "Aktiver Google WebFonts."
 
-#: ../udesign_options_page.php:1776
+#: ../udesign_options_page.php:1792
 msgid ""
 "Enable this option and hit \"Update\" to add the Google Fonts to the "
 "available fonts listed below."
@@ -1666,32 +1691,32 @@ msgstr ""
 "Aktiver denne option og tryk \"Update\" for at tilføje Google Fonts til de "
 "tilgængelige fonte listet nedenfor."
 
-#: ../udesign_options_page.php:1777
+#: ../udesign_options_page.php:1793
 msgid "Preview the available fonts at"
 msgstr "Vis udkast af de tilgængelige fonte ved"
 
-#: ../udesign_options_page.php:1777
+#: ../udesign_options_page.php:1793
 msgid "Go to the \"Google Fonts\" site"
 msgstr ""
 
-#: ../udesign_options_page.php:1788
+#: ../udesign_options_page.php:1804
 msgid "General Font Settings"
 msgstr "Generelle Font indstillinger"
 
-#: ../udesign_options_page.php:1791 ../udesign_options_page.php:1847
-#: ../udesign_options_page.php:1904
+#: ../udesign_options_page.php:1807 ../udesign_options_page.php:1863
+#: ../udesign_options_page.php:1921
 msgid "Font Family: "
 msgstr "Fontfamilie:"
 
-#: ../udesign_options_page.php:1844
+#: ../udesign_options_page.php:1860
 msgid "Top Navigation Menu Font Settings"
 msgstr "Topnavigation Menu Font indstillinger"
 
-#: ../udesign_options_page.php:1900
+#: ../udesign_options_page.php:1916
 msgid "Title Headings Font Settings"
 msgstr "Titeloverskrifter Fontstillinger"
 
-#: ../udesign_options_page.php:1902
+#: ../udesign_options_page.php:1918
 msgid ""
 "This font is applied to all h1, h2, h3, h4, h5, h6 - Headings (with small "
 "exceptions) and  the Slogan (Tagline):"
@@ -1699,11 +1724,11 @@ msgstr ""
 "Denne font bliver anvendt på alle h1, h2, h3, h4, h5, h6 - Overskrifter (med "
 "få undtagelser) og på slogan (Taglinje):"
 
-#: ../udesign_options_page.php:1933
+#: ../udesign_options_page.php:1950
 msgid "Font Size Coefficient: "
 msgstr "Fontstørrelse koefficient:"
 
-#: ../udesign_options_page.php:1951
+#: ../udesign_options_page.php:1968
 msgid ""
 "The Font Size Coefficient is multiplied by the actual heading size in \"em"
 "\", thus any coefficient greater than \"1.0\" will cause the font size to "
@@ -1714,79 +1739,79 @@ msgstr ""
 "formindskes og enhver koefficient mindre end \"1.0, vil producere mindre "
 "fontstørrelser."
 
-#: ../udesign_options_page.php:1963
+#: ../udesign_options_page.php:1980
 msgid "Custom Colors Switch"
 msgstr "Skræddersyet Farveskifter"
 
-#: ../udesign_options_page.php:1965
+#: ../udesign_options_page.php:1982
 msgid "If enabled this option will overwrite the default CSS styles."
 msgstr ""
 "Hvis aktiveret, vil denne mulighed overskrive de grundlæggende CSS stile"
 
-#: ../udesign_options_page.php:1966
+#: ../udesign_options_page.php:1983
 msgid "Custom colors option:"
 msgstr "Skræddersyede farvemuligheder"
 
-#: ../udesign_options_page.php:1967
+#: ../udesign_options_page.php:1984
 msgid "Enable"
 msgstr "Aktiver"
 
-#: ../udesign_options_page.php:1968
+#: ../udesign_options_page.php:1985
 msgid "Disable"
 msgstr "Deaktiver"
 
-#: ../udesign_options_page.php:1976
+#: ../udesign_options_page.php:1993
 msgid "Continue with the section below to customize the colors..."
 msgstr "Fortsæt med sektionen nedenfor for at skræddersy farverne..."
 
-#: ../udesign_options_page.php:1986
+#: ../udesign_options_page.php:2003
 msgid "General Text and Link Colors:"
 msgstr "Generel tekst og linkfarve:"
 
-#: ../udesign_options_page.php:1990
+#: ../udesign_options_page.php:2007
 msgid "Body Text Color"
 msgstr "Krop Tekst farve"
 
-#: ../udesign_options_page.php:1998
+#: ../udesign_options_page.php:2015
 msgid "Main body text color affecting the entire site."
 msgstr "Primær krops farve som påvirker hele sitet."
 
-#: ../udesign_options_page.php:2002
+#: ../udesign_options_page.php:2019
 msgid "Link Color"
 msgstr "Link farve"
 
-#: ../udesign_options_page.php:2010
+#: ../udesign_options_page.php:2027
 msgid "Main link color affecting the entire site."
 msgstr "Primær link farve som påvirker hele sitet."
 
-#: ../udesign_options_page.php:2014
+#: ../udesign_options_page.php:2031
 msgid "Link Hover Color"
 msgstr "Linkfarve Musepassage"
 
-#: ../udesign_options_page.php:2022
+#: ../udesign_options_page.php:2039
 msgid "This is the link hover color."
 msgstr "Dette er farven ved musepassage."
 
-#: ../udesign_options_page.php:2026
+#: ../udesign_options_page.php:2043
 msgid "Headings Color"
 msgstr "Overskriftsfarve"
 
-#: ../udesign_options_page.php:2034
+#: ../udesign_options_page.php:2051
 msgid ""
 "This is the color for general H1, H2, H3, H4 ,H5 ,H6 Headings where "
 "applicable."
 msgstr ""
 "Dette er standard farven for  H1, H2, H3, H4, H5, H6 når dette anvendes."
 
-#: ../udesign_options_page.php:2039
+#: ../udesign_options_page.php:2056
 msgid "Top Section Colors:"
 msgstr "Topsektion farver"
 
-#: ../udesign_options_page.php:2043
+#: ../udesign_options_page.php:2060
 msgid "Top Area Background"
 msgstr "Topområde Baggrund"
 
-#: ../udesign_options_page.php:2051
+#: ../udesign_options_page.php:2068
 #, fuzzy
 msgid ""
 "Site's top section background color. This is the section with the logo, "
@@ -1795,47 +1820,47 @@ msgstr ""
 "Sidens topsektion baggrundsfarve. Dette er sektionen for logo, slogan, "
 "telefonnummer og søgeboks, umiddelbart over menuen."
 
-#: ../udesign_options_page.php:2059
+#: ../udesign_options_page.php:2076
 msgid "Top Area Text Color"
 msgstr "Topområde Tekstfarve"
 
-#: ../udesign_options_page.php:2067
+#: ../udesign_options_page.php:2084
 msgid "This color affects the slogan, phone number and search text."
 msgstr "Denne farve påvirker sloganet, telefonnummer og søgetekst."
 
-#: ../udesign_options_page.php:2071
+#: ../udesign_options_page.php:2088
 msgid "Top Menu Link Color"
 msgstr "Topmenu Link farve"
 
-#: ../udesign_options_page.php:2079
+#: ../udesign_options_page.php:2096
 msgid "This is the color of the main menu links."
 msgstr "Dette er farven for hovedmenulinks."
 
-#: ../udesign_options_page.php:2083
+#: ../udesign_options_page.php:2100
 msgid "Top Menu Active Link Color"
 msgstr "Topmenu Aktiv Link farve"
 
-#: ../udesign_options_page.php:2091
+#: ../udesign_options_page.php:2108
 msgid "This is the color of the main menu active/selected link."
 msgstr "Dette er farven for hovedmenuen aktiv/valgt link."
 
-#: ../udesign_options_page.php:2095
+#: ../udesign_options_page.php:2112
 msgid "Top Menu Hover Link Color"
 msgstr "Topmenu Musepassage Link farve"
 
-#: ../udesign_options_page.php:2103
+#: ../udesign_options_page.php:2120
 msgid "This is the color of the main menu hover link."
 msgstr "Dette er farven for hovedmenuen musepassagelink."
 
-#: ../udesign_options_page.php:2108
+#: ../udesign_options_page.php:2125
 msgid "Midsection Colors:"
 msgstr "Midtersektion farver:"
 
-#: ../udesign_options_page.php:2112
+#: ../udesign_options_page.php:2129
 msgid "Page Title Color"
 msgstr "Sidetitel farve"
 
-#: ../udesign_options_page.php:2120
+#: ../udesign_options_page.php:2137
 msgid ""
 "This is the color for the title of pages/posts/archives, etc. located in the "
 "area underneath the menu."
@@ -1843,39 +1868,39 @@ msgstr ""
 "Dette er farven for titlen på sider/indlæg/arkiver etc. som er placeret i "
 "området under menuen."
 
-#: ../udesign_options_page.php:2124
+#: ../udesign_options_page.php:2141
 msgid "Page Title Background Color"
 msgstr "Sidetitel Baggrundsfarve"
 
-#: ../udesign_options_page.php:2132
+#: ../udesign_options_page.php:2149
 msgid "This is the background color behind the page titles."
 msgstr "Dette er baggrundsfarven bagved sidetitlerne."
 
-#: ../udesign_options_page.php:2136
+#: ../udesign_options_page.php:2153
 msgid "Header/Slider Background"
 msgstr "Overskrift/Slider Baggrund"
 
-#: ../udesign_options_page.php:2144
+#: ../udesign_options_page.php:2161
 msgid "This is the background color behind the home page sliders."
 msgstr "Dette er baggrundsfarven bag hjemmesidesliderne."
 
-#: ../udesign_options_page.php:2148
+#: ../udesign_options_page.php:2165
 msgid "Main Content Area Background"
 msgstr "Primært Indhold Områdebaggrund"
 
-#: ../udesign_options_page.php:2156
+#: ../udesign_options_page.php:2173
 msgid "This is the color of the main content wrapper background."
 msgstr "Dette er farve på hovedindholdet wrapper baggrund."
 
-#: ../udesign_options_page.php:2161
+#: ../udesign_options_page.php:2178
 msgid "Home Page Before Content Widget Area Colors:"
 msgstr "Hjemmeside Før indhold Widget Områdefarver:"
 
-#: ../udesign_options_page.php:2165
+#: ../udesign_options_page.php:2182
 msgid "Title Color"
 msgstr "Titel farve"
 
-#: ../udesign_options_page.php:2173
+#: ../udesign_options_page.php:2190
 msgid ""
 "This is the color for the title of widgets used in this Widget Area, usually "
 "an \"H3\" Headings."
@@ -1883,108 +1908,108 @@ msgstr ""
 "Dette er farven for titlen på widgets brugt i i widgetområdet, normalt en "
 "\"H3\" Overskrift."
 
-#: ../udesign_options_page.php:2177 ../udesign_options_page.php:4453
-#: ../udesign_options_page.php:4737
+#: ../udesign_options_page.php:2194 ../udesign_options_page.php:4470
+#: ../udesign_options_page.php:4754
 msgid "Text Color"
 msgstr "Tekst farve"
 
-#: ../udesign_options_page.php:2185
+#: ../udesign_options_page.php:2202
 msgid "This is the default text color applied to this Widget Area."
 msgstr "Dette er den grundlæggende farve anvendt på dette widgetområde."
 
-#: ../udesign_options_page.php:2189
+#: ../udesign_options_page.php:2206
 msgid "Background Color"
 msgstr "Baggrunds farve"
 
-#: ../udesign_options_page.php:2197
+#: ../udesign_options_page.php:2214
 msgid "This is the background color."
 msgstr "Dette er baggrundsfarven."
 
-#: ../udesign_options_page.php:2202
+#: ../udesign_options_page.php:2219
 msgid "Bottom Area Colors:"
 msgstr "Bundområde Farver:"
 
-#: ../udesign_options_page.php:2206
+#: ../udesign_options_page.php:2223
 msgid "Bottom Background Color"
 msgstr "Bund Baggrundsfarve"
 
-#: ../udesign_options_page.php:2214
+#: ../udesign_options_page.php:2231
 msgid "This is the background color for the bottom area."
 msgstr "Dette er baggrundsfarven for bundområdet."
 
-#: ../udesign_options_page.php:2218
+#: ../udesign_options_page.php:2235
 msgid "Bottom Titles Color"
 msgstr "Bundtitel farver"
 
-#: ../udesign_options_page.php:2226
+#: ../udesign_options_page.php:2243
 msgid "This is the color applied to the bottom area widget titles."
 msgstr "Dette er farven anvendt i bunden af widgetområdetitlerne."
 
-#: ../udesign_options_page.php:2230
+#: ../udesign_options_page.php:2247
 msgid "Bottom Text Color"
 msgstr "Bund Tekst farve"
 
-#: ../udesign_options_page.php:2238
+#: ../udesign_options_page.php:2255
 msgid "This is the default text color applied to the bottom area."
 msgstr "Dette er den grundlæggende farve anvendt på bundområdet."
 
-#: ../udesign_options_page.php:2242
+#: ../udesign_options_page.php:2259
 msgid "Bottom Link Color"
 msgstr "Bund Linkfarve"
 
-#: ../udesign_options_page.php:2250
+#: ../udesign_options_page.php:2267
 msgid "This is the bottom area link color."
 msgstr "Dette er bundområdets link farve."
 
-#: ../udesign_options_page.php:2254
+#: ../udesign_options_page.php:2271
 msgid "Bottom Link Hover Color"
 msgstr "Bund Link Musepassage farve"
 
-#: ../udesign_options_page.php:2262
+#: ../udesign_options_page.php:2279
 msgid "This is the bottom area link hover color."
 msgstr "Dette er farven til bundlinkene ved musepassage."
 
-#: ../udesign_options_page.php:2267
+#: ../udesign_options_page.php:2284
 msgid "Footer Area Colors:"
 msgstr "Footerområde farve:"
 
-#: ../udesign_options_page.php:2271
+#: ../udesign_options_page.php:2288
 msgid "Footer Background Color"
 msgstr "Footer Baggrundsfarve"
 
-#: ../udesign_options_page.php:2279
+#: ../udesign_options_page.php:2296
 msgid "This is the footer background color."
 msgstr "Dette er footerbaggrundsfarven."
 
-#: ../udesign_options_page.php:2283
+#: ../udesign_options_page.php:2300
 msgid "Footer Text Color"
 msgstr "Footer Tekst farve"
 
-#: ../udesign_options_page.php:2291
+#: ../udesign_options_page.php:2308
 msgid "This is the footer general text color."
 msgstr "Dette er footerens generelle tekst farve."
 
-#: ../udesign_options_page.php:2295
+#: ../udesign_options_page.php:2312
 msgid "Footer Link Color"
 msgstr "Footer Link farve"
 
-#: ../udesign_options_page.php:2303
+#: ../udesign_options_page.php:2320
 msgid "This is the footer link color."
 msgstr "Dette er footer link farven."
 
-#: ../udesign_options_page.php:2307
+#: ../udesign_options_page.php:2324
 msgid "Footer Link Hover Color"
 msgstr "Footer Link Musepassage farve"
 
-#: ../udesign_options_page.php:2315
+#: ../udesign_options_page.php:2332
 msgid "This is the footer link hover color."
 msgstr "Dette er footerlink musepassage farve."
 
-#: ../udesign_options_page.php:2324
+#: ../udesign_options_page.php:2341
 msgid "Background Images:"
 msgstr "Baggrundsbilleder:"
 
-#: ../udesign_options_page.php:2325
+#: ../udesign_options_page.php:2342
 msgid ""
 "Tip: To upload an image click on 'Upload Image' button below. Once the image "
 "is uploaded it will give you various options. Click on 'Insert into Post' "
@@ -2002,174 +2027,174 @@ msgstr ""
 "indstilling. Hvis 'Ingen Gentagelse' er specificeret (se nedenfor), vil "
 "billedet bliver placeret i elementets center toppositition."
 
-#: ../udesign_options_page.php:2329
+#: ../udesign_options_page.php:2346
 msgid "Top Background Image"
 msgstr "Top Baggrundsbillede"
-
-#: ../udesign_options_page.php:2332 ../udesign_options_page.php:2368
-#: ../udesign_options_page.php:2404 ../udesign_options_page.php:2440
-#: ../udesign_options_page.php:2476 ../udesign_options_page.php:2512
-#: ../udesign_options_page.php:2548 ../udesign_options_page.php:2584
-#: ../udesign_options_page.php:4207 ../udesign_options_page.php:4275
-msgid "Enter a URL or upload an image:"
-msgstr "Indtast en URL eller uploade et billede:"
-
-#: ../udesign_options_page.php:2334 ../udesign_options_page.php:2370
-#: ../udesign_options_page.php:2406 ../udesign_options_page.php:2442
-#: ../udesign_options_page.php:2478 ../udesign_options_page.php:2514
-#: ../udesign_options_page.php:2550 ../udesign_options_page.php:2586
-#: ../udesign_options_page.php:2856 ../udesign_options_page.php:2908
-#: ../udesign_options_page.php:3174 ../udesign_options_page.php:3201
-#: ../udesign_options_page.php:3719 ../udesign_options_page.php:3751
-#: ../udesign_options_page.php:3770 ../udesign_options_page.php:3819
-#: ../udesign_options_page.php:3863 ../udesign_options_page.php:3894
-#: ../udesign_options_page.php:4209 ../udesign_options_page.php:4277
-#: ../udesign_options_page.php:4482 ../udesign_options_page.php:4565
-#: ../udesign_options_page.php:4766 ../udesign_options_page.php:4790
-#: ../udesign_options_page.php:4815 ../udesign_options_page.php:4839
-msgid "Upload Image"
-msgstr "Upload Billede"
-
-#: ../udesign_options_page.php:2338 ../udesign_options_page.php:2374
-#: ../udesign_options_page.php:2410 ../udesign_options_page.php:2446
-msgid "Background  Properties:"
-msgstr "Baggrundsmuligheder:"
-
-#: ../udesign_options_page.php:2340 ../udesign_options_page.php:2376
-#: ../udesign_options_page.php:2412 ../udesign_options_page.php:2448
-#: ../udesign_options_page.php:2484 ../udesign_options_page.php:2520
-#: ../udesign_options_page.php:2556 ../udesign_options_page.php:2592
-msgid "No Repeat"
-msgstr "Ingen Gentagelse"
-
-#: ../udesign_options_page.php:2341 ../udesign_options_page.php:2377
-#: ../udesign_options_page.php:2413 ../udesign_options_page.php:2449
-#: ../udesign_options_page.php:2485 ../udesign_options_page.php:2521
-#: ../udesign_options_page.php:2557 ../udesign_options_page.php:2593
-msgid "Repeat only Horizontally"
-msgstr "Gentag kun horisontalt"
-
-#: ../udesign_options_page.php:2342 ../udesign_options_page.php:2378
-#: ../udesign_options_page.php:2414 ../udesign_options_page.php:2450
-#: ../udesign_options_page.php:2486 ../udesign_options_page.php:2522
-#: ../udesign_options_page.php:2558 ../udesign_options_page.php:2594
-msgid "Repeat only Vertically"
-msgstr "Gentag kun vertikalt"
-
-#: ../udesign_options_page.php:2343 ../udesign_options_page.php:2379
-#: ../udesign_options_page.php:2415 ../udesign_options_page.php:2451
-#: ../udesign_options_page.php:2487 ../udesign_options_page.php:2523
-#: ../udesign_options_page.php:2559 ../udesign_options_page.php:2595
-msgid "Repeat both Vertically and Horizontally"
-msgstr "Gentag både vertikalt og horisontalt"
-
-#: ../udesign_options_page.php:2345 ../udesign_options_page.php:2381
-#: ../udesign_options_page.php:2417 ../udesign_options_page.php:2453
-#: ../udesign_options_page.php:2489 ../udesign_options_page.php:2525
-#: ../udesign_options_page.php:2561 ../udesign_options_page.php:2597
-msgid "Horizontal:"
-msgstr "Horisontal:"
-
-#: ../udesign_options_page.php:2347 ../udesign_options_page.php:2354
-#: ../udesign_options_page.php:2383 ../udesign_options_page.php:2390
-#: ../udesign_options_page.php:2419 ../udesign_options_page.php:2426
-#: ../udesign_options_page.php:2455 ../udesign_options_page.php:2462
-#: ../udesign_options_page.php:2491 ../udesign_options_page.php:2498
-#: ../udesign_options_page.php:2527 ../udesign_options_page.php:2534
-#: ../udesign_options_page.php:2563 ../udesign_options_page.php:2570
-#: ../udesign_options_page.php:2599 ../udesign_options_page.php:2606
-#: ../udesign_options_page.php:3521
-msgid "center"
-msgstr "centrer"
-
-#: ../udesign_options_page.php:2348 ../udesign_options_page.php:2384
-#: ../udesign_options_page.php:2420 ../udesign_options_page.php:2456
-#: ../udesign_options_page.php:2492 ../udesign_options_page.php:2528
-#: ../udesign_options_page.php:2564 ../udesign_options_page.php:2600
-#: ../udesign_options_page.php:3522
-msgid "left"
-msgstr "venstre"
 
 #: ../udesign_options_page.php:2349 ../udesign_options_page.php:2385
 #: ../udesign_options_page.php:2421 ../udesign_options_page.php:2457
 #: ../udesign_options_page.php:2493 ../udesign_options_page.php:2529
 #: ../udesign_options_page.php:2565 ../udesign_options_page.php:2601
-#: ../udesign_options_page.php:3523
-msgid "right"
-msgstr "højre"
+#: ../udesign_options_page.php:4224 ../udesign_options_page.php:4292
+msgid "Enter a URL or upload an image:"
+msgstr "Indtast en URL eller uploade et billede:"
 
 #: ../udesign_options_page.php:2351 ../udesign_options_page.php:2387
 #: ../udesign_options_page.php:2423 ../udesign_options_page.php:2459
 #: ../udesign_options_page.php:2495 ../udesign_options_page.php:2531
 #: ../udesign_options_page.php:2567 ../udesign_options_page.php:2603
-msgid "Vertical:"
-msgstr "Vertikalt:"
-
-#: ../udesign_options_page.php:2353 ../udesign_options_page.php:2389
-#: ../udesign_options_page.php:2425 ../udesign_options_page.php:2461
-#: ../udesign_options_page.php:2497 ../udesign_options_page.php:2533
-#: ../udesign_options_page.php:2569 ../udesign_options_page.php:2605
-msgid "top"
-msgstr "top"
+#: ../udesign_options_page.php:2873 ../udesign_options_page.php:2925
+#: ../udesign_options_page.php:3191 ../udesign_options_page.php:3218
+#: ../udesign_options_page.php:3736 ../udesign_options_page.php:3768
+#: ../udesign_options_page.php:3787 ../udesign_options_page.php:3836
+#: ../udesign_options_page.php:3880 ../udesign_options_page.php:3911
+#: ../udesign_options_page.php:4226 ../udesign_options_page.php:4294
+#: ../udesign_options_page.php:4499 ../udesign_options_page.php:4582
+#: ../udesign_options_page.php:4783 ../udesign_options_page.php:4807
+#: ../udesign_options_page.php:4832 ../udesign_options_page.php:4856
+msgid "Upload Image"
+msgstr "Upload Billede"
 
 #: ../udesign_options_page.php:2355 ../udesign_options_page.php:2391
 #: ../udesign_options_page.php:2427 ../udesign_options_page.php:2463
-#: ../udesign_options_page.php:2499 ../udesign_options_page.php:2535
-#: ../udesign_options_page.php:2571 ../udesign_options_page.php:2607
+msgid "Background  Properties:"
+msgstr "Baggrundsmuligheder:"
+
+#: ../udesign_options_page.php:2357 ../udesign_options_page.php:2393
+#: ../udesign_options_page.php:2429 ../udesign_options_page.php:2465
+#: ../udesign_options_page.php:2501 ../udesign_options_page.php:2537
+#: ../udesign_options_page.php:2573 ../udesign_options_page.php:2609
+msgid "No Repeat"
+msgstr "Ingen Gentagelse"
+
+#: ../udesign_options_page.php:2358 ../udesign_options_page.php:2394
+#: ../udesign_options_page.php:2430 ../udesign_options_page.php:2466
+#: ../udesign_options_page.php:2502 ../udesign_options_page.php:2538
+#: ../udesign_options_page.php:2574 ../udesign_options_page.php:2610
+msgid "Repeat only Horizontally"
+msgstr "Gentag kun horisontalt"
+
+#: ../udesign_options_page.php:2359 ../udesign_options_page.php:2395
+#: ../udesign_options_page.php:2431 ../udesign_options_page.php:2467
+#: ../udesign_options_page.php:2503 ../udesign_options_page.php:2539
+#: ../udesign_options_page.php:2575 ../udesign_options_page.php:2611
+msgid "Repeat only Vertically"
+msgstr "Gentag kun vertikalt"
+
+#: ../udesign_options_page.php:2360 ../udesign_options_page.php:2396
+#: ../udesign_options_page.php:2432 ../udesign_options_page.php:2468
+#: ../udesign_options_page.php:2504 ../udesign_options_page.php:2540
+#: ../udesign_options_page.php:2576 ../udesign_options_page.php:2612
+msgid "Repeat both Vertically and Horizontally"
+msgstr "Gentag både vertikalt og horisontalt"
+
+#: ../udesign_options_page.php:2362 ../udesign_options_page.php:2398
+#: ../udesign_options_page.php:2434 ../udesign_options_page.php:2470
+#: ../udesign_options_page.php:2506 ../udesign_options_page.php:2542
+#: ../udesign_options_page.php:2578 ../udesign_options_page.php:2614
+msgid "Horizontal:"
+msgstr "Horisontal:"
+
+#: ../udesign_options_page.php:2364 ../udesign_options_page.php:2371
+#: ../udesign_options_page.php:2400 ../udesign_options_page.php:2407
+#: ../udesign_options_page.php:2436 ../udesign_options_page.php:2443
+#: ../udesign_options_page.php:2472 ../udesign_options_page.php:2479
+#: ../udesign_options_page.php:2508 ../udesign_options_page.php:2515
+#: ../udesign_options_page.php:2544 ../udesign_options_page.php:2551
+#: ../udesign_options_page.php:2580 ../udesign_options_page.php:2587
+#: ../udesign_options_page.php:2616 ../udesign_options_page.php:2623
+#: ../udesign_options_page.php:3538
+msgid "center"
+msgstr "centrer"
+
+#: ../udesign_options_page.php:2365 ../udesign_options_page.php:2401
+#: ../udesign_options_page.php:2437 ../udesign_options_page.php:2473
+#: ../udesign_options_page.php:2509 ../udesign_options_page.php:2545
+#: ../udesign_options_page.php:2581 ../udesign_options_page.php:2617
+#: ../udesign_options_page.php:3539
+msgid "left"
+msgstr "venstre"
+
+#: ../udesign_options_page.php:2366 ../udesign_options_page.php:2402
+#: ../udesign_options_page.php:2438 ../udesign_options_page.php:2474
+#: ../udesign_options_page.php:2510 ../udesign_options_page.php:2546
+#: ../udesign_options_page.php:2582 ../udesign_options_page.php:2618
+#: ../udesign_options_page.php:3540
+msgid "right"
+msgstr "højre"
+
+#: ../udesign_options_page.php:2368 ../udesign_options_page.php:2404
+#: ../udesign_options_page.php:2440 ../udesign_options_page.php:2476
+#: ../udesign_options_page.php:2512 ../udesign_options_page.php:2548
+#: ../udesign_options_page.php:2584 ../udesign_options_page.php:2620
+msgid "Vertical:"
+msgstr "Vertikalt:"
+
+#: ../udesign_options_page.php:2370 ../udesign_options_page.php:2406
+#: ../udesign_options_page.php:2442 ../udesign_options_page.php:2478
+#: ../udesign_options_page.php:2514 ../udesign_options_page.php:2550
+#: ../udesign_options_page.php:2586 ../udesign_options_page.php:2622
+msgid "top"
+msgstr "top"
+
+#: ../udesign_options_page.php:2372 ../udesign_options_page.php:2408
+#: ../udesign_options_page.php:2444 ../udesign_options_page.php:2480
+#: ../udesign_options_page.php:2516 ../udesign_options_page.php:2552
+#: ../udesign_options_page.php:2588 ../udesign_options_page.php:2624
 msgid "bottom"
 msgstr "bund"
 
-#: ../udesign_options_page.php:2365
+#: ../udesign_options_page.php:2382
 msgid "Home Page Header/Slider Background Image"
 msgstr "Hjemmside Overskrift/Slider baggrundsbillede"
 
-#: ../udesign_options_page.php:2401
+#: ../udesign_options_page.php:2418
 msgid "Home Page Before Content Background Image"
 msgstr "Hjemmeside Før Indhold Baggrundsbillede"
 
-#: ../udesign_options_page.php:2437
+#: ../udesign_options_page.php:2454
 msgid "Page Title Background Image"
 msgstr "Sidetitel Baggrundsbillede"
 
-#: ../udesign_options_page.php:2473
+#: ../udesign_options_page.php:2490
 msgid "Main Content Background Image"
 msgstr "Hovedindhold Baggrundsbillede"
 
-#: ../udesign_options_page.php:2482 ../udesign_options_page.php:2518
-#: ../udesign_options_page.php:2554 ../udesign_options_page.php:2590
+#: ../udesign_options_page.php:2499 ../udesign_options_page.php:2535
+#: ../udesign_options_page.php:2571 ../udesign_options_page.php:2607
 msgid "Background Properties:"
 msgstr "Baggrundsmuligheder"
 
-#: ../udesign_options_page.php:2509
+#: ../udesign_options_page.php:2526
 msgid "Bottom Area Background Image"
 msgstr "Bundområde Baggrundsbillede"
 
-#: ../udesign_options_page.php:2545
+#: ../udesign_options_page.php:2562
 msgid "Footer Background Image"
 msgstr "Footer Baggrundsbillede"
 
-#: ../udesign_options_page.php:2581
+#: ../udesign_options_page.php:2598
 msgid "One Continuous Background Image That Will Span Across All Sections"
 msgstr "Et Gentagende Baggrundsbillede Der Vil Spænde Over Alle Sektioner"
 
-#: ../udesign_options_page.php:2611
+#: ../udesign_options_page.php:2628
 #, php-format
 msgid "For Background color  %1$sTop Area Background %2$s%3$s  will be used."
 msgstr "For Baggundsfarve vil %1$sTop Area Background %2$s%3$s blive brugt."
 
-#: ../udesign_options_page.php:2613
+#: ../udesign_options_page.php:2630
 msgid "Fixed Position"
 msgstr "Fikseret Position"
 
-#: ../udesign_options_page.php:2616
+#: ../udesign_options_page.php:2633
 msgid "Fix the position of the background image so that it is not scrollable."
 msgstr "Fikser positionen af baggrundsbilledet så billedet ikke kan scrolles."
 
-#: ../udesign_options_page.php:2619
+#: ../udesign_options_page.php:2636
 msgid "Allow Other Sections' Images"
 msgstr "Tillad Andre Sektioners Billeder"
 
-#: ../udesign_options_page.php:2622
+#: ../udesign_options_page.php:2639
 msgid ""
 "Enable background images from other sections to show as well, you can "
 "achieve sort of layered layout."
@@ -2177,18 +2202,18 @@ msgstr ""
 "Aktiver baggrundsbilleder fra andre sektioner som også vises, du kan opnå en "
 "sortering af flere lags layout."
 
-#: ../udesign_options_page.php:2633 ../udesign_options_page.php:2635
+#: ../udesign_options_page.php:2650 ../udesign_options_page.php:2652
 #, fuzzy
 msgid "Remove Horizontal Rulers"
 msgstr "Gentag kun horisontalt"
 
-#: ../udesign_options_page.php:2638
+#: ../udesign_options_page.php:2655
 msgid ""
 "This option will allow you to remove the horizontal ruler lines that are "
 "enabled by default for some sections."
 msgstr ""
 
-#: ../udesign_options_page.php:2640
+#: ../udesign_options_page.php:2657
 #, php-format
 msgid ""
 "Note: If you wish to remove the border line under the top navigation menu, "
@@ -2199,15 +2224,15 @@ msgstr ""
 "muligheden for dette under: %1$s General Options %2$s grænse under Menuen "
 "%3$s"
 
-#: ../udesign_options_page.php:2651
+#: ../udesign_options_page.php:2668
 msgid "Administrative Tasks:"
 msgstr "Administrative Opgaver:"
 
-#: ../udesign_options_page.php:2654
+#: ../udesign_options_page.php:2671
 msgid "Save the current custom colors."
 msgstr "Gem de nuværende skræddersyede farver."
 
-#: ../udesign_options_page.php:2656
+#: ../udesign_options_page.php:2673
 msgid ""
 "A Color Scheme will be saved with an automatic name generated from the "
 "current time stamp. Once saved you will be able to choose it from the "
@@ -2217,11 +2242,11 @@ msgstr ""
 "nuværende tidsstempel. Når du har gemt det, vil du kunne være i stand til at "
 "vælge det fra en dropdownmenu nedenfor og loade det på et senere tidspunkt."
 
-#: ../udesign_options_page.php:2659
+#: ../udesign_options_page.php:2676
 msgid "Save"
 msgstr "Gem"
 
-#: ../udesign_options_page.php:2665
+#: ../udesign_options_page.php:2682
 msgid ""
 "Choose a custom color scheme from the first dropdown below and then choose a "
 "task to perform from the second dropdown, then hit the \"Update\" button."
@@ -2230,103 +2255,103 @@ msgstr ""
 "vælg derefter en opgave som skal udføres fra den anden dropdown, klik "
 "derefter på \"Update\" knappen."
 
-#: ../udesign_options_page.php:2680
+#: ../udesign_options_page.php:2697
 msgid "Note: The \"Default Colors\" cannot be deleted."
 msgstr "Note: De  \"Default Colors\" kan ikke slettes."
 
-#: ../udesign_options_page.php:2700
+#: ../udesign_options_page.php:2717
 msgid "Current Slider"
 msgstr "Nuværende Slider"
 
-#: ../udesign_options_page.php:2702
+#: ../udesign_options_page.php:2719
 msgid "Choose a slider:"
 msgstr "Vælg en slider:"
 
-#: ../udesign_options_page.php:2705
+#: ../udesign_options_page.php:2722
 msgid "Flashmo Grid Slider"
 msgstr "Flashmo Grid Slider"
 
-#: ../udesign_options_page.php:2706
+#: ../udesign_options_page.php:2723
 msgid "Piecemaker"
 msgstr "Piecemaker"
 
-#: ../udesign_options_page.php:2707
+#: ../udesign_options_page.php:2724
 msgid "Piecemaker 2"
 msgstr "Piecemaker 2"
 
-#: ../udesign_options_page.php:2708
+#: ../udesign_options_page.php:2725
 msgid "Cycle 1 (full width image)"
 msgstr "4. Cycle 1 (fuld bredde på billede)"
 
-#: ../udesign_options_page.php:2709
+#: ../udesign_options_page.php:2726
 msgid "Cycle 2 (image with text)"
 msgstr "Cycle 2 (billede med tekst)"
 
-#: ../udesign_options_page.php:2710
+#: ../udesign_options_page.php:2727
 msgid "Cycle 3 (image with sliding text)"
 msgstr "6. Cycle 3 (billede med glidende tekst)"
 
-#: ../udesign_options_page.php:2711 ../udesign_options_page.php:4899
+#: ../udesign_options_page.php:2728 ../udesign_options_page.php:4916
 #, fuzzy
 msgid "Revolution Slider"
 msgstr "Ingen slider"
 
-#: ../udesign_options_page.php:2712
+#: ../udesign_options_page.php:2729
 msgid "No Slider"
 msgstr "Ingen slider"
 
-#: ../udesign_options_page.php:2717
+#: ../udesign_options_page.php:2734
 msgid "Save & Activate"
 msgstr "Gem & Aktiver"
 
-#: ../udesign_options_page.php:2721
+#: ../udesign_options_page.php:2738
 msgid "Continue with the section below to customize the slider..."
 msgstr "Fortsæt med sektionen nedenfor for at skræddersy slideren..."
 
-#: ../udesign_options_page.php:2755
+#: ../udesign_options_page.php:2772
 msgid "Flashmo Grid Slider Settings:"
 msgstr "Flashmo Grid Sliderindstillinger:"
 
-#: ../udesign_options_page.php:2759 ../udesign_options_page.php:2999
-#: ../udesign_options_page.php:3257 ../udesign_options_page.php:5234
+#: ../udesign_options_page.php:2776 ../udesign_options_page.php:3016
+#: ../udesign_options_page.php:3274 ../udesign_options_page.php:5251
 msgid "Image Width"
 msgstr "Billedebredde"
 
-#: ../udesign_options_page.php:2762
+#: ../udesign_options_page.php:2779
 msgid "The width in pixels of the slider images (940 recommended)."
 msgstr "Bredden i pixels på sliderbillederne (940 anbefales)."
 
-#: ../udesign_options_page.php:2766 ../udesign_options_page.php:3006
-#: ../udesign_options_page.php:3264 ../udesign_options_page.php:5241
+#: ../udesign_options_page.php:2783 ../udesign_options_page.php:3023
+#: ../udesign_options_page.php:3281 ../udesign_options_page.php:5258
 msgid "Image Height"
 msgstr "Billedehøjde"
 
-#: ../udesign_options_page.php:2769
+#: ../udesign_options_page.php:2786
 msgid "The height in pixels of the slider images (400 recommended)."
 msgstr "Højden i pixels på sliderbillederne (400 anbefales)."
 
-#: ../udesign_options_page.php:2773
+#: ../udesign_options_page.php:2790
 msgid "Auto Play"
 msgstr "Autoafspil"
 
-#: ../udesign_options_page.php:2776
+#: ../udesign_options_page.php:2793
 msgid "True"
 msgstr "True"
 
-#: ../udesign_options_page.php:2777
+#: ../udesign_options_page.php:2794
 msgid "False"
 msgstr "False"
 
-#: ../udesign_options_page.php:2779
+#: ../udesign_options_page.php:2796
 msgid "Set the auto play option, true by default ( or false )."
 msgstr ""
 "Indstil autoafspilning funktionen, true er grundlæggende ( eller false )."
 
-#: ../udesign_options_page.php:2783
+#: ../udesign_options_page.php:2800
 msgid "Auto Play Duration"
 msgstr "Autoafspilning Varighed"
 
-#: ../udesign_options_page.php:2786
+#: ../udesign_options_page.php:2803
 msgid ""
 "Number of seconds between transitions, 2.4 seconds by default ( or any "
 "number of seconds )."
@@ -2334,11 +2359,11 @@ msgstr ""
 "Antallet af sekunder mellem transitioner, 2.4 sekunder er grundlæggende "
 "( eller ethvert tal af sekunder )."
 
-#: ../udesign_options_page.php:2790
+#: ../udesign_options_page.php:2807
 msgid "Number of Rows"
 msgstr "Antallet af rækker"
 
-#: ../udesign_options_page.php:2793
+#: ../udesign_options_page.php:2810
 msgid ""
 "Number of rows, in which the images will be sliced, 4 rows by default ( or "
 "any number of rows )"
@@ -2346,11 +2371,11 @@ msgstr ""
 "Antallet af rækker i hvilket billedet vil blive delt op i, 4 rækker er "
 "grundlæggende ( eller ethvert antalt af rækker )"
 
-#: ../udesign_options_page.php:2797
+#: ../udesign_options_page.php:2814
 msgid "Number of Columns"
 msgstr "Antallet af kolonner"
 
-#: ../udesign_options_page.php:2800
+#: ../udesign_options_page.php:2817
 msgid ""
 "Number of columns, in which the images will be sliced, 6 columns by default "
 "( or any number of columns )"
@@ -2358,85 +2383,85 @@ msgstr ""
 "Antallet af kolonner i hvilket billede vli blive delt på i, 6 kolonner er "
 "grundlæggende ( eller erhvert antal af kolonner )"
 
-#: ../udesign_options_page.php:2804
+#: ../udesign_options_page.php:2821
 msgid "Tween Duration"
 msgstr "Tween længde"
 
-#: ../udesign_options_page.php:2807
+#: ../udesign_options_page.php:2824
 msgid ""
 "Duration in seconds of the motion tween for each block in the transition."
 msgstr "Varighed i sekunder mellem tweens for hver blok i transitionen."
 
-#: ../udesign_options_page.php:2811 ../udesign_options_page.php:3027
+#: ../udesign_options_page.php:2828 ../udesign_options_page.php:3044
 msgid "Tween Delay"
 msgstr "Tween forsinkelse"
 
-#: ../udesign_options_page.php:2814
+#: ../udesign_options_page.php:2831
 msgid "Delay in seconds between each block in the transition."
 msgstr "Forsinkelse i sekunder mellem hver blok i transitionen."
 
-#: ../udesign_options_page.php:2818
+#: ../udesign_options_page.php:2835
 msgid "Bar Status"
 msgstr "Statusbar"
 
-#: ../udesign_options_page.php:2821
+#: ../udesign_options_page.php:2838
 msgid "Hide the Bar"
 msgstr "Fjern Statusbaren"
 
-#: ../udesign_options_page.php:2822
+#: ../udesign_options_page.php:2839
 msgid "Show the Bar"
 msgstr "Vis Statusbaren"
 
-#: ../udesign_options_page.php:2823
+#: ../udesign_options_page.php:2840
 msgid "Show the Bar and Photo Description"
 msgstr "Vis Statusbaren og Billedebeskrivelsen"
 
-#: ../udesign_options_page.php:2825
+#: ../udesign_options_page.php:2842
 msgid "This is the area in the slider displaying additional controls and text."
 msgstr ""
 "Dette er området i slideren, der viser yderligere kontrolmuligheder og tekst."
 
-#: ../udesign_options_page.php:2829 ../udesign_options_page.php:2831
-#: ../udesign_options_page.php:3118 ../udesign_options_page.php:3120
-#: ../udesign_options_page.php:4182 ../udesign_options_page.php:4184
+#: ../udesign_options_page.php:2846 ../udesign_options_page.php:2848
+#: ../udesign_options_page.php:3135 ../udesign_options_page.php:3137
+#: ../udesign_options_page.php:4199 ../udesign_options_page.php:4201
 msgid "3D Shadow"
 msgstr "3D Skygge"
 
-#: ../udesign_options_page.php:2834 ../udesign_options_page.php:3123
-#: ../udesign_options_page.php:4187
+#: ../udesign_options_page.php:2851 ../udesign_options_page.php:3140
+#: ../udesign_options_page.php:4204
 msgid "Remove the 3D shadow under the slider"
 msgstr "Fjern 3D skyggen under slideren"
 
-#: ../udesign_options_page.php:2854 ../udesign_options_page.php:2906
-#: ../udesign_options_page.php:3172 ../udesign_options_page.php:3199
-#: ../udesign_options_page.php:3717 ../udesign_options_page.php:3749
-#: ../udesign_options_page.php:3768 ../udesign_options_page.php:3817
-#: ../udesign_options_page.php:3861 ../udesign_options_page.php:3892
-#: ../udesign_options_page.php:4480 ../udesign_options_page.php:4563
-#: ../udesign_options_page.php:4764 ../udesign_options_page.php:4813
+#: ../udesign_options_page.php:2871 ../udesign_options_page.php:2923
+#: ../udesign_options_page.php:3189 ../udesign_options_page.php:3216
+#: ../udesign_options_page.php:3734 ../udesign_options_page.php:3766
+#: ../udesign_options_page.php:3785 ../udesign_options_page.php:3834
+#: ../udesign_options_page.php:3878 ../udesign_options_page.php:3909
+#: ../udesign_options_page.php:4497 ../udesign_options_page.php:4580
+#: ../udesign_options_page.php:4781 ../udesign_options_page.php:4830
 msgid "Image:"
 msgstr "Billede:"
 
-#: ../udesign_options_page.php:2860 ../udesign_options_page.php:2912
+#: ../udesign_options_page.php:2877 ../udesign_options_page.php:2929
 msgid "Flow:"
 msgstr "Flow:"
 
-#: ../udesign_options_page.php:2867 ../udesign_options_page.php:2919
+#: ../udesign_options_page.php:2884 ../udesign_options_page.php:2936
 msgid "Direction:"
 msgstr "Retning:"
 
-#: ../udesign_options_page.php:2877 ../udesign_options_page.php:2929
+#: ../udesign_options_page.php:2894 ../udesign_options_page.php:2946
 msgid "Rotation:"
 msgstr "Rotation:"
 
-#: ../udesign_options_page.php:2887 ../udesign_options_page.php:2939
-#: ../udesign_options_page.php:3739 ../udesign_options_page.php:3839
-#: ../udesign_options_page.php:4534 ../udesign_options_page.php:4617
-#: ../udesign_options_page.php:4795 ../udesign_options_page.php:4844
+#: ../udesign_options_page.php:2904 ../udesign_options_page.php:2956
+#: ../udesign_options_page.php:3756 ../udesign_options_page.php:3856
+#: ../udesign_options_page.php:4551 ../udesign_options_page.php:4634
+#: ../udesign_options_page.php:4812 ../udesign_options_page.php:4861
 msgid "Slide text"
 msgstr "Slidertekst"
 
-#: ../udesign_options_page.php:2891 ../udesign_options_page.php:2943
+#: ../udesign_options_page.php:2908 ../udesign_options_page.php:2960
 msgid ""
 "This textfield supports HTML and CSS. The CSS classes used are located in "
 "\"sliders/flashmo/grid_slider/flashmo_224_style.css\""
@@ -2444,17 +2469,17 @@ msgstr ""
 "Dette tekstfelt understøtter HTML og CSS. CSS klasserne som anvendes er "
 "placeret i \"sliders/flashmo/grid_slider/flashmo_224_style.css\""
 
-#: ../udesign_options_page.php:2953 ../udesign_options_page.php:3220
-#: ../udesign_options_page.php:4114
+#: ../udesign_options_page.php:2970 ../udesign_options_page.php:3237
+#: ../udesign_options_page.php:4131
 msgid "No JavaScript image"
 msgstr "Intet JavaScriptbillede"
 
-#: ../udesign_options_page.php:2955 ../udesign_options_page.php:3222
-#: ../udesign_options_page.php:4116
+#: ../udesign_options_page.php:2972 ../udesign_options_page.php:3239
+#: ../udesign_options_page.php:4133
 msgid "Paste the full path to your image:"
 msgstr "Indsæt hele stien til dit billede:"
 
-#: ../udesign_options_page.php:2957
+#: ../udesign_options_page.php:2974
 msgid ""
 "In the case when JavaScript is disabled the 1st slider image is displayed by "
 "default in place of the Flashmo slider, you may change that in here"
@@ -2462,35 +2487,35 @@ msgstr ""
 "I tilfælde, hvor JavaScript er frakoblet vil det første sliderbillede blive "
 "vist i Flashmoslideren, du kan ændre dette herinde"
 
-#: ../udesign_options_page.php:2995
+#: ../udesign_options_page.php:3012
 msgid "Piecemaker Slider Settings:"
 msgstr "Piecemaker Slider indstillinger:"
 
-#: ../udesign_options_page.php:3002
+#: ../udesign_options_page.php:3019
 msgid "The width of the images to be loaded."
 msgstr "Bredden af billede som skal loades."
 
-#: ../udesign_options_page.php:3009
+#: ../udesign_options_page.php:3026
 msgid "The height of the images to be loaded."
 msgstr "Højden af billedet som skal loades."
 
-#: ../udesign_options_page.php:3013
+#: ../udesign_options_page.php:3030
 msgid "Number of segments"
 msgstr "Antal af segmenter"
 
-#: ../udesign_options_page.php:3016
+#: ../udesign_options_page.php:3033
 msgid "Number of segments, in which the images will be sliced."
 msgstr "Antallet af segmenter i hvilket billedet skal deles op i."
 
-#: ../udesign_options_page.php:3020
+#: ../udesign_options_page.php:3037
 msgid "Tween Time"
 msgstr "Tween tid"
 
-#: ../udesign_options_page.php:3023
+#: ../udesign_options_page.php:3040
 msgid "Number of seconds for each element to be turned."
 msgstr "Antallet af sekunder for hvert element skal drejes."
 
-#: ../udesign_options_page.php:3030
+#: ../udesign_options_page.php:3047
 msgid ""
 "Number of seconds from one element starting to turn to the next element "
 "starting."
@@ -2498,11 +2523,11 @@ msgstr ""
 "Antallet at sekunder fra hvor et element starter med at drejer, indtil det "
 "næste element starter."
 
-#: ../udesign_options_page.php:3034
+#: ../udesign_options_page.php:3051
 msgid "Tween Type"
 msgstr "Tween type"
 
-#: ../udesign_options_page.php:3079
+#: ../udesign_options_page.php:3096
 #, php-format
 msgid ""
 "Type of transition from Caurina&#39;s Tweener class. Find all possible "
@@ -2513,11 +2538,11 @@ msgstr ""
 "transitionstype og mere information omkring Tweener i den officielle "
 "%1$sdocumentation%2$s. "
 
-#: ../udesign_options_page.php:3083
+#: ../udesign_options_page.php:3100
 msgid "Z Distance"
 msgstr "Z Distance"
 
-#: ../udesign_options_page.php:3086
+#: ../udesign_options_page.php:3103
 msgid ""
 "To which extent are the cubes moved on z axis when being tweened. Negative "
 "values bring the cube closer to the camera, positive values take it further "
@@ -2527,20 +2552,20 @@ msgstr ""
 "Negative værdier bringer kuberne tætter på kameraet, positive bringe det "
 "længere væk. Et godt interval er groft mellem -200 og 700."
 
-#: ../udesign_options_page.php:3090
+#: ../udesign_options_page.php:3107
 msgid "Expand"
 msgstr "Udvid"
 
-#: ../udesign_options_page.php:3093
+#: ../udesign_options_page.php:3110
 msgid "To which extent are the cubes moved away from each other when tweening."
 msgstr ""
 "I hvilken udstrækning er kuberne, flyttet fra hinanden, når de tweenes."
 
-#: ../udesign_options_page.php:3097
+#: ../udesign_options_page.php:3114
 msgid "Shadow Darkness"
 msgstr "Skyggemørke"
 
-#: ../udesign_options_page.php:3100
+#: ../udesign_options_page.php:3117
 msgid ""
 "To which extent are the sides shadowed, when the elements are tweening and "
 "the sided move towards the background. 100 is black, 0 is no darkening."
@@ -2548,47 +2573,47 @@ msgstr ""
 "I hvilken udstrækning er siderne skygget, når elementer er tweenet og "
 "siderne mødes med baggrunden. 100 er sort. 0 er uden formørkelse."
 
-#: ../udesign_options_page.php:3104 ../udesign_options_page.php:3305
+#: ../udesign_options_page.php:3121 ../udesign_options_page.php:3322
 msgid "Autoplay"
 msgstr "Autoafspilning"
 
-#: ../udesign_options_page.php:3107
+#: ../udesign_options_page.php:3124
 msgid "Number of seconds to the next image."
 msgstr "Antallet af sekunder indtil næste side."
 
-#: ../udesign_options_page.php:3111
+#: ../udesign_options_page.php:3128
 msgid "Text Distance"
 msgstr "Tekstafstand"
 
-#: ../udesign_options_page.php:3114
+#: ../udesign_options_page.php:3131
 msgid "Distance of the info text to the borders of its background."
 msgstr "Afstanden af infoteksten mellem grænserne af dets baggrund."
 
-#: ../udesign_options_page.php:3134
+#: ../udesign_options_page.php:3151
 msgid "Text Background"
 msgstr "Tekst baggrund"
 
-#: ../udesign_options_page.php:3142
+#: ../udesign_options_page.php:3159
 msgid "Description text background"
 msgstr "Beskrivelse tekst baggrund"
 
-#: ../udesign_options_page.php:3146
+#: ../udesign_options_page.php:3163
 msgid "Inner Color"
 msgstr "Indre farve"
 
-#: ../udesign_options_page.php:3154
+#: ../udesign_options_page.php:3171
 msgid "Sides color of the sliced elements"
 msgstr "Sidefarver af de opdelte elementer"
 
-#: ../udesign_options_page.php:3180 ../udesign_options_page.php:3206
+#: ../udesign_options_page.php:3197 ../udesign_options_page.php:3223
 msgid "Edit the info text, erase all for none:"
 msgstr "Ret tekstinfoen, slet alle for ingen:"
 
-#: ../udesign_options_page.php:3184 ../udesign_options_page.php:3210
+#: ../udesign_options_page.php:3201 ../udesign_options_page.php:3227
 msgid "Study the above text for slider's specific syntax"
 msgstr "Inspicer ovenstående tekst for sliderens specifikke syntaks"
 
-#: ../udesign_options_page.php:3224
+#: ../udesign_options_page.php:3241
 msgid ""
 "In the case when JavaScript is disabled the 1st slider image is displayed by "
 "default in place of the Piecemaker slider, you may change that in here"
@@ -2596,27 +2621,27 @@ msgstr ""
 "Hvis JavaScript er frakoblet vil det første sliderbillede grundlæggende "
 "blive vist der hvor Piecemaker slideren er placeret, du kan ændre dette her"
 
-#: ../udesign_options_page.php:3250
+#: ../udesign_options_page.php:3267
 msgid "Piecemaker 2 Slider Settings:"
 msgstr "Piecemaker 2 sliderindstillinger"
 
-#: ../udesign_options_page.php:3253
+#: ../udesign_options_page.php:3270
 msgid "General Settings:"
 msgstr "Generelle Indstillinger:"
 
-#: ../udesign_options_page.php:3260
+#: ../udesign_options_page.php:3277
 msgid "The width of every image."
 msgstr "Bredden af alle billederne."
 
-#: ../udesign_options_page.php:3267
+#: ../udesign_options_page.php:3284
 msgid "The height of every image."
 msgstr "Højde af hvert eneste billede."
 
-#: ../udesign_options_page.php:3276
+#: ../udesign_options_page.php:3293
 msgid "Loader Color"
 msgstr "Loader farve"
 
-#: ../udesign_options_page.php:3284
+#: ../udesign_options_page.php:3301
 msgid ""
 "Color of the cubes before the first image appears, also the color of the "
 "back sides of the cube, which become visible at some transition types."
@@ -2624,15 +2649,15 @@ msgstr ""
 "Farven af kuberne før første billeder kommer frem, også farven af bagsiden "
 "af kuben, som bliver synlig ved nogle transitionstyper."
 
-#: ../udesign_options_page.php:3288
+#: ../udesign_options_page.php:3305
 msgid "Inner Side Color"
 msgstr "Indre Sidefarve"
 
-#: ../udesign_options_page.php:3296
+#: ../udesign_options_page.php:3313
 msgid "Color of the inner sides of the cube when sliced"
 msgstr "Farven af de indre sider af kuben når de deles"
 
-#: ../udesign_options_page.php:3308
+#: ../udesign_options_page.php:3325
 msgid ""
 "Number of seconds from one transition to another, if not stopped. Set to 0 "
 "to disable autoplay."
@@ -2640,11 +2665,11 @@ msgstr ""
 "Antallet af sekunder fra en transistion til en anden, hvis ikke standset. "
 "Indstil til 0 for at frakoble autoafspilning."
 
-#: ../udesign_options_page.php:3312
+#: ../udesign_options_page.php:3329
 msgid "Field of View"
 msgstr "Synsfelt"
 
-#: ../udesign_options_page.php:3315
+#: ../udesign_options_page.php:3332
 #, php-format
 msgid ""
 "The display of the slide object moving down the z axis (1 to 179). It "
@@ -2654,15 +2679,15 @@ msgstr ""
 "ser ud til at skifte hurtigt og flytter sig en stor distance. %1$sMere info"
 "%2$s"
 
-#: ../udesign_options_page.php:3323
+#: ../udesign_options_page.php:3340
 msgid "Shadows:"
 msgstr "Skygger:"
 
-#: ../udesign_options_page.php:3327
+#: ../udesign_options_page.php:3344
 msgid "Side Shadow Alpha"
 msgstr "Side skygge Alpha"
 
-#: ../udesign_options_page.php:3330
+#: ../udesign_options_page.php:3347
 #, php-format
 msgid ""
 "Sides get darker when moved away from the front. This is the degree of "
@@ -2671,27 +2696,27 @@ msgstr ""
 "Siderne bliver mørkere når de flyttes fra fronten. Dette er graden ar "
 "mørkhed 0 = ingen ændring, 1 = 100% sort."
 
-#: ../udesign_options_page.php:3334
+#: ../udesign_options_page.php:3351
 msgid "Drop Shadow Alpha"
 msgstr "Vis Alpha Skygge"
 
-#: ../udesign_options_page.php:3337
+#: ../udesign_options_page.php:3354
 msgid "Alpha of the drop shadow 0 = no shadow, 1 = opaque."
 msgstr "Alpha af den droppede skygge 0 = ingen skygge, 1 = opaque."
 
-#: ../udesign_options_page.php:3341
+#: ../udesign_options_page.php:3358
 msgid "Drop Shadow Distance"
 msgstr "Drop Skygge distance"
 
-#: ../udesign_options_page.php:3344
+#: ../udesign_options_page.php:3361
 msgid "Distance of the shadow from the bottom of the image."
 msgstr "Afstand af skyggen fra bunden af billedet."
 
-#: ../udesign_options_page.php:3348
+#: ../udesign_options_page.php:3365
 msgid "Drop Shadow Scale"
 msgstr "Drop Skyggeskala"
 
-#: ../udesign_options_page.php:3351
+#: ../udesign_options_page.php:3368
 msgid ""
 "As the shadow is blurred, it appears wider that the actual image, when not "
 "resized. Thus it's a good idea to make it slightly smaller. 1 would be no "
@@ -2701,63 +2726,63 @@ msgstr ""
 "billede, når det ikke er omskaleret. Selv om det er en god idé at gøre det "
 "mindre.  1 er ingen omskalering overhovedet."
 
-#: ../udesign_options_page.php:3355
+#: ../udesign_options_page.php:3372
 msgid "Drop Shadow Blur X"
 msgstr "Drop Skygge Utydelig X"
 
-#: ../udesign_options_page.php:3358
+#: ../udesign_options_page.php:3375
 msgid "Blur of the drop shadow on the x-axis."
 msgstr "Utydelighed af den droppede skygge på x-aksen."
 
-#: ../udesign_options_page.php:3362
+#: ../udesign_options_page.php:3379
 msgid "Drop Shadow Blur Y"
 msgstr "Drop Utydelig Skygge Y"
 
-#: ../udesign_options_page.php:3365
+#: ../udesign_options_page.php:3382
 msgid "Blur of the drop shadow on the y-axis."
 msgstr "Utydelighed af den droppede skygge på y-aksen."
 
-#: ../udesign_options_page.php:3373
+#: ../udesign_options_page.php:3390
 msgid "Menu:"
 msgstr "Menu:"
 
-#: ../udesign_options_page.php:3377
+#: ../udesign_options_page.php:3394
 msgid "Menu Distance X"
 msgstr "Menu Afstand X"
 
-#: ../udesign_options_page.php:3380
+#: ../udesign_options_page.php:3397
 msgid "Distance between two menu items (from center to center)."
 msgstr "Afstand mellem to menuemner (fra center til center)."
 
-#: ../udesign_options_page.php:3384
+#: ../udesign_options_page.php:3401
 msgid "Menu Distance Y"
 msgstr "Menuafstand Y"
 
-#: ../udesign_options_page.php:3387
+#: ../udesign_options_page.php:3404
 msgid "Distance of the menu from the bottom of the image."
 msgstr "Afstand fra menuen fra bunden af billedet."
 
-#: ../udesign_options_page.php:3396
+#: ../udesign_options_page.php:3413
 msgid "Menu Color 1"
 msgstr "Menu farve 1"
 
-#: ../udesign_options_page.php:3404
+#: ../udesign_options_page.php:3421
 msgid "Color of an inactive menu item."
 msgstr "Farven af et inaktivt menu-emne."
 
-#: ../udesign_options_page.php:3408
+#: ../udesign_options_page.php:3425
 msgid "Menu Color 2"
 msgstr "Menu farve 2"
 
-#: ../udesign_options_page.php:3416
+#: ../udesign_options_page.php:3433
 msgid "Color of an active menu item."
 msgstr "Farven af et aktivt menu emne."
 
-#: ../udesign_options_page.php:3420
+#: ../udesign_options_page.php:3437
 msgid "Menu Color 3"
 msgstr "Menufarve 3"
 
-#: ../udesign_options_page.php:3428
+#: ../udesign_options_page.php:3445
 msgid ""
 "Color of the inner circle of an active menu item. Should equal the "
 "background color of the whole thing."
@@ -2765,76 +2790,76 @@ msgstr ""
 "Farven af den indre cirkel på et aktivt menuemne. Bør være ækvivalent med "
 "baggrundssfarven af hele emnet."
 
-#: ../udesign_options_page.php:3436
+#: ../udesign_options_page.php:3453
 msgid "Controls:"
 msgstr "Styring:"
 
-#: ../udesign_options_page.php:3440
+#: ../udesign_options_page.php:3457
 msgid "Controls' Size"
 msgstr "Kontrollers Størrelse"
 
-#: ../udesign_options_page.php:3443
+#: ../udesign_options_page.php:3460
 msgid ""
 "Size of the controls, which appear on rollover (play, stop, info, link)."
 msgstr ""
 "Størrelsen af kontrollerne, som ses ved omrulning (afspil, stop, info, link)."
 
-#: ../udesign_options_page.php:3447
+#: ../udesign_options_page.php:3464
 msgid "Controls' Distance"
 msgstr "Kontrollernes Afstand"
 
-#: ../udesign_options_page.php:3450
+#: ../udesign_options_page.php:3467
 msgid "Distance between the controls (from the borders)."
 msgstr "Afstand mellem kontrollerne (fra grænserne)."
 
-#: ../udesign_options_page.php:3459
+#: ../udesign_options_page.php:3476
 msgid "Control Color 1"
 msgstr "Kontrol Farve 1"
 
-#: ../udesign_options_page.php:3467
+#: ../udesign_options_page.php:3484
 msgid "Background color of the controls."
 msgstr "Baggrundsfarve af kontrollerne."
 
-#: ../udesign_options_page.php:3471
+#: ../udesign_options_page.php:3488
 msgid "Control Color 2"
 msgstr "Kontrol farve 2"
 
-#: ../udesign_options_page.php:3479
+#: ../udesign_options_page.php:3496
 msgid "Font color of the controls."
 msgstr "Font farve på kontrollerne."
 
-#: ../udesign_options_page.php:3488
+#: ../udesign_options_page.php:3505
 msgid "Control Alpha"
 msgstr "Kontrol Alpha"
 
-#: ../udesign_options_page.php:3491
+#: ../udesign_options_page.php:3508
 msgid "Alpha of a control, when mouse is not over."
 msgstr "Alpha af en kontrol, når musen ikke er over den."
 
-#: ../udesign_options_page.php:3495
+#: ../udesign_options_page.php:3512
 msgid "Control Alpha Over"
 msgstr "Kontrol Alpha Over"
 
-#: ../udesign_options_page.php:3498
+#: ../udesign_options_page.php:3515
 msgid "Alpha of a control, when mouse is over."
 msgstr "Alpha af en kontrol, når musen er henne over."
 
-#: ../udesign_options_page.php:3502
+#: ../udesign_options_page.php:3519
 msgid "Controls X"
 msgstr "Kontrol X"
 
-#: ../udesign_options_page.php:3505
+#: ../udesign_options_page.php:3522
 msgid ""
 "X-position of the point, which aligns the controls (measured from [0,0] of "
 "the image)."
 msgstr ""
 "X-position af et punkt som aligner kontrollerne (målt fra [0,0] af billedet)."
 
-#: ../udesign_options_page.php:3509
+#: ../udesign_options_page.php:3526
 msgid "Controls Y"
 msgstr "Kontrol Y"
 
-#: ../udesign_options_page.php:3512
+#: ../udesign_options_page.php:3529
 msgid ""
 "Y-position of the point, which aligns the controls (measured from [0,0] of "
 "the image)."
@@ -2842,15 +2867,15 @@ msgstr ""
 "Y-position af et punkt, som aligner kontrollerne (målt fra [0,0] af "
 "billedet)."
 
-#: ../udesign_options_page.php:3516
+#: ../udesign_options_page.php:3533
 msgid "Controls' Alignment"
 msgstr "Kontrollernes Opretning"
 
-#: ../udesign_options_page.php:3519 ../udesign_options_page.php:5263
+#: ../udesign_options_page.php:3536 ../udesign_options_page.php:5280
 msgid "Choose Alignment: "
 msgstr "Vælg Alignment:"
 
-#: ../udesign_options_page.php:3526
+#: ../udesign_options_page.php:3543
 msgid ""
 "Type of alignment from the point [controlsX, controlsY] - can be \"center\", "
 "\"left\" or \"right\"."
@@ -2858,39 +2883,39 @@ msgstr ""
 "Alignment type fra punktet [kontrolX, kontrolY - kan være \"center\", "
 "\"venstre\" eller \"højre\"."
 
-#: ../udesign_options_page.php:3534
+#: ../udesign_options_page.php:3551
 msgid "Toolstips:"
 msgstr "Værktøjstips:"
 
-#: ../udesign_options_page.php:3538
+#: ../udesign_options_page.php:3555
 msgid "Tooltip Height"
 msgstr "Værktøjstips Højde"
 
-#: ../udesign_options_page.php:3541
+#: ../udesign_options_page.php:3558
 msgid "Height of the tooltip surface in the menu."
 msgstr "Højde af værktøjs tippet´s overflade i menuen."
 
-#: ../udesign_options_page.php:3550
+#: ../udesign_options_page.php:3567
 msgid "Tooltip Color"
 msgstr "Værktøjstipsfarve"
 
-#: ../udesign_options_page.php:3558
+#: ../udesign_options_page.php:3575
 msgid "Color of the tooltip surface in the menu."
 msgstr "Farven af dette værktøjstip i menuen."
 
-#: ../udesign_options_page.php:3567
+#: ../udesign_options_page.php:3584
 msgid "Tooltip Text Y"
 msgstr "Værktøjstip tekst Y"
 
-#: ../udesign_options_page.php:3570
+#: ../udesign_options_page.php:3587
 msgid "Y-distance of the tooltip text field from the top of the tooltip."
 msgstr "Y-distancen af værktøjstipfeltet fra toppen af værktøjstippet."
 
-#: ../udesign_options_page.php:3574
+#: ../udesign_options_page.php:3591
 msgid "Tooltip Text Style"
 msgstr "Værktøjstips Tekst stil"
 
-#: ../udesign_options_page.php:3577
+#: ../udesign_options_page.php:3594
 msgid ""
 "The style of the tooltip text, specified in the CSS file. Default: \"P-Italic"
 "\""
@@ -2898,73 +2923,73 @@ msgstr ""
 "Stilen af værktøjstipet, specificeret i CSS filen. Grundlæggende: \"P-Italic"
 "\""
 
-#: ../udesign_options_page.php:3586
+#: ../udesign_options_page.php:3603
 msgid "Tooltip Text Color"
 msgstr "Værktøjstip Tekst farve"
 
-#: ../udesign_options_page.php:3594
+#: ../udesign_options_page.php:3611
 msgid "Color of the tooltip text."
 msgstr "Farven af værktøjstippets tekst"
 
-#: ../udesign_options_page.php:3603
+#: ../udesign_options_page.php:3620
 msgid "Tooltip Margin Left"
 msgstr "Værktøjstips Venstremargen"
 
-#: ../udesign_options_page.php:3606
+#: ../udesign_options_page.php:3623
 msgid "Margin of the text to the left end of the tooltip."
 msgstr "Margen af teksten til venstre for værktøjstippet."
 
-#: ../udesign_options_page.php:3610
+#: ../udesign_options_page.php:3627
 msgid "Tooltip Margin Right"
 msgstr "Værktøjstip Højre margen"
 
-#: ../udesign_options_page.php:3613
+#: ../udesign_options_page.php:3630
 msgid "Margin of the text to the right end of the tooltip."
 msgstr "Margen af teksten fra højre til enden af værktøjstippet."
 
-#: ../udesign_options_page.php:3617
+#: ../udesign_options_page.php:3634
 msgid "Tooltip Text Sharpness"
 msgstr "Værktøjstips Tekstskarphed"
 
-#: ../udesign_options_page.php:3620
+#: ../udesign_options_page.php:3637
 #, php-format
 msgid "Sharpness of the tooltip text (-400 to 400). %1$sMore info%2$s"
 msgstr "Skarphed af værktøjstippet (-400 til 400). %1$sMere info%2$s"
 
-#: ../udesign_options_page.php:3624
+#: ../udesign_options_page.php:3641
 msgid "Tooltip Text Thickness"
 msgstr "Værktøjstips Teksttykhed"
 
-#: ../udesign_options_page.php:3627
+#: ../udesign_options_page.php:3644
 #, php-format
 msgid "Thickness of the tooltip text (-400 to 400). %1$sMore info%2$s"
 msgstr "Tykheden af værktøjstippettekst (-400 til 400). %1$sMere info%2$s"
 
-#: ../udesign_options_page.php:3635
+#: ../udesign_options_page.php:3652
 msgid "Info Text:"
 msgstr "Infotekst:"
 
-#: ../udesign_options_page.php:3639
+#: ../udesign_options_page.php:3656
 msgid "Info Width"
 msgstr "Infobredde"
 
-#: ../udesign_options_page.php:3642
+#: ../udesign_options_page.php:3659
 msgid "The width of the info text field."
 msgstr "Bredden af infotekstfeltet"
 
-#: ../udesign_options_page.php:3651
+#: ../udesign_options_page.php:3668
 msgid "Info Background"
 msgstr "Infobaggrund"
 
-#: ../udesign_options_page.php:3659
+#: ../udesign_options_page.php:3676
 msgid "The background color of the info text field."
 msgstr "Baggrundsfarven i infotekstfeltet."
 
-#: ../udesign_options_page.php:3668
+#: ../udesign_options_page.php:3685
 msgid "Info Background Alpha"
 msgstr "Info Baggrundsalpha"
 
-#: ../udesign_options_page.php:3671
+#: ../udesign_options_page.php:3688
 msgid ""
 "The alpha of the background of the info text, the image shines through, when "
 "smaller than 1."
@@ -2972,95 +2997,95 @@ msgstr ""
 "Alphabaggrunden af infoteksten, billederne skinner igennem, når det er "
 "mindre end 1."
 
-#: ../udesign_options_page.php:3675
+#: ../udesign_options_page.php:3692
 msgid "Info Margin"
 msgstr "Infomargen"
 
-#: ../udesign_options_page.php:3678
+#: ../udesign_options_page.php:3695
 msgid "The margin of the text field in the info section to all sides."
 msgstr "Margenen af tekstfeltet i infosektionen til alle sider."
 
-#: ../udesign_options_page.php:3682
+#: ../udesign_options_page.php:3699
 msgid "Info Sharpness"
 msgstr "Infoskarphed"
 
-#: ../udesign_options_page.php:3685
+#: ../udesign_options_page.php:3702
 msgid "Sharpness of the info text (-400 to 400)."
 msgstr "Skarphed af infoteksten (-400 til 400)."
 
-#: ../udesign_options_page.php:3689
+#: ../udesign_options_page.php:3706
 msgid "Info Thickness"
 msgstr "Infotykhed"
 
-#: ../udesign_options_page.php:3692
+#: ../udesign_options_page.php:3709
 msgid "Thickness of the info text (-400 to 400)."
 msgstr "Tykheden af infoteksten (-400 til 400)."
 
-#: ../udesign_options_page.php:3701
+#: ../udesign_options_page.php:3718
 msgid "Piecemaker 2 Slides:"
 msgstr "Piecemaker 2 Slides:"
 
-#: ../udesign_options_page.php:3724 ../udesign_options_page.php:3824
+#: ../udesign_options_page.php:3741 ../udesign_options_page.php:3841
 #: ../widgets/customCategory-widget.php:129
 #: ../widgets/googleMap-widget.php:101 ../widgets/latestPost-widget.php:146
 #: ../widgets/loginForm-widget.php:134 ../widgets/subpages-widget.php:119
 msgid "Title:"
 msgstr "Titel:"
 
-#: ../udesign_options_page.php:3728 ../udesign_options_page.php:3828
-#: ../udesign_options_page.php:4247 ../udesign_options_page.php:4315
-#: ../udesign_options_page.php:4519 ../udesign_options_page.php:4602
+#: ../udesign_options_page.php:3745 ../udesign_options_page.php:3845
+#: ../udesign_options_page.php:4264 ../udesign_options_page.php:4332
+#: ../udesign_options_page.php:4536 ../udesign_options_page.php:4619
 msgid "Link:"
 msgstr "Link:"
 
-#: ../udesign_options_page.php:3731 ../udesign_options_page.php:3831
-#: ../udesign_options_page.php:4250 ../udesign_options_page.php:4318
-#: ../udesign_options_page.php:4522 ../udesign_options_page.php:4605
-#: ../udesign_options_page.php:4774 ../udesign_options_page.php:4823
+#: ../udesign_options_page.php:3748 ../udesign_options_page.php:3848
+#: ../udesign_options_page.php:4267 ../udesign_options_page.php:4335
+#: ../udesign_options_page.php:4539 ../udesign_options_page.php:4622
+#: ../udesign_options_page.php:4791 ../udesign_options_page.php:4840
 msgid "Target: "
 msgstr "Mål:"
 
-#: ../udesign_options_page.php:3733 ../udesign_options_page.php:3833
-#: ../udesign_options_page.php:4252 ../udesign_options_page.php:4320
-#: ../udesign_options_page.php:4524 ../udesign_options_page.php:4607
-#: ../udesign_options_page.php:4776 ../udesign_options_page.php:4825
+#: ../udesign_options_page.php:3750 ../udesign_options_page.php:3850
+#: ../udesign_options_page.php:4269 ../udesign_options_page.php:4337
+#: ../udesign_options_page.php:4541 ../udesign_options_page.php:4624
+#: ../udesign_options_page.php:4793 ../udesign_options_page.php:4842
 msgid "self"
 msgstr "selv"
 
-#: ../udesign_options_page.php:3734 ../udesign_options_page.php:3834
-#: ../udesign_options_page.php:4253 ../udesign_options_page.php:4321
-#: ../udesign_options_page.php:4525 ../udesign_options_page.php:4608
-#: ../udesign_options_page.php:4777 ../udesign_options_page.php:4826
+#: ../udesign_options_page.php:3751 ../udesign_options_page.php:3851
+#: ../udesign_options_page.php:4270 ../udesign_options_page.php:4338
+#: ../udesign_options_page.php:4542 ../udesign_options_page.php:4625
+#: ../udesign_options_page.php:4794 ../udesign_options_page.php:4843
 msgid "blank"
 msgstr "blank"
 
-#: ../udesign_options_page.php:3744 ../udesign_options_page.php:3844
+#: ../udesign_options_page.php:3761 ../udesign_options_page.php:3861
 msgid "To remove the text just leave a single space."
 msgstr "For at fjerne teksten, efterlad bare et enkelt mellemrum."
 
-#: ../udesign_options_page.php:3756 ../udesign_options_page.php:3775
-#: ../udesign_options_page.php:3868 ../udesign_options_page.php:3899
+#: ../udesign_options_page.php:3773 ../udesign_options_page.php:3792
+#: ../udesign_options_page.php:3885 ../udesign_options_page.php:3916
 msgid "Title Attribute:"
 msgstr "Titelattribut:"
 
-#: ../udesign_options_page.php:3758 ../udesign_options_page.php:3777
-#: ../udesign_options_page.php:3870 ../udesign_options_page.php:3901
+#: ../udesign_options_page.php:3775 ../udesign_options_page.php:3794
+#: ../udesign_options_page.php:3887 ../udesign_options_page.php:3918
 msgid "(The title attribute will be shown in the tooltip on the menu)"
 msgstr "(Titelattributen vil blive vist i værktøjstippet i menuen)"
 
-#: ../udesign_options_page.php:3761 ../udesign_options_page.php:3873
+#: ../udesign_options_page.php:3778 ../udesign_options_page.php:3890
 msgid "SWF Link:"
 msgstr "SWF Link:"
 
-#: ../udesign_options_page.php:3763 ../udesign_options_page.php:3875
+#: ../udesign_options_page.php:3780 ../udesign_options_page.php:3892
 msgid "(Paste the URL to the SWF file here. Should be on same Server)"
 msgstr "(Copy Paste URL til SWF filen her. Skal være det samme som på server)"
 
-#: ../udesign_options_page.php:3780 ../udesign_options_page.php:3904
+#: ../udesign_options_page.php:3797 ../udesign_options_page.php:3921
 msgid "Video Link:"
 msgstr "Videolink:"
 
-#: ../udesign_options_page.php:3782
+#: ../udesign_options_page.php:3799
 msgid ""
 "(Paste the URL to the video file here. Should be on same Server. Accepted "
 "file formats are MPEG4 with H.264 Codec, as well as F4V and FLV)"
@@ -3068,27 +3093,27 @@ msgstr ""
 "(Copy Paste URL til videofilen her. Skal være den samme som på server. "
 "Accepterer formater er MPEG4 med H.264 Codex såvel som F4V og FLV)"
 
-#: ../udesign_options_page.php:3785 ../udesign_options_page.php:3909
+#: ../udesign_options_page.php:3802 ../udesign_options_page.php:3926
 msgid "Width:"
 msgstr "Bredde:"
 
-#: ../udesign_options_page.php:3789 ../udesign_options_page.php:3913
+#: ../udesign_options_page.php:3806 ../udesign_options_page.php:3930
 msgid "Height:"
 msgstr "Højde:"
 
-#: ../udesign_options_page.php:3794 ../udesign_options_page.php:3918
+#: ../udesign_options_page.php:3811 ../udesign_options_page.php:3935
 msgid "Autoplay: "
 msgstr "Autoafspilning:"
 
-#: ../udesign_options_page.php:3796 ../udesign_options_page.php:3920
+#: ../udesign_options_page.php:3813 ../udesign_options_page.php:3937
 msgid "Yes"
 msgstr "Ja"
 
-#: ../udesign_options_page.php:3797 ../udesign_options_page.php:3921
+#: ../udesign_options_page.php:3814 ../udesign_options_page.php:3938
 msgid "No"
 msgstr "Nej"
 
-#: ../udesign_options_page.php:3906
+#: ../udesign_options_page.php:3923
 msgid ""
 "(Paste the URL to the FLV file here. Should be on same Server. Accepted file "
 "formats are MPEG4 with H.264 Codec, as well as F4V and FLV)"
@@ -3096,11 +3121,11 @@ msgstr ""
 "(Copy Paste URL til FLV filen he. Skal være den samme som på server. "
 "Accepterede formater er MPEG4 med H.264 Codes såvel som F4V og FLV)"
 
-#: ../udesign_options_page.php:3932
+#: ../udesign_options_page.php:3949
 msgid "Piecemaker 2 Transitions:"
 msgstr "Piecemaker 2 Transitioner:"
 
-#: ../udesign_options_page.php:3933
+#: ../udesign_options_page.php:3950
 msgid ""
 "You can add as many transitions to the Piecemaker 2 as you want. These "
 "transitions will be started in the order they are specified below. This "
@@ -3112,32 +3137,32 @@ msgstr ""
 "Denne ordre er helt uafhængig af rækkefølgen af dias. Når den sidste "
 "overgang er nået, starter det forfra med den første overgang."
 
-#: ../udesign_options_page.php:3934
+#: ../udesign_options_page.php:3951
 msgid ""
 "Every transition needs to have the following six attributes assigned to it:"
 msgstr "Hver overgang skal have følgende seks egenskaber knyttet til sig."
 
-#: ../udesign_options_page.php:3936
+#: ../udesign_options_page.php:3953
 msgid "Pieces"
 msgstr "Dele"
 
-#: ../udesign_options_page.php:3936
+#: ../udesign_options_page.php:3953
 msgid "Number of pieces to which the image is sliced."
 msgstr "Antallet af segmenter, i hvilket billedet skal deles op i."
 
-#: ../udesign_options_page.php:3937
+#: ../udesign_options_page.php:3954
 msgid "Time"
 msgstr "Tid"
 
-#: ../udesign_options_page.php:3937
+#: ../udesign_options_page.php:3954
 msgid "Time for one cube to turn."
 msgstr "Tiden der bruges for kuben til at genemføre en omdrejning af sin akse."
 
-#: ../udesign_options_page.php:3938
+#: ../udesign_options_page.php:3955
 msgid "Transition"
 msgstr "Transition"
 
-#: ../udesign_options_page.php:3938
+#: ../udesign_options_page.php:3955
 msgid ""
 "Transition type of the Tweener class. For more info on these types see the "
 "official Tweener Documentation and go to \"Transition Types\". The best "
@@ -3148,21 +3173,21 @@ msgstr ""
 "resultater opnås ved disse overgangsperioder typer, der begynder med "
 "easeInOut."
 
-#: ../udesign_options_page.php:3939
+#: ../udesign_options_page.php:3956
 msgid "Delay"
 msgstr "Forsinkelse"
 
-#: ../udesign_options_page.php:3939
+#: ../udesign_options_page.php:3956
 msgid "Delay between the start of one cube to the start of the next cube."
 msgstr ""
 "Forsinkelse mellem begyndelsen af en terning til begyndelsen af den næste "
 "kasse."
 
-#: ../udesign_options_page.php:3940
+#: ../udesign_options_page.php:3957
 msgid "Depth Offset"
 msgstr "Dybde Offset"
 
-#: ../udesign_options_page.php:3940
+#: ../udesign_options_page.php:3957
 msgid ""
 "The offset during transition on the z-axis. Value between 100 and 1000 are "
 "recommended. But go for experiments."
@@ -3170,11 +3195,11 @@ msgstr ""
 "Forskydningen ved overgang på z-aksen. Værdi mellem 100 og 1000 anbefales. "
 "Men prøv dig frem."
 
-#: ../udesign_options_page.php:3941
+#: ../udesign_options_page.php:3958
 msgid "Cube Distance"
 msgstr "Kubeafstand"
 
-#: ../udesign_options_page.php:3941
+#: ../udesign_options_page.php:3958
 msgid ""
 "The distance between the cubes during transition. Values between 5 and 50 "
 "are recommended. But go for experiments."
@@ -3182,31 +3207,31 @@ msgstr ""
 "Mellemrummet mellem Kuberne ved transion. Værdi mellem 5 og 50 er anbefalet. "
 "Men prøv dig frem"
 
-#: ../udesign_options_page.php:3956 ../udesign_options_page.php:4036
+#: ../udesign_options_page.php:3973 ../udesign_options_page.php:4053
 msgid "Pieces:"
 msgstr "Pieces:"
 
-#: ../udesign_options_page.php:3960 ../udesign_options_page.php:4040
+#: ../udesign_options_page.php:3977 ../udesign_options_page.php:4057
 msgid "Time:"
 msgstr "Tid:"
 
-#: ../udesign_options_page.php:3965 ../udesign_options_page.php:4045
+#: ../udesign_options_page.php:3982 ../udesign_options_page.php:4062
 msgid "Transition: "
 msgstr "Transition:"
 
-#: ../udesign_options_page.php:4012 ../udesign_options_page.php:4092
+#: ../udesign_options_page.php:4029 ../udesign_options_page.php:4109
 msgid "Delay:"
 msgstr "Forsinkelse:"
 
-#: ../udesign_options_page.php:4016 ../udesign_options_page.php:4096
+#: ../udesign_options_page.php:4033 ../udesign_options_page.php:4113
 msgid "Depth Offset:"
 msgstr "Dybde Offset:"
 
-#: ../udesign_options_page.php:4020 ../udesign_options_page.php:4100
+#: ../udesign_options_page.php:4037 ../udesign_options_page.php:4117
 msgid "Cube Distance:"
 msgstr "Kubeafstand:"
 
-#: ../udesign_options_page.php:4118
+#: ../udesign_options_page.php:4135
 msgid ""
 "In the case when JavaScript is disabled the 1st slider image is displayed by "
 "default in place of the Piecemaker 2 slider, you may change that in here"
@@ -3214,34 +3239,34 @@ msgstr ""
 "Hvis JavaScript er udkoblet vil det første sliderbillede grundlæggende blive "
 "vist i Piecemaker 2 slideren, du kan ændre dette herinde"
 
-#: ../udesign_options_page.php:4141
+#: ../udesign_options_page.php:4158
 msgid "Cycle 1 Slider Settings:"
 msgstr "Cyklus 1 sliderindstillinger:"
 
-#: ../udesign_options_page.php:4145 ../udesign_options_page.php:4357
+#: ../udesign_options_page.php:4162 ../udesign_options_page.php:4374
 msgid "Transition Speed"
 msgstr "Transitionhastighed"
 
-#: ../udesign_options_page.php:4148 ../udesign_options_page.php:4360
+#: ../udesign_options_page.php:4165 ../udesign_options_page.php:4377
 msgid "Speed of the transition."
 msgstr "Hastighed af transitionen."
 
-#: ../udesign_options_page.php:4152 ../udesign_options_page.php:4364
-#: ../udesign_options_page.php:4659
+#: ../udesign_options_page.php:4169 ../udesign_options_page.php:4381
+#: ../udesign_options_page.php:4676
 msgid "Timeout"
 msgstr "Timeout"
 
-#: ../udesign_options_page.php:4155 ../udesign_options_page.php:4367
-#: ../udesign_options_page.php:4662
+#: ../udesign_options_page.php:4172 ../udesign_options_page.php:4384
+#: ../udesign_options_page.php:4679
 msgid "Milliseconds between slide transitions (0 to disable auto advance)."
 msgstr "Milisekunder mellem transitionerne (0 for at udkoble autoforspring)."
 
-#: ../udesign_options_page.php:4159 ../udesign_options_page.php:4161
-#: ../udesign_options_page.php:4371 ../udesign_options_page.php:4373
+#: ../udesign_options_page.php:4176 ../udesign_options_page.php:4178
+#: ../udesign_options_page.php:4388 ../udesign_options_page.php:4390
 msgid "Sync"
 msgstr "Synkroniser"
 
-#: ../udesign_options_page.php:4164 ../udesign_options_page.php:4376
+#: ../udesign_options_page.php:4181 ../udesign_options_page.php:4393
 msgid ""
 "Toggle this option to see how some effects behave differently (such as "
 "blind, curtain, and zoom)."
@@ -3249,15 +3274,15 @@ msgstr ""
 "Toggle denne option for at se, hvordan visse effekter opfører sig "
 "forskelligt (såsom blind, gardin og zoom)."
 
-#: ../udesign_options_page.php:4170 ../udesign_options_page.php:4172
+#: ../udesign_options_page.php:4187 ../udesign_options_page.php:4189
 msgid "Image Frame"
 msgstr "Billederamme"
 
-#: ../udesign_options_page.php:4175
+#: ../udesign_options_page.php:4192
 msgid "Remove the image frame with the border around the image?"
 msgstr "Fjern billederammen med grænsen rundt om billedet?"
 
-#: ../udesign_options_page.php:4176
+#: ../udesign_options_page.php:4193
 msgid ""
 "With the frame enabled (default state) image dimension is 914px by 374px "
 "(width by height). Without the frame image dimension is 940px by 400px. "
@@ -3269,31 +3294,31 @@ msgstr ""
 "gange 400px. Afhængigt af hvilken option, der er valgt, kan du skabe og "
 "uploade billeder med korresponderende dimensioner for optimal kvalitet."
 
-#: ../udesign_options_page.php:4244 ../udesign_options_page.php:4312
+#: ../udesign_options_page.php:4261 ../udesign_options_page.php:4329
 msgid "Transition effect."
 msgstr "Transitionseffekt."
 
-#: ../udesign_options_page.php:4257 ../udesign_options_page.php:4325
-#: ../udesign_options_page.php:4529 ../udesign_options_page.php:4612
-#: ../udesign_options_page.php:4781 ../udesign_options_page.php:4830
+#: ../udesign_options_page.php:4274 ../udesign_options_page.php:4342
+#: ../udesign_options_page.php:4546 ../udesign_options_page.php:4629
+#: ../udesign_options_page.php:4798 ../udesign_options_page.php:4847
 msgid "Alt Tag:"
 msgstr "Alternativt Tag:"
 
-#: ../udesign_options_page.php:4260 ../udesign_options_page.php:4328
-#: ../udesign_options_page.php:4784 ../udesign_options_page.php:4833
+#: ../udesign_options_page.php:4277 ../udesign_options_page.php:4345
+#: ../udesign_options_page.php:4801 ../udesign_options_page.php:4850
 msgid "(To clear a text field above, replace it with a single space)"
 msgstr ""
 "(For at rense et tekstfelt ovenfor, byt det ud med et enkelt mellemrum)"
 
-#: ../udesign_options_page.php:4353
+#: ../udesign_options_page.php:4370
 msgid "Cycle 2 Slider Settings:"
 msgstr "Cyklus 2 Sliderindstillinger:"
 
-#: ../udesign_options_page.php:4382 ../udesign_options_page.php:4384
+#: ../udesign_options_page.php:4399 ../udesign_options_page.php:4401
 msgid "Enable Transition on Text"
 msgstr "Aktiver Transition på tekst"
 
-#: ../udesign_options_page.php:4387
+#: ../udesign_options_page.php:4404
 msgid ""
 "Toggle this option to enable/disable the transition effect on the info text. "
 "If disabled (unchecked) then the text will disapear for the duration of the "
@@ -3303,55 +3328,55 @@ msgstr ""
 "infoteksten. Hvis udkoblet (umarkeret) vil teksten forsvinde efter længden "
 "af transitionen."
 
-#: ../udesign_options_page.php:4393 ../udesign_options_page.php:4677
+#: ../udesign_options_page.php:4410 ../udesign_options_page.php:4694
 msgid "Text Size"
 msgstr "Tekststørrelse"
 
-#: ../udesign_options_page.php:4412 ../udesign_options_page.php:4696
+#: ../udesign_options_page.php:4429 ../udesign_options_page.php:4713
 msgid ""
 "When using \"em\" you are specifying size relative to the general font size."
 msgstr ""
 "Når du bruger \"em\" specificerer du størrelse relativ til den generelle "
 "fontstørrelse. "
 
-#: ../udesign_options_page.php:4416 ../udesign_options_page.php:4700
+#: ../udesign_options_page.php:4433 ../udesign_options_page.php:4717
 msgid "Text Line Height"
 msgstr "Tekstlinje Højde"
 
-#: ../udesign_options_page.php:4419 ../udesign_options_page.php:4703
+#: ../udesign_options_page.php:4436 ../udesign_options_page.php:4720
 msgid "Line Height: "
 msgstr "Linjehøjde:"
 
-#: ../udesign_options_page.php:4461
+#: ../udesign_options_page.php:4478
 msgid "Slider text color including the Title."
 msgstr "Slidertekstfarve, titlen inkluderet."
 
-#: ../udesign_options_page.php:4486 ../udesign_options_page.php:4569
+#: ../udesign_options_page.php:4503 ../udesign_options_page.php:4586
 msgid "Transition:"
 msgstr "Transition:"
 
-#: ../udesign_options_page.php:4534 ../udesign_options_page.php:4617
-#: ../udesign_options_page.php:4795 ../udesign_options_page.php:4844
+#: ../udesign_options_page.php:4551 ../udesign_options_page.php:4634
+#: ../udesign_options_page.php:4812 ../udesign_options_page.php:4861
 msgid "(You could use text and/or html)"
 msgstr "(Du kan bruge tekst og/eller html)"
 
-#: ../udesign_options_page.php:4540 ../udesign_options_page.php:4623
+#: ../udesign_options_page.php:4557 ../udesign_options_page.php:4640
 msgid "Button Text:"
 msgstr "Knaptekst:"
 
-#: ../udesign_options_page.php:4542 ../udesign_options_page.php:4625
+#: ../udesign_options_page.php:4559 ../udesign_options_page.php:4642
 msgid "Button Style: "
 msgstr "Knapstil:"
 
-#: ../udesign_options_page.php:4544 ../udesign_options_page.php:4627
+#: ../udesign_options_page.php:4561 ../udesign_options_page.php:4644
 msgid "Dark"
 msgstr "Mørk"
 
-#: ../udesign_options_page.php:4545 ../udesign_options_page.php:4628
+#: ../udesign_options_page.php:4562 ../udesign_options_page.php:4645
 msgid "Light"
 msgstr "Lys"
 
-#: ../udesign_options_page.php:4548 ../udesign_options_page.php:4631
+#: ../udesign_options_page.php:4565 ../udesign_options_page.php:4648
 msgid ""
 "The button is activated only if a <strong>Link</strong> is provided. To "
 "remove the button just replace the link with a single space."
@@ -3359,44 +3384,44 @@ msgstr ""
 "Knappen er kun aktiveret hvis et <strong>Link</strong> er angivet. For at "
 "fjerne denne knap, skal du bare bytte linket ud med et enkelt mellemrum."
 
-#: ../udesign_options_page.php:4655
+#: ../udesign_options_page.php:4672
 msgid "Cycle 3 Slider Settings:"
 msgstr "Cyklus 2 Sliderindstillinger:"
 
-#: ../udesign_options_page.php:4666 ../udesign_options_page.php:4668
+#: ../udesign_options_page.php:4683 ../udesign_options_page.php:4685
 msgid "Autostop"
 msgstr "Autostop"
 
-#: ../udesign_options_page.php:4671
+#: ../udesign_options_page.php:4688
 msgid "End slideshow after the last slide."
 msgstr "Afslut slideshow efter det sidste slide."
 
-#: ../udesign_options_page.php:4745
+#: ../udesign_options_page.php:4762
 msgid "Slider text color."
 msgstr "Slider tekstfarve."
 
-#: ../udesign_options_page.php:4771 ../udesign_options_page.php:4820
+#: ../udesign_options_page.php:4788 ../udesign_options_page.php:4837
 msgid "Image Link:"
 msgstr "Billedelink:"
 
-#: ../udesign_options_page.php:4788 ../udesign_options_page.php:4837
+#: ../udesign_options_page.php:4805 ../udesign_options_page.php:4854
 msgid "Image 2:"
 msgstr "Billede 2:"
 
-#: ../udesign_options_page.php:4869
+#: ../udesign_options_page.php:4886
 msgid "Title Text"
 msgstr "Titel tekst"
 
-#: ../udesign_options_page.php:4871
+#: ../udesign_options_page.php:4888
 msgid "Change the Title:"
 msgstr "Skift Titlen:"
 
-#: ../udesign_options_page.php:4873
+#: ../udesign_options_page.php:4890
 msgid ""
 "This is the title text displayed in the place of the slider on the home page"
 msgstr "Dette er titelteksten som vises i sliderens sted på hjemmesiden"
 
-#: ../udesign_options_page.php:4893
+#: ../udesign_options_page.php:4910
 #, php-format
 msgid ""
 "You need  to install the \"Revolution Slider\" first before using this "
@@ -3404,49 +3429,49 @@ msgid ""
 "section."
 msgstr ""
 
-#: ../udesign_options_page.php:4905
+#: ../udesign_options_page.php:4922
 #, php-format
 msgid ""
 "No sliders found!  Please create a new slider from the %1$sRevolution Slider"
 "%2$s page."
 msgstr ""
 
-#: ../udesign_options_page.php:4908
+#: ../udesign_options_page.php:4925
 #, fuzzy
 msgid "Choose a Revolution Slider:"
 msgstr "Vælg en slider:"
 
-#: ../udesign_options_page.php:4910
+#: ../udesign_options_page.php:4927
 msgid "--Select Slider--"
 msgstr ""
 
-#: ../udesign_options_page.php:4915
+#: ../udesign_options_page.php:4932
 #, php-format
 msgid ""
 "To create additional sliders or to configure the existing ones please refer "
 "to the %1$sRevolution Slider%2$s page."
 msgstr ""
 
-#: ../udesign_options_page.php:4915
+#: ../udesign_options_page.php:4932
 #, fuzzy
 msgid "Go to Revolution Slider page"
 msgstr "Ingen slider"
 
-#: ../udesign_options_page.php:4916
+#: ../udesign_options_page.php:4933
 #, php-format
 msgid "For help please refer to the %1$sDocumentation%2$s."
 msgstr ""
 
-#: ../udesign_options_page.php:4916
+#: ../udesign_options_page.php:4933
 #, fuzzy
 msgid "Go to the Documentation"
 msgstr "Dokumentation"
 
-#: ../udesign_options_page.php:4936
+#: ../udesign_options_page.php:4953
 msgid "Portfolio Pages"
 msgstr "Porteføljesider"
 
-#: ../udesign_options_page.php:4938
+#: ../udesign_options_page.php:4955
 msgid ""
 "Use this area to assign Portfolio Categories to their respective Portfolio "
 "pages."
@@ -3454,7 +3479,7 @@ msgstr ""
 "Anvend dette område til at assigne Porteføljekategorier til deres respektive "
 "Porteføljesider."
 
-#: ../udesign_options_page.php:4939
+#: ../udesign_options_page.php:4956
 msgid ""
 "Firstly though, you have to create the Portfolio page(s) and assign the "
 "\"Portfolio page\" template to it."
@@ -3462,7 +3487,7 @@ msgstr ""
 "Først af alt, du skal skabe Porteføljesiderne og assigne \"Portfolio page\" "
 "skabelonen til det."
 
-#: ../udesign_options_page.php:4940
+#: ../udesign_options_page.php:4957
 #, fuzzy
 msgid ""
 "If you don't see any categories in the dropdown(s) below it's because you "
@@ -3475,31 +3500,31 @@ msgstr ""
 "og skab en 'Portefølje' kategori der. Glem ej, at du skal gemme alt dit "
 "portefølje relateret indlæg og underkategorier under denne kategori."
 
-#: ../udesign_options_page.php:4945
+#: ../udesign_options_page.php:4962
 msgid "To Portfolio page"
 msgstr "Til Porteføljesiden"
 
-#: ../udesign_options_page.php:4946
+#: ../udesign_options_page.php:4963
 msgid "assign the Category:"
 msgstr "assign Kategorien:"
 
-#: ../udesign_options_page.php:4946 ../widgets/customCategory-widget.php:73
+#: ../udesign_options_page.php:4963 ../widgets/customCategory-widget.php:73
 msgid "Select Category"
 msgstr "Vælg Kategori"
 
-#: ../udesign_options_page.php:4947
+#: ../udesign_options_page.php:4964
 msgid "with"
 msgstr "med"
 
-#: ../udesign_options_page.php:4947
+#: ../udesign_options_page.php:4964
 msgid "items per page."
 msgstr "emner per side."
 
-#: ../udesign_options_page.php:4952
+#: ../udesign_options_page.php:4969
 msgid "Do not link adjacent items in this category as gallery."
 msgstr "Link ikke konjugerende emner i denne kategori som galleri."
 
-#: ../udesign_options_page.php:4954
+#: ../udesign_options_page.php:4971
 msgid ""
 "(Remove the ability to go to the next or previous item when previewing with "
 "prettyPhoto lightbox)"
@@ -3507,19 +3532,19 @@ msgstr ""
 "(Flyt muligheden for at gå til den næste eller det tidligere emne når man "
 "previewer med prettyPhoto lightbox)"
 
-#: ../udesign_options_page.php:4961
+#: ../udesign_options_page.php:4978
 msgid "Portfolio Title Position"
 msgstr "Portefølje Titelposition"
 
-#: ../udesign_options_page.php:4964
+#: ../udesign_options_page.php:4981
 msgid "Below"
 msgstr "Nedenfor"
 
-#: ../udesign_options_page.php:4965
+#: ../udesign_options_page.php:4982
 msgid "Above"
 msgstr "Ovenover"
 
-#: ../udesign_options_page.php:4966
+#: ../udesign_options_page.php:4983
 msgid ""
 "This is the post title shown with every thumbnail. Choose whether you would "
 "like to have it displayed above the Thumbnail or just below it."
@@ -3527,7 +3552,7 @@ msgstr ""
 "Dette er indlægstitlen som vises under hvert enkelt minibillede. Vælg om du "
 "vil have det skal vises over eller under det."
 
-#: ../udesign_options_page.php:4973
+#: ../udesign_options_page.php:4990
 msgid ""
 "The following settings refer to the individual portfolio item post (single "
 "post view)"
@@ -3535,61 +3560,61 @@ msgstr ""
 "De følgende indstillinger refererer til det individiuelle porteføljeindlæg "
 "(single indlægsvisning)"
 
-#: ../udesign_options_page.php:4977 ../udesign_options_page.php:5066
-#: ../udesign_options_page.php:5331
+#: ../udesign_options_page.php:4994 ../udesign_options_page.php:5083
+#: ../udesign_options_page.php:5348
 msgid "Sidebar Position"
 msgstr "Sidebar Position"
 
-#: ../udesign_options_page.php:4982
+#: ../udesign_options_page.php:4999
 msgid "This is the sidebar shown on individual portfolio items' posts"
 msgstr "Dette er sidebaren, vist på et individuelt, porteføljeemnes indlæg"
 
-#: ../udesign_options_page.php:4986 ../udesign_options_page.php:4988
+#: ../udesign_options_page.php:5003 ../udesign_options_page.php:5005
 #, fuzzy
 msgid "Portfolio Postmetadata"
 msgstr "Porteføljeindlæg Metadata"
 
-#: ../udesign_options_page.php:4991
+#: ../udesign_options_page.php:5008
 msgid "Show Portfolio Post Metadata box (Single View)."
 msgstr "Vis Porteføljeindlæg Metadataboks (Enkelt Visning)."
 
-#: ../udesign_options_page.php:4992
+#: ../udesign_options_page.php:5009
 msgid ""
 "This is the info block containing the informationa about Author, Date, "
 "Categories, Comments in a single view portfoilo post."
 msgstr ""
 
-#: ../udesign_options_page.php:4998
+#: ../udesign_options_page.php:5015
 #, fuzzy
 msgid "Portfolio Postmetadata Location"
 msgstr "Porteføljeindlæg Metadata"
 
-#: ../udesign_options_page.php:5001 ../udesign_options_page.php:5193
+#: ../udesign_options_page.php:5018 ../udesign_options_page.php:5210
 #, fuzzy
 msgid "Choose Location: "
 msgstr "Vælg position:"
 
-#: ../udesign_options_page.php:5003 ../udesign_options_page.php:5195
+#: ../udesign_options_page.php:5020 ../udesign_options_page.php:5212
 #, fuzzy
 msgid "Bottom"
 msgstr "Bund 1"
 
-#: ../udesign_options_page.php:5004 ../udesign_options_page.php:5196
+#: ../udesign_options_page.php:5021 ../udesign_options_page.php:5213
 #, fuzzy
 msgid "Top"
 msgstr "top"
 
-#: ../udesign_options_page.php:5006
+#: ../udesign_options_page.php:5023
 msgid ""
 "This is the location of the block containing the informationa about Author, "
 "Date, Categories, Comments in a single view portfoilo post."
 msgstr ""
 
-#: ../udesign_options_page.php:5011 ../udesign_options_page.php:5013
+#: ../udesign_options_page.php:5028 ../udesign_options_page.php:5030
 msgid "Portfolio Post Author"
 msgstr "Porteføljeindlægsforfatter"
 
-#: ../udesign_options_page.php:5016
+#: ../udesign_options_page.php:5033
 msgid ""
 "Show Author Name (\"Portfolio Post Metadata\" needs to be enabled for this "
 "option)"
@@ -3597,7 +3622,7 @@ msgstr ""
 "Vis forfatternavn (\"Porteføljeindlæg Metadata\" skal være aktiveret for "
 "denne mulighed)"
 
-#: ../udesign_options_page.php:5017 ../udesign_options_page.php:5118
+#: ../udesign_options_page.php:5034 ../udesign_options_page.php:5135
 #, fuzzy, php-format
 msgid ""
 "The following text: \"Written by: Author Name\" will be added to the "
@@ -3610,76 +3635,76 @@ msgstr ""
 "under %1$sUsers -> Your Profile%2$s <strong> Vis navn offentligt som </"
 "strong> felt og linkes til forfatterens side."
 
-#: ../udesign_options_page.php:5017
+#: ../udesign_options_page.php:5034
 msgid "Go to your Profile"
 msgstr ""
 
-#: ../udesign_options_page.php:5023 ../udesign_options_page.php:5025
+#: ../udesign_options_page.php:5040 ../udesign_options_page.php:5042
 msgid "Portfolio Post Tags"
 msgstr "Portefølje indlægstags"
 
-#: ../udesign_options_page.php:5028
+#: ../udesign_options_page.php:5045
 msgid "Show Portfolio Post Tags"
 msgstr "Vis portefølje indlægstags"
 
-#: ../udesign_options_page.php:5034 ../udesign_options_page.php:5036
+#: ../udesign_options_page.php:5051 ../udesign_options_page.php:5053
 msgid "Show Comment Area"
 msgstr "Vis kommentarområdet"
 
-#: ../udesign_options_page.php:5039
+#: ../udesign_options_page.php:5056
 msgid "Show comment area in Portfolio posts (Single View)"
 msgstr "Vis kommentarområdet i porteføljeindlæg (enkelt visning)"
 
-#: ../udesign_options_page.php:5045 ../udesign_options_page.php:5047
-#: ../udesign_options_page.php:5179 ../udesign_options_page.php:5181
+#: ../udesign_options_page.php:5062 ../udesign_options_page.php:5064
+#: ../udesign_options_page.php:5196 ../udesign_options_page.php:5198
 msgid "Full-width Single Post View Page"
 msgstr "Fuld bredde enkelt indlægsvisning side"
 
-#: ../udesign_options_page.php:5050
+#: ../udesign_options_page.php:5067
 msgid "Remove the sidebar from Single Post View Portfolio pages."
 msgstr "Flyt sidebaren fra enkelt indlægsvisning porteføljesider."
 
-#: ../udesign_options_page.php:5071
+#: ../udesign_options_page.php:5088
 msgid "This is the sidebar shown on blog pages"
 msgstr "Dette er sidebaren som vises på blogsider"
 
-#: ../udesign_options_page.php:5075
+#: ../udesign_options_page.php:5092
 msgid "Show Excerpt"
 msgstr "Vis Uddrag"
 
-#: ../udesign_options_page.php:5077 ../udesign_options_page.php:5100
-#: ../udesign_options_page.php:5102
+#: ../udesign_options_page.php:5094 ../udesign_options_page.php:5117
+#: ../udesign_options_page.php:5119
 msgid "Exclude Portfolio(s) from Blog"
 msgstr "Ekskluder Porteføljer fra Blog"
 
-#: ../udesign_options_page.php:5080
+#: ../udesign_options_page.php:5097
 msgid "Show the excerpt instead of the full post content on the Blog page."
 msgstr "Vis uddrag i stedet for det fulde indlægsindhold på blogsiden."
 
-#: ../udesign_options_page.php:5086
+#: ../udesign_options_page.php:5103
 msgid "Excerpt Length"
 msgstr "Uddragslængde"
 
-#: ../udesign_options_page.php:5088
+#: ../udesign_options_page.php:5105
 msgid "Change the excerpt length:"
 msgstr "Ændre uddragslængderne:"
 
-#: ../udesign_options_page.php:5089
+#: ../udesign_options_page.php:5106
 msgid "This number refers to the number of words to show."
 msgstr "Dette tal refererer til antallet af ord som skal vises."
 
-#: ../udesign_options_page.php:5093
+#: ../udesign_options_page.php:5110
 msgid "\"Read more\" Link"
 msgstr "\"Læs mere\" Link"
 
-#: ../udesign_options_page.php:5096
+#: ../udesign_options_page.php:5113
 msgid ""
 "Enter the text for the post's 'Read more' link.  Leave blank to hide it."
 msgstr ""
 "Indtast teksten for indlæggets 'læs mere' link. Efterlad blank for at skjule "
 "det."
 
-#: ../udesign_options_page.php:5105
+#: ../udesign_options_page.php:5122
 msgid ""
 "Exclude Portfolio section(s) related posts from showing in the the general "
 "Blog section (\"Blog page\" template loop)."
@@ -3687,7 +3712,7 @@ msgstr ""
 "Ekskluder Porteføljesektioner med relaterede indlæg fra at blive vist i den "
 "generelle blogsektion (\"Blog side\" skabelon loop)."
 
-#: ../udesign_options_page.php:5106
+#: ../udesign_options_page.php:5123
 msgid ""
 "Note: Portfolio posts are those that have been assigned to a portfolio "
 "related category. A portfolio related category is one which either directly "
@@ -3700,60 +3725,60 @@ msgstr ""
 "tildelt til en \"Porteføljeside\" skabelon. (Se \"Porteføljesektionben "
 "ovenfor for disse tildelninger)"
 
-#: ../udesign_options_page.php:5112 ../udesign_options_page.php:5114
+#: ../udesign_options_page.php:5129 ../udesign_options_page.php:5131
 msgid "Show Post Author"
 msgstr "Vis indlægsforfatter"
 
-#: ../udesign_options_page.php:5117
+#: ../udesign_options_page.php:5134
 msgid "Show Author Name"
 msgstr "Vis forfatternavn"
 
-#: ../udesign_options_page.php:5118
+#: ../udesign_options_page.php:5135
 msgid "Go to Your Profile"
 msgstr ""
 
-#: ../udesign_options_page.php:5124 ../udesign_options_page.php:5126
+#: ../udesign_options_page.php:5141 ../udesign_options_page.php:5143
 msgid "Post Tags"
 msgstr "Indlægstags"
 
-#: ../udesign_options_page.php:5129
+#: ../udesign_options_page.php:5146
 msgid "Show Post Tags"
 msgstr "Vis indlægstags"
 
-#: ../udesign_options_page.php:5135 ../udesign_options_page.php:5137
+#: ../udesign_options_page.php:5152 ../udesign_options_page.php:5154
 msgid "Category Archive Title"
 msgstr "Kategori Arkivtitel"
 
-#: ../udesign_options_page.php:5140
+#: ../udesign_options_page.php:5157
 msgid ""
 "Remove the \"Archive for the '...' Category\" string from the category "
 "archive title."
 msgstr "Fjern \"Arkiv for '...' Kategori\" streng fra kategori arkivtitel."
 
-#: ../udesign_options_page.php:5146 ../udesign_options_page.php:5148
+#: ../udesign_options_page.php:5163 ../udesign_options_page.php:5165
 #, fuzzy
 msgid "\"Comments are closed\" message"
 msgstr "Der er lukket for kommentarer."
 
-#: ../udesign_options_page.php:5151
+#: ../udesign_options_page.php:5168
 msgid ""
 "Show \"Comments are closed\" message for posts where the comments have been "
 "disabled, otherwise no message will be displayed."
 msgstr ""
 
-#: ../udesign_options_page.php:5157 ../udesign_options_page.php:5159
+#: ../udesign_options_page.php:5174 ../udesign_options_page.php:5176
 msgid "Full-width Blog Page"
 msgstr "Fuld bredde blogside"
 
-#: ../udesign_options_page.php:5162
+#: ../udesign_options_page.php:5179
 msgid "Remove the sidebar from Blog pages."
 msgstr "Fjern sidenbaren fra blogsiderne"
 
-#: ../udesign_options_page.php:5168 ../udesign_options_page.php:5170
+#: ../udesign_options_page.php:5185 ../udesign_options_page.php:5187
 msgid "Full-width Archive Page"
 msgstr "Fuld bredde arkivside"
 
-#: ../udesign_options_page.php:5173
+#: ../udesign_options_page.php:5190
 msgid ""
 "Remove the sidebar from Archive pages (e.g. Category archives, Date "
 "archives, Tag archives, etc.)."
@@ -3761,33 +3786,33 @@ msgstr ""
 "Fjerne sidebaren fra arkivsiderne (fx kategoriarkiver, datoarkiver, "
 "tagarkiver etc.)."
 
-#: ../udesign_options_page.php:5184
+#: ../udesign_options_page.php:5201
 msgid "Remove the sidebar from Single Post View pages."
 msgstr "Fjern sidebaren fra enkeltindlægsvisningssiderne."
 
-#: ../udesign_options_page.php:5190
+#: ../udesign_options_page.php:5207
 msgid "Single View Postmetadata Location"
 msgstr ""
 
-#: ../udesign_options_page.php:5198
+#: ../udesign_options_page.php:5215
 msgid ""
 "This is the location of the block containing the informationa about Author, "
 "Date, Categories, Comments in a single view post."
 msgstr ""
 
-#: ../udesign_options_page.php:5203 ../udesign_options_page.php:5205
+#: ../udesign_options_page.php:5220 ../udesign_options_page.php:5222
 msgid "Post Image in Single Post View"
 msgstr "Indlægsbillede i en enkeltindlægsvisning"
 
-#: ../udesign_options_page.php:5208
+#: ../udesign_options_page.php:5225
 msgid "Display the post image in single post view."
 msgstr "Vis indlægsbilledet i en enkeltindlægssidevisning."
 
-#: ../udesign_options_page.php:5218
+#: ../udesign_options_page.php:5235
 msgid "Blog and Archive Section \"Featured Image\":"
 msgstr "Blog og arkivsektion \"Fremhævet billede\":"
 
-#: ../udesign_options_page.php:5219
+#: ../udesign_options_page.php:5236
 msgid ""
 "Use this section to set the Post \"Featured Image\" the way it will be shown "
 "on the Blog and Archive Pages for each post. Please note, that if you have "
@@ -3802,34 +3827,34 @@ msgstr ""
 "\"Fremhævet Billede\", så hvis du vil bruge \"Fremhævet Billede\", så brug "
 "ikke det skræddersyede felt \"indlægsbillede\"."
 
-#: ../udesign_options_page.php:5223
+#: ../udesign_options_page.php:5240
 msgid "Enable This Section"
 msgstr "Aktiver Denne Sektion"
 
-#: ../udesign_options_page.php:5225 ../udesign_options_page.php:5250
+#: ../udesign_options_page.php:5242 ../udesign_options_page.php:5267
 msgid "Enable Custom \"Featured Image\""
 msgstr "Aktiver skræddersyet \"Fremhævet Billede\""
 
-#: ../udesign_options_page.php:5228
+#: ../udesign_options_page.php:5245
 msgid ""
 "Select this option to apply the settings below to the \"Featured Image\"."
 msgstr ""
 "Vælg denne mulighed for at applicere indstillingen nedenfor \"Fremhævet "
 "Billede\"."
 
-#: ../udesign_options_page.php:5237
+#: ../udesign_options_page.php:5254
 msgid "Apply this image width in pixels."
 msgstr "Angiv dette billedes bredde i pixels."
 
-#: ../udesign_options_page.php:5244
+#: ../udesign_options_page.php:5261
 msgid "Apply this image height in pixels."
 msgstr "Angiv dette billedes højde i pixels."
 
-#: ../udesign_options_page.php:5248
+#: ../udesign_options_page.php:5265
 msgid "Force Image Dimensions"
 msgstr "Gennemtving Billededimensioner"
 
-#: ../udesign_options_page.php:5253
+#: ../udesign_options_page.php:5270
 #, fuzzy
 msgid ""
 "Select this option to force cropping and resizing the images which is "
@@ -3841,7 +3866,7 @@ msgstr ""
 "dimension, ellers vil den indbyggede WordPress omskalering blive anvendt på "
 "\"Fremhævet Billede\"."
 
-#: ../udesign_options_page.php:5256
+#: ../udesign_options_page.php:5273
 #, fuzzy
 msgid ""
 "(This option would only be considered if image cropping is enabled (default) "
@@ -3850,31 +3875,31 @@ msgstr ""
 "(Denne mulighed skal kun overvejes, hvis TimThumb er aktiveret fra de "
 "\"Generelle Muligheder\")"
 
-#: ../udesign_options_page.php:5260
+#: ../udesign_options_page.php:5277
 msgid "Image Alignment"
 msgstr "Billedealignment"
 
-#: ../udesign_options_page.php:5266
+#: ../udesign_options_page.php:5283
 msgid "Center"
 msgstr "Centrer"
 
-#: ../udesign_options_page.php:5298
+#: ../udesign_options_page.php:5315
 msgid "Enable Business Contact"
 msgstr "Aktiver Forretningskontakt"
 
-#: ../udesign_options_page.php:5299
+#: ../udesign_options_page.php:5316
 msgid "Enable Contact Info Fields"
 msgstr "Aktiver Kontaktinfofelter"
 
-#: ../udesign_options_page.php:5302
+#: ../udesign_options_page.php:5319
 msgid "Enable the Business Contact fields (see below for description)"
 msgstr "Aktiver Forretningskontaktfelterne (se beskrivelse nedenfor)"
 
-#: ../udesign_options_page.php:5305
+#: ../udesign_options_page.php:5322
 msgid "Business Contact Fields"
 msgstr "Forretningskontaktfelter"
 
-#: ../udesign_options_page.php:5307
+#: ../udesign_options_page.php:5324
 msgid ""
 "The Business Contact Fields provide a way to better display additional "
 "contact information such as Company Name, Address, Phone, etc. An example of "
@@ -3890,67 +3915,67 @@ msgstr ""
 "det første felt og \"<strong> (123) 123-4567</strong>\" i det andet (under "
 "samme \"Linje #\") respektive."
 
-#: ../udesign_options_page.php:5308
+#: ../udesign_options_page.php:5325
 msgid "Line 1:"
 msgstr "Linje 1:"
 
-#: ../udesign_options_page.php:5311
+#: ../udesign_options_page.php:5328
 msgid "Line 2:"
 msgstr "Linje 2:"
 
-#: ../udesign_options_page.php:5314
+#: ../udesign_options_page.php:5331
 msgid "Line 3:"
 msgstr "Linje 3:"
 
-#: ../udesign_options_page.php:5317
+#: ../udesign_options_page.php:5334
 msgid "Line 4:"
 msgstr "Linje 4:"
 
-#: ../udesign_options_page.php:5320
+#: ../udesign_options_page.php:5337
 msgid "Line 5:"
 msgstr "Linje 5:"
 
-#: ../udesign_options_page.php:5323
+#: ../udesign_options_page.php:5340
 msgid "Line 6:"
 msgstr "Linje 6:"
 
-#: ../udesign_options_page.php:5326
+#: ../udesign_options_page.php:5343
 msgid "Line 7:"
 msgstr "Linje 7:"
 
-#: ../udesign_options_page.php:5329
+#: ../udesign_options_page.php:5346
 msgid ""
 "Some html tags and inline styling could be used for formatting here, e.g."
 msgstr "visse html tag og inline stile kan formatteres her."
 
-#: ../udesign_options_page.php:5329
+#: ../udesign_options_page.php:5346
 msgid "Address"
 msgstr "Adresse"
 
-#: ../udesign_options_page.php:5329
+#: ../udesign_options_page.php:5346
 msgid "or"
 msgstr "eller"
 
-#: ../udesign_options_page.php:5335
+#: ../udesign_options_page.php:5352
 msgid "This is the sidebar shown on the Contact page"
 msgstr "Dette er sidebaren vist på kontaktsiden"
 
-#: ../udesign_options_page.php:5337 ../udesign_options_page.php:5338
+#: ../udesign_options_page.php:5354 ../udesign_options_page.php:5355
 msgid "Remove Sidebar"
 msgstr "Fjern Sidebar"
 
-#: ../udesign_options_page.php:5341
+#: ../udesign_options_page.php:5358
 msgid ""
 "Remove the sidebar from the Contact page, which will make it a full-width "
 "page layout."
 msgstr ""
 "Fjern sidebare fra Kontakt siden. Dette ændrer kontakt siden  til fuld brede."
 
-#: ../udesign_options_page.php:5344
+#: ../udesign_options_page.php:5361
 msgid "Phone Number validation"
 msgstr "Telefonummervalidering"
 
-#: ../udesign_options_page.php:5345
+#: ../udesign_options_page.php:5362
 msgid ""
 "This is the field displayed in the E-mail form on the Contact page template. "
 "If checked, the validation for North American phone numbers will be enabled."
@@ -3958,30 +3983,30 @@ msgstr ""
 "Dette er feltet der vises i E-mail formularer på kontaktsideskabelonen. Hvis "
 "markeret, vil validering af nordamerikanske telefonnumre blive aktiveret."
 
-#: ../udesign_options_page.php:5346
+#: ../udesign_options_page.php:5363
 msgid "Enable North American phone number validation"
 msgstr "Aktiver nordamerikanske telefonnummervalidering"
 
-#: ../udesign_options_page.php:5349
+#: ../udesign_options_page.php:5366
 msgid "Enable North American phone number validation in the contact email form"
 msgstr "Aktiver nordamerikanske telefonnummervalidering i kontaktformularen"
 
-#: ../udesign_options_page.php:5355
+#: ../udesign_options_page.php:5372
 msgid "E-mail Recipient(s)"
 msgstr "E-mail-modtagere"
 
-#: ../udesign_options_page.php:5357
+#: ../udesign_options_page.php:5374
 msgid ""
 "Please enter recipient's email address, comma-separate multiple recipients:"
 msgstr ""
 "Indtast venligst modtageren e-mail-adresse, kommaseparer flere modtagere:"
 
-#: ../udesign_options_page.php:5362 ../udesign_options_page.php:5364
+#: ../udesign_options_page.php:5379 ../udesign_options_page.php:5381
 #, fuzzy
 msgid "Enable reCAPTCHA"
 msgstr "Aktiver ReCAPTCHA"
 
-#: ../udesign_options_page.php:5367
+#: ../udesign_options_page.php:5384
 #, fuzzy, php-format
 msgid ""
 "Add reCAPTCHA to the email form for extra security (for more information "
@@ -3990,12 +4015,12 @@ msgstr ""
 "Tilføj ReCAPTCHA til e-mail formularen for ekstra sikkerhed (for mere "
 "information, besøg %s)"
 
-#: ../udesign_options_page.php:5367 ../udesign_options_page.php:5377
-#: ../udesign_options_page.php:5384
+#: ../udesign_options_page.php:5384 ../udesign_options_page.php:5394
+#: ../udesign_options_page.php:5401
 msgid "Go to www.reCAPTCHA.net"
 msgstr ""
 
-#: ../udesign_options_page.php:5369
+#: ../udesign_options_page.php:5386
 #, fuzzy
 msgid ""
 "Please note: reCAPTCHA will be automatically disabled if the two fields "
@@ -4004,26 +4029,26 @@ msgstr ""
 "Noter dig: ReCAPTCHA vil automatisk være udkoblet hvis disse to felter er "
 "tomme!"
 
-#: ../udesign_options_page.php:5374
+#: ../udesign_options_page.php:5391
 #, fuzzy
 msgid "reCAPTCHA Public Key"
 msgstr "ReCAPTCHA Offentlig Nøgle"
 
-#: ../udesign_options_page.php:5377
+#: ../udesign_options_page.php:5394
 msgid "To use reCAPTCHA you must get an API public key from"
 msgstr "For at anvende reCAPTCHA skal du have en API Offentlig nøgle fra"
 
-#: ../udesign_options_page.php:5381
+#: ../udesign_options_page.php:5398
 #, fuzzy
 msgid "reCAPTCHA Private Key"
 msgstr "ReCAPTCHA Privat Nøgle"
 
-#: ../udesign_options_page.php:5384
+#: ../udesign_options_page.php:5401
 #, fuzzy
 msgid "To use reCAPTCHA you must get an API private key from"
 msgstr "For at anvende ReCaptcha skal du hente en privat nøgle fra"
 
-#: ../udesign_options_page.php:5385
+#: ../udesign_options_page.php:5402
 #, fuzzy
 msgid ""
 "This key is used when communicating between your server and the reCAPTCHA "
@@ -4032,76 +4057,76 @@ msgstr ""
 "Denne nøgle skal bruges når du kommunikere mellem din server og ReCAPTCHA "
 "serveren. Sikre dig, at det forbliver en hemmelighed."
 
-#: ../udesign_options_page.php:5389
+#: ../udesign_options_page.php:5406
 #, fuzzy
 msgid "reCAPTCHA Theme"
 msgstr "ReCAPTCHA Tema"
 
-#: ../udesign_options_page.php:5392
+#: ../udesign_options_page.php:5409
 msgid "Choose Theme: "
 msgstr "Vælg Tema:"
 
-#: ../udesign_options_page.php:5394
+#: ../udesign_options_page.php:5411
 msgid "white"
 msgstr "hvid"
 
-#: ../udesign_options_page.php:5395
+#: ../udesign_options_page.php:5412
 msgid "red"
 msgstr "rød"
 
-#: ../udesign_options_page.php:5396
+#: ../udesign_options_page.php:5413
 msgid "blackglass"
 msgstr "sort glas"
 
-#: ../udesign_options_page.php:5397
+#: ../udesign_options_page.php:5414
 msgid "clean"
 msgstr "ren"
 
-#: ../udesign_options_page.php:5403
+#: ../udesign_options_page.php:5420
 #, fuzzy
 msgid "reCAPTCHA Language"
 msgstr "ReCAPTCHA Sprog"
 
-#: ../udesign_options_page.php:5406
+#: ../udesign_options_page.php:5423
 msgid "Language: "
 msgstr "Sprog:"
 
-#: ../udesign_options_page.php:5433
+#: ../udesign_options_page.php:5450
 msgid "Copyright Message"
 msgstr "Copyrightbesked"
 
-#: ../udesign_options_page.php:5437
+#: ../udesign_options_page.php:5454
 msgid "Copyright message displayed in the footer."
 msgstr "Copyrightbesked vises i footeren."
 
-#: ../udesign_options_page.php:5441 ../udesign_options_page.php:5443
+#: ../udesign_options_page.php:5458 ../udesign_options_page.php:5460
 msgid "WordPress credits link"
 msgstr "WordPress credit link"
 
-#: ../udesign_options_page.php:5446
+#: ../udesign_options_page.php:5463
 #, php-format
 msgid "Show \"is proudly powered by %s\" in footer?"
 msgstr "Vis \"er stolt drevet af %s\" i footeren?"
 
-#: ../udesign_options_page.php:5457 ../udesign_options_page.php:5459
+#: ../udesign_options_page.php:5474 ../udesign_options_page.php:5476
 msgid "Your \"U-Design\" Affiliate Link"
 msgstr "Dit\"U-Design\" Affiliate Link"
 
-#: ../udesign_options_page.php:5462
+#: ../udesign_options_page.php:5479
 #, php-format
 msgid "Show %1$sThemeForest Affiliate%2$s link in footer?"
 msgstr "Vis %1$sThemeForest Affiliate%2$s link i neders i din footer?"
 
-#: ../udesign_options_page.php:5464
+#: ../udesign_options_page.php:5481
 #, php-format
 msgid "ThemeForest %1$susername%2$s:"
 msgstr "ThemeForest %1$sbrugernavn%2$s:"
 
-#: ../udesign_options_page.php:5466
+#: ../udesign_options_page.php:5483
 msgid "(case-sensitive)"
 msgstr "(Forskel på store og små bogstaver)"
 
-#: ../udesign_options_page.php:5467
+#: ../udesign_options_page.php:5484
 #, php-format
 msgid ""
 "Would you like to make money with \"U-Design\"? Refer new ThemeForest users "
@@ -4113,37 +4138,37 @@ msgstr ""
 "30&#37; af deres første køb eller penge depositum!! Klik %1$shere%2$s her "
 "for mere information."
 
-#: ../udesign_options_page.php:5477 ../udesign_options_page.php:5479
+#: ../udesign_options_page.php:5494 ../udesign_options_page.php:5496
 msgid "Entries (RSS) link"
 msgstr "Indgang (RSS) link"
 
-#: ../udesign_options_page.php:5482
+#: ../udesign_options_page.php:5499
 msgid "Show \"Entries (RSS)\" link in footer?"
 msgstr "Vis \"Indgange (RSS)\" link i footeren?"
 
-#: ../udesign_options_page.php:5488 ../udesign_options_page.php:5490
+#: ../udesign_options_page.php:5505 ../udesign_options_page.php:5507
 msgid "Comments (RSS) link"
 msgstr "Kommentarer (RSS) link"
 
-#: ../udesign_options_page.php:5493
+#: ../udesign_options_page.php:5510
 msgid "Show \"Comments (RSS)\" link in footer?"
 msgstr "Vis \"Kommentarer (RSS) link i footeren?"
 
-#: ../udesign_options_page.php:5499 ../udesign_options_page.php:5501
+#: ../udesign_options_page.php:5516 ../udesign_options_page.php:5518
 msgid "\"Sticky\" Footer"
 msgstr ""
 
-#: ../udesign_options_page.php:5504
+#: ../udesign_options_page.php:5521
 msgid ""
 "Have the footer stay at the bottom of the page on pages that have very "
 "little content."
 msgstr ""
 
-#: ../udesign_options_page.php:5519
+#: ../udesign_options_page.php:5536
 msgid "Google Analytics"
 msgstr "Google Analytics"
 
-#: ../udesign_options_page.php:5523
+#: ../udesign_options_page.php:5540
 msgid ""
 "Paste your Google Analytics or other tracking code here. It will be inserted "
 "just before the closing &lt;/head&gt; tag."
@@ -4151,50 +4176,50 @@ msgstr ""
 "Indsæt din Google Analytics eller anden trackingkode her. Det vil bliver sat "
 "ind lige før det afsluttende &lt;/head&gt; tag. "
 
-#: ../udesign_options_page.php:5536
+#: ../udesign_options_page.php:5553
 #, fuzzy
 msgid "General Information"
 msgstr "Generelle Indstillinger"
 
-#: ../udesign_options_page.php:5538
+#: ../udesign_options_page.php:5555
 msgid ""
 "960px is the theme's default width. If responsive is enabled the theme will "
 "resize automatically to adjust to the size of the browser window or the type "
 "of device being used based on the following three breakpoints:"
 msgstr ""
 
-#: ../udesign_options_page.php:5540
+#: ../udesign_options_page.php:5557
 msgid "1 ) Breakpoint 1 - [ 960px to 720px ]"
 msgstr ""
 
-#: ../udesign_options_page.php:5541
+#: ../udesign_options_page.php:5558
 msgid "2 ) Breakpoint 2 - [ 720px to 480px ]"
 msgstr ""
 
-#: ../udesign_options_page.php:5542
+#: ../udesign_options_page.php:5559
 msgid "3 ) Breakpoint 3 - [ smaller than 480px ]"
 msgstr ""
 
-#: ../udesign_options_page.php:5552 ../udesign_options_page.php:5554
+#: ../udesign_options_page.php:5569 ../udesign_options_page.php:5571
 #, fuzzy
 msgid "Enable Responsive"
 msgstr "Ingen svar"
 
-#: ../udesign_options_page.php:5557
+#: ../udesign_options_page.php:5574
 msgid "Enable responsive layout."
 msgstr ""
 
-#: ../udesign_options_page.php:5563
+#: ../udesign_options_page.php:5580
 msgid "Responsive Logo (optional)"
 msgstr ""
 
-#: ../udesign_options_page.php:5566
+#: ../udesign_options_page.php:5583
 #, fuzzy
 msgid "Enter a URL or upload an image for your alternative logo:"
 msgstr ""
 "Indtast en URL, eller upload et billede, der bliver brugt som dit logo:"
 
-#: ../udesign_options_page.php:5571
+#: ../udesign_options_page.php:5588
 msgid ""
 "An alternative logo will be loaded ONLY in the case Breakpoints 2 and 3. "
 "Please note, this is optional, in most cases you won't need an alternative "
@@ -4202,39 +4227,39 @@ msgid ""
 "(if necessary) and center the logo automatically."
 msgstr ""
 
-#: ../udesign_options_page.php:5575
+#: ../udesign_options_page.php:5592
 msgid "Responsive Logo Height"
 msgstr ""
 
-#: ../udesign_options_page.php:5578
+#: ../udesign_options_page.php:5595
 msgid ""
 "(Height) in pixels.  Note: The width is automatically adjusted to the "
 "maximum allowed width."
 msgstr ""
 
-#: ../udesign_options_page.php:5582 ../udesign_options_page.php:5584
+#: ../udesign_options_page.php:5599 ../udesign_options_page.php:5601
 #, fuzzy
 msgid "Remove the Slider Area"
 msgstr "Fjern Sidebar"
 
-#: ../udesign_options_page.php:5587
+#: ../udesign_options_page.php:5604
 msgid ""
 "Remove the Slider Area completely from the home page for the Breakpoints 2 "
 "and 3."
 msgstr ""
 
-#: ../udesign_options_page.php:5593 ../udesign_options_page.php:5595
+#: ../udesign_options_page.php:5610 ../udesign_options_page.php:5612
 #, fuzzy
 msgid "Remove Background Images"
 msgstr "Top Baggrundsbillede"
 
-#: ../udesign_options_page.php:5598
+#: ../udesign_options_page.php:5615
 msgid ""
 "Remove all background images for Breakpoint 1. Those are the background "
 "images that have been assigned through the theme's 'Custom Colors' section."
 msgstr ""
 
-#: ../udesign_options_page.php:5599
+#: ../udesign_options_page.php:5616
 msgid ""
 "(Note: The background images will be replaced with their corresponding "
 "background colors for those respective sections. Also, by default the "
@@ -4242,38 +4267,38 @@ msgid ""
 "respectively)"
 msgstr ""
 
-#: ../udesign_options_page.php:5605
+#: ../udesign_options_page.php:5622
 msgid "Responsive Menu"
 msgstr ""
 
-#: ../udesign_options_page.php:5609
+#: ../udesign_options_page.php:5626
 msgid "Responsive Menu 1"
 msgstr ""
 
-#: ../udesign_options_page.php:5610
+#: ../udesign_options_page.php:5627
 msgid "Responsive Menu 2"
 msgstr ""
 
-#: ../udesign_options_page.php:5612
+#: ../udesign_options_page.php:5629
 msgid "Choose a menu to be used for Breakpoints 2 and 3."
 msgstr ""
 
-#: ../udesign_options_page.php:5617 ../udesign_options_page.php:5619
+#: ../udesign_options_page.php:5634 ../udesign_options_page.php:5636
 msgid "Pinch-to-Zoom"
 msgstr ""
 
-#: ../udesign_options_page.php:5622
+#: ../udesign_options_page.php:5639
 msgid ""
 "Enable pinch-to-zoom on mobile devices. Adds the ability to zoom in on "
 "images, text, links, etc. which could come really handy in some situations."
 msgstr ""
 
-#: ../udesign_options_page.php:5628
+#: ../udesign_options_page.php:5645
 #, fuzzy
 msgid "Disable prettyPhoto"
 msgstr "Aktiver prettyPhoto script"
 
-#: ../udesign_options_page.php:5633
+#: ../udesign_options_page.php:5650
 msgid ""
 "This is the device width or browser width at which the prettyPhoto lightbox "
 "effect will be disabled, anything smaller than that width will not have "
@@ -4283,17 +4308,17 @@ msgid ""
 "\"0\"."
 msgstr ""
 
-#: ../udesign_options_page.php:5643
+#: ../udesign_options_page.php:5660
 msgid ""
 "The options in this section are generally offered to assist more advanced "
 "users with deeper knowledge of WordPress programming."
 msgstr ""
 
-#: ../udesign_options_page.php:5647 ../udesign_options_page.php:5649
+#: ../udesign_options_page.php:5664 ../udesign_options_page.php:5666
 msgid "Show Action Hook Locations"
 msgstr ""
 
-#: ../udesign_options_page.php:5652
+#: ../udesign_options_page.php:5669
 msgid ""
 "Enabling this option will allow you to see in the front end the exact "
 "locations of the U-Design action hooks located within the \"body\" tags."

@@ -64,6 +64,7 @@ class UDESIGN_Theme_Options {
 			    "enable_default_style_css" => "no",
 			    "page_title_position" => "position1",
 			    "home_page_col_1_fixed" => "",
+			    "remove_default_page_sidebar" => "",
 			    "pages_sidebar" => "left",
 			    "pages_sidebar_2" => "left",
 			    "pages_sidebar_3" => "left",
@@ -152,7 +153,7 @@ class UDESIGN_Theme_Options {
 			    "saved_custom_colors_array" => array(),
 			    "chosen_custom_colors" => '',
 			    "chosen_custom_colors_admin_task" => '',
-			    "current_slider" => '6',
+			    "current_slider" => '8',
 			    "gs_image_width" => 940,
 			    "gs_image_height" => 400,
 			    "gs_auto_play" => "true",
@@ -384,6 +385,7 @@ class UDESIGN_Theme_Options {
 		wp_register_script('admin-scripts', get_template_directory_uri().'/scripts/admin/scripts.js', array('jquery'), '1.0', true);
 		wp_enqueue_script('admin-scripts');
                 wp_localize_script( 'admin-scripts', 'admin_scripts_params', array(
+                                        enable_google_web_fonts => $udesign_options['enable_google_web_fonts'],
                                         custom_colors_switch => $udesign_options['custom_colors_switch'],
                                         current_slider => $udesign_options['current_slider']
                                     )
@@ -494,7 +496,7 @@ class UDESIGN_Theme_Options {
 		//if ( $_GET['reset'] ) echo '<div id="message" class="updated fade"><p><strong>'.esc_html__('Settings reset.', 'udesign').'</strong></p></div>'; ?>
 		<div id="udesign-metaboxes-general" class="wrap">
 		    <div style="float:left; padding:10px 10px 10px 0;"><img src="<?php echo get_template_directory_uri(); ?>/scripts/admin/images/u-design-logo-small.png" width="90" height="43" /></div>
-		    <h2 style="padding-top:25px;"><?php printf( __('Options <small>(version %1$s)</small>', 'udesign'), '2.3.0' ); ?></h2>
+		    <h2 style="padding-top:25px;"><?php printf( __('Options <small>(version %1$s)</small>', 'udesign'), '2.4.2' ); ?></h2>
 <?php 
 		    $theme_home_directory = substr(strrchr( TEMPLATEPATH, "/" ), 1 );
 		    if ( $theme_home_directory != 'u-design' || strpos(TEMPLATEPATH, '/U-Design-WP-Theme/u-design') || strpos(TEMPLATEPATH, '/u-design/u-design') ) {
@@ -519,8 +521,8 @@ class UDESIGN_Theme_Options {
 					    <div class="submit-options-wrapper">
                                                 <div class="submit">
                                                     <input type="hidden" id="udesign_submit" value="1" name="udesign_submit" />
-                                                    <input class="button-primary" type="submit" name="submit" value="<?php esc_attr_e('Save Changes', 'udesign') ?>" />
-                                                    <span class="spinner"></span>
+                                                    <input class="button-primary udesign-left-submit-btn" type="submit" name="submit" value="<?php esc_attr_e('Save Changes', 'udesign') ?>" />
+                                                    <span class="spinner spinner-float-left"></span>
                                                 </div>
                                                 <label for="reset_to_defaults" class="reset-to-defaults">
 						    <input name="udesign_options[reset_to_defaults]" type="checkbox" id="reset_to_defaults" value="yes" />
@@ -602,6 +604,7 @@ class UDESIGN_Theme_Options {
                 // Layout Options
 		$input['page_title_position'] = (  $input['page_title_position'] ) ? $input['page_title_position'] : $udesign_options['page_title_position'];
                 $input['home_page_col_1_fixed'] = $input['home_page_col_1_fixed'];
+                $input['remove_default_page_sidebar'] = $input['remove_default_page_sidebar'];
 		$input['pages_sidebar'] = ($input['pages_sidebar']) ? $input['pages_sidebar'] : $udesign_options['pages_sidebar'];
 		$input['pages_sidebar_2'] = ($input['pages_sidebar_2']) ? $input['pages_sidebar_2'] : $udesign_options['pages_sidebar_2'];
 		$input['pages_sidebar_3'] = ($input['pages_sidebar_3']) ? $input['pages_sidebar_3'] : $udesign_options['pages_sidebar_3'];
@@ -613,8 +616,8 @@ class UDESIGN_Theme_Options {
 		$input['sitemap_sidebar'] = ($input['sitemap_sidebar']) ? $input['sitemap_sidebar'] : $udesign_options['sitemap_sidebar'];
                 $input['show_comments_on_pages'] = $input['show_comments_on_pages'];
                 $input['max_theme_width'] = $input['max_theme_width'];
-		$input['global_theme_width'] = ( is_numeric( $input['global_theme_width']  ) && $input['global_theme_width'] > 959 && $input['global_theme_width'] < 1201 ) ? absint($input['global_theme_width']) : $udesign_options['global_theme_width'];
-		$input['global_sidebar_width'] = ( is_numeric( $input['global_sidebar_width']  ) && $input['global_sidebar_width'] > 19 && $input['global_sidebar_width'] < 51 ) ? absint($input['global_sidebar_width']) : $udesign_options['global_sidebar_width'];
+		$input['global_theme_width'] = ( is_numeric( $input['global_theme_width']  ) && $input['global_theme_width'] > 959 && $input['global_theme_width'] < 1601 ) ? $input['global_theme_width'] : $udesign_options['global_theme_width'];
+		$input['global_sidebar_width'] = ( is_numeric( $input['global_sidebar_width']  ) && $input['global_sidebar_width'] > 19 && $input['global_sidebar_width'] < 51 ) ? $input['global_sidebar_width'] : $udesign_options['global_sidebar_width'];
                 
 		// Font Settings
 		$input['font_family'] = (  $input['font_family'] ) ? $input['font_family'] : $udesign_options['font_family'];
@@ -1255,7 +1258,7 @@ class UDESIGN_Theme_Options {
 	/**************************************************************************************/
 
 	function help_options_contentbox( $options ) { ?>
-		<p style="font-size:12px; margin-left:5px;"><?php esc_html_e('U-Design theme help resources:', 'udesign'); ?></p>
+		<p style="margin-left:5px;"><?php esc_html_e('U-Design theme help resources:', 'udesign'); ?></p>
 		<ul style="list-style-type:none; margin:5px 5px 10px 20px;">
 		    <li><?php echo '<div><a href="'.get_bloginfo('template_url').'/scripts/documentation/index.html" title="Open the documentation" target="_blank">'.esc_html__('Documentation', 'udesign').'</a></div>'; ?></li>
 		    <li><?php echo '<div><a title="'.esc_html__('Go to the Support Forum', 'udesign').'" href="http://dreamthemedesign.com/u-design-support/" target="_blank">'.esc_html__('Support Forum', 'udesign').'</a>'; ?> (<span class="description"><?php  printf( __('You should be able to register yourself with the Support Forum %1$sHERE%2$s.', 'udesign'), '<a target="_blank" title="Support Forum Registration" href="http://dreamthemedesign.com/u-design-support/entry/register?Target=discussions">', '</a>' ); ?></span>)</div></li>
@@ -1347,7 +1350,7 @@ class UDESIGN_Theme_Options {
                                 <div class="clear"></div>
                                 <div class="submit" style="padding:10px 0 0 80px; float:right; clear:both;">
                                     <input type="hidden" id="udesign_submit" value="1" name="udesign_submit"/>
-                                    <input class="button-primary" type="submit" name="submit" value="<?php esc_attr_e('Save Changes', 'udesign') ?>" />
+                                    <input class="button-primary udesign-right-submit-btn" type="submit" name="submit" value="<?php esc_attr_e('Save Changes', 'udesign') ?>" />
                                     <span class="spinner"></span>
                                 </div>
 			    </td>
@@ -1450,7 +1453,7 @@ class UDESIGN_Theme_Options {
                                 <div class="clear"></div>
                                 <div class="submit" style="padding:10px 0 0 80px; float:right; clear:both;">
                                     <input type="hidden" id="udesign_submit" value="1" name="udesign_submit"/>
-                                    <input class="button-primary" type="submit" name="submit" value="<?php esc_attr_e('Save Changes', 'udesign') ?>" />
+                                    <input class="button-primary udesign-right-submit-btn" type="submit" name="submit" value="<?php esc_attr_e('Save Changes', 'udesign') ?>" />
                                     <span class="spinner"></span>
                                 </div>
 			    </td>
@@ -1458,9 +1461,12 @@ class UDESIGN_Theme_Options {
 			<tr valign="top">
 			    <th scope="row"><?php esc_html_e('Main Menu Alignment', 'udesign'); ?></th>
 			    <td>
-				<?php esc_html_e('Choose alignment:', 'udesign'); ?><br />
-				<label><input type="radio" name="udesign_options[main_menu_alignment]" id="main_menu_alignment_left" value="left" <?php checked('left', $options['main_menu_alignment']); ?> /> <?php esc_html_e('Left', 'udesign'); ?></label>&nbsp;&nbsp;
-				<label><input type="radio" name="udesign_options[main_menu_alignment]" id="main_menu_alignment_right" value="right" <?php checked('right', $options['main_menu_alignment']); ?> /> <?php esc_html_e('Right', 'udesign'); ?></label>&nbsp;&nbsp;&nbsp;&nbsp;
+				<?php esc_html_e('Choose alignment:', 'udesign'); ?>
+                                <select name="udesign_options[main_menu_alignment]" id="main_menu_alignment">
+                                    <option value="right"<?php echo ($options['main_menu_alignment'] == 'right') ? ' selected="selected"' : ''; ?> style="padding-right:10px;"><?php esc_attr_e('right', 'udesign'); ?></option>
+                                    <option value="left"<?php echo ($options['main_menu_alignment'] == 'left') ? ' selected="selected"' : ''; ?>><?php esc_attr_e('left', 'udesign'); ?></option>
+                                    <option value="center"<?php echo ($options['main_menu_alignment'] == 'center') ? ' selected="selected"' : ''; ?>><?php esc_attr_e('center', 'udesign'); ?></option>
+                                </select>
 				<span class="description"><?php esc_html_e('This option sets the main navigation menu alignment.', 'udesign'); ?></span>
 			    </td>
 			</tr>
@@ -1590,8 +1596,8 @@ class UDESIGN_Theme_Options {
                                 </label>
                                 <div class="submit" style="padding-left:20px; float:left; display:inline-block;">
 				    <input type="hidden" id="udesign_submit" value="1" name="udesign_submit"/>
-				    <input class="button-secondary" type="submit" name="submit" value="<?php esc_attr_e('Update', 'udesign'); ?>" />
-                                    <span class="spinner"></span>
+				    <input class="button-secondary udesign-left-submit-btn" type="submit" name="submit" value="<?php esc_attr_e('Update', 'udesign'); ?>" />
+                                    <span class="spinner spinner-float-left"></span>
 				</div>
                                 <ul style="float:left; margin-bottom:0;">
                                     <li><strong><?php esc_html_e('Title Position 1', 'udesign'); ?></strong> - <?php esc_html_e('Display Title immediately under the Main Menu, it spans the full width of page.', 'udesign'); ?></li>
@@ -1617,6 +1623,17 @@ class UDESIGN_Theme_Options {
 				</fieldset>
 			    </td>
 			</tr>
+                        <tr valign="top">
+                            <th scope="row"><?php esc_html_e('Remove Sidebar from Default Pages', 'udesign'); ?></th>
+                            <td>
+                                <fieldset><legend class="screen-reader-text"><span><?php esc_html_e('Remove Sidebar from Default Pages', 'udesign'); ?></span></legend>
+                                <label for="remove_default_page_sidebar">
+                                    <input name="udesign_options[remove_default_page_sidebar]" type="checkbox" id="remove_default_page_sidebar" value="yes" <?php checked('yes', $options['remove_default_page_sidebar']); ?> />
+                                    <?php esc_html_e('Remove the sidebar from the default page template. This will make all pages that have been assigned "Default Template" full width.', 'udesign'); ?><br />
+                                </label>
+                                </fieldset>
+                            </td>
+                        </tr>
 			<tr valign="top">
 			    <th scope="row"><?php esc_html_e('Default Pages Sidebar Position', 'udesign'); ?></th>
 			    <td>
@@ -1711,7 +1728,7 @@ class UDESIGN_Theme_Options {
                                 <div class="clear"></div>
                                 <div class="submit" style="padding:10px 0 0 80px; float:right; clear:both;">
                                     <input type="hidden" id="udesign_submit" value="1" name="udesign_submit"/>
-                                    <input class="button-primary" type="submit" name="submit" value="<?php esc_attr_e('Save Changes', 'udesign') ?>" />
+                                    <input class="button-primary udesign-right-submit-btn" type="submit" name="submit" value="<?php esc_attr_e('Save Changes', 'udesign') ?>" />
                                     <span class="spinner"></span>
                                 </div>
 			    </td>
@@ -1731,6 +1748,7 @@ class UDESIGN_Theme_Options {
 				<label for="max_theme_width">
 				    <input name="udesign_options[max_theme_width]" type="checkbox" id="max_theme_width" value="yes" <?php checked('yes', $options['max_theme_width']); ?> />
 				    <?php esc_html_e("Set the theme width to the maximum possible browser or device width.", 'udesign'); ?>
+                                    <span class="description"><?php esc_html_e('(Fluid Layout)', 'udesign'); ?></span>
 				</label>
 				</fieldset>
 			    </td>
@@ -1741,16 +1759,18 @@ class UDESIGN_Theme_Options {
                                 <div id="global_theme_width_slide_bar"></div>
 				<input name="udesign_options[global_theme_width]" type="text" id="global_theme_width" value="<?php echo ( $options['global_theme_width'] ) ? esc_attr($options['global_theme_width']) : '960'; ?>" size="5" maxlength="4" />px. 
                                 <span class="description"><?php esc_html_e('(Width) in pixels.', 'udesign'); ?></span>
-                                <?php esc_html_e('This option is about the overall theme width and it will be applied to all pages. You may specify a range between 960px and 1200px.', 'udesign'); ?>
+                                <?php esc_html_e('This option is about the overall theme width and it will be applied to all pages. You may specify a range between 960px and 1600px.', 'udesign'); ?>
+                                <span class="description"><?php esc_html_e('(default: 960)', 'udesign'); ?></span>
                             </td>
                         </tr>
 			<tr valign="top">
 			    <th scope="row" style="padding-right:0"><?php esc_html_e('Global Sidebar Width', 'udesign'); ?></th>
 			    <td>
                                 <div id="global_sidebar_width_slide_bar"></div>
-				<input name="udesign_options[global_sidebar_width]" type="text" id="global_sidebar_width" value="<?php echo ( $options['global_sidebar_width'] ) ? esc_attr($options['global_sidebar_width']) : '33'; ?>" size="5" maxlength="2" />px. 
+				<input name="udesign_options[global_sidebar_width]" type="text" id="global_sidebar_width" value="<?php echo ( $options['global_sidebar_width'] ) ? esc_attr($options['global_sidebar_width']) : '33'; ?>" size="5" maxlength="6" />%. 
                                 <span class="description"><?php esc_html_e('(Width) in percentage.', 'udesign'); ?></span>
                                 <?php esc_html_e('This option is about the overall sidebar width and it will be applied to all pages. You may specify a range between 20% and 50%.', 'udesign'); ?>
+                                <span class="description"><?php esc_html_e('(default: 33)', 'udesign'); ?></span>
 
                             </td>
                         </tr>
@@ -1765,12 +1785,12 @@ class UDESIGN_Theme_Options {
 		<table class="form-table">
 		    <tbody>
 			<tr valign="top">
-			    <th scope="row"><?php esc_html_e('Google WebFont Directory', 'udesign'); ?></th>
+			    <th scope="row"><?php esc_html_e('Google Fonts', 'udesign'); ?></th>
 			    <td>
-				<fieldset><legend class="screen-reader-text"><span><?php esc_html_e('Google Web Fonts', 'udesign'); ?></span></legend>
+				<fieldset><legend class="screen-reader-text"><span><?php esc_html_e('Google Fonts', 'udesign'); ?></span></legend>
 				<label for="enable_google_web_fonts">
 				    <input name="udesign_options[enable_google_web_fonts]" type="checkbox" id="enable_google_web_fonts" value="yes" <?php checked('yes', $options['enable_google_web_fonts']); ?> />
-				    <?php esc_html_e('Enable Google WebFonts.', 'udesign'); ?>
+				    <?php esc_html_e('Enable Google Fonts', 'udesign'); ?>
 				</label>
 				<br />
 				<?php esc_html_e('Enable this option and hit "Update" to add the Google Fonts to the available fonts listed below.', 'udesign'); ?>
@@ -1778,8 +1798,8 @@ class UDESIGN_Theme_Options {
 				<br />
 				<div class="submit" style="padding:10px 0 0 80px; float:left; clear:both;">
 				    <input type="hidden" id="udesign_submit" value="1" name="udesign_submit"/>
-				    <input class="button-secondary" type="submit" name="submit" value="<?php esc_attr_e('Update', 'udesign'); ?>" />
-                                    <span class="spinner"></span>
+				    <input class="button-secondary udesign-left-submit-btn" type="submit" name="submit" value="<?php esc_attr_e('Update', 'udesign'); ?>" />
+                                    <span class="spinner spinner-float-left"></span>
 				</div>
 				</fieldset>
 			    </td>
@@ -1900,6 +1920,7 @@ class UDESIGN_Theme_Options {
 			    <th scope="row"><?php esc_html_e('Title Headings Font Settings', 'udesign'); ?></th>
 			    <td>
 				<div style="float:left; margin-bottom:7px;"><?php esc_html_e("This font is applied to all h1, h2, h3, h4, h5, h6 - Headings (with small exceptions) and  the Slogan (Tagline):", 'udesign'); ?></div>
+                                <div class="clear"></div>
 				<label for="title_headings_font_family" style="float:left; width:220px;">
 				    <?php esc_html_e('Font Family: ', 'udesign'); ?><br />
 				    <select name="udesign_options[title_headings_font_family]" id="title_headings_font_family" style="width:200px;">
@@ -1969,8 +1990,8 @@ class UDESIGN_Theme_Options {
 				<br />
 				<div class="submit" style="padding:10px 0 0 80px; float:left; clear:both;">
 				    <input type="hidden" id="udesign_submit" value="1" name="udesign_submit"/>
-				    <input class="button-secondary" type="submit" name="submit" value="<?php esc_attr_e('Update', 'udesign'); ?>" />
-                                    <span class="spinner"></span>
+				    <input class="button-secondary udesign-left-submit-btn" type="submit" name="submit" value="<?php esc_attr_e('Update', 'udesign'); ?>" />
+                                    <span class="spinner spinner-float-left"></span>
 				</div>
 <?php				if ( $options['custom_colors_switch'] == 'enable' ) : ?>
 				    <div style="padding-top:10px; clear:both;"><?php esc_html_e('Continue with the section below to customize the colors...', 'udesign'); ?></div>
@@ -1994,7 +2015,7 @@ class UDESIGN_Theme_Options {
 				    </div>
 				</td>
 				<td>
-				    <input name="udesign_options[body_text_color]" id="body_text_color" type="text" maxlength="6" size="7" style="margin:7px 10px 0 0" value="<?php echo ($options['body_text_color']) ? esc_attr($options['body_text_color']) : '333333'; ?>" />
+				    <input name="udesign_options[body_text_color]" id="body_text_color" type="text" maxlength="6" size="7" style="margin:2px 10px 0 0" value="<?php echo ($options['body_text_color']) ? esc_attr($options['body_text_color']) : '333333'; ?>" />
 				    <?php esc_html_e("Main body text color affecting the entire site.", 'udesign'); ?>
 				</td>
 			    </tr>
@@ -2006,7 +2027,7 @@ class UDESIGN_Theme_Options {
 				    </div>
 				</td>
 				<td>
-				    <input name="udesign_options[main_link_color]" id="main_link_color" type="text" maxlength="6" size="7" style="margin:7px 10px 0 0" value="<?php echo ($options['main_link_color']) ? esc_attr($options['main_link_color']) : 'FE5E08'; ?>" />
+				    <input name="udesign_options[main_link_color]" id="main_link_color" type="text" maxlength="6" size="7" style="margin:2px 10px 0 0" value="<?php echo ($options['main_link_color']) ? esc_attr($options['main_link_color']) : 'FE5E08'; ?>" />
 				    <?php esc_html_e("Main link color affecting the entire site.", 'udesign'); ?>
 				</td>
 			    </tr>
@@ -2018,7 +2039,7 @@ class UDESIGN_Theme_Options {
 				    </div>
 				</td>
 				<td>
-				    <input name="udesign_options[main_link_color_hover]" id="main_link_color_hover" type="text" maxlength="6" size="7" style="margin:7px 10px 0 0" value="<?php echo ($options['main_link_color_hover']) ? esc_attr($options['main_link_color_hover']) : '333333'; ?>" />
+				    <input name="udesign_options[main_link_color_hover]" id="main_link_color_hover" type="text" maxlength="6" size="7" style="margin:2px 10px 0 0" value="<?php echo ($options['main_link_color_hover']) ? esc_attr($options['main_link_color_hover']) : '333333'; ?>" />
 				    <?php esc_html_e("This is the link hover color.", 'udesign'); ?>
 				</td>
 			    </tr>
@@ -2030,7 +2051,7 @@ class UDESIGN_Theme_Options {
 				    </div>
 				</td>
 				<td>
-				    <input name="udesign_options[main_headings_color]" id="main_headings_color" type="text" maxlength="6" size="7" style="margin:7px 10px 0 0" value="<?php echo ($options['main_headings_color']) ? esc_attr($options['main_headings_color']) : '333333'; ?>" />
+				    <input name="udesign_options[main_headings_color]" id="main_headings_color" type="text" maxlength="6" size="7" style="margin:2px 10px 0 0" value="<?php echo ($options['main_headings_color']) ? esc_attr($options['main_headings_color']) : '333333'; ?>" />
 				    <?php esc_html_e("This is the color for general H1, H2, H3, H4 ,H5 ,H6 Headings where applicable.", 'udesign'); ?>
 				</td>
 			    </tr>
@@ -2047,7 +2068,7 @@ class UDESIGN_Theme_Options {
 				    </div>
 				</td>
 				<td>
-				    <input name="udesign_options[top_bg_color]" id="top_bg_color" type="text" maxlength="6" size="7" style="margin:7px 10px 0 0" value="<?php echo ($options['top_bg_color']) ? esc_attr($options['top_bg_color']) : 'FBFBFB'; ?>" />
+				    <input name="udesign_options[top_bg_color]" id="top_bg_color" type="text" maxlength="6" size="7" style="margin:2px 10px 0 0" value="<?php echo ($options['top_bg_color']) ? esc_attr($options['top_bg_color']) : 'FBFBFB'; ?>" />
 				    <?php esc_html_e("Site's top section background color. This is the section with the logo, slogan, phone number and search box, immediately above the menu.", 'udesign'); ?>
 				</td>
 			    </tr>
@@ -2063,7 +2084,7 @@ class UDESIGN_Theme_Options {
 				    </div>
 				</td>
 				<td>
-				    <input name="udesign_options[top_text_color]" id="top_text_color" type="text" maxlength="6" size="7" style="margin:7px 10px 0 0" value="<?php echo ($options['top_text_color']) ? esc_attr($options['top_text_color']) : '999999'; ?>" />
+				    <input name="udesign_options[top_text_color]" id="top_text_color" type="text" maxlength="6" size="7" style="margin:2px 10px 0 0" value="<?php echo ($options['top_text_color']) ? esc_attr($options['top_text_color']) : '999999'; ?>" />
 				    <?php esc_html_e("This color affects the slogan, phone number and search text.", 'udesign'); ?>
 				</td>
 			    </tr>
@@ -2075,7 +2096,7 @@ class UDESIGN_Theme_Options {
 				    </div>
 				</td>
 				<td>
-				    <input name="udesign_options[top_nav_link_color]" id="top_nav_link_color" type="text" maxlength="6" size="7" style="margin:7px 10px 0 0" value="<?php echo ($options['top_nav_link_color']) ? esc_attr($options['top_nav_link_color']) : '999999'; ?>" />
+				    <input name="udesign_options[top_nav_link_color]" id="top_nav_link_color" type="text" maxlength="6" size="7" style="margin:2px 10px 0 0" value="<?php echo ($options['top_nav_link_color']) ? esc_attr($options['top_nav_link_color']) : '999999'; ?>" />
 				    <?php esc_html_e('This is the color of the main menu links.', 'udesign'); ?>
 				</td>
 			    </tr>
@@ -2087,7 +2108,7 @@ class UDESIGN_Theme_Options {
 				    </div>
 				</td>
 				<td>
-				    <input name="udesign_options[top_nav_active_link_color]" id="top_nav_active_link_color" type="text" maxlength="6" size="7" style="margin:7px 10px 0 0" value="<?php echo ($options['top_nav_active_link_color']) ? esc_attr($options['top_nav_active_link_color']) : 'F95A09'; ?>" />
+				    <input name="udesign_options[top_nav_active_link_color]" id="top_nav_active_link_color" type="text" maxlength="6" size="7" style="margin:2px 10px 0 0" value="<?php echo ($options['top_nav_active_link_color']) ? esc_attr($options['top_nav_active_link_color']) : 'F95A09'; ?>" />
 				    <?php esc_html_e('This is the color of the main menu active/selected link.', 'udesign'); ?>
 				</td>
 			    </tr>
@@ -2099,7 +2120,7 @@ class UDESIGN_Theme_Options {
 				    </div>
 				</td>
 				<td>
-				    <input name="udesign_options[top_nav_hover_link_color]" id="top_nav_hover_link_color" type="text" maxlength="6" size="7" style="margin:7px 10px 0 0" value="<?php echo ($options['top_nav_hover_link_color']) ? esc_attr($options['top_nav_hover_link_color']) : '777777'; ?>" />
+				    <input name="udesign_options[top_nav_hover_link_color]" id="top_nav_hover_link_color" type="text" maxlength="6" size="7" style="margin:2px 10px 0 0" value="<?php echo ($options['top_nav_hover_link_color']) ? esc_attr($options['top_nav_hover_link_color']) : '777777'; ?>" />
 				    <?php esc_html_e('This is the color of the main menu hover link.', 'udesign'); ?>
 				</td>
 			    </tr>
@@ -2116,7 +2137,7 @@ class UDESIGN_Theme_Options {
 				    </div>
 				</td>
 				<td>
-				    <input name="udesign_options[page_title_color]" id="page_title_color" type="text" maxlength="6" size="7" style="margin:7px 10px 0 0" value="<?php echo ($options['page_title_color']) ? esc_attr($options['page_title_color']) : '333333'; ?>" />
+				    <input name="udesign_options[page_title_color]" id="page_title_color" type="text" maxlength="6" size="7" style="margin:2px 10px 0 0" value="<?php echo ($options['page_title_color']) ? esc_attr($options['page_title_color']) : '333333'; ?>" />
 				    <?php esc_html_e('This is the color for the title of pages/posts/archives, etc. located in the area underneath the menu.', 'udesign'); ?>
 				</td>
 			    </tr>
@@ -2128,7 +2149,7 @@ class UDESIGN_Theme_Options {
 				    </div>
 				</td>
 				<td>
-				    <input name="udesign_options[page_title_bg_color]" id="page_title_bg_color" type="text" maxlength="6" size="7" style="margin:7px 10px 0 0" value="<?php echo ($options['page_title_bg_color']) ? esc_attr($options['page_title_bg_color']) : 'FFFFFF'; ?>" />
+				    <input name="udesign_options[page_title_bg_color]" id="page_title_bg_color" type="text" maxlength="6" size="7" style="margin:2px 10px 0 0" value="<?php echo ($options['page_title_bg_color']) ? esc_attr($options['page_title_bg_color']) : 'FFFFFF'; ?>" />
 				    <?php esc_html_e('This is the background color behind the page titles.', 'udesign'); ?>
 				</td>
 			    </tr>
@@ -2140,7 +2161,7 @@ class UDESIGN_Theme_Options {
 				    </div>
 				</td>
 				<td>
-				    <input name="udesign_options[header_bg_color]" id="header_bg_color" type="text" maxlength="6" size="7" style="margin:7px 10px 0 0" value="<?php echo ($options['header_bg_color']) ? esc_attr($options['header_bg_color']) : 'FFFFFF'; ?>" />
+				    <input name="udesign_options[header_bg_color]" id="header_bg_color" type="text" maxlength="6" size="7" style="margin:2px 10px 0 0" value="<?php echo ($options['header_bg_color']) ? esc_attr($options['header_bg_color']) : 'FFFFFF'; ?>" />
 				    <?php esc_html_e('This is the background color behind the home page sliders.', 'udesign'); ?>
 				</td>
 			    </tr>
@@ -2152,7 +2173,7 @@ class UDESIGN_Theme_Options {
 				    </div>
 				</td>
 				<td>
-				    <input name="udesign_options[main_content_bg]" id="main_content_bg" type="text" maxlength="6" size="7" style="margin:7px 10px 0 0" value="<?php echo ($options['main_content_bg']) ? esc_attr($options['main_content_bg']) : 'FFFFFF'; ?>" />
+				    <input name="udesign_options[main_content_bg]" id="main_content_bg" type="text" maxlength="6" size="7" style="margin:2px 10px 0 0" value="<?php echo ($options['main_content_bg']) ? esc_attr($options['main_content_bg']) : 'FFFFFF'; ?>" />
 				    <?php esc_html_e('This is the color of the main content wrapper background.', 'udesign'); ?>
 				</td>
 			    </tr>
@@ -2169,7 +2190,7 @@ class UDESIGN_Theme_Options {
 				    </div>
 				</td>
 				<td>
-				    <input name="udesign_options[widget_title_color]" id="widget_title_color" type="text" maxlength="6" size="7" style="margin:7px 10px 0 0" value="<?php echo ($options['widget_title_color']) ? esc_attr($options['widget_title_color']) : '333333'; ?>" />
+				    <input name="udesign_options[widget_title_color]" id="widget_title_color" type="text" maxlength="6" size="7" style="margin:2px 10px 0 0" value="<?php echo ($options['widget_title_color']) ? esc_attr($options['widget_title_color']) : '333333'; ?>" />
 				    <?php esc_html_e('This is the color for the title of widgets used in this Widget Area, usually an "H3" Headings.', 'udesign'); ?>
 				</td>
 			    </tr>
@@ -2181,7 +2202,7 @@ class UDESIGN_Theme_Options {
 				    </div>
 				</td>
 				<td>
-				    <input name="udesign_options[widget_text_color]" id="widget_text_color" type="text" maxlength="6" size="7" style="margin:7px 10px 0 0" value="<?php echo ($options['widget_text_color']) ? esc_attr($options['widget_text_color']) : '333333'; ?>" />
+				    <input name="udesign_options[widget_text_color]" id="widget_text_color" type="text" maxlength="6" size="7" style="margin:2px 10px 0 0" value="<?php echo ($options['widget_text_color']) ? esc_attr($options['widget_text_color']) : '333333'; ?>" />
 				    <?php esc_html_e('This is the default text color applied to this Widget Area.', 'udesign'); ?>
 				</td>
 			    </tr>
@@ -2193,7 +2214,7 @@ class UDESIGN_Theme_Options {
 				    </div>
 				</td>
 				<td>
-				    <input name="udesign_options[widget_bg_color]" id="widget_bg_color" type="text" maxlength="6" size="7" style="margin:7px 10px 0 0" value="<?php echo ($options['widget_bg_color']) ? esc_attr($options['widget_bg_color']) : 'F8F8F8'; ?>" />
+				    <input name="udesign_options[widget_bg_color]" id="widget_bg_color" type="text" maxlength="6" size="7" style="margin:2px 10px 0 0" value="<?php echo ($options['widget_bg_color']) ? esc_attr($options['widget_bg_color']) : 'F8F8F8'; ?>" />
 				    <?php esc_html_e('This is the background color.', 'udesign'); ?>
 				</td>
 			    </tr>
@@ -2210,7 +2231,7 @@ class UDESIGN_Theme_Options {
 				    </div>
 				</td>
 				<td>
-				    <input name="udesign_options[bottom_bg_color]" id="bottom_bg_color" type="text" maxlength="6" size="7" style="margin:7px 10px 0 0" value="<?php echo ($options['bottom_bg_color']) ? esc_attr($options['bottom_bg_color']) : 'F5F5F5'; ?>" />
+				    <input name="udesign_options[bottom_bg_color]" id="bottom_bg_color" type="text" maxlength="6" size="7" style="margin:2px 10px 0 0" value="<?php echo ($options['bottom_bg_color']) ? esc_attr($options['bottom_bg_color']) : 'F5F5F5'; ?>" />
 				    <?php esc_html_e('This is the background color for the bottom area.', 'udesign'); ?>
 				</td>
 			    </tr>
@@ -2222,7 +2243,7 @@ class UDESIGN_Theme_Options {
 				    </div>
 				</td>
 				<td>
-				    <input name="udesign_options[bottom_title_color]" id="bottom_title_color" type="text" maxlength="6" size="7" style="margin:7px 10px 0 0" value="<?php echo ($options['bottom_title_color']) ? esc_attr($options['bottom_title_color']) : 'FE5E08'; ?>" />
+				    <input name="udesign_options[bottom_title_color]" id="bottom_title_color" type="text" maxlength="6" size="7" style="margin:2px 10px 0 0" value="<?php echo ($options['bottom_title_color']) ? esc_attr($options['bottom_title_color']) : 'FE5E08'; ?>" />
 				    <?php esc_html_e('This is the color applied to the bottom area widget titles.', 'udesign'); ?>
 				</td>
 			    </tr>
@@ -2234,7 +2255,7 @@ class UDESIGN_Theme_Options {
 				    </div>
 				</td>
 				<td>
-				    <input name="udesign_options[bottom_text_color]" id="bottom_text_color" type="text" maxlength="6" size="7" style="margin:7px 10px 0 0" value="<?php echo ($options['bottom_text_color']) ? esc_attr($options['bottom_text_color']) : '333333'; ?>" />
+				    <input name="udesign_options[bottom_text_color]" id="bottom_text_color" type="text" maxlength="6" size="7" style="margin:2px 10px 0 0" value="<?php echo ($options['bottom_text_color']) ? esc_attr($options['bottom_text_color']) : '333333'; ?>" />
 				    <?php esc_html_e('This is the default text color applied to the bottom area.', 'udesign'); ?>
 				</td>
 			    </tr>
@@ -2246,7 +2267,7 @@ class UDESIGN_Theme_Options {
 				    </div>
 				</td>
 				<td>
-				    <input name="udesign_options[bottom_link_color]" id="bottom_link_color" type="text" maxlength="6" size="7" style="margin:7px 10px 0 0" value="<?php echo ($options['bottom_link_color']) ? esc_attr($options['bottom_link_color']) : '3D6E97'; ?>" />
+				    <input name="udesign_options[bottom_link_color]" id="bottom_link_color" type="text" maxlength="6" size="7" style="margin:2px 10px 0 0" value="<?php echo ($options['bottom_link_color']) ? esc_attr($options['bottom_link_color']) : '3D6E97'; ?>" />
 				    <?php esc_html_e('This is the bottom area link color.', 'udesign'); ?>
 				</td>
 			    </tr>
@@ -2258,7 +2279,7 @@ class UDESIGN_Theme_Options {
 				    </div>
 				</td>
 				<td>
-				    <input name="udesign_options[bottom_hover_link_color]" id="bottom_hover_link_color" type="text" maxlength="6" size="7" style="margin:7px 10px 0 0" value="<?php echo ($options['bottom_hover_link_color']) ? esc_attr($options['bottom_hover_link_color']) : '000000'; ?>" />
+				    <input name="udesign_options[bottom_hover_link_color]" id="bottom_hover_link_color" type="text" maxlength="6" size="7" style="margin:2px 10px 0 0" value="<?php echo ($options['bottom_hover_link_color']) ? esc_attr($options['bottom_hover_link_color']) : '000000'; ?>" />
 				    <?php esc_html_e('This is the bottom area link hover color.', 'udesign'); ?>
 				</td>
 			    </tr>
@@ -2275,7 +2296,7 @@ class UDESIGN_Theme_Options {
 				    </div>
 				</td>
 				<td>
-				    <input name="udesign_options[footer_bg_color]" id="footer_bg_color" type="text" maxlength="6" size="7" style="margin:7px 10px 0 0" value="<?php echo ($options['footer_bg_color']) ? esc_attr($options['footer_bg_color']) : 'EAEAEA'; ?>" />
+				    <input name="udesign_options[footer_bg_color]" id="footer_bg_color" type="text" maxlength="6" size="7" style="margin:2px 10px 0 0" value="<?php echo ($options['footer_bg_color']) ? esc_attr($options['footer_bg_color']) : 'EAEAEA'; ?>" />
 				    <?php esc_html_e('This is the footer background color.', 'udesign'); ?>
 				</td>
 			    </tr>
@@ -2287,7 +2308,7 @@ class UDESIGN_Theme_Options {
 				    </div>
 				</td>
 				<td>
-				    <input name="udesign_options[footer_text_color]" id="footer_text_color" type="text" maxlength="6" size="7" style="margin:7px 10px 0 0" value="<?php echo ($options['footer_text_color']) ? esc_attr($options['footer_text_color']) : '797979'; ?>" />
+				    <input name="udesign_options[footer_text_color]" id="footer_text_color" type="text" maxlength="6" size="7" style="margin:2px 10px 0 0" value="<?php echo ($options['footer_text_color']) ? esc_attr($options['footer_text_color']) : '797979'; ?>" />
 				    <?php esc_html_e('This is the footer general text color.', 'udesign'); ?>
 				</td>
 			    </tr>
@@ -2299,7 +2320,7 @@ class UDESIGN_Theme_Options {
 				    </div>
 				</td>
 				<td>
-				    <input name="udesign_options[footer_link_color]" id="footer_link_color" type="text" maxlength="6" size="7" style="margin:7px 10px 0 0" value="<?php echo ($options['footer_link_color']) ? esc_attr($options['footer_link_color']) : '3D6E97'; ?>" />
+				    <input name="udesign_options[footer_link_color]" id="footer_link_color" type="text" maxlength="6" size="7" style="margin:2px 10px 0 0" value="<?php echo ($options['footer_link_color']) ? esc_attr($options['footer_link_color']) : '3D6E97'; ?>" />
 				    <?php esc_html_e('This is the footer link color.', 'udesign'); ?>
 				</td>
 			    </tr>
@@ -2311,7 +2332,7 @@ class UDESIGN_Theme_Options {
 				    </div>
 				</td>
 				<td>
-				    <input name="udesign_options[footer_hover_link_color]" id="footer_hover_link_color" type="text" maxlength="6" size="7" style="margin:7px 10px 0 0" value="<?php echo ($options['footer_hover_link_color']) ? esc_attr($options['footer_hover_link_color']) : '000000'; ?>" />
+				    <input name="udesign_options[footer_hover_link_color]" id="footer_hover_link_color" type="text" maxlength="6" size="7" style="margin:2px 10px 0 0" value="<?php echo ($options['footer_hover_link_color']) ? esc_attr($options['footer_hover_link_color']) : '000000'; ?>" />
 				    <?php esc_html_e('This is the footer link hover color.', 'udesign'); ?>
 				</td>
 			    </tr>
@@ -2362,7 +2383,7 @@ class UDESIGN_Theme_Options {
                         <table class="form-table" style="background-color:#FCFCFC; border:1px solid #EBEBEB;">
                             <tbody>
                                 <tr valign="top">
-                                    <th scope="row" style="line-height:18px;"><?php esc_html_e('Home Page Header/Slider Background Image', 'udesign'); ?></th>
+                                    <th scope="row"><?php esc_html_e('Home Page Header/Slider Background Image', 'udesign'); ?></th>
                                     <td>
                                         <div style="padding:0; float:left;">
                                             <label for="header_bg_img"><?php esc_html_e('Enter a URL or upload an image:', 'udesign'); ?></label><br />
@@ -2398,7 +2419,7 @@ class UDESIGN_Theme_Options {
                         <table class="form-table" style="background-color:#FCFCFC; border:1px solid #EBEBEB;">
                             <tbody>
                                 <tr valign="top">
-                                    <th scope="row" style="line-height:18px;"><?php esc_html_e('Home Page Before Content Background Image', 'udesign'); ?></th>
+                                    <th scope="row"><?php esc_html_e('Home Page Before Content Background Image', 'udesign'); ?></th>
                                     <td>
                                         <div style="padding:0; float:left;">
                                             <label for="home_page_before_content_bg_img"><?php esc_html_e('Enter a URL or upload an image:', 'udesign'); ?></label><br />
@@ -2578,7 +2599,7 @@ class UDESIGN_Theme_Options {
                         <table class="form-table" style="background-color:#F0F5F5; border:1px solid #DDE6E7;">
                             <tbody>
                                 <tr valign="top">
-                                    <th scope="row" style="line-height:18px;"><?php esc_html_e('One Continuous Background Image That Will Span Across All Sections', 'udesign'); ?></th>
+                                    <th scope="row"><?php esc_html_e('One Continuous Background Image That Will Span Across All Sections', 'udesign'); ?></th>
                                     <td>
                                         <div style="padding:0; float:left;">
                                             <label for="one_continuous_bg_img"><?php esc_html_e('Enter a URL or upload an image:', 'udesign'); ?></label><br />
@@ -2656,8 +2677,8 @@ class UDESIGN_Theme_Options {
 			<p><span class="description"><?php esc_html_e('A Color Scheme will be saved with an automatic name generated from the current time stamp. Once saved you will be able to choose it from the dropdown below and load it at a later time.', 'udesign'); ?></span>
 			    <div class="submit" style="padding:0 0 10px; float:left; clear:both; display:block;">
 				<input type="hidden" id="udesign_submit" value="1" name="udesign_submit"/>
-				<input class="button-secondary" type="submit" name="submit" value="<?php esc_attr_e('Save', 'udesign'); ?>" />
-                                <span class="spinner"></span>
+				<input class="button-secondary udesign-left-submit-btn" type="submit" name="submit" value="<?php esc_attr_e('Save', 'udesign'); ?>" />
+                                <span class="spinner spinner-float-left"></span>
 			    </div>
 			</p>
 			<div class="clear"></div>
@@ -2681,8 +2702,8 @@ class UDESIGN_Theme_Options {
 			<p>
 			    <div class="submit" style="padding:0; float:left; clear:both; display:block;">
 				<input type="hidden" id="udesign_submit" value="1" name="udesign_submit"/>
-				<input class="button-secondary" type="submit" name="submit" value="<?php esc_attr_e('Update', 'udesign'); ?>" />
-                                <span class="spinner"></span>
+				<input class="button-secondary udesign-left-submit-btn" type="submit" name="submit" value="<?php esc_attr_e('Update', 'udesign'); ?>" />
+                                <span class="spinner spinner-float-left"></span>
 			    </div>
 			</p>
 			<div class="clear"></div>
@@ -2714,8 +2735,8 @@ class UDESIGN_Theme_Options {
 				<div class="clear"></div>
 				<div class="submit" style="padding:10px 0 0 80px; float:left; clear:both;">
 				    <input type="hidden" id="udesign_submit" value="1" name="udesign_submit"/>
-				    <input class="button-secondary" type="submit" name="submit" value="<?php esc_attr_e('Save & Activate', 'udesign'); ?>" />
-                                    <span class="spinner"></span>
+				    <input class="button-secondary udesign-left-submit-btn" type="submit" name="submit" value="<?php esc_attr_e('Save & Activate', 'udesign'); ?>" />
+                                    <span class="spinner spinner-float-left"></span>
 				</div>
 <?php				if ( $current_slider != '5' ) : ?>
 				    <div style="padding-top:10px; clear:both;"><?php esc_html_e('Continue with the section below to customize the slider...', 'udesign'); ?></div>
@@ -2888,7 +2909,7 @@ class UDESIGN_Theme_Options {
 					    <textarea name="udesign_options[gs_slide_default_info_txt_<?php echo $slide_row_number; ?>]" class="code"
 							style="width:98%; font-size:12px; margin: 5px 0;" id="gs_slide_default_info_txt_<?php echo $slide_row_number; ?>"
 							rows="5" cols="60"><?php echo ( $options['gs_slide_default_info_txt_'.$slide_row_number] ) ? esc_attr($options['gs_slide_default_info_txt_'.$slide_row_number]) : ''; ?></textarea>
-					    <span class="description" style="margin:20px 0; line-height:1.5; font-size:10px;"><?php esc_html_e('This textfield supports HTML and CSS. The CSS classes used are located in "sliders/flashmo/grid_slider/flashmo_224_style.css"', 'udesign'); ?></span>
+					    <span class="description" style="margin:20px 0; line-height:1.5; font-size:12px;"><?php esc_html_e('This textfield supports HTML and CSS. The CSS classes used are located in "sliders/flashmo/grid_slider/flashmo_224_style.css"', 'udesign'); ?></span>
 					</div>
 				    </td>
 				</tr>
@@ -2953,7 +2974,7 @@ class UDESIGN_Theme_Options {
 				<th scope="row"><?php esc_html_e('No JavaScript image', 'udesign'); ?></th>
 				<td>
 				    <?php esc_html_e('Paste the full path to your image:', 'udesign'); ?><br />
-				    <textarea style="width: 98%; font-size: 12px;" id="gs_no_js_img" rows="2" cols="60" name="udesign_options[gs_no_js_img]"><?php if( $gs_no_js_img ){ echo esc_url($gs_no_js_img); } ?></textarea><br />
+				    <textarea style="width: 98%;" id="gs_no_js_img" rows="2" cols="60" name="udesign_options[gs_no_js_img]"><?php if( $gs_no_js_img ){ echo esc_url($gs_no_js_img); } ?></textarea><br />
 				    <span class="description"><?php esc_html_e('In the case when JavaScript is disabled the 1st slider image is displayed by default in place of the Flashmo slider, you may change that in here', 'udesign'); ?></span>
 				</td>
 			    </tr>
@@ -3138,7 +3159,7 @@ class UDESIGN_Theme_Options {
 				    </div>
 				</td>
 				<td>
-				    <input name="udesign_options[pm_text_background]" id="pm_text_background" type="text" maxlength="6" size="6" style="margin:7px 10px 0 0" value="<?php echo ($pm_text_background) ? esc_attr($pm_text_background) : '0000FF'; ?>" />
+				    <input name="udesign_options[pm_text_background]" id="pm_text_background" type="text" maxlength="6" size="6" style="margin:2px 10px 0 0" value="<?php echo ($pm_text_background) ? esc_attr($pm_text_background) : '0000FF'; ?>" />
 				    <?php esc_html_e('Description text background', 'udesign'); ?>
 				</td>
 			    </tr>
@@ -3150,7 +3171,7 @@ class UDESIGN_Theme_Options {
 				    </div>
 				</td>
 				<td>
-				    <input name="udesign_options[pm_inner_color]" id="pm_inner_color" type="text" maxlength="6" size="6" style="margin:7px 10px 0 0" value="<?php echo ($pm_inner_color) ? esc_attr($pm_inner_color) : '0000FF'; ?>" />
+				    <input name="udesign_options[pm_inner_color]" id="pm_inner_color" type="text" maxlength="6" size="6" style="margin:2px 10px 0 0" value="<?php echo ($pm_inner_color) ? esc_attr($pm_inner_color) : '0000FF'; ?>" />
 				    <?php esc_html_e('Sides color of the sliced elements', 'udesign'); ?>
 				</td>
 			    </tr>
@@ -3220,7 +3241,7 @@ class UDESIGN_Theme_Options {
 				<th scope="row"><?php esc_html_e('No JavaScript image', 'udesign'); ?></th>
 				<td>
 				    <?php esc_html_e('Paste the full path to your image:', 'udesign'); ?><br />
-				    <textarea style="width: 98%; font-size: 12px;" id="pm_no_js_img" rows="2" cols="60" name="udesign_options[pm_no_js_img]"><?php if( $pm_no_js_img ){ echo esc_url($pm_no_js_img); } ?></textarea><br />
+				    <textarea style="width: 98%;" id="pm_no_js_img" rows="2" cols="60" name="udesign_options[pm_no_js_img]"><?php if( $pm_no_js_img ){ echo esc_url($pm_no_js_img); } ?></textarea><br />
 				    <span class="description"><?php esc_html_e('In the case when JavaScript is disabled the 1st slider image is displayed by default in place of the Piecemaker slider, you may change that in here', 'udesign'); ?></span>
 				</td>
 			    </tr>
@@ -3280,7 +3301,7 @@ class UDESIGN_Theme_Options {
 					</div>
 				    </td>
 				    <td>
-					<input name="udesign_options[pm2_loader_color]" id="pm2_loader_color" type="text" maxlength="6" size="6" style="margin:7px 10px 0 0" value="<?php echo ($options['pm2_loader_color']) ? esc_attr($options['pm2_loader_color']) : '333333'; ?>" />
+					<input name="udesign_options[pm2_loader_color]" id="pm2_loader_color" type="text" maxlength="6" size="6" style="margin:2px 10px 0 0" value="<?php echo ($options['pm2_loader_color']) ? esc_attr($options['pm2_loader_color']) : '333333'; ?>" />
 					<?php esc_html_e('Color of the cubes before the first image appears, also the color of the back sides of the cube, which become visible at some transition types.', 'udesign'); ?>
 				    </td>
 				</tr>
@@ -3292,7 +3313,7 @@ class UDESIGN_Theme_Options {
 					</div>
 				    </td>
 				    <td>
-					<input name="udesign_options[pm2_inner_side_color]" id="pm2_inner_side_color" type="text" maxlength="6" size="6" style="margin:7px 10px 0 0" value="<?php echo ($options['pm2_inner_side_color']) ? esc_attr($options['pm2_inner_side_color']) : '222222'; ?>" />
+					<input name="udesign_options[pm2_inner_side_color]" id="pm2_inner_side_color" type="text" maxlength="6" size="6" style="margin:2px 10px 0 0" value="<?php echo ($options['pm2_inner_side_color']) ? esc_attr($options['pm2_inner_side_color']) : '222222'; ?>" />
 					<?php esc_html_e('Color of the inner sides of the cube when sliced', 'udesign'); ?>
 				    </td>
 				</tr>
@@ -3400,7 +3421,7 @@ class UDESIGN_Theme_Options {
 					</div>
 				    </td>
 				    <td>
-					<input name="udesign_options[pm2_menu_color_1]" id="pm2_menu_color_1" type="text" maxlength="6" size="6" style="margin:7px 10px 0 0" value="<?php echo ($options['pm2_menu_color_1']) ? esc_attr($options['pm2_menu_color_1']) : '999999'; ?>" />
+					<input name="udesign_options[pm2_menu_color_1]" id="pm2_menu_color_1" type="text" maxlength="6" size="6" style="margin:2px 10px 0 0" value="<?php echo ($options['pm2_menu_color_1']) ? esc_attr($options['pm2_menu_color_1']) : '999999'; ?>" />
 					<?php esc_html_e('Color of an inactive menu item.', 'udesign'); ?>
 				    </td>
 				</tr>
@@ -3412,7 +3433,7 @@ class UDESIGN_Theme_Options {
 					</div>
 				    </td>
 				    <td>
-					<input name="udesign_options[pm2_menu_color_2]" id="pm2_menu_color_2" type="text" maxlength="6" size="6" style="margin:7px 10px 0 0" value="<?php echo ($options['pm2_menu_color_2']) ? esc_attr($options['pm2_menu_color_2']) : '333333'; ?>" />
+					<input name="udesign_options[pm2_menu_color_2]" id="pm2_menu_color_2" type="text" maxlength="6" size="6" style="margin:2px 10px 0 0" value="<?php echo ($options['pm2_menu_color_2']) ? esc_attr($options['pm2_menu_color_2']) : '333333'; ?>" />
 					<?php esc_html_e('Color of an active menu item.', 'udesign'); ?>
 				    </td>
 				</tr>
@@ -3424,7 +3445,7 @@ class UDESIGN_Theme_Options {
 					</div>
 				    </td>
 				    <td>
-					<input name="udesign_options[pm2_menu_color_3]" id="pm2_menu_color_3" type="text" maxlength="6" size="6" style="margin:7px 10px 0 0" value="<?php echo ($options['pm2_menu_color_3']) ? esc_attr($options['pm2_menu_color_3']) : 'FFFFFF'; ?>" />
+					<input name="udesign_options[pm2_menu_color_3]" id="pm2_menu_color_3" type="text" maxlength="6" size="6" style="margin:2px 10px 0 0" value="<?php echo ($options['pm2_menu_color_3']) ? esc_attr($options['pm2_menu_color_3']) : 'FFFFFF'; ?>" />
 					<?php esc_html_e('Color of the inner circle of an active menu item. Should equal the background color of the whole thing.', 'udesign'); ?>
 				    </td>
 				</tr>
@@ -3463,7 +3484,7 @@ class UDESIGN_Theme_Options {
 					</div>
 				    </td>
 				    <td>
-					<input name="udesign_options[pm2_control_color_1]" id="pm2_control_color_1" type="text" maxlength="6" size="6" style="margin:7px 10px 0 0" value="<?php echo ($options['pm2_control_color_1']) ? esc_attr($options['pm2_control_color_1']) : '222222'; ?>" />
+					<input name="udesign_options[pm2_control_color_1]" id="pm2_control_color_1" type="text" maxlength="6" size="6" style="margin:2px 10px 0 0" value="<?php echo ($options['pm2_control_color_1']) ? esc_attr($options['pm2_control_color_1']) : '222222'; ?>" />
 					<?php esc_html_e('Background color of the controls.', 'udesign'); ?>
 				    </td>
 				</tr>
@@ -3475,7 +3496,7 @@ class UDESIGN_Theme_Options {
 					</div>
 				    </td>
 				    <td>
-					<input name="udesign_options[pm2_control_color_2]" id="pm2_control_color_2" type="text" maxlength="6" size="6" style="margin:7px 10px 0 0" value="<?php echo ($options['pm2_control_color_2']) ? esc_attr($options['pm2_control_color_2']) : 'FFFFFF'; ?>" />
+					<input name="udesign_options[pm2_control_color_2]" id="pm2_control_color_2" type="text" maxlength="6" size="6" style="margin:2px 10px 0 0" value="<?php echo ($options['pm2_control_color_2']) ? esc_attr($options['pm2_control_color_2']) : 'FFFFFF'; ?>" />
 					<?php esc_html_e('Font color of the controls.', 'udesign'); ?>
 				    </td>
 				</tr>
@@ -3554,7 +3575,7 @@ class UDESIGN_Theme_Options {
 					</div>
 				    </td>
 				    <td>
-					<input name="udesign_options[pm2_tooltip_color]" id="pm2_tooltip_color" type="text" maxlength="6" size="6" style="margin:7px 10px 0 0" value="<?php echo ($options['pm2_tooltip_color']) ? esc_attr($options['pm2_tooltip_color']) : '222222'; ?>" />
+					<input name="udesign_options[pm2_tooltip_color]" id="pm2_tooltip_color" type="text" maxlength="6" size="6" style="margin:2px 10px 0 0" value="<?php echo ($options['pm2_tooltip_color']) ? esc_attr($options['pm2_tooltip_color']) : '222222'; ?>" />
 					<?php esc_html_e('Color of the tooltip surface in the menu.', 'udesign'); ?>
 				    </td>
 				</tr>
@@ -3590,7 +3611,7 @@ class UDESIGN_Theme_Options {
 					</div>
 				    </td>
 				    <td>
-					<input name="udesign_options[pm2_tooltip_text_color]" id="pm2_tooltip_text_color" type="text" maxlength="6" size="6" style="margin:7px 10px 0 0" value="<?php echo ($options['pm2_tooltip_text_color']) ? esc_attr($options['pm2_tooltip_text_color']) : 'FFFFFF'; ?>" />
+					<input name="udesign_options[pm2_tooltip_text_color]" id="pm2_tooltip_text_color" type="text" maxlength="6" size="6" style="margin:2px 10px 0 0" value="<?php echo ($options['pm2_tooltip_text_color']) ? esc_attr($options['pm2_tooltip_text_color']) : 'FFFFFF'; ?>" />
 					<?php esc_html_e('Color of the tooltip text.', 'udesign'); ?>
 				    </td>
 				</tr>
@@ -3655,7 +3676,7 @@ class UDESIGN_Theme_Options {
 					</div>
 				    </td>
 				    <td>
-					<input name="udesign_options[pm2_info_background]" id="pm2_info_background" type="text" maxlength="6" size="6" style="margin:7px 10px 0 0" value="<?php echo ($options['pm2_info_background']) ? esc_attr($options['pm2_info_background']) : 'FFFFFF'; ?>" />
+					<input name="udesign_options[pm2_info_background]" id="pm2_info_background" type="text" maxlength="6" size="6" style="margin:2px 10px 0 0" value="<?php echo ($options['pm2_info_background']) ? esc_attr($options['pm2_info_background']) : 'FFFFFF'; ?>" />
 					<?php esc_html_e('The background color of the info text field.', 'udesign'); ?>
 				    </td>
 				</tr>
@@ -3741,7 +3762,7 @@ class UDESIGN_Theme_Options {
 								style="width:98%; font-size:12px; margin: 5px 0;" id="pm2_slide_default_info_txt_<?php echo $slide_row_number; ?>"
 								rows="3" cols="60"><?php echo ( $options['pm2_slide_default_info_txt_'.$slide_row_number] ) ? esc_attr($options['pm2_slide_default_info_txt_'.$slide_row_number]) : ''; ?></textarea>
 						    <br />
-						    <span class="description" style="margin:20px 0; line-height:1.5; font-size:10px;"><?php esc_html_e('To remove the text just leave a single space.', 'udesign'); ?></span>
+						    <span class="description" style="margin:20px 0; line-height:1.5; font-size:12px;"><?php esc_html_e('To remove the text just leave a single space.', 'udesign'); ?></span>
 						</div>
 <?php					// If Flash Slide
 					elseif ( $options['pm2_slide_type_'.$slide_row_number] == 'flash') : ?> 
@@ -3841,7 +3862,7 @@ class UDESIGN_Theme_Options {
 						    style="width:98%; font-size:12px; margin: 5px 0;" id="pm2_slide_default_info_txt_999"
 						    rows="3" cols="60"><?php echo get_pm2_slide_default_info_txt(); ?></textarea>
 					<br />
-					<span class="description" style="margin:20px 0; line-height:1.5; font-size:10px;"><?php esc_html_e('To remove the text just leave a single space.', 'udesign'); ?></span>
+					<span class="description" style="margin:20px 0; line-height:1.5; font-size:12px;"><?php esc_html_e('To remove the text just leave a single space.', 'udesign'); ?></span>
 				    </div>
 				</td>
 			    </tr>
@@ -4114,7 +4135,7 @@ class UDESIGN_Theme_Options {
 				<th scope="row"><?php esc_html_e('No JavaScript image', 'udesign'); ?></th>
 				<td>
 				    <?php esc_html_e('Paste the full path to your image:', 'udesign'); ?><br />
-				    <textarea style="width: 98%; font-size: 12px;" id="pm2_no_js_img" rows="2" cols="60" name="udesign_options[pm2_no_js_img]"><?php if( $options['pm2_no_js_img'] ){ echo esc_url($options['pm2_no_js_img']); } ?></textarea><br />
+				    <textarea style="width: 98%;" id="pm2_no_js_img" rows="2" cols="60" name="udesign_options[pm2_no_js_img]"><?php if( $options['pm2_no_js_img'] ){ echo esc_url($options['pm2_no_js_img']); } ?></textarea><br />
 				    <span class="description"><?php esc_html_e('In the case when JavaScript is disabled the 1st slider image is displayed by default in place of the Piecemaker 2 slider, you may change that in here', 'udesign'); ?></span>
 				</td>
 			    </tr>
@@ -4257,7 +4278,7 @@ class UDESIGN_Theme_Options {
                                                 <label for="c1_slide_image_alt_tag_<?php echo $slide_row_number; ?>" style="margin-left:10px;"><?php esc_html_e('Alt Tag:', 'udesign'); ?> </label> 
                                                 <input name="udesign_options[c1_slide_image_alt_tag_<?php echo $slide_row_number; ?>]" type="text" id="c1_slide_image_alt_tag_<?php echo $slide_row_number; ?>" value="<?php echo esc_attr($options['c1_slide_image_alt_tag_'.$slide_row_number]); ?>" size="20" />
                                             </div>
-                                            <div><span style="line-height: 1.5; font-size: 10px;" class="description" style="margin:5px 0;float:left;"><?php esc_html_e('(To clear a text field above, replace it with a single space)', 'udesign'); ?></span></div>
+                                            <div><span style="line-height: 1.5; font-size: 12px;" class="description" style="margin:5px 0;float:left;"><?php esc_html_e('(To clear a text field above, replace it with a single space)', 'udesign'); ?></span></div>
 					</div>
 				    </td>
 				</tr>
@@ -4325,7 +4346,7 @@ class UDESIGN_Theme_Options {
                                             <label for="c1_slide_image_alt_tag_999" style="margin-left:10px;"><?php esc_html_e('Alt Tag:', 'udesign'); ?> </label>
                                             <input name="udesign_options[c1_slide_image_alt_tag_999]" type="text" id="c1_slide_image_alt_tag_999" value="" size="20" />
                                         </div>
-                                        <div><span style="line-height: 1.5; font-size: 10px;" class="description" style="margin:5px 0;float:left;"><?php esc_html_e('(To clear a text field above, replace it with a single space)', 'udesign'); ?></span></div>
+                                        <div><span style="line-height: 1.5; font-size: 12px;" class="description" style="margin:5px 0;float:left;"><?php esc_html_e('(To clear a text field above, replace it with a single space)', 'udesign'); ?></span></div>
 				    </div>
 				</td>
 			    </tr>
@@ -4457,7 +4478,7 @@ class UDESIGN_Theme_Options {
 				    </div>
 				</td>
 				<td>
-				    <input name="udesign_options[c2_text_color]" id="c2_text_color" type="text" maxlength="6" size="6" style="margin:7px 10px 0 0" value="<?php echo ($c2_text_color) ? esc_attr($c2_text_color) : '333333'; ?>" />
+				    <input name="udesign_options[c2_text_color]" id="c2_text_color" type="text" maxlength="6" size="6" style="margin:2px 10px 0 0" value="<?php echo ($c2_text_color) ? esc_attr($c2_text_color) : '333333'; ?>" />
 				    <?php esc_html_e('Slider text color including the Title.', 'udesign'); ?>
 				</td>
 			    </tr>
@@ -4545,7 +4566,7 @@ class UDESIGN_Theme_Options {
 						    <option value="light"<?php echo ($options['c2_slide_button_style_'.$slide_row_number] == 'light') ? ' selected="selected"' : ''; ?>><?php esc_attr_e('Light', 'udesign'); ?></option>
 						</select>
 					    </label><br />
-					    <span class="description" style="float:left;padding:5px; display:block; line-height:17px;"><?php _e('The button is activated only if a <strong>Link</strong> is provided. To remove the button just replace the link with a single space.', 'udesign'); ?></span>
+					    <span class="description" style="float:left;padding:5px; display:block; line-height:1.4; font-size:12px;"><?php _e('The button is activated only if a <strong>Link</strong> is provided. To remove the button just replace the link with a single space.', 'udesign'); ?></span>
 					</div>
 				    </td>
 				</tr>
@@ -4741,7 +4762,7 @@ class UDESIGN_Theme_Options {
 				    </div>
 				</td>
 				<td>
-				    <input name="udesign_options[c3_text_color]" id="c3_text_color" type="text" maxlength="6" size="6" style="margin:7px 10px 0 0" value="<?php echo ($c3_text_color) ? esc_attr($c3_text_color) : 'FFFFFF'; ?>" />
+				    <input name="udesign_options[c3_text_color]" id="c3_text_color" type="text" maxlength="6" size="6" style="margin:2px 10px 0 0" value="<?php echo ($c3_text_color) ? esc_attr($c3_text_color) : 'FFFFFF'; ?>" />
 				    <?php esc_html_e('Slider text color.', 'udesign'); ?>
 				</td>
 			    </tr>
@@ -4781,7 +4802,7 @@ class UDESIGN_Theme_Options {
                                                 <label for="c3_slide_image_alt_tag_<?php echo $slide_row_number; ?>" style="margin-left:10px;"><?php esc_html_e('Alt Tag:', 'udesign'); ?> </label> 
                                                 <input name="udesign_options[c3_slide_image_alt_tag_<?php echo $slide_row_number; ?>]" type="text" id="c3_slide_image_alt_tag_<?php echo $slide_row_number; ?>" value="<?php echo esc_attr($options['c3_slide_image_alt_tag_'.$slide_row_number]); ?>" size="20" />
                                             </div>
-                                            <div><span style="line-height: 1.5; font-size: 10px;" class="description" style="margin:5px 0;float:left;"><?php esc_html_e('(To clear a text field above, replace it with a single space)', 'udesign'); ?></span></div>
+                                            <div><span style="line-height: 1.5; font-size: 12px;" class="description" style="margin:5px 0;float:left;"><?php esc_html_e('(To clear a text field above, replace it with a single space)', 'udesign'); ?></span></div>
 					</div>
 
                                         <div class="c3_slide_img2_url" style="padding:10px 5px 0 0; float:left; display:inline; clear:left;">
@@ -4830,7 +4851,7 @@ class UDESIGN_Theme_Options {
                                             <label for="c3_slide_image_alt_tag_999" style="margin-left:10px;"><?php esc_html_e('Alt Tag:', 'udesign'); ?> </label>
                                             <input name="udesign_options[c3_slide_image_alt_tag_999]" type="text" id="c3_slide_image_alt_tag_999" value="" size="20" />
                                         </div>
-                                        <div><span style="line-height: 1.5; font-size: 10px;" class="description" style="margin:5px 0;float:left;"><?php esc_html_e('(To clear a text field above, replace it with a single space)', 'udesign'); ?></span></div>
+                                        <div><span style="line-height: 1.5; font-size: 12px;" class="description" style="margin:5px 0;float:left;"><?php esc_html_e('(To clear a text field above, replace it with a single space)', 'udesign'); ?></span></div>
 				    </div>
                                     
                                     <div class="c3_slide_img2_url" style="padding:10px 5px 0 0; float:left; display:inline; clear:left;">
@@ -4989,7 +5010,7 @@ class UDESIGN_Theme_Options {
 				    <label for="show_portfolio_postmetadata">
 					<input name="udesign_options[show_portfolio_postmetadata]" type="checkbox" id="show_portfolio_postmetadata" value="yes" <?php checked('yes', $options['show_portfolio_postmetadata']); ?> />
 					<?php esc_html_e('Show Portfolio Post Metadata box (Single View).', 'udesign'); ?><br />
-					<span class="description"><?php esc_html_e('This is the info block containing the informationa about Author, Date, Categories, Comments in a single view portfoilo post.', 'udesign'); ?></span>
+					<span class="description"><?php esc_html_e('This is the info block containing the information about Author, Date, Categories, Comments in a single view portfolio post.', 'udesign'); ?></span>
 				    </label>
 				    </fieldset>
 				</td>
@@ -5003,7 +5024,7 @@ class UDESIGN_Theme_Options {
                                                 <option value="alignbottom"<?php echo ($options['udesign_single_portfolio_postmetadata_location'] == 'alignbottom') ? ' selected="selected"' : ''; ?> style="padding-right:10px;"><?php esc_attr_e('Bottom', 'udesign'); ?></option>
                                                 <option value="aligntop"<?php echo ($options['udesign_single_portfolio_postmetadata_location'] == 'aligntop') ? ' selected="selected"' : ''; ?>><?php esc_attr_e('Top', 'udesign'); ?></option>
                                             </select>
-                                            <?php esc_html_e('This is the location of the block containing the informationa about Author, Date, Categories, Comments in a single view portfoilo post.', 'udesign'); ?><br />
+                                            <?php esc_html_e('This is the location of the block containing the information about Author, Date, Categories, Comments in a single view portfolio post.', 'udesign'); ?><br />
                                     </label>
                                 </td>
                             </tr>
@@ -5195,7 +5216,7 @@ class UDESIGN_Theme_Options {
                                             <option value="alignbottom"<?php echo ($options['udesign_single_view_postmetadata_location'] == 'alignbottom') ? ' selected="selected"' : ''; ?> style="padding-right:10px;"><?php esc_attr_e('Bottom', 'udesign'); ?></option>
                                             <option value="aligntop"<?php echo ($options['udesign_single_view_postmetadata_location'] == 'aligntop') ? ' selected="selected"' : ''; ?>><?php esc_attr_e('Top', 'udesign'); ?></option>
                                         </select>
-                                        <?php esc_html_e('This is the location of the block containing the informationa about Author, Date, Categories, Comments in a single view post.', 'udesign'); ?><br />
+                                        <?php esc_html_e('This is the location of the block containing the information about Author, Date, Categories, Comments in a single view post.', 'udesign'); ?><br />
                                 </label>
                             </td>
                         </tr>
@@ -5355,7 +5376,7 @@ class UDESIGN_Theme_Options {
 			    <th scope="row"><?php esc_html_e('E-mail Recipient(s)', 'udesign'); ?></th>
 			    <td>
 				<?php esc_html_e("Please enter recipient's email address, comma-separate multiple recipients:", 'udesign'); ?><br />
-				<textarea style="width: 98%; font-size: 12px;" id="email_receipients" rows="2" cols="60" name="udesign_options[email_receipients]"><?php if( $email_receipients ){ echo esc_attr($email_receipients); } ?></textarea><br />
+				<textarea style="width: 98%;" id="email_receipients" rows="2" cols="60" name="udesign_options[email_receipients]"><?php if( $email_receipients ){ echo esc_attr($email_receipients); } ?></textarea><br />
 			    </td>
 			</tr>
 			<tr valign="top">
@@ -5432,7 +5453,7 @@ class UDESIGN_Theme_Options {
 			<tr valign="top">
 			    <th scope="row"><?php esc_html_e('Copyright Message', 'udesign'); ?></th>
 			    <td>
-				<textarea style="width: 98%; font-size: 12px;" id="copyright_message" rows="2" cols="60" name="udesign_options[copyright_message]"><?php if( $copyright_message ){ echo esc_attr($copyright_message); } ?></textarea>
+				<textarea style="width: 98%;" id="copyright_message" rows="2" cols="60" name="udesign_options[copyright_message]"><?php if( $copyright_message ){ echo esc_attr($copyright_message); } ?></textarea>
 				<br />
 				<span class="description"><?php esc_html_e('Copyright message displayed in the footer.', 'udesign'); ?></span>
 			    </td>
@@ -5518,7 +5539,7 @@ class UDESIGN_Theme_Options {
 			<tr valign="top">
 			<th scope="row"><label for="google_analytics"><?php esc_html_e('Google Analytics', 'udesign'); ?></label></th>
 			<td>
-			    <textarea class="code" style="width: 98%; font-size: 12px;" id="google_analytics" rows="10" cols="60" name="udesign_options[google_analytics]"><?php if( $google_analytics ){ esc_attr_e($google_analytics); } ?></textarea>
+			    <textarea class="code" style="width: 98%;" id="google_analytics" rows="10" cols="60" name="udesign_options[google_analytics]"><?php if( $google_analytics ){ esc_attr_e($google_analytics); } ?></textarea>
 			    <br />
 			    <span class="description"><?php esc_html_e('Paste your Google Analytics or other tracking code here. It will be inserted just before the closing &lt;/head&gt; tag.', 'udesign'); ?></span>
 			</td>
@@ -5672,7 +5693,7 @@ function display_save_changes_button() {
 				<td>
 				    <div class="submit" style="padding:10px 0 0 80px; float:right; clear:both;">
 					<input type="hidden" id="udesign_submit" value="1" name="udesign_submit"/>
-					<input class="button-primary" type="submit" name="submit" value="'.esc_attr__('Save Changes', 'udesign').'" />
+					<input class="button-primary udesign-right-submit-btn" type="submit" name="submit" value="'.esc_attr__('Save Changes', 'udesign').'" />
                                         <span class="spinner"></span>
 				    </div>
 				</td>

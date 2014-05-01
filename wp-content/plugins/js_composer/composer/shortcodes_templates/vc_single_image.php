@@ -1,6 +1,6 @@
 <?php
 
-$output = $el_class = $image = $img_size = $img_link = $img_link_target = $img_link_large = $title = $alignment = $css_animation = '';
+$output = $el_class = $image = $img_size = $img_link = $img_link_target = $img_link_large = $title = $alignment = $css_animation = $css = '';
 
 extract(shortcode_atts(array(
     'title' => '',
@@ -13,7 +13,8 @@ extract(shortcode_atts(array(
     'el_class' => '',
     'css_animation' => '',
     'style' => '',
-    'border_color' => ''
+    'border_color' => '',
+    'css' => ''
 ), $atts));
 
 $style = ($style!='') ? $style : '';
@@ -48,7 +49,7 @@ else if (!empty($img_link)) {
 if(!empty($link_to) && !preg_match('/^(https?\:\/\/|\/\/)/', $link_to)) $link_to = 'http://'.$link_to;
 $img_output = ($style=='vc_box_shadow_3d') ? '<span class="vc_box_shadow_3d_wrap">' . $img['thumbnail'] . '</span>' : $img['thumbnail'];
 $image_string = !empty($link_to) ? '<a'.$a_class.' href="'.$link_to.'"'.($img_link_target!='_self' ? ' target="'.$img_link_target.'"' : '').'>'.$img_output.'</a>' : $img_output;
-$css_class =  apply_filters(VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG, 'wpb_single_image wpb_content_element'.$el_class, $this->settings['base']);
+$css_class =  apply_filters(VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG, 'wpb_single_image wpb_content_element'.$el_class.vc_shortcode_custom_css_class($css, ' '), $this->settings['base']);
 $css_class .= $this->getCSSAnimation($css_animation);
 
 $css_class .= ' vc_align_'.$alignment;

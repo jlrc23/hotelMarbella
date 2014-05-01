@@ -52,13 +52,13 @@ function get_portfolio_item_thumbnail( $curr_post_ID, $num_cols='3', $width='260
 				'link_to_post' => false,
 				'image_scan' => true,
 			    ) );
-	    if ( $preview_item == '' && ( $portfolio_thumb_as_array[src] != $portfolio_default_thumb ) ) { $preview_item = $portfolio_thumb_as_array[src]; }
+	    if ( $preview_item == '' && ( $portfolio_thumb_as_array['src'] != $portfolio_default_thumb ) ) { $preview_item = $portfolio_thumb_as_array['src']; }
 	    if ( $preview_item ) { // if preview item is available, go ahead and generate the thumbnail as a link
 		$output .= '<span class="portfolio-zoom-image-'.$num_cols.'-col pngfix"> </span>';
-		$output .= '<a'.$rel_attr.' href="'.$preview_item.'" title="'.$preview_item_title.'"'.$portfolio_item_link_target.'><img class="hover-opacity" src="'.udesign_process_image( $portfolio_thumb_as_array[url], $width, $height, true, $portfolio_item_thumb_crop_align, $portfolio_item_thumb_retina ).'" width="'.$width.'" height="'.$height.'" alt="'.$portfolio_thumb_as_array[alt].'" /></a>';
+		$output .= '<a'.$rel_attr.' href="'.$preview_item.'" title="'.$preview_item_title.'"'.$portfolio_item_link_target.'><img class="hover-opacity" src="'.udesign_process_image( $portfolio_thumb_as_array['url'], $width, $height, true, $portfolio_item_thumb_crop_align, $portfolio_item_thumb_retina ).'" width="'.$width.'" height="'.$height.'" alt="'.$portfolio_thumb_as_array['alt'].'" /></a>';
 	    } else { // if preview item is NOT available, generate a thumbnail that is NOT a link
 		$output .= '<span class="portfolio-zoom-image-'.$num_cols.'-col pngfix"> </span>';
-		$output .= '<img class="hover-opacity" src="'.udesign_process_image( $portfolio_thumb_as_array[url], $width, $height, true, $portfolio_item_thumb_crop_align, $portfolio_item_thumb_retina ).'" width="'.$width.'" height="'.$height.'" alt="'.esc_attr__('Preview item is not available!.', 'udesign').'" />';
+		$output .= '<img class="hover-opacity" src="'.udesign_process_image( $portfolio_thumb_as_array['url'], $width, $height, true, $portfolio_item_thumb_crop_align, $portfolio_item_thumb_retina ).'" width="'.$width.'" height="'.$height.'" alt="'.esc_attr__('Preview item is not available!.', 'udesign').'" />';
 	    }
 
     } else { // the case when "Get The Image" plugin is NOT available

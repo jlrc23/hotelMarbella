@@ -218,6 +218,7 @@ _.extend(vc, {
       return this;
     },
     checkControlsPosition: function() {
+      if(!this.$controls_buttons) return;
       var window_top, control_top, element_position_top, new_position,
         element_height = this.$el.height(),
         frame_height = vc.$frame.height();

@@ -266,7 +266,17 @@
       this.$el.find('.vc-wrapper > .wpb_column').removeClass('vc_span' + this.css_class_width);
       this.$el.addClass('vc_span' + this.css_class_width);
       this.$el.find('> .wpb_column').removeClass('vc_span' + this.css_class_width);
+      this.customCssClassReplace();
       return this;
+    },
+    customCssClassReplace: function() {
+      var css_classes = this.$el.find('.wpb_column').attr('class'),
+          css_regex = /.*(vc_custom_\d+).*/,
+          class_match = css_classes.match(css_regex);
+      if(class_match && class_match[1]) {
+        this.$el.addClass(class_match[1]);
+        this.$el.find('.wpb_column').attr('class', css_classes.replace(class_match[1], '').trim());
+      }
     },
     startChangeSize: function(e) {
       var width = this.getParam(width) || 12;

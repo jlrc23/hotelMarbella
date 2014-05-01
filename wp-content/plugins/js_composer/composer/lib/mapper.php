@@ -5,7 +5,58 @@
  * @package WPBakeryVisualComposer
  *
  */
-
+/**
+ * Vc mapper new class. On maintenance
+ * Allows to bind hooks for shortcodes.
+ */
+class VcMapper extends WPBakeryVisualComposerAbstract {
+  protected $init_activity = array();
+  function __construct() {
+    $this->addAction('init', 'onWpInit');
+  }
+  public static function getInstance()
+  {
+    static $instance = null;
+    if ($instance === null)
+      $instance = new VcMapper();
+    return $instance;
+  }
+  public function onWpInit() {
+    WPBMap::setInit();
+    vc_map_default_shortcodes();
+    $this->callActivities();
+  }
+  public function addActivity($object, $method, $params = array()) {
+    $this->init_activity[] = array($object, $method, $params);
+  }
+  protected function callActivities() {
+    while($activity = each($this->init_activity)) {
+      list($object, $method, $params) = $activity[1];
+      if($object == 'mapper') {
+        switch($method) {
+          case 'map':
+            WPBMap::map($params['name'], $params['attributes']);
+            break;
+          case 'drop_param':
+            WPBMap::dropParam($params['name'], $params['attribute_name']);
+            break;
+          case 'add_param':
+            WPBMap::addParam($params['name'], $params['attribute']);
+            break;
+          case 'mutate_param':
+            WPBMap::mutateParam($params['name'], $params['attribute']);
+            break;
+          case 'drop_shortcode':
+            WPBMap::dropShortcode($params['name']);
+            break;
+          case 'modify':
+            WPBMap::modify($params['name'], $params['setting_name'], $params['value']);
+            break;
+        }
+      }
+    }
+  }
+}
 
 class WPBMap
 {
@@ -17,11 +68,14 @@ class WPBMap
     protected static $user_categories = false;
     protected static $settings, $user_role;
     protected static $tags_regexp;
+    protected static $is_init = false;
     public static function layout($array)
     {
         self::$layouts[] = $array;
     }
-
+    public static function setInit($value = true) {
+        self::$is_init = $value;
+    }
     public static function getLayouts()
     {
         return self::$layouts;
@@ -53,6 +107,15 @@ class WPBMap
 
     public static function map($name, $attributes)
     {
+        if(!self::$is_init) {
+          vc_mapper()->addActivity(
+            'mapper', 'map', array(
+              'name' => $name,
+              'attributes' => $attributes
+            )
+          );
+          return false;
+        }
         if (empty($attributes['name'])) {
             trigger_error(sprintf(__("Wrong name for shortcode:%s. Name required", "js_composer"), $name));
         } elseif (empty($attributes['base'])) {
@@ -77,7 +140,6 @@ class WPBMap
             }
             WPBakeryVisualComposer::getInstance()->addShortCodePlugin(self::$sc[$name]);
         }
-
     }
 
     public static function generateUserData($force = false)
@@ -145,6 +207,15 @@ class WPBMap
 
     public static function dropParam($name, $attribute_name)
     {
+        if(!self::$is_init) {
+          vc_mapper()->addActivity(
+            'mapper', 'drop_param', array(
+              'name' => $name,
+              'attribute_name' => $attribute_name
+            )
+          );
+          return false;
+        }
         foreach (self::$sc[$name]['params'] as $index => $param) {
             if ($param['param_name'] == $attribute_name) {
                 array_splice( self::$sc[$name]['params'], $index, 1 );
@@ -172,6 +243,15 @@ class WPBMap
     /* Extend params for settings */
     public static function addParam($name, $attribute = Array())
     {
+        if(!self::$is_init) {
+          vc_mapper()->addActivity(
+            'mapper', 'add_param', array(
+              'name' => $name,
+              'attribute' => $attribute
+            )
+          );
+          return false;
+        }
         if (!isset(self::$sc[$name]))
             return trigger_error(sprintf(__("Wrong name for shortcode:%s. Name required", "js_composer"), $name));
         elseif (!isset($attribute['param_name'])) {
@@ -186,9 +266,7 @@ class WPBMap
                     self::$sc[$name]['params'][$index] = $attribute;
                 }
             }
-
             if ($replaced === false) self::$sc[$name]['params'][] = $attribute;
-
             WPBakeryVisualComposer::getInstance()->addShortCodePlugin(self::$sc[$name]);
         }
     }
@@ -196,6 +274,15 @@ class WPBMap
     /* Extend params for settings */
     public static function mutateParam($name, $attribute = Array())
     {
+        if(!self::$is_init) {
+          vc_mapper()->addActivity(
+            'mapper', 'mutate_param', array(
+              'name' => $name,
+              'attribute' => $attribute
+            )
+          );
+          return false;
+        }
         if (!isset(self::$sc[$name]))
             return trigger_error(sprintf(__("Wrong name for shortcode:%s. Name required", "js_composer"), $name));
         elseif (!isset($attribute['param_name'])) {
@@ -207,7 +294,7 @@ class WPBMap
             foreach (self::$sc[$name]['params'] as $index => $param) {
                 if ($param['param_name'] == $attribute['param_name']) {
                     $replaced = true;
-                    self::$sc[$name]['params'][$index] = $attribute;
+                    self::$sc[$name]['params'][$index] = array_merge($param, $attribute);
                 }
             }
 
@@ -215,9 +302,18 @@ class WPBMap
 
             WPBakeryVisualComposer::getInstance()->addShortCodePlugin(self::$sc[$name]);
         }
+      return true;
     }
     public static function dropShortcode($name)
     {
+        if(!self::$is_init) {
+          vc_mapper()->addActivity(
+            'mapper', 'drop_shortcode', array(
+              'name' => $name
+            )
+          );
+          return false;
+        }
         unset(self::$sc[$name]);
         WPBakeryVisualComposer::getInstance()->removeShortCode($name);
 
@@ -236,6 +332,16 @@ class WPBMap
      */
     public static function modify($name, $setting_name, $value = '')
     {
+      if(!self::$is_init) {
+        vc_mapper()->addActivity(
+          'mapper', 'modify', array(
+            'name' => $name,
+            'setting_name' => $setting_name,
+            'value' => $value
+          )
+        );
+        return false;
+      }
         if (!isset(self::$sc[$name]))
             return trigger_error(sprintf(__("Wrong name for shortcode:%s. Name required", "js_composer"), $name));
         elseif ($setting_name === 'base') {

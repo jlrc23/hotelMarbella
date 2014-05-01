@@ -283,7 +283,7 @@ class WPBakeryVisualComposerNavBar implements WPBakeryVisualComposerTemplateInte
         get_currentuserinfo();
         /** @var $settings - get use group access rules */
         $settings = WPBakeryVisualComposerSettings::get('groups_access_rules');
-        $role = $current_user->roles[0];
+        $role = is_object($current_user) && isset($current_user->roles[0]) ? $current_user->roles[0] : '';
         $show_role = isset($settings[$role]['show']) ? $settings[$role]['show'] : '';
         $buttons = $this->buildButtons();
         $output = '

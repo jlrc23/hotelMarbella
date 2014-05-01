@@ -37,30 +37,30 @@ function udesign_init_styles() {
         if ( $udesign_options['enable_prettyPhoto_script'] ) {
             wp_enqueue_style('u-design-pretty_photo', get_bloginfo('template_url') . '/scripts/prettyPhoto/css/prettyPhoto.css', false, '3.1.5', 'screen');
         }
-	wp_enqueue_style('u-design-style', get_bloginfo('template_url') . "/styles/style1/css/style.css", false, '2.3.0', 'screen');
+	wp_enqueue_style('u-design-style', get_bloginfo('template_url') . "/styles/style1/css/style.css", false, '2.4.2', 'screen');
         
         // load the appropriate custom styles file optimized for performance
         if ( get_theme_mod( 'udesign_custom_styles_use_css_file' ) ) { // load "custom_style.css" file
             $rand_ver = '.'.get_theme_mod( 'udesign_rand_ver_for_caching' );
-            wp_enqueue_style('u-design-custom-style', get_bloginfo('template_url') . '/styles/custom/custom_style.css', false, '2.3.0'.$rand_ver, 'screen');
+            wp_enqueue_style('u-design-custom-style', get_bloginfo('template_url') . '/styles/custom/custom_style.css', false, '2.4.2'.$rand_ver, 'screen');
         } else { // otherwise use "custom_style.php" file
-            wp_enqueue_style('u-design-custom-style', get_bloginfo('template_url') . '/styles/custom/custom_style.php', false, '2.3.0', 'screen');
+            wp_enqueue_style('u-design-custom-style', get_bloginfo('template_url') . '/styles/custom/custom_style.php', false, '2.4.2', 'screen');
         }
         
         if ( $udesign_responsive ) {
-            wp_enqueue_style('u-design-responsive', get_bloginfo('template_url') . '/styles/common-css/responsive.css', false, '2.3.0', 'screen');
+            wp_enqueue_style('u-design-responsive', get_bloginfo('template_url') . '/styles/common-css/responsive.css', false, '2.4.2', 'screen');
         }
         if ( $udesign_options['max_theme_width'] || $udesign_options['global_theme_width'] > 960 || 
                                 get_theme_mod( 'udesign_custom_width_page') == 'yes' || get_theme_mod( 'udesign_max_width_page') == 'yes' ) { 
-            wp_enqueue_style('u-design-fluid', get_bloginfo('template_url') . '/styles/common-css/fluid.css', false, '2.3.0', 'screen');
+            wp_enqueue_style('u-design-fluid', get_bloginfo('template_url') . '/styles/common-css/fluid.css', false, '2.4.2', 'screen');
         }
         
         if ( $udesign_options['enable_default_style_css'] ) {
-            wp_enqueue_style('u-design-style-orig', get_stylesheet_directory_uri() . "/style.css", false, '2.3.0', 'screen');
+            wp_enqueue_style('u-design-style-orig', get_stylesheet_directory_uri() . "/style.css", false, '2.4.2', 'screen');
         }
     }
 }
-add_action('wp_print_styles', 'udesign_init_styles');
+add_action('wp_enqueue_scripts', 'udesign_init_styles');
 
 // load scripts
 function udesign_init_scripts() {
@@ -190,7 +190,7 @@ function udesign_init_scripts() {
         
 	// Superfish Dropdown menu scripts (combined)
 	wp_enqueue_script('superfish-menu', get_bloginfo('template_url')."/scripts/superfish-menu/js/superfish.combined.js", array('jquery'), '1.7.2', true);
-        
+            
 	// Miscellaneous JS scripts
 	wp_enqueue_script('udesign-scripts', get_bloginfo('template_url')."/scripts/script.js", array('jquery'), '1.0', true);
         wp_localize_script('udesign-scripts', 'udesign_script_vars', array(
@@ -215,7 +215,7 @@ function udesign_init_scripts() {
         }
     }
 }
-add_action('wp_print_scripts', 'udesign_init_scripts');
+add_action('wp_enqueue_scripts', 'udesign_init_scripts');
 
 
 // Set the content width based. Used to set the width of images and content.
@@ -441,37 +441,38 @@ function isPhoneNumberValid( $phone ) {
 
 
 // Custom Comment template
-function udesign_theme_comment( $comment, $args, $depth ) {
-   $GLOBALS['comment'] = $comment;
-   $template_dir_url = get_bloginfo('template_url'); ?>
+if ( !function_exists( 'udesign_theme_comment' ) ) {
+    function udesign_theme_comment( $comment, $args, $depth ) {
+       $GLOBALS['comment'] = $comment; ?>
 
-   <li <?php comment_class(); ?> id="li-comment-<?php comment_ID() ?>">
-     <div id="comment-<?php comment_ID(); ?>">
-	<div class="comment-meta vcard pngfix">
-	    <div class="avatar-wrapper">
-<?php		echo get_avatar( $comment, $size='52', $default="{$template_dir_url}/styles/common-images/mystery-man.jpg" ); ?>
-	    </div>
-	    <div class="commentmetadata">
-		<div class="author"><?php comment_author_link() ?></div>
-<?php		    printf(__('<span class="time">%1$s</span> on <a href="#comment-%2$s" title="">%3$s</a>', 'udesign'), get_comment_time(__('g:i a', 'udesign')), get_comment_ID(), get_comment_date(__('F j, Y', 'udesign')) );
-		    edit_comment_link(esc_html__('edit', 'udesign'),'&nbsp;&nbsp;',''); ?>
-	    </div>
-	</div>
+       <li <?php comment_class(); ?> id="li-comment-<?php comment_ID() ?>">
+         <div id="comment-<?php comment_ID(); ?>">
+            <div class="comment-meta vcard pngfix">
+                <div class="avatar-wrapper">
+    <?php		echo get_avatar( $comment, $size='52' ); ?>
+                </div>
+                <div class="commentmetadata">
+                    <div class="author"><?php comment_author_link() ?></div>
+    <?php		    printf(__('<span class="time">%1$s</span> on <a href="#comment-%2$s" title="">%3$s</a>', 'udesign'), get_comment_time(__('g:i a', 'udesign')), get_comment_ID(), get_comment_date(__('F j, Y', 'udesign')) );
+                        edit_comment_link(esc_html__('edit', 'udesign'),'&nbsp;&nbsp;',''); ?>
+                </div>
+            </div>
 
-	<div class="commenttext">
-<?php	    if ($comment->comment_approved == '0') : ?>
-		<em><?php esc_html_e('Your comment is awaiting moderation.', 'udesign') ?></em>
-		<br />
-<?php	    endif; ?>
-<?php	    comment_text() ?>
-	    <div class="reply">
-<?php		comment_reply_link(array_merge( $args, array('depth' => $depth, 'max_depth' => $args['max_depth']))) ?>
-	    </div>
-	</div>
+            <div class="commenttext">
+    <?php	    if ($comment->comment_approved == '0') : ?>
+                    <em><?php esc_html_e('Your comment is awaiting moderation.', 'udesign') ?></em>
+                    <br />
+    <?php	    endif; ?>
+    <?php	    comment_text() ?>
+                <div class="reply">
+    <?php		comment_reply_link(array_merge( $args, array('depth' => $depth, 'max_depth' => $args['max_depth']))) ?>
+                </div>
+            </div>
 
 
-     </div>
-<?php
+         </div>
+    <?php
+    }
 }
 
 // Include the posts' count under a category into the a-tag when listing the categories
@@ -520,7 +521,7 @@ if ( !is_admin() ){
 }
 
 // Shortcode: "Read More ->" Link.
-// Usage: [read_more text="Read more" title="Read More..." url="http://www.some-url-goes-here.com/" align="left" target="_blank"]
+// Usage: [read_more text="Read more" title="Read More..." url="http://www.some_url_goes_here.com/" align="left" target="_blank"]
 function read_more_func( $atts ) {
     extract(shortcode_atts(array(
 	    'text' => esc_html__('Read more', 'udesign'),
@@ -539,7 +540,7 @@ function read_more_func( $atts ) {
 add_shortcode('read_more', 'read_more_func');
 
 // Shortcode: Button.
-// Usage: [button text="Read more..." style="light" title="Nice Button" url="http://www.some-url-goes-here.com/" align="left" target="_blank"]
+// Usage: [button text="Read more..." style="light" title="Nice Button" url="http://www.some_url_goes_here.com/" align="left" target="_blank"]
 function button_func( $atts ) {
     extract(shortcode_atts(array(
 	    'text' => esc_html__('Read more...', 'udesign'),
@@ -551,17 +552,24 @@ function button_func( $atts ) {
     ), $atts));
 
     $target = ($target == '_blank') ? ' target="_blank"' : '';
-    $align_class = ( $align == 'right' ) ? ' align-btn-right': ' align-btn-left';
     $style_class = ( $style == 'dark' ) ? ' dark-button': ' light-button';
-    $html = '<div class="clear"></div>
-		<a class="pngfix'.$style_class.$align_class.'" href="'.$url.'" title="'.$title.'"'.$target.'><span class="pngfix">'.do_shortcode($text).'</span></a>
-	     <div class="clear"></div>';
-    return $html;
+    $align_class = '';
+    $before = $after = '<div class="clear"></div>';
+    if( $align == 'right' ) {
+        $align_class = ' align-btn-right';
+    } elseif ( $align == 'left' ) {
+        $align_class = ' align-btn-left';
+    } else { // catch 'center'
+        $before = '<div class="align-btn-center">';
+        $after = '</div>';
+    }
+    $html = '<a class="pngfix'.$style_class.$align_class.'" href="'.$url.'" title="'.$title.'"'.$target.'><span class="pngfix">'.do_shortcode($text).'</span></a>';
+    return $before.$html.$after;
 }
 add_shortcode('button', 'button_func');
 
 // Shortcode: Small Button.
-// Usage: [small_button text="Read more..." style="light" title="Nice Button" url="http://www.some-url-goes-here.com/" align="left" target="_blank"]
+// Usage: [small_button text="Read more..." style="light" title="Nice Button" url="http://www.some_url_goes_here.com/" align="left" target="_blank"]
 function small_button_func( $atts ) {
     extract(shortcode_atts(array(
 	    'text' => esc_html__('Read more...', 'udesign'),
@@ -573,17 +581,24 @@ function small_button_func( $atts ) {
     ), $atts));
 
     $target = ($target == '_blank') ? ' target="_blank"' : '';
-    $align_class = ( $align == 'right' ) ? ' align-btn-right': ' align-btn-left';
     $style_class = ( $style == 'dark' ) ? ' small-dark-button': ' small-light-button';
-    $html = '<div class="clear"></div>
-		<a class="pngfix'.$style_class.$align_class.'" href="'.$url.'" title="'.$title.'"'.$target.'><span class="pngfix">'.do_shortcode($text).'</span></a>
-	     <div class="clear"></div>';
-    return $html;
+    $align_class = '';
+    $before = $after = '<div class="clear"></div>';
+    if( $align == 'right' ) {
+        $align_class = ' align-btn-right';
+    } elseif ( $align == 'left' ) {
+        $align_class = ' align-btn-left';
+    } else { // catch 'center'
+        $before = '<div class="align-btn-center">';
+        $after = '</div>';
+    }
+    $html = '<a class="pngfix'.$style_class.$align_class.'" href="'.$url.'" title="'.$title.'"'.$target.'><span class="pngfix">'.do_shortcode($text).'</span></a>';
+    return $before.$html.$after;
 }
 add_shortcode('small_button', 'small_button_func');
 
 // Shortcode: Round Button.
-// Usage: [round_button text="Read more..." style="light" title="Nice Button" url="http://www.some-url-goes-here.com/" align="left" target="_blank"]
+// Usage: [round_button text="Read more..." style="light" title="Nice Button" url="http://www.some_url_goes_here.com/" align="left" target="_blank"]
 function round_button_func( $atts ) {
     extract(shortcode_atts(array(
 	    'text' => esc_html__('Read more...', 'udesign'),
@@ -594,18 +609,25 @@ function round_button_func( $atts ) {
 	    'target' => '',
     ), $atts));
     $target = ($target == '_blank') ? ' target="_blank"' : '';
-    $align_class = ( $align == 'right' ) ? ' align-btn-right': ' align-btn-left';
     $style_class = ( $style == 'dark' ) ? ' dark-round-button': ' light-round-button';
-    $html = '<div class="clear"></div>
-		<a class="pngfix'.$style_class.$align_class.'" href="'.$url.'" title="'.$title.'"'.$target.'><span class="pngfix">'.do_shortcode($text).'</span></a>
-	     <div class="clear"></div>';
-    return $html;
+    $align_class = '';
+    $before = $after = '<div class="clear"></div>';
+    if( $align == 'right' ) {
+        $align_class = ' align-btn-right';
+    } elseif ( $align == 'left' ) {
+        $align_class = ' align-btn-left';
+    } else { // catch 'center'
+        $before = '<div class="align-btn-center">';
+        $after = '</div>';
+    }
+    $html = '<a class="pngfix'.$style_class.$align_class.'" href="'.$url.'" title="'.$title.'"'.$target.'><span class="pngfix">'.do_shortcode($text).'</span></a>';
+    return $before.$html.$after;
 }
 add_shortcode('round_button', 'round_button_func');
 
 // Shortcode: Custom Button.
-// Usage: [custom_button text="Read more..." title="Nice Button" url="http://www.some-url-goes-here.com/" size="medium" bg_color="#FF5C00" text_color="#FFFFFF" align="left" target="_blank"]
-// Options: align: left or right, size: small, medium, large and x-large, the rest are self explanatory...
+// Usage: [custom_button text="Read more..." title="Nice Button" url="http://www.some_url_goes_here.com/" size="medium" bg_color="#FF5C00" text_color="#FFFFFF" align="left" target="_blank"]
+// Options: align: left, right or center, size: small, medium, large and x-large, the rest are self explanatory...
 function custom_button_func( $atts ) {
     extract(shortcode_atts(array(
 	    'text' => esc_html__('Read more...', 'udesign'),
@@ -618,13 +640,51 @@ function custom_button_func( $atts ) {
 	    'target' => '',
     ), $atts));
     $target = ($target == '_blank') ? ' target="_blank"' : '';
-    $align_class = ( $align == 'right' ) ? ' align-btn-right': ' align-btn-left';
-    $html = '
-                <a class="'.strtolower($size).' custom-button'.$align_class.'" href="'.$url.'" title="'.$title.'"'.$target.'><span style="background-color:'.$bg_color.'; color:'.$text_color.'">'.do_shortcode($text).'</span></a>
-	     ';
-    return $html;
+    $align_class = $before = $after = '';
+    if( $align == 'right' ) {
+        $align_class = ' align-btn-right';
+    } elseif ( $align == 'left' ) {
+        $align_class = ' align-btn-left';
+    } else { // catch 'center'
+        $before = '<div class="align-btn-center">';
+        $after = '</div>';
+    }
+    $html = '<a class="'.strtolower($size).' custom-button'.$align_class.'" href="'.$url.'" title="'.$title.'"'.$target.'><span style="background-color:'.$bg_color.'; color:'.$text_color.'">'.do_shortcode($text).'</span></a>';
+    return $before.$html.$after;
 }
 add_shortcode('custom_button', 'custom_button_func');
+
+// Shortcode: Flat Custom Button.
+// Usage: [flat_button text="Flat Button..." title="Flat Button" url="http://www.some_url_goes_here.com/" padding="10px 20px" bg_color="#FF5C00" border_color="#FF5C00" border_width="1px" text_color="#FFFFFF" text_size="14px" align="left" target="_blank"]
+// Options: align: left, right or center, the rest are self explanatory...
+function flat_custom_button_func( $atts ) {
+    extract(shortcode_atts(array(
+	    'text' => esc_html__('Read more...', 'udesign'),
+	    'title' => '',
+	    'url' => '#',
+	    'padding' => '10px 20px',
+	    'bg_color' => '#FF5C00',
+	    'border_color' => '#FF5C00',
+	    'border_width' => '1px',
+	    'text_color' => '#FFFFFF',
+	    'text_size' => '14px',
+	    'align' => 'left',
+	    'target' => '',
+    ), $atts));
+    $target = ($target == '_blank') ? ' target="_blank"' : '';
+    $align_class = $before = $after = '';
+    if( $align == 'right' ) {
+        $align_class = ' align-btn-right';
+    } elseif ( $align == 'left' ) {
+        $align_class = ' align-btn-left';
+    } else { // catch 'center'
+        $before = '<div class="align-btn-center">';
+        $after = '</div>';
+    }
+    $html = '<a class="flat-custom-button'.$align_class.'" href="'.$url.'" title="'.$title.'"'.$target.'><span style="padding:'.$padding.'; background-color:'.$bg_color.'; border:'.$border_width.' solid '.$border_color.'; color:'.$text_color.'; font-size:'.$text_size.';">'.do_shortcode($text).'</span></a>';
+    return $before.$html.$after;
+}
+add_shortcode('flat_button', 'flat_custom_button_func');
 
 // Shortcode: Divider with an anchor link to top of page.
 // Usage: [divider]
@@ -1016,19 +1076,19 @@ function content_block_func($atts, $content = null) {
     $bg_fixed = ( $bg_fixed == 'yes' ) ? 'fixed': 'scroll';
     $unique_id = rand(1000,2000);
     // Grab just the X bg position value from the user shortcode
-    $bg_pos_X = explode(' ', $bg_position); 
+    $bg_pos_X = explode(' ', $bg_position);
     $bg_pos_X = $bg_pos_X[0]; 
     
     ob_start(); ?>
-            <style>
-                #content-block-background-<?php echo $unique_id; ?> { background-image: url(<?php echo $bg_image; ?>); background-position: <?php echo $bg_position; ?>; background-repeat: <?php echo $bg_repeat; ?>; background-color: <?php echo $bg_color; ?>; background-attachment: <?php echo $bg_fixed; ?>; width: 100%; }
+            <style type="text/css">
+                #content-block-background-<?php echo $unique_id; ?> { background-image: url(<?php echo $bg_image; ?>); background-position: <?php echo $bg_position; ?>; background-repeat: <?php echo $bg_repeat; ?>; background-color: <?php echo $bg_color; ?>; background-attachment: <?php echo $bg_fixed; ?>; }
                 #content-block-body-<?php echo $unique_id; ?> { padding: <?php echo $content_padding; ?>; color: <?php echo $font_color; ?>; }
                 .content-block-body { margin-left: auto; margin-right: auto; position: relative; }
             </style>
 <?php       if( $max_bg_width == "yes" ) : ?>
-                <style>
+                <style type="text/css">
                     #wrapper-1 { overflow-x: hidden; }
-                    #content-block-background-<?php echo $unique_id; ?> { margin: 0 -10000px; padding: 0.5em 10000px; }
+                    #content-block-background-<?php echo $unique_id; ?> { margin: 0 -10000px; padding: 0 10000px; }
                 </style>
 <?php       endif; ?>
             
@@ -1743,6 +1803,18 @@ switch ( $udesign_options['page_title_position'] ) {
     default: // Remove Title Completely
         add_filter('body_class','udesign_add_no_title_section_class'); 
 }
+// Add Page/Post title description
+function udesign_add_title_description( $udesign_page_title_html ) {
+    global $post;
+    $udesign_title_description = get_post_meta($post->ID, 'udesign_title_description', true);
+    if ( $udesign_title_description ) {
+        $pattern = '/' . preg_quote('</h1>', '/') . '/';
+        $replacement = '<span class="title-description">'.$udesign_title_description.'</span></h1>';
+        $udesign_page_title_html = preg_replace( $pattern, $replacement, $udesign_page_title_html );
+    }
+    return $udesign_page_title_html;
+}
+add_filter('udesign_get_page_title', 'udesign_add_title_description');
 /***** END: Page Title Business *****/
 
 
@@ -1819,7 +1891,7 @@ add_action('udesign_top_elements_inside', 'udesign_top_elements_logo', 9);
 // Setup the slogan/tagline
 function udesign_top_elements_slogan() {
     ob_start(); ?>
-                    <div id="slogan" class="grid_17"><?php bloginfo('title'); ?></div>
+                    <div id="slogan" class="grid_17"><?php bloginfo('description'); ?></div>
                     <!-- end logo slogan -->
 <?php
     $slogan_html = ob_get_clean();
@@ -1881,6 +1953,7 @@ if ( sidebar_exist_and_active('top-area-social-media') ) { // hide this area if 
 // Setup the main menu
 function udesign_top_main_menu() {
     ob_start(); ?>
+            <div class="clear"></div>
             <div id="main-menu" class="pngfix">
                 <div id="dropdown-holder" class="container_24">
 <?php               udesign_nav(); // this function calls the main menu ?>
@@ -1949,7 +2022,7 @@ add_action('udesign_main_content_bottom', 'udesign_page_edit_link');
 
 // Insert page-links for paginated posts (i.e. when the <!--nextpage--> Quicktag is used)
 function udesign_nextpage_links() {
-    echo wp_link_pages( array('before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number') );
+    wp_link_pages( array('before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number') );
 }
 add_action('udesign_entry_bottom', 'udesign_nextpage_links');
 
@@ -2147,7 +2220,7 @@ if( current_user_can('manage_options') && $udesign_options['show_udesign_action_
 // Add revolution slider to pages
 function udesign_add_slider_revolution_to_pages() {
     // Do not display the slider if the page is set as Front page
-    if ( !is_front_page() ) {
+    if ( !is_front_page() && !is_search() ) {
         global $post;
         $udesign_add_slider_revolution = get_post_meta( $post->ID, 'udesign_add_slider_revolution', true );
         if ( $udesign_add_slider_revolution ) { ?>
@@ -2221,8 +2294,10 @@ function custom_width_page_func() {
                     margin-left: auto;
                     margin-right: auto;
                 }
+                @media screen and (min-width: 1000px){ #feedback { display: block; } }
+                @media screen and (max-width: <?php echo ($udesign_custom_page_width + 40); ?>px) { #feedback { display: none; } }
                 @media screen and (min-width: 1040px){ #page-peel { display: block; } }
-                @media screen and (max-width: <?php echo ($udesign_custom_page_width + 100); ?>px) { #page-peel { display: none; } }       
+                @media screen and (max-width: <?php echo ($udesign_custom_page_width + 100); ?>px) { #page-peel { display: none; } }
 <?php         endif; ?>
                 /* Sidebar */
                 #main-content.grid_16 { width: <?php echo $udesign_custom_content_width;?>%; }

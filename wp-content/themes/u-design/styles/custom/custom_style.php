@@ -29,7 +29,7 @@ ob_start();
 /* Styles Other Than "Custom Colors" section
 ------------------------------------------------------------------------------*/ ?>
 /* Custom Styles */
-body { font-family:'<?php echo $font_family; ?>'; }
+body, #page-content-title .title-description { font-family:'<?php echo $font_family; ?>'; }
 body { font-size:<?php echo $udesign_options['font_size']; ?>px; }
 h1, h2, h3, h4, h5, h6, #slogan, .single-post-categories { font-family:'<?php echo $title_headings_font_family; ?>'; }
 #top-elements { height:<?php echo $udesign_options['top_area_height']; ?>px; }
@@ -102,8 +102,23 @@ h3.bottom-col-title {font-size:<?php echo (1.5 * ($heading_font_size_coefficient
     #feedback a.feedback { position: fixed; }
 <?php endif; ?>
 
-<?php if ($udesign_options['main_menu_alignment'] == 'left') : ?>
-    #navigation-menu { left: 0; }
+<?php if ($udesign_options['main_menu_alignment'] == 'right') : ?>
+    #navigation-menu ul.sf-menu { float:right; }
+<?php elseif ($udesign_options['main_menu_alignment'] == 'left') : ?>
+    @media screen and (min-width: 720px) {
+        #navigation-menu { left: 0; padding-left: 17px; }
+    }
+    @media screen and (min-width: 960px) {
+        #navigation-menu { left: 0; padding-left: 4px; }
+    }
+<?php else : // when "center" menu alignement option is chosen ?>
+    @media screen and (min-width: 720px) {
+        #navigation-menu > ul.sf-menu {
+          float: none;
+          display: table;
+          margin: 0 auto;
+        }
+    }
 <?php endif; ?>
     
 <?php
@@ -285,6 +300,9 @@ elseif ( $udesign_options['global_theme_width'] > 960 ) : // When specific theme
         #sidebar.grid_8 { width: <?php echo $global_sidebar_width; ?>%; }
         #sidebar.push_8, #main-content.push_8 { left: <?php echo $global_sidebar_width; ?>%; }
         #main-content.pull_16, #sidebar.pull_16 { right: <?php echo $main_content_width;?>%; }
+    }
+    @media screen and (max-width: <?php echo ($global_theme_width + 40); ?>px) {
+        #feedback { display: none; }
     }
     @media screen and (max-width: <?php echo ($global_theme_width + 100); ?>px) {
         #page-peel { display: none; }

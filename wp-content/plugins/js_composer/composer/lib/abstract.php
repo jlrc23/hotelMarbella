@@ -9,13 +9,13 @@
 /* abstract VisualComposer class to create structural object of any type */
 if (!class_exists('WPBakeryVisualComposerAbstract')) {
     abstract class WPBakeryVisualComposerAbstract {
-
         public static $config;
         protected $is_plugin = true;
         protected $is_theme = false;
         protected $disable_updater = false;
         protected $settings_as_theme = false;
         protected $as_network_plugin = false;
+        protected $is_init = false;
         public function __construct() {
         }
 
@@ -66,7 +66,6 @@ if (!class_exists('WPBakeryVisualComposerAbstract')) {
         }
     }
 }
-
 if (!class_exists('WPBakeryVisualComposerTemplateInterface')) {
     interface WPBakeryVisualComposerTemplateInterface
     {

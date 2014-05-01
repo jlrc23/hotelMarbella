@@ -31,9 +31,17 @@ function wpb_add_param($shortcode, $attributes) { vc_add_param($shortcode, $attr
  * @return array|bool
  */
 function vc_map_update($name = '', $setting = '', $value = '') {
-    return WPBMap::modify($name, $setting);
+    return WPBMap::modify($name, $setting, $value);
 }
 
+/**
+ * Shorthand function for WPBMap::mutateParam
+ * @param $name
+ * @param array $attribute
+ */
+function vc_update_shortcode_param($name, $attribute = Array()) {
+  return WPBMap::mutateParam($name, $attribute);
+}
 /**
  * Shorthand function for WPBMap::dropParam
  * @param $name
@@ -42,7 +50,9 @@ function vc_map_update($name = '', $setting = '', $value = '') {
 function vc_remove_param($name = '', $attribute_name = '') {
     return WPBMap::dropParam($name, $attribute_name);
 }
-
+function vc_mapper() {
+  return VcMapper::getInstance();
+}
 /**
  * Sets plugin as theme plugin.
  * @param bool $disable_updater - If value is true disables auto updater options.

@@ -731,3 +731,27 @@ function vc_value_from_safe($value, $encode = false) {
     if($encode) $value = htmlentities( $value, ENT_COMPAT, 'UTF-8' );
     return $value;
 }
+
+function vc_disable_automapper($disable = true) {
+    vc_automapper()->setDisabled($disable);
+}
+
+function vc_automapper_is_disabled() {
+    return vc_automapper()->disabled();
+};
+function vc_get_dropdown_option($param, $value) {
+    if($value === '' && is_array($param['value'])) $value = array_shift($param['value']);
+    $value = preg_replace('/\s/', '_', $value);
+    return ($value!=='' ? $value : '');
+}
+function vc_get_css_color($prefix, $color) {
+    $rgb_color = preg_match('/rgba/', $color) ? preg_replace(array('/\s+/', '/^rgba\((\d+)\,(\d+)\,(\d+)\,([\d\.]+)\)$/'), array('', 'rgb($1,$2,$3)'), $color) : $color;
+    $string = $prefix.':'.$rgb_color.';';
+    if($rgb_color !== $color) $string .= $prefix.':'.$color.';';
+    return $string;
+}
+function vc_shortcode_custom_css_class($param_value, $prefix = '') {
+  $css_class = preg_match('/\s*\.([^\{]+)\s*\{\s*([^\}]+)\s*\}\s*/', $param_value) ? $prefix.preg_replace('/\s*\.([^\{]+)\s*\{\s*([^\}]+)\s*\}\s*/', '$1', $param_value) : '';
+  if(vc_is_inline()) $css_class .= ' vc-cc-placeholder';
+  return $css_class;
+}

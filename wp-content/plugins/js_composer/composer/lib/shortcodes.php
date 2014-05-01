@@ -145,7 +145,7 @@ if (!class_exists('WPBakeryShortCode')) {
                             $shortcode_attributes[$param['param_name']] = '';
                         }
                     } else if ( $param['param_name'] == 'content' && $content == NULL ) {
-                        $content = __($param['value'], "js_composer");
+                        $content = isset($param['value']) ? __($param['value'], "js_composer") : '';
                     }
                 }
                 extract(shortcode_atts(
@@ -429,7 +429,7 @@ if (!class_exists('WPBakeryShortCode_UniversalAdmin')) {
                 foreach ( $this->settings['params'] as $param ) {
                     if ( $param['param_name'] != 'content' ) {
                         $shortcode_attributes[$param['param_name']] = $param['value'];
-                    } else if ( $param['param_name'] == 'content' && $content == NULL ) {
+                    } else if ( $param['param_name'] == 'content' && $content === null ) {
                         $content = $param['value'];
                     }
                 }
@@ -459,7 +459,8 @@ if (!class_exists('WPBakeryShortCode_UniversalAdmin')) {
         }
 
         protected function singleParamEditHolder($param, $param_value) {
-            $param['vc_single_param_edit_holder_class'] = array('vc_row-fluid', 'wpb_el_type_'. $param['type']);
+            $param['vc_single_param_edit_holder_class'] = array('vc_row-fluid', 'wpb_el_type_'. $param['type'], 'vc-shortcode-param');
+            if(!empty($param['param_holder_class'])) $param['vc_single_param_edit_holder_class'][] = $param['param_holder_class'];
             $param = apply_filters('vc_single_param_edit', $param);
             $output = '<div class="'.implode(' ', $param['vc_single_param_edit_holder_class']).'">';
             $output .= (isset($param['heading'])) ? '<div class="wpb_element_label">'.__($param['heading'], "js_composer").'</div>' : '';//vc_span3
@@ -486,7 +487,8 @@ if (!class_exists('WPBakeryShortCode_UniversalAdmin')) {
             }
             // Dropdown - select
             else if ( $param['type'] == 'dropdown' ) {
-                $param_line .= '<select name="'.$param['param_name'].'" class="wpb_vc_param_value wpb-input wpb-select '.$param['param_name'].' '.$param['type'].'">';
+                $css_option = vc_get_dropdown_option($param, $param_value);
+                $param_line .= '<select name="'.$param['param_name'].'" class="wpb_vc_param_value wpb-input wpb-select '.$param['param_name'].' '.$param['type'].' '.$css_option.'" data-option="'.$css_option.'">';
                 foreach ( $param['value'] as $text_val => $val ) {
                     if ( is_numeric($text_val) && (is_string($val) || is_numeric($val)) ) {
                         $text_val = $val;
@@ -498,7 +500,7 @@ if (!class_exists('WPBakeryShortCode_UniversalAdmin')) {
                     if ($param_value!=='' && (string)$val === (string)$param_value) {
                         $selected = ' selected="selected"';
                     }
-                    $param_line .= '<option class="'.$val.'" value="'.$val.'"'.$selected.'>'.$text_val.'</option>';
+                    $param_line .= '<option class="'.$val.'" value="'.$val.'"'.$selected.'>'.htmlspecialchars($text_val).'</option>';
                 }
                 $param_line .= '</select>';
             }
@@ -714,6 +716,7 @@ if (!class_exists('WPBakeryShortCode_Settings')) {
         public function contentAdmin($atts, $content) {
             $this->loadDefaultParams();
             $output = $el_position = '';
+            $groups_content = array();
             if ( isset($this->settings['params']) ) {
                 $shortcode_attributes = array();
                 foreach ( $this->settings['params'] as $param ) {
@@ -723,8 +726,8 @@ if (!class_exists('WPBakeryShortCode_Settings')) {
                         } else {
                             $shortcode_attributes[$param['param_name']] = isset($param['value']) ? $param['value'] : null;
                         }
-                    } else if ( $param['param_name'] == 'content' && $content == NULL ) {
-                        $content = $param['value'];
+                    } else if ( $param['param_name'] == 'content' && $content === null ) {
+                        $content = isset($param['value']) ? $param['value'] : '';
                     }
                 }
                 extract(shortcode_atts(
@@ -732,7 +735,6 @@ if (!class_exists('WPBakeryShortCode_Settings')) {
                     , $atts));
                 $editor_css_classes = apply_filters('vc_edit_form_class', array('vc_span12', 'wpb_edit_form_elements'));
                 $output .= '<div class="'.implode(' ', $editor_css_classes).'" data-title="'.htmlspecialchars(__('Edit', 'js_composer').' '.__($this->settings['name'], "js_composer")).'">';
-
                 foreach ($this->settings['params'] as $param) {
                     $param_value = isset($$param['param_name']) ? $$param['param_name'] : '';
                     if(is_array($param_value) && !empty($param_value) && isset($param['std'])) {
@@ -745,8 +747,31 @@ if (!class_exists('WPBakeryShortCode_Settings')) {
                     } elseif(is_array($param_value)) {
                         $param_value = '';
                     }
-                    $output .= $this->singleParamEditHolder($param, $param_value);
+                    $group = isset($param['group']) && $param['group'] !== '' ? $param['group'] : '_general';
+                    if(!isset($groups_content[$group])) {
+                      $groups[] = $group;
+                      $groups_content[$group] = '';
+                    }
+                    $groups_content[$group] .= $this->singleParamEditHolder($param, $param_value);
                 }
+                if(sizeof($groups) > 1) {
+                  $output .= '<div class="vc-tabs" id="vc-edit-form-tabs"><ul>';
+                  $key = 0;
+                  foreach($groups as $g) {
+                    $output .= '<li><a href="#vc-edit-form-tab-'.$key++.'">'.($g === '_general' ? __('General', 'js_composer') : $g).'</a></li>';
+                  }
+                  $output .= '</ul>';
+                  $key = 0;
+                  foreach($groups as $g) {
+                    $output .= '<div id="vc-edit-form-tab-'.$key++.'">';
+                    $output .= $groups_content[$g];
+                    $output .= '</div>';
+                  }
+                  $output .= '</div>';
+                } elseif(!empty($groups_content['_general'])) {
+                  $output .= $groups_content['_general'];
+                }
+
                 $output .= '</div>'; //close wpb_edit_form_elements
                 if(!WpbakeryShortcodeParams::isEnqueue()) {
                     foreach(WpbakeryShortcodeParams::getScripts() as $script) {

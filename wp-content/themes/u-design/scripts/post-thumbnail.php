@@ -37,7 +37,7 @@ if ( function_exists('get_the_image') ) {
 				    'echo' => false,
 				) );
 	}
-	echo ( $the_thumb_html_as_array[src] ) ? '<div class="small-custom-frame-wrapper alignleft'.$shadow_class.'"><div class="custom-frame-inner-wrapper"><div class="custom-frame-padding"><a href="'.get_permalink().'" title="'.the_title('', '', false).'"><img src="'.udesign_process_image( $the_thumb_html_as_array[url], $post_thumb_width, $post_thumb_height, true, '', false ).'" width="'.$post_thumb_width.'" height="'.$post_thumb_height.'" alt="'.$the_thumb_html_as_array[alt].'" /></a></div></div></div>' : '';
+	echo ( $the_thumb_html_as_array['src'] ) ? '<div class="small-custom-frame-wrapper alignleft'.$shadow_class.'"><div class="custom-frame-inner-wrapper"><div class="custom-frame-padding"><a href="'.get_permalink().'" title="'.the_title('', '', false).'"><img src="'.udesign_process_image( $the_thumb_html_as_array['url'], $post_thumb_width, $post_thumb_height, true, '', false ).'" width="'.$post_thumb_width.'" height="'.$post_thumb_height.'" alt="'.$the_thumb_html_as_array['alt'].'" /></a></div></div></div>' : '';
 	
 } else { // the case when "Get The Image" plugin is NOT available
 	if ( $udesign_options['default_thumb_on'] == 'yes' ) { // Default thumbnail option is selected

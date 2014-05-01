@@ -65,7 +65,6 @@
          */
         update:function (model) {
             this.data[model.id] = model.toJSON();
-
             this.setModelRoot(model.id);
             this.save();
             return model;

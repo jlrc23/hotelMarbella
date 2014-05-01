@@ -166,7 +166,7 @@ var wpb_grid_post_types_for_taxonomies_handler = function () {
 var wpb_single_image_img_link_dependency_callback = function () {
     var $img_link_large = this.$content.find('#img_link_large-yes'),
         $ = jQuery,
-        $img_link_target = this.$content.find('[name=img_link_target]').closest('.vc_row-fluid');
+        $img_link_target = this.$content.find('[name=img_link_target]').parents('.vc-shortcode-param:first');
     this.$content.find('#img_link_large-yes').change(function () {
         var checked = $(this).is(':checked');
         if (checked) {

@@ -5,7 +5,8 @@
  *
  * Visual composer backbone/underscore version
  * ========================================================= */
-(function ($) {
+
+ (function ($) {
     var i18n = window.i18nLocale,
         store = vc.storage,
         Shortcodes = vc.shortcodes;
@@ -216,8 +217,8 @@
         },
         editElement:function (e) {
             if (_.isObject(e)) e.preventDefault();
-            var settings_view = new SettingsView({model:this.model});
-            settings_view.show();
+            vc.edit_element_block_view = new SettingsView({model:this.model});
+            vc.edit_element_block_view.show();
         },
         clone:function (e) {
             if (_.isObject(e)) e.preventDefault();
@@ -444,8 +445,8 @@
         },
         removeView:function () {
             if (this.selected_model && this.selected_model.get('shortcode') != 'vc_row' && this.selected_model.get('shortcode') != 'vc_row_inner') {
-                var settings_view = new SettingsView({model:this.selected_model});
-                settings_view.show();
+                vc.edit_element_block_view = new SettingsView({model:this.selected_model});
+                vc.edit_element_block_view.show();
             }
             this.remove();
         },
@@ -486,8 +487,8 @@
             var tag = this.model.get('shortcode'),
                 params = _.isObject(vc.map[tag]) && _.isArray(vc.map[tag].params) ? vc.map[tag].params : [];
             _.bindAll(this, 'hookDependent');
-            this.mapped_params = {};
             this.dependent_elements = {};
+            this.mapped_params = {};
             _.each(params, function (param) {
                 this.mapped_params[param.param_name] = param;
             }, this);
@@ -501,8 +502,8 @@
             // setup dependencies
             _.each(this.mapped_params, function (param) {
                 if (_.isObject(param) && _.isObject(param.dependency) && _.isString(param.dependency.element)) {
-                    var $masters = $('[name=' + param.dependency.element + ']', this.$content),
-                        $slave = $('[name= ' + param.param_name + ']', this.$content);
+                    var $masters = $('[name=' + param.dependency.element + '].wpb_vc_param_value', this.$content),
+                        $slave = $('[name= ' + param.param_name + '].wpb_vc_param_value', this.$content);
                     _.each($masters, function (master) {
                         var $master = $(master),
                             rules = param.dependency;
@@ -522,12 +523,12 @@
             master_value,
             is_empty;
             dependent_elements = _.isArray(dependent_elements) ? dependent_elements : this.dependent_elements[$master.attr('name')],
-            master_value = $master.is(':checkbox') ? _.map(this.$content.find('[name=' + $(e.currentTarget).attr('name') + ']:checked'),
+            master_value = $master.is(':checkbox') ? _.map(this.$content.find('[name=' + $(e.currentTarget).attr('name') + '].wpb_vc_param_value:checked'),
                     function (element) {
                     return $(element).val();
                 })
                     : $master.val();
-            is_empty = $master.is(':checkbox') ? !this.$content.find('[name=' + $master.attr('name') + ']:checked').length
+            is_empty = $master.is(':checkbox') ? !this.$content.find('[name=' + $master.attr('name') + '].wpb_vc_param_value:checked').length
                     : !master_value.length;
             if($master.is(':hidden') && !$master.is('[type=hidden]')) {
                 _.each(dependent_elements, function($element) {
@@ -581,12 +582,15 @@
             return this;
         },
         getParams: function() {
-            var attributes_settings = this.mapped_params,
-                params = jQuery.extend(true, {}, this.model.get('params'));
+            var attributes_settings = this.mapped_params;
+            this.params = jQuery.extend(true, {}, this.model.get('params'));
             _.each(attributes_settings, function (param) {
-                params[param.param_name] = vc.atts.parse.call(this, param);
+                this.params[param.param_name] = vc.atts.parse.call(this, param);
             }, this);
-            return params;
+            _.each(vc.edit_form_callbacks, function(callback){
+              callback.call(this);
+            }, this);
+            return this.params;
         },
         getCurrentParams: function() {
             var attributes_settings = this.mapped_params,
@@ -605,7 +609,12 @@
             if(!_.isUndefined(window.tinyMCE)) {
                 $('textarea.textarea_html', this.$el).each(function () {
                     var id = $(this).attr('id');
-                    window.tinyMCE.execCommand("mceRemoveControl", true, id);
+                    if(tinymce.majorVersion === "4") {
+                      window.tinyMCE.execCommand('mceRemoveEditor', true, id);
+                    } else {
+                      window.tinyMCE.execCommand("mceRemoveControl", true, id);
+                    }
+                    // window.tinyMCE.execCommand('mceAddEditor', false, id);
                 });
             }
         },
@@ -1012,13 +1021,17 @@
         switchComposer:function (e) {
             if (_.isObject(e)) e.preventDefault();
             if (this.status == 'shown') {
-             if (!_.isUndefined(this.$switchButton)) this.$switchButton.text(window.i18nLocale.main_button_title_backend_editor);
-              this.$buttonsContainer.removeClass('vc-backend-status');
+              if (this.accessPolicy !== 'only') {
+                !_.isUndefined(this.$switchButton) && this.$switchButton.text(window.i18nLocale.main_button_title_backend_editor);
+                !_.isUndefined(this.$buttonsContainer) && this.$buttonsContainer.removeClass('vc-backend-status');
+              }
               this.close();
               this.status = 'closed';
             } else {
-              if (!_.isUndefined(this.$switchButton)) this.$switchButton.text(window.i18nLocale.main_button_title_revert);
-              this.$buttonsContainer.addClass('vc-backend-status');
+              if (this.accessPolicy !== 'only') {
+                !_.isUndefined(this.$switchButton) && this.$switchButton.text(window.i18nLocale.main_button_title_revert);
+                !_.isUndefined(this.$buttonsContainer) && this.$buttonsContainer.addClass('vc-backend-status');
+              }
               this.show();
                 this.status = 'shown';
 

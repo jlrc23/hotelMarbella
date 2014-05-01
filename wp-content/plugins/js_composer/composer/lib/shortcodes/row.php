@@ -96,7 +96,7 @@ class WPBakeryShortCode_VC_Row extends WPBakeryShortCode {
             $style .= "background-image: url(".$image_url.");";
         }
         if(!empty($bg_color)) {
-            $style .= 'background-color: '.$bg_color.';';
+            $style .= vc_get_css_color('background-color', $bg_color);
         }
         if(!empty($bg_image_repeat) && $has_image) {
             if($bg_image_repeat === 'cover') {
@@ -108,7 +108,7 @@ class WPBakeryShortCode_VC_Row extends WPBakeryShortCode {
             }
         }
         if( !empty($font_color) ) {
-            $style .= 'color: '.$font_color.';';
+            $style .= vc_get_css_color('color', $font_color); // 'color: '.$font_color.';';
         }
         if( $padding != '' ) {
             $style .= 'padding: '.(preg_match('/(px|em|\%|pt|cm)$/', $padding) ? $padding : $padding.'px').';';

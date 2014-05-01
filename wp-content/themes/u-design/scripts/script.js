@@ -45,14 +45,38 @@ jQuery(document).ready(function($){
     );
 });
 
-// Scroll to Top script
-jQuery(document).ready(function($){
+// Smooth scrolling related scripts
+jQuery(document).ready(function($) {
+    // "Back to Top" smooth scrolling
     $('a[href=#top]').click(function(){
         $('html, body').animate({scrollTop:0}, 'slow');
-        return false;
+        return false; // returning 'false' will prevent hashtag being added to URL
+    });
+    
+    // Smooth page scrolling to an anchor on the same page
+    $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            // determine if the scroll-to target position should be offset (ex. if "Stay-on-Top" menu, "Admin Bar", etc.)
+            var offsetElement = 0;
+            if ($('body').hasClass('u-design-fixed-menu-on')) { offsetElement = 40; }
+            if ($('body').hasClass('admin-bar')) { offsetElement += 32; }
+            
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('html,body').animate({
+                    scrollTop: target.offset().top - offsetElement
+                }, 1000);
+                // if anchor is pointing to any "Tabs" then keep the hash "tab-..." else remove the hash
+                if ( this.hash.slice(1,5) === "tab-" ) {
+                    return true; // add the hashtag to URL
+                } else {
+                    return false; // remove hashtag from URL
+                }
+            }
+        }
     });
 });
-
 
 // Menu Related Scripts
 jQuery(document).ready(function($){
@@ -144,6 +168,7 @@ jQuery(document).ready(function($){
         
         // add placeholder attribute to the default Search widget form
         $(".widget_search input#s").attr("placeholder", udesign_script_vars.search_widget_placeholder);
+        $(".widget_search input#searchsubmit").val(''); // remove default value "Search"
 });
 
 

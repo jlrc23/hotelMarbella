@@ -41,7 +41,7 @@ $class .= ($color!='') ? ' vc_cta_'.$color : '';
 $class .= ($style!='') ? ' vc_cta_'.$style : '';
 $class .= ($txt_align!='') ? ' vc_txt_align_'.$txt_align : '';
 
-$inline_css = ($accent_color!='') ? ' style="background-color: '.$accent_color.'; border-color: '.$accent_color.';"' : '';
+$inline_css = ($accent_color!='') ? ' style="'.vc_get_css_color('background-color', $accent_color).vc_get_css_color('border-color', $accent_color).'"' : '';
 
 $class .= $this->getExtraClass($el_class);
 $css_class = apply_filters(VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG, $class, $this->settings['base']);

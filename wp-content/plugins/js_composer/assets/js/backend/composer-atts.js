@@ -11,6 +11,7 @@ var vc = {filters:{templates:[]}, addTemplateFilter:function (callback) {
 }};
 (function ($) {
     var i18n = window.i18nLocale;
+    vc.edit_form_callbacks = [];
     vc.atts = {
         parse:function (param) {
             var value;

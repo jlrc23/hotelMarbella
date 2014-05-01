@@ -2,7 +2,7 @@
 Theme Name: U-Design
 Theme URI: http://themeforest.net/item/udesign-wordpress-theme/253220?ref=internq7
 Description: CSS for the 'U-Design Theme'.
-Version: 2.3.0
+Version: 2.4.2
 Author: Andon
 Author URI: http://themeforest.net/user/internq7/portfolio?ref=internq7
 */
@@ -43,6 +43,7 @@ body {
     outline: 0;
 }
 #slogan {
+    width: auto;
     position: absolute;
     top: 100px;
     left: 0;
@@ -229,11 +230,12 @@ body {
     list-style: none outside none;
     width:960px;
     height:420px;
+    margin: 0 auto;
 }
 #c1-slider li {
     background: none repeat scroll 0 0 transparent !important;
     width: 960px;
-    height: 400px;
+    height: 413px;
     overflow: hidden;
     margin: 0 auto;
     padding: 0;
@@ -648,6 +650,13 @@ ul#c3-slider {
     background-image:none;
     background-color:#FFFFFF;
 }
+#page-content-title .title-description {
+    font-size: 0.45em;
+    font-style: italic;
+    line-height: 1.7;
+    margin-left: 17px;
+    padding: 0 6px;
+}
 /* End Page Container (Sidebar and Main Content) */
 
 /* Begin Post */
@@ -702,9 +711,8 @@ h3#comments, #respond h3 {font-size: 1.25em;}
 ol.commentlist {
     margin: 0;
     padding: 0;
-    width: 600px;
+    width: 100%;
 }
-.grid_24 ol.commentlist { width: 920px;} /* makes comments span full-width for posts/pages that are full-width */
 .commentlist li {
     list-style: none;
     margin-left: 15px;
@@ -1481,7 +1489,7 @@ strong.search-excerpt { background: yellow; }
 
 /* Begin Typography (Message Boxes) */
 .info, .success, .warning, .erroneous, .validation {
-    display: table;
+    display: block;
     width:100%;
     margin: 10px 0px;
     background-repeat: no-repeat;
@@ -1549,7 +1557,7 @@ strong.search-excerpt { background: yellow; }
 }
 .custom {
     margin:10px 0 !important;
-    display:table;
+    display:block;
     width:100%;
     border: 1px solid #BBB;
     background-color: #EEEEEE; /* old browsers */
@@ -1618,10 +1626,10 @@ a.read-more-align-right span {
 /* Begin Main Navigation Menu */
 #navigation-menu {
     position:absolute;
-    right:20px;
     top:0;
     font-size:14px;
     height:40px;
+    width: 100%;
 }
 .navigation-menu {
     position:relative;
@@ -1648,11 +1656,9 @@ a.read-more-align-right span {
     font-size: 1em;
 }
 #navigation-menu ul.sf-menu {
-    margin-top: 0;
-}
-#navigation-menu ul.sf-menu {
     padding: 0;
-    margin-right: -20px;
+    margin-top: 0;
+    height: inherit;
 }
 #navigation-menu ul.sf-menu > li {
     background:none;
@@ -1964,6 +1970,10 @@ ul#c2-slider li ul.list-10 li, ul#c3-slider li ul.list-11 li { background: trans
     float: right;
     display: inline-block;
 }
+.align-btn-center {
+    margin: 0 auto;
+    text-align: center;
+}
 a.dark-button,
 a.light-button {
     font-family: Arial,Verdana,Helvetica,sans-serif;
@@ -2158,10 +2168,7 @@ a.light-round-button:focus, a.light-round-button:focus span {
     outline: 0 none;
     margin: 3px;
 }
-.custom-button:active {
-    -moz-box-shadow: 0 -3px 1px #FFFFFF inset, 0 0 3px rgba(0, 0, 0, 0.9) inset;
-    top: 1px;
-}
+.custom-button:active { top: 1px; }
 .custom-button span {
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
@@ -2202,6 +2209,57 @@ a.light-round-button:focus, a.light-round-button:focus span {
 }
 .custom-button span, .custom-button span:visited {
     background-color: #FF5C00;
+}
+
+.flat-custom-button, .flat-custom-button span,
+.flat-custom-button:visited, .flat-custom-button span:visited {
+    display:inline-block;
+    -moz-border-radius: 3px; 
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+.flat-custom-button, .flat-custom-button:visited {
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+}
+.flat-custom-button, a.flat-custom-button {
+    outline: 0 none;
+    margin: 3px;
+}
+.flat-custom-button:active { top: 1px; }
+.flat-custom-button span {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    font-weight: bold;
+    line-height: 1;
+    color:#FFFFFF;
+    text-decoration:none;
+    text-align:center;
+    white-space: nowrap;
+}
+.flat-custom-button span, .flat-custom-button span:visited {
+    font-size: 13px;
+    padding: 10px 20px;
+}
+.flat-custom-button:hover {
+    color: #FFFFFF;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+    opacity:0.8;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+    /*-ms-filter must come before filter*/
+    filter: alpha(opacity=80);
+}
+.flat-custom-button span, .flat-custom-button span:visited {
+    background-color: #FF5C00;
+    border: 1px solid #FF5C00;
+}
+.custom-button span, .flat-custom-button span {
+  white-space: normal;
+  line-height: 1.2;
 }
 /* End Buttons */
 
@@ -2503,6 +2561,7 @@ Stylesheet for the WP125 ad management plugin
 URL: http://www.webmaster-source.com/wp125-ad-plugin-wordpress/
 */
 /* Styles for one-column display */
+.widget_wp125 { display: table; }
 #wp125adwrap_1c { width:100%; }
 #wp125adwrap_1c .wp125ad { margin-bottom:10px; }
 
@@ -2530,7 +2589,8 @@ URL: http://www.webmaster-source.com/wp125-ad-plugin-wordpress/
     margin-top:5px;
 }
 #home-page-content {
-    background-color:#FFF;
+    background-color:#FFFFFF;
+    overflow: hidden;
 }
 #before-content .column-content-wrapper {
     display: block;
@@ -2692,7 +2752,6 @@ ul.small-thumb .teaser-content {
 
 /* Begin Styling the Native WP Gallery */
 .gallery .gallery-item a {
-    border: 1px solid #EAEAEA;
     display: inline-block;
 }
 .gallery .gallery-item img {
@@ -2700,6 +2759,11 @@ ul.small-thumb .teaser-content {
     margin: 0;
     border: 1px solid #FFFFFF !important;
     background: #F6F6F6; /* old browsers */
+    -webkit-box-shadow: 0 0 0 1px #EAEAEA;
+    -moz-box-shadow: 0 0 0 1px #EAEAEA;
+    box-shadow: 0 0 0 1px #EAEAEA;
+    height: auto;
+    width: 80%;
 }
 .gallery .gallery-item .gallery-caption {
     padding: 0 10px;
@@ -3202,4 +3266,12 @@ span.theme-color {
     
 }
 
+.pp_gallery li.selected a {
+  border: 1px solid #FF0000;
+}
+
+.wp-video-shortcode { max-width: 100%; }
+.wp-audio-shortcode { max-width: 100%; }
+
+.post-edit-link { margin-right: 25px; }
 

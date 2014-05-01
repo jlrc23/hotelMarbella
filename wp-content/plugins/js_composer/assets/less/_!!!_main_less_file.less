@@ -28,25 +28,7 @@
   }
 }
 
-// Variables 4.0
-//When color is added it should be added to the VcSharedLibrary class too
-@blue: #5472D2;
-@turquoise: #00C1CF;
-@pink: #FE6C61;
-@violet: #8D6DC4;
-@peacoc: #4CADC9;
-@chino: #CEC2AB;
-@mulled_wine: #50485B;
-@vista_blue: #75D69C;
-@black: #2A2A2A;
-@grey: #EBEBEB;
-@orange: #F7BE68;
-@sky: #5AA1E3;
-@green: #6DAB3C;
-@juicy_pink: #F4524D;
-@sandy_brown: #F79468;
-@purple: #B97EBB; 
-// End Variables 
+@import "utils/colors.less";
 
 // Mixins 4.0
 //Button variants mixin
@@ -104,6 +86,16 @@
   .vc_span1, .vc_span2, .vc_span3, .vc_span4, .vc_span5, .vc_span6, .vc_span7, .vc_span8, .vc_span9, .vc_span10, .vc_span11, .vc_span12 {
     margin-left: 0;
   }
+  .wpb_column {
+      @media(max-width: @screen-sm) {
+        margin-bottom: @vc_element_margin_bottom;
+      }
+  }
+  > :last-child, > :last-child > .wpb_column  {
+      @media(max-width: @screen-sm) {
+        margin-bottom: 0;
+      }
+    }
 }
 
 .vc_non_responsive {
@@ -253,6 +245,8 @@
   .vc_btn_variants(_juicy_pink, @juicy_pink, #ffffff);
   .vc_btn_variants(_sandy_brown, @sandy_brown, #ffffff);
   .vc_btn_variants(_purple, @purple, #ffffff);
+  .vc_btn_variants(_white, @white, #666666);
+
 }
 
 /* 2. Alerts (Message boxes)
@@ -506,6 +500,7 @@
   .vc_separator_variants(_juicy_pink, @juicy_pink);
   .vc_separator_variants(_sandy_brown, @sandy_brown);
   .vc_separator_variants(_purple, @purple);
+  .vc_separator_variants(_white, @white);
 }
 .vc_separator_variants(@selector, @color) {
   &.vc_sep_color {
@@ -629,6 +624,7 @@ div .vc_box_ {
 .vc_box_border_variants(_juicy_pink, @juicy_pink);
 .vc_box_border_variants(_sandy_brown, @sandy_brown);
 .vc_box_border_variants(_purple, @purple);
+.vc_box_border_variants(_white, @white);
 
 /***************** OLD CSS *****************/
 /* Content elements margins

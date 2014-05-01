@@ -157,6 +157,13 @@ vc_map( array(
       "param_name" => "el_class",
       "value" => "",
       "description" => __("If you wish to style particular content element differently, then use this field to add a class name and then refer to it in your css file.", "js_composer")
+    ),
+    array(
+      "type" => "css_editor",
+      "heading" => __('Css', "js_composer"),
+      "param_name" => "css",
+      // "description" => __("If you wish to style particular content element differently, then use this field to add a class name and then refer to it in your css file.", "js_composer"),
+      "group" => __('Design options', 'js_composer')
     )
   ),
   "js_view" => 'VcColumnView'

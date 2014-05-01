@@ -301,7 +301,7 @@
       _.each(params, function (param) {
         this.mapped_params[param.param_name] = param;
       }, this);
-      this.$content = not_request_template ? this.$el : this.$el.find('.vc-properties-list');
+      this.$content = not_request_template ? this.$el : this.$el.find('.vc-properties-list').removeClass('vc-with-tabs');
       this.$content.html('<span class="vc-spinner"></span>');
       this.show();
       !not_request_template &&
@@ -331,8 +331,8 @@
       // setup dependencies
       _.each(this.mapped_params, function (param) {
         if (_.isObject(param) && _.isObject(param.dependency) && _.isString(param.dependency.element)) {
-          var $masters = $('[name=' + param.dependency.element + ']', this.$content),
-            $slave = $('[name= ' + param.param_name + ']', this.$content);
+          var $masters = $('[name=' + param.dependency.element + '].wpb_vc_param_value', this.$content),
+            $slave = $('[name= ' + param.param_name + '].wpb_vc_param_value', this.$content);
           _.each($masters, function (master) {
             var $master = $(master),
               rules = param.dependency;
@@ -352,12 +352,12 @@
         master_value,
         is_empty,
         dependent_elements = _.isArray(dependent_elements) ? dependent_elements : this.dependent_elements[$master.attr('name')],
-        master_value = $master.is(':checkbox') ? _.map(this.$content.find('[name=' + $(e.currentTarget).attr('name') + ']:checked'),
+        master_value = $master.is(':checkbox') ? _.map(this.$content.find('[name=' + $(e.currentTarget).attr('name') + '].wpb_vc_param_value:checked'),
           function (element) {
             return $(element).val();
           })
           : $master.val();
-      is_empty = $master.is(':checkbox') ? !this.$content.find('[name=' + $master.attr('name') + ']:checked').length
+      is_empty = $master.is(':checkbox') ? !this.$content.find('[name=' + $master.attr('name') + '].wpb_vc_param_value:checked').length
         : !master_value.length;
       if($master.is(':hidden') && !$master.is('[type=hidden]')) {
         _.each(dependent_elements, function($element) {
@@ -389,17 +389,20 @@
       return window;
     },
     getParams: function() {
-      var attributes_settings = this.mapped_params,
-        params = _.extend({}, this.model.get('params'));
+      var attributes_settings = this.mapped_params;
+      this.params = _.extend({}, this.model.get('params'));
       _.each(attributes_settings, function (param) {
         var value = vc.atts.parseFrame.call(this, param);
         if(_.isNull(value) || value === '') {
-          delete params[param.param_name];
+          delete this.params[param.param_name];
         } else {
-          params[param.param_name] =  value;
+          this.params[param.param_name] =  value;
         }
       }, this);
-      return params;
+      _.each(vc.edit_form_callbacks, function(callback){
+        callback.call(this);
+      }, this);
+      return this.params;
     },
     content: function() {
       return this.$content;
@@ -435,7 +438,11 @@
       if(!_.isUndefined(window.tinyMCE)) {
         $('textarea.textarea_html', this.$el).each(function () {
           var id = $(this).attr('id');
-          window.tinyMCE.execCommand("mceRemoveControl", true, id);
+          if(tinymce.majorVersion === "4") {
+            window.tinyMCE.execCommand('mceRemoveEditor', true, id);
+          } else {
+            window.tinyMCE.execCommand("mceRemoveControl", true, id);
+          }
         });
       }
     }

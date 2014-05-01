@@ -44,9 +44,6 @@ echo apply_filters( 'udesign_head_title_element', ob_get_clean() );  ?>
     // ]]>
     </script>
 <![endif]-->
-<!--[if lt IE 9]>
-    <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/scripts/css3-mediaqueries.js"></script>
-<![endif]-->
 
 <?php wp_head(); ?>
 
@@ -61,6 +58,9 @@ echo apply_filters( 'udesign_head_title_element', ob_get_clean() );  ?>
     <style type="text/css">
 	body{ behavior: url("<?php bloginfo('template_directory'); ?>/scripts/csshover3.htc"); }
     </style>
+<![endif]-->
+<!--[if lt IE 9]>
+    <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/scripts/respond.min.js"></script>
 <![endif]-->
 <?php echo $udesign_options['google_analytics']; ?>
 <?php udesign_head_bottom(); ?>
@@ -112,7 +112,7 @@ echo apply_filters( 'udesign_head_title_element', ob_get_clean() );  ?>
                     } ?>
 		</div>
 		<!-- end rev-slider-header -->
-<?php	    elseif ( $current_slider == '7' ) :/* // no slider ?>
+<?php	    elseif ( $current_slider == '7' ) : // no slider ?>
 		<div id="page-content-title">
 		    <div id="page-content-header" class="container_24">
 			<div id="page-title">
@@ -122,7 +122,7 @@ echo apply_filters( 'udesign_head_title_element', ob_get_clean() );  ?>
 		    <!-- end page-content-header -->
 		</div>
 		<!-- end page-content-title -->
-<?php	    */ endif; ?>
+<?php	    endif; ?>
                 
 <?php       udesign_front_page_slider_after(); ?>
 

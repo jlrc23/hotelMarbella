@@ -1371,11 +1371,18 @@ jQuery(document).ready(function($) {
     globalThemeWidthSlideBar.slider({
         range: "max",
         min: 960,
-        max: 1200,
+        max: 1600,
         step: 10,
         value: [ globalThemeWidthTxtField.val() ],
         slide: function( event, ui ) {
             globalThemeWidthTxtField.val( ui.value );
+            if ( ui.value == 960 ) { // When slide bar value has chagned to 960 disable the 'Global Sidebar Width' option.
+                globalSidebarWidthSlideBar.slider( "disable" );
+                globalSidebarWidthTxtField.prop( "disabled", true );
+            } else { //  Enalbe it otherwise.
+                globalSidebarWidthSlideBar.slider( "enable" );
+                globalSidebarWidthTxtField.prop( "disabled", false );
+            }
         },
         start: function( event, ui ) {
             if ( globalThemeWidthTxtField.hasClass('udesign-error') ) {
@@ -1383,8 +1390,17 @@ jQuery(document).ready(function($) {
             }
         }
     });
-    globalThemeWidthTxtField.keyup(function() {
+    // When 'Global Theme Width' text field input has changed
+    globalThemeWidthTxtField.on('input propertychange', function() {
+        // Update the Global Theme Width slide-bar
         globalThemeWidthSlideBar.slider( 'value', $( this ).val() );
+        if ( $( this ).val() == 960 ) { // When input value has chagned to 960 disable the 'Global Sidebar Width' option.
+            globalSidebarWidthSlideBar.slider( "disable" );
+            globalSidebarWidthTxtField.prop( "disabled", true );
+        } else { // Enalbe it otherwise.
+            globalSidebarWidthSlideBar.slider( "enable" );
+            globalSidebarWidthTxtField.prop( "disabled", false );
+        }
     });
     
     // Slide bar for the "Global Sidebar Width" option
@@ -1404,7 +1420,9 @@ jQuery(document).ready(function($) {
             }
         }
     });
-    globalSidebarWidthTxtField.keyup(function() {
+    // When 'Global Sidebar Width' text field input has changed
+    globalSidebarWidthTxtField.on('input propertychange', function() {
+        // Update the 'Global Sidebar Width' slide-bar
         globalSidebarWidthSlideBar.slider( 'value', $( this ).val() );
     });
     
@@ -1425,13 +1443,33 @@ jQuery(document).ready(function($) {
     
     
     
+    // When 'Global Theme Width' is set to 960 (default) then disable the 'Global Sidebar Width' option
+    if ( $("#max_theme_width").is(':checked')  ) {
+        globalSidebarWidthSlideBar.slider( "enable" );
+        globalSidebarWidthTxtField.prop( "disabled", false );
+    } else if ( globalThemeWidthTxtField.val() == 960 ) {
+        globalSidebarWidthSlideBar.slider( "disable" );
+        globalSidebarWidthTxtField.prop( "disabled", true );
+    }
+    $( "#max_theme_width" ).click(function() {
+        if ( $("#max_theme_width").is(':checked')  ) {
+            globalSidebarWidthSlideBar.slider( "enable" );
+            globalSidebarWidthTxtField.prop( "disabled", false );
+        } else if ( globalThemeWidthTxtField.val() == 960 ) {
+            globalSidebarWidthSlideBar.slider( "disable" );
+            globalSidebarWidthTxtField.prop( "disabled", true );
+        }
+    });
+    
+    
+    
     // Slide bar for the Responsive Section "Disable prettyPhoto" option
     var disablePPTxtField = $( "#responsive_disable_pretty_photo_at_width" );
     var disablePPSlideBar = $( "#disable_pp_at_width_slide_bar" );
     disablePPSlideBar.slider({
         range: "max",
         min: 0,
-        max: 1200,
+        max: 1600,
         step: 10,
         value: [ disablePPTxtField.val() ],
         slide: function( event, ui ) {
@@ -1463,7 +1501,7 @@ jQuery(document).ready(function($){
             },
             "udesign_options[global_theme_width]": {
                 required: true,
-                range: [960, 1200]
+                range: [960, 1600]
             }
         },
         errorPlacement: function(error, element) {
@@ -1491,10 +1529,13 @@ jQuery(document).ready(function($){
     function save_udesign_options_ajax(form) {
         //$('#udesign_options_submit_form').submit( function() {
             
+            var enableGoogleFontsOption = admin_scripts_params.enable_google_web_fonts;
+            var enableGoogleFontsCheckbox = ( $("#enable_google_web_fonts").is(':checked') ) ? "yes" : null;
             var customColorsSwitch = admin_scripts_params.custom_colors_switch;
             var currentSlider = admin_scripts_params.current_slider;
             
             if ( $("#reset_to_defaults").is(':checked') || // don't use ajax on options reset
+                 enableGoogleFontsCheckbox != enableGoogleFontsOption || // or the Google Fonts option has been changed
                     $("#save_current_colors_as_array").is(':checked') || // or Administrative Tasks when "Save the current custom colors" is selected
                         $("#chosen_custom_colors_admin_task").val() == 'load' || // or Administrative Tasks when 'load' is selected
                             $("#current_slider").val() == 'load'  || // or Administrative Tasks when 'load' is selected

@@ -150,16 +150,6 @@ a.info-help {
   cursor: help;
 }
 
-.submit-options-wrapper .submit {
-    padding:0 0 0 10px;
-    float:left;
-}
-label.reset-to-defaults {
-    margin:0 0 0 30px;
-    padding: 10px;
-    float:left;
-}
-
 #udesign-metaboxes-general .form-table th {
   padding-left: 10px;
 }
@@ -169,7 +159,15 @@ label.reset-to-defaults {
 #global_sidebar_width_slide_bar {
   margin: 10px 0;
 }
+input#global_theme_width:disabled,
+input#global_sidebar_width:disabled {
+  background: none repeat scroll 0 0 rgba(255, 255, 255, 0.5) !important;
+  border-color: rgba(222, 222, 222, 0.75) !important;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04) inset !important;
+  color: rgba(51, 51, 51, 0.5) !important;
+}
 #udesign-metaboxes-general .ui-slider-handle { cursor: pointer; }
+#udesign-metaboxes-general .ui-slider-handle:focus { outline: 0 none; }
 .admin-color-fresh .ui-state-hover, 
 .admin-color-fresh .ui-widget-content .ui-state-hover, 
 .admin-color-fresh .ui-widget-header .ui-state-hover, 
@@ -252,10 +250,25 @@ label.reset-to-defaults {
 }
 
 
+#udesign_options_submit_form .submit {
+    width:200px;
+}
+#udesign_options_submit_form input.udesign-right-submit-btn { float:right; }
+#udesign_options_submit_form input.udesign-left-submit-btn { float:left; }
 
+.submit-options-wrapper .submit {
+    padding:0 0 0 10px;
+    float:left;
+}
+.submit-options-wrapper .submit .spinner.show, .submit .spinner.spinner-float-left { float: left; }
+label.reset-to-defaults {
+    margin:0 0 0 5px;
+    padding: 10px;
+    float:left;
+}
 .spinner.show {
-    display: block;
-    float: left;
+    display: inline-block;
+    float: right;
 }
 
 #udesign_options_submit_form .udesign-error { border-color: red; }
@@ -271,3 +284,26 @@ label.reset-to-defaults {
     z-index: 98;
     width: 220px;
 }
+
+#udesign_options_submit_form .form-table td fieldset label, 
+#udesign_options_submit_form .form-table td fieldset p, 
+#udesign_options_submit_form .form-table td fieldset li,
+#udesign_options_submit_form .form-table td {
+  line-height: 1.8;
+}
+#udesign_options_submit_form p,
+#udesign_options_submit_form label,
+#udesign_options_submit_form p.help, 
+#udesign_options_submit_form p.description, 
+#udesign_options_submit_form span.description, 
+#udesign_options_submit_form .form-wrap p {
+  font-size: 14px;
+  line-height: 1.8;
+}
+#udesign-metaboxes-general .form-table th,
+#udesign_options_submit_form .postbox .inside, 
+#udesign_options_submit_form .stuffbox .inside {
+  font-size: 14px;
+  line-height: 1.6;
+}
+

@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: U-Design WP Theme\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-04 14:46-0500\n"
-"PO-Revision-Date: 2014-02-04 14:47-0500\n"
+"POT-Creation-Date: 2014-02-27 13:55-0500\n"
+"PO-Revision-Date: 2014-02-27 13:55-0500\n"
 "Last-Translator: Andon <andon.design@gmail.com>\n"
 "Language-Team: \n"
 "Language: zh_TW\n"
@@ -105,11 +105,11 @@ msgstr "這是一篇受密碼保護的通訊。輸入密碼以查看評論。"
 msgid "No Responses"
 msgstr "沒有任何回應"
 
-#: ../comments.php:23 ../functions.php:2052 ../sitemap.php:58
+#: ../comments.php:23 ../functions.php:2123 ../sitemap.php:58
 msgid "1 Comment"
 msgstr "1則迴響"
 
-#: ../comments.php:23 ../functions.php:2053 ../sitemap.php:58
+#: ../comments.php:23 ../functions.php:2124 ../sitemap.php:58
 msgid "% Comments"
 msgstr "% 則迴響"
 
@@ -220,278 +220,278 @@ msgstr "編輯"
 msgid "Your comment is awaiting moderation."
 msgstr "你的留言正在審核中。"
 
-#: ../functions.php:526 ../functions.php:950
+#: ../functions.php:526 ../functions.php:1009
 #: ../widgets/latestPost-widget.php:63 ../widgets/latestPost-widget.php:141
 msgid "Read more"
 msgstr "閱讀更多"
 
-#: ../functions.php:545 ../functions.php:567 ../functions.php:589
-#: ../functions.php:611
+#: ../functions.php:545 ../functions.php:574 ../functions.php:603
+#: ../functions.php:632 ../functions.php:661
 msgid "Read more..."
 msgstr "閱讀更多..."
 
-#: ../functions.php:639
+#: ../functions.php:698
 msgid "Top of Page"
 msgstr "頁面頂部"
 
-#: ../functions.php:639 ../functions.php:2097
+#: ../functions.php:698 ../functions.php:2168
 msgid "Back to Top"
 msgstr "回到頂部"
 
-#: ../functions.php:943 ../widgets/latestPost-widget.php:141
+#: ../functions.php:1002 ../widgets/latestPost-widget.php:141
 msgid "Latest Posts"
 msgstr "最新文章"
 
-#: ../functions.php:962
+#: ../functions.php:1021
 #, php-format
 msgid ""
 "%s: Widget class not found. Make sure this widget exists and the class name "
 "is correct"
 msgstr "%s：模組沒有找到。請確定這個工具存在的類名是正確的   "
 
-#: ../functions.php:1143
+#: ../functions.php:1202
 msgid "A widget area, used as a sidebar for regular pages."
 msgstr "使用在普通頁面的側邊欄的一個模組。"
 
-#: ../functions.php:1152
+#: ../functions.php:1211
 msgid "A widget area, used as a sidebar for the Portfolio section."
 msgstr "使用在作品集的側邊欄的一個模組。"
 
-#: ../functions.php:1161
+#: ../functions.php:1220
 msgid "A widget area, used as a sidebar for the Blog/News section."
 msgstr "使用在網誌/新聞的側邊欄的一個模組。"
 
-#: ../functions.php:1170
+#: ../functions.php:1229
 msgid "A widget area, used as a sidebar for the Contact page."
 msgstr "使用在聯繫頁面的側邊欄的一個模組。"
 
-#: ../functions.php:1179
+#: ../functions.php:1238
 msgid "A widget area, used as a sidebar for the Sitemap page."
 msgstr "使用在網站地圖的側邊欄的一個模組。"
 
-#: ../functions.php:1188
+#: ../functions.php:1247
 msgid "Home Page Before Content"
 msgstr "內容之前的首頁"
 
-#: ../functions.php:1190
+#: ../functions.php:1249
 msgid "A widget area positioned just above the Home Page Main Content area."
 msgstr "首頁主要內容區域的正上方的一個模組區域。"
 
-#: ../functions.php:1199 ../udesign_options_page.php:1610
-#: ../udesign_options_page.php:1612
+#: ../functions.php:1258 ../udesign_options_page.php:1612
+#: ../udesign_options_page.php:1614
 msgid "Home Page Column 1"
 msgstr "首頁第1列"
 
-#: ../functions.php:1201
+#: ../functions.php:1260
 msgid "A widget area, used as the 1st column in the Main Content area."
 msgstr "第1列的主要內容的小模組區域。"
 
-#: ../functions.php:1209
+#: ../functions.php:1268
 msgid "Home Page Column 2"
 msgstr "首頁第2列"
 
-#: ../functions.php:1211
+#: ../functions.php:1270
 msgid "A widget area, used as the 2nd column in the Main Content area."
 msgstr "第2列的主要內容的小模組區域。"
 
-#: ../functions.php:1219
+#: ../functions.php:1278
 msgid "Home Page Column 3"
 msgstr "首頁第3列"
 
-#: ../functions.php:1221
+#: ../functions.php:1280
 msgid "A widget area, used as the 3rd column in the Main Content area."
 msgstr "第3列的主要內容的小模組區域。"
 
-#: ../functions.php:1229
+#: ../functions.php:1288
 msgid "Home Page Column 4"
 msgstr "首頁第4列"
 
-#: ../functions.php:1231
+#: ../functions.php:1290
 msgid "A widget area, used as the 4th column in the Main Content area."
 msgstr "第4列的主要內容的小模組區域。"
 
-#: ../functions.php:1240
+#: ../functions.php:1299
 msgid "Home Page After Content Row 1"
 msgstr "在首頁的內容之後的第1行"
 
-#: ../functions.php:1242
+#: ../functions.php:1301
 msgid "A widget area positioned just below the Home Page Main Content area."
 msgstr "首頁主要內容區域正下方的一個模組區域。"
 
-#: ../functions.php:1251
+#: ../functions.php:1310
 msgid "Home Page After Content Row 2"
 msgstr "在首頁的內容之後的第2行"
 
-#: ../functions.php:1253
+#: ../functions.php:1312
 msgid "A widget area positioned just above the Bottom Widget area."
 msgstr "在底部模組區上的模組區。"
 
-#: ../functions.php:1262
+#: ../functions.php:1321
 msgid "Bottom 1"
 msgstr "底部1"
 
-#: ../functions.php:1264
+#: ../functions.php:1323
 msgid ""
 "A widget area, used as the 1st column in the Bottom area (just above the "
 "footer)."
 msgstr "模組區，使用在底部區域的第1列（頁腳上面）。"
 
-#: ../functions.php:1272
+#: ../functions.php:1331
 msgid "Bottom 2"
 msgstr "底部2"
 
-#: ../functions.php:1274
+#: ../functions.php:1333
 msgid ""
 "A widget area, used as the 2nd column in the Bottom area (just above the "
 "footer)."
 msgstr "模組區，使用在底部區域的第2列（頁腳上面）。"
 
-#: ../functions.php:1282
+#: ../functions.php:1341
 msgid "Bottom 3"
 msgstr "底部3"
 
-#: ../functions.php:1284
+#: ../functions.php:1343
 msgid ""
 "A widget area, used as the 3rd column in the Bottom area (just above the "
 "footer)."
 msgstr "模組區，使用在底部區域的第3列（頁腳上面）。"
 
-#: ../functions.php:1292
+#: ../functions.php:1351
 msgid "Bottom 4"
 msgstr "底部4"
 
-#: ../functions.php:1294
+#: ../functions.php:1353
 msgid ""
 "A widget area, used as the 4th column in the Bottom area (just above the "
 "footer)."
 msgstr "模組區，使用在底部區域的第4列（頁腳上面）。"
 
-#: ../functions.php:1303
+#: ../functions.php:1362
 msgid "A widget area, used as a sidebar for the Page Template 2."
 msgstr "模組區，使用網頁模板2作為一個側邊欄。"
 
-#: ../functions.php:1312
+#: ../functions.php:1371
 msgid "A widget area, used as a sidebar for the Page Template 3."
 msgstr "模組區，使用網頁模板3作為一個側邊欄。 "
 
-#: ../functions.php:1321
+#: ../functions.php:1380
 msgid "A widget area, used as a sidebar for the Page Template 4."
 msgstr "模組區，使用網頁模板4作為一個側邊欄。"
 
-#: ../functions.php:1330
+#: ../functions.php:1389
 msgid "A widget area, used as a sidebar for the Page Template 5."
 msgstr "模組區，使用網頁模板5作為一個側邊欄。"
 
-#: ../functions.php:1339
+#: ../functions.php:1398
 msgid "A widget area, used as a sidebar for the Page Template 6."
 msgstr "模組區，使用網頁模板6作為一個側邊欄。"
 
-#: ../functions.php:1348
+#: ../functions.php:1407
 msgid "A widget area, used as a sidebar for the Page Template 7."
 msgstr "模組區，使用網頁模板7作為一個側邊欄。"
 
-#: ../functions.php:1357
+#: ../functions.php:1416
 msgid "A widget area, used as a sidebar for the Page Template 8."
 msgstr "模組區，使用網頁模板8作為一個側邊欄。"
 
-#: ../functions.php:1366
+#: ../functions.php:1425
 msgid "Top Area Social Media"
 msgstr "網頁頂部媒體區"
 
-#: ../functions.php:1368
+#: ../functions.php:1427
 msgid ""
 "A widget area positioned in the top right corner of the site designated for "
 "social media links and icons."
 msgstr "定位在右上角社會化媒體鏈接和圖標指定的網站的一個小模組區域。"
 
-#: ../functions.php:1678
+#: ../functions.php:1737
 #, php-format
 msgid "Archive for the <em>%s</em> Category"
 msgstr "<em>%s</em>分類"
 
-#: ../functions.php:1681
+#: ../functions.php:1740
 #, php-format
 msgid "Search Results for <em>%s</em>"
 msgstr "搜索結果<em>%s</em>"
 
-#: ../functions.php:1683
+#: ../functions.php:1742
 msgid "Page Not Found (Error 404)"
 msgstr "頁面未找到（錯誤 404)"
 
-#: ../functions.php:1685
+#: ../functions.php:1744
 #, php-format
 msgid "Posts Tagged <em>%s</em>"
 msgstr ""
 
-#: ../functions.php:1687 ../functions.php:1689 ../functions.php:1691
+#: ../functions.php:1746 ../functions.php:1748 ../functions.php:1750
 #, php-format
 msgid "Archive for %s"
 msgstr "%s檔案"
 
-#: ../functions.php:1693
+#: ../functions.php:1752
 msgid "Author Archive"
 msgstr "檔案由作者名字排序"
 
-#: ../functions.php:1695
+#: ../functions.php:1754
 msgid "Blog Archives"
 msgstr "檔案由網誌排序  "
 
-#: ../functions.php:1776
+#: ../functions.php:1847
 msgid "Feedback"
 msgstr "建議"
 
-#: ../functions.php:1791
+#: ../functions.php:1862
 msgid "Subscribe"
 msgstr "訂閱"
 
-#: ../functions.php:1855
+#: ../functions.php:1926
 msgid "Search..."
 msgstr "搜尋..."
 
-#: ../functions.php:1945
+#: ../functions.php:2016
 msgid "Edit this page"
 msgstr "編輯頁面"
 
-#: ../functions.php:1971 ../functions.php:1994 ../functions.php:2024
+#: ../functions.php:2042 ../functions.php:2065 ../functions.php:2095
 #, php-format
 msgid "By %1$s on %2$s "
 msgstr "由%1$s發表的在%2$s"
 
-#: ../functions.php:1973 ../functions.php:1996 ../functions.php:2026
+#: ../functions.php:2044 ../functions.php:2067 ../functions.php:2097
 #, php-format
 msgid "On %1$s "
 msgstr "%1$s "
 
-#: ../functions.php:1975 ../functions.php:1998 ../functions.php:2028
+#: ../functions.php:2046 ../functions.php:2069 ../functions.php:2099
 msgid "Edit"
 msgstr "編輯"
 
-#: ../functions.php:1976 ../functions.php:1999 ../functions.php:2029
+#: ../functions.php:2047 ../functions.php:2070 ../functions.php:2100
 #, fuzzy
 msgid "Tags: "
 msgstr "標籤："
 
-#: ../functions.php:2051
+#: ../functions.php:2122
 msgid "Leave a comment"
 msgstr "發表迴響"
 
-#: ../functions.php:2072
+#: ../functions.php:2143
 msgid ""
 " is proudly powered by <a href=\"http://wordpress.org/\"><strong>WordPress</"
 "strong></a>"
 msgstr ""
 "本網站採用 <a href=\"http://wordpress.org/\"><strong>WordPress</strong></a>"
 
-#: ../functions.php:2075
+#: ../functions.php:2146
 #, php-format
 msgid " | Designed with %1$sU-Design Theme%2$s"
 msgstr "使用%1$sU-Design%2$s的設計"
 
-#: ../functions.php:2078
+#: ../functions.php:2149
 msgid "Entries (RSS)"
 msgstr "條目（RSS）"
 
-#: ../functions.php:2081
+#: ../functions.php:2152
 msgid "Comments (RSS)"
 msgstr "迴響（RSS）"
 
@@ -583,7 +583,7 @@ msgstr "訊息："
 #: ../page-Portfolio2Col.php:40 ../page-Portfolio2ColSortable.php:46
 #: ../page-Portfolio3Col.php:40 ../page-Portfolio3ColSortable.php:46
 #: ../page-Portfolio4Col.php:40 ../page-Portfolio4ColSortable.php:46
-#: ../page.php:22
+#: ../page.php:23
 msgid "<p class=\"serif\">Read the rest of this page &raquo;</p>"
 msgstr "<p class=\"serif\">閱讀更多此頁的其餘部分 &raquo;</p>"
 
@@ -880,158 +880,158 @@ msgstr "Y年n月j日"
 msgid "0 Comment"
 msgstr "0則迴響"
 
-#: ../udesign_options_page.php:375
+#: ../udesign_options_page.php:376
 msgid "U-Design"
 msgstr "U-Design"
 
-#: ../udesign_options_page.php:423
+#: ../udesign_options_page.php:424
 msgid "Help"
 msgstr "協助"
 
-#: ../udesign_options_page.php:424
+#: ../udesign_options_page.php:425
 msgid "General Options"
 msgstr "一般選項"
 
-#: ../udesign_options_page.php:425
+#: ../udesign_options_page.php:426
 #, fuzzy
 msgid "Layout Options"
 msgstr "頁腳選項"
 
-#: ../udesign_options_page.php:426
+#: ../udesign_options_page.php:427
 msgid "Font Settings"
 msgstr "字型設定"
 
-#: ../udesign_options_page.php:427
+#: ../udesign_options_page.php:428
 msgid "Custom Colors"
 msgstr "自訂色彩"
 
-#: ../udesign_options_page.php:428
+#: ../udesign_options_page.php:429
 msgid "Front Page Sliders"
 msgstr "首頁的滑塊"
 
-#: ../udesign_options_page.php:429
+#: ../udesign_options_page.php:430
 msgid "Portfolio Section"
 msgstr "作品集的部分"
 
-#: ../udesign_options_page.php:430
+#: ../udesign_options_page.php:431
 msgid "Blog Section"
 msgstr "網誌地方"
 
-#: ../udesign_options_page.php:431
+#: ../udesign_options_page.php:432
 msgid "Contact Page"
 msgstr "聯繫網頁"
 
-#: ../udesign_options_page.php:432
+#: ../udesign_options_page.php:433
 msgid "Footer Options"
 msgstr "頁腳選項"
 
-#: ../udesign_options_page.php:433
+#: ../udesign_options_page.php:434
 msgid "Statistics"
 msgstr "統計"
 
-#: ../udesign_options_page.php:434
+#: ../udesign_options_page.php:435
 msgid "Responsive Layout"
 msgstr ""
 
-#: ../udesign_options_page.php:435
+#: ../udesign_options_page.php:436
 #, fuzzy
 msgid "Advanced Options"
 msgstr "一般選項"
 
-#: ../udesign_options_page.php:480
+#: ../udesign_options_page.php:481
 msgid "Settings saved."
 msgstr "設置已保存。"
 
-#: ../udesign_options_page.php:497
+#: ../udesign_options_page.php:498
 #, php-format
 msgid "Options <small>(version %1$s)</small>"
 msgstr "選項 <small>(版本%1$s)</small>"
 
-#: ../udesign_options_page.php:522 ../udesign_options_page.php:1350
-#: ../udesign_options_page.php:1453 ../udesign_options_page.php:1714
-#: ../udesign_options_page.php:5675
+#: ../udesign_options_page.php:523 ../udesign_options_page.php:1352
+#: ../udesign_options_page.php:1455 ../udesign_options_page.php:1727
+#: ../udesign_options_page.php:5692
 msgid "Save Changes"
 msgstr "保存更改"
 
-#: ../udesign_options_page.php:527
+#: ../udesign_options_page.php:528
 msgid "Reset to defaults"
 msgstr "重設為預設值"
 
-#: ../udesign_options_page.php:1229
+#: ../udesign_options_page.php:1231
 msgid "Cheatin' uh?"
 msgstr "喂！你想幹麼？"
 
-#: ../udesign_options_page.php:1258
+#: ../udesign_options_page.php:1260
 msgid "U-Design theme help resources:"
 msgstr "U-Design主題的幫助資源："
 
-#: ../udesign_options_page.php:1260
+#: ../udesign_options_page.php:1262
 msgid "Documentation"
 msgstr "使用說明"
 
-#: ../udesign_options_page.php:1261
+#: ../udesign_options_page.php:1263
 #, fuzzy
 msgid "Go to the Support Forum"
 msgstr "支持論壇"
 
-#: ../udesign_options_page.php:1261
+#: ../udesign_options_page.php:1263
 msgid "Support Forum"
 msgstr "支持論壇"
 
-#: ../udesign_options_page.php:1261
+#: ../udesign_options_page.php:1263
 #, php-format
 msgid ""
 "You should be able to register yourself with the Support Forum %1$sHERE%2$s."
 msgstr ""
 
-#: ../udesign_options_page.php:1262
+#: ../udesign_options_page.php:1264
 msgid "Go to the Video Tutorials"
 msgstr ""
 
-#: ../udesign_options_page.php:1262
+#: ../udesign_options_page.php:1264
 msgid "Video Tutorials (Author's YouTube Tutorials Channel)"
 msgstr "視頻教程（作者YouTube頻道教程）"
 
-#: ../udesign_options_page.php:1263
+#: ../udesign_options_page.php:1265
 #, fuzzy
 msgid "Go to the U-Design Demo Site"
 msgstr "U-Design示範網站"
 
-#: ../udesign_options_page.php:1263
+#: ../udesign_options_page.php:1265
 msgid "U-Design Demo Site"
 msgstr "U-Design示範網站"
 
-#: ../udesign_options_page.php:1264
+#: ../udesign_options_page.php:1266
 #, fuzzy
 msgid "Go to the U-Design Shortcodes examples"
 msgstr "U-Design的短碼"
 
-#: ../udesign_options_page.php:1264
+#: ../udesign_options_page.php:1266
 msgid "U-Design Shortcodes"
 msgstr "U-Design的短碼"
 
-#: ../udesign_options_page.php:1265
+#: ../udesign_options_page.php:1267
 msgid "Go to the \"Get the Code\" page"
 msgstr ""
 
-#: ../udesign_options_page.php:1265
+#: ../udesign_options_page.php:1267
 msgid ""
 "Get the Code: All of the Home page examples source code is available here."
 msgstr "獲取代碼：主頁上的例子的源代碼可以在這裡找到。"
 
-#: ../udesign_options_page.php:1273
+#: ../udesign_options_page.php:1275
 msgid "Custom Logo"
 msgstr "自訂標誌"
 
-#: ../udesign_options_page.php:1276
+#: ../udesign_options_page.php:1278
 msgid "Enter a URL or upload an image for your logo:"
 msgstr "輸入網址或上載你的商標圖像："
 
-#: ../udesign_options_page.php:1278 ../udesign_options_page.php:5568
+#: ../udesign_options_page.php:1280 ../udesign_options_page.php:5585
 msgid "Upload Logo"
 msgstr "上載標誌"
 
-#: ../udesign_options_page.php:1281
+#: ../udesign_options_page.php:1283
 #, fuzzy
 msgid ""
 "To upload an image click on \"Upload Logo\" button. Once you upload or "
@@ -1042,43 +1042,43 @@ msgstr ""
 "文章中插入\"按鈕。一旦您點擊\"在文章中插入\"，上載的圖像的鏈接將被插入到上面"
 "的文本字段。"
 
-#: ../udesign_options_page.php:1285
+#: ../udesign_options_page.php:1287
 msgid "Top Area Height"
 msgstr "頂部區域高度"
 
-#: ../udesign_options_page.php:1288
+#: ../udesign_options_page.php:1290
 msgid "(Height) in pixels."
 msgstr "（高度）以像素為單位。"
 
-#: ../udesign_options_page.php:1289
+#: ../udesign_options_page.php:1291
 msgid "Note: the minimum recommended height is 55px."
 msgstr "注意：建議的最低高度為55像素。"
 
-#: ../udesign_options_page.php:1293
+#: ../udesign_options_page.php:1295
 msgid "Logo Dimensions"
 msgstr "商標尺寸"
 
-#: ../udesign_options_page.php:1298
+#: ../udesign_options_page.php:1300
 msgid "(Width X Height) in pixels."
 msgstr "（寬度×高度）以像素為單位。"
 
-#: ../udesign_options_page.php:1302
+#: ../udesign_options_page.php:1304
 msgid "Slogan Position from the Top"
 msgstr "從頂端的標語位置"
 
-#: ../udesign_options_page.php:1305
+#: ../udesign_options_page.php:1307
 msgid "from the top."
 msgstr "從頂部。"
 
-#: ../udesign_options_page.php:1309
+#: ../udesign_options_page.php:1311
 msgid "Slogan Position from the Left"
 msgstr "從左邊的標語位置"
 
-#: ../udesign_options_page.php:1312
+#: ../udesign_options_page.php:1314
 msgid "from the left. Enter a number between 0 and 400."
 msgstr "從左側。輸入0和400之間的數字。"
 
-#: ../udesign_options_page.php:1313
+#: ../udesign_options_page.php:1315
 #, fuzzy, php-format
 msgid ""
 "Please note that the actual Slogan text can be changed or deleted at "
@@ -1087,26 +1087,26 @@ msgstr ""
 "注意，標語文本可以在%1$s設定&rarr;一般%2$s<strong>標語</strong>選項，被改變或"
 "刪除。"
 
-#: ../udesign_options_page.php:1313
+#: ../udesign_options_page.php:1315
 #, fuzzy
 msgid "Go to the \"General Settings\" page"
 msgstr "一般設置："
 
-#: ../udesign_options_page.php:1317
+#: ../udesign_options_page.php:1319
 msgid "Slogan Font Size"
 msgstr "標語字體大小"
 
-#: ../udesign_options_page.php:1320 ../udesign_options_page.php:1814
-#: ../udesign_options_page.php:1870 ../udesign_options_page.php:4396
-#: ../udesign_options_page.php:4680
+#: ../udesign_options_page.php:1322 ../udesign_options_page.php:1830
+#: ../udesign_options_page.php:1886 ../udesign_options_page.php:4413
+#: ../udesign_options_page.php:4697
 msgid "Font Size: "
 msgstr "字體大小："
 
-#: ../udesign_options_page.php:1356
+#: ../udesign_options_page.php:1358
 msgid "Phone Number Information"
 msgstr "電話"
 
-#: ../udesign_options_page.php:1359
+#: ../udesign_options_page.php:1361
 msgid ""
 "Use this field to provide a phone number or any other short piece of "
 "information (30 character limit for display).  It is displayed near the "
@@ -1115,19 +1115,19 @@ msgstr ""
 "使用此欄位提供一個電話號碼，或任何其他的一小段信息（30個字符的限制）。它顯示"
 "主題的右上角，位於在搜尋框旁。"
 
-#: ../udesign_options_page.php:1363
+#: ../udesign_options_page.php:1365
 msgid "Search Box"
 msgstr "搜索框"
 
-#: ../udesign_options_page.php:1367
+#: ../udesign_options_page.php:1369
 msgid "Enable the Search box displayed in the top area of the page."
 msgstr "使搜索框顯示在頁面的頂部區域。"
 
-#: ../udesign_options_page.php:1372
+#: ../udesign_options_page.php:1374
 msgid "Page Peel"
 msgstr "頁面剝離"
 
-#: ../udesign_options_page.php:1376
+#: ../udesign_options_page.php:1378
 msgid ""
 "Enable Page Peel (Display the page curl/peel located in the top right corner "
 "of the site).  Could be used for your FeedBurner subscription or advertising."
@@ -1135,35 +1135,35 @@ msgstr ""
 "啟用頁面剝離（顯示於網站上右上角的的頁面捲曲/剝離）。可用於您的FeedBurner訂閱"
 "或廣告。"
 
-#: ../udesign_options_page.php:1378
+#: ../udesign_options_page.php:1380
 msgid "Page Peel Link URL:"
 msgstr "頁面剝離URL："
 
-#: ../udesign_options_page.php:1383
+#: ../udesign_options_page.php:1385
 msgid "Feedback Button"
 msgstr "建議按鍵"
 
-#: ../udesign_options_page.php:1387
+#: ../udesign_options_page.php:1389
 msgid ""
 "Enable Feedback button (Display the Feedback button located in the most left "
 "side of the site)"
 msgstr "（顯示\"建議按鍵\"於最低速度左邊的位置）"
 
-#: ../udesign_options_page.php:1389
+#: ../udesign_options_page.php:1391
 msgid "Feedback Button URL:"
 msgstr "建議按鍵URL："
 
-#: ../udesign_options_page.php:1394
+#: ../udesign_options_page.php:1396
 msgid ""
 "Fix the position of the \"Feedback\" button to prevent it from scrolling "
 "with the page."
 msgstr "固定\"建議\"按鍵於最左邊的位置以防止它與頁面滾動。"
 
-#: ../udesign_options_page.php:1399
+#: ../udesign_options_page.php:1401
 msgid "Enable prettyPhoto script"
 msgstr "啟用PrettyPhoto文字"
 
-#: ../udesign_options_page.php:1403
+#: ../udesign_options_page.php:1405
 #, php-format
 msgid ""
 "Enable %1$sprettyPhoto%2$s script. In case of conflicts with some other "
@@ -1172,159 +1172,159 @@ msgstr ""
 "啟用%1$sPrettyPhoto%2$s腳本。如果與其他一些lightbox插件衝突的情況下，您可能希"
 "望停用%1$sPrettyPhoto%2$s的腳本。"
 
-#: ../udesign_options_page.php:1408
+#: ../udesign_options_page.php:1410
 msgid "\"Stay-On-Top\" Main Menu"
 msgstr ""
 
-#: ../udesign_options_page.php:1410
+#: ../udesign_options_page.php:1412
 msgid "\"Stay-On-Top\" the Main Menu"
 msgstr ""
 
-#: ../udesign_options_page.php:1413
+#: ../udesign_options_page.php:1415
 msgid ""
 "Fix the main navigation bar to stay on top of the page once header has been "
 "scrolled past."
 msgstr ""
 
-#: ../udesign_options_page.php:1419 ../udesign_options_page.php:1421
+#: ../udesign_options_page.php:1421 ../udesign_options_page.php:1423
 #, fuzzy
 msgid "\"Stay-On-Top\" Menu Shadow"
 msgstr "頂部選單的陰影"
 
-#: ../udesign_options_page.php:1424
+#: ../udesign_options_page.php:1426
 #, fuzzy
 msgid "Add shadow to the Stay-On-Top menu."
 msgstr "啟用子選單的陰影。"
 
-#: ../udesign_options_page.php:1430 ../udesign_options_page.php:1432
+#: ../udesign_options_page.php:1432 ../udesign_options_page.php:1434
 #, fuzzy
 msgid "\"Stay-On-Top\" Remove Background Image"
 msgstr "頂部背景圖片"
 
-#: ../udesign_options_page.php:1435
+#: ../udesign_options_page.php:1437
 msgid ""
 "Remove the background image behind the Stay-On-Top menu, in which case the "
 "background color assigned to the Top Area will be used instead."
 msgstr ""
 
-#: ../udesign_options_page.php:1441 ../udesign_options_page.php:1443
+#: ../udesign_options_page.php:1443 ../udesign_options_page.php:1445
 msgid "Disable \"Stay-On-Top\" Menu on Mobile Devices"
 msgstr ""
 
-#: ../udesign_options_page.php:1446
+#: ../udesign_options_page.php:1448
 msgid "This option will disable the Stay-On-Top menu on mobile devices only."
 msgstr ""
 
-#: ../udesign_options_page.php:1447
+#: ../udesign_options_page.php:1449
 msgid "It only applies for non-responsive layout."
 msgstr ""
 
-#: ../udesign_options_page.php:1459
+#: ../udesign_options_page.php:1461
 #, fuzzy
 msgid "Main Menu Alignment"
 msgstr "圖像對齊"
 
-#: ../udesign_options_page.php:1461
+#: ../udesign_options_page.php:1463
 #, fuzzy
 msgid "Choose alignment:"
 msgstr "選擇對齊方式："
 
-#: ../udesign_options_page.php:1462 ../udesign_options_page.php:1624
-#: ../udesign_options_page.php:1633 ../udesign_options_page.php:1642
-#: ../udesign_options_page.php:1651 ../udesign_options_page.php:1660
-#: ../udesign_options_page.php:1669 ../udesign_options_page.php:1678
-#: ../udesign_options_page.php:1687 ../udesign_options_page.php:1696
-#: ../udesign_options_page.php:4980 ../udesign_options_page.php:5069
-#: ../udesign_options_page.php:5265 ../udesign_options_page.php:5333
+#: ../udesign_options_page.php:1464 ../udesign_options_page.php:1637
+#: ../udesign_options_page.php:1646 ../udesign_options_page.php:1655
+#: ../udesign_options_page.php:1664 ../udesign_options_page.php:1673
+#: ../udesign_options_page.php:1682 ../udesign_options_page.php:1691
+#: ../udesign_options_page.php:1700 ../udesign_options_page.php:1709
+#: ../udesign_options_page.php:4997 ../udesign_options_page.php:5086
+#: ../udesign_options_page.php:5282 ../udesign_options_page.php:5350
 msgid "Left"
 msgstr "左"
 
-#: ../udesign_options_page.php:1463 ../udesign_options_page.php:1625
-#: ../udesign_options_page.php:1634 ../udesign_options_page.php:1643
-#: ../udesign_options_page.php:1652 ../udesign_options_page.php:1661
-#: ../udesign_options_page.php:1670 ../udesign_options_page.php:1679
-#: ../udesign_options_page.php:1688 ../udesign_options_page.php:1697
-#: ../udesign_options_page.php:4981 ../udesign_options_page.php:5070
-#: ../udesign_options_page.php:5267 ../udesign_options_page.php:5334
+#: ../udesign_options_page.php:1465 ../udesign_options_page.php:1638
+#: ../udesign_options_page.php:1647 ../udesign_options_page.php:1656
+#: ../udesign_options_page.php:1665 ../udesign_options_page.php:1674
+#: ../udesign_options_page.php:1683 ../udesign_options_page.php:1692
+#: ../udesign_options_page.php:1701 ../udesign_options_page.php:1710
+#: ../udesign_options_page.php:4998 ../udesign_options_page.php:5087
+#: ../udesign_options_page.php:5284 ../udesign_options_page.php:5351
 msgid "Right"
 msgstr "右"
 
-#: ../udesign_options_page.php:1464
+#: ../udesign_options_page.php:1466
 msgid "This option sets the main navigation menu alignment."
 msgstr "此選項設置主導航選單對齊方式。"
 
-#: ../udesign_options_page.php:1468 ../udesign_options_page.php:1470
+#: ../udesign_options_page.php:1470 ../udesign_options_page.php:1472
 msgid "Top Menu Auto Arrows"
 msgstr "頂部選單自動箭頭"
 
-#: ../udesign_options_page.php:1473
+#: ../udesign_options_page.php:1475
 msgid ""
 "Show the top navigation menu's auto arrows. Those are the arrows indicating "
 "a submenu. "
 msgstr "顯示頂部的導航功能表的自動箭頭。這些箭頭表示子選單。"
 
-#: ../udesign_options_page.php:1479 ../udesign_options_page.php:1481
+#: ../udesign_options_page.php:1481 ../udesign_options_page.php:1483
 msgid "Top Menu Drop Shadows"
 msgstr "頂部選單的陰影"
 
-#: ../udesign_options_page.php:1484
+#: ../udesign_options_page.php:1486
 msgid "Enable drop shadows to the sub-menus. "
 msgstr "啟用子選單的陰影。"
 
-#: ../udesign_options_page.php:1490 ../udesign_options_page.php:1492
+#: ../udesign_options_page.php:1492 ../udesign_options_page.php:1494
 msgid "Border Under the Menu"
 msgstr "選單下的邊框"
 
-#: ../udesign_options_page.php:1495
+#: ../udesign_options_page.php:1497
 msgid "Remove the border line located under the menu. "
 msgstr "刪除位於選單下的邊境線。"
 
-#: ../udesign_options_page.php:1501
+#: ../udesign_options_page.php:1503
 msgid "Breadcrumbs"
 msgstr "路徑導航"
 
-#: ../udesign_options_page.php:1503 ../udesign_options_page.php:1506
+#: ../udesign_options_page.php:1505 ../udesign_options_page.php:1508
 msgid "Show Breadcrumbs"
 msgstr "顯示路徑導航"
 
-#: ../udesign_options_page.php:1512
+#: ../udesign_options_page.php:1514
 msgid "Default Post Thumbnail"
 msgstr "預設通訊縮圖"
 
-#: ../udesign_options_page.php:1514
+#: ../udesign_options_page.php:1516
 msgid "Enable Default Thumb"
 msgstr "啟用預設縮略圖"
 
-#: ../udesign_options_page.php:1517
+#: ../udesign_options_page.php:1519
 msgid ""
 "Enable default thumbnail for posts (This options is used with the \"U-"
 "Design: Recent Posts\" widget)."
 msgstr "啟用文章的預設縮圖（使用此選項\"U-Design：最近的文章\"模組）。"
 
-#: ../udesign_options_page.php:1527 ../udesign_options_page.php:1529
+#: ../udesign_options_page.php:1529 ../udesign_options_page.php:1531
 msgid "Disable Theme Update Notifier"
 msgstr "關閉主題更新通知"
 
-#: ../udesign_options_page.php:1532
+#: ../udesign_options_page.php:1534
 msgid "Disable the theme's notification of new updates."
 msgstr "關閉主題的更新通知。"
 
-#: ../udesign_options_page.php:1538 ../udesign_options_page.php:1540
+#: ../udesign_options_page.php:1540 ../udesign_options_page.php:1542
 msgid "Disable Image Cropping"
 msgstr ""
 
-#: ../udesign_options_page.php:1543
+#: ../udesign_options_page.php:1545
 msgid ""
 "Disable image cropping when generating thumbnail images in sections like "
 "Blog, Portfolio, 'U-Design: Recent Posts' widget, etc."
 msgstr ""
 
-#: ../udesign_options_page.php:1549 ../udesign_options_page.php:1551
+#: ../udesign_options_page.php:1551 ../udesign_options_page.php:1553
 #, fuzzy
 msgid "Enable Retina for Cropped Images"
 msgstr "啟用自訂\"特色圖片\""
 
-#: ../udesign_options_page.php:1554
+#: ../udesign_options_page.php:1556
 msgid ""
 "Enable automatic retina images for the ones being cropped. If enabled, a "
 "double pixel ratio will be used for the cropped images. In order for this "
@@ -1333,16 +1333,16 @@ msgid ""
 "by the use of custom fields (see documentation for more information)."
 msgstr ""
 
-#: ../udesign_options_page.php:1560
+#: ../udesign_options_page.php:1562
 #, php-format
 msgid "Enable %1$sstyle.css%2$s"
 msgstr "啟用%1$sstyle.css%2$s"
 
-#: ../udesign_options_page.php:1562
+#: ../udesign_options_page.php:1564
 msgid "Enable \"style.css\""
 msgstr "啟用\"style.css\""
 
-#: ../udesign_options_page.php:1565
+#: ../udesign_options_page.php:1567
 #, fuzzy, php-format
 msgid ""
 "Enable the %1$sstyle.css%2$s located in the theme's root folder. You can "
@@ -1354,49 +1354,49 @@ msgstr ""
 "&rarr;編輯%4$s中添加任何自定義的CSS。如果你想使用%5$s子主題%6$s，您還需要啟用"
 "此選項。"
 
-#: ../udesign_options_page.php:1581
+#: ../udesign_options_page.php:1583
 msgid "Page Title"
 msgstr "頁面標題"
 
-#: ../udesign_options_page.php:1585 ../udesign_options_page.php:1597
+#: ../udesign_options_page.php:1587 ../udesign_options_page.php:1599
 msgid "Title Position 1"
 msgstr "頁面標題位置1"
 
-#: ../udesign_options_page.php:1586 ../udesign_options_page.php:1598
+#: ../udesign_options_page.php:1588 ../udesign_options_page.php:1600
 msgid "Title Position 2"
 msgstr "頁面標題位置2"
 
-#: ../udesign_options_page.php:1587 ../udesign_options_page.php:1599
+#: ../udesign_options_page.php:1589 ../udesign_options_page.php:1601
 msgid "Remove Title (SEO-Friendly)"
 msgstr "刪除頁面標題（搜索引擎優化）"
 
-#: ../udesign_options_page.php:1588 ../udesign_options_page.php:1600
+#: ../udesign_options_page.php:1590 ../udesign_options_page.php:1602
 msgid "Remove Title Completely"
 msgstr "完全地刪除頁面標題"
 
-#: ../udesign_options_page.php:1593 ../udesign_options_page.php:1781
-#: ../udesign_options_page.php:1972 ../udesign_options_page.php:2684
+#: ../udesign_options_page.php:1595 ../udesign_options_page.php:1797
+#: ../udesign_options_page.php:1989 ../udesign_options_page.php:2701
 msgid "Update"
 msgstr "更新"
 
-#: ../udesign_options_page.php:1597
+#: ../udesign_options_page.php:1599
 msgid ""
 "Display Title immediately under the Main Menu, it spans the full width of "
 "page."
 msgstr "在主選單下，顯示頁面的標題，它跨越整個頁面的寬度。"
 
-#: ../udesign_options_page.php:1598
+#: ../udesign_options_page.php:1600
 msgid "Display Title inside Main Content, it spans the main content width."
 msgstr "顯示主要內容裡面的標題，它跨越主要內容寬度。"
 
-#: ../udesign_options_page.php:1599
+#: ../udesign_options_page.php:1601
 msgid ""
 "Remove Title visually, so that human visitors will not see it, yet it will "
 "still be served as an \"h1\" heading to search engine spiders."
 msgstr ""
 "視覺上刪除標題，讓人類的遊客看不到它，但它仍然對搜索引擎蜘蛛會擔任<h1>標題。"
 
-#: ../udesign_options_page.php:1600
+#: ../udesign_options_page.php:1602
 msgid ""
 " ... just as it says! A word of caution, when using this option keep in mind "
 "that your pages will be left without an \"h1\" heading. It is your "
@@ -1405,7 +1405,7 @@ msgstr ""
 "...正如它說的！一句警告，使用此選項時，請記住您的網頁將沒有 h1 的標題。它是您"
 "責任去照顧。"
 
-#: ../udesign_options_page.php:1615
+#: ../udesign_options_page.php:1617
 msgid ""
 "Set the width of the \"Home Page Column 1\" Widget Area as constant 1/3 "
 "width (Applies only to a two column layout, in other words having the first "
@@ -1415,104 +1415,116 @@ msgstr ""
 "設寬度\"首頁第1欄\"小工具區域為常數1/3寬度（僅適用於一個兩列的版面，換句話說"
 "在\"首頁第1欄\"第1欄與任何其他小模組區域都是啟用的）。"
 
-#: ../udesign_options_page.php:1621
+#: ../udesign_options_page.php:1623 ../udesign_options_page.php:1625
+#, fuzzy
+msgid "Remove Sidebar from Default Pages"
+msgstr "刪除網誌頁面的側邊欄。"
+
+#: ../udesign_options_page.php:1628
+#, fuzzy
+msgid ""
+"Remove the sidebar from the default page template. This will make all pages "
+"that have been assigned \"Default Template\" full width."
+msgstr "刪除聯繫頁面的側邊欄，這將使它的頁面版式變成全寬的。"
+
+#: ../udesign_options_page.php:1634
 msgid "Default Pages Sidebar Position"
 msgstr "預設頁面側邊欄的位置"
 
-#: ../udesign_options_page.php:1623 ../udesign_options_page.php:1632
-#: ../udesign_options_page.php:1641 ../udesign_options_page.php:1650
-#: ../udesign_options_page.php:1659 ../udesign_options_page.php:1668
-#: ../udesign_options_page.php:1677 ../udesign_options_page.php:1686
-#: ../udesign_options_page.php:1695 ../udesign_options_page.php:4963
-#: ../udesign_options_page.php:4979 ../udesign_options_page.php:5068
-#: ../udesign_options_page.php:5332
+#: ../udesign_options_page.php:1636 ../udesign_options_page.php:1645
+#: ../udesign_options_page.php:1654 ../udesign_options_page.php:1663
+#: ../udesign_options_page.php:1672 ../udesign_options_page.php:1681
+#: ../udesign_options_page.php:1690 ../udesign_options_page.php:1699
+#: ../udesign_options_page.php:1708 ../udesign_options_page.php:4980
+#: ../udesign_options_page.php:4996 ../udesign_options_page.php:5085
+#: ../udesign_options_page.php:5349
 msgid "Choose position:"
 msgstr "選擇位置："
 
-#: ../udesign_options_page.php:1626
+#: ../udesign_options_page.php:1639
 msgid ""
 "This is the sidebar position for all pages assigned with \"Default Template"
 "\"."
 msgstr "這是\"預設頁面模板\"指定的所有網頁的邊欄位置。"
 
-#: ../udesign_options_page.php:1630
+#: ../udesign_options_page.php:1643
 msgid "Default Pages Sidebar 2 Position"
 msgstr "預設頁面第2位側邊欄的位置"
 
-#: ../udesign_options_page.php:1635
+#: ../udesign_options_page.php:1648
 msgid ""
 "This is the sidebar position for all pages assigned with \"Page Template 2\"."
 msgstr "這是\"第2頁面模板\"指定的所有網頁的邊欄位置。"
 
-#: ../udesign_options_page.php:1639
+#: ../udesign_options_page.php:1652
 msgid "Default Pages Sidebar 3 Position"
 msgstr "預設頁面第3位側邊欄的位置"
 
-#: ../udesign_options_page.php:1644
+#: ../udesign_options_page.php:1657
 msgid ""
 "This is the sidebar position for all pages assigned with \"Page Template 3\"."
 msgstr "這是\"第3頁面模板\"指定的所有網頁的邊欄位置。"
 
-#: ../udesign_options_page.php:1648
+#: ../udesign_options_page.php:1661
 msgid "Default Pages Sidebar 4 Position"
 msgstr "預設頁面第4位側邊欄的位置"
 
-#: ../udesign_options_page.php:1653
+#: ../udesign_options_page.php:1666
 msgid ""
 "This is the sidebar position for all pages assigned with \"Page Template 4\"."
 msgstr "這是\"第4頁面模板\"指定的所有網頁的邊欄位置。"
 
-#: ../udesign_options_page.php:1657
+#: ../udesign_options_page.php:1670
 msgid "Default Pages Sidebar 5 Position"
 msgstr "預設頁面第5位側邊欄的位置"
 
-#: ../udesign_options_page.php:1662
+#: ../udesign_options_page.php:1675
 msgid ""
 "This is the sidebar position for all pages assigned with \"Page Template 5\"."
 msgstr "這是\"第5頁面模板\"指定的所有網頁的邊欄位置。"
 
-#: ../udesign_options_page.php:1666
+#: ../udesign_options_page.php:1679
 msgid "Default Pages Sidebar 6 Position"
 msgstr "預設頁面第6位側邊欄的位置"
 
-#: ../udesign_options_page.php:1671
+#: ../udesign_options_page.php:1684
 msgid ""
 "This is the sidebar position for all pages assigned with \"Page Template 6\"."
 msgstr "這是\"第6頁面模板\"指定的所有網頁的邊欄位置。"
 
-#: ../udesign_options_page.php:1675
+#: ../udesign_options_page.php:1688
 msgid "Default Pages Sidebar 7 Position"
 msgstr "預設頁面第7位側邊欄的位置"
 
-#: ../udesign_options_page.php:1680
+#: ../udesign_options_page.php:1693
 msgid ""
 "This is the sidebar position for all pages assigned with \"Page Template 7\"."
 msgstr "這是\"第7頁面模板\"指定的所有網頁的邊欄位置。"
 
-#: ../udesign_options_page.php:1684
+#: ../udesign_options_page.php:1697
 msgid "Default Pages Sidebar 8 Position"
 msgstr "預設頁面第8位側邊欄的位置"
 
-#: ../udesign_options_page.php:1689
+#: ../udesign_options_page.php:1702
 msgid ""
 "This is the sidebar position for all pages assigned with \"Page Template 8\"."
 msgstr "這是\"第8頁面模板\"指定的所有網頁的邊欄位置。"
 
-#: ../udesign_options_page.php:1693
+#: ../udesign_options_page.php:1706
 msgid "Sitemap Page Sidebar Position"
 msgstr "網站地圖頁面側邊欄的位置"
 
-#: ../udesign_options_page.php:1698
+#: ../udesign_options_page.php:1711
 msgid ""
 "This is the sidebar position for all pages assigned with \"Sitemap page\" "
 "template."
 msgstr "這是\"網站地圖頁\"模板中指定的所有網頁的邊欄位置。"
 
-#: ../udesign_options_page.php:1702 ../udesign_options_page.php:1704
+#: ../udesign_options_page.php:1715 ../udesign_options_page.php:1717
 msgid "Show Comments on Pages"
 msgstr "顯示網頁上的評論"
 
-#: ../udesign_options_page.php:1707
+#: ../udesign_options_page.php:1720
 msgid ""
 "Show Comments on Pages. Those are the pages assigned with the 'Default "
 "Page', 'Page Template 2', ..., 'Page Template 8' and 'Full-width Page' "
@@ -1522,11 +1534,11 @@ msgstr ""
 "在網頁上顯示評論。這是指定的頁面'預設設定頁面'，'頁面模板2'，...，'頁面模板"
 "8'和'全寬度頁面'模板。此外，還可以從單個頁面的設定'允許'這些評論。"
 
-#: ../udesign_options_page.php:1723
+#: ../udesign_options_page.php:1736
 msgid "Greater than 960px Theme Width Fluid Layout"
 msgstr ""
 
-#: ../udesign_options_page.php:1724
+#: ../udesign_options_page.php:1737
 msgid ""
 "In Fluid Layout the widths of elements such as the main content block, "
 "sidebar, columns, etc. are converted to percentages rather than fixed width "
@@ -1539,87 +1551,99 @@ msgid ""
 "960px width frame, unless of course Responsive layout is enabled."
 msgstr ""
 
-#: ../udesign_options_page.php:1728 ../udesign_options_page.php:1730
+#: ../udesign_options_page.php:1741 ../udesign_options_page.php:1743
 msgid "Enable Maximum Width"
 msgstr ""
 
-#: ../udesign_options_page.php:1733
+#: ../udesign_options_page.php:1746
 msgid "Set the theme width to the maximum possible browser or device width."
 msgstr ""
 
-#: ../udesign_options_page.php:1739
+#: ../udesign_options_page.php:1747
+msgid "(Fluid Layout)"
+msgstr ""
+
+#: ../udesign_options_page.php:1753
 msgid "Global Theme Width"
 msgstr ""
 
-#: ../udesign_options_page.php:1743 ../udesign_options_page.php:5632
+#: ../udesign_options_page.php:1757 ../udesign_options_page.php:5649
 #, fuzzy
 msgid "(Width) in pixels."
 msgstr "（高度）以像素為單位。"
 
-#: ../udesign_options_page.php:1744
+#: ../udesign_options_page.php:1758
 msgid ""
 "This option is about the overall theme width and it will be applied to all "
-"pages. You may specify a range between 960px and 1200px."
+"pages. You may specify a range between 960px and 1600px."
 msgstr ""
 
-#: ../udesign_options_page.php:1748
+#: ../udesign_options_page.php:1759
+msgid "(default: 960)"
+msgstr ""
+
+#: ../udesign_options_page.php:1763
 msgid "Global Sidebar Width"
 msgstr ""
 
-#: ../udesign_options_page.php:1752
+#: ../udesign_options_page.php:1767
 msgid "(Width) in percentage."
 msgstr ""
 
-#: ../udesign_options_page.php:1753
+#: ../udesign_options_page.php:1768
 msgid ""
 "This option is about the overall sidebar width and it will be applied to all "
 "pages. You may specify a range between 20% and 50%."
 msgstr ""
 
-#: ../udesign_options_page.php:1768
+#: ../udesign_options_page.php:1769
+msgid "(default: 33)"
+msgstr ""
+
+#: ../udesign_options_page.php:1784
 msgid "Google WebFont Directory"
 msgstr "谷歌WebFonts目錄"
 
-#: ../udesign_options_page.php:1770
+#: ../udesign_options_page.php:1786
 msgid "Google Web Fonts"
 msgstr "谷歌WebFonts"
 
-#: ../udesign_options_page.php:1773
+#: ../udesign_options_page.php:1789
 msgid "Enable Google WebFonts."
 msgstr "啟用谷歌WebFonts。"
 
-#: ../udesign_options_page.php:1776
+#: ../udesign_options_page.php:1792
 msgid ""
 "Enable this option and hit \"Update\" to add the Google Fonts to the "
 "available fonts listed below."
 msgstr "啟用此選項，並點擊\"更新\"便可添加谷歌字體到下面列出的可用字體。"
 
-#: ../udesign_options_page.php:1777
+#: ../udesign_options_page.php:1793
 msgid "Preview the available fonts at"
 msgstr "預覽可用的字體"
 
-#: ../udesign_options_page.php:1777
+#: ../udesign_options_page.php:1793
 msgid "Go to the \"Google Fonts\" site"
 msgstr ""
 
-#: ../udesign_options_page.php:1788
+#: ../udesign_options_page.php:1804
 msgid "General Font Settings"
 msgstr "一般字體設置"
 
-#: ../udesign_options_page.php:1791 ../udesign_options_page.php:1847
-#: ../udesign_options_page.php:1904
+#: ../udesign_options_page.php:1807 ../udesign_options_page.php:1863
+#: ../udesign_options_page.php:1921
 msgid "Font Family: "
 msgstr "字體系列："
 
-#: ../udesign_options_page.php:1844
+#: ../udesign_options_page.php:1860
 msgid "Top Navigation Menu Font Settings"
 msgstr "頂部的導航選單字體設置"
 
-#: ../udesign_options_page.php:1900
+#: ../udesign_options_page.php:1916
 msgid "Title Headings Font Settings"
 msgstr "標題的標題字體設置"
 
-#: ../udesign_options_page.php:1902
+#: ../udesign_options_page.php:1918
 msgid ""
 "This font is applied to all h1, h2, h3, h4, h5, h6 - Headings (with small "
 "exceptions) and  the Slogan (Tagline):"
@@ -1627,11 +1651,11 @@ msgstr ""
 "這個字體將應用於所有的H1，H2，H3，H4，H5，H6 - 標題（有小例外）和口號（標"
 "語）："
 
-#: ../udesign_options_page.php:1933
+#: ../udesign_options_page.php:1950
 msgid "Font Size Coefficient: "
 msgstr "字體大小係數："
 
-#: ../udesign_options_page.php:1951
+#: ../udesign_options_page.php:1968
 msgid ""
 "The Font Size Coefficient is multiplied by the actual heading size in \"em"
 "\", thus any coefficient greater than \"1.0\" will cause the font size to "
@@ -1640,77 +1664,77 @@ msgstr ""
 "字體大小係數乘以實際標題大小\"em\"，因此任何係數大於\"1.0\"將導致字體大小加大"
 "和任何係數小於\"1.0\"會產生更小的字體。"
 
-#: ../udesign_options_page.php:1963
+#: ../udesign_options_page.php:1980
 msgid "Custom Colors Switch"
 msgstr "自訂顏色交換"
 
-#: ../udesign_options_page.php:1965
+#: ../udesign_options_page.php:1982
 msgid "If enabled this option will overwrite the default CSS styles."
 msgstr "如果啟用此選項將覆蓋已預設的CSS樣式。"
 
-#: ../udesign_options_page.php:1966
+#: ../udesign_options_page.php:1983
 msgid "Custom colors option:"
 msgstr "自訂色彩的選項："
 
-#: ../udesign_options_page.php:1967
+#: ../udesign_options_page.php:1984
 msgid "Enable"
 msgstr "啟用"
 
-#: ../udesign_options_page.php:1968
+#: ../udesign_options_page.php:1985
 msgid "Disable"
 msgstr "停用"
 
-#: ../udesign_options_page.php:1976
+#: ../udesign_options_page.php:1993
 msgid "Continue with the section below to customize the colors..."
 msgstr "繼續下面的部分來自訂顏色..."
 
-#: ../udesign_options_page.php:1986
+#: ../udesign_options_page.php:2003
 msgid "General Text and Link Colors:"
 msgstr "一般的文本和鏈接顏色："
 
-#: ../udesign_options_page.php:1990
+#: ../udesign_options_page.php:2007
 msgid "Body Text Color"
 msgstr "主體文本顏色"
 
-#: ../udesign_options_page.php:1998
+#: ../udesign_options_page.php:2015
 msgid "Main body text color affecting the entire site."
 msgstr "影響整個網站的主體文字顏色。"
 
-#: ../udesign_options_page.php:2002
+#: ../udesign_options_page.php:2019
 msgid "Link Color"
 msgstr "鏈接的顏色"
 
-#: ../udesign_options_page.php:2010
+#: ../udesign_options_page.php:2027
 msgid "Main link color affecting the entire site."
 msgstr "影響整個網站的主要鏈接顏色。"
 
-#: ../udesign_options_page.php:2014
+#: ../udesign_options_page.php:2031
 msgid "Link Hover Color"
 msgstr "鏈接懸停顏色"
 
-#: ../udesign_options_page.php:2022
+#: ../udesign_options_page.php:2039
 msgid "This is the link hover color."
 msgstr "這是鏈接懸停顏色。"
 
-#: ../udesign_options_page.php:2026
+#: ../udesign_options_page.php:2043
 msgid "Headings Color"
 msgstr "標題顏色"
 
-#: ../udesign_options_page.php:2034
+#: ../udesign_options_page.php:2051
 msgid ""
 "This is the color for general H1, H2, H3, H4 ,H5 ,H6 Headings where "
 "applicable."
 msgstr "這是一般的H1，H2，H3，H4，H5，H6 - 的標題的顏色。"
 
-#: ../udesign_options_page.php:2039
+#: ../udesign_options_page.php:2056
 msgid "Top Section Colors:"
 msgstr "頂部顏色："
 
-#: ../udesign_options_page.php:2043
+#: ../udesign_options_page.php:2060
 msgid "Top Area Background"
 msgstr "頂部區域的背景"
 
-#: ../udesign_options_page.php:2051
+#: ../udesign_options_page.php:2068
 #, fuzzy
 msgid ""
 "Site's top section background color. This is the section with the logo, "
@@ -1719,192 +1743,192 @@ msgstr ""
 "網站的頂端部分的背景顏色。這是在選單正上方的標誌，標語，電話號碼和搜索框的部"
 "分。"
 
-#: ../udesign_options_page.php:2059
+#: ../udesign_options_page.php:2076
 msgid "Top Area Text Color"
 msgstr "頂部區域的文本顏色"
 
-#: ../udesign_options_page.php:2067
+#: ../udesign_options_page.php:2084
 msgid "This color affects the slogan, phone number and search text."
 msgstr "這種顏色影響的標語，電話號碼和搜索文本。"
 
-#: ../udesign_options_page.php:2071
+#: ../udesign_options_page.php:2088
 msgid "Top Menu Link Color"
 msgstr "頂部選單鏈接的顏色"
 
-#: ../udesign_options_page.php:2079
+#: ../udesign_options_page.php:2096
 msgid "This is the color of the main menu links."
 msgstr "這是主選單鏈接的顏色。"
 
-#: ../udesign_options_page.php:2083
+#: ../udesign_options_page.php:2100
 msgid "Top Menu Active Link Color"
 msgstr "頂部選單的活動鏈接的顏色"
 
-#: ../udesign_options_page.php:2091
+#: ../udesign_options_page.php:2108
 msgid "This is the color of the main menu active/selected link."
 msgstr "這是主選單中選定的鏈接的顏色。"
 
-#: ../udesign_options_page.php:2095
+#: ../udesign_options_page.php:2112
 msgid "Top Menu Hover Link Color"
 msgstr "頂部選單懸停鏈接的顏色"
 
-#: ../udesign_options_page.php:2103
+#: ../udesign_options_page.php:2120
 msgid "This is the color of the main menu hover link."
 msgstr "這是主選單懸停的鏈接的顏色。"
 
-#: ../udesign_options_page.php:2108
+#: ../udesign_options_page.php:2125
 msgid "Midsection Colors:"
 msgstr "中央部位的顏色："
 
-#: ../udesign_options_page.php:2112
+#: ../udesign_options_page.php:2129
 msgid "Page Title Color"
 msgstr "頁面標題顏色"
 
-#: ../udesign_options_page.php:2120
+#: ../udesign_options_page.php:2137
 msgid ""
 "This is the color for the title of pages/posts/archives, etc. located in the "
 "area underneath the menu."
 msgstr "這是位於選單下方的頁面/文章/檔案等的標題顏色。"
 
-#: ../udesign_options_page.php:2124
+#: ../udesign_options_page.php:2141
 msgid "Page Title Background Color"
 msgstr "頁面標題的背景顏色"
 
-#: ../udesign_options_page.php:2132
+#: ../udesign_options_page.php:2149
 msgid "This is the background color behind the page titles."
 msgstr "這是頁面標題背後的背景顏色。"
 
-#: ../udesign_options_page.php:2136
+#: ../udesign_options_page.php:2153
 msgid "Header/Slider Background"
 msgstr "頭/滑塊背景"
 
-#: ../udesign_options_page.php:2144
+#: ../udesign_options_page.php:2161
 msgid "This is the background color behind the home page sliders."
 msgstr "這是主頁滑塊的背後的背景顏色。"
 
-#: ../udesign_options_page.php:2148
+#: ../udesign_options_page.php:2165
 msgid "Main Content Area Background"
 msgstr "主要內容區的背景"
 
-#: ../udesign_options_page.php:2156
+#: ../udesign_options_page.php:2173
 msgid "This is the color of the main content wrapper background."
 msgstr "這是一個主要內容包裝背景的顏色。"
 
-#: ../udesign_options_page.php:2161
+#: ../udesign_options_page.php:2178
 msgid "Home Page Before Content Widget Area Colors:"
 msgstr "主頁內容之前部模組的顏色："
 
-#: ../udesign_options_page.php:2165
+#: ../udesign_options_page.php:2182
 msgid "Title Color"
 msgstr "標題顏色"
 
-#: ../udesign_options_page.php:2173
+#: ../udesign_options_page.php:2190
 msgid ""
 "This is the color for the title of widgets used in this Widget Area, usually "
 "an \"H3\" Headings."
 msgstr "這是在這個模組區使用的標題顏色，通常是一個\"H3\"標題的標題顏色。"
 
-#: ../udesign_options_page.php:2177 ../udesign_options_page.php:4453
-#: ../udesign_options_page.php:4737
+#: ../udesign_options_page.php:2194 ../udesign_options_page.php:4470
+#: ../udesign_options_page.php:4754
 msgid "Text Color"
 msgstr "文字顏色"
 
-#: ../udesign_options_page.php:2185
+#: ../udesign_options_page.php:2202
 msgid "This is the default text color applied to this Widget Area."
 msgstr "這是應用到這個模組區的預設文字顏色。"
 
-#: ../udesign_options_page.php:2189
+#: ../udesign_options_page.php:2206
 msgid "Background Color"
 msgstr "背景顏色"
 
-#: ../udesign_options_page.php:2197
+#: ../udesign_options_page.php:2214
 msgid "This is the background color."
 msgstr "背景顏色。"
 
-#: ../udesign_options_page.php:2202
+#: ../udesign_options_page.php:2219
 msgid "Bottom Area Colors:"
 msgstr "底部區域的顏色："
 
-#: ../udesign_options_page.php:2206
+#: ../udesign_options_page.php:2223
 msgid "Bottom Background Color"
 msgstr "底部背景顏色"
 
-#: ../udesign_options_page.php:2214
+#: ../udesign_options_page.php:2231
 msgid "This is the background color for the bottom area."
 msgstr "這是底部區域的背景顏色。"
 
-#: ../udesign_options_page.php:2218
+#: ../udesign_options_page.php:2235
 msgid "Bottom Titles Color"
 msgstr "底部的標題顏色"
 
-#: ../udesign_options_page.php:2226
+#: ../udesign_options_page.php:2243
 msgid "This is the color applied to the bottom area widget titles."
 msgstr "這是用於底部區域模組標題的顏色。"
 
-#: ../udesign_options_page.php:2230
+#: ../udesign_options_page.php:2247
 msgid "Bottom Text Color"
 msgstr "底部的文本顏色"
 
-#: ../udesign_options_page.php:2238
+#: ../udesign_options_page.php:2255
 msgid "This is the default text color applied to the bottom area."
 msgstr "這是預設文字顏色，用於底部區域。"
 
-#: ../udesign_options_page.php:2242
+#: ../udesign_options_page.php:2259
 msgid "Bottom Link Color"
 msgstr "底部的鏈接顏色"
 
-#: ../udesign_options_page.php:2250
+#: ../udesign_options_page.php:2267
 msgid "This is the bottom area link color."
 msgstr "這是底部區域鏈接的顏色。"
 
-#: ../udesign_options_page.php:2254
+#: ../udesign_options_page.php:2271
 msgid "Bottom Link Hover Color"
 msgstr "底部的鏈接懸停顏色"
 
-#: ../udesign_options_page.php:2262
+#: ../udesign_options_page.php:2279
 msgid "This is the bottom area link hover color."
 msgstr "這是底部區域的鏈接懸停顏色。"
 
-#: ../udesign_options_page.php:2267
+#: ../udesign_options_page.php:2284
 msgid "Footer Area Colors:"
 msgstr "頁腳區域的顏色："
 
-#: ../udesign_options_page.php:2271
+#: ../udesign_options_page.php:2288
 msgid "Footer Background Color"
 msgstr "頁腳背景顏色"
 
-#: ../udesign_options_page.php:2279
+#: ../udesign_options_page.php:2296
 msgid "This is the footer background color."
 msgstr "這是頁腳的背景顏色。"
 
-#: ../udesign_options_page.php:2283
+#: ../udesign_options_page.php:2300
 msgid "Footer Text Color"
 msgstr "頁腳文本顏色"
 
-#: ../udesign_options_page.php:2291
+#: ../udesign_options_page.php:2308
 msgid "This is the footer general text color."
 msgstr "這是頁腳文本顏色。"
 
-#: ../udesign_options_page.php:2295
+#: ../udesign_options_page.php:2312
 msgid "Footer Link Color"
 msgstr "頁腳鏈接顏色"
 
-#: ../udesign_options_page.php:2303
+#: ../udesign_options_page.php:2320
 msgid "This is the footer link color."
 msgstr "這是頁腳的鏈接的顏色。"
 
-#: ../udesign_options_page.php:2307
+#: ../udesign_options_page.php:2324
 msgid "Footer Link Hover Color"
 msgstr "頁腳鏈接懸停顏色"
 
-#: ../udesign_options_page.php:2315
+#: ../udesign_options_page.php:2332
 msgid "This is the footer link hover color."
 msgstr "這是頁腳鏈接懸停顏色。"
 
-#: ../udesign_options_page.php:2324
+#: ../udesign_options_page.php:2341
 msgid "Background Images:"
 msgstr "背景圖片："
 
-#: ../udesign_options_page.php:2325
+#: ../udesign_options_page.php:2342
 msgid ""
 "Tip: To upload an image click on 'Upload Image' button below. Once the image "
 "is uploaded it will give you various options. Click on 'Insert into Post' "
@@ -1919,191 +1943,191 @@ msgstr ""
 "入到上面的文本字段。根據背景位置屬性決定背景圖像的位置。如果使用\"不重複"
 "\"（見下文），圖像將被放置在元素的中心位置。"
 
-#: ../udesign_options_page.php:2329
+#: ../udesign_options_page.php:2346
 msgid "Top Background Image"
 msgstr "頂部背景圖片"
-
-#: ../udesign_options_page.php:2332 ../udesign_options_page.php:2368
-#: ../udesign_options_page.php:2404 ../udesign_options_page.php:2440
-#: ../udesign_options_page.php:2476 ../udesign_options_page.php:2512
-#: ../udesign_options_page.php:2548 ../udesign_options_page.php:2584
-#: ../udesign_options_page.php:4207 ../udesign_options_page.php:4275
-msgid "Enter a URL or upload an image:"
-msgstr "輸入網址或上載圖像："
-
-#: ../udesign_options_page.php:2334 ../udesign_options_page.php:2370
-#: ../udesign_options_page.php:2406 ../udesign_options_page.php:2442
-#: ../udesign_options_page.php:2478 ../udesign_options_page.php:2514
-#: ../udesign_options_page.php:2550 ../udesign_options_page.php:2586
-#: ../udesign_options_page.php:2856 ../udesign_options_page.php:2908
-#: ../udesign_options_page.php:3174 ../udesign_options_page.php:3201
-#: ../udesign_options_page.php:3719 ../udesign_options_page.php:3751
-#: ../udesign_options_page.php:3770 ../udesign_options_page.php:3819
-#: ../udesign_options_page.php:3863 ../udesign_options_page.php:3894
-#: ../udesign_options_page.php:4209 ../udesign_options_page.php:4277
-#: ../udesign_options_page.php:4482 ../udesign_options_page.php:4565
-#: ../udesign_options_page.php:4766 ../udesign_options_page.php:4790
-#: ../udesign_options_page.php:4815 ../udesign_options_page.php:4839
-msgid "Upload Image"
-msgstr "上載圖片"
-
-#: ../udesign_options_page.php:2338 ../udesign_options_page.php:2374
-#: ../udesign_options_page.php:2410 ../udesign_options_page.php:2446
-msgid "Background  Properties:"
-msgstr "背景特徵："
-
-#: ../udesign_options_page.php:2340 ../udesign_options_page.php:2376
-#: ../udesign_options_page.php:2412 ../udesign_options_page.php:2448
-#: ../udesign_options_page.php:2484 ../udesign_options_page.php:2520
-#: ../udesign_options_page.php:2556 ../udesign_options_page.php:2592
-msgid "No Repeat"
-msgstr "不重複"
-
-#: ../udesign_options_page.php:2341 ../udesign_options_page.php:2377
-#: ../udesign_options_page.php:2413 ../udesign_options_page.php:2449
-#: ../udesign_options_page.php:2485 ../udesign_options_page.php:2521
-#: ../udesign_options_page.php:2557 ../udesign_options_page.php:2593
-msgid "Repeat only Horizontally"
-msgstr "只重複橫向"
-
-#: ../udesign_options_page.php:2342 ../udesign_options_page.php:2378
-#: ../udesign_options_page.php:2414 ../udesign_options_page.php:2450
-#: ../udesign_options_page.php:2486 ../udesign_options_page.php:2522
-#: ../udesign_options_page.php:2558 ../udesign_options_page.php:2594
-msgid "Repeat only Vertically"
-msgstr "只重複垂直"
-
-#: ../udesign_options_page.php:2343 ../udesign_options_page.php:2379
-#: ../udesign_options_page.php:2415 ../udesign_options_page.php:2451
-#: ../udesign_options_page.php:2487 ../udesign_options_page.php:2523
-#: ../udesign_options_page.php:2559 ../udesign_options_page.php:2595
-msgid "Repeat both Vertically and Horizontally"
-msgstr "重複合縱連橫"
-
-#: ../udesign_options_page.php:2345 ../udesign_options_page.php:2381
-#: ../udesign_options_page.php:2417 ../udesign_options_page.php:2453
-#: ../udesign_options_page.php:2489 ../udesign_options_page.php:2525
-#: ../udesign_options_page.php:2561 ../udesign_options_page.php:2597
-msgid "Horizontal:"
-msgstr "水平："
-
-#: ../udesign_options_page.php:2347 ../udesign_options_page.php:2354
-#: ../udesign_options_page.php:2383 ../udesign_options_page.php:2390
-#: ../udesign_options_page.php:2419 ../udesign_options_page.php:2426
-#: ../udesign_options_page.php:2455 ../udesign_options_page.php:2462
-#: ../udesign_options_page.php:2491 ../udesign_options_page.php:2498
-#: ../udesign_options_page.php:2527 ../udesign_options_page.php:2534
-#: ../udesign_options_page.php:2563 ../udesign_options_page.php:2570
-#: ../udesign_options_page.php:2599 ../udesign_options_page.php:2606
-#: ../udesign_options_page.php:3521
-msgid "center"
-msgstr "中心"
-
-#: ../udesign_options_page.php:2348 ../udesign_options_page.php:2384
-#: ../udesign_options_page.php:2420 ../udesign_options_page.php:2456
-#: ../udesign_options_page.php:2492 ../udesign_options_page.php:2528
-#: ../udesign_options_page.php:2564 ../udesign_options_page.php:2600
-#: ../udesign_options_page.php:3522
-msgid "left"
-msgstr "左"
 
 #: ../udesign_options_page.php:2349 ../udesign_options_page.php:2385
 #: ../udesign_options_page.php:2421 ../udesign_options_page.php:2457
 #: ../udesign_options_page.php:2493 ../udesign_options_page.php:2529
 #: ../udesign_options_page.php:2565 ../udesign_options_page.php:2601
-#: ../udesign_options_page.php:3523
-msgid "right"
-msgstr "右"
+#: ../udesign_options_page.php:4224 ../udesign_options_page.php:4292
+msgid "Enter a URL or upload an image:"
+msgstr "輸入網址或上載圖像："
 
 #: ../udesign_options_page.php:2351 ../udesign_options_page.php:2387
 #: ../udesign_options_page.php:2423 ../udesign_options_page.php:2459
 #: ../udesign_options_page.php:2495 ../udesign_options_page.php:2531
 #: ../udesign_options_page.php:2567 ../udesign_options_page.php:2603
-msgid "Vertical:"
-msgstr "垂直："
-
-#: ../udesign_options_page.php:2353 ../udesign_options_page.php:2389
-#: ../udesign_options_page.php:2425 ../udesign_options_page.php:2461
-#: ../udesign_options_page.php:2497 ../udesign_options_page.php:2533
-#: ../udesign_options_page.php:2569 ../udesign_options_page.php:2605
-msgid "top"
-msgstr "頂部"
+#: ../udesign_options_page.php:2873 ../udesign_options_page.php:2925
+#: ../udesign_options_page.php:3191 ../udesign_options_page.php:3218
+#: ../udesign_options_page.php:3736 ../udesign_options_page.php:3768
+#: ../udesign_options_page.php:3787 ../udesign_options_page.php:3836
+#: ../udesign_options_page.php:3880 ../udesign_options_page.php:3911
+#: ../udesign_options_page.php:4226 ../udesign_options_page.php:4294
+#: ../udesign_options_page.php:4499 ../udesign_options_page.php:4582
+#: ../udesign_options_page.php:4783 ../udesign_options_page.php:4807
+#: ../udesign_options_page.php:4832 ../udesign_options_page.php:4856
+msgid "Upload Image"
+msgstr "上載圖片"
 
 #: ../udesign_options_page.php:2355 ../udesign_options_page.php:2391
 #: ../udesign_options_page.php:2427 ../udesign_options_page.php:2463
-#: ../udesign_options_page.php:2499 ../udesign_options_page.php:2535
-#: ../udesign_options_page.php:2571 ../udesign_options_page.php:2607
+msgid "Background  Properties:"
+msgstr "背景特徵："
+
+#: ../udesign_options_page.php:2357 ../udesign_options_page.php:2393
+#: ../udesign_options_page.php:2429 ../udesign_options_page.php:2465
+#: ../udesign_options_page.php:2501 ../udesign_options_page.php:2537
+#: ../udesign_options_page.php:2573 ../udesign_options_page.php:2609
+msgid "No Repeat"
+msgstr "不重複"
+
+#: ../udesign_options_page.php:2358 ../udesign_options_page.php:2394
+#: ../udesign_options_page.php:2430 ../udesign_options_page.php:2466
+#: ../udesign_options_page.php:2502 ../udesign_options_page.php:2538
+#: ../udesign_options_page.php:2574 ../udesign_options_page.php:2610
+msgid "Repeat only Horizontally"
+msgstr "只重複橫向"
+
+#: ../udesign_options_page.php:2359 ../udesign_options_page.php:2395
+#: ../udesign_options_page.php:2431 ../udesign_options_page.php:2467
+#: ../udesign_options_page.php:2503 ../udesign_options_page.php:2539
+#: ../udesign_options_page.php:2575 ../udesign_options_page.php:2611
+msgid "Repeat only Vertically"
+msgstr "只重複垂直"
+
+#: ../udesign_options_page.php:2360 ../udesign_options_page.php:2396
+#: ../udesign_options_page.php:2432 ../udesign_options_page.php:2468
+#: ../udesign_options_page.php:2504 ../udesign_options_page.php:2540
+#: ../udesign_options_page.php:2576 ../udesign_options_page.php:2612
+msgid "Repeat both Vertically and Horizontally"
+msgstr "重複合縱連橫"
+
+#: ../udesign_options_page.php:2362 ../udesign_options_page.php:2398
+#: ../udesign_options_page.php:2434 ../udesign_options_page.php:2470
+#: ../udesign_options_page.php:2506 ../udesign_options_page.php:2542
+#: ../udesign_options_page.php:2578 ../udesign_options_page.php:2614
+msgid "Horizontal:"
+msgstr "水平："
+
+#: ../udesign_options_page.php:2364 ../udesign_options_page.php:2371
+#: ../udesign_options_page.php:2400 ../udesign_options_page.php:2407
+#: ../udesign_options_page.php:2436 ../udesign_options_page.php:2443
+#: ../udesign_options_page.php:2472 ../udesign_options_page.php:2479
+#: ../udesign_options_page.php:2508 ../udesign_options_page.php:2515
+#: ../udesign_options_page.php:2544 ../udesign_options_page.php:2551
+#: ../udesign_options_page.php:2580 ../udesign_options_page.php:2587
+#: ../udesign_options_page.php:2616 ../udesign_options_page.php:2623
+#: ../udesign_options_page.php:3538
+msgid "center"
+msgstr "中心"
+
+#: ../udesign_options_page.php:2365 ../udesign_options_page.php:2401
+#: ../udesign_options_page.php:2437 ../udesign_options_page.php:2473
+#: ../udesign_options_page.php:2509 ../udesign_options_page.php:2545
+#: ../udesign_options_page.php:2581 ../udesign_options_page.php:2617
+#: ../udesign_options_page.php:3539
+msgid "left"
+msgstr "左"
+
+#: ../udesign_options_page.php:2366 ../udesign_options_page.php:2402
+#: ../udesign_options_page.php:2438 ../udesign_options_page.php:2474
+#: ../udesign_options_page.php:2510 ../udesign_options_page.php:2546
+#: ../udesign_options_page.php:2582 ../udesign_options_page.php:2618
+#: ../udesign_options_page.php:3540
+msgid "right"
+msgstr "右"
+
+#: ../udesign_options_page.php:2368 ../udesign_options_page.php:2404
+#: ../udesign_options_page.php:2440 ../udesign_options_page.php:2476
+#: ../udesign_options_page.php:2512 ../udesign_options_page.php:2548
+#: ../udesign_options_page.php:2584 ../udesign_options_page.php:2620
+msgid "Vertical:"
+msgstr "垂直："
+
+#: ../udesign_options_page.php:2370 ../udesign_options_page.php:2406
+#: ../udesign_options_page.php:2442 ../udesign_options_page.php:2478
+#: ../udesign_options_page.php:2514 ../udesign_options_page.php:2550
+#: ../udesign_options_page.php:2586 ../udesign_options_page.php:2622
+msgid "top"
+msgstr "頂部"
+
+#: ../udesign_options_page.php:2372 ../udesign_options_page.php:2408
+#: ../udesign_options_page.php:2444 ../udesign_options_page.php:2480
+#: ../udesign_options_page.php:2516 ../udesign_options_page.php:2552
+#: ../udesign_options_page.php:2588 ../udesign_options_page.php:2624
 msgid "bottom"
 msgstr "底部"
 
-#: ../udesign_options_page.php:2365
+#: ../udesign_options_page.php:2382
 msgid "Home Page Header/Slider Background Image"
 msgstr "主頁標題/滑塊背景圖片"
 
-#: ../udesign_options_page.php:2401
+#: ../udesign_options_page.php:2418
 msgid "Home Page Before Content Background Image"
 msgstr "首頁內容前背景圖片"
 
-#: ../udesign_options_page.php:2437
+#: ../udesign_options_page.php:2454
 msgid "Page Title Background Image"
 msgstr "頁面標題背景圖片"
 
-#: ../udesign_options_page.php:2473
+#: ../udesign_options_page.php:2490
 msgid "Main Content Background Image"
 msgstr "主要內容背景圖片"
 
-#: ../udesign_options_page.php:2482 ../udesign_options_page.php:2518
-#: ../udesign_options_page.php:2554 ../udesign_options_page.php:2590
+#: ../udesign_options_page.php:2499 ../udesign_options_page.php:2535
+#: ../udesign_options_page.php:2571 ../udesign_options_page.php:2607
 msgid "Background Properties:"
 msgstr "背景特徵："
 
-#: ../udesign_options_page.php:2509
+#: ../udesign_options_page.php:2526
 msgid "Bottom Area Background Image"
 msgstr "底部區域的背景圖像"
 
-#: ../udesign_options_page.php:2545
+#: ../udesign_options_page.php:2562
 msgid "Footer Background Image"
 msgstr "頁腳背景圖片"
 
-#: ../udesign_options_page.php:2581
+#: ../udesign_options_page.php:2598
 msgid "One Continuous Background Image That Will Span Across All Sections"
 msgstr "一個連續的背景圖像，將跨越所有部分"
 
-#: ../udesign_options_page.php:2611
+#: ../udesign_options_page.php:2628
 #, php-format
 msgid "For Background color  %1$sTop Area Background %2$s%3$s  will be used."
 msgstr "背景顏色%1$s頂部區域背景%2$s%3$s將被使用。"
 
-#: ../udesign_options_page.php:2613
+#: ../udesign_options_page.php:2630
 msgid "Fixed Position"
 msgstr "固定位置"
 
-#: ../udesign_options_page.php:2616
+#: ../udesign_options_page.php:2633
 msgid "Fix the position of the background image so that it is not scrollable."
 msgstr "固定背景圖像的位置，讓它不滾動。"
 
-#: ../udesign_options_page.php:2619
+#: ../udesign_options_page.php:2636
 msgid "Allow Other Sections' Images"
 msgstr "允許其他部分的圖片"
 
-#: ../udesign_options_page.php:2622
+#: ../udesign_options_page.php:2639
 msgid ""
 "Enable background images from other sections to show as well, you can "
 "achieve sort of layered layout."
 msgstr "啟用顯示其他部分背景的圖片的話，您可以創造一種分層版面。"
 
-#: ../udesign_options_page.php:2633 ../udesign_options_page.php:2635
+#: ../udesign_options_page.php:2650 ../udesign_options_page.php:2652
 #, fuzzy
 msgid "Remove Horizontal Rulers"
 msgstr "只重複橫向"
 
-#: ../udesign_options_page.php:2638
+#: ../udesign_options_page.php:2655
 msgid ""
 "This option will allow you to remove the horizontal ruler lines that are "
 "enabled by default for some sections."
 msgstr ""
 
-#: ../udesign_options_page.php:2640
+#: ../udesign_options_page.php:2657
 #, php-format
 msgid ""
 "Note: If you wish to remove the border line under the top navigation menu, "
@@ -2113,15 +2137,15 @@ msgstr ""
 "注意：如果您要刪除頂部功能表的邊界線，選項位於：%1$s\"一般選項\"%2$s選單的邊"
 "界線%3$s"
 
-#: ../udesign_options_page.php:2651
+#: ../udesign_options_page.php:2668
 msgid "Administrative Tasks:"
 msgstr "管理任務："
 
-#: ../udesign_options_page.php:2654
+#: ../udesign_options_page.php:2671
 msgid "Save the current custom colors."
 msgstr "儲存目前的自訂顏色。"
 
-#: ../udesign_options_page.php:2656
+#: ../udesign_options_page.php:2673
 msgid ""
 "A Color Scheme will be saved with an automatic name generated from the "
 "current time stamp. Once saved you will be able to choose it from the "
@@ -2130,11 +2154,11 @@ msgstr ""
 "從目前的時間標記會自動產生一個名字保存配色方案。保存後，您將可以從下面的下拉"
 "框選擇並在稍後的時間上載。"
 
-#: ../udesign_options_page.php:2659
+#: ../udesign_options_page.php:2676
 msgid "Save"
 msgstr "儲存"
 
-#: ../udesign_options_page.php:2665
+#: ../udesign_options_page.php:2682
 msgid ""
 "Choose a custom color scheme from the first dropdown below and then choose a "
 "task to perform from the second dropdown, then hit the \"Update\" button."
@@ -2142,205 +2166,205 @@ msgstr ""
 "從第一個下拉下面，選擇自訂顏色,然後從第二個下拉中選擇要執行的任務，然後點擊"
 "\"更新\"按鈕。"
 
-#: ../udesign_options_page.php:2680
+#: ../udesign_options_page.php:2697
 msgid "Note: The \"Default Colors\" cannot be deleted."
 msgstr "注意：\"預設色彩\"不能被刪除。"
 
-#: ../udesign_options_page.php:2700
+#: ../udesign_options_page.php:2717
 msgid "Current Slider"
 msgstr "當前滑塊："
 
-#: ../udesign_options_page.php:2702
+#: ../udesign_options_page.php:2719
 msgid "Choose a slider:"
 msgstr "選擇一個滑塊："
 
-#: ../udesign_options_page.php:2705
+#: ../udesign_options_page.php:2722
 msgid "Flashmo Grid Slider"
 msgstr "Flashmo Grid滑塊"
 
-#: ../udesign_options_page.php:2706
+#: ../udesign_options_page.php:2723
 msgid "Piecemaker"
 msgstr "Piecemaker"
 
-#: ../udesign_options_page.php:2707
+#: ../udesign_options_page.php:2724
 msgid "Piecemaker 2"
 msgstr "Piecemaker2"
 
-#: ../udesign_options_page.php:2708
+#: ../udesign_options_page.php:2725
 msgid "Cycle 1 (full width image)"
 msgstr "Cycle 1 (全寬度的圖像)"
 
-#: ../udesign_options_page.php:2709
+#: ../udesign_options_page.php:2726
 msgid "Cycle 2 (image with text)"
 msgstr "Cycle 2 (圖像與文字)"
 
-#: ../udesign_options_page.php:2710
+#: ../udesign_options_page.php:2727
 msgid "Cycle 3 (image with sliding text)"
 msgstr "Cycle 3 (滑動圖像與文字)"
 
-#: ../udesign_options_page.php:2711 ../udesign_options_page.php:4899
+#: ../udesign_options_page.php:2728 ../udesign_options_page.php:4916
 #, fuzzy
 msgid "Revolution Slider"
 msgstr "沒有滑塊"
 
-#: ../udesign_options_page.php:2712
+#: ../udesign_options_page.php:2729
 msgid "No Slider"
 msgstr "沒有滑塊"
 
-#: ../udesign_options_page.php:2717
+#: ../udesign_options_page.php:2734
 msgid "Save & Activate"
 msgstr "保存和啟動"
 
-#: ../udesign_options_page.php:2721
+#: ../udesign_options_page.php:2738
 msgid "Continue with the section below to customize the slider..."
 msgstr "繼續下面的部分來自訂滑塊..."
 
-#: ../udesign_options_page.php:2755
+#: ../udesign_options_page.php:2772
 msgid "Flashmo Grid Slider Settings:"
 msgstr "Flashmo Grid滑塊設置:"
 
-#: ../udesign_options_page.php:2759 ../udesign_options_page.php:2999
-#: ../udesign_options_page.php:3257 ../udesign_options_page.php:5234
+#: ../udesign_options_page.php:2776 ../udesign_options_page.php:3016
+#: ../udesign_options_page.php:3274 ../udesign_options_page.php:5251
 msgid "Image Width"
 msgstr "圖像的寬度"
 
-#: ../udesign_options_page.php:2762
+#: ../udesign_options_page.php:2779
 msgid "The width in pixels of the slider images (940 recommended)."
 msgstr "滑塊圖像的寬度以像素為單位（940推薦）。"
 
-#: ../udesign_options_page.php:2766 ../udesign_options_page.php:3006
-#: ../udesign_options_page.php:3264 ../udesign_options_page.php:5241
+#: ../udesign_options_page.php:2783 ../udesign_options_page.php:3023
+#: ../udesign_options_page.php:3281 ../udesign_options_page.php:5258
 msgid "Image Height"
 msgstr "圖像的高度"
 
-#: ../udesign_options_page.php:2769
+#: ../udesign_options_page.php:2786
 msgid "The height in pixels of the slider images (400 recommended)."
 msgstr "滑塊圖像的高度以像素為單位（400推薦）。"
 
-#: ../udesign_options_page.php:2773
+#: ../udesign_options_page.php:2790
 msgid "Auto Play"
 msgstr "自動停止"
 
-#: ../udesign_options_page.php:2776
+#: ../udesign_options_page.php:2793
 msgid "True"
 msgstr "真"
 
-#: ../udesign_options_page.php:2777
+#: ../udesign_options_page.php:2794
 msgid "False"
 msgstr "假"
 
-#: ../udesign_options_page.php:2779
+#: ../udesign_options_page.php:2796
 msgid "Set the auto play option, true by default ( or false )."
 msgstr "設定自動播放選項，預設為True（或False）。"
 
-#: ../udesign_options_page.php:2783
+#: ../udesign_options_page.php:2800
 msgid "Auto Play Duration"
 msgstr "自動播放持續時間"
 
-#: ../udesign_options_page.php:2786
+#: ../udesign_options_page.php:2803
 msgid ""
 "Number of seconds between transitions, 2.4 seconds by default ( or any "
 "number of seconds )."
 msgstr "影像轉變之間的秒數為2.4秒（或任何自定的秒數）。"
 
-#: ../udesign_options_page.php:2790
+#: ../udesign_options_page.php:2807
 msgid "Number of Rows"
 msgstr "行數"
 
-#: ../udesign_options_page.php:2793
+#: ../udesign_options_page.php:2810
 msgid ""
 "Number of rows, in which the images will be sliced, 4 rows by default ( or "
 "any number of rows )"
 msgstr "影像將被切片為4行（或任意自定數量的行）"
 
-#: ../udesign_options_page.php:2797
+#: ../udesign_options_page.php:2814
 msgid "Number of Columns"
 msgstr "列數"
 
-#: ../udesign_options_page.php:2800
+#: ../udesign_options_page.php:2817
 msgid ""
 "Number of columns, in which the images will be sliced, 6 columns by default "
 "( or any number of columns )"
 msgstr "影像將被切片為6列（或任意自定數量的列）"
 
-#: ../udesign_options_page.php:2804
+#: ../udesign_options_page.php:2821
 msgid "Tween Duration"
 msgstr "Tween自動播放持續時間"
 
-#: ../udesign_options_page.php:2807
+#: ../udesign_options_page.php:2824
 msgid ""
 "Duration in seconds of the motion tween for each block in the transition."
 msgstr "每個塊在轉變的時間以秒為單位。"
 
-#: ../udesign_options_page.php:2811 ../udesign_options_page.php:3027
+#: ../udesign_options_page.php:2828 ../udesign_options_page.php:3044
 msgid "Tween Delay"
 msgstr "Tween延遲"
 
-#: ../udesign_options_page.php:2814
+#: ../udesign_options_page.php:2831
 msgid "Delay in seconds between each block in the transition."
 msgstr "每塊之間的轉變時間，以按秒計算。"
 
-#: ../udesign_options_page.php:2818
+#: ../udesign_options_page.php:2835
 msgid "Bar Status"
 msgstr "欄中狀態"
 
-#: ../udesign_options_page.php:2821
+#: ../udesign_options_page.php:2838
 msgid "Hide the Bar"
 msgstr "隱藏工具欄"
 
-#: ../udesign_options_page.php:2822
+#: ../udesign_options_page.php:2839
 msgid "Show the Bar"
 msgstr "顯示工具欄"
 
-#: ../udesign_options_page.php:2823
+#: ../udesign_options_page.php:2840
 msgid "Show the Bar and Photo Description"
 msgstr "顯示工具欄和圖片說明"
 
-#: ../udesign_options_page.php:2825
+#: ../udesign_options_page.php:2842
 msgid "This is the area in the slider displaying additional controls and text."
 msgstr "這是滑塊區域顯示其他的控制項和文本的地方。"
 
-#: ../udesign_options_page.php:2829 ../udesign_options_page.php:2831
-#: ../udesign_options_page.php:3118 ../udesign_options_page.php:3120
-#: ../udesign_options_page.php:4182 ../udesign_options_page.php:4184
+#: ../udesign_options_page.php:2846 ../udesign_options_page.php:2848
+#: ../udesign_options_page.php:3135 ../udesign_options_page.php:3137
+#: ../udesign_options_page.php:4199 ../udesign_options_page.php:4201
 msgid "3D Shadow"
 msgstr "3D影子"
 
-#: ../udesign_options_page.php:2834 ../udesign_options_page.php:3123
-#: ../udesign_options_page.php:4187
+#: ../udesign_options_page.php:2851 ../udesign_options_page.php:3140
+#: ../udesign_options_page.php:4204
 msgid "Remove the 3D shadow under the slider"
 msgstr "刪除滑塊下的3D影子"
 
-#: ../udesign_options_page.php:2854 ../udesign_options_page.php:2906
-#: ../udesign_options_page.php:3172 ../udesign_options_page.php:3199
-#: ../udesign_options_page.php:3717 ../udesign_options_page.php:3749
-#: ../udesign_options_page.php:3768 ../udesign_options_page.php:3817
-#: ../udesign_options_page.php:3861 ../udesign_options_page.php:3892
-#: ../udesign_options_page.php:4480 ../udesign_options_page.php:4563
-#: ../udesign_options_page.php:4764 ../udesign_options_page.php:4813
+#: ../udesign_options_page.php:2871 ../udesign_options_page.php:2923
+#: ../udesign_options_page.php:3189 ../udesign_options_page.php:3216
+#: ../udesign_options_page.php:3734 ../udesign_options_page.php:3766
+#: ../udesign_options_page.php:3785 ../udesign_options_page.php:3834
+#: ../udesign_options_page.php:3878 ../udesign_options_page.php:3909
+#: ../udesign_options_page.php:4497 ../udesign_options_page.php:4580
+#: ../udesign_options_page.php:4781 ../udesign_options_page.php:4830
 msgid "Image:"
 msgstr "圖像："
 
-#: ../udesign_options_page.php:2860 ../udesign_options_page.php:2912
+#: ../udesign_options_page.php:2877 ../udesign_options_page.php:2929
 msgid "Flow:"
 msgstr "流程："
 
-#: ../udesign_options_page.php:2867 ../udesign_options_page.php:2919
+#: ../udesign_options_page.php:2884 ../udesign_options_page.php:2936
 msgid "Direction:"
 msgstr "方向："
 
-#: ../udesign_options_page.php:2877 ../udesign_options_page.php:2929
+#: ../udesign_options_page.php:2894 ../udesign_options_page.php:2946
 msgid "Rotation:"
 msgstr "旋轉："
 
-#: ../udesign_options_page.php:2887 ../udesign_options_page.php:2939
-#: ../udesign_options_page.php:3739 ../udesign_options_page.php:3839
-#: ../udesign_options_page.php:4534 ../udesign_options_page.php:4617
-#: ../udesign_options_page.php:4795 ../udesign_options_page.php:4844
+#: ../udesign_options_page.php:2904 ../udesign_options_page.php:2956
+#: ../udesign_options_page.php:3756 ../udesign_options_page.php:3856
+#: ../udesign_options_page.php:4551 ../udesign_options_page.php:4634
+#: ../udesign_options_page.php:4812 ../udesign_options_page.php:4861
 msgid "Slide text"
 msgstr "滑動文字"
 
-#: ../udesign_options_page.php:2891 ../udesign_options_page.php:2943
+#: ../udesign_options_page.php:2908 ../udesign_options_page.php:2960
 msgid ""
 "This textfield supports HTML and CSS. The CSS classes used are located in "
 "\"sliders/flashmo/grid_slider/flashmo_224_style.css\""
@@ -2348,17 +2372,17 @@ msgstr ""
 "文本字段可以用在HTML和CSS。使用的CSS類位於\"sliders/flashmo/grid_slider/"
 "flashmo_224_style.css\""
 
-#: ../udesign_options_page.php:2953 ../udesign_options_page.php:3220
-#: ../udesign_options_page.php:4114
+#: ../udesign_options_page.php:2970 ../udesign_options_page.php:3237
+#: ../udesign_options_page.php:4131
 msgid "No JavaScript image"
 msgstr "沒有JavaScript的圖像"
 
-#: ../udesign_options_page.php:2955 ../udesign_options_page.php:3222
-#: ../udesign_options_page.php:4116
+#: ../udesign_options_page.php:2972 ../udesign_options_page.php:3239
+#: ../udesign_options_page.php:4133
 msgid "Paste the full path to your image:"
 msgstr "貼上您的圖片的完整路徑："
 
-#: ../udesign_options_page.php:2957
+#: ../udesign_options_page.php:2974
 msgid ""
 "In the case when JavaScript is disabled the 1st slider image is displayed by "
 "default in place of the Flashmo slider, you may change that in here"
@@ -2366,45 +2390,45 @@ msgstr ""
 "JavaScript被禁用時，在預設情況下第一滑塊的圖像會代替Flashmo滑塊顯示，您可以在"
 "這裡更改"
 
-#: ../udesign_options_page.php:2995
+#: ../udesign_options_page.php:3012
 msgid "Piecemaker Slider Settings:"
 msgstr "Piecemaker的滑塊設置："
 
-#: ../udesign_options_page.php:3002
+#: ../udesign_options_page.php:3019
 msgid "The width of the images to be loaded."
 msgstr "要上載的圖像的寬度。"
 
-#: ../udesign_options_page.php:3009
+#: ../udesign_options_page.php:3026
 msgid "The height of the images to be loaded."
 msgstr "要上載的圖像的高度。"
 
-#: ../udesign_options_page.php:3013
+#: ../udesign_options_page.php:3030
 msgid "Number of segments"
 msgstr "段數"
 
-#: ../udesign_options_page.php:3016
+#: ../udesign_options_page.php:3033
 msgid "Number of segments, in which the images will be sliced."
 msgstr "影像將切片為多少段。"
 
-#: ../udesign_options_page.php:3020
+#: ../udesign_options_page.php:3037
 msgid "Tween Time"
 msgstr "Tween日期/時間"
 
-#: ../udesign_options_page.php:3023
+#: ../udesign_options_page.php:3040
 msgid "Number of seconds for each element to be turned."
 msgstr "每個元素的轉換的秒數。"
 
-#: ../udesign_options_page.php:3030
+#: ../udesign_options_page.php:3047
 msgid ""
 "Number of seconds from one element starting to turn to the next element "
 "starting."
 msgstr "從一個元素的轉換的開始到下一個元素的轉換的開始的秒數。"
 
-#: ../udesign_options_page.php:3034
+#: ../udesign_options_page.php:3051
 msgid "Tween Type"
 msgstr "Tween類型："
 
-#: ../udesign_options_page.php:3079
+#: ../udesign_options_page.php:3096
 #, php-format
 msgid ""
 "Type of transition from Caurina&#39;s Tweener class. Find all possible "
@@ -2414,11 +2438,11 @@ msgstr ""
 "從Caurina&#39;s Tweener class類型的轉變。在官方%1$sdocumentation%2$s搜尋所有"
 "可能的轉變類型和有關Tweener的詳細信息。"
 
-#: ../udesign_options_page.php:3083
+#: ../udesign_options_page.php:3100
 msgid "Z Distance"
 msgstr "Z距離"
 
-#: ../udesign_options_page.php:3086
+#: ../udesign_options_page.php:3103
 msgid ""
 "To which extent are the cubes moved on z axis when being tweened. Negative "
 "values bring the cube closer to the camera, positive values take it further "
@@ -2427,19 +2451,19 @@ msgstr ""
 "立方體在z軸移動時的程度。負值數接近相機，正值數越走越遠。一個好的範圍大約是"
 "在-200到700之間。"
 
-#: ../udesign_options_page.php:3090
+#: ../udesign_options_page.php:3107
 msgid "Expand"
 msgstr "擴大"
 
-#: ../udesign_options_page.php:3093
+#: ../udesign_options_page.php:3110
 msgid "To which extent are the cubes moved away from each other when tweening."
 msgstr "在tweening時，立方體的相互遠離到何種程度。"
 
-#: ../udesign_options_page.php:3097
+#: ../udesign_options_page.php:3114
 msgid "Shadow Darkness"
 msgstr "影子的明暗"
 
-#: ../udesign_options_page.php:3100
+#: ../udesign_options_page.php:3117
 msgid ""
 "To which extent are the sides shadowed, when the elements are tweening and "
 "the sided move towards the background. 100 is black, 0 is no darkening."
@@ -2447,47 +2471,47 @@ msgstr ""
 "當元素在動畫補間時和兩側走向背景時，兩側的陰影的程度。 100是黑色的，0是不變"
 "黑。"
 
-#: ../udesign_options_page.php:3104 ../udesign_options_page.php:3305
+#: ../udesign_options_page.php:3121 ../udesign_options_page.php:3322
 msgid "Autoplay"
 msgstr "自動播放"
 
-#: ../udesign_options_page.php:3107
+#: ../udesign_options_page.php:3124
 msgid "Number of seconds to the next image."
 msgstr "到下一張圖片的秒數。"
 
-#: ../udesign_options_page.php:3111
+#: ../udesign_options_page.php:3128
 msgid "Text Distance"
 msgstr "文字的距離"
 
-#: ../udesign_options_page.php:3114
+#: ../udesign_options_page.php:3131
 msgid "Distance of the info text to the borders of its background."
 msgstr "信息文本與背景邊界的距離。"
 
-#: ../udesign_options_page.php:3134
+#: ../udesign_options_page.php:3151
 msgid "Text Background"
 msgstr "文字的背景"
 
-#: ../udesign_options_page.php:3142
+#: ../udesign_options_page.php:3159
 msgid "Description text background"
 msgstr "說明文字的背景"
 
-#: ../udesign_options_page.php:3146
+#: ../udesign_options_page.php:3163
 msgid "Inner Color"
 msgstr "內部顏色"
 
-#: ../udesign_options_page.php:3154
+#: ../udesign_options_page.php:3171
 msgid "Sides color of the sliced elements"
 msgstr "切片兩側的著色"
 
-#: ../udesign_options_page.php:3180 ../udesign_options_page.php:3206
+#: ../udesign_options_page.php:3197 ../udesign_options_page.php:3223
 msgid "Edit the info text, erase all for none:"
 msgstr "修改信息文本，刪除所有："
 
-#: ../udesign_options_page.php:3184 ../udesign_options_page.php:3210
+#: ../udesign_options_page.php:3201 ../udesign_options_page.php:3227
 msgid "Study the above text for slider's specific syntax"
 msgstr "學習上面滑塊的特定語法"
 
-#: ../udesign_options_page.php:3224
+#: ../udesign_options_page.php:3241
 msgid ""
 "In the case when JavaScript is disabled the 1st slider image is displayed by "
 "default in place of the Piecemaker slider, you may change that in here"
@@ -2495,27 +2519,27 @@ msgstr ""
 "JavaScript被禁用時，在預設情況下第一滑塊的圖像會代替Piecemaker滑塊顯示，您可"
 "以在這裡更改"
 
-#: ../udesign_options_page.php:3250
+#: ../udesign_options_page.php:3267
 msgid "Piecemaker 2 Slider Settings:"
 msgstr "Piecemaker2滑塊設置："
 
-#: ../udesign_options_page.php:3253
+#: ../udesign_options_page.php:3270
 msgid "General Settings:"
 msgstr "一般設置："
 
-#: ../udesign_options_page.php:3260
+#: ../udesign_options_page.php:3277
 msgid "The width of every image."
 msgstr "每一個圖像的寬度。"
 
-#: ../udesign_options_page.php:3267
+#: ../udesign_options_page.php:3284
 msgid "The height of every image."
 msgstr "每一個圖像的高度。"
 
-#: ../udesign_options_page.php:3276
+#: ../udesign_options_page.php:3293
 msgid "Loader Color"
 msgstr "裝載程序顏色"
 
-#: ../udesign_options_page.php:3284
+#: ../udesign_options_page.php:3301
 msgid ""
 "Color of the cubes before the first image appears, also the color of the "
 "back sides of the cube, which become visible at some transition types."
@@ -2523,25 +2547,25 @@ msgstr ""
 "在第一個圖像出現之前的立方體的顏色，和在某些過渡類型情況下時，立方體的背面的"
 "顏色。"
 
-#: ../udesign_options_page.php:3288
+#: ../udesign_options_page.php:3305
 msgid "Inner Side Color"
 msgstr "內側顏色"
 
-#: ../udesign_options_page.php:3296
+#: ../udesign_options_page.php:3313
 msgid "Color of the inner sides of the cube when sliced"
 msgstr "當立方體的內側被切片時的顏色"
 
-#: ../udesign_options_page.php:3308
+#: ../udesign_options_page.php:3325
 msgid ""
 "Number of seconds from one transition to another, if not stopped. Set to 0 "
 "to disable autoplay."
 msgstr "如果沒有停止，從一個轉變到另一個轉變的秒數。設置為0以關閉自動播放。"
 
-#: ../udesign_options_page.php:3312
+#: ../udesign_options_page.php:3329
 msgid "Field of View"
 msgstr "視野"
 
-#: ../udesign_options_page.php:3315
+#: ../udesign_options_page.php:3332
 #, php-format
 msgid ""
 "The display of the slide object moving down the z axis (1 to 179). It "
@@ -2550,42 +2574,42 @@ msgstr ""
 "滑塊跟從z軸（1至179）向下移動的顯示。它似乎是迅速的改變大小和快速移動很大的距"
 "離。%1$s更多信息%2$s"
 
-#: ../udesign_options_page.php:3323
+#: ../udesign_options_page.php:3340
 msgid "Shadows:"
 msgstr "影子："
 
-#: ../udesign_options_page.php:3327
+#: ../udesign_options_page.php:3344
 msgid "Side Shadow Alpha"
 msgstr "側邊陰影 Alpha"
 
-#: ../udesign_options_page.php:3330
+#: ../udesign_options_page.php:3347
 #, php-format
 msgid ""
 "Sides get darker when moved away from the front. This is the degree of "
 "darkness 0 = no change, 1 = 100%s black."
 msgstr "越遠離前方，兩側越漸漸變暗。這是一個黑暗程度，0=無變化，1=100%s黑色。"
 
-#: ../udesign_options_page.php:3334
+#: ../udesign_options_page.php:3351
 msgid "Drop Shadow Alpha"
 msgstr "陰影Alpha"
 
-#: ../udesign_options_page.php:3337
+#: ../udesign_options_page.php:3354
 msgid "Alpha of the drop shadow 0 = no shadow, 1 = opaque."
 msgstr "Alpha的陰影 0=沒有陰影, 1=不透明。"
 
-#: ../udesign_options_page.php:3341
+#: ../udesign_options_page.php:3358
 msgid "Drop Shadow Distance"
 msgstr "陰影距離"
 
-#: ../udesign_options_page.php:3344
+#: ../udesign_options_page.php:3361
 msgid "Distance of the shadow from the bottom of the image."
 msgstr "從圖像底部到陰影的距離。"
 
-#: ../udesign_options_page.php:3348
+#: ../udesign_options_page.php:3365
 msgid "Drop Shadow Scale"
 msgstr "陰影比例"
 
-#: ../udesign_options_page.php:3351
+#: ../udesign_options_page.php:3368
 msgid ""
 "As the shadow is blurred, it appears wider that the actual image, when not "
 "resized. Thus it's a good idea to make it slightly smaller. 1 would be no "
@@ -2594,354 +2618,354 @@ msgstr ""
 "由於陰影是模糊的，如果不調整大小，會看來更寬。因此，使其體積更小，是一個好主"
 "意。1是不調整。"
 
-#: ../udesign_options_page.php:3355
+#: ../udesign_options_page.php:3372
 msgid "Drop Shadow Blur X"
 msgstr "在x軸的陰影模糊。"
 
-#: ../udesign_options_page.php:3358
+#: ../udesign_options_page.php:3375
 msgid "Blur of the drop shadow on the x-axis."
 msgstr "在x軸的陰影模糊。"
 
-#: ../udesign_options_page.php:3362
+#: ../udesign_options_page.php:3379
 msgid "Drop Shadow Blur Y"
 msgstr "在y軸的陰影模糊。"
 
-#: ../udesign_options_page.php:3365
+#: ../udesign_options_page.php:3382
 msgid "Blur of the drop shadow on the y-axis."
 msgstr "在y軸的陰影模糊。"
 
-#: ../udesign_options_page.php:3373
+#: ../udesign_options_page.php:3390
 msgid "Menu:"
 msgstr "選單："
 
-#: ../udesign_options_page.php:3377
+#: ../udesign_options_page.php:3394
 msgid "Menu Distance X"
 msgstr "選單距離 X"
 
-#: ../udesign_options_page.php:3380
+#: ../udesign_options_page.php:3397
 msgid "Distance between two menu items (from center to center)."
 msgstr "兩個選單項目（從中心到中心）之間的距離。"
 
-#: ../udesign_options_page.php:3384
+#: ../udesign_options_page.php:3401
 msgid "Menu Distance Y"
 msgstr "選單距離 Y"
 
-#: ../udesign_options_page.php:3387
+#: ../udesign_options_page.php:3404
 msgid "Distance of the menu from the bottom of the image."
 msgstr "從圖像底部到選單的距離。"
 
-#: ../udesign_options_page.php:3396
+#: ../udesign_options_page.php:3413
 msgid "Menu Color 1"
 msgstr "選單顏色1"
 
-#: ../udesign_options_page.php:3404
+#: ../udesign_options_page.php:3421
 msgid "Color of an inactive menu item."
 msgstr "不活動的選單項目的顏色。"
 
-#: ../udesign_options_page.php:3408
+#: ../udesign_options_page.php:3425
 msgid "Menu Color 2"
 msgstr "選單顏色2"
 
-#: ../udesign_options_page.php:3416
+#: ../udesign_options_page.php:3433
 msgid "Color of an active menu item."
 msgstr "活動選單項目的顏色。"
 
-#: ../udesign_options_page.php:3420
+#: ../udesign_options_page.php:3437
 msgid "Menu Color 3"
 msgstr "選單顏色3"
 
-#: ../udesign_options_page.php:3428
+#: ../udesign_options_page.php:3445
 msgid ""
 "Color of the inner circle of an active menu item. Should equal the "
 "background color of the whole thing."
 msgstr "活躍的選單項目圈內的顏色。應等於整個的背景顏色。"
 
-#: ../udesign_options_page.php:3436
+#: ../udesign_options_page.php:3453
 msgid "Controls:"
 msgstr "控件："
 
-#: ../udesign_options_page.php:3440
+#: ../udesign_options_page.php:3457
 msgid "Controls' Size"
 msgstr "控件的大小"
 
-#: ../udesign_options_page.php:3443
+#: ../udesign_options_page.php:3460
 msgid ""
 "Size of the controls, which appear on rollover (play, stop, info, link)."
 msgstr "翻轉時出現的控制的大小（播放，停止，信息，鏈接）。"
 
-#: ../udesign_options_page.php:3447
+#: ../udesign_options_page.php:3464
 msgid "Controls' Distance"
 msgstr "控件的距離"
 
-#: ../udesign_options_page.php:3450
+#: ../udesign_options_page.php:3467
 msgid "Distance between the controls (from the borders)."
 msgstr "控件之間的距離（從邊界）。"
 
-#: ../udesign_options_page.php:3459
+#: ../udesign_options_page.php:3476
 msgid "Control Color 1"
 msgstr "控制顏色1"
 
-#: ../udesign_options_page.php:3467
+#: ../udesign_options_page.php:3484
 msgid "Background color of the controls."
 msgstr "控件的背景顏色。"
 
-#: ../udesign_options_page.php:3471
+#: ../udesign_options_page.php:3488
 msgid "Control Color 2"
 msgstr "控制顏色2"
 
-#: ../udesign_options_page.php:3479
+#: ../udesign_options_page.php:3496
 msgid "Font color of the controls."
 msgstr "控件的字體顏色。"
 
-#: ../udesign_options_page.php:3488
+#: ../udesign_options_page.php:3505
 msgid "Control Alpha"
 msgstr "控制Alpha"
 
-#: ../udesign_options_page.php:3491
+#: ../udesign_options_page.php:3508
 msgid "Alpha of a control, when mouse is not over."
 msgstr "當滑鼠不在上時, Alpha的控制。"
 
-#: ../udesign_options_page.php:3495
+#: ../udesign_options_page.php:3512
 msgid "Control Alpha Over"
 msgstr "當鼠標在頂部,控制Alpha"
 
-#: ../udesign_options_page.php:3498
+#: ../udesign_options_page.php:3515
 msgid "Alpha of a control, when mouse is over."
 msgstr "當滑鼠在上時, Alpha的控制。"
 
-#: ../udesign_options_page.php:3502
+#: ../udesign_options_page.php:3519
 msgid "Controls X"
 msgstr "控制X"
 
-#: ../udesign_options_page.php:3505
+#: ../udesign_options_page.php:3522
 msgid ""
 "X-position of the point, which aligns the controls (measured from [0,0] of "
 "the image)."
 msgstr "控制的對齊由X-位置的點決定（從[0,0]的圖像測量的）。"
 
-#: ../udesign_options_page.php:3509
+#: ../udesign_options_page.php:3526
 msgid "Controls Y"
 msgstr "控制Y"
 
-#: ../udesign_options_page.php:3512
+#: ../udesign_options_page.php:3529
 msgid ""
 "Y-position of the point, which aligns the controls (measured from [0,0] of "
 "the image)."
 msgstr "控制的對齊由Y-位置的點決定（從[0,0]的圖像測量的）。"
 
-#: ../udesign_options_page.php:3516
+#: ../udesign_options_page.php:3533
 msgid "Controls' Alignment"
 msgstr "控件的對齊方式"
 
-#: ../udesign_options_page.php:3519 ../udesign_options_page.php:5263
+#: ../udesign_options_page.php:3536 ../udesign_options_page.php:5280
 msgid "Choose Alignment: "
 msgstr "選擇對齊方式："
 
-#: ../udesign_options_page.php:3526
+#: ../udesign_options_page.php:3543
 msgid ""
 "Type of alignment from the point [controlsX, controlsY] - can be \"center\", "
 "\"left\" or \"right\"."
 msgstr "對齊類型的點[控制X，控制Y] -可以是\"中心\"，\"左\"或\"右\"。"
 
-#: ../udesign_options_page.php:3534
+#: ../udesign_options_page.php:3551
 msgid "Toolstips:"
 msgstr "Toolstips:"
 
-#: ../udesign_options_page.php:3538
+#: ../udesign_options_page.php:3555
 msgid "Tooltip Height"
 msgstr "Tooltip高度"
 
-#: ../udesign_options_page.php:3541
+#: ../udesign_options_page.php:3558
 msgid "Height of the tooltip surface in the menu."
 msgstr "在選單中Tooltip的表面的高度。"
 
-#: ../udesign_options_page.php:3550
+#: ../udesign_options_page.php:3567
 msgid "Tooltip Color"
 msgstr "Tooltip顏色"
 
-#: ../udesign_options_page.php:3558
+#: ../udesign_options_page.php:3575
 msgid "Color of the tooltip surface in the menu."
 msgstr "在選單中Tooltip的表面顏色。"
 
-#: ../udesign_options_page.php:3567
+#: ../udesign_options_page.php:3584
 msgid "Tooltip Text Y"
 msgstr "Tooltip文字 Y"
 
-#: ../udesign_options_page.php:3570
+#: ../udesign_options_page.php:3587
 msgid "Y-distance of the tooltip text field from the top of the tooltip."
 msgstr "從Tooltip的上方計算，Tooltip文本字段的Y距離。"
 
-#: ../udesign_options_page.php:3574
+#: ../udesign_options_page.php:3591
 msgid "Tooltip Text Style"
 msgstr "Tooltip文本樣式"
 
-#: ../udesign_options_page.php:3577
+#: ../udesign_options_page.php:3594
 msgid ""
 "The style of the tooltip text, specified in the CSS file. Default: \"P-Italic"
 "\""
 msgstr "在CSS文件中指定的Tooltip文本的樣式。預設設定：\"P斜體的\""
 
-#: ../udesign_options_page.php:3586
+#: ../udesign_options_page.php:3603
 msgid "Tooltip Text Color"
 msgstr "Tooltip文字顏色"
 
-#: ../udesign_options_page.php:3594
+#: ../udesign_options_page.php:3611
 msgid "Color of the tooltip text."
 msgstr "Tooltip文本的顏色。"
 
-#: ../udesign_options_page.php:3603
+#: ../udesign_options_page.php:3620
 msgid "Tooltip Margin Left"
 msgstr "Tooltip左邊距離"
 
-#: ../udesign_options_page.php:3606
+#: ../udesign_options_page.php:3623
 msgid "Margin of the text to the left end of the tooltip."
 msgstr "文本的左端到Tooltip的距離。"
 
-#: ../udesign_options_page.php:3610
+#: ../udesign_options_page.php:3627
 msgid "Tooltip Margin Right"
 msgstr "Tooltip右邊距離"
 
-#: ../udesign_options_page.php:3613
+#: ../udesign_options_page.php:3630
 msgid "Margin of the text to the right end of the tooltip."
 msgstr "文本的右端到Tooltip的距離。"
 
-#: ../udesign_options_page.php:3617
+#: ../udesign_options_page.php:3634
 msgid "Tooltip Text Sharpness"
 msgstr "Tooltip文本的清晰度（-400到400）。"
 
-#: ../udesign_options_page.php:3620
+#: ../udesign_options_page.php:3637
 #, php-format
 msgid "Sharpness of the tooltip text (-400 to 400). %1$sMore info%2$s"
 msgstr "Tooltip文本的銳利度（-400〜400）。 %1$s更多信息%2$s"
 
-#: ../udesign_options_page.php:3624
+#: ../udesign_options_page.php:3641
 msgid "Tooltip Text Thickness"
 msgstr "Tooltip文本的厚度（-400到400）。"
 
-#: ../udesign_options_page.php:3627
+#: ../udesign_options_page.php:3644
 #, php-format
 msgid "Thickness of the tooltip text (-400 to 400). %1$sMore info%2$s"
 msgstr "Tooltip文本的厚度（-400到400）。 %1$s更多信息%2$s"
 
-#: ../udesign_options_page.php:3635
+#: ../udesign_options_page.php:3652
 msgid "Info Text:"
 msgstr "信息文本："
 
-#: ../udesign_options_page.php:3639
+#: ../udesign_options_page.php:3656
 msgid "Info Width"
 msgstr "信息寬度"
 
-#: ../udesign_options_page.php:3642
+#: ../udesign_options_page.php:3659
 msgid "The width of the info text field."
 msgstr "信息文本字段的寬度。"
 
-#: ../udesign_options_page.php:3651
+#: ../udesign_options_page.php:3668
 msgid "Info Background"
 msgstr "資料背景"
 
-#: ../udesign_options_page.php:3659
+#: ../udesign_options_page.php:3676
 msgid "The background color of the info text field."
 msgstr "信息文本字段的背景顏色。"
 
-#: ../udesign_options_page.php:3668
+#: ../udesign_options_page.php:3685
 msgid "Info Background Alpha"
 msgstr "背景資料Alpha。"
 
-#: ../udesign_options_page.php:3671
+#: ../udesign_options_page.php:3688
 msgid ""
 "The alpha of the background of the info text, the image shines through, when "
 "smaller than 1."
 msgstr "信息文本的背景的alpha，當小於1，圖像會照透過。"
 
-#: ../udesign_options_page.php:3675
+#: ../udesign_options_page.php:3692
 msgid "Info Margin"
 msgstr "信息邊距"
 
-#: ../udesign_options_page.php:3678
+#: ../udesign_options_page.php:3695
 msgid "The margin of the text field in the info section to all sides."
 msgstr "信息部分中的文本字段的四方的邊。"
 
-#: ../udesign_options_page.php:3682
+#: ../udesign_options_page.php:3699
 msgid "Info Sharpness"
 msgstr "清晰度"
 
-#: ../udesign_options_page.php:3685
+#: ../udesign_options_page.php:3702
 msgid "Sharpness of the info text (-400 to 400)."
 msgstr "信息文本的清晰度（-400到400）。"
 
-#: ../udesign_options_page.php:3689
+#: ../udesign_options_page.php:3706
 msgid "Info Thickness"
 msgstr "資料厚度"
 
-#: ../udesign_options_page.php:3692
+#: ../udesign_options_page.php:3709
 msgid "Thickness of the info text (-400 to 400)."
 msgstr "信息文本的厚度（-400到400）。"
 
-#: ../udesign_options_page.php:3701
+#: ../udesign_options_page.php:3718
 msgid "Piecemaker 2 Slides:"
 msgstr "Piecemaker2幻燈片："
 
-#: ../udesign_options_page.php:3724 ../udesign_options_page.php:3824
+#: ../udesign_options_page.php:3741 ../udesign_options_page.php:3841
 #: ../widgets/customCategory-widget.php:129
 #: ../widgets/googleMap-widget.php:101 ../widgets/latestPost-widget.php:146
 #: ../widgets/loginForm-widget.php:134 ../widgets/subpages-widget.php:119
 msgid "Title:"
 msgstr "標題："
 
-#: ../udesign_options_page.php:3728 ../udesign_options_page.php:3828
-#: ../udesign_options_page.php:4247 ../udesign_options_page.php:4315
-#: ../udesign_options_page.php:4519 ../udesign_options_page.php:4602
+#: ../udesign_options_page.php:3745 ../udesign_options_page.php:3845
+#: ../udesign_options_page.php:4264 ../udesign_options_page.php:4332
+#: ../udesign_options_page.php:4536 ../udesign_options_page.php:4619
 msgid "Link:"
 msgstr "鏈接："
 
-#: ../udesign_options_page.php:3731 ../udesign_options_page.php:3831
-#: ../udesign_options_page.php:4250 ../udesign_options_page.php:4318
-#: ../udesign_options_page.php:4522 ../udesign_options_page.php:4605
-#: ../udesign_options_page.php:4774 ../udesign_options_page.php:4823
+#: ../udesign_options_page.php:3748 ../udesign_options_page.php:3848
+#: ../udesign_options_page.php:4267 ../udesign_options_page.php:4335
+#: ../udesign_options_page.php:4539 ../udesign_options_page.php:4622
+#: ../udesign_options_page.php:4791 ../udesign_options_page.php:4840
 msgid "Target: "
 msgstr "Target:"
 
-#: ../udesign_options_page.php:3733 ../udesign_options_page.php:3833
-#: ../udesign_options_page.php:4252 ../udesign_options_page.php:4320
-#: ../udesign_options_page.php:4524 ../udesign_options_page.php:4607
-#: ../udesign_options_page.php:4776 ../udesign_options_page.php:4825
+#: ../udesign_options_page.php:3750 ../udesign_options_page.php:3850
+#: ../udesign_options_page.php:4269 ../udesign_options_page.php:4337
+#: ../udesign_options_page.php:4541 ../udesign_options_page.php:4624
+#: ../udesign_options_page.php:4793 ../udesign_options_page.php:4842
 msgid "self"
 msgstr "self"
 
-#: ../udesign_options_page.php:3734 ../udesign_options_page.php:3834
-#: ../udesign_options_page.php:4253 ../udesign_options_page.php:4321
-#: ../udesign_options_page.php:4525 ../udesign_options_page.php:4608
-#: ../udesign_options_page.php:4777 ../udesign_options_page.php:4826
+#: ../udesign_options_page.php:3751 ../udesign_options_page.php:3851
+#: ../udesign_options_page.php:4270 ../udesign_options_page.php:4338
+#: ../udesign_options_page.php:4542 ../udesign_options_page.php:4625
+#: ../udesign_options_page.php:4794 ../udesign_options_page.php:4843
 msgid "blank"
 msgstr "blank"
 
-#: ../udesign_options_page.php:3744 ../udesign_options_page.php:3844
+#: ../udesign_options_page.php:3761 ../udesign_options_page.php:3861
 msgid "To remove the text just leave a single space."
 msgstr "如要刪除文字，只需留下一個空間。"
 
-#: ../udesign_options_page.php:3756 ../udesign_options_page.php:3775
-#: ../udesign_options_page.php:3868 ../udesign_options_page.php:3899
+#: ../udesign_options_page.php:3773 ../udesign_options_page.php:3792
+#: ../udesign_options_page.php:3885 ../udesign_options_page.php:3916
 msgid "Title Attribute:"
 msgstr "標題屬性"
 
-#: ../udesign_options_page.php:3758 ../udesign_options_page.php:3777
-#: ../udesign_options_page.php:3870 ../udesign_options_page.php:3901
+#: ../udesign_options_page.php:3775 ../udesign_options_page.php:3794
+#: ../udesign_options_page.php:3887 ../udesign_options_page.php:3918
 msgid "(The title attribute will be shown in the tooltip on the menu)"
 msgstr "（標題特性將顯示在Tooltip上的選單）"
 
-#: ../udesign_options_page.php:3761 ../udesign_options_page.php:3873
+#: ../udesign_options_page.php:3778 ../udesign_options_page.php:3890
 msgid "SWF Link:"
 msgstr "SWF 鏈結:"
 
-#: ../udesign_options_page.php:3763 ../udesign_options_page.php:3875
+#: ../udesign_options_page.php:3780 ../udesign_options_page.php:3892
 msgid "(Paste the URL to the SWF file here. Should be on same Server)"
 msgstr "（在這裡貼URL到SWF文件。應該在同一台服務器上）"
 
-#: ../udesign_options_page.php:3780 ../udesign_options_page.php:3904
+#: ../udesign_options_page.php:3797 ../udesign_options_page.php:3921
 msgid "Video Link:"
 msgstr "影片連結："
 
-#: ../udesign_options_page.php:3782
+#: ../udesign_options_page.php:3799
 msgid ""
 "(Paste the URL to the video file here. Should be on same Server. Accepted "
 "file formats are MPEG4 with H.264 Codec, as well as F4V and FLV)"
@@ -2949,27 +2973,27 @@ msgstr ""
 "（在這裡貼URL到Video文件。應該在同一台服務器上。接受的文件格式是MPEG4與"
 "H.264Codec，以及F4V和FLV）。"
 
-#: ../udesign_options_page.php:3785 ../udesign_options_page.php:3909
+#: ../udesign_options_page.php:3802 ../udesign_options_page.php:3926
 msgid "Width:"
 msgstr "寬度："
 
-#: ../udesign_options_page.php:3789 ../udesign_options_page.php:3913
+#: ../udesign_options_page.php:3806 ../udesign_options_page.php:3930
 msgid "Height:"
 msgstr "高度："
 
-#: ../udesign_options_page.php:3794 ../udesign_options_page.php:3918
+#: ../udesign_options_page.php:3811 ../udesign_options_page.php:3935
 msgid "Autoplay: "
 msgstr "自動播放："
 
-#: ../udesign_options_page.php:3796 ../udesign_options_page.php:3920
+#: ../udesign_options_page.php:3813 ../udesign_options_page.php:3937
 msgid "Yes"
 msgstr "是"
 
-#: ../udesign_options_page.php:3797 ../udesign_options_page.php:3921
+#: ../udesign_options_page.php:3814 ../udesign_options_page.php:3938
 msgid "No"
 msgstr "不是"
 
-#: ../udesign_options_page.php:3906
+#: ../udesign_options_page.php:3923
 msgid ""
 "(Paste the URL to the FLV file here. Should be on same Server. Accepted file "
 "formats are MPEG4 with H.264 Codec, as well as F4V and FLV)"
@@ -2977,11 +3001,11 @@ msgstr ""
 "（在這裡貼URL到FLV文件。應該在同一台服務器上。接受的文件格式是MPEG4與"
 "H.264Codec，以及F4V和FLV）。"
 
-#: ../udesign_options_page.php:3932
+#: ../udesign_options_page.php:3949
 msgid "Piecemaker 2 Transitions:"
 msgstr "Piecemaker2轉變："
 
-#: ../udesign_options_page.php:3933
+#: ../udesign_options_page.php:3950
 msgid ""
 "You can add as many transitions to the Piecemaker 2 as you want. These "
 "transitions will be started in the order they are specified below. This "
@@ -2989,91 +3013,91 @@ msgid ""
 "last transition is reached, it starts over again with the first transition."
 msgstr ""
 
-#: ../udesign_options_page.php:3934
+#: ../udesign_options_page.php:3951
 msgid ""
 "Every transition needs to have the following six attributes assigned to it:"
 msgstr ""
 
-#: ../udesign_options_page.php:3936
+#: ../udesign_options_page.php:3953
 msgid "Pieces"
 msgstr "件"
 
-#: ../udesign_options_page.php:3936
+#: ../udesign_options_page.php:3953
 msgid "Number of pieces to which the image is sliced."
 msgstr "影像將切片為多少段。"
 
-#: ../udesign_options_page.php:3937
+#: ../udesign_options_page.php:3954
 msgid "Time"
 msgstr "時間"
 
-#: ../udesign_options_page.php:3937
+#: ../udesign_options_page.php:3954
 msgid "Time for one cube to turn."
 msgstr ""
 
-#: ../udesign_options_page.php:3938
+#: ../udesign_options_page.php:3955
 msgid "Transition"
 msgstr "轉變："
 
-#: ../udesign_options_page.php:3938
+#: ../udesign_options_page.php:3955
 msgid ""
 "Transition type of the Tweener class. For more info on these types see the "
 "official Tweener Documentation and go to \"Transition Types\". The best "
 "results are achieved by those transition types, which begin with easeInOut."
 msgstr ""
 
-#: ../udesign_options_page.php:3939
+#: ../udesign_options_page.php:3956
 msgid "Delay"
 msgstr "延遲"
 
-#: ../udesign_options_page.php:3939
+#: ../udesign_options_page.php:3956
 msgid "Delay between the start of one cube to the start of the next cube."
 msgstr ""
 
-#: ../udesign_options_page.php:3940
+#: ../udesign_options_page.php:3957
 msgid "Depth Offset"
 msgstr "深度偏移"
 
-#: ../udesign_options_page.php:3940
+#: ../udesign_options_page.php:3957
 msgid ""
 "The offset during transition on the z-axis. Value between 100 and 1000 are "
 "recommended. But go for experiments."
 msgstr ""
 
-#: ../udesign_options_page.php:3941
+#: ../udesign_options_page.php:3958
 msgid "Cube Distance"
 msgstr "立方體的距離"
 
-#: ../udesign_options_page.php:3941
+#: ../udesign_options_page.php:3958
 msgid ""
 "The distance between the cubes during transition. Values between 5 and 50 "
 "are recommended. But go for experiments."
 msgstr ""
 
-#: ../udesign_options_page.php:3956 ../udesign_options_page.php:4036
+#: ../udesign_options_page.php:3973 ../udesign_options_page.php:4053
 msgid "Pieces:"
 msgstr "件："
 
-#: ../udesign_options_page.php:3960 ../udesign_options_page.php:4040
+#: ../udesign_options_page.php:3977 ../udesign_options_page.php:4057
 msgid "Time:"
 msgstr "時間："
 
-#: ../udesign_options_page.php:3965 ../udesign_options_page.php:4045
+#: ../udesign_options_page.php:3982 ../udesign_options_page.php:4062
 msgid "Transition: "
 msgstr "轉變："
 
-#: ../udesign_options_page.php:4012 ../udesign_options_page.php:4092
+#: ../udesign_options_page.php:4029 ../udesign_options_page.php:4109
 msgid "Delay:"
 msgstr "延遲："
 
-#: ../udesign_options_page.php:4016 ../udesign_options_page.php:4096
+#: ../udesign_options_page.php:4033 ../udesign_options_page.php:4113
 msgid "Depth Offset:"
 msgstr "深度偏移："
 
-#: ../udesign_options_page.php:4020 ../udesign_options_page.php:4100
+#: ../udesign_options_page.php:4037 ../udesign_options_page.php:4117
 msgid "Cube Distance:"
 msgstr "立方體的距離："
 
-#: ../udesign_options_page.php:4118
+#: ../udesign_options_page.php:4135
 msgid ""
 "In the case when JavaScript is disabled the 1st slider image is displayed by "
 "default in place of the Piecemaker 2 slider, you may change that in here"
@@ -3081,48 +3105,48 @@ msgstr ""
 "JavaScript被禁用時，在預設情況下第一滑塊的圖像會代替Piecemaker2滑塊顯示，您可"
 "以在這裡更改"
 
-#: ../udesign_options_page.php:4141
+#: ../udesign_options_page.php:4158
 msgid "Cycle 1 Slider Settings:"
 msgstr "Cycle 1 滑塊設置:"
 
-#: ../udesign_options_page.php:4145 ../udesign_options_page.php:4357
+#: ../udesign_options_page.php:4162 ../udesign_options_page.php:4374
 msgid "Transition Speed"
 msgstr "轉變速度"
 
-#: ../udesign_options_page.php:4148 ../udesign_options_page.php:4360
+#: ../udesign_options_page.php:4165 ../udesign_options_page.php:4377
 msgid "Speed of the transition."
 msgstr "轉變速度。"
 
-#: ../udesign_options_page.php:4152 ../udesign_options_page.php:4364
-#: ../udesign_options_page.php:4659
+#: ../udesign_options_page.php:4169 ../udesign_options_page.php:4381
+#: ../udesign_options_page.php:4676
 msgid "Timeout"
 msgstr "超時"
 
-#: ../udesign_options_page.php:4155 ../udesign_options_page.php:4367
-#: ../udesign_options_page.php:4662
+#: ../udesign_options_page.php:4172 ../udesign_options_page.php:4384
+#: ../udesign_options_page.php:4679
 msgid "Milliseconds between slide transitions (0 to disable auto advance)."
 msgstr "圖片轉變效果之間的毫秒（0代表停用自動進）。"
 
-#: ../udesign_options_page.php:4159 ../udesign_options_page.php:4161
-#: ../udesign_options_page.php:4371 ../udesign_options_page.php:4373
+#: ../udesign_options_page.php:4176 ../udesign_options_page.php:4178
+#: ../udesign_options_page.php:4388 ../udesign_options_page.php:4390
 msgid "Sync"
 msgstr "同步"
 
-#: ../udesign_options_page.php:4164 ../udesign_options_page.php:4376
+#: ../udesign_options_page.php:4181 ../udesign_options_page.php:4393
 msgid ""
 "Toggle this option to see how some effects behave differently (such as "
 "blind, curtain, and zoom)."
 msgstr "切換此選項，看看一些效果有什麼不同的行為（如盲，窗簾，和放大）。"
 
-#: ../udesign_options_page.php:4170 ../udesign_options_page.php:4172
+#: ../udesign_options_page.php:4187 ../udesign_options_page.php:4189
 msgid "Image Frame"
 msgstr "圖像邊框"
 
-#: ../udesign_options_page.php:4175
+#: ../udesign_options_page.php:4192
 msgid "Remove the image frame with the border around the image?"
 msgstr "刪除圖像周圍的邊框？"
 
-#: ../udesign_options_page.php:4176
+#: ../udesign_options_page.php:4193
 msgid ""
 "With the frame enabled (default state) image dimension is 914px by 374px "
 "(width by height). Without the frame image dimension is 940px by 400px. "
@@ -3133,30 +3157,30 @@ msgstr ""
 "架，圖像尺寸是940px X 400px。根據選擇的選項，創建和上載圖片以相應的尺寸為最優"
 "的質量。"
 
-#: ../udesign_options_page.php:4244 ../udesign_options_page.php:4312
+#: ../udesign_options_page.php:4261 ../udesign_options_page.php:4329
 msgid "Transition effect."
 msgstr "轉變特效。"
 
-#: ../udesign_options_page.php:4257 ../udesign_options_page.php:4325
-#: ../udesign_options_page.php:4529 ../udesign_options_page.php:4612
-#: ../udesign_options_page.php:4781 ../udesign_options_page.php:4830
+#: ../udesign_options_page.php:4274 ../udesign_options_page.php:4342
+#: ../udesign_options_page.php:4546 ../udesign_options_page.php:4629
+#: ../udesign_options_page.php:4798 ../udesign_options_page.php:4847
 msgid "Alt Tag:"
 msgstr "Alt:"
 
-#: ../udesign_options_page.php:4260 ../udesign_options_page.php:4328
-#: ../udesign_options_page.php:4784 ../udesign_options_page.php:4833
+#: ../udesign_options_page.php:4277 ../udesign_options_page.php:4345
+#: ../udesign_options_page.php:4801 ../udesign_options_page.php:4850
 msgid "(To clear a text field above, replace it with a single space)"
 msgstr "（要清除上面的文本字段，請使用單一的空間取而代之）"
 
-#: ../udesign_options_page.php:4353
+#: ../udesign_options_page.php:4370
 msgid "Cycle 2 Slider Settings:"
 msgstr "Cycle 2 滑塊設置:"
 
-#: ../udesign_options_page.php:4382 ../udesign_options_page.php:4384
+#: ../udesign_options_page.php:4399 ../udesign_options_page.php:4401
 msgid "Enable Transition on Text"
 msgstr "啟用文本的轉變"
 
-#: ../udesign_options_page.php:4387
+#: ../udesign_options_page.php:4404
 msgid ""
 "Toggle this option to enable/disable the transition effect on the info text. "
 "If disabled (unchecked) then the text will disapear for the duration of the "
@@ -3164,53 +3188,53 @@ msgid ""
 msgstr ""
 "切換此選項來啟用/禁用信息文本的轉變效果。如果禁用，那麼文字在過渡期會消失。"
 
-#: ../udesign_options_page.php:4393 ../udesign_options_page.php:4677
+#: ../udesign_options_page.php:4410 ../udesign_options_page.php:4694
 msgid "Text Size"
 msgstr "文字大小"
 
-#: ../udesign_options_page.php:4412 ../udesign_options_page.php:4696
+#: ../udesign_options_page.php:4429 ../udesign_options_page.php:4713
 msgid ""
 "When using \"em\" you are specifying size relative to the general font size."
 msgstr "當使用\"em\"你指定的字體大小是以一般字體大小為標準。"
 
-#: ../udesign_options_page.php:4416 ../udesign_options_page.php:4700
+#: ../udesign_options_page.php:4433 ../udesign_options_page.php:4717
 msgid "Text Line Height"
 msgstr "文本行的高度"
 
-#: ../udesign_options_page.php:4419 ../udesign_options_page.php:4703
+#: ../udesign_options_page.php:4436 ../udesign_options_page.php:4720
 msgid "Line Height: "
 msgstr "線的高度："
 
-#: ../udesign_options_page.php:4461
+#: ../udesign_options_page.php:4478
 msgid "Slider text color including the Title."
 msgstr "滑塊文字包括標題的顏色。"
 
-#: ../udesign_options_page.php:4486 ../udesign_options_page.php:4569
+#: ../udesign_options_page.php:4503 ../udesign_options_page.php:4586
 msgid "Transition:"
 msgstr "轉變："
 
-#: ../udesign_options_page.php:4534 ../udesign_options_page.php:4617
-#: ../udesign_options_page.php:4795 ../udesign_options_page.php:4844
+#: ../udesign_options_page.php:4551 ../udesign_options_page.php:4634
+#: ../udesign_options_page.php:4812 ../udesign_options_page.php:4861
 msgid "(You could use text and/or html)"
 msgstr "（您可以使用文本和/或HTML）"
 
-#: ../udesign_options_page.php:4540 ../udesign_options_page.php:4623
+#: ../udesign_options_page.php:4557 ../udesign_options_page.php:4640
 msgid "Button Text:"
 msgstr "按鈕上的文字："
 
-#: ../udesign_options_page.php:4542 ../udesign_options_page.php:4625
+#: ../udesign_options_page.php:4559 ../udesign_options_page.php:4642
 msgid "Button Style: "
 msgstr "按鈕的樣式："
 
-#: ../udesign_options_page.php:4544 ../udesign_options_page.php:4627
+#: ../udesign_options_page.php:4561 ../udesign_options_page.php:4644
 msgid "Dark"
 msgstr "暗"
 
-#: ../udesign_options_page.php:4545 ../udesign_options_page.php:4628
+#: ../udesign_options_page.php:4562 ../udesign_options_page.php:4645
 msgid "Light"
 msgstr "淡"
 
-#: ../udesign_options_page.php:4548 ../udesign_options_page.php:4631
+#: ../udesign_options_page.php:4565 ../udesign_options_page.php:4648
 msgid ""
 "The button is activated only if a <strong>Link</strong> is provided. To "
 "remove the button just replace the link with a single space."
@@ -3218,44 +3242,44 @@ msgstr ""
 "該按鈕會被啟動，如果有一個<strong>鏈接</strong>。要刪除按鈕，只需將鏈接更換成"
 "一個空間。"
 
-#: ../udesign_options_page.php:4655
+#: ../udesign_options_page.php:4672
 msgid "Cycle 3 Slider Settings:"
 msgstr "Cycle 3 滑塊設置:"
 
-#: ../udesign_options_page.php:4666 ../udesign_options_page.php:4668
+#: ../udesign_options_page.php:4683 ../udesign_options_page.php:4685
 msgid "Autostop"
 msgstr "自動停止"
 
-#: ../udesign_options_page.php:4671
+#: ../udesign_options_page.php:4688
 msgid "End slideshow after the last slide."
 msgstr "最後的一張滑塊結束後，就結束滑塊放映。"
 
-#: ../udesign_options_page.php:4745
+#: ../udesign_options_page.php:4762
 msgid "Slider text color."
 msgstr "滑塊文字的顏色。"
 
-#: ../udesign_options_page.php:4771 ../udesign_options_page.php:4820
+#: ../udesign_options_page.php:4788 ../udesign_options_page.php:4837
 msgid "Image Link:"
 msgstr "圖像鏈接："
 
-#: ../udesign_options_page.php:4788 ../udesign_options_page.php:4837
+#: ../udesign_options_page.php:4805 ../udesign_options_page.php:4854
 msgid "Image 2:"
 msgstr "第2圖像："
 
-#: ../udesign_options_page.php:4869
+#: ../udesign_options_page.php:4886
 msgid "Title Text"
 msgstr "頁面標題文本"
 
-#: ../udesign_options_page.php:4871
+#: ../udesign_options_page.php:4888
 msgid "Change the Title:"
 msgstr "修改標題："
 
-#: ../udesign_options_page.php:4873
+#: ../udesign_options_page.php:4890
 msgid ""
 "This is the title text displayed in the place of the slider on the home page"
 msgstr "這是顯示在主頁上代替滑塊的標題文字"
 
-#: ../udesign_options_page.php:4893
+#: ../udesign_options_page.php:4910
 #, php-format
 msgid ""
 "You need  to install the \"Revolution Slider\" first before using this "
@@ -3263,61 +3287,61 @@ msgid ""
 "section."
 msgstr ""
 
-#: ../udesign_options_page.php:4905
+#: ../udesign_options_page.php:4922
 #, php-format
 msgid ""
 "No sliders found!  Please create a new slider from the %1$sRevolution Slider"
 "%2$s page."
 msgstr ""
 
-#: ../udesign_options_page.php:4908
+#: ../udesign_options_page.php:4925
 #, fuzzy
 msgid "Choose a Revolution Slider:"
 msgstr "選擇一個滑塊："
 
-#: ../udesign_options_page.php:4910
+#: ../udesign_options_page.php:4927
 msgid "--Select Slider--"
 msgstr ""
 
-#: ../udesign_options_page.php:4915
+#: ../udesign_options_page.php:4932
 #, php-format
 msgid ""
 "To create additional sliders or to configure the existing ones please refer "
 "to the %1$sRevolution Slider%2$s page."
 msgstr ""
 
-#: ../udesign_options_page.php:4915
+#: ../udesign_options_page.php:4932
 #, fuzzy
 msgid "Go to Revolution Slider page"
 msgstr "沒有滑塊"
 
-#: ../udesign_options_page.php:4916
+#: ../udesign_options_page.php:4933
 #, php-format
 msgid "For help please refer to the %1$sDocumentation%2$s."
 msgstr ""
 
-#: ../udesign_options_page.php:4916
+#: ../udesign_options_page.php:4933
 #, fuzzy
 msgid "Go to the Documentation"
 msgstr "使用說明"
 
-#: ../udesign_options_page.php:4936
+#: ../udesign_options_page.php:4953
 msgid "Portfolio Pages"
 msgstr "作品頁面"
 
-#: ../udesign_options_page.php:4938
+#: ../udesign_options_page.php:4955
 msgid ""
 "Use this area to assign Portfolio Categories to their respective Portfolio "
 "pages."
 msgstr "使用此區域以他們各自的作品集頁面，分配作品集分類。"
 
-#: ../udesign_options_page.php:4939
+#: ../udesign_options_page.php:4956
 msgid ""
 "Firstly though, you have to create the Portfolio page(s) and assign the "
 "\"Portfolio page\" template to it."
 msgstr "首先，您必須創建作品集頁和分配\"作品集頁\"模板給它。"
 
-#: ../udesign_options_page.php:4940
+#: ../udesign_options_page.php:4957
 #, fuzzy
 msgid ""
 "If you don't see any categories in the dropdown(s) below it's because you "
@@ -3329,121 +3353,121 @@ msgstr ""
 "下，去\"文章&rarr;類別\"和創造\"作品集\"類別。也不要忘記保存您的所有作品集相"
 "關的文章和該類別下的子分類。"
 
-#: ../udesign_options_page.php:4945
+#: ../udesign_options_page.php:4962
 msgid "To Portfolio page"
 msgstr "連結到作品集頁面"
 
-#: ../udesign_options_page.php:4946
+#: ../udesign_options_page.php:4963
 msgid "assign the Category:"
 msgstr "指定分類："
 
-#: ../udesign_options_page.php:4946 ../widgets/customCategory-widget.php:73
+#: ../udesign_options_page.php:4963 ../widgets/customCategory-widget.php:73
 msgid "Select Category"
 msgstr "選擇分類"
 
-#: ../udesign_options_page.php:4947
+#: ../udesign_options_page.php:4964
 msgid "with"
 msgstr " "
 
-#: ../udesign_options_page.php:4947
+#: ../udesign_options_page.php:4964
 msgid "items per page."
 msgstr "每頁項目數。"
 
-#: ../udesign_options_page.php:4952
+#: ../udesign_options_page.php:4969
 msgid "Do not link adjacent items in this category as gallery."
 msgstr "不要在這一類畫廊鏈接相鄰的項目。"
 
-#: ../udesign_options_page.php:4954
+#: ../udesign_options_page.php:4971
 msgid ""
 "(Remove the ability to go to the next or previous item when previewing with "
 "prettyPhoto lightbox)"
 msgstr "（在預覽PrettyPhoto Lightbox時，刪除去下一個或上一個項目的的能力）"
 
-#: ../udesign_options_page.php:4961
+#: ../udesign_options_page.php:4978
 msgid "Portfolio Title Position"
 msgstr "作品集標題位置"
 
-#: ../udesign_options_page.php:4964
+#: ../udesign_options_page.php:4981
 msgid "Below"
 msgstr "下面"
 
-#: ../udesign_options_page.php:4965
+#: ../udesign_options_page.php:4982
 msgid "Above"
 msgstr "以上"
 
-#: ../udesign_options_page.php:4966
+#: ../udesign_options_page.php:4983
 msgid ""
 "This is the post title shown with every thumbnail. Choose whether you would "
 "like to have it displayed above the Thumbnail or just below it."
 msgstr "這是每個縮略圖顯示的文章標題。選擇你想顯示在縮略圖的上方或正下方。"
 
-#: ../udesign_options_page.php:4973
+#: ../udesign_options_page.php:4990
 msgid ""
 "The following settings refer to the individual portfolio item post (single "
 "post view)"
 msgstr "的以下設定是指個人作品集文章項目（單文章視圖）"
 
-#: ../udesign_options_page.php:4977 ../udesign_options_page.php:5066
-#: ../udesign_options_page.php:5331
+#: ../udesign_options_page.php:4994 ../udesign_options_page.php:5083
+#: ../udesign_options_page.php:5348
 msgid "Sidebar Position"
 msgstr "側邊欄的位置"
 
-#: ../udesign_options_page.php:4982
+#: ../udesign_options_page.php:4999
 msgid "This is the sidebar shown on individual portfolio items' posts"
 msgstr "這是顯示在個人作品集的文章的側邊欄"
 
-#: ../udesign_options_page.php:4986 ../udesign_options_page.php:4988
+#: ../udesign_options_page.php:5003 ../udesign_options_page.php:5005
 #, fuzzy
 msgid "Portfolio Postmetadata"
 msgstr "作品集通訊元數據"
 
-#: ../udesign_options_page.php:4991
+#: ../udesign_options_page.php:5008
 msgid "Show Portfolio Post Metadata box (Single View)."
 msgstr "顯示作品頁通訊Metadata box（單圖）"
 
-#: ../udesign_options_page.php:4992
+#: ../udesign_options_page.php:5009
 msgid ""
 "This is the info block containing the informationa about Author, Date, "
 "Categories, Comments in a single view portfoilo post."
 msgstr ""
 
-#: ../udesign_options_page.php:4998
+#: ../udesign_options_page.php:5015
 #, fuzzy
 msgid "Portfolio Postmetadata Location"
 msgstr "作品集通訊元數據"
 
-#: ../udesign_options_page.php:5001 ../udesign_options_page.php:5193
+#: ../udesign_options_page.php:5018 ../udesign_options_page.php:5210
 #, fuzzy
 msgid "Choose Location: "
 msgstr "選擇位置："
 
-#: ../udesign_options_page.php:5003 ../udesign_options_page.php:5195
+#: ../udesign_options_page.php:5020 ../udesign_options_page.php:5212
 #, fuzzy
 msgid "Bottom"
 msgstr "底部1"
 
-#: ../udesign_options_page.php:5004 ../udesign_options_page.php:5196
+#: ../udesign_options_page.php:5021 ../udesign_options_page.php:5213
 #, fuzzy
 msgid "Top"
 msgstr "頂部"
 
-#: ../udesign_options_page.php:5006
+#: ../udesign_options_page.php:5023
 msgid ""
 "This is the location of the block containing the informationa about Author, "
 "Date, Categories, Comments in a single view portfoilo post."
 msgstr ""
 
-#: ../udesign_options_page.php:5011 ../udesign_options_page.php:5013
+#: ../udesign_options_page.php:5028 ../udesign_options_page.php:5030
 msgid "Portfolio Post Author"
 msgstr "作品集通訊作者"
 
-#: ../udesign_options_page.php:5016
+#: ../udesign_options_page.php:5033
 msgid ""
 "Show Author Name (\"Portfolio Post Metadata\" needs to be enabled for this "
 "option)"
 msgstr "顯示作者名稱（\"作品集文章Metadata元數據\"需要啟用此選項）"
 
-#: ../udesign_options_page.php:5017 ../udesign_options_page.php:5118
+#: ../udesign_options_page.php:5034 ../udesign_options_page.php:5135
 #, fuzzy, php-format
 msgid ""
 "The following text: \"Written by: Author Name\" will be added to the "
@@ -3454,80 +3478,80 @@ msgstr ""
 "下面的文字：\"作者名稱:\"將被添加到日誌元中。作者的名字將顯示為\"%1$s 用戶"
 "&rarr;您的個人資料%2$s<strong>顯示名稱為</strong>字段，並鏈接到頁面上公開。"
 
-#: ../udesign_options_page.php:5017
+#: ../udesign_options_page.php:5034
 msgid "Go to your Profile"
 msgstr ""
 
-#: ../udesign_options_page.php:5023 ../udesign_options_page.php:5025
+#: ../udesign_options_page.php:5040 ../udesign_options_page.php:5042
 msgid "Portfolio Post Tags"
 msgstr "作品頁通訊標籤"
 
-#: ../udesign_options_page.php:5028
+#: ../udesign_options_page.php:5045
 msgid "Show Portfolio Post Tags"
 msgstr "顯示作品頁通訊標籤"
 
-#: ../udesign_options_page.php:5034 ../udesign_options_page.php:5036
+#: ../udesign_options_page.php:5051 ../udesign_options_page.php:5053
 msgid "Show Comment Area"
 msgstr "顯示評論區"
 
-#: ../udesign_options_page.php:5039
+#: ../udesign_options_page.php:5056
 msgid "Show comment area in Portfolio posts (Single View)"
 msgstr "在作品頁通訊顯示評論區（單圖）"
 
-#: ../udesign_options_page.php:5045 ../udesign_options_page.php:5047
-#: ../udesign_options_page.php:5179 ../udesign_options_page.php:5181
+#: ../udesign_options_page.php:5062 ../udesign_options_page.php:5064
+#: ../udesign_options_page.php:5196 ../udesign_options_page.php:5198
 msgid "Full-width Single Post View Page"
 msgstr "全寬單篇文章視圖頁面"
 
-#: ../udesign_options_page.php:5050
+#: ../udesign_options_page.php:5067
 msgid "Remove the sidebar from Single Post View Portfolio pages."
 msgstr "刪除單一的通訊視圖組合頁側欄。"
 
-#: ../udesign_options_page.php:5071
+#: ../udesign_options_page.php:5088
 msgid "This is the sidebar shown on blog pages"
 msgstr "這是網誌網頁上顯示的側邊欄"
 
-#: ../udesign_options_page.php:5075
+#: ../udesign_options_page.php:5092
 msgid "Show Excerpt"
 msgstr "顯示摘錄"
 
-#: ../udesign_options_page.php:5077 ../udesign_options_page.php:5100
-#: ../udesign_options_page.php:5102
+#: ../udesign_options_page.php:5094 ../udesign_options_page.php:5117
+#: ../udesign_options_page.php:5119
 msgid "Exclude Portfolio(s) from Blog"
 msgstr "從網誌排除作品集"
 
-#: ../udesign_options_page.php:5080
+#: ../udesign_options_page.php:5097
 msgid "Show the excerpt instead of the full post content on the Blog page."
 msgstr "網誌頁面上顯示摘錄，而不是完整的文章內容。"
 
-#: ../udesign_options_page.php:5086
+#: ../udesign_options_page.php:5103
 msgid "Excerpt Length"
 msgstr "摘錄長度"
 
-#: ../udesign_options_page.php:5088
+#: ../udesign_options_page.php:5105
 msgid "Change the excerpt length:"
 msgstr "改變摘錄長度："
 
-#: ../udesign_options_page.php:5089
+#: ../udesign_options_page.php:5106
 msgid "This number refers to the number of words to show."
 msgstr "這個數字指的是字數顯示。"
 
-#: ../udesign_options_page.php:5093
+#: ../udesign_options_page.php:5110
 msgid "\"Read more\" Link"
 msgstr "\"讀更多\"鏈接"
 
-#: ../udesign_options_page.php:5096
+#: ../udesign_options_page.php:5113
 msgid ""
 "Enter the text for the post's 'Read more' link.  Leave blank to hide it."
 msgstr "這篇文章的\"閱讀更多\"鏈接中輸入的文字。保留空白，將隱藏它。"
 
-#: ../udesign_options_page.php:5105
+#: ../udesign_options_page.php:5122
 msgid ""
 "Exclude Portfolio section(s) related posts from showing in the the general "
 "Blog section (\"Blog page\" template loop)."
 msgstr "在一般的網誌區（\"網誌頁面\"模板循環）不顯示作品集的相關文章。"
 
-#: ../udesign_options_page.php:5106
+#: ../udesign_options_page.php:5123
 msgid ""
 "Note: Portfolio posts are those that have been assigned to a portfolio "
 "related category. A portfolio related category is one which either directly "
@@ -3537,92 +3561,92 @@ msgstr ""
 "注意：文章作品集是那些已有分配分類的文章作品集。一個作品集相關分類是直接或間"
 "接（父母或後代）被分配到\"作品集\"模板（請參閱\"以上作品集一節的相關任務）"
 
-#: ../udesign_options_page.php:5112 ../udesign_options_page.php:5114
+#: ../udesign_options_page.php:5129 ../udesign_options_page.php:5131
 msgid "Show Post Author"
 msgstr "顯示文章作者"
 
-#: ../udesign_options_page.php:5117
+#: ../udesign_options_page.php:5134
 msgid "Show Author Name"
 msgstr "顯示作者的名字"
 
-#: ../udesign_options_page.php:5118
+#: ../udesign_options_page.php:5135
 msgid "Go to Your Profile"
 msgstr ""
 
-#: ../udesign_options_page.php:5124 ../udesign_options_page.php:5126
+#: ../udesign_options_page.php:5141 ../udesign_options_page.php:5143
 msgid "Post Tags"
 msgstr "通訊標籤"
 
-#: ../udesign_options_page.php:5129
+#: ../udesign_options_page.php:5146
 msgid "Show Post Tags"
 msgstr "顯示通訊標籤"
 
-#: ../udesign_options_page.php:5135 ../udesign_options_page.php:5137
+#: ../udesign_options_page.php:5152 ../udesign_options_page.php:5154
 msgid "Category Archive Title"
 msgstr "分類歸檔標題"
 
-#: ../udesign_options_page.php:5140
+#: ../udesign_options_page.php:5157
 msgid ""
 "Remove the \"Archive for the '...' Category\" string from the category "
 "archive title."
 msgstr "從分類檔案標題中 刪除\"'...'檔案\"分類片語。"
 
-#: ../udesign_options_page.php:5146 ../udesign_options_page.php:5148
+#: ../udesign_options_page.php:5163 ../udesign_options_page.php:5165
 #, fuzzy
 msgid "\"Comments are closed\" message"
 msgstr "迴響已被關閉。"
 
-#: ../udesign_options_page.php:5151
+#: ../udesign_options_page.php:5168
 msgid ""
 "Show \"Comments are closed\" message for posts where the comments have been "
 "disabled, otherwise no message will be displayed."
 msgstr ""
 
-#: ../udesign_options_page.php:5157 ../udesign_options_page.php:5159
+#: ../udesign_options_page.php:5174 ../udesign_options_page.php:5176
 msgid "Full-width Blog Page"
 msgstr "全寬的網誌頁"
 
-#: ../udesign_options_page.php:5162
+#: ../udesign_options_page.php:5179
 msgid "Remove the sidebar from Blog pages."
 msgstr "刪除網誌頁面的側邊欄。"
 
-#: ../udesign_options_page.php:5168 ../udesign_options_page.php:5170
+#: ../udesign_options_page.php:5185 ../udesign_options_page.php:5187
 msgid "Full-width Archive Page"
 msgstr "全寬存檔頁"
 
-#: ../udesign_options_page.php:5173
+#: ../udesign_options_page.php:5190
 msgid ""
 "Remove the sidebar from Archive pages (e.g. Category archives, Date "
 "archives, Tag archives, etc.)."
 msgstr "從存檔頁面刪除側邊欄（例如，分類歸檔，日期檔案，標籤檔案等）。"
 
-#: ../udesign_options_page.php:5184
+#: ../udesign_options_page.php:5201
 msgid "Remove the sidebar from Single Post View pages."
 msgstr "刪除單一通訊視圖頁面的側邊欄。"
 
-#: ../udesign_options_page.php:5190
+#: ../udesign_options_page.php:5207
 msgid "Single View Postmetadata Location"
 msgstr ""
 
-#: ../udesign_options_page.php:5198
+#: ../udesign_options_page.php:5215
 msgid ""
 "This is the location of the block containing the informationa about Author, "
 "Date, Categories, Comments in a single view post."
 msgstr ""
 
-#: ../udesign_options_page.php:5203 ../udesign_options_page.php:5205
+#: ../udesign_options_page.php:5220 ../udesign_options_page.php:5222
 msgid "Post Image in Single Post View"
 msgstr "在單一的通訊視圖發布圖像"
 
-#: ../udesign_options_page.php:5208
+#: ../udesign_options_page.php:5225
 msgid "Display the post image in single post view."
 msgstr "在單一通訊視窗顯示通訊圖像。"
 
-#: ../udesign_options_page.php:5218
+#: ../udesign_options_page.php:5235
 msgid "Blog and Archive Section \"Featured Image\":"
 msgstr "網誌和存檔\"主題圖像\"："
 
-#: ../udesign_options_page.php:5219
+#: ../udesign_options_page.php:5236
 msgid ""
 "Use this section to set the Post \"Featured Image\" the way it will be shown "
 "on the Blog and Archive Pages for each post. Please note, that if you have "
@@ -3634,32 +3658,32 @@ msgstr ""
 "意，如果您有\"post_image\"自定義字段，它將會比文章\"特色圖片\"有優先權，所以"
 "如果你想使用文章\"特色圖片\"，那麼就不要使用自定義字段\"post_image\"。"
 
-#: ../udesign_options_page.php:5223
+#: ../udesign_options_page.php:5240
 msgid "Enable This Section"
 msgstr "啟用這部份"
 
-#: ../udesign_options_page.php:5225 ../udesign_options_page.php:5250
+#: ../udesign_options_page.php:5242 ../udesign_options_page.php:5267
 msgid "Enable Custom \"Featured Image\""
 msgstr "啟用自訂\"特色圖片\""
 
-#: ../udesign_options_page.php:5228
+#: ../udesign_options_page.php:5245
 msgid ""
 "Select this option to apply the settings below to the \"Featured Image\"."
 msgstr "選擇該選項設置以下的\"特色圖片\"。"
 
-#: ../udesign_options_page.php:5237
+#: ../udesign_options_page.php:5254
 msgid "Apply this image width in pixels."
 msgstr "此圖像的寬度，以像素為單位。"
 
-#: ../udesign_options_page.php:5244
+#: ../udesign_options_page.php:5261
 msgid "Apply this image height in pixels."
 msgstr "此圖像的度，以像素為單位。"
 
-#: ../udesign_options_page.php:5248
+#: ../udesign_options_page.php:5265
 msgid "Force Image Dimensions"
 msgstr "控制圖片尺寸大小"
 
-#: ../udesign_options_page.php:5253
+#: ../udesign_options_page.php:5270
 #, fuzzy
 msgid ""
 "Select this option to force cropping and resizing the images which is "
@@ -3669,38 +3693,38 @@ msgstr ""
 "如果你想所有的圖像都是相同的尺寸，請選擇TimThumb裁剪和調整圖像大小，否則在"
 "WordPress的內置的功能會調整大小，應用到\"特色圖片\"。"
 
-#: ../udesign_options_page.php:5256
+#: ../udesign_options_page.php:5273
 #, fuzzy
 msgid ""
 "(This option would only be considered if image cropping is enabled (default) "
 "from the \"General Options\" section)"
 msgstr "（此選項只會被考慮，如果啟用TimThumb是從\"一般選項\"）"
 
-#: ../udesign_options_page.php:5260
+#: ../udesign_options_page.php:5277
 msgid "Image Alignment"
 msgstr "圖像對齊"
 
-#: ../udesign_options_page.php:5266
+#: ../udesign_options_page.php:5283
 msgid "Center"
 msgstr "中心"
 
-#: ../udesign_options_page.php:5298
+#: ../udesign_options_page.php:5315
 msgid "Enable Business Contact"
 msgstr "啟用商業聯繫人"
 
-#: ../udesign_options_page.php:5299
+#: ../udesign_options_page.php:5316
 msgid "Enable Contact Info Fields"
 msgstr "啟用聯繫信息欄位"
 
-#: ../udesign_options_page.php:5302
+#: ../udesign_options_page.php:5319
 msgid "Enable the Business Contact fields (see below for description)"
 msgstr "啟用商業聯繫人的欄位（見下面的說明）"
 
-#: ../udesign_options_page.php:5305
+#: ../udesign_options_page.php:5322
 msgid "Business Contact Fields"
 msgstr "商業聯繫人欄位"
 
-#: ../udesign_options_page.php:5307
+#: ../udesign_options_page.php:5324
 msgid ""
 "The Business Contact Fields provide a way to better display additional "
 "contact information such as Company Name, Address, Phone, etc. An example of "
@@ -3714,66 +3738,66 @@ msgstr ""
 "分中使用\"<strong>電話：</strong>\"和在第二個字段使用\"<strong>（123）"
 "123-4567</strong>\"（在同一\"線上＃\"）。"
 
-#: ../udesign_options_page.php:5308
+#: ../udesign_options_page.php:5325
 msgid "Line 1:"
 msgstr "第1行："
 
-#: ../udesign_options_page.php:5311
+#: ../udesign_options_page.php:5328
 msgid "Line 2:"
 msgstr "第2行："
 
-#: ../udesign_options_page.php:5314
+#: ../udesign_options_page.php:5331
 msgid "Line 3:"
 msgstr "第3行："
 
-#: ../udesign_options_page.php:5317
+#: ../udesign_options_page.php:5334
 msgid "Line 4:"
 msgstr "第4行："
 
-#: ../udesign_options_page.php:5320
+#: ../udesign_options_page.php:5337
 msgid "Line 5:"
 msgstr "第5行："
 
-#: ../udesign_options_page.php:5323
+#: ../udesign_options_page.php:5340
 msgid "Line 6:"
 msgstr "第6行："
 
-#: ../udesign_options_page.php:5326
+#: ../udesign_options_page.php:5343
 msgid "Line 7:"
 msgstr "第7行："
 
-#: ../udesign_options_page.php:5329
+#: ../udesign_options_page.php:5346
 msgid ""
 "Some html tags and inline styling could be used for formatting here, e.g."
 msgstr "一些HTML標籤和內聯樣式可以用於格式設置，例如"
 
-#: ../udesign_options_page.php:5329
+#: ../udesign_options_page.php:5346
 msgid "Address"
 msgstr "地址"
 
-#: ../udesign_options_page.php:5329
+#: ../udesign_options_page.php:5346
 msgid "or"
 msgstr "或是"
 
-#: ../udesign_options_page.php:5335
+#: ../udesign_options_page.php:5352
 msgid "This is the sidebar shown on the Contact page"
 msgstr "這是聯繫頁面上顯示的側邊欄"
 
-#: ../udesign_options_page.php:5337 ../udesign_options_page.php:5338
+#: ../udesign_options_page.php:5354 ../udesign_options_page.php:5355
 msgid "Remove Sidebar"
 msgstr "刪除側邊欄"
 
-#: ../udesign_options_page.php:5341
+#: ../udesign_options_page.php:5358
 msgid ""
 "Remove the sidebar from the Contact page, which will make it a full-width "
 "page layout."
 msgstr "刪除聯繫頁面的側邊欄，這將使它的頁面版式變成全寬的。"
 
-#: ../udesign_options_page.php:5344
+#: ../udesign_options_page.php:5361
 msgid "Phone Number validation"
 msgstr "電話號碼驗證"
 
-#: ../udesign_options_page.php:5345
+#: ../udesign_options_page.php:5362
 msgid ""
 "This is the field displayed in the E-mail form on the Contact page template. "
 "If checked, the validation for North American phone numbers will be enabled."
@@ -3781,143 +3805,143 @@ msgstr ""
 "這是聯繫頁面模板中顯示的E-mail的形式。如果選中，確認北美地區的電話號碼功能將"
 "被啟用。"
 
-#: ../udesign_options_page.php:5346
+#: ../udesign_options_page.php:5363
 msgid "Enable North American phone number validation"
 msgstr "啟用北美地區的電話號碼驗證"
 
-#: ../udesign_options_page.php:5349
+#: ../udesign_options_page.php:5366
 msgid "Enable North American phone number validation in the contact email form"
 msgstr "啟用電子郵件的聯繫資料表格的北美電話號碼驗證"
 
-#: ../udesign_options_page.php:5355
+#: ../udesign_options_page.php:5372
 msgid "E-mail Recipient(s)"
 msgstr "電子郵件收件人"
 
-#: ../udesign_options_page.php:5357
+#: ../udesign_options_page.php:5374
 msgid ""
 "Please enter recipient's email address, comma-separate multiple recipients:"
 msgstr "請輸入收件人的電子郵件地址，以逗號分隔多個收件人："
 
-#: ../udesign_options_page.php:5362 ../udesign_options_page.php:5364
+#: ../udesign_options_page.php:5379 ../udesign_options_page.php:5381
 #, fuzzy
 msgid "Enable reCAPTCHA"
 msgstr "啟用驗證碼"
 
-#: ../udesign_options_page.php:5367
+#: ../udesign_options_page.php:5384
 #, fuzzy, php-format
 msgid ""
 "Add reCAPTCHA to the email form for extra security (for more information "
 "visit %s)"
 msgstr "添加驗證碼，以增強電子郵件的安全性（更多信息，請訪問：%s）"
 
-#: ../udesign_options_page.php:5367 ../udesign_options_page.php:5377
-#: ../udesign_options_page.php:5384
+#: ../udesign_options_page.php:5384 ../udesign_options_page.php:5394
+#: ../udesign_options_page.php:5401
 msgid "Go to www.reCAPTCHA.net"
 msgstr ""
 
-#: ../udesign_options_page.php:5369
+#: ../udesign_options_page.php:5386
 #, fuzzy
 msgid ""
 "Please note: reCAPTCHA will be automatically disabled if the two fields "
 "below are empty!"
 msgstr "請注意：如果在以下兩個字段是空的，驗證碼的功能將自動關閉！"
 
-#: ../udesign_options_page.php:5374
+#: ../udesign_options_page.php:5391
 #, fuzzy
 msgid "reCAPTCHA Public Key"
 msgstr "驗證碼公開密鑰"
 
-#: ../udesign_options_page.php:5377
+#: ../udesign_options_page.php:5394
 msgid "To use reCAPTCHA you must get an API public key from"
 msgstr "要使用驗證碼，你必須得到一個API的的公用密鑰從XXX"
 
-#: ../udesign_options_page.php:5381
+#: ../udesign_options_page.php:5398
 #, fuzzy
 msgid "reCAPTCHA Private Key"
 msgstr "驗證碼專用密鑰"
 
-#: ../udesign_options_page.php:5384
+#: ../udesign_options_page.php:5401
 #, fuzzy
 msgid "To use reCAPTCHA you must get an API private key from"
 msgstr "要使用驗證碼，你必須得到一個API的專用密鑰"
 
-#: ../udesign_options_page.php:5385
+#: ../udesign_options_page.php:5402
 #, fuzzy
 msgid ""
 "This key is used when communicating between your server and the reCAPTCHA "
 "server. Be sure to keep it a secret."
 msgstr "你的服務器和驗證碼的服務器之間進行通信時使用此鍵。務必保持這的秘密。"
 
-#: ../udesign_options_page.php:5389
+#: ../udesign_options_page.php:5406
 #, fuzzy
 msgid "reCAPTCHA Theme"
 msgstr "驗證碼主題"
 
-#: ../udesign_options_page.php:5392
+#: ../udesign_options_page.php:5409
 msgid "Choose Theme: "
 msgstr "選擇主題："
 
-#: ../udesign_options_page.php:5394
+#: ../udesign_options_page.php:5411
 msgid "white"
 msgstr "白色"
 
-#: ../udesign_options_page.php:5395
+#: ../udesign_options_page.php:5412
 msgid "red"
 msgstr "紅色"
 
-#: ../udesign_options_page.php:5396
+#: ../udesign_options_page.php:5413
 msgid "blackglass"
 msgstr "blackglass"
 
-#: ../udesign_options_page.php:5397
+#: ../udesign_options_page.php:5414
 msgid "clean"
 msgstr "乾淨"
 
-#: ../udesign_options_page.php:5403
+#: ../udesign_options_page.php:5420
 #, fuzzy
 msgid "reCAPTCHA Language"
 msgstr "驗證碼語言"
 
-#: ../udesign_options_page.php:5406
+#: ../udesign_options_page.php:5423
 msgid "Language: "
 msgstr "語言："
 
-#: ../udesign_options_page.php:5433
+#: ../udesign_options_page.php:5450
 msgid "Copyright Message"
 msgstr "版權信息"
 
-#: ../udesign_options_page.php:5437
+#: ../udesign_options_page.php:5454
 msgid "Copyright message displayed in the footer."
 msgstr "在頁腳中顯示版權信息。"
 
-#: ../udesign_options_page.php:5441 ../udesign_options_page.php:5443
+#: ../udesign_options_page.php:5458 ../udesign_options_page.php:5460
 msgid "WordPress credits link"
 msgstr "WordPress貢獻人員名單鏈接"
 
-#: ../udesign_options_page.php:5446
+#: ../udesign_options_page.php:5463
 #, php-format
 msgid "Show \"is proudly powered by %s\" in footer?"
 msgstr "在頁腳中顯示\"所提供的%s\"嗎？"
 
-#: ../udesign_options_page.php:5457 ../udesign_options_page.php:5459
+#: ../udesign_options_page.php:5474 ../udesign_options_page.php:5476
 msgid "Your \"U-Design\" Affiliate Link"
 msgstr "您的\"U-Design\"聯屬鏈接"
 
-#: ../udesign_options_page.php:5462
+#: ../udesign_options_page.php:5479
 #, php-format
 msgid "Show %1$sThemeForest Affiliate%2$s link in footer?"
 msgstr "在頁腳顯示%1$sThemeForest聯屬%2$s鏈接？"
 
-#: ../udesign_options_page.php:5464
+#: ../udesign_options_page.php:5481
 #, php-format
 msgid "ThemeForest %1$susername%2$s:"
 msgstr "ThemeForest %1$s使用者帳號%2$s："
 
-#: ../udesign_options_page.php:5466
+#: ../udesign_options_page.php:5483
 msgid "(case-sensitive)"
 msgstr "（區分大小寫）"
 
-#: ../udesign_options_page.php:5467
+#: ../udesign_options_page.php:5484
 #, php-format
 msgid ""
 "Would you like to make money with \"U-Design\"? Refer new ThemeForest users "
@@ -3927,37 +3951,37 @@ msgstr ""
 "您想用U-Design賺錢嗎？介紹新的ThemeForest的用戶用U-Design的主題，ThemeForest"
 "將付您他們的第一次購買的30&#37;。單擊%1s這裡%2$s更多信息。"
 
-#: ../udesign_options_page.php:5477 ../udesign_options_page.php:5479
+#: ../udesign_options_page.php:5494 ../udesign_options_page.php:5496
 msgid "Entries (RSS) link"
 msgstr "項目（RSS）鏈接"
 
-#: ../udesign_options_page.php:5482
+#: ../udesign_options_page.php:5499
 msgid "Show \"Entries (RSS)\" link in footer?"
 msgstr "顯示\"項目（RSS）\"鏈接在頁腳？"
 
-#: ../udesign_options_page.php:5488 ../udesign_options_page.php:5490
+#: ../udesign_options_page.php:5505 ../udesign_options_page.php:5507
 msgid "Comments (RSS) link"
 msgstr "迴響（RSS）鏈接："
 
-#: ../udesign_options_page.php:5493
+#: ../udesign_options_page.php:5510
 msgid "Show \"Comments (RSS)\" link in footer?"
 msgstr "顯示\"迴響（RSS）\"鏈接在頁腳？"
 
-#: ../udesign_options_page.php:5499 ../udesign_options_page.php:5501
+#: ../udesign_options_page.php:5516 ../udesign_options_page.php:5518
 msgid "\"Sticky\" Footer"
 msgstr ""
 
-#: ../udesign_options_page.php:5504
+#: ../udesign_options_page.php:5521
 msgid ""
 "Have the footer stay at the bottom of the page on pages that have very "
 "little content."
 msgstr ""
 
-#: ../udesign_options_page.php:5519
+#: ../udesign_options_page.php:5536
 msgid "Google Analytics"
 msgstr "谷歌分析工具"
 
-#: ../udesign_options_page.php:5523
+#: ../udesign_options_page.php:5540
 msgid ""
 "Paste your Google Analytics or other tracking code here. It will be inserted "
 "just before the closing &lt;/head&gt; tag."
@@ -3965,49 +3989,49 @@ msgstr ""
 "請將您的谷歌分析或其他跟踪工具代碼粘貼在這裡。將插入&lt;/head&gt;標籤剛結束之"
 "前。"
 
-#: ../udesign_options_page.php:5536
+#: ../udesign_options_page.php:5553
 #, fuzzy
 msgid "General Information"
 msgstr "一般選項"
 
-#: ../udesign_options_page.php:5538
+#: ../udesign_options_page.php:5555
 msgid ""
 "960px is the theme's default width. If responsive is enabled the theme will "
 "resize automatically to adjust to the size of the browser window or the type "
 "of device being used based on the following three breakpoints:"
 msgstr ""
 
-#: ../udesign_options_page.php:5540
+#: ../udesign_options_page.php:5557
 msgid "1 ) Breakpoint 1 - [ 960px to 720px ]"
 msgstr ""
 
-#: ../udesign_options_page.php:5541
+#: ../udesign_options_page.php:5558
 msgid "2 ) Breakpoint 2 - [ 720px to 480px ]"
 msgstr ""
 
-#: ../udesign_options_page.php:5542
+#: ../udesign_options_page.php:5559
 msgid "3 ) Breakpoint 3 - [ smaller than 480px ]"
 msgstr ""
 
-#: ../udesign_options_page.php:5552 ../udesign_options_page.php:5554
+#: ../udesign_options_page.php:5569 ../udesign_options_page.php:5571
 #, fuzzy
 msgid "Enable Responsive"
 msgstr "沒有任何回應"
 
-#: ../udesign_options_page.php:5557
+#: ../udesign_options_page.php:5574
 msgid "Enable responsive layout."
 msgstr ""
 
-#: ../udesign_options_page.php:5563
+#: ../udesign_options_page.php:5580
 msgid "Responsive Logo (optional)"
 msgstr ""
 
-#: ../udesign_options_page.php:5566
+#: ../udesign_options_page.php:5583
 #, fuzzy
 msgid "Enter a URL or upload an image for your alternative logo:"
 msgstr "輸入網址或上載你的商標圖像："
 
-#: ../udesign_options_page.php:5571
+#: ../udesign_options_page.php:5588
 msgid ""
 "An alternative logo will be loaded ONLY in the case Breakpoints 2 and 3. "
 "Please note, this is optional, in most cases you won't need an alternative "
@@ -4015,39 +4039,39 @@ msgid ""
 "(if necessary) and center the logo automatically."
 msgstr ""
 
-#: ../udesign_options_page.php:5575
+#: ../udesign_options_page.php:5592
 msgid "Responsive Logo Height"
 msgstr ""
 
-#: ../udesign_options_page.php:5578
+#: ../udesign_options_page.php:5595
 msgid ""
 "(Height) in pixels.  Note: The width is automatically adjusted to the "
 "maximum allowed width."
 msgstr ""
 
-#: ../udesign_options_page.php:5582 ../udesign_options_page.php:5584
+#: ../udesign_options_page.php:5599 ../udesign_options_page.php:5601
 #, fuzzy
 msgid "Remove the Slider Area"
 msgstr "刪除側邊欄"
 
-#: ../udesign_options_page.php:5587
+#: ../udesign_options_page.php:5604
 msgid ""
 "Remove the Slider Area completely from the home page for the Breakpoints 2 "
 "and 3."
 msgstr ""
 
-#: ../udesign_options_page.php:5593 ../udesign_options_page.php:5595
+#: ../udesign_options_page.php:5610 ../udesign_options_page.php:5612
 #, fuzzy
 msgid "Remove Background Images"
 msgstr "頂部背景圖片"
 
-#: ../udesign_options_page.php:5598
+#: ../udesign_options_page.php:5615
 msgid ""
 "Remove all background images for Breakpoint 1. Those are the background "
 "images that have been assigned through the theme's 'Custom Colors' section."
 msgstr ""
 
-#: ../udesign_options_page.php:5599
+#: ../udesign_options_page.php:5616
 msgid ""
 "(Note: The background images will be replaced with their corresponding "
 "background colors for those respective sections. Also, by default the "
@@ -4055,38 +4079,38 @@ msgid ""
 "respectively)"
 msgstr ""
 
-#: ../udesign_options_page.php:5605
+#: ../udesign_options_page.php:5622
 msgid "Responsive Menu"
 msgstr ""
 
-#: ../udesign_options_page.php:5609
+#: ../udesign_options_page.php:5626
 msgid "Responsive Menu 1"
 msgstr ""
 
-#: ../udesign_options_page.php:5610
+#: ../udesign_options_page.php:5627
 msgid "Responsive Menu 2"
 msgstr ""
 
-#: ../udesign_options_page.php:5612
+#: ../udesign_options_page.php:5629
 msgid "Choose a menu to be used for Breakpoints 2 and 3."
 msgstr ""
 
-#: ../udesign_options_page.php:5617 ../udesign_options_page.php:5619
+#: ../udesign_options_page.php:5634 ../udesign_options_page.php:5636
 msgid "Pinch-to-Zoom"
 msgstr ""
 
-#: ../udesign_options_page.php:5622
+#: ../udesign_options_page.php:5639
 msgid ""
 "Enable pinch-to-zoom on mobile devices. Adds the ability to zoom in on "
 "images, text, links, etc. which could come really handy in some situations."
 msgstr ""
 
-#: ../udesign_options_page.php:5628
+#: ../udesign_options_page.php:5645
 #, fuzzy
 msgid "Disable prettyPhoto"
 msgstr "啟用PrettyPhoto文字"
 
-#: ../udesign_options_page.php:5633
+#: ../udesign_options_page.php:5650
 msgid ""
 "This is the device width or browser width at which the prettyPhoto lightbox "
 "effect will be disabled, anything smaller than that width will not have "
@@ -4096,17 +4120,17 @@ msgid ""
 "\"0\"."
 msgstr ""
 
-#: ../udesign_options_page.php:5643
+#: ../udesign_options_page.php:5660
 msgid ""
 "The options in this section are generally offered to assist more advanced "
 "users with deeper knowledge of WordPress programming."
 msgstr ""
 
-#: ../udesign_options_page.php:5647 ../udesign_options_page.php:5649
+#: ../udesign_options_page.php:5664 ../udesign_options_page.php:5666
 msgid "Show Action Hook Locations"
 msgstr ""
 
-#: ../udesign_options_page.php:5652
+#: ../udesign_options_page.php:5669
 msgid ""
 "Enabling this option will allow you to see in the front end the exact "
 "locations of the U-Design action hooks located within the \"body\" tags."

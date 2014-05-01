@@ -51,6 +51,7 @@ address {margin:0 0 1.5em;font-style:italic;}
 del {color:#666;}
 pre {margin:1.5em 0;white-space:pre;}
 pre, code, tt {font:13px 'andale mono', 'lucida console', monospace;line-height:1.5;}
+li {margin-top:5px; margin-bottom:5px;}
 li ul, li ol {margin:0 1.5em;}
 ul, ol {margin:0 1.5em 1.5em 3.5em;}
 ul {list-style-type:disc;}

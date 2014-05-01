@@ -7,7 +7,7 @@
  * This script loads with settings form.
  * ========================================================= */
 
-var wpb_change_tab_title, wpb_change_accordion_tab_title;
+var wpb_change_tab_title, wpb_change_accordion_tab_title, vc_activeMce;
 
 !function($) {
     wpb_change_tab_title = function($element, field) {
@@ -42,6 +42,8 @@ var wpb_change_tab_title, wpb_change_accordion_tab_title;
         qt = quicktags( window.tinyMCEPreInit.qtInit[textfield_id] );
         QTags._buttonsInit();
         window.switchEditors.go(textfield_id, 'tmce');
+        if(tinymce.majorVersion === "4") tinymce.execCommand( 'mceAddEditor', true, textfield_id );
+        vc_activeMce = textfield_id;
         /// window.tinyMCE.get(textfield_id).focus();
     }
     function init_textarea_html_old($element) {
@@ -68,9 +70,52 @@ var wpb_change_tab_title, wpb_change_accordion_tab_title;
          $('#wpb_tinymce_content-html').trigger('click');
          $('#wpb_tinymce_content-tmce').trigger('click'); // Fix hidden toolbar
     }
-
-  $('.vc-color-control').length && $.fn.wpColorPicker && $('.vc-color-control').wpColorPicker();
-
+    // TODO: unsecure. Think about it
+    Color.prototype.toString = function() {
+      if(this._alpha < 1) {
+        return this.toCSS('rgba', this._alpha).replace(/\s+/g, '');
+      }
+      var hex = parseInt( this._color, 10 ).toString( 16 );
+      if ( this.error )
+        return '';
+      // maybe left pad it
+      if ( hex.length < 6 ) {
+        for (var i = 6 - hex.length - 1; i >= 0; i--) {
+          hex = '0' + hex;
+        }
+      }
+      return '#' + hex;
+    };
+    $('.vc-color-control').each(function(){
+      var $control = $(this),
+          value = $control.val().replace(/\s+/g, ''),
+          alpha_val = 100,
+          $alpha, $alpha_output;
+      if(value.match(/rgba\(\d+\,\d+\,\d+\,([^\)]+)\)/)) {
+        alpha_val = parseFloat(value.match(/rgba\(\d+\,\d+\,\d+\,([^\)]+)\)/)[1])*100;
+      }
+      $control.wpColorPicker({
+        clear: function(event, ui) {
+          $alpha.val(100);
+          $alpha_output.val(100 + '%');
+        }
+      });
+      $('<div class="vc-alpha-container">'
+        + '<label>Alpha: <output class="rangevalue">' + alpha_val +'%</output></label>'
+        + '<input type="range" min="1" max="100" value="' + alpha_val +'" name="alpha" class="vc-alpha-field">'
+        + '</div>').appendTo($control.parents('.wp-picker-container:first').addClass('vc-color-picker').find('.iris-picker'));
+      $alpha = $control.parents('.wp-picker-container:first').find('.vc-alpha-field');
+      $alpha_output = $control.parents('.wp-picker-container:first').find('.vc-alpha-container output')
+      $alpha.bind('change keyup', function(){
+        var alpha_val = parseFloat($alpha.val()),
+            iris = $control.data('a8cIris'),
+            color_picker = $control.data('wpWpColorPicker');
+        $alpha_output.val($alpha.val() + '%');
+        iris._color._alpha = alpha_val/100.0;
+        $control.val(iris._color.toString());
+        color_picker.toggler.css( { backgroundColor: $control.val() });
+      }).val(alpha_val).trigger('change');
+    });
     var InitGalleries = function() {
         var that = this;
         // TODO: Backbone style for view binding
@@ -481,10 +526,31 @@ var wpb_change_tab_title, wpb_change_accordion_tab_title;
             value_object = $input.data('json'),
             $link_submit = $('#wp-link-submit'),
             $vc_link_submit = $('<input type="submit" name="vc-link-submit" id="vc-link-submit" class="button-primary" value="Set Link">'),
-            $dialog;
+            dialog;
         $link_submit.hide();
         $("#vc-link-submit").remove();
         $vc_link_submit.insertBefore($link_submit);
+        if($.fn.wpdialog && $('#wp-link').length) {
+          dialog = {
+              $link:  false,
+              open: function() {
+                this.$link = $('#wp-link').wpdialog({
+                  title: wpLinkL10n.title,
+                  width: 480,
+                  height: 'auto',
+                  modal: true,
+                  dialogClass: 'wp-dialog',
+                  zIndex: 300000
+                });
+              },
+              close: function() {
+                this.$link.wpdialog('close');
+              }
+          };
+        } else {
+          dialog = window.wpLink;
+        }
+      /*
         $dialog = $('#wp-link').wpdialog({
                        title: wpLinkL10n.title,
                        width: 480,
@@ -493,6 +559,8 @@ var wpb_change_tab_title, wpb_change_accordion_tab_title;
                        dialogClass: 'wp-dialog',
                        zIndex: 300000
                    });
+       */
+        dialog.open(vc_activeMce);
         window.wpLink.textarea = $self;
         if(_.isString(value_object.url)) $('#url-field').val(value_object.url);
         if(_.isString(value_object.title)) $('#link-title-field').val(value_object.title);
@@ -507,7 +575,7 @@ var wpb_change_tab_title, wpb_change_accordion_tab_title;
             options.title = $('#link-title-field').val();
             options.target = $('#link-target-checkbox').is(':checked') ? ' _blank' : '';
             string = _.map(options, function(value, key){
-                if(_.isString(value) && value.length >0) {
+                if(_.isString(value) && value.length > 0) {
                     return key + ':' + encodeURIComponent(value);
                 }
             }).join('|');
@@ -516,13 +584,15 @@ var wpb_change_tab_title, wpb_change_accordion_tab_title;
             $url_label.html(options.url + options.target );
             $title_label.html(options.title);
 
-            $dialog.wpdialog('close');
+            // $dialog.wpdialog('close');
+            dialog.close();
             $link_submit.show();
             $vc_link_submit.unbind('click.vcLink');
             $vc_link_submit.remove();
             // remove vc_link hooks for wpLink
             $('#wp-link-cancel').unbind('click.vcLink');
             window.wpLink.textarea = '';
+            $('#link-target-checkbox').attr('checked', false);
             return false;
         });
         $('#wp-link-cancel').unbind('click.vcLink').bind('click.vcLink', function(e){
@@ -608,7 +678,6 @@ var wpb_change_tab_title, wpb_change_accordion_tab_title;
                         return_string += '|' + encodeURIComponent($sub_control.val());
                     }
                 });
-
                 return return_string;
             }).join(',');
             this.$data_field.val(value);
@@ -627,4 +696,16 @@ var wpb_change_tab_title, wpb_change_accordion_tab_title;
     $('.wpb-edit-form .textarea_html').each(function(){
       init_textarea_html($(this));
     });
+    $('.wpb_vc_param_value.dropdown').change(function(){
+      var $this = $(this),
+          $options = $this.find(':selected'),
+          prev_option_class = $this.data('option'),
+          option_class = $options.length ? $options.attr('class').replace(/\s/g, '_') : '';
+      prev_option_class != undefined && $this.removeClass(prev_option_class);
+      option_class != undefined && $this.data('option', option_class) && $this.addClass(option_class);
+    });
+    if($('#vc-edit-form-tabs').length) {
+      $('.wpb-edit-form').addClass('vc-with-tabs');
+      $('#vc-edit-form-tabs').tabs();
+    }
 }(window.jQuery);

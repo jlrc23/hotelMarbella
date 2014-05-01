@@ -1,3 +1,38 @@
+22.04.2014 - ver 4.1.2
+   WP 3.9 compatibilty update
+   - php warning/notices in mapper.php
+   - Read more text in post grid is now translable
+   - Autocomplete z-index in loop param increased
+   - Tiny MCE get active editor logic improved
+   - vc_add_param() and other helpers api functions are back to normal
+   - WP 3.9 select link in WYSIWYG editor works now
+   - When default text is removed from wysiwyg editor it will not be back on next edit
+
+17.04.2014 - ver 4.1.1
+   - z-index value for add element modal box increased
+   - Improved element stacking on mopbile devices
+   - Links now work in WP Text element
+   - WP Menus element is populated on init event now
+   - Removed console.log in js file
+   - IE10 fix for TinyMCE
+
+16.04.2014 - ver 4.1
+   - New: Shortcode Mapper, map any third party shortcode to Visual Composer with an easy to use interface
+   - New: Design options for Row, Columns, Text block, Single image and Video block elements. Add baackground color/image, paddings, border and margins. Tons of variations. You are a designer now!
+   - New: Now you can group your params in tabs
+   - White color for button added
+   - Colors are now visible as actual colors in the dropdowns instead of "plain names"
+   - Color picker have alpha chanel now
+   - .po/.mo files updated
+
+09.04.2014 - ver 4.0.5
+   - Compatibility with new TinyMCE version in WordPress 3.9 added
+   - Logic behind license activation button changed. Clicking activate button will save all fields
+   - Image carousel popup next/prev links show correct images
+   - Mobile screen width setting in design options updated to new less/css
+   - "Show only Visual Composer" in "User groups access rules" fixed
+   - Extra CSS class appended to the separator element
+
 27.03.2014 - ver 4.0.4
    Bug fix round
    - Post grid categories: z-index fixed so autosuggestions now visible
