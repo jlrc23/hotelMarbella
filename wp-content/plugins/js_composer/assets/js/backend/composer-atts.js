@@ -16,7 +16,7 @@ var vc = {filters:{templates:[]}, addTemplateFilter:function (callback) {
         parse:function (param) {
             var value;
             var $field = this.content().find('.wpb_vc_param_value[name=' + param.param_name + ']');
-            if (!_.isUndefined(vc.atts[param.type]) && !_.isUndefined(vc.atts[param.type].parse)) {
+          if (!_.isUndefined(vc.atts[param.type]) && !_.isUndefined(vc.atts[param.type].parse)) {
                 value = vc.atts[param.type].parse.call(this, param);
             } else {
                 value = $field.length ? $field.val() : null;
@@ -180,6 +180,14 @@ var vc = {filters:{templates:[]}, addTemplateFilter:function (callback) {
                 } else {
                     $thumbnails.addClass('image-exists').next().removeClass('image-exists');
                 }
+            }
+        },
+        href: {
+            parse: function(param) {
+                var $field = this.content().find('.wpb_vc_param_value[name=' + param.param_name + ']'),
+                    val = '';
+                if($field.length && $field.val() != 'http://') val = $field.val();
+                return val;
             }
         },
         attach_image:{

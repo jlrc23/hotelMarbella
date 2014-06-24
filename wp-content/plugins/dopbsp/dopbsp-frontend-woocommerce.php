@@ -20,6 +20,11 @@
                 add_action('woocommerce_before_calculate_totals', array(&$this, 'updateCartPrice')); // Update cart price.
                 add_action('woocommerce_cart_updated', array(&$this, 'deleteCartItem')); // Delete item from database when is deleted from cart.
                 add_action('woocommerce_order_items_table', array(&$this, 'bookDetails')); // Add reservetions to Booking System in Order.
+                add_action('woocommerce_order_status_on-hold', array(&$this, 'book')); // Add reservetions to Booking System after payment has been completed.
+                add_action('woocommerce_order_status_processing', array(&$this, 'book')); // Add reservetions to Booking System after payment has been completed.
+                add_action('woocommerce_payment_complete', array(&$this, 'book')); // Add reservetions to Booking System after payment has been completed.
+                add_action('woocommerce_order_status_completed', array(&$this, 'book')); // Add reservetions to Booking System after payment has been completed.
+                add_action('woocommerce_thankyou', array(&$this, 'book')); // Add reservetions to Booking System after payment has been completed.
                 
                 // Filters
                 add_filter('woocommerce_single_product_summary', array(&$this, 'addSummary'), 35); // Add calendar in summary on product page.
@@ -108,7 +113,7 @@
             }
             
 // Cart actions.
-            function addToCart(){ // Add booking to cart.
+            function addToCart(){ // Add booking to cart. //woocommerce_add_cart_item
                 global $wpdb;
 		global $woocommerce;
                 
@@ -164,9 +169,11 @@
             function updateCartPrice(){ // Update cart price.
                 global $wpdb;
 		global $woocommerce;
-                
+                global $dopbsp_cart_key;
+                ob_start();
+                $cart_key = '';
                 $cart = $woocommerce->cart->cart_contents;
-                
+                $i = 0;
                 foreach ($cart as $key => $cart_item){
                     $result = $wpdb->get_row('SELECT * FROM '.DOPBSP_WooCommerce_table.' WHERE cart_key="'.$key.'"');
                     
@@ -174,33 +181,66 @@
                         $data = json_decode($result->data);
                         $cart_item['data']->price = $data->price;
                         $cart_item['data']->dopbsp = $data;
+                        
+                        if ($i < 1){
+                            $cart_key = $cart_key.$key;
+                        } else {
+                            $cart_key = $cart_key.','.$key;
+                        }
                     }
+                    $i++;
                 }
+                
+                $dopbsp_cart_key = $cart_key;
+
+                echo '<script type="text/javascript">
+                        function dopbspEraseCookie(name) {
+                            dopbspCreateCookie(name,"",-1);
+                        }
+                        
+                        function dopbspCreateCookie(name,value,days) {
+                            if (days) {
+                                var date = new Date();
+                                date.setTime(date.getTime()+(days*24*60*60*1000));
+                                var expires = "; expires="+date.toGMTString();
+                            }
+                            else var expires = "";
+                            document.cookie = name+"="+value+expires+"; path=/";
+                        }
+                        dopbspEraseCookie("dopbsp_cart_key");
+                        dopbspCreateCookie("dopbsp_cart_key","'.$cart_key.'",1);
+
+                      </script>';
+                
             }
 
             function updateCartInfo($other_data, $cart_item){ // Update bookings info in cart.
                 global $DOPBSP_pluginSeries_translation;
+                global $wpdb;
                 
                 if (isset($cart_item['data']->dopbsp)){
                     $data = $cart_item['data']->dopbsp;
                     $DOPBSP_pluginSeries_translation->setTranslation('frontend', $data->language);
-
+                    
+                    //print_r(DOPBSP_Settings_table); die();
+                    $settings = $wpdb->get_row('SELECT * FROM '.DOPBSP_Settings_table.' WHERE calendar_id="'.$data->calendar_id.'"');
+                    
                     $other_data[] = array('name' =>  DOPBSP_CHECK_IN_LABEL,
-                                          'value' => $data->check_in);
-
+                                          'value' => $this->dateToFormat($data->check_in, $settings->date_type));
+                    
                     if ($data->check_out != ''){
                         $other_data[] = array('name' =>  DOPBSP_CHECK_OUT_LABEL,
-                                              'value' => $data->check_out);
+                                              'value' => $this->dateToFormat($data->check_out, $settings->date_type));
                     }
 
                     if ($data->start_hour != ''){
                         $other_data[] = array('name' =>  DOPBSP_START_HOURS_LABEL,
-                                              'value' => $data->start_hour);
+                                              'value' => ($settings->hours_ampm == 'true' ? $this->timeToAMPM($data->start_hour):$data->start_hour));
                     }
 
                     if ($data->end_hour != ''){
                         $other_data[] = array('name' =>  DOPBSP_END_HOURS_LABEL,
-                                              'value' => $data->end_hour);
+                                              'value' => ($settings->hours_ampm == 'true' ? $this->timeToAMPM($data->end_hour):$data->end_hour));
                     }
 
                     if ((int)$data->no_items > 1){
@@ -212,7 +252,107 @@
                 return $other_data;
             }
             
-            function bookDetails(){// Show Reservation Details in Order
+            function book($order_id){ // Add book
+                
+                global $wpdb;
+                global $woocommerce;
+
+                // WooCommerce Table
+                if (!defined('DOPBSP_WooCommerce_table')){
+                    define('DOPBSP_WooCommerce_table', $wpdb->prefix.'dopbsp_woocommerce');
+                }
+                
+                if (strpos($_COOKIE['dopbsp_cart_key'],',') !== false) {
+                    $cart_key = explode(',',$_COOKIE['dopbsp_cart_key']);
+                    
+                    foreach ($cart_key as $key){
+                        
+                        $result = $wpdb->get_row('SELECT * FROM '.DOPBSP_WooCommerce_table.' WHERE cart_key="'.$key.'"');
+                        
+                        if ($result){
+                            $data = json_decode($result->data);
+                            
+                            $reservations = $wpdb->get_row('SELECT * FROM '.DOPBSP_Reservations_table.' WHERE woo_order_id="'.$order_id.'" AND calendar_id="'.$data->calendar_id.'" AND check_in="'.$data->check_in.'" AND check_out="'.$data->check_out.'" AND check_in="'.$data->check_in.'" AND start_hour="'.$data->start_hour.'" AND end_hour="'.$data->end_hour.'"');
+
+                            if ($wpdb->num_rows < 1) {
+
+                                $wpdb->insert(DOPBSP_Reservations_table, array('woo_order_id' => $order_id,
+                                                                           'calendar_id' => $data->calendar_id,
+                                                                           'check_in' => $data->check_in,
+                                                                           'check_out' => $data->check_out,
+                                                                           'start_hour' => $data->start_hour,
+                                                                           'end_hour' => $data->end_hour,
+                                                                           'no_items' => $data->no_items,
+                                                                           'currency' => $data->currency,
+                                                                           'currency_code' => $data->currency_code,
+                                                                           'total_price' => $data->total_price,
+                                                                           'discount' => $data->discount,
+                                                                           'price' => $data->price,
+                                                                           'deposit' => $data->deposit,
+                                                                           'language' => $data->language,
+                                                                           'email' => '',
+                                                                           'no_people' => '',
+                                                                           'no_children' => '',
+                                                                           'payment_method' => 'woo',
+                                                                           'status' => 'approved',
+                                                                           'info' => '',
+                                                                           'days_hours_history' => json_encode($data->days_hours_history)));
+                            $reservationId = $wpdb->insert_id;
+                            $wpdb->delete(DOPBSP_WooCommerce_table, array('cart_key' => $key));
+
+                            }
+                            $settings = $wpdb->get_row('SELECT * FROM '.DOPBSP_Settings_table.' WHERE calendar_id="'.$data->calendar_id.'"');
+                            
+                            $DOPreservations = new DOPBookingSystemPROBackEndReservations();
+                            $DOPreservations->approveReservationCalendarChange($reservationId, $settings);
+                        }
+                    }
+                } else {
+                    $key = $_COOKIE['dopbsp_cart_key'];
+
+                    $result = $wpdb->get_row('SELECT * FROM '.DOPBSP_WooCommerce_table.' WHERE cart_key="'.$key.'"');
+
+                        if ($result){
+                            $data = json_decode($result->data);
+                            
+                            $reservations = $wpdb->get_row('SELECT * FROM '.DOPBSP_Reservations_table.' WHERE woo_order_id="'.$order_id.'" AND calendar_id="'.$data->calendar_id.'" AND check_in="'.$data->check_in.'" AND check_out="'.$data->check_out.'" AND check_in="'.$data->check_in.'" AND start_hour="'.$data->start_hour.'" AND end_hour="'.$data->end_hour.'"');
+
+                            if ($wpdb->num_rows < 1) {
+
+                                $wpdb->insert(DOPBSP_Reservations_table, array('woo_order_id' => $order_id,
+                                                                           'calendar_id' => $data->calendar_id,
+                                                                           'check_in' => $data->check_in,
+                                                                           'check_out' => $data->check_out,
+                                                                           'start_hour' => $data->start_hour,
+                                                                           'end_hour' => $data->end_hour,
+                                                                           'no_items' => $data->no_items,
+                                                                           'currency' => $data->currency,
+                                                                           'currency_code' => $data->currency_code,
+                                                                           'total_price' => $data->total_price,
+                                                                           'discount' => $data->discount,
+                                                                           'price' => $data->price,
+                                                                           'deposit' => $data->deposit,
+                                                                           'language' => $data->language,
+                                                                           'email' => '',
+                                                                           'no_people' => '',
+                                                                           'no_children' => '',
+                                                                           'payment_method' => 'woo',
+                                                                           'status' => 'approved',
+                                                                           'info' => '',
+                                                                           'days_hours_history' => json_encode($data->days_hours_history)));
+                            $reservationId = $wpdb->insert_id;
+                            $wpdb->delete(DOPBSP_WooCommerce_table, array('cart_key' => $key));
+
+                            }
+                            $settings = $wpdb->get_row('SELECT * FROM '.DOPBSP_Settings_table.' WHERE calendar_id="'.$data->calendar_id.'"');
+
+                            $DOPreservations = new DOPBookingSystemPROBackEndReservations();
+                            $DOPreservations->approveReservationCalendarChange($reservationId, $settings);
+                        }
+                }
+            }
+            
+            function bookDetails($order){// Show Reservation Details in Order
                 global $wpdb;
                 global $DOPBSP_pluginSeries_translation;
                 global $post;
@@ -221,19 +361,77 @@
                 $DOPBSP_pluginSeries_translation->setTranslation('frontend', 'en');
                 $DOPBSP_pluginSeries_translation->setTranslation('backend', 'en');
                 
-                $order_id = $_GET['order'];
+                $order_id = $order->id;
                 
                 $query = 'SELECT * FROM '.DOPBSP_Reservations_table.' WHERE woo_order_id="'.$order_id.'"';
                 $reservations = $wpdb->get_results($query);
                 
                 if ($wpdb->num_rows > 0){
                     foreach ($reservations as $reservation){
+                         $settings = $wpdb->get_row('SELECT * FROM '.DOPBSP_Settings_table.' WHERE calendar_id="'.$reservation->calendar_id.'"');
                          array_push($reservationsHTML, "<h4>".DOPBSP_TITLE_RESERVATIONS."</h4>");
-                         array_push($reservationsHTML, "<p><strong>".DOPBSP_CHECK_IN_LABEL.":</strong> ".$reservation->check_in." ".$reservation->start_hour."</p>");
-                         array_push($reservationsHTML, "<p><strong>".DOPBSP_CHECK_OUT_LABEL.":</strong> ".$reservation->check_out." ".$reservation->end_hour."</p>");
+                         array_push($reservationsHTML, "<p><strong>".DOPBSP_RESERVATIONS_CHECK_IN_LABEL.":</strong> ".$this->dateToFormat($reservation->check_in, $settings->date_type)." ".($settings->hours_ampm == 'true' ? $this->timeToAMPM($reservation->start_hour):$reservation->start_hour)."</p>");
+                         
+                         if($reservation->check_out != "" || $reservation->end_hour != ""){
+                            array_push($reservationsHTML, "<p><strong>".DOPBSP_RESERVATIONS_CHECK_OUT_LABEL.":</strong> ".$this->dateToFormat($reservation->check_out, $settings->date_type)." ".($settings->hours_ampm == 'true' ? $this->timeToAMPM($reservation->end_hour):$reservation->end_hour)."</p>");
+                         }
                     }
                     
                     echo implode("\n", $reservationsHTML);
+                }
+            }
+            
+            // Prototypes
+            function dateToFormat($date, $type){
+                $month_names = array(DOPBSP_MONTH_JANUARY, DOPBSP_MONTH_FEBRUARY, DOPBSP_MONTH_MARCH, DOPBSP_MONTH_APRIL, DOPBSP_MONTH_MAY, DOPBSP_MONTH_JUNE, DOPBSP_MONTH_JULY, DOPBSP_MONTH_AUGUST, DOPBSP_MONTH_SEPTEMBER, DOPBSP_MONTH_OCTOBER, DOPBSP_MONTH_NOVEMBER, DOPBSP_MONTH_DECEMBER);
+                $dayPieces = explode('-', $date);
+
+                if ($type == '1'){
+                    $data = $month_names[(int)$dayPieces[1]-1].' '.$dayPieces[2].', '.$dayPieces[0];
+                    
+                    if (str_replace(' ','',$data) == ','){
+                        $data = '';
+                    }
+                    return $data;
+                }
+                else{
+                    
+                    $data = $dayPieces[2].' '.$month_names[(int)$dayPieces[1]-1].' '.$dayPieces[0];
+                    
+                    if (str_replace(' ','',$data) == ','){
+                        $data = '';
+                    }
+                    return $data;
+                }
+            }
+            
+            function timeToAMPM($item){
+                $time_pieces = explode(':', $item);
+                $hour = (int)$time_pieces[0];
+                $minutes = $time_pieces[1];
+                $result = '';
+
+                if ($hour == 0){
+                    $result = '12';
+                }
+                else if ($hour > 12){
+                    $result = $this->timeLongItem($hour-12);
+                }
+                else{
+                    $result = $this->timeLongItem($hour);
+                }
+
+                $result .= ':'.$minutes.' '.($hour < 12 ? 'AM':'PM');
+
+                return $result;
+            }
+            
+            function timeLongItem($item){
+                if ($item < 10){
+                    return '0'.$item;
+                }
+                else{
+                    return $item;
                 }
             }
         }

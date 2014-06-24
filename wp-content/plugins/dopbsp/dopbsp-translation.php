@@ -93,6 +93,25 @@
                 }
             }
             
+// Fix Translation 
+            function fixTranslation($language){// Show Calendars List.
+                global $wpdb;
+                $translationHTML = array();
+                
+                $translation = $wpdb->get_results('SELECT * FROM '.DOPBSP_Translation_table.'_'.$language);
+                
+                foreach ($translation as $item){
+                    
+                    if (strpos($item->translation,'\n') !== false || strpos($item->translation,'\r\n') !== false || strpos($item->translation,'\r') !== false || strpos($item->translation,'\\') !== false || strpos($item->translation,"\'") !== false) {
+                        $item->translation = str_replace("\n", '<br>', $item->translation);
+                        $item->translation = str_replace("\r\n", '<br>', $item->translation);
+                        $item->translation = str_replace("\r", '', $item->translation);
+                        $item->translation = str_replace("\'", '\"', $item->translation);
+                        $wpdb->update(DOPBSP_Translation_table.'_'.$language, array('translation' => $item->translation), array('id' => $item->id));
+                    }
+                }
+            }
+            
 // Set translation            
             function setTranslation($location = 'backend', $language = DOPBSP_CONFIG_FRONTEND_DEFAULT_LANGUAGE){ // Set translation constants.
                 global $wpdb;
@@ -111,10 +130,17 @@
                     }
                 }
                 
-                $translation = $wpdb->get_results('SELECT * FROM '.DOPBSP_Translation_table.'_'.$language.' WHERE location="'.$location.'"');
+                // Check if translation is contain \n and replace with <br>
+                $this->fixTranslation($language);
                 
+                $translation = $wpdb->get_results('SELECT * FROM '.DOPBSP_Translation_table.'_'.$language.' WHERE location="'.$location.'"');
+                //print_r($translation);
                 foreach ($translation as $item){
                     if (!defined($item->key_data)){
+                        //$item->translation = nl2br($item->translation);
+                        $item->translation = str_replace("\n", '<br>', $item->translation);
+                        //$item->translation = str_replace('\\n', "</br>", $item->translation);
+                        //echo $item->translation; 
                         define($item->key_data, str_replace('<<single-quote>>', "'", stripslashes($item->translation)));
                     }
                 }
@@ -134,6 +160,7 @@
                 array_push($translationHTML, '  <tbody>');
                 
                 foreach ($translation as $item){
+                    $item->translation = str_replace("<br>", '', $item->translation);
                     array_push($translationHTML, '<tr>');
                     array_push($translationHTML, '  <td>');
                     array_push($translationHTML, ($item->parent_key == 'none' ? '':'<span class="translation-hint">['.constant($item->parent_key).']</span>').' '.str_replace('<<single-quote>>', "'", stripslashes($item->text_data)));
@@ -158,7 +185,10 @@
             function editTranslation(){
                 global $wpdb;
                 
-                $wpdb->update(DOPBSP_Translation_table.'_'.$_POST['language'], array('translation' => str_replace("\'", '<<single-quote>>', $_POST['value'])), array('id' => $_POST['id']));
+                $value = $_POST['value'];
+                $value = str_replace("\'", '<<single-quote>>', $value);
+                $value = str_replace("\n", '<br>', $value);
+                $wpdb->update(DOPBSP_Translation_table.'_'.$_POST['language'], array('translation' => $value), array('id' => $_POST['id']));
                 echo '';
                 
                 die();
@@ -1120,7 +1150,7 @@
                 
                 array_push($lang, array('key' => 'DOPBSP_ADD_RESERVATION_FORM_REQUIRED',
                                         'parent' => 'DOPBSP_PARENT_ADD_RESERVATION_FORM',
-                                        'text' => 'is required.',
+                                        'text' => 'es obligatorio.',
                                         'de' => 'erforderlich.',
                                         'du' => 'is verplicht.',
                                         'fr' => 'est requis.',
@@ -2380,7 +2410,7 @@
                                         'pl' => 'Informacje kontaktowe'));
                 array_push($lang, array('key' => 'DOPBSP_FORM_REQUIRED',
                                         'parent' => 'DOPBSP_FRONTEND_PARENT_CALENDAR_FORM',
-                                        'text' => 'is required.',
+                                        'text' => 'es obligatorio.',
                                         'de' => 'erforderlich.',
                                         'du' => 'is verplicht.',
                                         'fr' => 'est requis.',

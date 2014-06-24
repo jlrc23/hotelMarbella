@@ -21,7 +21,10 @@
                 add_action('woocommerce_process_product_meta', array(&$this, 'saveTab')); // Save options.
                 add_action('woocommerce_before_calculate_totals', array(&$this, 'updateCartPrice')); // Update cart price.
                 add_action('woocommerce_order_status_on-hold', array(&$this, 'book')); // Add reservetions to Booking System after payment has been completed.
+                add_action('woocommerce_order_status_pending', array(&$this, 'book')); // Add reservetions to Booking System after payment has been completed.
+                add_action('woocommerce_order_status_processing', array(&$this, 'book')); // Add reservetions to Booking System after payment has been completed.
                 add_action('woocommerce_payment_complete', array(&$this, 'book')); // Add reservetions to Booking System after payment has been completed.
+                add_action('woocommerce_order_status_completed', array(&$this, 'book')); // Add reservetions to Booking System after payment has been completed.
                 add_action('woocommerce_admin_order_data_after_billing_address', array(&$this, 'bookDetails')); // Add reservetions to Booking System in Order.
                 add_action('woocommerce_email_before_order_table', array(&$this, 'bookEmailDetails')); // Add reservetions to Booking System in Order.
                 
@@ -151,8 +154,8 @@
                                            'ar' => 'Arabic (>العربية)',
                                            'az' => 'Azerbaijani (Azərbaycan)',
                                            'bs' => 'Basque (Euskal)',
-                                           'by' => 'Belarusian (Беларускай)',
-                                           'bg' => 'Bulgarian (Български)',
+                                           'by' => 'Belarusian (Белару�?кай)',
+                                           'bg' => 'Bulgarian (Българ�?ки)',
                                            'ca' => 'Catalan (Català)',
                                            'cn' => 'Chinese (中国的)',
                                            'cr' => 'Croatian (Hrvatski)',
@@ -167,29 +170,29 @@
                                            'fr' => 'French (Français)',
                                            'gl' => 'Galician (Galego)',
                                            'de' => 'German (Deutsch)',
-                                           'gr' => 'Greek (Ɛλληνικά)',
+                                           'gr' => 'Greek (�?λληνικά)',
                                            'ha' => 'Haitian Creole (Kreyòl Ayisyen)',
                                            'he' => 'Hebrew (עברית)',
                                            'hi' => 'Hindi (हिंदी)',
                                            'hu' => 'Hungarian (Magyar)',
-                                           'is' => 'Icelandic (Íslenska)',
+                                           'is' => 'Icelandic (�?slenska)',
                                            'id' => 'Indonesian (Indonesia)',
                                            'ir' => 'Irish (Gaeilge)',
                                            'it' => 'Italian (Italiano)',
-                                           'ja' => 'Japanese (日本の)',
-                                           'ko' => 'Korean (한국의)',            
+                                           'ja' => 'Japanese (日本�?�)',
+                                           'ko' => 'Korean (한국�?�)',            
                                            'lv' => 'Latvian (Latvijas)',
                                            'lt' => 'Lithuanian (Lietuvos)',            
-                                           'mk' => 'Macedonian (македонски)',
+                                           'mk' => 'Macedonian (македон�?ки)',
                                            'mg' => 'Malay (Melayu)',
                                            'ma' => 'Maltese (Maltija)',
                                            'no' => 'Norwegian (Norske)',            
-                                           'pe' => 'Persian (فارسی)',
+                                           'pe' => 'Persian (�?ارسی)',
                                            'pl' => 'Polish (Polski)',
                                            'pt' => 'Portuguese (Português)',
                                            'ro' => 'Romanian (Română)',
-                                           'ru' => 'Russian (Pусский)',
-                                           'sr' => 'Serbian (Cрпски)',
+                                           'ru' => 'Russian (Pу�?�?кий)',
+                                           'sr' => 'Serbian (Cрп�?ки)',
                                            'sk' => 'Slovak (Slovenských)',
                                            'sl' => 'Slovenian (Slovenski)',
                                            'sp' => 'Spanish (Español)',
@@ -197,7 +200,7 @@
                                            'se' => 'Swedish (Svenskt)',
                                            'th' => 'Thai (ภาษาไทย)',
                                            'tr' => 'Turkish (Türk)',
-                                           'uk' => 'Ukrainian (Український)',
+                                           'uk' => 'Ukrainian (Україн�?ький)',
                                            'ur' => 'Urdu (اردو)',
                                            'vi' => 'Vietnamese (Việt)',
                                            'we' => 'Welsh (Cymraeg)',
@@ -330,9 +333,13 @@
                 
                 if ($wpdb->num_rows > 0){
                     foreach ($reservations as $reservation){
+                         $settings = $wpdb->get_row('SELECT * FROM '.DOPBSP_Settings_table.' WHERE calendar_id="'.$reservation->calendar_id.'"');
                          array_push($reservationsHTML, "<h4>".DOPBSP_TITLE_RESERVATIONS."</h4>");
-                         array_push($reservationsHTML, "<p><strong>".DOPBSP_RESERVATIONS_CHECK_IN_LABEL.":</strong> ".$reservation->check_in." ".$reservation->start_hour."</p>");
-                         array_push($reservationsHTML, "<p><strong>".DOPBSP_RESERVATIONS_CHECK_OUT_LABEL.":</strong> ".$reservation->check_out." ".$reservation->end_hour."</p>");
+                         array_push($reservationsHTML, "<p><strong>".DOPBSP_RESERVATIONS_CHECK_IN_LABEL.":</strong> ".$this->dateToFormat($reservation->check_in, $settings->date_type)." ".$reservation->start_hour."</p>");
+                         
+                         if($reservation->check_out != "" || $reservation->end_hour != ""){
+                            array_push($reservationsHTML, "<p><strong>".DOPBSP_RESERVATIONS_CHECK_OUT_LABEL.":</strong> ".$this->dateToFormat($reservation->check_out, $settings->date_type)." ".$reservation->end_hour."</p>");
+                         }
                     }
                     
                     echo implode("\n", $reservationsHTML);
@@ -350,9 +357,13 @@
                 
                 if ($wpdb->num_rows > 0){
                     foreach ($reservations as $reservation){
+                         $settings = $wpdb->get_row('SELECT * FROM '.DOPBSP_Settings_table.' WHERE calendar_id="'.$reservation->calendar_id.'"');
                          array_push($reservationsHTML, "<h4>".DOPBSP_TITLE_RESERVATIONS."</h4>");
-                         array_push($reservationsHTML, "<p><strong>".DOPBSP_RESERVATIONS_CHECK_IN_LABEL.":</strong> ".$reservation->check_in." ".$reservation->start_hour."</p>");
-                         array_push($reservationsHTML, "<p><strong>".DOPBSP_RESERVATIONS_CHECK_OUT_LABEL.":</strong> ".$reservation->check_out." ".$reservation->end_hour."</p>");
+                         array_push($reservationsHTML, "<p><strong>".DOPBSP_RESERVATIONS_CHECK_IN_LABEL.":</strong> ".$this->dateToFormat($reservation->check_in, $settings->date_type)." ".$reservation->start_hour."</p>");
+                         
+                         if($reservation->check_out != "" || $reservation->end_hour != ""){
+                            array_push($reservationsHTML, "<p><strong>".DOPBSP_RESERVATIONS_CHECK_OUT_LABEL.":</strong> ".$this->dateToFormat($reservation->check_out, $settings->date_type)." ".$reservation->end_hour."</p>");
+                         }
                     }
                     
                     echo implode("\n", $reservationsHTML);

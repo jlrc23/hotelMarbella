@@ -15,6 +15,7 @@
      * @type {*}
      */
     vc.clone_index = 1;
+    vc.saved_custom_css = false;
     var ShortcodeView = vc.shortcode_view = Backbone.View.extend({
         tagName:'div',
         $content:'',
@@ -38,6 +39,7 @@
         createParams:function () {
             var tag = this.model.get('shortcode'),
                 params = _.isObject(vc.map[tag]) && _.isArray(vc.map[tag].params) ? vc.map[tag].params : [];
+            this.params = {};
             _.each(params, function (param) {
                 this.params[param.param_name] = param;
             }, this);
@@ -148,8 +150,8 @@
                     if (_.isObject(vc.atts[p.type]) && _.isFunction(vc.atts[p.type].render)) {
                         value = vc.atts[p.type].render.call(this, p, value);
                     }
-                    if ($wrapper.children('.' + p.param_name).is('div, h1,h2,h3,h4,h5,h6, span, i, b, strong, button')) {
-                        $wrapper.children('[name=' + p.param_name + ']').html(value);
+                    if ($wrapper.children('.' + p.param_name).is('input,textarea,select')) {
+                      $wrapper.children('[name=' + p.param_name + ']').val(value);
                     } else if ($wrapper.children('.' + p.param_name).is('iframe')) {
                         $wrapper.children('[name=' + p.param_name + ']').attr('src', value);
                     } else if ($wrapper.children('.' + p.param_name).is('img')) {
@@ -172,7 +174,7 @@
                         $img.attr('src', value);
                       }
                     } else {
-                        $wrapper.children('[name=' + p.param_name + ']').val(value);
+                      $wrapper.children('[name=' + p.param_name + ']').html(value);
                     }
                     if ($admin_label.length) {
                         if (_.isObject(p.value) && !_.isArray(p.value) && p.type == 'checkbox') {
@@ -212,7 +214,7 @@
         },
 
         addElement:function (e) {
-            if (_.isObject(e)) e.preventDefault();
+            _.isObject(e) && e.preventDefault();
             new ElementBlockView({model:{position_to_add:!_.isObject(e) || !$(e.currentTarget).closest('.bottom-controls').hasClass('bottom-controls') ? 'start' : 'end'}}).show(this);
         },
         editElement:function (e) {
@@ -228,7 +230,7 @@
         cloneModel:function (model, parent_id, save_order) {
             var shortcodes_to_resort = [],
                 new_order = _.isBoolean(save_order) && save_order === true ? model.get('order') : parseFloat(model.get('order')) + vc.clone_index,
-                model_clone = Shortcodes.create({shortcode:model.get('shortcode'), id:vc_guid(), parent_id:parent_id, order:new_order, cloned:true, cloned_from:model.toJSON(), params:_.extend({}, model.get('params'))});
+                model_clone = Shortcodes.create({shortcode:model.get('shortcode'), id: window.vc_guid(), parent_id:parent_id, order:new_order, cloned:true, cloned_from:model.toJSON(), params:_.extend({}, model.get('params'))});
             _.each(Shortcodes.where({parent_id:model.id}), function (shortcode) {
                 this.cloneModel(shortcode, model_clone.get('id'), true);
             }, this);
@@ -272,6 +274,7 @@
         }
       },
       save: function() {
+        this.setAlertOnDataChange();
         this.$field.val(this.$editor.val());
         this.close();
       },
@@ -281,6 +284,14 @@
       },
       close:function () {
         this.$el.modal('hide');
+      },
+      /**
+       * Set alert if custom css data differs from saved data.
+       */
+      setAlertOnDataChange: function() {
+        if(vc.saved_custom_css !== this.$editor.val() && window.tinymce) {
+          window.tinymce.get('content').isNotDirty = false;
+        }
       }
     });
     /**
@@ -332,14 +343,14 @@
                 }
                 item_selector += parent_selector.join(',');
             } else {
-                item_selector += not_in;
+                if(not_in) item_selector = not_in;
             }
             // OLD fashion
             if (tag !== false && tag !== false && !_.isUndefined(vc.map[tag].allowed_container_element)) {
                 if (vc.map[tag].allowed_container_element === false) {
                     item_selector += ':not([data-is-container=true])';
                 } else if (_.isString(vc.map[tag].allowed_container_element)) {
-                    item_selector += ':not([data-is-container=true][data-element!=' + vc.map[tag].allowed_container_element + '])';
+                    item_selector += ':not([data-is-container=true]), [data-element="' + vc.map[tag].allowed_container_element + '"]';
                 }
             }
             $('.wpb-content-layouts', $list).isotope({
@@ -347,7 +358,7 @@
                 layoutMode:'fitRows',
                 filter:null
             });
-
+            $(item_selector, $list).addClass('isotope-item');
             $('.wpb-content-layouts', $list).isotope('reloadItems');
             $('.wpb-content-layouts-container .isotope-filter a:first', $list).trigger('click');
             $('[data-filter]', this.$el).each(function () {
@@ -365,20 +376,20 @@
                 if (_.isObject(shortcode.as_child)) {
                     if (_.isString(shortcode.as_child.only)) {
                         if (!_.contains(shortcode.as_child.only.replace(/\s/, '').split(','), tag)) {
-                            memo += separator + '[data-element=' + shortcode.base + ']';
+                            memo += separator + '.wpb-layout-element-button:not([data-element="' + shortcode.base + '"])';
                         }
                     }
                     if (_.isString(shortcode.as_child.except)) {
                         if (_.contains(shortcode.as_child.except.replace(/\s/, '').split(','), tag)) {
-                            memo += separator + '[data-element=' + shortcode.base + ']';
+                            memo += separator + '.wpb-layout-element-button:not([data-element="' + shortcode.base + '"])';
                         }
                     }
                 } else if (shortcode.as_child === false) {
-                    memo += separator + '[data-element=' + shortcode.base + ']';
+                    memo += separator + '.wpb-layout-element-button:not([data-element="' + shortcode.base + '"])';
                 }
                 return memo;
             }, '');
-            return _.isEmpty(selector) ? '' : ':not(' + selector + ')';
+            return selector;
         }),
         filterElements:function (e) {
             e.stopPropagation();
@@ -456,13 +467,19 @@
         show:function (container) {
           this.container = container;
           this.render();
+          $(window).bind('resize.ModalView', this.setSize);
+          this.setSize();
           this.$el.modal('show');
         },
         close:function () {
+            $(window).unbind('resize.ModalView');
             this.$el.modal('hide');
+        },
+        setSize: function() {
+          var height = $(window).height() - 143;
+          this.$el.find('.modal-body').css('maxHeight', height);
         }
     });
-
     var SettingsView = Backbone.View.extend({
         tagName:'div',
         className:'wpb_bootstrap_modals',
@@ -520,8 +537,9 @@
         },
         hookDependent:function (e, dependent_elements) {
             var $master = $(e.currentTarget),
-            master_value,
-            is_empty;
+                $master_container = $master.closest('.vc_row-fluid'),
+                master_value,
+                is_empty;
             dependent_elements = _.isArray(dependent_elements) ? dependent_elements : this.dependent_elements[$master.attr('name')],
             master_value = $master.is(':checkbox') ? _.map(this.$content.find('[name=' + $(e.currentTarget).attr('name') + '].wpb_vc_param_value:checked'),
                     function (element) {
@@ -530,9 +548,9 @@
                     : $master.val();
             is_empty = $master.is(':checkbox') ? !this.$content.find('[name=' + $master.attr('name') + '].wpb_vc_param_value:checked').length
                     : !master_value.length;
-            if($master.is(':hidden') && !$master.is('[type=hidden]')) {
+            if($master_container.hasClass('vc-dependent-hidden')) {
                 _.each(dependent_elements, function($element) {
-                    $element.closest('.vc_row-fluid').hide();
+                    $element.closest('.vc_row-fluid').addClass('vc-dependent-hidden');
                 });
             } else {
                 _.each(dependent_elements, function ($element) {
@@ -540,13 +558,13 @@
                         rules = _.isObject(this.mapped_params[param_name]) && _.isObject(this.mapped_params[param_name].dependency) ? this.mapped_params[param_name].dependency : {},
                         $param_block = $element.closest('.vc_row-fluid');
                     if (_.isBoolean(rules.not_empty) && rules.not_empty === true && !is_empty) { // Check is not empty show dependent Element.
-                        $param_block.show();
+                        $param_block.removeClass('vc-dependent-hidden');
                     } else if (_.isBoolean(rules.is_empty) && rules.is_empty === true && is_empty) {
-                        $param_block.show();
+                        $param_block.removeClass('vc-dependent-hidden');
                     } else if (_.intersection((_.isArray(rules.value) ? rules.value : [rules.value]), (_.isArray(master_value) ? master_value : [master_value])).length) {
-                        $param_block.show();
+                        $param_block.removeClass('vc-dependent-hidden');
                     } else {
-                        $param_block.hide();
+                        $param_block.addClass('vc-dependent-hidden')
                     }
                     $element.trigger('change');
                 }, this);
@@ -603,6 +621,8 @@
         },
         show:function () {
             this.render();
+            $(window).bind('resize.ModalView', this.setSize);
+            this.setSize();
             this.$el.modal('show');
         },
         _killEditor:function () {
@@ -615,6 +635,8 @@
                       window.tinyMCE.execCommand("mceRemoveControl", true, id);
                     }
                     // window.tinyMCE.execCommand('mceAddEditor', false, id);
+                    // window.tinymce.activeEditor = tinymce.get('content');
+                    // $('#wp-fullscreen-save .button').attr('onclick', 'wp.editor.fullscreen.save()').addClass('button-primary');
                 });
             }
         },
@@ -627,7 +649,8 @@
             if (this.data_saved || this.dataNotChanged() || confirm(window.i18nLocale.if_close_data_lost)) {
                 this._killEditor();
                 this.data_saved = true;
-                return true;
+                $(window).unbind('resize.ModalView');
+              return true;
             }
             return false;
         },
@@ -635,6 +658,10 @@
             if (this.askSaveData()) {
                 this.$el.modal('hide');
             }
+        },
+        setSize: function() {
+            var height = $(window).height() - 250;
+            this.$el.find('.modal-body').css('maxHeight', height);
         }
     });
 
@@ -650,7 +677,6 @@
             'click #wpb_save_template_button':'saveTemplate',
             'click [data-template_id]':'loadTemplate',
             'click .wpb_remove_template':'removeTemplate',
-            'click #wpb-convert':'convert',
             'click #wpb-save-post':'save'
         },
         initialize:function () {
@@ -679,7 +705,8 @@
             this.$loading_block = $('.vc_loading_block');
             this.setSortable();
             this.setDraggable();
-            vc.is_mobile = $('body.mobile').length > 0
+            vc.is_mobile = $('body.mobile').length > 0;
+            vc.saved_custom_css = $('#wpb_custom_post_css_field').val();
             return this;
         },
         addAll:function () {
@@ -689,12 +716,6 @@
                 this.appendShortcode(shortcode);
                 this.setSortable();
             }, this);
-            // Check if old version of layout.
-            if (this.$content.find('> [data-element_type]:not(.wpb_vc_row)').length > 0) {
-                $('#wpb-convert-message').show();
-            } else {
-                $('#wpb-convert-message').hide();
-            }
 
             this.checkEmpty();
             this.$loading_block.hide();
@@ -823,25 +844,6 @@
                     Shortcodes.fetch({reset: true});
                 });
         },
-        convert:function (e) {
-            e.preventDefault();
-            if (confirm((window.i18nLocale.are_you_sure_convert_to_new_version)))
-                $.ajax({
-                    type:'POST',
-                    url:window.ajaxurl,
-                    data:{
-                        action:'wpb_get_convert_elements_backend_html',
-                        data:vc.storage.getContent()
-                    },
-                    context:this
-                }).done(function (response) {
-                        vc.storage.setContent(response);
-                        vc.storage.checksum = false; // To be sure that data will fetched from editor.
-                        Shortcodes.fetch({reset: true});
-                        $('#wpb_vc_js_interface_version').val('2');
-                        $('#wpb-convert-message').hide();
-                    });
-        },
         /**
          * Save current shortcode design as template with title.
          * @param e - Event object
@@ -968,6 +970,15 @@
                 stop:function (event, ui) {
                     $('#visual_composer_content').removeClass('sorting-started');
                     $('.dragging_in').removeClass('dragging_in');
+                    var tag = ui.item.data('element_type');
+                    var parent_tag = ui.item.parent().closest('[data-element_type]').data('element_type');
+                    var allowed_container_element = !_.isUndefined(vc.map[parent_tag].allowed_container_element) ? vc.map[parent_tag].allowed_container_element : true;
+                    if (!vc.check_relevance(parent_tag, tag)) {
+                        $(this).sortable('cancel');
+                    }
+                    if (vc.map[ui.item.data('element_type')].is_container && !(allowed_container_element === true || allowed_container_element === ui.item.data('element_type').replace(/_inner$/, ''))) { // && ui.item.hasClass('wpb_container_block')
+                        $(this).sortable('cancel');
+                    }
                 },
                 update:this.updateElementsSorting,
                 over:function (event, ui) {
@@ -984,19 +995,6 @@
                     }
                     ui.placeholder.removeClass('hidden-placeholder');
                     ui.placeholder.css({maxWidth:ui.placeholder.parent().width()});
-                },
-                beforeStop:function (event, ui) {
-                    var tag = ui.item.data('element_type'),
-                        parent_tag = ui.placeholder.closest('[data-element_type]').data('element_type'),
-                        allowed_container_element = !_.isUndefined(vc.map[parent_tag].allowed_container_element) ? vc.map[parent_tag].allowed_container_element : true;
-                    if (!vc.check_relevance(parent_tag, tag)) {
-                        $('#visual_composer_content').removeClass('sorting-started');
-                        return false;
-                    }
-                    if (vc.map[ui.item.data('element_type')].is_container && !(allowed_container_element === true || allowed_container_element === ui.item.data('element_type').replace(/_inner$/, ''))) { // && ui.item.hasClass('wpb_container_block')
-                        $('#visual_composer_content').removeClass('sorting-started');
-                        return false;
-                    }
                 }
             });
             return this;
@@ -1053,7 +1051,6 @@
         },
         setLoading:function () {
             this.setNotEmpty();
-            $('#wpb-convert-message').hide();
             this.$loading_block.show();
         },
         close:function () {
@@ -1069,7 +1066,6 @@
         },
         setNavTop:function () {
             this.navTop = $('#wpb_visual_composer-elements').length && $('#wpb_visual_composer-elements').offset().top - 28;
-
         },
         save:function () {
             $('#wpb-save-post').text(window.i18nLocale.loading);

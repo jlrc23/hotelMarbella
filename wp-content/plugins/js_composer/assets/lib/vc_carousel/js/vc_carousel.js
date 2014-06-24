@@ -47,7 +47,6 @@
   , wrap: false
   , autoHeight: false
   , perView: 1
-  , hideOnEnd: false
   }
   Carousel.prototype.cycle =  function (e) {
     e || (this.paused = false)
@@ -137,7 +136,7 @@
             $nextIndicator = $(that.$indicators.children().slice(index, that.getActiveIndex() + that.options.perView))
         $nextIndicator && $nextIndicator.addClass('vc-active')
         that.options.partial && $nextIndicator && (index+1 < that.items_count ? $nextIndicator.last().next().addClass('vc-partial') : $nextIndicator.first().prev().addClass('vc-partial'))
-        if(that.options.hideOnEnd) that.showHideControl(index)
+        !that.options.wrap && that.showHideControl(index)
       })
     }
     this.current_index = $next.index()
@@ -287,7 +286,7 @@
         this.touch_direction = 'pageY'
       }
       // Hide first control if this.current_index === 0
-      if(this.options.hideOnEnd) this.showHideControl()
+      !that.options.wrap && this.showHideControl()
       // Add partial css class if partial
       if(this.options.partial) this.$element.addClass('vc_partial')
       // Set indicator
@@ -337,7 +336,7 @@
 
   var old = $.fn.carousel
 
-  $.fn.carousel = function (option) {
+  $.fn.carousel = function (option, value) {
     return this.each(function () {
       var $this   = $(this)
       var data    = $this.data('vc.carousel')
@@ -346,7 +345,7 @@
 
       if (!data) $this.data('vc.carousel', (data = new Carousel(this, options)))
       if (typeof option == 'number') data.to(option)
-      else if (action) data[action]()
+      else if (action) data[action](value)
       else if (options.interval) data.pause().cycle()
     })
   }

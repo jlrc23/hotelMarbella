@@ -412,10 +412,11 @@
     });
     window.VcMessageView = vc.shortcode_view.extend({
         changeShortcodeParams:function (model) {
-            var params = model.get('params');
-            window.VcMessageView.__super__.changeShortcodeParams.call(this, model);
+          var params = this.model.get('params'), $wrapper;
+          window.VcMessageView.__super__.changeShortcodeParams.call(this, model);
+          $wrapper = this.$el.find('> .wpb_element_wrapper').removeClass(_.values(this.params.color.value).join(' '));
             if (_.isObject(params) && _.isString(params.color)) {
-                this.$el.find('> .wpb_element_wrapper').removeClass(_.values(this.params.color.value).join(' ')).addClass(params.color);
+                $wrapper.addClass(params.color);
             }
         }
     });
@@ -575,6 +576,10 @@
         render:function () {
             var params = this.model.get('params');
             window.VcTabView.__super__.render.call(this);
+            if(!params.tab_id) {
+              params.tab_id = (+new Date() + '-' + Math.floor(Math.random() * 11));
+              this.model.save('params', params);
+            }
             this.id = 'tab-' + params.tab_id;
             this.$el.attr('id', this.id);
             return this;
@@ -583,6 +588,7 @@
             window.VcTabView.__super__.ready.call(this, e);
             this.$tabs = this.$el.closest('.wpb_tabs_holder');
             var params = this.model.get('params');
+            if(params)
             return this;
         },
         changeShortcodeParams:function (model) {

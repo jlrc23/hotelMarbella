@@ -35,6 +35,7 @@ define('DB_COLLATE', '');
 define('WP_MEMORY_LIMIT', '128M');
 define( 'WP_POST_REVISIONS', false );
 
+define ('WPLANG', 'es_ES');
 /**#@+
  * Claves únicas de autentificación.
  *

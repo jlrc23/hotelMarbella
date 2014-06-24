@@ -353,6 +353,48 @@
 <?php
             }
             
+            function bookingExtrasForms(){// Return Template              
+                if (class_exists("DOPBookingSystemPROBackEnd")){
+                    $DOPBSP_pluginSeries = new DOPBookingSystemPROBackEnd();
+                }
+                $this->returnTranslations();
+?>            
+    <div class="wrap DOPBSP-admin">
+<!-- Header -->
+        <?php $this->returnHeader(DOPBSP_TITLE.' - '.DOPBSP_TITLE_BOOKING_EXTRAS); ?>
+        <input type="hidden" id="booking_form_id" value="" />
+<!-- Content -->
+        <div class="main">
+            <div class="column column1">
+                <?php if($DOPBSP_pluginSeries->userHasPermissions(wp_get_current_user()->ID)) { ?>
+                <div class="column-header">
+                    <div class="add-button" id="DOPBSP-add-booking-form-btn">
+                        <a href="javascript:dopbspAddBookingForm()" title="<?php echo DOPBSP_ADD_BOOKING_FORM_SUBMIT ?>"></a>
+                    </div>
+                    <a href="javascript:void()" class="header-help"><span><?php echo DOPBSP_BOOKING_FORMS_HELP?>"</span></a>                    
+                </div>
+                <?php } ?>
+                <div class="column-content-container">
+                    <div class="column-content">
+                        &nbsp;
+                    </div>
+                </div>
+            </div>
+            <div class="column-separator"></div>
+            <div class="column column2">
+                <div class="column-header"></div>
+                <div class="column-content-container">
+                    <div class="column-content">
+                        &nbsp;
+                    </div>
+                </div>
+            </div>
+            <br class="DOPBSP-clear" />
+        </div>
+    </div>
+<?php
+            }
+            
             function translation(){// Return Translation Template
                 $this->returnTranslations();
 ?>            
@@ -865,6 +907,9 @@
                 $translation = $wpdb->get_results('SELECT * FROM '.DOPBSP_Translation_table.'_'.$language.' WHERE location="backend"');
 
                 foreach ($translation as $item){    
+                    $item->translation = str_replace("\n", '<br>', $item->translation);
+                    $item->translation = str_replace("\r\n", '<br>', $item->translation);
+                    $item->translation = str_replace("\r", '', $item->translation);
                     echo $item->key_data.' = \''.str_replace('<<single-quote>>', "\'", stripslashes($item->translation)).'\', ';
                 }
 ?>
@@ -887,8 +932,8 @@
                     <option value="ar"<?php echo $current_backend_language == 'ar' ? ' selected="selected"':''?>>Arabic (>العربية)</option>
                     <option value="az"<?php echo $current_backend_language == 'az' ? ' selected="selected"':''?>>Azerbaijani (Azərbaycan)</option>
                     <option value="bs"<?php echo $current_backend_language == 'bs' ? ' selected="selected"':''?>>Basque (Euskal)</option>
-                    <option value="by"<?php echo $current_backend_language == 'by' ? ' selected="selected"':''?>>Belarusian (Беларускай)</option>
-                    <option value="bg"<?php echo $current_backend_language == 'bg' ? ' selected="selected"':''?>>Bulgarian (Български)</option>
+                    <option value="by"<?php echo $current_backend_language == 'by' ? ' selected="selected"':''?>>Belarusian (Белару�?кай)</option>
+                    <option value="bg"<?php echo $current_backend_language == 'bg' ? ' selected="selected"':''?>>Bulgarian (Българ�?ки)</option>
                     <option value="ca"<?php echo $current_backend_language == 'ca' ? ' selected="selected"':''?>>Catalan (Català)</option>
                     <option value="cn"<?php echo $current_backend_language == 'cn' ? ' selected="selected"':''?>>Chinese (中国的)</option>
                     <option value="cr"<?php echo $current_backend_language == 'cr' ? ' selected="selected"':''?>>Croatian (Hrvatski)</option>
@@ -903,29 +948,29 @@
                     <option value="fr"<?php echo $current_backend_language == 'fr' ? ' selected="selected"':''?>>French (Français)</option>
                     <option value="gl"<?php echo $current_backend_language == 'gl' ? ' selected="selected"':''?>>Galician (Galego)</option>
                     <option value="de"<?php echo $current_backend_language == 'de' ? ' selected="selected"':''?>>German (Deutsch)</option>
-                    <option value="gr"<?php echo $current_backend_language == 'gr' ? ' selected="selected"':''?>>Greek (Ɛλληνικά)</option>
+                    <option value="gr"<?php echo $current_backend_language == 'gr' ? ' selected="selected"':''?>>Greek (�?λληνικά)</option>
                     <option value="ha"<?php echo $current_backend_language == 'ha' ? ' selected="selected"':''?>>Haitian Creole (Kreyòl Ayisyen)</option>
                     <option value="he"<?php echo $current_backend_language == 'he' ? ' selected="selected"':''?>>Hebrew (עברית)</option>
                     <option value="hi"<?php echo $current_backend_language == 'hi' ? ' selected="selected"':''?>>Hindi (हिंदी)</option>
                     <option value="hu"<?php echo $current_backend_language == 'hu' ? ' selected="selected"':''?>>Hungarian (Magyar)</option>
-                    <option value="is"<?php echo $current_backend_language == 'is' ? ' selected="selected"':''?>>Icelandic (Íslenska)</option>
+                    <option value="is"<?php echo $current_backend_language == 'is' ? ' selected="selected"':''?>>Icelandic (�?slenska)</option>
                     <option value="id"<?php echo $current_backend_language == 'id' ? ' selected="selected"':''?>>Indonesian (Indonesia)</option>
                     <option value="ir"<?php echo $current_backend_language == 'ir' ? ' selected="selected"':''?>>Irish (Gaeilge)</option>
                     <option value="it"<?php echo $current_backend_language == 'it' ? ' selected="selected"':''?>>Italian (Italiano)</option>
-                    <option value="ja"<?php echo $current_backend_language == 'ja' ? ' selected="selected"':''?>>Japanese (日本の)</option>
-                    <option value="ko"<?php echo $current_backend_language == 'ko' ? ' selected="selected"':''?>>Korean (한국의)</option>            
+                    <option value="ja"<?php echo $current_backend_language == 'ja' ? ' selected="selected"':''?>>Japanese (日本�?�)</option>
+                    <option value="ko"<?php echo $current_backend_language == 'ko' ? ' selected="selected"':''?>>Korean (한국�?�)</option>            
                     <option value="lv"<?php echo $current_backend_language == 'lv' ? ' selected="selected"':''?>>Latvian (Latvijas)</option>
                     <option value="lt"<?php echo $current_backend_language == 'lt' ? ' selected="selected"':''?>>Lithuanian (Lietuvos)</option>            
-                    <option value="mk"<?php echo $current_backend_language == 'mk' ? ' selected="selected"':''?>>Macedonian (македонски)</option>
+                    <option value="mk"<?php echo $current_backend_language == 'mk' ? ' selected="selected"':''?>>Macedonian (македон�?ки)</option>
                     <option value="mg"<?php echo $current_backend_language == 'mg' ? ' selected="selected"':''?>>Malay (Melayu)</option>
                     <option value="ma"<?php echo $current_backend_language == 'ma' ? ' selected="selected"':''?>>Maltese (Maltija)</option>
                     <option value="no"<?php echo $current_backend_language == 'no' ? ' selected="selected"':''?>>Norwegian (Norske)</option>            
-                    <option value="pe"<?php echo $current_backend_language == 'pe' ? ' selected="selected"':''?>>Persian (فارسی)</option>
+                    <option value="pe"<?php echo $current_backend_language == 'pe' ? ' selected="selected"':''?>>Persian (�?ارسی)</option>
                     <option value="pl"<?php echo $current_backend_language == 'pl' ? ' selected="selected"':''?>>Polish (Polski)</option>
                     <option value="pt"<?php echo $current_backend_language == 'pt' ? ' selected="selected"':''?>>Portuguese (Português)</option>
                     <option value="ro"<?php echo $current_backend_language == 'ro' ? ' selected="selected"':''?>>Romanian (Română)</option>
-                    <option value="ru"<?php echo $current_backend_language == 'ru' ? ' selected="selected"':''?>>Russian (Pусский)</option>
-                    <option value="sr"<?php echo $current_backend_language == 'sr' ? ' selected="selected"':''?>>Serbian (Cрпски)</option>
+                    <option value="ru"<?php echo $current_backend_language == 'ru' ? ' selected="selected"':''?>>Russian (Pу�?�?кий)</option>
+                    <option value="sr"<?php echo $current_backend_language == 'sr' ? ' selected="selected"':''?>>Serbian (Cрп�?ки)</option>
                     <option value="sk"<?php echo $current_backend_language == 'sk' ? ' selected="selected"':''?>>Slovak (Slovenských)</option>
                     <option value="sl"<?php echo $current_backend_language == 'sl' ? ' selected="selected"':''?>>Slovenian (Slovenski)</option>
                     <option value="sp"<?php echo $current_backend_language == 'sp' ? ' selected="selected"':''?>>Spanish (Español)</option>
@@ -933,7 +978,7 @@
                     <option value="se"<?php echo $current_backend_language == 'se' ? ' selected="selected"':''?>>Swedish (Svenskt)</option>
                     <option value="th"<?php echo $current_backend_language == 'th' ? ' selected="selected"':''?>>Thai (ภาษาไทย)</option>
                     <option value="tr"<?php echo $current_backend_language == 'tr' ? ' selected="selected"':''?>>Turkish (Türk)</option>
-                    <option value="uk"<?php echo $current_backend_language == 'uk' ? ' selected="selected"':''?>>Ukrainian (Український)</option>
+                    <option value="uk"<?php echo $current_backend_language == 'uk' ? ' selected="selected"':''?>>Ukrainian (Україн�?ький)</option>
                     <option value="ur"<?php echo $current_backend_language == 'ur' ? ' selected="selected"':''?>>Urdu (اردو)</option>
                     <option value="vi"<?php echo $current_backend_language == 'vi' ? ' selected="selected"':''?>>Vietnamese (Việt)</option>
                     <option value="we"<?php echo $current_backend_language == 'we' ? ' selected="selected"':''?>>Welsh (Cymraeg)</option>

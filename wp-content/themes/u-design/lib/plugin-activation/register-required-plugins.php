@@ -46,7 +46,7 @@ function udesign_register_required_plugins() {
 			'slug'     		=> 'revslider', // The plugin slug (typically the folder name)
 			'source'   		=> 'revslider.zip', // The plugin source
 			'required' 		=> true, // If false, the plugin is only 'recommended' instead of required
-			'version' 		=> '4.3.6', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
+			'version' 		=> '4.5.3', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
 			'force_activation' 	=> false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
 			'force_deactivation' 	=> false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
 			'external_url' 		=> '', // If set, overrides default API URL and points to an external URL
@@ -57,7 +57,7 @@ function udesign_register_required_plugins() {
                         'slug'                  => 'js_composer', // The plugin slug (typically the folder name)
                         'source'                => 'js_composer.zip', // The plugin source
                         'required'              => false, // If false, the plugin is only 'recommended' instead of required
-                        'version'               => '4.1.2', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
+                        'version'               => '4.2.3', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
                         'force_activation'      => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
                         'force_deactivation'    => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
                         'external_url'          => '', // If set, overrides default API URL and points to an external URL
@@ -171,6 +171,6 @@ function udesign_register_required_plugins() {
 /**
  * Force Visual Composer to initialize as "built into the theme". This will hide certain tabs under the Settings->Visual Composer page
  */
-if(function_exists('vc_set_as_theme')) vc_set_as_theme();
+//if(function_exists('vc_set_as_theme')) vc_set_as_theme();
 
 

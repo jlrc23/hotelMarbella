@@ -474,7 +474,7 @@
                                                                day['available'], day['bind'], day['info'], day['notes'], day['price'], day['promo'], day['status']));
                             }
                         }
-
+                        
                         monthHTML.push('    <br class="DOPBookingSystemPRO_Clear" />');
                         monthHTML.push('</div>');
                         
@@ -557,7 +557,7 @@
                         if (dayNo % 7 == 0){
                             type += ' last-column';
                         }
-                                                
+               
                         dayHTML.push('<div class="DOPBookingSystemPRO_Day '+type+'" id="'+id+'">');
                         dayHTML.push('    <div class="bind-left'+(bind == 2 || bind == 3 ? '  enabled':'')+'">');
                         dayHTML.push('        <div class="header">&nbsp;</div>');

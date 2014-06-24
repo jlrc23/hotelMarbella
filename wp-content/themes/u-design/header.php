@@ -65,7 +65,7 @@ echo apply_filters( 'udesign_head_title_element', ob_get_clean() );  ?>
 <?php echo $udesign_options['google_analytics']; ?>
 <?php udesign_head_bottom(); ?>
 </head>
-<body <?php body_class( array ($udesign_options['enable_cufon'], $udesign_responsive_body_class, $udesign_menu_auto_arrows, $udesign_menu_drop_shadows, $udesign_fixed_main_menu) ); ?>>
+<body  <?php udesign_inside_body_tag(); ?> <?php body_class( array ($udesign_options['enable_cufon'], $udesign_responsive_body_class, $udesign_menu_auto_arrows, $udesign_menu_drop_shadows, $udesign_fixed_main_menu) ); ?>>
 <?php udesign_body_top(); ?>
     
     <div id="wrapper-1" class="pngfix">

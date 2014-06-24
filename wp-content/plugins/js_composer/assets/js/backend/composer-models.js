@@ -158,17 +158,19 @@
         var defaults = {},
             params = _.isObject(vc.map[tag]) && _.isArray(vc.map[tag].params) ? vc.map[tag].params : [];
         _.each(params, function (param) {
-            if(!_.isUndefined(param.std)) {
-                defaults[param.param_name] = param.std;
-            } else if (!_.isUndefined(param.value)) {
-                if (_.isObject(param.value) && param.type != 'checkbox') {
-                    defaults[param.param_name] = _.values(param.value)[0];
-                } else if (_.isArray(param.value)) {
-                    defaults[param.param_name] = param.value[0];
-                } else if (!_.isObject(param.value)) {
-                    defaults[param.param_name] = param.value;
-                } else {
-                    defaults[param.param_name] = '';
+            if(_.isObject(param)) {
+                if(!_.isUndefined(param.std)) {
+                    defaults[param.param_name] = param.std;
+                } else if (!_.isUndefined(param.value)) {
+                    if (_.isObject(param.value) && param.type != 'checkbox') {
+                        defaults[param.param_name] = _.values(param.value)[0];
+                    } else if (_.isArray(param.value)) {
+                        defaults[param.param_name] = param.value[0];
+                    } else if (!_.isObject(param.value)) {
+                        defaults[param.param_name] = param.value;
+                    } else {
+                        defaults[param.param_name] = '';
+                    }
                 }
             }
         });

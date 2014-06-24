@@ -8,7 +8,6 @@
 * Author: CreoApps
 * Author URI: http://codecanyon.net/user/appscreo/portfolio?ref=appscreo
 */
-include 'lib/lib_class.php';
 if (! defined ( 'WPINC' ))
 	die ();
 

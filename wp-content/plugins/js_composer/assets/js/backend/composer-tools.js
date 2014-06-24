@@ -166,30 +166,46 @@ var wpb_grid_post_types_for_taxonomies_handler = function () {
 var wpb_single_image_img_link_dependency_callback = function () {
     var $img_link_large = this.$content.find('#img_link_large-yes'),
         $ = jQuery,
-        $img_link_target = this.$content.find('[name=img_link_target]').parents('.vc-shortcode-param:first');
+        $img_link_target = this.$content.find('[name=img_link_target]').parents('.vc-shortcode-param:first'),
+        params = this.model.get('params'),
+        old_param_value = '';
     this.$content.find('#img_link_large-yes').change(function () {
         var checked = $(this).is(':checked');
         if (checked) {
             $img_link_target.show();
         } else {
-            if ($('.wpb-edit-form [name=img_link]').val().length > 0) {
+            if ($('.wpb-edit-form [name=link]').val().length > 0) {
                 $img_link_target.show();
             } else {
                 $img_link_target.hide();
             }
         }
     });
+    $('.wpb-edit-form [name=link]').change(function () {
+        if ($(this).val().length > 0) {
+            $img_link_target.show();
+        } else {
+            $img_link_target.hide();
+        }
+    });
     if (this.$content.find('#img_link_large-yes').is(':checked')) {
         $img_link_target.show();
     } else {
-        if ($('.wpb-edit-form [name=img_link]').length && $('.wpb-edit-form [name=img_link]').val().length > 0) {
+        if ($('.wpb-edit-form [name=link]').length && $('.wpb-edit-form [name=link]').val().length > 0) {
             $img_link_target.show();
         } else {
             $img_link_target.hide();
         }
     }
+    if( params.img_link && params.img_link.length && !params.link ) {
+      old_param_value = params.img_link;
+      if(!old_param_value.match(/^https?\:\/\//)) old_param_value = 'http://' + old_param_value;
+      $('.wpb-edit-form [name=link]').val(old_param_value);
+    }
+  vc.edit_form_callbacks.push(function() {
+    if(this.params.img_link) this.params.img_link = '';
+  });
 };
-
 
 var vc_wpnop = function(content) {
     var blocklist1, blocklist2, preserve_linebreaks = false, preserve_br = false;

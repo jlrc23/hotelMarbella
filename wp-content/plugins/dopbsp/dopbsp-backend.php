@@ -15,7 +15,7 @@
     if (!class_exists("DOPBookingSystemPROBackEnd")){
         class DOPBookingSystemPROBackEnd{
             private $DOPBSP_templates;
-            private $DOPBSP_db_version = 1.95;
+            private $DOPBSP_db_version = 1.96;
             private $languages_prefix = array('af', 'al', 'ar', 'az', 'bs', 'by', 'bg', 'ca', 'cn', 'cr', 'cz', 'dk', 'du', 'en', 'eo', 'et', 'fl', 'fi', 'fr', 'gl', 'de', 'gr', 'ha', 'he', 'hi', 'hu', 'is', 'id', 'ir', 'it', 'ja', 'ko', 'lv', 'lt', 'mk', 'mg', 'ma', 'no', 'pe', 'pl', 'pt', 'ro', 'ru', 'sr', 'sk', 'sl', 'sp', 'sw', 'se', 'th', 'tr', 'uk', 'ur', 'vi', 'we', 'yi');
                     
             function DOPBookingSystemPROBackEnd(){// Constructor.
@@ -1499,7 +1499,11 @@
                 global $wpdb;     
                 
                 $user = $wpdb->get_row('SELECT * FROM '.DOPBSP_Users_table.' WHERE user_id='.$id);
-         
+                
+                if (is_super_admin($id)) {
+                    return true;   
+                }
+                
                 if ($user->view == 'true'){
                     return true;                    
                 }
@@ -1713,7 +1717,8 @@
                 $tinyMCE_data = DOPBSP_TINYMCE_ADD.';;;;;'.implode(';;;', $calendarsList);
                 
                 echo '<script type="text/JavaScript">'.
-                     '    var DOPBSP_tinyMCE_data = "'.$tinyMCE_data.'"'.
+                     '    var DOPBSP_tinyMCE_data = "'.$tinyMCE_data.'",'.
+                     '        WP_version          = "'.get_bloginfo("version").'";'.    
                      '</script>';
             }
 
@@ -1750,10 +1755,21 @@
                 $dayPieces = explode('-', $date);
 
                 if ($type == '1'){
-                    return $month_names[(int)$dayPieces[1]-1].' '.$dayPieces[2].', '.$dayPieces[0];
+                    $data = $month_names[(int)$dayPieces[1]-1].' '.$dayPieces[2].', '.$dayPieces[0];
+                    
+                    if (str_replace(' ','',$data) == ','){
+                        $data = '';
+                    }
+                    return $data;
                 }
                 else{
-                    return $dayPieces[2].' '.$month_names[(int)$dayPieces[1]-1].' '.$dayPieces[0];
+                    
+                    $data = $dayPieces[2].' '.$month_names[(int)$dayPieces[1]-1].' '.$dayPieces[0];
+                    
+                    if (str_replace(' ','',$data) == ','){
+                        $data = '';
+                    }
+                    return $data;
                 }
             }
             

@@ -1028,12 +1028,12 @@ div.wpb_ui-state-active .wpb_ui-state-active {
 .wpb_vc_message .alert-success .messagebox_text {
   background: url(../vc/tick.png) no-repeat left center;
 }
-.wpb_vc_message .alert-error {
+.wpb_vc_message .alert-danger {
   color: #B94A48;
   background-color: #F2DEDE;
   border-color: #EED3D7;
 }
-.wpb_vc_message .alert-error .messagebox_text {
+.wpb_vc_message .alert-danger .messagebox_text {
   background: url(../vc/exclamation.png) no-repeat left center;
 }
 /* Facebook
@@ -1666,6 +1666,10 @@ option.wpb_video {
 .wpb_edit_form_elements .vc_row-fluid .quicktags-toolbar input {
   width: auto;
 }
+.wpb_element_wrapper .vc-dependent-hidden,
+.wpb_edit_form_elements .vc-dependent-hidden {
+  display: none !important;
+}
 .wpb_vc_raw_html .wpb_element_wrapper {
   background-image: url(../vc/elements_icons/html.png);
 }
@@ -1974,10 +1978,10 @@ ul.wpb-content-layouts-container,
 /* Modal window (Tweaks)
 ---------------------------------------------------------- */
 .wpb_bootstrap_modals {
-  z-index: 10499;
+  z-index: 10099;
 }
 .wpb_bootstrap_modals .modal {
-  z-index: 10500;
+  z-index: 10100;
 }
 .wpb_bootstrap_modals .wpb-elements-list-modal.modal,
 .wpb_bootstrap_modals .wpb-element-edit-modal.modal {
@@ -1998,7 +2002,7 @@ ul.wpb-content-layouts-container,
   margin-left: -385px;
 }
 .modal-backdrop {
-  z-index: 10498;
+  z-index: 10098;
 }
 @media (min-width: 1580px) {
   .wpb_bootstrap_modals .wpb-elements-list-modal.modal {
@@ -2415,12 +2419,6 @@ ul.wpb-content-layouts-container,
   background: #FFF;
   box-shadow: inset 1px 1px 1px 1px #DDDDDD;
   color: #5e5e5e;
-}
-#TB_overlay {
-  z-index: 1055;
-}
-#TB_window {
-  z-index: 1060;
 }
 /** Link param **/
 .vc-link .vc-link-build {

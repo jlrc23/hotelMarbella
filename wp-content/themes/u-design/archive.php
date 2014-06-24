@@ -30,7 +30,7 @@ if ( $udesign_options['remove_archive_sidebar'] == 'yes' ) $content_position = '
 <?php                                   udesign_blog_post_top_area_inside(); ?>
                                     </div><!-- end post-top -->
                                     <div class="clear"></div>
-                                    
+<?php                               udesign_blog_post_content_before(); ?>
 <?php                               // Post Image
                                     display_post_image_fn( $post->ID, true ); ?>
                                     

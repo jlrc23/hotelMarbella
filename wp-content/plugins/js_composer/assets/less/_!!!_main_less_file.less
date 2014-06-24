@@ -132,7 +132,9 @@
     .vc_span12 { .make-sm-column(12); }
   }
 }
-
+.isotope-inner {
+  //padding: 0 15px;
+}
 //Helper classes
 .vc_txt_align_ {
   &left {
@@ -514,6 +516,9 @@
 
 /* 5. Single image
 ---------------------------------------------------------- */
+img {
+  height: auto;
+}
 .wpb_single_image {
   img {
     height: auto;
@@ -549,9 +554,14 @@ div .vc_box_ {
     border: none;
   }
   &shadow,
+  &shadow_border,
+  &shadow_border_circle,
   &shadow_circle, {
     border-radius: 0px;
     .box-shadow(0 0px 5px rgba(0, 0, 0, 0.1));
+  }
+  &shadow_border,
+  &shadow_border_circle {
     padding: 6px;
   }
   &shadow_3d {
@@ -563,13 +573,14 @@ div .vc_box_ {
   &circle,
   &outline_circle,
   &border_circle,
-  &shadow_circle {
+  &shadow_circle,
+  &shadow_border_circle {
     border-radius: 5000px;
     border-radius: 50%;
    .box-shadow(none);
    overflow: hidden;
   }
-  &shadow_circle {
+  &shadow_circle, &shadow_border_circle {
     .box-shadow(0 0px 5px rgba(0, 0, 0, 0.1));
   }
 }

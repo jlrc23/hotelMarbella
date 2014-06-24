@@ -1196,21 +1196,14 @@
 .fa-thumbs-down:before {
   content: "\f165";
 }
-.fa-youtube-square:before {
-  content: "\f166";
-}
-.fa-youtube:before {
-  content: "\f167";
-}
+
 .fa-xing:before {
   content: "\f168";
 }
 .fa-xing-square:before {
   content: "\f169";
 }
-.fa-youtube-play:before {
-  content: "\f16a";
-}
+
 .fa-dropbox:before {
   content: "\f16b";
 }

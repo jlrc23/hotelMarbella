@@ -37,26 +37,26 @@ function udesign_init_styles() {
         if ( $udesign_options['enable_prettyPhoto_script'] ) {
             wp_enqueue_style('u-design-pretty_photo', get_bloginfo('template_url') . '/scripts/prettyPhoto/css/prettyPhoto.css', false, '3.1.5', 'screen');
         }
-	wp_enqueue_style('u-design-style', get_bloginfo('template_url') . "/styles/style1/css/style.css", false, '2.4.2', 'screen');
+	wp_enqueue_style('u-design-style', get_bloginfo('template_url') . "/styles/style1/css/style.css", false, '2.4.7', 'screen');
         
         // load the appropriate custom styles file optimized for performance
         if ( get_theme_mod( 'udesign_custom_styles_use_css_file' ) ) { // load "custom_style.css" file
             $rand_ver = '.'.get_theme_mod( 'udesign_rand_ver_for_caching' );
-            wp_enqueue_style('u-design-custom-style', get_bloginfo('template_url') . '/styles/custom/custom_style.css', false, '2.4.2'.$rand_ver, 'screen');
+            wp_enqueue_style('u-design-custom-style', get_bloginfo('template_url') . '/styles/custom/custom_style.css', false, '2.4.7'.$rand_ver, 'screen');
         } else { // otherwise use "custom_style.php" file
-            wp_enqueue_style('u-design-custom-style', get_bloginfo('template_url') . '/styles/custom/custom_style.php', false, '2.4.2', 'screen');
+            wp_enqueue_style('u-design-custom-style', get_bloginfo('template_url') . '/styles/custom/custom_style.php', false, '2.4.7', 'screen');
         }
         
         if ( $udesign_responsive ) {
-            wp_enqueue_style('u-design-responsive', get_bloginfo('template_url') . '/styles/common-css/responsive.css', false, '2.4.2', 'screen');
+            wp_enqueue_style('u-design-responsive', get_bloginfo('template_url') . '/styles/common-css/responsive.css', false, '2.4.7', 'screen');
         }
         if ( $udesign_options['max_theme_width'] || $udesign_options['global_theme_width'] > 960 || 
                                 get_theme_mod( 'udesign_custom_width_page') == 'yes' || get_theme_mod( 'udesign_max_width_page') == 'yes' ) { 
-            wp_enqueue_style('u-design-fluid', get_bloginfo('template_url') . '/styles/common-css/fluid.css', false, '2.4.2', 'screen');
+            wp_enqueue_style('u-design-fluid', get_bloginfo('template_url') . '/styles/common-css/fluid.css', false, '2.4.7', 'screen');
         }
         
         if ( $udesign_options['enable_default_style_css'] ) {
-            wp_enqueue_style('u-design-style-orig', get_stylesheet_directory_uri() . "/style.css", false, '2.4.2', 'screen');
+            wp_enqueue_style('u-design-style-orig', get_stylesheet_directory_uri() . "/style.css", false, '2.4.7', 'screen');
         }
     }
 }
@@ -443,35 +443,37 @@ function isPhoneNumberValid( $phone ) {
 // Custom Comment template
 if ( !function_exists( 'udesign_theme_comment' ) ) {
     function udesign_theme_comment( $comment, $args, $depth ) {
-       $GLOBALS['comment'] = $comment; ?>
+        $GLOBALS['comment'] = $comment;
+        ob_start(); ?>
 
-       <li <?php comment_class(); ?> id="li-comment-<?php comment_ID() ?>">
-         <div id="comment-<?php comment_ID(); ?>">
-            <div class="comment-meta vcard pngfix">
-                <div class="avatar-wrapper">
-    <?php		echo get_avatar( $comment, $size='52' ); ?>
-                </div>
-                <div class="commentmetadata">
-                    <div class="author"><?php comment_author_link() ?></div>
-    <?php		    printf(__('<span class="time">%1$s</span> on <a href="#comment-%2$s" title="">%3$s</a>', 'udesign'), get_comment_time(__('g:i a', 'udesign')), get_comment_ID(), get_comment_date(__('F j, Y', 'udesign')) );
+        <li <?php comment_class(); ?> id="li-comment-<?php comment_ID() ?>"> <?php // WordPress will supply the closing </li> tag automatically ?>
+            <div id="comment-<?php comment_ID(); ?>">
+                <div class="comment-meta">
+                    <div class="avatar-wrapper">
+<?php                   echo get_avatar( $comment, $size='52' ); ?>
+                    </div>
+                    <div class="commentmetadata">
+                        <div class="author"><?php comment_author_link() ?></div>
+<?php                   printf(__('<span class="the-comment-time-and-date"><span class="time">%1$s</span> on <a class="comment-date" href="#comment-%2$s" title="%3$s">%3$s</a></span>', 'udesign'), get_comment_time(__('g:i a', 'udesign')), get_comment_ID(), get_comment_date(__('F j, Y', 'udesign')) );
                         edit_comment_link(esc_html__('edit', 'udesign'),'&nbsp;&nbsp;',''); ?>
+                    </div>
+                </div>
+
+                <div class="commenttext">
+<?php               if ($comment->comment_approved == '0') : ?>
+                        <em><?php esc_html_e('Your comment is awaiting moderation.', 'udesign') ?></em>
+                        <br />
+<?php               endif; ?>
+<?php               comment_text() ?>
+                    <div class="reply">
+<?php                   comment_reply_link(array_merge( $args, array('depth' => $depth, 'max_depth' => $args['max_depth']))) ?>
+                    </div>
                 </div>
             </div>
 
-            <div class="commenttext">
-    <?php	    if ($comment->comment_approved == '0') : ?>
-                    <em><?php esc_html_e('Your comment is awaiting moderation.', 'udesign') ?></em>
-                    <br />
-    <?php	    endif; ?>
-    <?php	    comment_text() ?>
-                <div class="reply">
-    <?php		comment_reply_link(array_merge( $args, array('depth' => $depth, 'max_depth' => $args['max_depth']))) ?>
-                </div>
-            </div>
+<?php   $udesign_comment_template_html = ob_get_clean();
+        echo apply_filters( 'udesign_get_comment_template', $udesign_comment_template_html );
 
-
-         </div>
-    <?php
     }
 }
 
@@ -1461,6 +1463,11 @@ function udesign_get_dynamic_sidebar($index = '') {
 /* Load the U-Design Options Page */
 include( 'udesign_options_page.php' );
 
+// U-Design Schema.org Stuff
+if ( $udesign_options['enable_udesign_schema_tags'] == 'yes' ) {
+    include( 'lib/structured-data/schema/u-design-schema.php' );
+}
+
 // Remove meta name="generator" content="WordPress" from the <head>
 remove_action('wp_head', 'wp_generator');
 
@@ -1871,7 +1878,7 @@ if ( $udesign_options['enable_page_peel'] ) {
 }
 
 
-// Setup the logo
+// Setup the logo #JLRC23
 function udesign_top_elements_logo( $is_front_page ) {
     ob_start(); ?>
                     <div id="logo" class="grid_14">
@@ -1888,13 +1895,14 @@ function udesign_top_elements_logo( $is_front_page ) {
 add_action('udesign_top_elements_inside', 'udesign_top_elements_logo', 9);
 
 
-// Setup the slogan/tagline
+
+// Setup the slogan/tagline #JLRC23
 function udesign_top_elements_slogan() {
     ob_start(); ?>
-                    <div id="slogan" class="grid_17"><?php bloginfo('description'); ?></div>
+            <div id="slogan" class="grid_17"><?php bloginfo('title'); ?> <br> <span class="subtitle"><?php bloginfo('description'); ?></span></div>
                     <!-- end logo slogan -->
 <?php
-    $slogan_html = ob_get_clean();
+    $slogan_html = ob_get_clean(); 
     echo apply_filters( 'udesign_get_slogan', $slogan_html );
 }
 add_action('udesign_top_elements_inside', 'udesign_top_elements_slogan', 9);
@@ -2138,7 +2146,7 @@ function  udesign_get_comments_link() {
 function udesign_footer_content_part() {
     global $udesign_options;
     ob_start(); ?>
-		    <div id="footer_text" class="grid_20">
+		    <div id="footer_text" class="grid_24">
 			<div>
 <?php			    echo do_shortcode( $udesign_options['copyright_message'] );
 			    if( $udesign_options['show_wp_link_in_footer'] ) :
@@ -2163,8 +2171,8 @@ function udesign_footer_content_part() {
 add_action('udesign_footer_inside', 'udesign_footer_content_part', 10);
 
 
-// Setup footer's "Back to Top" link
-function udesign_footer_back_to_top_link() {
+// Setup footer's "Back to Top" link #JLRC23 delete link got top
+/*function udesign_footer_back_to_top_link() {
     ob_start(); ?>
 		    <div class="back-to-top">
 			<a href="#top"><?php esc_html_e('Back to Top', 'udesign'); ?></a>
@@ -2175,7 +2183,7 @@ function udesign_footer_back_to_top_link() {
     echo $html;
 }
 add_action('udesign_footer_inside', 'udesign_footer_back_to_top_link', 10);
-
+*/
 
 
 // "Sticky" footer stuff

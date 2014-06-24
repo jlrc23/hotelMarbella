@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Booking System PRO (WordPress Plugin)
-Version: 1.9.2
+Version: 1.9.5
 Plugin URI: http://codecanyon.net/item/booking-system-pro-wordpress-plugin/2675936?ref=DOTonPAPER
 Description: You will be able to insert it in any page or post you want with an inbuilt short code generator.<br /><br />If you like this plugin, feel free to rate it five stars at <a href="http://codecanyon.net/item/booking-system-pro-wordpress-plugin/2675936?ref=DOTonPAPER" target="_blank">CodeCanyon</a> in your downloads section. If you encounter any problems please do not give a low rating but <a href="http://envato-support.dotonpaper.net">visit</a> our <a href="http://envato-support.dotonpaper.net">Support Forums</a> first so we can help you.
 Author: Dot on Paper
@@ -18,7 +18,25 @@ Change log:
                 * Custom Post Types don't appear anymore in blog posts by default.
                 * Data save/load speed & server memory usage has been optimized.
                 * Required checkbox validation bug fixed.
+ 
+        1.9.5 (2014-03-04)
 
+                * CCavenue problem fixed
+                * Debug class added
+                * Paypal problem fixed
+ 
+        1.9.4 (2014-02-27)
+
+                * Blank email bug fixed
+                * End hour is displayed in WooCommerce orders.
+                * Reservation is saved if/when WooCommerce payment modules are used.
+
+        1.9.3 (2014-02-14)
+
+                * Translation bug fixed
+                * Woocommerce Check in & Check Date format fixed
+                * Woocommerce Check in & Check out fixed 
+ 
         1.9.2 (2014-02-05)
  
                 * Reservations not stored problem fixed
@@ -198,6 +216,7 @@ Installation: Upload the folder dopbsp from the zip file to "wp-content/plugins/
         include(ABSPATH . "wp-includes/pluggable.php"); 
     }
     
+    include_once 'dopbsp-debug.php';
     include_once 'views/templates.php';
     include_once 'views/currencies.php';
     include_once 'dopbsp-translation.php';
@@ -215,6 +234,7 @@ Installation: Upload the folder dopbsp from the zip file to "wp-content/plugins/
     }
     
 // Globals 
+    global $DOPBSP_pluginSeries_debug;
     global $DOPBSP_pluginSeries_translation;
     global $DOPBSP_pluginSeries;
     global $DOPBSP_pluginSeries_forms;
@@ -234,6 +254,10 @@ Installation: Upload the folder dopbsp from the zip file to "wp-content/plugins/
         $DOPBSP_pluginSeries_translation = new DOPBookingSystemPROTranslation();
     }
     
+    if (class_exists("DOPBookingSystemPRODebug")){
+        $DOPBSP_pluginSeries_debug = new DOPBookingSystemPRODebug();
+    }
+    
     if (is_admin() && !isset($_POST['dopbsp_frontend_ajax_request'])){// If user is logged in admin init administration panel.
         if (class_exists("DOPBookingSystemPROBackEnd")){
             $DOPBSP_pluginSeries = new DOPBookingSystemPROBackEnd();
@@ -242,7 +266,7 @@ Installation: Upload the folder dopbsp from the zip file to "wp-content/plugins/
         if (class_exists("DOPBookingSystemPROBackEndForms")){
             $DOPBSP_pluginSeries_forms = new DOPBookingSystemPROBackEndForms();
         }
-        
+              
         if (class_exists("DOPBookingSystemPROBackEndReservations")){
             $DOPBSP_pluginSeries_reservations = new DOPBookingSystemPROBackEndReservations();
         }

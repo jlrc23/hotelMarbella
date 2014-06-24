@@ -48,6 +48,15 @@ function udesign_head_bottom() {
 /**********************( <body> hooks )*********************/
 
 /**
+ * Fire the 'udesign_inside_body_tag' action
+ *
+ * @uses do_action() Calls 'udesign_inside_body_tag' hook.
+ */
+function udesign_inside_body_tag() {
+    do_action('udesign_inside_body_tag');
+}
+
+/**
  * Fire the 'udesign_body_top' action
  *
  * @uses do_action() Calls 'udesign_body_top' hook.
@@ -343,6 +352,15 @@ function udesign_blog_entry_top() {
  */
 function udesign_blog_entry_bottom() {
     do_action('udesign_blog_entry_bottom');
+}
+
+/**
+ * Fire the 'udesign_blog_post_content_before' action.
+ * 
+ * @uses do_action() Calls 'udesign_blog_post_content_before' hook.
+ */
+function udesign_blog_post_content_before() {
+    do_action('udesign_blog_post_content_before');
 }
 
 /**

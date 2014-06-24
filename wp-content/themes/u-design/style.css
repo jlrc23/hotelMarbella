@@ -21,3 +21,12 @@ h1{
 #home-page-content #content-container, #page-content #content-container {
 	padding: 0;
 }
+
+#breadcrumbs-container .breadcrumbs, .breadcrumbs{
+	margin: 0 0 0 0;
+}
+
+.ls-wp-fullwidth-container .ls-wp-fullwidth-helper{
+	background: black !important;	
+}
+ 

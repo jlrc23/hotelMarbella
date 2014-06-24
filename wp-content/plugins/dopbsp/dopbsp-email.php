@@ -250,7 +250,7 @@
                            "From: ".get_bloginfo('name')." <".$email_from.">\r\n".
                            "Reply-To:".$email_from;
 
-                wp_mail($email_to, $subject, $message, $headers);
+                mail($email_to, $subject, $message, $headers);
             }
             
             function sendSMTPEmail($email_to,
@@ -309,7 +309,7 @@
                              $file){
                 $content = file_get_contents($file, true);
                 
-                if ($content === false){
+                if ($content === false || $content == "" || $content == NULL || !isset($content)){
                     $simple_message = '';
                     $simple_message .= $message.'<br /><br />';
                     $simple_message .= $ids.'<br /><br />';

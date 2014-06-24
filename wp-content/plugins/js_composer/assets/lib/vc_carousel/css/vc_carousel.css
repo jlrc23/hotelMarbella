@@ -67,7 +67,7 @@
   line-height: 1;
 }
 .vc-carousel.vc-per-view-more .vc-carousel-slideline .vc-carousel-slideline-inner > .vc-item > .vc-inner {
-  margin: 10px;
+  margin: 0 10px;
 }
 .vc-carousel.vc_carousel_vertical .vc-carousel-slideline {
   overflow: hidden;
@@ -134,7 +134,6 @@
         background-repeat: repeat-x;
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
         */
-
 }
 .vc-carousel-control.vc-right {
   left: auto;
@@ -147,7 +146,6 @@
         background-repeat: repeat-x;
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
         */
-
 }
 .vc-carousel-control .icon-prev,
 .vc-carousel-control .icon-next,
@@ -216,10 +214,8 @@
 .clearfix:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .clearfix:after {
   clear: both;

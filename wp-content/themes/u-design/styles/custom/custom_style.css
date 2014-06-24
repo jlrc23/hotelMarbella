@@ -1,6 +1,6 @@
 /* Custom Styles */
 body, #page-content-title .title-description { font-family:'Arial'; }
-body { font-size:14px; }
+body { font-size:15px; }
 h1, h2, h3, h4, h5, h6, #slogan, .single-post-categories { font-family:'Kite One'; }
 #top-elements { height:75px; }
 #logo h1 a, #logo .site-name a { background:transparent url( https://s3.amazonaws.com/marbella/logoHotelMarbella-elparaisoatualcanze.png ) no-repeat 0 100%; width:150px; height:104px; }       
@@ -12,6 +12,7 @@ h1, h2, h3, h4, h5, h6, #slogan, .single-post-categories { font-family:'Kite One
 .js_on .cufon-on #slogan { font-size:28px; }
 #navigation-menu { font-family:'Arial'; }
 #navigation-menu { font-size:16px; }
+    #main-menu { background:none; }
 h1 {font-size:1.883em !important; }
 h2 {font-size:1.667em !important; }
 h3 {font-size:1.5em !important; }
@@ -79,6 +80,16 @@ h3.bottom-col-title {font-size:1.35em !important; }
 @media screen and (min-width: 720px) {
     .u-design-fixed-menu-on.fixed-menu #top-wrapper { background-color:#FBFBFB; }
 }
+    @media screen and (min-width: 720px) {
+        .u-design-fixed-menu-on.fixed-menu #top-wrapper {
+            -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+               -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+                    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+        }
+    }
+    @media screen and (min-width: 720px) {
+        .u-design-fixed-menu-on.fixed-menu #top-wrapper { background-image:none; ?>; }
+    }
     
     @media screen and (min-width: 960px) {
         /* Set the Container widths first */

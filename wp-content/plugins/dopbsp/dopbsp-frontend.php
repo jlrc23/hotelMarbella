@@ -175,7 +175,7 @@
                 $data = array();
                 
                 $id = $atts['id'];
-                $language = $atts['lang'];
+                $language ='sp'; // $atts['lang'];
                 $woocommerce = $atts['woocommerce'];
                 
                 $DOPBSP_pluginSeries_translation->setTranslation('frontend', $language);

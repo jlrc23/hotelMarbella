@@ -56,9 +56,9 @@ class EasySocialShareButtons {
 				
 		$included_fb_api = isset($option['facebook_like_button_api']) ? $option['facebook_like_button_api'] : '';
 		
-		if ($included_fb_api != 'true') {
+		/*if ($included_fb_api != 'true') {
 			add_action ( 'wp_footer', array ($this, 'init_fb_script' ) );
-		}
+		}*/
 		
 		// @since 1.0.4
 		$include_vk_api = isset($option['vklike']) ? $option['vklike'] : '';
@@ -1324,7 +1324,7 @@ $html = '<script type="text/javascript">jQuery(function() {
 		if ($lang == "en") { $code = "en_US"; }
 	
 	
-		echo <<<EOFb
+	/*	echo <<<EOFb
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -1334,7 +1334,7 @@ $html = '<script type="text/javascript">jQuery(function() {
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 	
-EOFb;
+EOFb;*/
 	}
 	
 	public function init_vk_script() {

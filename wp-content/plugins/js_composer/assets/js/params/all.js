@@ -19,6 +19,7 @@ var wpb_change_tab_title, wpb_change_accordion_tab_title, vc_activeMce;
     };
 
     function init_textarea_html($element) {
+
         /*
          Simple version without all this buttons from Wordpress
          tinyMCE.init({
@@ -33,10 +34,10 @@ var wpb_change_tab_title, wpb_change_accordion_tab_title, vc_activeMce;
             $content_holder = $form_line.find('.vc_textarea_html_content'),
             content = $content_holder.val();
 
-        window.tinyMCEPreInit.mceInit[textfield_id] = _.extend({}, tinyMCEPreInit.mceInit['content']);
-
+        window.tinyMCEPreInit.mceInit[textfield_id] = _.extend({}, tinyMCEPreInit.mceInit['content'], {resize: 'vertical', height: 200, id: textfield_id});
+        window.tinyMCEPreInit.mceInit[textfield_id].plugins =  window.tinyMCEPreInit.mceInit[textfield_id].plugins.replace(/,?wpfullscreen/, '');
         if(_.isUndefined(tinyMCEPreInit.qtInit[textfield_id])) {
-            window.tinyMCEPreInit.qtInit[textfield_id] = _.extend({}, tinyMCEPreInit.qtInit['replycontent'], {id: textfield_id})
+          window.tinyMCEPreInit.qtInit[textfield_id] = _.extend({}, tinyMCEPreInit.qtInit['replycontent'], {id: textfield_id})
         }
         $element.val($content_holder.val());
         qt = quicktags( window.tinyMCEPreInit.qtInit[textfield_id] );
@@ -44,7 +45,8 @@ var wpb_change_tab_title, wpb_change_accordion_tab_title, vc_activeMce;
         window.switchEditors.go(textfield_id, 'tmce');
         if(tinymce.majorVersion === "4") tinymce.execCommand( 'mceAddEditor', true, textfield_id );
         vc_activeMce = textfield_id;
-        /// window.tinyMCE.get(textfield_id).focus();
+        // window.tinymce.activeEditor = tinymce.get(textfield_id);
+        // $('#wp-fullscreen-save .button-primary').attr('onclick', 'wp.editor.fullscreen.off()').removeClass('button-primary');
     }
     function init_textarea_html_old($element) {
         var textfield_id = $element.attr("id"),
@@ -210,7 +212,7 @@ var wpb_change_tab_title, wpb_change_accordion_tab_title, vc_activeMce;
             this.$el.autocomplete({
                 source: this.buildSource,
                 select: this.itemSelected,
-                minLength: 3,
+                minLength: 2,
                 focus: function( event, ui ) {return false;}
             }).data( "ui-autocomplete" )._renderItem = function( ul, item ) {
                 return $( '<li data-value="' + item.value + '">' )
@@ -414,7 +416,8 @@ var wpb_change_tab_title, wpb_change_accordion_tab_title, vc_activeMce;
                 data: {
                     action:'wpb_get_loop_settings',
                     value: this.data,
-                    settings: this.settings
+                    settings: this.settings,
+                    post_id: vc.post_id
                 }
             }).done(this.createEditor);
         },
@@ -597,7 +600,7 @@ var wpb_change_tab_title, wpb_change_accordion_tab_title, vc_activeMce;
         });
         $('#wp-link-cancel').unbind('click.vcLink').bind('click.vcLink', function(e){
             e.preventDefault();
-            $dialog.wpdialog('close');
+            dialog.close();
             // remove vc_link hooks for wpLink
             $vc_link_submit.unbind('click.vcLink');
             $vc_link_submit.remove();

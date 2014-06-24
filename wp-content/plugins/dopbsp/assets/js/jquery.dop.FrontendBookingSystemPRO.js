@@ -29,7 +29,7 @@
                     'Currency': '$',
                     'CurrencyCode': 'USD',
                     'DateType': 1,
-                    'DayNames': ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+                    'DayNames': ['Domingo', 'Lunes', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
                     'DayShortNames': ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
                     'Deposit': 0,
                     'DepositText': 'deposit',
@@ -40,7 +40,7 @@
                     'Form': [],
                     'FormID': 1,
                     'FormEmailInvalid': 'is invalid. Please enter a valid Email.',
-                    'FormRequired': 'is required.',
+                    'FormRequired': 'es obligatorio.',
                     'FormTitle': 'Contact Information',
                     'HoursAMPM': 'false',
                     'HoursEnabled': 'false',
@@ -110,17 +110,17 @@
         AddLastHourToTotalPrice = true,
         AddMonthViewText = 'Add Month View',
         AvailableDays = [true, true, true, true, true, true, true],
-        AvailableOneText = 'available',
-        AvailableText = 'available',
-        BookedText = 'booked',
-        BookNowLabel = 'Book Now',
-        CheckInLabel = 'Check In',
-        CheckOutLabel = 'Check Out',
+        AvailableOneText = 'disponible', //'available', #JLRC23
+        AvailableText =  'disponible', // 'available', #JLRC23
+        BookedText = 'reservado', //'booked',  #JLRC23
+        BookNowLabel = 'Reservar Ahora', //'Book Now', #JLRC23
+        CheckInLabel = 'Hora de Entrada', //'Check In', #JLRC23
+        CheckOutLabel = 'Hora de Salida', //'Check Out', #JLRC23
         Currency = '$',
         CurrencyCode = 'USD',
         DateType = 1,
-        DayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
-        DayShortNames = ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+        DayNames = ['Domingo', 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado'],//,['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],#JLRC23
+        DayShortNames = ['Do', 'Lu', 'Ma', 'Mi', 'Ju', 'Vi', 'Sa'],//['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
         Deposit = 0,
         DepositText = 'deposit',
         DiscountsNoDays = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -129,8 +129,8 @@
         FirstDay = 1,
         Form = [],
         FormID = 1,
-        FormEmailInvalid = 'is invalid. Please enter a valid Email.',
-        FormRequired = 'is required.',
+        FormEmailInvalid ='no es válido. Por favor, introduzca un email válido. ',  //'is invalid. Please enter a valid Email.',
+        FormRequired = 'es obligatorio.',
         FormTitle = 'Contact Informations',
         HoursAMPM = false,
         HoursEnabled = true,
@@ -149,7 +149,7 @@
         MinStay = 1,
         MinStayWarning = 'You need to book a minimum number of days',
         MonthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
-        MonthShortNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+        MonthShortNames = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'],
         MorningCheckOut = false,
         MultipleDaysSelect = true,
         MultipleHoursSelect = true,

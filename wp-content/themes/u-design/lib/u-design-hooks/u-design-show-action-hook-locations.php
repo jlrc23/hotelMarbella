@@ -154,6 +154,11 @@ function udesign_blog_entry_bottom_function() {
 }
 add_action('udesign_blog_entry_bottom', 'udesign_blog_entry_bottom_function', 10);
 
+function udesign_blog_post_content_before_function() {
+   echo '<div class="--> action-hook-ref udesign_blog_post_content_before"><span>udesign_blog_post_content_before</span></div>';
+}
+add_action('udesign_blog_post_content_before', 'udesign_blog_post_content_before_function', 10);
+
 function udesign_single_post_entry_before_function() {
    echo '<div class="--> action-hook-ref udesign_single_post_entry_before"><span>udesign_single_post_entry_before</span></div>';
 }

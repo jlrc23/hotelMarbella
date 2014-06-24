@@ -2,7 +2,7 @@
 Theme Name: U-Design
 Theme URI: http://themeforest.net/item/udesign-wordpress-theme/253220?ref=internq7
 Description: CSS for the 'U-Design Theme'.
-Version: 2.4.2
+Version: 2.4.7
 Author: Andon
 Author URI: http://themeforest.net/user/internq7/portfolio?ref=internq7
 */
@@ -690,6 +690,7 @@ ul#c3-slider {
     clear: both;
 }
 .postmetadata {
+    width: 100%;
     font-size:95%;
     padding: 0 !important;
     clear:both;
@@ -702,6 +703,7 @@ ul#c3-slider {
     float:right;
     margin:0 10px;
 }
+.categories-link-divider, .postmetadata-categories-link, .postmetadata-comments-link { display: inline-block; }
 /* End Post */
 
 /* Begin Comments*/
@@ -1582,6 +1584,7 @@ pre {
     background:-moz-linear-gradient(center top , #FFFFFF, #EFEFEF);
     background:-webkit-gradient(linear, center top, center bottom, from(#FFFFFF), to(#EFEFEF));
 }
+.msg-box-icon, .simple .inner-padding, .custom .inner-padding { overflow:hidden; }
 blockquote.alignleft {
     margin: 10px 20px 0 0;
     width: 220px;
@@ -3274,4 +3277,6 @@ span.theme-color {
 .wp-audio-shortcode { max-width: 100%; }
 
 .post-edit-link { margin-right: 25px; }
+
+.u-design-hatom-feed-entries { height: 0; margin: 0; padding: 0; text-indent: -9000px; }
 

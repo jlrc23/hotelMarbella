@@ -248,8 +248,8 @@ if(_.isUndefined(window.vc)) var vc = {atts: {}};
       if(this.simplify) return this.getSimplifiedField(type);
       _.each(this.positions, function(pos){
         var val = this.$el.find('[data-name=' + type + '-' + pos +']').val().replace(/\s+/, '');
-        if(!val.match(/^\d+(\.\d+){0,1}(%|in|cm|mm|em|ex|pt|pc|px)$/)) {
-          val = (isNaN(parseInt(val)) ? '' : '' + parseInt(val) + 'px');
+        if(!val.match(/^\d*(\.\d+){0,1}(%|in|cm|mm|em|rem|ex|pt|pc|px|vw|vh|vmin|vmax)$/)) {
+          val = (isNaN(parseFloat(val)) ? '' : '' + parseFloat(val) + 'px');
         }
         val.length && data.push({name: pos, val: val});
       }, this);
@@ -274,8 +274,8 @@ if(_.isUndefined(window.vc)) var vc = {atts: {}};
     getSimplifiedField: function(type) {
       var pos = 'top',
           val = this.$el.find('[data-name=' + type + '-' + pos +']').val().replace(/\s+/, '');
-      if(!val.match(/^\d+(\.\d+){0,1}(%|in|cm|mm|em|ex|pt|pc|px)$/)) {
-        val = (isNaN(parseInt(val)) ? '' : '' + parseInt(val) + 'px');
+      if(!val.match(/^\d*(\.\d+){0,1}(%|in|cm|mm|em|rem|ex|pt|pc|px|vw|vh|vmin|vmax)$/)) {
+        val = (isNaN(parseFloat(val)) ? '' : '' + parseFloat(val) + 'px');
       }
       if(val.length) this.attrs[type] = val;
     }

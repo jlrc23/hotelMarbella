@@ -33,3 +33,5 @@ a.custom-button span:active {
     max-width: none; /* for ie 8 */
   }
 }
+
+.postmetadata-categories-link { padding: 0 1px; }
